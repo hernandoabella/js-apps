@@ -1,5 +1,20 @@
-let saludo; // Creamos una variable saludo.
+let saludo; 
 
-saludo = document.getElementById('saludo'); // Referenciamos el elemento HTML
+saludo = document.getElementById('saludo');
 
-saludo.innerHTML = 'Hola yes!'; // Cambiamos el texto actual del elemento y lo remplazamos por el texto Hola Mundo
+saludo.innerHTML = 'Hola mundo'; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
