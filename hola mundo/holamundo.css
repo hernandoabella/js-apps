@@ -1,0 +1,12 @@
+#saludo{
+    background: rgb(36, 104, 143);
+    color: #fff;
+    padding: 10px;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+
