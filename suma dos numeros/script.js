@@ -1,16 +1,15 @@
 //variables
-let hora = document.getElementById('hora');
-let minutos = 60;
-let btn = document.getElementById('btn');
-let resultado = document.getElementById('resultado'); 
 
-function convertir(hora){
-   let formula = hora.value * minutos * 60;
-   resultado.innerHTML = formula + ' segundos. ';
+let a = document.getElementById('a');
+let b = document.getElementById('b');
+let resultado = document.getElementById('resultado');
+
+function sumar(a, b){
+   let suma = +a.value + +b.value;
    resultado.style.display = 'block';
-   return resultado;
+   let cadenaTexto = resultado.innerHTML = 'El resultado es: ' + suma;
+   return cadenaTexto;
 }
-
 
 
 
