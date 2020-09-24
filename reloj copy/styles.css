@@ -1,0 +1,30 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    padding: 10px;
+    background: rgb(0, 119, 128);
+    border-radius: 5px;
+    width: 320px;
+}
+
+#quote{
+    height: 90px;
+}
+
+#generate-btn{
+    background: blue;
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#generate-btn:hover{
+    background: rgb(0, 183, 255);
+}
