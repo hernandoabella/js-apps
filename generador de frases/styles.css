@@ -1,0 +1,46 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    padding: 10px;
+    background: #2ec1ac;
+    border-radius: 5px;
+    width: 320px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    color: #fff;
+    
+}
+
+.words{
+    background: #3e978b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.autor{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#generate-btn{
+    background: #3e978b;
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#generate-btn:hover{
+    background: #28a18f;
+}
+
+#generate-btn:active{
+    transform: translate(2px, 2px);
+}
+
+
