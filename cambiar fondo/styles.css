@@ -1,0 +1,27 @@
+.container{
+  background: #0d7377;
+  padding: 20px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+button{
+  background: #212121;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  transition: .5s;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 100%;
+}
+
+button:hover{
+  background: #161616;
+}
+
+
+
+
