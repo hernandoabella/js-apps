@@ -1,0 +1,32 @@
+.container{
+    background: #f030ff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background: rgb(21, 214, 188);
+}
+
+#resultado{
+    background: rgb(21, 214, 188);
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}

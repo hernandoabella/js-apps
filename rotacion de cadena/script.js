@@ -8,3 +8,6 @@ function animate_string(id) {
       textNode.data = text;
    }, 100);
 }
+
+
+
