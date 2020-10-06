@@ -1,5 +1,7 @@
 # Aplicaciones Javascript de 0 a PRO. 
 
-Practica perfecta para novatos, intermedios y profesionales.
+Practica perfecta todos los niveles.
 
-Este repositorio de aplicaciones te permiten mejorar tus habilidades como programador en javascript, es hora de dar lo mejor de ti. ¡Tú puedes hacerlo!
+Este repositorio de aplicaciones te permiten mejorar tus habilidades como programador en javascript.
+
+Aprender haciendo es la mejor manera de aprender a programar.

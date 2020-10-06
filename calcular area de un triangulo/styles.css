@@ -1,8 +1,8 @@
 .container{
-    background: #f030ff;
+    background: #3094ff;
     padding: 10px;
     border-radius: 5px;
-    width: 250px;
+    width: 190px;
 }
 
 input{
@@ -21,14 +21,15 @@ button{
 }
 
 button:hover{
-    background: rgb(21, 214, 188);
+    background: #5dabff;
 }
 
 #resultado{
-    background: rgb(21, 214, 188);
+    background: #3094ff;
+    color: #fff;
     padding: 10px;
     border-radius: 5px;
-    width: 250px;
+    width: 190px;
     display: none;
 }
 
