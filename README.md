@@ -1,6 +1,6 @@
-# Aplicaciones Javascript de 0 a PRO. 
+# Aplicaciones prácticas de JavaScript de 0 a PRO. 
 
-Practica perfecta todos los niveles.
+Práctica perfecta todos los niveles.
 
 Este repositorio de aplicaciones te permiten mejorar tus habilidades como programador en javascript.
 
