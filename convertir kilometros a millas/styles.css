@@ -1,0 +1,38 @@
+
+.container{
+    background: rgb(211, 58, 83);
+    padding: 10px;
+    border-radius: 5px;
+    width: 190px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background: rgb(147, 58, 211);
+    color: #fff;
+}
+
+#resultado{
+    background: rgb(147, 58, 211);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 190px;
+    display: none;
+}
+
+

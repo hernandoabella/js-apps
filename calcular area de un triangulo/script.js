@@ -10,3 +10,6 @@ const calcularArea = () =>{
     resultado.style.display = 'block';
     resultado.innerHTML = cadenaDeTexto;
 }
+
+
+
