@@ -1,6 +1,6 @@
 
 .container{
-    background: rgb(211, 58, 83);
+    background: rgb(83, 211, 58);
     padding: 10px;
     border-radius: 5px;
     width: 190px;
@@ -22,12 +22,12 @@ button{
 }
 
 button:hover{
-    background: rgb(147, 58, 211);
+    background: rgb(30, 143, 58);
     color: #fff;
 }
 
 #resultado{
-    background: rgb(147, 58, 211);
+    background: rgb(79, 185, 57);
     color: #fff;
     padding: 10px;
     border-radius: 5px;
