@@ -1,5 +1,5 @@
 .container{
-    background: rgb(83, 211, 58);
+    background: rgb(150, 58, 211);
     padding: 10px;
     border-radius: 5px;
     width: 190px;
@@ -21,12 +21,12 @@ button{
 }
 
 button:hover{
-    background: rgb(30, 143, 58);
+    background: rgb(97, 167, 167);
     color: #fff;
 }
 
 #resultado{
-    background: rgb(79, 185, 57);
+    background: rgb(119, 42, 170);
     color: #fff;
     padding: 10px;
     border-radius: 5px;
