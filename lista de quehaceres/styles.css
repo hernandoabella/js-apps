@@ -70,7 +70,6 @@ body{
     width: 7px;
   }
   
-  
   .cerrar {
     position: absolute;
     right: 0;
@@ -85,7 +84,6 @@ body{
     color: #000;
   }
   
- 
   .header {
     background-color: #3b82b1;
     padding: 30px 40px;
@@ -95,21 +93,18 @@ body{
     margin-bottom: 10px;
   }
   
-  
   .header:after {
     content: "";
     display: table;
     clear: both;
   }
   
- 
   input {
     border: none;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
   }
-  
   
   .addBtn {
     padding: 10px;
@@ -119,11 +114,11 @@ body{
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
-    
-
   }
   
   .addBtn:hover {
     background-color: #3d93bb;
     color: #fff;
   }
+
+  
