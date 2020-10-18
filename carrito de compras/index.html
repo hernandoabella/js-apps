@@ -1,35 +1,23 @@
-<DOCTYPE html>
-<htm!l lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0">
-    <title>Caja Modal</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, 
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<button id="myBtn">Open Modal</button>
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Encabezado</h2>
+    <div class="contenedor">
+        <main id="items" class="items"></main>
+        <div class="carrito1">
+            <h2>Carrito</h2>
+            <ul id="carrito" class="carrito"></ul>
+            <p>Total: <span id="total">0.00</span>&dollar;</p>
+            <button id="boton-vaciar" class="vaciar">Vaciar Carrito</button>
+        </div>
     </div>
-    <div class="modal-body">
-      <p>Esta es una caja modal.</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Pie de Página</h3>
-    </div>
-  </div>
-</div>
-    <script src="./script.js"></script> 
 </body>
+<script src="./script.js"></script>
 </html>
-
-
-
-
-
-
 
