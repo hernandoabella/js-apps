@@ -10,6 +10,13 @@ h1{
     text-align: center;
 }
 
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+}
+
 ol li{
     color: #323330;
     margin: 30px;
@@ -20,13 +27,13 @@ ol li a{
     text-decoration: none;
     transition: .5s;
     text-align: center;
-    width: 25%;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    display: block;
 }
 
 ol li a:hover{
-    background: #fff;
+    background: #0f0;
     color: #323330;
 }
