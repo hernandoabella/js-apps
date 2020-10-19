@@ -34,6 +34,6 @@ ol li a{
 }
 
 ol li a:hover{
-    background: #0f0;
+    background: rgb(255, 255, 255);
     color: #323330;
 }
