@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.app{
+  background: rgb(0, 255, 221);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+}
+
+h1{
+  text-align: center;
+  padding: 10px;
+}
+
+.txt{
+  margin: 10px 0px;
+}
+
+.tip{
+  margin: 10px 0px;
+}
+
+input{
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.servicio{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.service option{
+  border-radius: 5px;
+}
+
+#calcular{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(19, 148, 131);
+  color: #fff;
+  cursor: pointer;
+}
+
