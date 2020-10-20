@@ -1,10 +1,14 @@
+https://hernandoabella.github.io/javascript-apps/
+
 # Aplicaciones JS
 
 Aplicaciones creadas con HTML, CSS y JAVASCRIPT.
 
-## Comenzando 🚀
+## Comenzando 😎
 
 Estas aplicaciones fueron enumeradas en una lista desde el nivel más básico hasta el nivel más avanzado.
+
+Lista de Aplicaciones 
 
 1. Hola Mundo
 2. Convertir de Horas a Segundos
@@ -27,4 +31,4 @@ Estas aplicaciones fueron enumeradas en una lista desde el nivel más básico ha
 19. Calculador de Propinas  
 20.
 
-https://hernandoabella.github.io/javascript-apps/
+
