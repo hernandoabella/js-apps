@@ -2,13 +2,13 @@ https://hernandoabella.github.io/javascript-apps/
 
 # Aplicaciones JS
 
-Aplicaciones creadas con HTML, CSS y JAVASCRIPT.
+*Aplicaciones creadas con HTML, CSS y JAVASCRIPT.*
 
 ## Comenzando 😎
 
 Estas aplicaciones fueron enumeradas en una lista desde el nivel más básico hasta el nivel más avanzado.
 
-Lista de Aplicaciones 
+*Lista de Aplicaciones:* 
 
 1. Hola Mundo
 2. Convertir de Horas a Segundos
