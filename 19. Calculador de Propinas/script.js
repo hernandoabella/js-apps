@@ -181,7 +181,7 @@ function changeContrast() {
 		B = (Math.floor(Math.random() * 256));
  
 		$( this ).css( 'background-color', 'rgb(' + R + ',' + G + ',' + B + ')' );
- 
+        $(this).css('transition', '.5s')
 		C = [ R/255, G/255, B/255 ];
  
 		for ( var i = 0; i < C.length; ++i ) {
