@@ -2,29 +2,29 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Piedra, Papel o Tijeras</title>
+    <title>Deslizador de Imágenes</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, 
     initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Piedra, papel o tijeras</h1>
-        <p>Selecciona entre piedra papel o tijeras y observa si puedes vencer a la computadora.</p>
-
-        <p><strong>Recuerda:</strong> “Piedra rompe tijeras, tijeras cortan papel, papel cubre piedra.” </p>
-        <div class='puntuacion'>
-
-        </div>
-        <div class='mensaje'>
-
-        </div>
-        <div class="selection">
-            <button class="rock" type='button'>Piedra</button>
-            <button class="paper" type='button'>Papel</button>
-            <button class="scissors" type='button'>Tijeras</button>
-        </div>
+<div class="contenedor">
+    <div class="mySlides fade">
+      <img src="https://conceptodefinicion.de/wp-content/uploads/2015/08/naturaleza-e1439385445458.jpg" style="width:100%">
     </div>
+  
+    <div class="mySlides fade">
+      <img src="https://historiadelavida.editorialaces.com/wp-content/uploads/2017/05/diseno-en-la-naturaleza-portada.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="https://www.elcomercio.com/files/og_thumbnail/uploads/2019/05/01/5cc9bded378ed.jpeg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="siguienteSlide(-1)">&#10094;</a>
+    <a class="next" onclick="siguienteSlide(1)">&#10095;</a>
+  </div>
+  <br>
 </body>
 <script src="./script.js"></script>
 </html>
