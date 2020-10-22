@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <form action="" name="passGen">
+  <div class="contenedor">
+    <form action="" name="generarPassword">
         <div>
-        <input type="text" size="18" name="output" placeholder="Contraseña" disabled>
-        <div><input type="text" name="length" size="3" value="6"></div>
+        <input id="myInput" class="pulp" type="text" name="salida" placeholder="Contraseña" disabled>
+        <input type="text" class="bulp" name="length" value="10">
         <input type="button" value="Generar Contraseña" onclick="populateForm(this.form.length.value)"><br>
-        
     </form>
     </div>
   </div>
