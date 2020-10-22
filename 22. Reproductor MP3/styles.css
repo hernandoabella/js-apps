@@ -1,9 +1,10 @@
 .container{
   background: #0f0;
   font-size: 1.3em;
-  width: 300px;
+  width: 200px;
   border-radius: 5px;
   padding: 10px;
+  max-width: 500px;
 }
 
 .container input{
