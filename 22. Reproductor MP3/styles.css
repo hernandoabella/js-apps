@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 .container{
   background: #0f0;
   font-size: 1.3em;
-  width: 200px;
+  width: 400px;
   border-radius: 5px;
   padding: 10px;
-  max-width: 500px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.container input{
+input[type=text]{
   padding: 10px;
   border-radius: 5px;
+  background: #fff;
+  border: none;
+}
+
+input[type=button]{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 10px 0px;
+  width: 150px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+input[type=button]:hover{
+  background: rgb(23, 170, 23);
+  color: #fff;
 }
