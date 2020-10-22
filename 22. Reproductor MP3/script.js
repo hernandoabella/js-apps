@@ -1,24 +1,15 @@
-var indice = 1;
-mostrarSlides(indice);
+var keylist = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%&*/\?";
+var temp = "";
 
-function siguienteSlide(n) {
-  mostrarSlides(indice += n);
+function generatePass(pLength) {
+    temp = "";
+    for (var i = 0; i < pLength; i++) {
+        temp += keylist.charAt(Math.floor(Math.random() * keylist.length))
+    }
+    return temp;
 }
 
-function slideActual(n) {
-  mostrarSlides(indice = n);
-}
-
-function mostrarSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {indice = 1}
-  if (n < 1) {indice = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  
-  slides[indice-1].style.display = "block";
-  
+function populateForm(enterLength) {
+    document.passGen.output.value = generatePass(enterLength);
 }
 
