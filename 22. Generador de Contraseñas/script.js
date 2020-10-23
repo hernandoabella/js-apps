@@ -12,3 +12,11 @@ function generatePass(pLength) {
 function populateForm(enterLength) {
     document.generarPassword.salida.value = generatePass(enterLength);
 }
+
+const copiar = () =>{
+    var copyText = document.getElementById('myInput');
+
+    copyText.select();
+    document.execCommand('copy');
+    
+}
