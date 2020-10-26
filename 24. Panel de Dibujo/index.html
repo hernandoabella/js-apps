@@ -8,33 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="contenedor">
-    <div class="love">
-    <div id="color-display"></div> 
-    </div>
-    
-    <div class="squares" id="container">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>    
-    
-
-    <div id="stripe">
-      
-      <button id="reset">Nuevos Colores</button>
-      
-      <button class="mode">fácil</button>
-      <button class="mode selected">difícil</button>
-      
-    </div>
-
-    <span id="message"></span>
-    
-  </div>
+  <canvas id="canvas" width="800" height="800"></canvas>
+        <div class="toolbox">
+            <button id="decrease">-</button>
+            <span id="size">30</span>
+            <button id="increase">+</button>
+            <input type="color" id="color" />
+            <button id="clear">💩</button>
+        </div>
 </body>
 <script src="./script.js"></script>
 </html>

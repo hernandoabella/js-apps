@@ -1,108 +1,87 @@
-var numeroCuadros = 6;
-var colores = [];
-var pickedColor;
+const canvas = document.getElementById("canvas");
+const increaseBtn = document.getElementById("increase");
+const decreaseBtn = document.getElementById("decrease");
+const sizeEl = document.getElementById("size");
+const colorEl = document.getElementById("color");
+const clearEl = document.getElementById("clear");
+const ctx = canvas.getContext("2d");
 
-var squares = document.querySelectorAll(".square");
-var colorDisplay = document.querySelector("#color-display");
-var messageDisplay = document.querySelector("#message");
-var love = document.querySelector(".love");
-var resetButton = document.querySelector("#reset");
-var modeButtons = document.querySelectorAll(".mode");
-var easyButton = document.querySelector(".mode");
+let size = 30;
+let isPressed = false;
+let color = "black";
+let x = undefined;
+let y = undefined;
 
-iniciar();
+canvas.addEventListener("mousedown", (e) => {
+    isPressed = true;
 
-function iniciar() {
-	colorDisplay.textContent = pickedColor;
-	setupSquares();
-	setupMode();
-	reset();
-}
-
-resetButton.addEventListener("click", function() {
-	reset();
+    x = e.offsetX;
+    y = e.offsetY;
 });
 
-function setupSquares() {
-	for (var i = 0; i < squares.length; i++) {
-		squares[i].style.backgroundColor = colores[i];
-		squares[i].addEventListener("click", function() {
-			var clickedColor = this.style.backgroundColor;
-			if(clickedColor === pickedColor) {
-				messageDisplay.textContent = "¡Correcto!";
-				resetButton.textContent = "Juego Nuevo";
-				cambiarColores(pickedColor);
-			}
-			else {
-                this.style.backgroundColor = "#232323";
-				messageDisplay.textContent = "Inténtalo nuevamente";
-			}
-		});
-	}
+canvas.addEventListener("mouseup", (e) => {
+    isPressed = false;
+
+    x = undefined;
+    y = undefined;
+});
+
+canvas.addEventListener("mousemove", (e) => {
+    if (isPressed) {
+        const x2 = e.offsetX;
+        const y2 = e.offsetY;
+
+        drawCircle(x2, y2);
+        drawLine(x, y, x2, y2);
+        x = x2;
+        y = y2;
+    }
+});
+
+function drawCircle(x, y) {
+    ctx.beginPath();
+    ctx.arc(x, y, size, 0, Math.PI * 2);
+    ctx.fillStyle = color;
+    ctx.fill();
 }
 
-function setupMode() {
-	for(var i = 0; i < modeButtons.length; i++) {
-		modeButtons[i].addEventListener("click", function() {
-			for (var i = 0; i < modeButtons.length; i++) {
-				modeButtons[i].classList.remove("selected");
-			}
-			this.classList.add("selected");
-			if (this.textContent === "fácil") {
-				numeroCuadros = 3;
-			}
-			else {
-				numeroCuadros = 6;
-			}
-			reset();
-		});
-	}
+function drawLine(x1, y1, x2, y2) {
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = size * 2;
+    ctx.stroke();
 }
 
-function reset() {
-	colores = genRandomColors(numeroCuadros);
-	pickedColor = elegirColor();
-	colorDisplay.textContent = pickedColor;
-	resetButton.textContent = "Nuevos Colores";
-	messageDisplay.textContent = "";
-	for (var i = 0; i < squares.length; i++) {
-		if(colores[i]) { 
-			squares[i].style.display = "block";
-			squares[i].style.backgroundColor = colores[i];
-		}
-		else {
-			squares[i].style.display = "none";
-		}
-	}
+increaseBtn.addEventListener("click", () => {
+    size += 5;
+
+    if (size > 50) {
+        size = 50;
+    }
+
+    updateSizeOnScreen();
+});
+
+decreaseBtn.addEventListener("click", () => {
+    size -= 5;
+
+    if (size < 5) {
+        size = 5;
+    }
+
+    updateSizeOnScreen();
+});
+
+colorEl.addEventListener("change", (e) => {
+    color = e.target.value;
+});
+
+clearEl.addEventListener("click", () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
+function updateSizeOnScreen() {
+    sizeEl.innerText = size;
 }
-
-function cambiarColores(color) {
-	for(var i = 0; i < squares.length; i++) {
-		squares[i].style.backgroundColor = color;
-		love.style.backgroundColor = color;
-	}
-}
-
-function elegirColor() {
-	var random = Math.floor(Math.random() * colores.length);
-	return colores[random];
-}
-
-function genRandomColors(num) {
-	var arr = [];
-	for (var i = 0; i < num; i++) {
-		arr.push(crearColor());
-	}
-	return arr;
-}
-
-function crearColor() {
-	var r = Math.floor(Math.random() * 256);
-	var g = Math.floor(Math.random() * 256);
-	var b = Math.floor(Math.random() * 256);
-	return "rgb(" + r + ", " + g + ", " + b + ")"; 
-}
-
-
-
-

@@ -1,85 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-	font-family: "Raleway", Sans-serif;
-	font-size: 62.5%; /*1 em = 10px */
-	margin: 0;
+   
+   
+    
 }
 
-.contenedor{
-   width: 300px;
-   margin: 100px auto;
-   background: rgb(99, 157, 161);
-   padding: 10px;
-   border-radius: 5px;
-   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+canvas {
+    border: 2px solid rebeccapurple;
 }
 
-.love{
-   border-radius: 5px;
-   border: none;
-   background: rgb(40, 13, 156);
-   color: #fff;
-   padding: 10px;
+.toolbox {
+    background-color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    display: flex;
+    padding: 1rem;
+    width: 804px;
 }
 
-#color-display{
-   font-size: 2em;
-   text-align: center;
-   border-radius: 5px;
-   border: none;
-   outline: none;
+.toolbox > * {
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    height: 50px;
+    width: 50px;
 }
 
-.squares{
-   display: flex;
-   flex-wrap: wrap;
-   margin: auto;
+.toolbox > *:last-child {
+    margin-left: auto;
 }
-
-.square {
-   width: 40px;
-   height: 40px;
-   border-radius: 5px;
-	background-color: purple;
-   transition: background .5s;
-   margin: 50px auto;
-} 
-
-#stripe {
-	text-align: center;
-   color: black;
-   display: flex;
-}
-
-#message {
-	text-transform: uppercase;
-   font-size: 1.5em;
-   background: #40cada;
-}
-	
-button {
-   outline: none;
-   border-radius: 5px;
-	font-family: "Raleway", Sans-serif;
-	text-transform: uppercase;
-	font-size: 1.5em;
-   margin: 10px;
-   transition: all 0.3s;
-   padding: 10px;
-   cursor: pointer;
-}
-
-button:hover {
-	background-color: #67cc5a;
-	
-}
-
-.selected {
-	background-color: #67cc5a;
-}
-
-
-
-
-
