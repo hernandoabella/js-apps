@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +7,12 @@
 }
 
 body {
+    font-family: 'PT Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Nunito Sans', sans-serif;
-    background : linear-gradient(177deg, rgb(206, 255, 73) 0%, rgba(18,25,59,1) 100%);
+    background : linear-gradient(177deg, rgb(73, 255, 134) 0%, rgba(18,25,59,1) 100%);
 }
 
 .wrapper {
@@ -18,9 +20,8 @@ body {
     width: 600px;
     background-color: #ddd;
     text-align: center;
-    border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 0 0 15px black;
+   
 }
 
 h1 {
@@ -72,21 +73,23 @@ option {
     color: #000;
 }
 
-.swap {
+.cambiar {
     align-self: flex-end;
     margin: 5px;
     padding: 5px 50px;
-    background-image: linear-gradient(177deg, rgba(104,147,255,1) 0%, rgba(70,203,108,0.9075960309317942) 87%);
+    background: #000;
     font-size: 30px;
     border: none;
-    border-radius: 30px;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
+    outline: none;
+    transition: .5s;
 }
 
-.swap:focus {
-    outline: none;
-    background-image: linear-gradient(177deg, rgba(78,109,187,1) 0%, rgba(61,171,92,0.9075960309317942) 87%);
+.cambiar:hover{
+    background: rgb(73, 255, 134);
+    color: #000;
 }
 
 .rate-info {

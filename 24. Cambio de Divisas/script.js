@@ -1,5 +1,5 @@
-const currencyFirst = document.querySelector('#currency-first');
-const currencySecond = document.querySelector('#currency-second');
+const primeraMoneda = document.querySelector('#primera-moneda');
+const segundaMoneda = document.querySelector('#segunda-moneda');
 const amountFirst = document.querySelector('.amount-first');
 const amountSecond = document.querySelector('.amount-second');
 const swapBtn = document.querySelector('.swap');
@@ -9,12 +9,12 @@ let url;
 
 const calc = () => {
 
-    fetch(`https://api.ratesapi.io/api/latest?base=${currencyFirst.value}&symbols=${currencySecond.value}`)
+    fetch(`https://api.ratesapi.io/api/latest?base=${primeraMoneda.value}&symbols=${segundaMoneda.value}`)
     .then(res => res.json())
     .then(data => {
 
-        let currencyOne = currencyFirst.value;
-        let currencyTwo = currencySecond.value;
+        let currencyOne = primeraMoneda.value;
+        let currencyTwo = segundaMoneda.value;
 
         const rate = data.rates[currencyTwo];
         rateInfo.textContent = `1 ${currencyOne} = ${rate.toFixed(4)} ${currencyTwo}`;
@@ -24,14 +24,14 @@ const calc = () => {
 }
 
 const change = () => {
-    let tempCurrency = currencyFirst.value;
-    currencyFirst.value = currencySecond.value;
-    currencySecond.value = tempCurrency;
+    let tempCurrency = primeraMoneda.value;
+    primeraMoneda.value = segundaMoneda.value;
+    segundaMoneda.value = tempCurrency;
     calc();
 }
 
-currencyFirst.addEventListener('change', calc);
-currencySecond.addEventListener('change', calc);
+primeraMoneda.addEventListener('change', calc);
+segundaMoneda.addEventListener('change', calc);
 amountFirst.addEventListener('input', calc);
 swapBtn.addEventListener('click', change);
 
