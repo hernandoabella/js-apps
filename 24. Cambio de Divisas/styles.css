@@ -10,12 +10,12 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
-    background : linear-gradient(177deg, rgba(91,109,156,1) 0%, rgba(18,25,59,1) 100%);
+    background : linear-gradient(177deg, rgb(206, 255, 73) 0%, rgba(18,25,59,1) 100%);
 }
 
 .wrapper {
     padding: 50px;
-    width: 900px;
+    width: 600px;
     background-color: #ddd;
     text-align: center;
     border: 1px solid black;
@@ -24,14 +24,12 @@ body {
 }
 
 h1 {
-    margin-bottom: 16px;
-    font-size: 36px;
+    margin-bottom: 10px;
+    
 }
 
 p {
-    margin-bottom: 50px;
-    font-size: 25px;
-    font-weight: 200;
+    margin-bottom: 30px;
 }
 
 .app-body {
@@ -49,7 +47,7 @@ p {
 input {
     margin-bottom: 10px;
     width: 100%;
-    font-size: 60px;
+    font-size: 3em;
 }
 
 input, select {
@@ -92,6 +90,6 @@ option {
 }
 
 .rate-info {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
