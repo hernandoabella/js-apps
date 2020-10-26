@@ -2,7 +2,7 @@ const primeraMoneda = document.querySelector('#primera-moneda');
 const segundaMoneda = document.querySelector('#segunda-moneda');
 const amountFirst = document.querySelector('.amount-first');
 const amountSecond = document.querySelector('.amount-second');
-const swapBtn = document.querySelector('.swap');
+const botonCambiar = document.querySelector('.cambiar');
 const rateInfo = document.querySelector('.rate-info');
 
 let url;
@@ -33,7 +33,7 @@ const change = () => {
 primeraMoneda.addEventListener('change', calc);
 segundaMoneda.addEventListener('change', calc);
 amountFirst.addEventListener('input', calc);
-swapBtn.addEventListener('click', change);
+botonCambiar.addEventListener('click', change);
 
 calc();
 
