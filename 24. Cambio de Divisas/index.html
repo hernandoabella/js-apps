@@ -8,7 +8,39 @@
 </head>
 <body>
 
-
+    <div class="wrapper">
+        <h1>Currency Exchange Application</h1>
+        <p>Sprawdź aktualne kursy różnych walut!</p>
+      
+        <div class="app-body">
+            <div class="section-left">
+                <input type="number" class="amount-first" value="1">
+                <select id="currency-first">
+                    <option value="PLN" selected>PLN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+      
+            <button class="swap">Cambiar</button>
+      
+      
+            <div class="section-right">
+                <input type="text" class="amount-second" disabled>
+                <select id="currency-second">
+                    <option value="PLN">PLN</option>
+                    <option value="EUR" selected>EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                    <option value="CHF">CHF</option>
+                </select>
+            </div>
+        </div>
+      
+        <p class="rate-info"></p>
+      </div>
 <script src="./script.js"></script>    
 </body>
 </html>
