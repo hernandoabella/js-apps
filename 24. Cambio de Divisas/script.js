@@ -1,7 +1,7 @@
 const primeraMoneda = document.querySelector('#primera-moneda');
 const segundaMoneda = document.querySelector('#segunda-moneda');
-const amountFirst = document.querySelector('.amount-first');
-const amountSecond = document.querySelector('.amount-second');
+const primeraCantidad = document.querySelector('.primera-cantidad');
+const segundaCantidad = document.querySelector('.segunda-cantidad');
 const botonCambiar = document.querySelector('.cambiar');
 const rateInfo = document.querySelector('.rate-info');
 
@@ -19,7 +19,7 @@ const calc = () => {
         const rate = data.rates[currencyTwo];
         rateInfo.textContent = `1 ${currencyOne} = ${rate.toFixed(4)} ${currencyTwo}`;
 
-        amountSecond.value = (amountFirst.value * rate).toFixed(2);
+        segundaCantidad.value = (primeraCantidad.value * rate).toFixed(2);
     });
 }
 
@@ -32,7 +32,7 @@ const change = () => {
 
 primeraMoneda.addEventListener('change', calc);
 segundaMoneda.addEventListener('change', calc);
-amountFirst.addEventListener('input', calc);
+primeraCantidad.addEventListener('input', calc);
 botonCambiar.addEventListener('click', change);
 
 calc();
