@@ -1,4 +1,4 @@
-const message = document.querySelector('.message');
+const mensaje = document.querySelector('.message');
 const button = document.querySelector('button');
 const gameArea = document.querySelector('.gameArea');
 const results = document.querySelector('.results');
@@ -7,16 +7,16 @@ let inPlay = false;
 let playArea = {};
 let count = 0;
 
-function showMessage(notification){
-    message.innerHTML = `<h3>${notification}</h3>`;
+function mostrarMensaje(notification){
+    mensaje.innerHTML = `<h3>${notification}</h3>`;
 }
 
-function showBox(){
-    playArea.timer = setTimeout(myBox, random(4000));
+function mostrarCaja(){
+    playArea.timer = setTimeout(miCaja, random(4000));
 }
 
-function myBox(){
-    //create a shape element
+function miCaja(){
+    //crea la forma del elemento
     let element = document.createElement('div');
     element.classList.add('box');
     element.style.top = random(setTopMargin()) + 'px';
@@ -27,17 +27,17 @@ function myBox(){
     gameArea.appendChild(element);
 }
 
-// Pick a random hex color
+// Elige un color hexadecimal aleatorio
 function getColor(){
     function col(){
         let hex = random(255).toString(16);
-        //always return 2 values, even if a 0 is apended
+        //Siempre retorna dos valores, incluso si se agrega un 0
         return ('0' + String(hex)).substr(-2);
     }
     return '#' + col() + col() + col();
 }
 
- //Adjust top margin so circle is not on the edge
+ //Ajusta el alto del margen para que no se salga del borde
 function setTopMargin(){
     let maxHeight = gameArea.clientHeight;
     if (maxHeight <= 100){
@@ -48,7 +48,7 @@ function setTopMargin(){
     return maxHeight;
 }
 
-//Adjust left margin so circle is not on the edge
+//Ajusta el margen izquierdo para que no se salga del borde
 function setLeftMargin(){
     let maxWidth = gameArea.clientWidth;
     if (maxWidth <= 100){
@@ -67,20 +67,20 @@ function hit(e){
     let maxDuration = 1;
     
     clearTimeout(playArea.timer);
-    showMessage('It took you ' + duration + ' seconds to click');
+    mostrarMensaje('¡Te tomó ' + duration + ' segundos en hacer clic!');
     if (duration > maxDuration){
         gameArea.children[0].remove();
-        results.innerHTML = `Too Slow! <span id="loser">You Lose!</span> Your score was ${count}.<br> Click the start button to play again!`;
+        results.innerHTML = `¡Eres demasiado lento! <span id="loser">¡Perdiste!</span> Tu puntuación fue ${count}.<br> ¡Clica el botón empezar para empezar el juego nuevamente!`;
         resetGame();
     } else {
         gameArea.children[0].remove();
-        playArea.timer = setTimeout(myBox, random(4000));
+        playArea.timer = setTimeout(miCaja, random(4000));
         count++;
         if (count === 15){
-            results.innerHTML = `You reached ${renderCount(count)}! <span id="winner">You win!</span> <br> Click start to Play again.`;
+            results.innerHTML = `Has alcanzado ${renderCount(count)}! <span id="winner">¡Ganaste!</span> <br> Clica empezar para iniciar el juego nuevamente`;
             resetGame();
         } else {
-            results.innerHTML = `Score: ${renderCount(count)} of 15`;
+            results.innerHTML = `Puntuación: ${renderCount(count)} of 15`;
         }
     }
 }
@@ -100,18 +100,18 @@ function resetGame(){
     button.style.display = 'block';
 }
 
-showMessage('Click Start to Begin!');
+mostrarMensaje('¡Haz clic en empezar para iniciar el juego!');
 
 button.addEventListener('click', function(){
-    //start game play
+    //Inicia el juego
         inPlay = true;
-        //hide the button
+        //Oculta el botón
         button.style.display = 'none';
         directions.style.display = 'none';
         results.innerHTML = '';
         count = 0;
-    //notify user of start
-    showMessage('Starting...');
+    //Notifica al usuario que va a comenzar
+    mostrarMensaje('Empezando...');
 
-    showBox();
+    mostrarCaja();
 })
