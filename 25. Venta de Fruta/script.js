@@ -1,8 +1,8 @@
-const addButton = document.getElementById('add-btn');
-const list = document.getElementById('list');
-const fruitInput = document.getElementById('fruit-name');
-const priceInput = document.getElementById('fruit-price');
-const quantityInput = document.getElementById('fruit-quantity');
+const agregarBoton = document.getElementById('add-btn');
+const lista = document.getElementById('list');
+const entradaFruta = document.getElementById('fruit-name');
+const entradaPrecio = document.getElementById('fruit-price');
+const entradaCantidad = document.getElementById('fruit-quantity');
 const totalPrice = document.getElementById('total-price');
 const fruitBasket = document.getElementById('fruit-basket');
 const totalDiv = document.getElementById('total-div');
@@ -12,11 +12,11 @@ let total = 0;
 
 const state = {};
 
-addButton.addEventListener('click', (e)=> {
+agregarBoton.addEventListener('click', (e)=> {
     e.preventDefault();
-    const fruitName = capitalize(fruitInput.value);
-    const fruitPrice = priceInput.value;
-    const fruitQuantity = quantityInput.value;
+    const fruitName = capitalize(entradaFruta.value);
+    const fruitPrice = entradaPrecio.value;
+    const fruitQuantity = entradaCantidad.value;
     if(fruitName !== '' && !fruitList.includes(fruitName)) {
 
         state[`${fruitName}`] = { 
@@ -29,14 +29,14 @@ addButton.addEventListener('click', (e)=> {
         renderList();
 
         total += parseFloat(fruitPrice) * parseInt(fruitQuantity);
-        fruitInput.value = '';
-        quantityInput.value = '1';
-        priceInput.value = '';
+        entradaFruta.value = '';
+        entradaCantidad.value = '1';
+        entradaPrecio.value = '';
         renderTotal();
     }
 });
 
-list.addEventListener('click', (e)=>{
+lista.addEventListener('click', (e)=>{
     const element = e.target;
     if(element.classList[0] === 'button') {
         const elementNode = element.parentElement;
@@ -65,14 +65,14 @@ totalPrice.addEventListener('click', () => {
 })
 
 fruitBasket.addEventListener('click', () => {
-    list.classList.toggle('hidden');
+    lista.classList.toggle('hidden');
 })
 
 const renderList = () => {
-    list.innerHTML = '';
+    lista.innerHTML = '';
     
     //console.log(quantityInput.value);
-    // Setting the items in alphabetical order
+    // Ajustando los items en orden alfabetico
     fruitList.sort();
     fruitList.forEach((fruit) => {        
 
@@ -81,7 +81,7 @@ const renderList = () => {
                 <p class="large">${fruit}</p>
                 <button type="button" class="button col-sm-2 remove-btn" data-name="${fruit}" data-price="${state[`${fruit}`].price}" data-quantity="${state[`${fruit}`].quantity}">Remove</button>
             </div>`;    
-        list.insertAdjacentHTML('beforeend', itemHtml);
+        lista.insertAdjacentHTML('beforeend', itemHtml);
     })
 }
 
