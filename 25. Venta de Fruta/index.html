@@ -12,21 +12,20 @@
     <h1>Venta de Fruta</h1>
 
 
-<div class="contenedor">
-    <div>
-        <form class="was-validation pl-sm-2 bg-dark">
-         <div class="form-row pr-2">
-            <label for="fruit-name" class="col-sm-4 text-left fruit-input">Fruit Name : </label>
-            <input type="text" class='col-sm-7 mb-sm-2 form-control' id="fruit-name" name="fruit-name" placeholder="Fruit name" required>
+
+        <form class="contenedor">
+         <div>
+            <label for="nombre-fruta" class="col-sm-4 text-left fruit-input">Nombre Fruta : </label>
+            <input type="text" class='col-sm-7 mb-sm-2 form-control' id="fruit-name"  placeholder="Escribe el nombre de la fruta" required>
          </div>
                 
-            <div class="form-row pr-2">
-                <label for="fruit-price" class="col-sm-4 text-left fruit-input">Fruit Price : </label>
+            <div>
+                <label for="fruit-price" class="col-sm-4 text-left fruit-input">Precio Fruta : </label>
                 <input type="number" class="col-sm-7 mb-sm-2 form-control" id="fruit-price" name="fruit-price" placeholder="15.50" required>
             </div> 
 
             <div class="form-row pr-2 form-group">
-                <label for="fruit-quantity" class="col-sm-4 text-left fruit-input">Quantity : </label>
+                <label for="fruit-quantity" class="col-sm-4 text-left fruit-input">Cantidad : </label>
                 <select name="fruit-quantity" class="col-sm-7 form-control" id="fruit-quantity">
                     <option value="1">1</option>
                     <option value="5">5</option>
@@ -35,23 +34,22 @@
             </div>
                 
             <div class="container">
-                <button type="submit" class="btn btn-success btn-block" id="add-btn">Add</button> <br>
-                <button type="button" class="btn btn-info mb-sm-2" id="fruit-basket">View Fruit Basket</button>
-                <button type="button" class="btn btn-info mb-sm-2" id="total-price">View Total Price</button>
+                <button type="submit" class="btn btn-success btn-block" id="add-btn">Agregar</button> <br>
+                <button type="button" class="btn btn-info mb-sm-2" id="fruit-basket">Canasta de Frutas</button>
+                <button type="button" class="btn btn-info mb-sm-2" id="total-price">Precio Total</button>
             </div>
         </form>
 
-        <div class="total bg-warning hidden" id="total-div">
-            <!-- <p class="display-4">Total: 100</p> -->
+        <div class="resultado">
+            <div id="total-div">
+                <p class="display-4">Total: 0</p>
+            </div>
+    
+            <div id="list">
+            
+            </div>
         </div>
-    </div>
-
-    <div class="col-sm-8 container-fluid hidden" id="list">
-        <!-- <div class="mt-sm-3 bg-light alert flexview">
-            <p class="large">Dummy data</p>
-            <button type="button" class="col-sm-2 remove-btn">Remove</button>
-        </div> -->
-    </div>
+    
 </div>
 
 </div>
