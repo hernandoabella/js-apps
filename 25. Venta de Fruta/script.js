@@ -77,9 +77,9 @@ const renderList = () => {
     fruitList.forEach((fruit) => {        
 
         itemHtml = `
-            <div class="mt-sm-3 bg-light alert flexview">
+            <div>
                 <p class="large">${fruit}</p>
-                <button type="button" class="button col-sm-2 remove-btn" data-name="${fruit}" data-price="${state[`${fruit}`].price}" data-quantity="${state[`${fruit}`].quantity}">Remove</button>
+                <button type="button" class="button col-sm-2 remove-btn" data-name="${fruit}" data-price="${state[`${fruit}`].price}" data-quantity="${state[`${fruit}`].quantity}">Remover</button>
             </div>`;    
         lista.insertAdjacentHTML('beforeend', itemHtml);
     })
