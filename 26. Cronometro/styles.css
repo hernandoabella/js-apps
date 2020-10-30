@@ -1,0 +1,41 @@
+body{
+   background: coral;
+   height: 100%;
+}
+.container{
+   width: 800px;
+   margin: 150px auto;
+   color: #fff;
+   text-align: center;
+   
+}
+h2{
+   font-family: "Roboto", sans-serif;
+   font-weight: 100;
+   font-size: 2.6em;
+   text-transform: uppercase;
+}
+#seconds, #tens, .dots{
+   font-size: 2em;
+   font-weight: bold;
+}
+button{
+   border-radius: 5px;
+   background: coral;
+   color: #fff;
+   border: 1px solid #fff;
+   text-decoration: none;
+   cursor: pointer;
+   font-size: 1.2em;
+   padding: 18px 10px;
+   width: 150px;
+   margin: 10px;
+   outline: none;
+   margin-top: 20px;
+}
+button:hover{
+   transition: all 0.5s ease-in-out;
+   background: #fff;
+   color: coral;
+   border: 1px solid #fff;
+}

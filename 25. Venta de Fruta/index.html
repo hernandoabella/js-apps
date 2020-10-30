@@ -8,35 +8,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
     <h1>Venta de Fruta</h1>
-
-
-
         <form class="contenedor">
          <div>
-            <label for="nombre-fruta" class="col-sm-4 text-left fruit-input">Nombre Fruta : </label>
-            <input type="text" class='col-sm-7 mb-sm-2 form-control' id="fruit-name"  placeholder="Escribe el nombre de la fruta" required>
+            <label for="nombre-fruta" class="fruit-input">Nombre Fruta : </label>
+            <input type="text" id="fruit-name"  placeholder="Escribe el nombre de la fruta" required>
          </div>
                 
             <div>
-                <label for="fruit-price" class="col-sm-4 text-left fruit-input">Precio Fruta : </label>
-                <input type="number" class="col-sm-7 mb-sm-2 form-control" id="fruit-price" name="fruit-price" placeholder="15.50" required>
+                <label for="fruit-price" class="fruit-input">Precio Fruta : </label>
+                <input type="number" id="fruit-price" name="fruit-price" placeholder="15.50" required>
             </div> 
 
-            <div class="form-row pr-2 form-group">
-                <label for="fruit-quantity" class="col-sm-4 text-left fruit-input">Cantidad : </label>
-                <select name="fruit-quantity" class="col-sm-7 form-control" id="fruit-quantity">
+            <div>
+                <label for="fruit-quantity" class="fruit-input">Cantidad : </label>
+                <select name="fruit-quantity" id="fruit-quantity">
                     <option value="1">1</option>
                     <option value="5">5</option>
-                       <option value="10">10</option>
+                    <option value="10">10</option>
                 </select>
             </div>
                 
             <div class="container">
-                <button type="submit" class="btn btn-success btn-block" id="add-btn">Agregar</button> <br>
-                <button type="button" class="btn btn-info mb-sm-2" id="fruit-basket">Canasta de Frutas</button>
-                <button type="button" class="btn btn-info mb-sm-2" id="total-price">Precio Total</button>
+                <button type="submit" id="add-btn">Agregar</button><br>
+                <button type="button" id="fruit-basket">Canasta de Frutas</button>
+                <button type="button" id="total-price">Precio Total</button>
             </div>
         </form>
 

@@ -79,7 +79,8 @@ const renderList = () => {
         itemHtml = `
             <div>
                 <p class="large">${fruit}</p>
-                <button type="button" class="button col-sm-2 remove-btn" data-name="${fruit}" data-price="${state[`${fruit}`].price}" data-quantity="${state[`${fruit}`].quantity}">Remover</button>
+                <button type="button" class="button col-sm-2 remove-btn" data-name="${fruit}" 
+                data-price="${state[`${fruit}`].price}" data-quantity="${state[`${fruit}`].quantity}">Remover</button>
             </div>`;    
         lista.insertAdjacentHTML('beforeend', itemHtml);
     })
@@ -95,3 +96,4 @@ const renderTotal = () => {
 const capitalize = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
