@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap');
+
 body{
    background: coral;
    height: 100%;
+   font-family: 'Trispace', sans-serif;
 }
+
 .container{
    width: 800px;
    margin: 130px auto;
@@ -11,7 +15,7 @@ body{
    width: 300px;
    border-radius: 5px;
    padding: 10px;
-   
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 }
 
 #seconds, #tens, .dots{
