@@ -4,24 +4,23 @@ body{
 }
 .container{
    width: 800px;
-   margin: 150px auto;
+   margin: 130px auto;
    color: #fff;
    text-align: center;
+   background: rgb(44, 78, 139);
+   width: 300px;
+   border-radius: 5px;
+   padding: 10px;
    
 }
-h2{
-   font-family: "Roboto", sans-serif;
-   font-weight: 100;
-   font-size: 2.6em;
-   text-transform: uppercase;
-}
+
 #seconds, #tens, .dots{
    font-size: 2em;
    font-weight: bold;
 }
 button{
    border-radius: 5px;
-   background: coral;
+   background: rgb(91, 148, 255);
    color: #fff;
    border: 1px solid #fff;
    text-decoration: none;
