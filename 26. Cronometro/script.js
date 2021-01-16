@@ -9,7 +9,6 @@ window.onload = function(){
     var botonReiniciar = this.document.getElementById("button-reset");
 
     var Interval;
-
                
     function iniciarTemporizador(){
 		decenas++;
@@ -54,6 +53,6 @@ window.onload = function(){
         appendTens.innerHTML = decenas;
         appendSeconds.innerHTML = segundos;
     }
-
            
 }
+

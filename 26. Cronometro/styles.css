@@ -22,6 +22,7 @@ body{
    font-size: 2em;
    font-weight: bold;
 }
+
 button{
    border-radius: 5px;
    background: rgb(91, 148, 255);
@@ -42,3 +43,4 @@ button:hover{
    color: coral;
    border: 1px solid #fff;
 }
+
