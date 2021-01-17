@@ -15,6 +15,8 @@ body{
 h2{
     text-align: center;
     padding: 20px;
+    color: #214151;
+    background-color: #a2d0c1;
 }
 
 .container{
@@ -23,27 +25,34 @@ h2{
     top: 50%;
     left: 50%;
     background: #a2d0c1;
+    
     padding: 20px;
     border-radius: 5px;
+    width: 400px;
+    display: flex;
 }
 
 .entrada{
     padding: 10px;
     outline: none;
     border: none;
+    width: 60%;
+    margin-right: 10px;
 }
 
 .boton{
     padding: 10px;
     outline: none;
     border: none;
-    transition: .4s;
+    transition: .3s;
     cursor: pointer;
+    width: 40%;
 }
 
 .boton:hover{
     background: #214151;
     color: #fff;
+    transform: translateY(-5px);
 }
 
 .entrada, .boton{
