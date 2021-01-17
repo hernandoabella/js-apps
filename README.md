@@ -1,5 +1,3 @@
-https://hernandoabella.github.io/javascript-apps/
-
 # Aplicaciones JS
 
 *Aplicaciones creadas con HTML, CSS y JAVASCRIPT.*
