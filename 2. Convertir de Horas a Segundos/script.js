@@ -7,13 +7,11 @@ let btn = document.getElementById('btn');
 function convertir(hora){
    let formula = hora.value * minutos * 60;
    resultado.innerHTML = formula + ' segundos ';
-   resultado.style.visibility = 'visible';
+   resultado.style.display = "block";
    return resultado;
 }
 
-btn.addEventListener('click', () =>{
-   resultado.style.display = "block";
-});
+
 
 
 

@@ -79,5 +79,6 @@ h2{
 @keyframes crackAnimation{
     0%{
         opacity: 0;
+        left: -50%;
     }
 }
