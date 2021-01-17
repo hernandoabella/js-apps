@@ -1,0 +1,15 @@
+/* Importación de fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Animación */
+
+#saludo{
+    animation: crazyAnimation 3s;
+}
+
+@keyframes crazyAnimation{
+    50%{
+        opacity: 0;
+    }
+}

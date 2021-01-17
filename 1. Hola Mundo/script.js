@@ -8,8 +8,8 @@ saludo.style.transform = 'translate(-50%, -50%)';
 saludo.style.top = '50%';
 saludo.style.left = '50%';
 saludo.style.color = 'red';
-saludo.style.fontSize = '30px';
-
+saludo.style.fontSize = '20px';
+saludo.style.fontFamily = 'Montserrat, sans-serif';
 
 
 
