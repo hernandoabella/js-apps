@@ -1,7 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fraunces', serif;
+    font-size: 1.3em;
+    background-color: #f8dc81;
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.container{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #a2d0c1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.entrada{
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.boton{
+    padding: 10px;
+    outline: none;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background: #214151;
+    color: #fff;
+}
+
+.entrada, .boton{
+    border-radius: 5px;
+}
+
+.res{
+    background: #214151;
+    color: #a2d0c1;
+    position: absolute;
+    padding: 10px;
+    display: none;
+    transition: .3s;
 }
