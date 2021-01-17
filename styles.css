@@ -2,6 +2,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    font-family: 'Montserrat, sans-serif';
+    font-family: 'Montserrat', sans-serif;
+    background: #f0db4f;
+    color: #323330;
+}
+
+h1{
+    text-align: center;
+    padding: 40px;
+}
+
+ol li{
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+a{
+    color: #323330;
+    text-decoration: none;
+}
+
+a:hover{
+    color:
 }
