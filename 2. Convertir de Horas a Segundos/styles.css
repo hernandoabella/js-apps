@@ -1,56 +1,7 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-#container{
-    background: #de4463;
-    padding: 10px;
-    width: 295px;
-    border-radius: 5px;
-    font-size: 1.4em;
-}
-
-
-#hora{
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#btn{
-    background: rgb(255, 255, 255);
-    color: #000;
-    outline: none;
-    border: none;
-    transition: .5s;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-    margin-left: 10px;
-    
-}
-
-#btn:hover{
-    background:#edc988;
-    color: #000;    
-}
-
-#btn:active{
-    transform: translateY(5px);
-}
-
-#resultado{
-    border-radius: 5px;
-    display: none;
-    background: #edc988;
-    color: #000;
-    width: 295px;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-
-
-
