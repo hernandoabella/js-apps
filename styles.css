@@ -10,12 +10,7 @@ h1{
     text-align: center;
 }
 
-ol{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 80%;
-}
+
 
 ol li{
     color: #323330;
