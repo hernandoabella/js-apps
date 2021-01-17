@@ -2,8 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+body{
+    background: #11698e;
+}
+
 #saludo{
     width: 200px;
     margin: 45vh auto;
-    color: red;
+    color: #f8f1f1;
 }
