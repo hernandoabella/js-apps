@@ -37,7 +37,7 @@ h2{
     padding: 10px;
     outline: none;
     border: none;
-    transition: .3s;
+    transition: .4s;
     cursor: pointer;
 }
 
@@ -53,8 +53,22 @@ h2{
 .res{
     background: #214151;
     color: #a2d0c1;
-    position: absolute;
+    width: 400px;
+    text-align: center;
     padding: 10px;
     display: none;
     transition: .3s;
+    animation: crackAnimation 1s;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    border-radius: 5px;
+}
+
+@keyframes crackAnimation{
+    0%{
+        opacity: 0;
+    }
 }

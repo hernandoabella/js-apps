@@ -2,8 +2,6 @@
 let hora = document.getElementById('hora');
 let minutos = 60;
 let btn = document.getElementById('btn');
-let resultado = document.getElementById('resultado'); 
-
 
 //Esta función convierte las horas en segundos
 function convertir(hora){
@@ -12,6 +10,10 @@ function convertir(hora){
    resultado.style.visibility = 'visible';
    return resultado;
 }
+
+btn.addEventListener('click', () =>{
+   resultado.style.display = "block";
+});
 
 
 
