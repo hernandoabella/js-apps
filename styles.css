@@ -8,16 +8,21 @@ body{
     font-family: 'Courier New', Courier, monospace;
     background: #f0db4f;
     color: #323330;
+    font-size: 1.3em;
 }
 
 h1{
     text-align: center;
     padding: 40px;
+    font-style: italic;
+}
+
+ol{
+    margin-left: 30px;
 }
 
 ol li{
-    margin-left: 50px;
-    margin-bottom: 20px;
+    margin: 10px 50px;
 }
 
 a{
@@ -25,6 +30,20 @@ a{
     text-decoration: none;
     transition: .3s;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
+.red{
+    color: red;
+}
+
+footer{
+    padding: 20px;
+}
+
+footer p{
+    text-align: center;
+}
