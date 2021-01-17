@@ -2,7 +2,7 @@ let saludo;
 
 saludo = document.getElementById('saludo');
 
-saludo.innerHTML = 'Hola mundo'; 
+saludo.innerHTML = '<h1>¡Hola Mundo!</h1>'; 
 
 
 
