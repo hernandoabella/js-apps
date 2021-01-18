@@ -8,8 +8,7 @@
 
 body{
     font-size: 1.3em;
-    font-family: 'Bodoni Moda', serif;
-    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
     background: #ffa62b;
 }
 
@@ -65,4 +64,12 @@ button:hover{
     transform: translate(-50%, -50%);
     top: 80%;
     left: 50%;
+    display: none;
+    animation: crazyAnimation 1s;
+}
+
+@keyframes crazyAnimation{
+    0%{
+        left: -50%;
+    }
 }
