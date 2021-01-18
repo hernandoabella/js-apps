@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -8,6 +8,9 @@
 
 body{
     font-size: 1.3em;
+    font-family: 'Bodoni Moda', serif;
+    letter-spacing: 2px;
+    background: #ffa62b;
 }
 
 h2{
@@ -23,7 +26,7 @@ h2{
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    background: yellow;
+    background: #16697a;
     padding: 20px;
     border-radius: 5px;
 }
@@ -39,13 +42,27 @@ button{
     padding: 10px;
     outline: none;
     border: none;
-    background: #db6400;
-    color: #fff;
+    background: #fff;
+    color: #000;
     cursor: pointer;
     transition: .4s;
+    border-radius: 5px;
 }
 
 button:hover{
-    background: #fff;
-    color: #db6400;
+    background: #db6400;
+    color: #fff;
+}
+
+#resultado{
+    background: #db6400;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
 }
