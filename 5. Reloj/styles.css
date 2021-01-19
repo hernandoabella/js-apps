@@ -3,11 +3,12 @@
 body{
     font-family: 'Fraunces', serif;
     font-size: 1.3em;
+    background: #e7e7de;
 }
 
 .container{
     position: absolute;
-    background: #68b0ab;
+    background: #008891;
     color: #fff;
     padding: 20px;
     font-size: 2em;
@@ -21,7 +22,7 @@ body{
 }
 
 #reloj{
-    background: #377c78;
+    background: #0f3057;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
