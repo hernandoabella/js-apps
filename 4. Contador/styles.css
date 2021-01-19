@@ -1,24 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     font-size: 1.3em;
+    background: #fcf876;
+    font-family: 'Fraunces', serif;
+
 }
 
 #container{
-    background: red;
+    background: #3797a4;
     color: #fff;
     width: 300px;
     border-radius: 5px;
     padding: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
-button{
-    padding: 10px;
-    width: 50px;
+.flexStyle{
+    display: flex;
+    justify-content: space-around;
+}
+
+#numero{
+    font-size: 3em;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+#btn1, #btn2{
+    padding: 20px;
     border-radius: 5px;
     border: none;
     outline: none;
+    cursor: pointer;
+    transition: .4s;
+    background: #cee397;
 }
 
-button:hover{
-    
+#btn1:hover{
+    background: greenyellow;
+}
+
+#btn2:hover{
+    background: rgb(255, 57, 57);
+}
+
+.claseAnimacion{
+    animation: crazyAnimation .4s;
+}
+
+@keyframes crazyAnimation{
+    0%{
+        transform: rotate(-180deg);    
+    }
 }
