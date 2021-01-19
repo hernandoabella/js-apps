@@ -34,7 +34,7 @@ body{
     font-size: 3em;
     text-align: center;
     padding: 50px;
-    
+    user-select: none;
 }
 
 #btn1, #btn2{
@@ -59,8 +59,18 @@ body{
     animation: crazyAnimation .4s;
 }
 
+.claseAnimacion2{
+    animation: crazyAnimation2 .4s; 
+}
+
 @keyframes crazyAnimation{
     0%{
-        transform: rotate(-180deg);    
+        transform: rotate(-200deg);    
+    }
+}
+
+@keyframes crazyAnimation2{
+    0%{
+        transform: rotate(90deg);    
     }
 }

@@ -6,7 +6,11 @@ let btn2 = document.getElementById('btn2');
 
 const sumar = () => {
    numero.classList.remove('claseAnimacion');
-   numero.classList.add('claseAnimacion');
+   
+   window.requestAnimationFrame(() =>{
+      numero.classList.add('claseAnimacion');
+   });
+
    return numero.innerText++;
 }
 
@@ -14,7 +18,7 @@ const restar = () => {
 
       numero.classList.remove('claseAnimacion');
 
-   window.requestAnimationFrame(() =>{
+      window.requestAnimationFrame(() =>{
 
       numero.classList.add('claseAnimacion');
    })
@@ -24,6 +28,7 @@ const restar = () => {
 
 //activar contador automático: 
 //setInterval(sumar, 500);
+//setInterval(restar, 500);
 
 
 
