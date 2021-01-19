@@ -6,7 +6,6 @@ let btn2 = document.getElementById('btn2');
 
 const sumar = () => {
 
-
    removeAnimationClass();
 
    setTimeout(() =>{
