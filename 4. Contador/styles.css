@@ -55,22 +55,12 @@ body{
     background: rgb(255, 57, 57);
 }
 
-.claseAnimacion{
-    animation: crazyAnimation .4s;
+.animation{
+    animation: animation .3s;
 }
 
-.claseAnimacion2{
-    animation: crazyAnimation2 .4s; 
-}
-
-@keyframes crazyAnimation{
+@keyframes animation{
     0%{
-        transform: rotate(-200deg);    
-    }
-}
-
-@keyframes crazyAnimation2{
-    0%{
-        transform: rotate(90deg);    
+        transform: rotate(180deg);
     }
 }
