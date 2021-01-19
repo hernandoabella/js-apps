@@ -6,24 +6,23 @@ let btn2 = document.getElementById('btn2');
 
 const sumar = () => {
 
-      numero.classList.remove('animation');
 
-      setTimeout(() =>{
-         numero.classList.add('animation');
-      }, 10);
+   numero.classList.remove('animation2')
+
+   setTimeout(() =>{
+      numero.classList.add('animation');
+   }, 10);
    
    return numero.innerText++;
 }
 
 const restar = () => {
-   numero.classList.remove('animation');
    
+   numero.classList.remove('animation');
 
    setTimeout(() =>{
-      numero.classList.add('animation');
+      numero.classList.add('animation2');
    }, 10);
-      
-   
    
    return numero.innerText--;
 }

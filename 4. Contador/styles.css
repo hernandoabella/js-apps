@@ -59,8 +59,18 @@ body{
     animation: animation .3s;
 }
 
+.animation2{
+    animation: animation2 .3s;
+}
+
 @keyframes animation{
     0%{
         transform: rotate(180deg);
+    }
+}
+
+@keyframes animation2{
+    0%{
+        transform: rotate(-180deg);
     }
 }
