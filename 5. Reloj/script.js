@@ -1,6 +1,7 @@
 const reloj = document.querySelector('#reloj');
 
 const mecanismo = () => {
+   
    let tiempo = new Date();
    let horas = (tiempo.getHours() % 12);
    let minutos = tiempo.getMinutes();
