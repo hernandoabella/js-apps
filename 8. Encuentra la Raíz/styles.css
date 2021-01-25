@@ -39,11 +39,11 @@ button{
 }
 
 button:hover{
-    background: rgb(21, 214, 188);
+    background: rgb(92, 195, 255);
 }
 
 #resultado{
-    background: rgb(92, 195, 255);
+    color:rgb(4, 120, 187);
     padding: 10px;
     border-radius: 5px;
     width: 400px;
@@ -51,6 +51,7 @@ button:hover{
     font-size: 1em;
     margin: 100px auto;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
