@@ -4,9 +4,9 @@ window.onload = function(){
     var decenas = 00;
     var appendTens = document.getElementById("tens");
     var appendSeconds = document.getElementById("seconds");
-    var botonEmpezar = this.document.getElementById("button-start");
-    var botonDetener = this.document.getElementById("button-stop");
-    var botonReiniciar = this.document.getElementById("button-reset");
+    var botonEmpezar = this.document.getElementById("empezar");
+    var botonDetener = this.document.getElementById("detener");
+    var botonReiniciar = this.document.getElementById("reiniciar");
 
     var Interval;
                
