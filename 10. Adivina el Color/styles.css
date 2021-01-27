@@ -8,7 +8,6 @@ body {
 
 .contenedor{
    width: 300px;
-   margin: 100px auto;
    background: rgb(99, 157, 161);
    padding: 10px;
    border-radius: 5px;
@@ -60,7 +59,8 @@ body {
    border-radius: 5px;
    margin: auto;
    padding: 20px;
-  
+   display: none;
+   transition: .4s;
 }
 	
 button {
@@ -73,6 +73,7 @@ button {
    transition: all 0.3s;
    padding: 10px;
    cursor: pointer;
+   border: none;
 }
 
 button:hover {

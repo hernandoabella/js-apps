@@ -28,12 +28,14 @@ function setupSquares() {
 		squares[i].addEventListener("click", function() {
 			var clickedColor = this.style.backgroundColor;
 			if(clickedColor === pickedColor) {
+				messageDisplay.style.display = "block";
 				messageDisplay.textContent = "¡Correcto!";
 				resetButton.textContent = "Nuevo Juego";
 				cambiarColores(pickedColor);
 			}
 			else {
 				this.style.backgroundColor = "#232323";
+				messageDisplay.style.display = "block";
 				messageDisplay.textContent = "¡Inténtalo nuevamente!";
 			}
 		});
@@ -49,9 +51,11 @@ function setupMode() {
 			this.classList.add("selected");
 			if (this.textContent === "fácil") {
 				numeroCuadros = 3;
+				messageDisplay.style.display = "none";
 			}
 			else {
 				numeroCuadros = 6;
+				messageDisplay.style.display = "none";
 			}
 			reset();
 		});
@@ -63,7 +67,7 @@ function reset() {
 	pickedColor = elegirColor();
 	colorDisplay.textContent = pickedColor;
 	resetButton.textContent = "Nuevos Colores";
-	messageDisplay.textContent = "";
+	messageDisplay.style.display = "none";
 	for (var i = 0; i < squares.length; i++) {
 		if(colores[i]) { 
 			squares[i].style.display = "block";
