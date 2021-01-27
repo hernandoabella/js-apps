@@ -8,9 +8,13 @@ body {
 
 .contenedor{
    width: 300px;
-   background: rgb(99, 157, 161);
+   background: #1687a7;
    padding: 10px;
    border-radius: 5px;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   left: 50%;
+   top: 50%;
 }
 
 .love{
@@ -22,7 +26,7 @@ body {
 }
 
 #color-display{
-   font-size: 2em;
+   font-size: 3em;
    text-align: center;
    border-radius: 5px;
    border: none;
@@ -32,7 +36,7 @@ body {
 .squares{
    display: flex;
    flex-wrap: wrap;
-   margin: auto;
+   
 }
 
 .square {
@@ -42,6 +46,7 @@ body {
 	background-color: purple;
    transition: background .5s;
    margin: 50px auto;
+   cursor: pointer;
 } 
 
 #stripe {
@@ -54,13 +59,17 @@ body {
    text-align: center;
 	text-transform: uppercase;
    font-size: 1.5em;
-   background: #40cada;
+   background: #00e5ff;
    width: 300px;
    border-radius: 5px;
-   margin: auto;
-   padding: 20px;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 15%;
+   left: 50%;
+   padding: 10px;
    display: none;
    transition: .4s;
+   animation: crazyEffect 1s;
 }
 	
 button {
@@ -77,15 +86,20 @@ button {
 }
 
 button:hover {
-	background-color: #67cc5a;
+	background-color: #00f7ff;
 	
 }
 
 .selected {
-	background-color: #67cc5a;
+	background-color: #00ff00;
 }
 
 
+@keyframes crazyEffect{
+   0%{
+      opacity: 0;
+   }
 
+}
 
 
