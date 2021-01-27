@@ -59,7 +59,8 @@ body {
    text-align: center;
 	text-transform: uppercase;
    font-size: 1.5em;
-   background: #00e5ff;
+   background-color: #276678;
+   color: #fff;
    width: 300px;
    border-radius: 5px;
    position: absolute;
@@ -86,12 +87,14 @@ button {
 }
 
 button:hover {
-	background-color: #00f7ff;
+   background-color: #276678;
+   color: #fff;
 	
 }
 
 .selected {
-	background-color: #00ff00;
+   background-color: #276678;
+   color: #fff;
 }
 
 
@@ -99,7 +102,6 @@ button:hover {
    0%{
       opacity: 0;
    }
-
 }
 
 
