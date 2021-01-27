@@ -1,7 +1,6 @@
 var numeroCuadros = 6;
 var colores = [];
 var pickedColor;
-
 var squares = document.querySelectorAll(".square");
 var colorDisplay = document.querySelector("#color-display");
 var messageDisplay = document.querySelector("#message");
@@ -35,7 +34,7 @@ function setupSquares() {
 			}
 			else {
                 this.style.backgroundColor = "#232323";
-				messageDisplay.textContent = "Inténtalo nuevamente";
+				messageDisplay.textContent = "¡Inténtalo nuevamente!";
 			}
 		});
 	}
