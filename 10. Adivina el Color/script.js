@@ -29,11 +29,11 @@ function setupSquares() {
 			var clickedColor = this.style.backgroundColor;
 			if(clickedColor === pickedColor) {
 				messageDisplay.textContent = "¡Correcto!";
-				resetButton.textContent = "Juego Nuevo";
+				resetButton.textContent = "Nuevo Juego";
 				cambiarColores(pickedColor);
 			}
 			else {
-                this.style.backgroundColor = "#232323";
+				this.style.backgroundColor = "#232323";
 				messageDisplay.textContent = "¡Inténtalo nuevamente!";
 			}
 		});
