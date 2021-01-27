@@ -21,7 +21,6 @@ body{
    left: 50%;
    top: 50%;
    transition: .4s;
-   box-shadow: 0px 3px 20px 0px #333;
 }
 
 .time{
