@@ -20,9 +20,7 @@ body {
 .love{
    border-radius: 5px;
    border: none;
-   background: #fff;
-   color: rgb(40, 13, 156);
-   padding: 10px;
+   
 }
 
 #color-display{
@@ -31,6 +29,8 @@ body {
    border-radius: 5px;
    border: none;
    outline: none;
+   color: #fff;
+   padding: 10px;
 }
 
 .squares{
