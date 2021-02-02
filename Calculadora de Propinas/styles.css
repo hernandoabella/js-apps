@@ -11,10 +11,9 @@ body{
 .contenedor{
   background: #DA0D6D;
   color: #fff;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
   border-radius: 5px;
-  width: 400px;
+  width: 500px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -26,12 +25,24 @@ h1{
   padding: 10px;
 }
 
+.tip-wrap{
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 .txt{
   margin: 10px 0px;
+  font-size: 1.3em;
+  text-align: center;
 }
 
 .tip{
   margin: 10px 0px;
+  text-align: center;
+  
 }
 
 input{
@@ -40,6 +51,7 @@ input{
   border-radius: 5px;
   border: none;
   width: 100%;
+  font-size: 1em;
 }
 
 .servicio{
@@ -61,5 +73,12 @@ input{
   background: #2749D5;
   color: #fff;
   cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  transition: .3s;
+}
+
+#calcular:hover{
+
 }
 
