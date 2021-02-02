@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 body{
   font-family: sans-serif;
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 .contenedor{
@@ -52,6 +55,7 @@ input{
   border: none;
   width: 100%;
   font-size: 1em;
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 .servicio{
@@ -60,6 +64,7 @@ input{
   border-radius: 5px;
   margin: 10px 0px;
   width: 100%;
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 .service option{
@@ -76,9 +81,5 @@ input{
   width: 100%;
   font-size: 1em;
   transition: .3s;
+  font-family: 'Yusei Magic', sans-serif;
 }
-
-#calcular:hover{
-
-}
-
