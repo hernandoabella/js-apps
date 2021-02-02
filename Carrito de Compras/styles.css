@@ -1,61 +1,142 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body{
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #12108f;
 }
 
-.app{
-  background: rgb(0, 255, 221);
+.contenedor{
+  display: flex;
+}
+
+.items{
+  background: rgb(102, 102, 209);
+  width: 70%;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tarjeta{
+  background: rgb(26, 50, 129);
   margin: 10px;
   border-radius: 5px;
-  width: 400px;
+  width: 22.8%;
+  height: 289px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
 }
 
-h1{
-  text-align: center;
-  padding: 10px;
+.tarjeta h5{
+  margin-bottom: 10px;
 }
 
-.txt{
-  margin: 10px 0px;
-}
-
-.tip{
-  margin: 10px 0px;
-}
-
-input{
-  margin: 10px 0px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
+.imagenTarjeta{
   width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.servicio{
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin: 10px 0px;
-  width: 100%;
-}
-
-.service option{
-  border-radius: 5px;
-}
-
-#calcular{
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background: rgb(19, 148, 131);
+.tituloTarjeta{
   color: #fff;
-  cursor: pointer;
 }
+
+.textoTarjeta{
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.agregar{
+  background: rgb(64, 13, 122);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  transition: .5s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+}
+
+.agregar:hover{
+  background: rgb(137, 34, 255);
+}
+
+.cuerpoCarta{
+  padding: 10px;
+}
+
+.vaciar{
+  border: 1px solid #00ff00;
+  outline: none;
+  background: #00ff00;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.vaciar:hover{
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  background: transparent;
+  
+}
+
+.carrito1{
+  background: rgb(96, 23, 180);
+  color: #fff;
+  padding: 10px;
+  height: 100vh;
+  width: 30%;
+}
+
+.carrito1 h2{
+  margin-bottom: 10px;
+}
+
+.carrito1 > p{
+  margin-bottom: 20px;
+}
+
+#total{
+  margin-bottom: 10px;
+}
+
+.carrito{
+  margin: 0;
+  padding: 0;
+}
+
+.listaCarrito{
+  background: rgb(64, 13, 122);
+  color: #fff; 
+  margin-bottom: 20px;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cerrar{
+  background: red;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 40px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.cerrar:hover{
+  background: #00ff00;
+  color: #000;
+}
+
 

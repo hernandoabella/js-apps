@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.contenedor{
+  background: #DA0D6D;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+h1{
+  text-align: center;
+  padding: 10px;
+}
+
+.txt{
+  margin: 10px 0px;
+}
+
+.tip{
+  margin: 10px 0px;
+}
+
+input{
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.servicio{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.service option{
+  border-radius: 5px;
+}
+
+#calcular{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #2749D5;
+  color: #fff;
+  cursor: pointer;
+}
+

@@ -1,43 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel="stylesheet" href="styles.css">
- <title>Calculador de Propinas</title>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, 
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="app">
-          <h1>Calculadora de Propinas</h1>
-          <section class="options">
-           <div class="input-group">
-           <input type="number" class="costo" placeholder="Total a pagar" />
-          </div>
-          
-          <div class="input-group">
-           <input type="number" class="gente" placeholder="Cuántos comparten propina" />
-          </div>
-
-          <div class="input-group">
-            <select class="servicio" required>
-             <option disabled selected>¿Cómo estuvo el servicio?</option>
-             <option value="30">5 - Asombroso</option>
-             <option value="20">4 - Genial</option>
-             <option value="10">3 - Bueno</option>
-             <option value="5">2 - Regular</option>
-             <option value="0">1 - Terrible</option>
-            </select>
-           </div>
-          </section>
-          <section class="tip-wrap">
-           <p class="txt">Deberias dar de propina: </p>
-           <h3 class="tip">$0</h3>
-          </section>
-          <button id="calcular">Calcular</button>
-       </div>
+    <div class="contenedor">
+        <main id="items" class="items"></main>
+        <div class="carrito1">
+            <h2>Carrito</h2>
+            <ul id="carrito" class="carrito"></ul>
+            <p>Total: <span id="total">0.00</span>&dollar;</p>
+            <button id="boton-vaciar" class="vaciar">Vaciar Carrito</button>
+            <button onclick="changeContrast()">Cambiar Contraste</button>
+        </div>
+    </div>
 </body>
+<script src="../jquery.min.js"></script>
 <script src="./script.js"></script>
 </html>
 
