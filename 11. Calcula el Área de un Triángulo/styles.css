@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    background: #3094ff;
+    background: #845ec2;
     padding: 10px;
     border-radius: 5px;
     width: 300px;
@@ -45,12 +45,12 @@ button{
 }
 
 button:hover{
-    background: #dc30ff;
+    background: #ff5e78;
     color: #fff;
 }
 
 #resultado{
-    background: #dc30ff;
+    background: #ff5e78;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -62,5 +62,3 @@ button:hover{
     left: 50%;
     text-align: center;
 }
-
-
