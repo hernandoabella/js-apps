@@ -1,12 +1,18 @@
+var operator = document.getElementsByClassName("operator");
+var number = document.getElementsByClassName("number");
+
 function getHistory(){
     return document.getElementById("history-value").innerText;
 }
+
 function printHistory(num){
     document.getElementById("history-value").innerText=num;
 }
+
 function getOutput(){
     return document.getElementById("output-values").innerText;
 }
+
 function printOutput(num){
     if(num==""){
     document.getElementById("output-values").innerText=num;
@@ -15,6 +21,7 @@ function printOutput(num){
         document.getElementById("output-values").innerText=getFormattedNumber(num);
     }
 }
+
 function getFormattedNumber(num){
     if(num=="-"){
         return "";
@@ -23,11 +30,14 @@ function getFormattedNumber(num){
     var value= n.toLocaleString("en");
     return value;
 }
+
 function reverseNumberFormat(num){
     return Number(num.replace(/,/g, ''));
 }
-var operator = document.getElementsByClassName("operator");
-for( var i=0;i<operator.length;i++){
+
+
+
+for(var i=0;i<operator.length;i++){
     operator[i].addEventListener('click',function(){
             if(this.id=="clear"){
                 printHistory("");
@@ -67,7 +77,7 @@ for( var i=0;i<operator.length;i++){
             }
     });
 }
-var number = document.getElementsByClassName("number");
+
 for(var i=0;i<number.length;i++){
     number[i].addEventListener('click',function(){
         var output=reverseNumberFormat(getOutput());
