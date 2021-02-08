@@ -79,7 +79,7 @@ for(var i=0;i<operator.length;i++){
 }
 
 for(var i=0;i<number.length;i++){
-    number[i].addEventListener('click',function(){
+    number[i].addEventListener('click', function(){
         var output=reverseNumberFormat(getOutput());
         if(output!=NaN){
             output=output+this.id;
