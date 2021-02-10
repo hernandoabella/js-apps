@@ -5,24 +5,24 @@ function obtenerHistorial(){
     return document.getElementById("valor-historial").innerText;
 }
 
-function printHistory(num){
+function imprimirHistorial(num){
     document.getElementById("valor-historial").innerText=num;
 }
 
-function getOutput(){
+function obtenerSalida(){
     return document.getElementById("valor-salida").innerText;
 }
 
-function printOutput(num){
+function imprimirSalida(num){
     if(num==""){
     document.getElementById("valor-salida").innerText=num;
     }
     else{
-        document.getElementById("valor-salida").innerText=getFormattedNumber(num);
+        document.getElementById("valor-salida").innerText=obtenerNumeroFormateado(num);
     }
 }
 
-function getFormattedNumber(num){
+function obtenerNumeroFormateado(num){
     if(num=="-"){
         return "";
     }
@@ -41,38 +41,38 @@ function revertirFormatoNumero(num){
 for(var i=0;i<operador.length;i++){
     operador[i].addEventListener('click',function(){
             if(this.id=="clear"){
-                printHistory("");
-                printOutput("");
+                imprimirHistorial("");
+                imprimirSalida("");
             }else if(this.id=="backspace"){
                 var
-                output=revertirFormatoNumero(getOutput()).toString();
-                if(output){//if output has a value
-                    output= output.substr(0,output.length-1);
-                printOutput(output);
+                salida=revertirFormatoNumero(obtenerSalida()).toString();
+                if(salida){// Si (salida tiene un valor) {...}
+                    salida= salida.substr(0,salida.length-1);
+                imprimirSalida(salida);
                 }
             }else{
-                var output = getOutput();
-                var history = obtenerHistorial();
+                var salida = obtenerSalida();
+                var historial = obtenerHistorial();
 
-                if(output==""&&history!=""){
-                    if(isNaN(history[history.length-1])){
-                        history=history.substr(0,history.length-1);
+                if(salida=="" && historial != ""){
+                    if(isNaN(historial[historial.length-1])){
+                        historial=historial.substr(0,historial.length-1);
                     }
                 }
 
-                if(output!="" || history!=""){
-                    output= output==""?
-                    output:revertirFormatoNumero(output);
-                    history=history+output;
+                if(salida != "" || historial != ""){
+                    salida= salida==""?
+                    salida:revertirFormatoNumero(salida);
+                    historial=historial+salida;
 
                     if(this.id=="="){
-                        var result= eval(history);
-                        printOutput(result);
-                        printHistory("");
+                        var result= eval(historial);
+                        imprimirSalida(result);
+                        imprimirHistorial("");
                     }else{
-                        history=history+this.id;
-                        printHistory(history);
-                        printOutput("");
+                        historial=historial+this.id;
+                        imprimirHistorial(historial);
+                        imprimirSalida("");
                     }
                 }
             }
@@ -81,10 +81,10 @@ for(var i=0;i<operador.length;i++){
 
 for(var i=0;i<numero.length;i++){
     numero[i].addEventListener('click', function(){
-        var output=revertirFormatoNumero(getOutput());
-        if(output!=NaN){
-            output=output+this.id;
-            printOutput(output);
+        var salida = revertirFormatoNumero(obtenerSalida());
+        if(salida!=NaN){
+            salida=salida+this.id;
+            imprimirSalida(salida);
         }
     });
 }
