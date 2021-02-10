@@ -3,7 +3,7 @@ body{
 }
 
 
-#calculator{
+#calculadora{
 	width: 320px;
 	height: 520px;
     background-color: #337CA0;
@@ -14,12 +14,12 @@ body{
     transform: translate(-50%, -50%);
 }
 
-#result{
+#resultado{
     height: 120px;
     color: #fff;
 }
 
-#history{
+#historial{
     text-align: right;
     height: 20px;
     margin: 0 20px;
@@ -28,7 +28,7 @@ body{
     color: #fff;
 }
 
-#output{
+#salida{
     text-align: right;
     height: 60px;
     margin: 10px 20px;
@@ -61,11 +61,11 @@ body{
 }
 
 
-.number:active, .operator:active{
+.numero:active, .operador:active{
     font-size: 13px;
 }
 
-.number:focus, .operator:focus, .empty:focus{
+.numero:focus, .operador:focus, .vacio:focus{
     outline: 0;
 }
 
