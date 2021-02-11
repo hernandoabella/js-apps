@@ -1,5 +1,3 @@
-// Created by Madhav 
-
 var is_visible = false ;
 
 function see()
@@ -26,8 +24,9 @@ function check()
 {
     var input = document.getElementById("password").value;
     
-input=input.trim();
-document.getElementById("password").value=input;
+    input=input.trim();
+    document.getElementById("password").value=input;
+
     document.getElementById("count").innerText="Length : " + input.length;
     if(input.length>=5)
     {
@@ -49,30 +48,21 @@ document.getElementById("password").value=input;
     
     if(input.match(/[0-9]/i))
     {
-        document.getElementById("check2").style.color="green";
-    }
-    else
-    {
+       document.getElementById("check2").style.color="green";
+    }else{
        document.getElementById("check2").style.color="tomato"; 
     }
     
-    if(input.match(/[^A-Za-z0-9-' ']/i))
-    {
+    if(input.match(/[^A-Za-z0-9-' ']/i)){
         document.getElementById("check3").style.color="green";
-    }
-    else
-    {
-       document.getElementById("check3").style.color="tomato"; 
+    }else{
+        document.getElementById("check3").style.color="tomato"; 
     }
     
-    if(input.match(' '))
-    {
+    if(input.match(' ')){
         document.getElementById("check4").style.color="tomato";
-    }
-    else
-    {
-       document.getElementById("check4").style.color="green"; 
+    }else{
+        document.getElementById("check4").style.color="green"; 
     }
     
 }
-
