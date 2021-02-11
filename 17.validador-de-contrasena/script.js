@@ -1,16 +1,16 @@
-var is_visible = false ;
+var visible = false ;
 
 function ver(){
     var input = document.getElementById("password");
     var ver = document.getElementById("ver");
     
-    if(is_visible){
+    if(visible){
         input.type = 'password';
-        is_visible = false; 
+        visible = false; 
         ver.style.color='#fff';
     }else{
         input.type = 'text';
-        is_visible = true; 
+        visible = true; 
         ver.style.color='#70A288';
     }
 }
