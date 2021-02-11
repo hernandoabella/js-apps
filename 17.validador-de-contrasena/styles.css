@@ -7,7 +7,7 @@ body{
 }
 
 .contenedor{
-    background: rgb(55, 99, 163);
+    background: #69A2B0;
     border-radius: 5px;
     width: 400px;
     position: absolute;
@@ -17,30 +17,32 @@ body{
 }
 
 #set{
-    display:block ;
-    position:relative;
-    margin:auto;
+    display: block ;
+    position: relative;
+    margin: auto;
 }
 
 #largo{
-   display:inline-block;
-   position:relative ;
-   margin:4%; margin-bottom:2%;
+   display: inline-block;
+   position: relative ;
+   margin: 4%; 
+   margin-bottom: 2%;
    color:#fff; 
-   font-size:18px;
-   text-indent:40px;
-   font-weight:bolder;
+   font-size: 18px;
+   text-indent: 40px;
+   font-weight: bolder;
    
 }
 
-#see{
-    display:inline-block ;
+#ver{
+    display: inline-block ;
     color:#fff;
-    margin:auto; float:right;
-    margin-right:40px;
-    margin-top:10px;
-    cursor:pointer;
-    transition-duration:0.2s;
+    margin: auto; 
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 input[id='password']{
@@ -60,18 +62,18 @@ input[id='password']{
 }
 
 i{
-    font-size:23px;
-    transition-duration:600ms;
+    font-size: 23px;
+    transition-duration: 600ms;
 }
 
 #validar0,#validar1,#validar2,#validar3,#validar4{
    display: block;
    position: relative;
    margin: 4%;
-   color:rgb(255, 0, 0); 
    font-size: 18px;
    width: 92%;
    text-align: justify;
+   color: rgb(255, 255, 255);
 }
 
 span{

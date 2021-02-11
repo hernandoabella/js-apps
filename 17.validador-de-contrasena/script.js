@@ -1,17 +1,17 @@
 var is_visible = false ;
 
-function see(){
+function ver(){
     var input = document.getElementById("password");
-    var see = document.getElementById("see");
+    var ver = document.getElementById("ver");
     
     if(is_visible){
         input.type = 'password';
         is_visible = false; 
-        see.style.color='gray';
+        ver.style.color='#fff';
     }else{
         input.type = 'text';
         is_visible = true; 
-        see.style.color='#262626';
+        ver.style.color='green';
     }
 }
 
@@ -20,9 +20,10 @@ function validar(){
     var input = document.getElementById("password").value;
     
     input=input.trim();
+
     document.getElementById("password").value=input;
 
-    document.getElementById("count").innerText="Length : " + input.length;
+    document.getElementById("largo").innerText="Largo : " + input.length;
     
     if(input.length>=5){
         document.getElementById("validar0").style.color="green";
