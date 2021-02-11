@@ -7,7 +7,7 @@ body{
 }
 
 .contenedor{
-    background: #69A2B0;
+    background: #031D44;
     border-radius: 5px;
     width: 400px;
     position: absolute;
@@ -81,5 +81,5 @@ span{
 }
 
 input:hover{
-    border-bottom: 5px solid #3498db;
+    border-bottom: 5px solid #D5896F;
 }

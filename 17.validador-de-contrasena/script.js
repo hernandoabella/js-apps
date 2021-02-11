@@ -11,7 +11,7 @@ function ver(){
     }else{
         input.type = 'text';
         is_visible = true; 
-        ver.style.color='green';
+        ver.style.color='#70A288';
     }
 }
 
@@ -26,32 +26,32 @@ function validar(){
     document.getElementById("largo").innerText="Largo : " + input.length;
     
     if(input.length>=5){
-        document.getElementById("validar0").style.color="green";
+        document.getElementById("validar0").style.color="#70A288";
     }else{
-       document.getElementById("validar0").style.color="red"; 
+       document.getElementById("validar0").style.color="#D5896F"; 
     }
     
     if(input.length<=10){
-        document.getElementById("validar1").style.color="green";
+        document.getElementById("validar1").style.color="#70A288";
     }else{
-       document.getElementById("validar1").style.color="red"; 
+       document.getElementById("validar1").style.color="#D5896F"; 
     }
     
     if(input.match(/[0-9]/i)){
-       document.getElementById("validar2").style.color="green";
+       document.getElementById("validar2").style.color="#70A288";
     }else{
-       document.getElementById("validar2").style.color="red"; 
+       document.getElementById("validar2").style.color="#D5896F"; 
     }
     
     if(input.match(/[^A-Za-z0-9-' ']/i)){
-        document.getElementById("validar3").style.color="green";
+        document.getElementById("validar3").style.color="#70A288";
     }else{
-        document.getElementById("validar3").style.color="red"; 
+        document.getElementById("validar3").style.color="#D5896F"; 
     }
     
     if(input.match(' ')){
-        document.getElementById("validar4").style.color="red";
+        document.getElementById("validar4").style.color="#D5896F";
     }else{
-        document.getElementById("validar4").style.color="green"; 
+        document.getElementById("validar4").style.color="#70A288"; 
     }
 }
