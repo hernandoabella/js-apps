@@ -1,9 +1,9 @@
-let print = (msg) => {
-    document.getElementById("output").innerHTML = "Length is " + msg + " (White Spaces are included)";
+let imprimir = (mensaje) => {
+    document.getElementById("salida").innerHTML = "Length is " + mensaje + " (White Spaces are included)";
 }
 
 
 
-document.getElementById("btn").onclick = function (event){
-    print(document.getElementById('str').value.length);
+document.getElementById("boton").onclick = function (event){
+    imprimir(document.getElementById('cadena').value.length);
 }
