@@ -1,0 +1,41 @@
+body {
+  background-color: mediumaquamarine;
+}
+h1 {
+  text-align: center;
+  color: maroon;
+  font-family: monospace;
+  font-size: 40px;
+  margin-top: 250px;
+}
+input {
+  margin-top: 100px;
+  margin: auto auto;
+  width: 1000px;
+  height: 40px;
+  display: block;
+  font-size: 20px;
+}
+#btn {
+  width: 300px;
+  height: 50px;
+  color: #fff;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 60px;
+  display: block;
+  margin: auto auto;
+}
+#btn:hover {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+#output {
+  margin: auto auto;
+
+  margin-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
