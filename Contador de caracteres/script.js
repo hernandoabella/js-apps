@@ -7,7 +7,7 @@ let imprimir = (mensaje) => {
     salida.innerHTML = "El largo de caracteres es: " + "<b>" + mensaje + "</b>" + " (Incluyendo los espacios en blanco)";
 }
 
-cadena.addEventListener("keyup", (e) =>{
+cadena.addEventListener("keyup", e =>{
     if(e.key === 'Enter'){
         e.preventDefault();
         boton.click();
