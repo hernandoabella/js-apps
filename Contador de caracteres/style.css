@@ -16,7 +16,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(0, 255, 128);
+  background: #5F4BB6;
   padding: 20px;
   border-radius: 5px;
   width: 400px;
@@ -31,6 +31,11 @@ body{
   transition: .3s;
 }
 
+#boton:hover{
+  background: #202A25;
+  color: #fff;
+}
+
 #cadena{
   padding: 10px;
   width: 68%;
@@ -41,14 +46,9 @@ body{
   font-weight: bold;
 }
 
-#boton:hover{
-  background:rgb(89, 191, 250);
-  color:rgb(0, 0, 0);
-}
-
 #salida{
-  color: rgb(0, 0, 0);
-  background: rgb(89, 191, 250);
+  color: #fff;
+  background: #202A25;
   padding: 20px;
   border-radius: 5px;
   width: 400px;
@@ -57,4 +57,5 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  text-align: center;
 }
