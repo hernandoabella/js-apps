@@ -1,0 +1,29 @@
+<html>
+
+    <head>
+        <title>Dan's Weather App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 id="intro">Welcome to my Weather App!</h1>
+        <div id="searchContainer">
+            <input class="searchControl" type="text" placeholder="Please Enter City Name" id="searchInput">
+            <button class="searchControl" id="searchBtn">Go!</button>
+        </div>
+        <div id="weatherContainer">
+            <div id="weatherDescription">
+                <h1 id="cityHeader"></h1>
+                <div id="weatherMain">
+                    <div id="temperature"></div>
+                    <div id="weatherDescriptionHeader"></div>
+                    <div><img id="documentIconImg"></div>
+                </div>
+                <hr>
+                <div id="windSpeed" class="bottom-details"></div>
+                <div id="humidity" class="bottom-details"></div>
+            </div>
+        </div>
+        <script src="script.js" ></script>
+    </body>
+</html>
