@@ -12,13 +12,38 @@ body{
     background-repeat: no-repeat;
 }
 
+#encabezadoCiudad{
+    margin-bottom: 10px;
+}
+
+#descripcionClima{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+#velocidadViento{
+    margin-bottom: 10px;
+}
+
 #contenedorClima{
-    background: rgba(0, 151, 252, 0.356);
+    background: rgba(31, 166, 255, 0.356);
     box-shadow: 1px 1px 5px #000;
     padding: 50px;
-    margin: 50px;
+    margin: 50px ;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #contenedorBusqueda{
     padding: 20px;
+}
+
+#temperatura{
+    font-size: 2em;
+}
+
+.swipe{
+    display: flex;
+    width: 80px;
+    margin: auto;
 }

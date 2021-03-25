@@ -1,27 +1,27 @@
 // Declaración de variables
 
-let appId = '71f6779186cc32448b4c412eea65b982';
-let units = 'metric'; 
-let searchMethod; // q significa buscar como una cadena de caracteres
+let id = '71f6779186cc32448b4c412eea65b982';
+let unidades = 'metric'; 
+let metodoBuscar; // q significa buscar como una cadena de caracteres
 
-function getSearchMethod(searchTerm) {
-    if(searchTerm.length === 5 && Number.parseInt(searchTerm) + '' === searchTerm)
-        searchMethod = 'zip';
+function obtenerBusqueda(entrada) {
+    if(entrada.length === 5 && Number.parseInt(entrada) + '' === entrada)
+        metodoBuscar = 'zip';
     else 
-        searchMethod = 'q';
-}
+        metodoBuscar = 'q';
+}                                                                                                             
 
-function searchWeather(searchTerm) {
-    getSearchMethod(searchTerm);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appId}&units=${units}`)
+function buscarClima(entrada){
+    obtenerBusqueda(entrada);
+    fetch(`http://api.openweathermap.org/data/2.5/weather?${metodoBuscar}=${entrada}&APPID=${id}&units=${unidades}`)
         .then((result) => {
             return result.json();
         }).then((res) => {
-            init(res);
+            iniciar(res);
     });
 }
 
-function init(resultFromServer) {
+function iniciar(resultFromServer){
     switch (resultFromServer.weather[0].main) {
         case 'Clear':
             document.body.style.backgroundImage = "url('clearPicture.jpg')";
@@ -52,37 +52,26 @@ function init(resultFromServer) {
             break;
     }
 
-    let weatherDescriptionHeader = document.getElementById('descripcionClima');
-    let temperatureElement = document.getElementById('temperatura');
-    let humidityElement = document.getElementById('humedad');
-    let windSpeedElement = document.getElementById('velocidadViento');
-    let cityHeader = document.getElementById('cityHeader');
+    let descripcionClima = document.getElementById('descripcionClima');
+    let temperatura = document.getElementById('temperatura');
+    let humedad = document.getElementById('humedad');
+    let velocidadViento = document.getElementById('velocidadViento');
+    let encabezadoCiudad = document.getElementById('encabezadoCiudad');
 
-    let weatherIcon = document.getElementById('iconoClima');
-    weatherIcon.src = 'http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
+    let iconoClima = document.getElementById('iconoClima');
+    iconoClima.src = 'http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
 
-    let resultDescription = resultFromServer.weather[0].description;
-    weatherDescriptionHeader.innerText = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1);
-    temperatureElement.innerHTML = Math.floor(resultFromServer.main.temp) + '&#176;';
-    windSpeedElement.innerHTML = 'Velocidad del viento: ' + Math.floor(resultFromServer.wind.speed) + ' metros/s';
-    cityHeader.innerHTML = resultFromServer.name;
-    humidityElement.innerHTML = 'Niveles de humedad: ' + resultFromServer.main.humidity +  '%';
-
-    setPositionForWeatherInfo();
+    let resultadoDescripcion = resultFromServer.weather[0].description;
+    descripcionClima.innerText = resultadoDescripcion.charAt(0).toUpperCase() + resultadoDescripcion.slice(1);
+    temperatura.innerHTML = Math.floor(resultFromServer.main.temp) + '&#176;';
+    velocidadViento.innerHTML = '<b>' + 'Velocidad del viento: ' + '</b>' + Math.floor(resultFromServer.wind.speed) + ' metros';
+    encabezadoCiudad.innerHTML = resultFromServer.name;
+    humedad.innerHTML = '<b>' + 'Niveles de humedad: ' + '</b>' + resultFromServer.main.humidity +  '%';
 }
 
-function setPositionForWeatherInfo() {
-    let weatherContainer = document.getElementById('contenedorClima');
-    let weatherContainerHeight = weatherContainer.clientHeight;
-    let weatherContainerWidth = weatherContainer.clientWidth;
-
-    weatherContainer.style.left = `calc(50% - ${weatherContainerWidth/2}px)`;
-    weatherContainer.style.top = `calc(50% - ${weatherContainerHeight/1.3}px)`;
-    weatherContainer.style.visibility = 'visible';
-}
-
-document.getElementById('searchBtn').addEventListener('click', () => {
-    let searchTerm = document.getElementById('searchInput').value;
-    if(searchTerm)
-        searchWeather(searchTerm);
+document.getElementById('buscar').addEventListener('click', () => {
+    let entrada = document.getElementById('entradaBusqueda').value;
+    if(entrada){
+        buscarClima(entrada);
+    }
 });
