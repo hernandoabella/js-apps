@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: "Palatino", "Book Antiqua", serif;
+    height: 100vh;
+}
+
+#titulo{
+    padding: 20px;
+    background: #000;
+    text-align: center;
+}
+
+#contenedorClima{
+    background: rgba(0, 151, 252, 0.356);
+    box-shadow: 1px 1px 5px black;
+    padding: 50px;
+    margin: 50px;
+}
+
+#searchContainer {
+    padding: 20px;
+}

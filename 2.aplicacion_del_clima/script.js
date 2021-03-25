@@ -1,6 +1,8 @@
+// Declaración de variables
+
 let appId = '71f6779186cc32448b4c412eea65b982';
 let units = 'metric'; 
-let searchMethod; // q means searching as a string.
+let searchMethod; // q significa buscar como una cadena de caracteres
 
 function getSearchMethod(searchTerm) {
     if(searchTerm.length === 5 && Number.parseInt(searchTerm) + '' === searchTerm)
@@ -50,27 +52,27 @@ function init(resultFromServer) {
             break;
     }
 
-    let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
-    let temperatureElement = document.getElementById('temperature');
-    let humidityElement = document.getElementById('humidity');
-    let windSpeedElement = document.getElementById('windSpeed');
+    let weatherDescriptionHeader = document.getElementById('descripcionClima');
+    let temperatureElement = document.getElementById('temperatura');
+    let humidityElement = document.getElementById('humedad');
+    let windSpeedElement = document.getElementById('velocidadViento');
     let cityHeader = document.getElementById('cityHeader');
 
-    let weatherIcon = document.getElementById('documentIconImg');
+    let weatherIcon = document.getElementById('iconoClima');
     weatherIcon.src = 'http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
 
     let resultDescription = resultFromServer.weather[0].description;
     weatherDescriptionHeader.innerText = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1);
     temperatureElement.innerHTML = Math.floor(resultFromServer.main.temp) + '&#176;';
-    windSpeedElement.innerHTML = 'Wind Speed: ' + Math.floor(resultFromServer.wind.speed) + ' meter/s';
+    windSpeedElement.innerHTML = 'Velocidad del viento: ' + Math.floor(resultFromServer.wind.speed) + ' metros/s';
     cityHeader.innerHTML = resultFromServer.name;
-    humidityElement.innerHTML = 'Humidity levels: ' + resultFromServer.main.humidity +  '%';
+    humidityElement.innerHTML = 'Niveles de humedad: ' + resultFromServer.main.humidity +  '%';
 
     setPositionForWeatherInfo();
 }
 
 function setPositionForWeatherInfo() {
-    let weatherContainer = document.getElementById('weatherContainer');
+    let weatherContainer = document.getElementById('contenedorClima');
     let weatherContainerHeight = weatherContainer.clientHeight;
     let weatherContainerWidth = weatherContainer.clientWidth;
 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación del clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Aplicación del clima</h1>
+
+    <div id="searchContainer">
+        <input class="searchControl" type="text" placeholder="Ingresa el nombre de una ciudad" id="searchInput">
+        <button class="searchControl" id="searchBtn">Buscar</button>
+    </div>
+
+    <div id="contenedorClima">
+        <div>
+            <h2 id="cityHeader"></h2>
+            <div>
+                <div id="temperatura"></div>
+                <div id="descripcionClima"></div>
+                <div><img id="iconoClima"></div>
+            </div>
+            
+            <div id="velocidadViento"></div>
+            <div id="humedad"></div>
+        </div>
+    </div>
+
+<script src="./script.js"></script>        
+</body>
+</html>
