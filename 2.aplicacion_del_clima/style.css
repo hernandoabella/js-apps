@@ -8,7 +8,7 @@
 }
 
 body{
-    background: rgb(172, 20, 172);
+    background: #706993;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,7 +70,7 @@ body{
 }
 
 #contenedorBusqueda button:hover{
-    background: #000;
+    background: #331E38;
     color: #fff;
 }
 
