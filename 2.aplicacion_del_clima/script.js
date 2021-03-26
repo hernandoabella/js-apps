@@ -3,6 +3,8 @@
 let id = '71f6779186cc32448b4c412eea65b982';
 let unidades = 'metric'; 
 let metodoBuscar; // q significa buscar como una cadena de caracteres
+let contenedorClima = document.getElementById('contenedorClima');
+let buscar = document.getElementById('buscar');
 
 function obtenerBusqueda(entrada) {
     if(entrada.length === 5 && Number.parseInt(entrada) + '' === entrada)
@@ -22,6 +24,8 @@ function buscarClima(entrada){
 }
 
 function iniciar(resultFromServer){
+    contenedorClima.style.display = 'block';
+
     switch (resultFromServer.weather[0].main) {
         case 'Clear':
             document.body.style.backgroundImage = "url('clearPicture.jpg')";
@@ -64,14 +68,21 @@ function iniciar(resultFromServer){
     let resultadoDescripcion = resultFromServer.weather[0].description;
     descripcionClima.innerText = resultadoDescripcion.charAt(0).toUpperCase() + resultadoDescripcion.slice(1);
     temperatura.innerHTML = Math.floor(resultFromServer.main.temp) + '&#176;';
-    velocidadViento.innerHTML = '<b>' + 'Velocidad del viento: ' + '</b>' + Math.floor(resultFromServer.wind.speed) + ' metros';
+    velocidadViento.innerHTML = '<b>' + 'Velocidad del viento: ' + '</b>' + Math.floor(resultFromServer.wind.speed) + ' metro/s';
     encabezadoCiudad.innerHTML = resultFromServer.name;
     humedad.innerHTML = '<b>' + 'Niveles de humedad: ' + '</b>' + resultFromServer.main.humidity +  '%';
 }
 
-document.getElementById('buscar').addEventListener('click', () => {
+buscar.addEventListener('click', () => {
     let entrada = document.getElementById('entradaBusqueda').value;
     if(entrada){
         buscarClima(entrada);
     }
 });
+
+buscar.addEventListener("keyup", e =>{
+    if(e.key === 'Enter'){
+        e.preventDefault();
+        buscar.click();
+    }
+}, false);
