@@ -1,8 +1,8 @@
 // Declaración de variables
-
 let id = '71f6779186cc32448b4c412eea65b982';
 let unidades = 'metric'; 
 let metodoBuscar; // q significa buscar como una cadena de caracteres
+let idioma = 'sp'; // Idioma español
 let contenedorClima = document.getElementById('contenedorClima');
 let buscar = document.getElementById('buscar');
 
@@ -15,7 +15,7 @@ function obtenerBusqueda(entrada) {
 
 function buscarClima(entrada){
     obtenerBusqueda(entrada);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?${metodoBuscar}=${entrada}&APPID=${id}&units=${unidades}`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?${metodoBuscar}=${entrada}&APPID=${id}&units=${unidades}&lang=${idioma}`)
         .then((result) => {
             return result.json();
         }).then((res) => {
@@ -80,7 +80,10 @@ buscar.addEventListener('click', () => {
     }
 });
 
-buscar.addEventListener("keyup", e =>{
+let entrada = document.getElementById("entradaBusqueda");
+
+entrada.addEventListener("keyup", e =>{
+    
     if(e.key === 'Enter'){
         e.preventDefault();
         buscar.click();
