@@ -1,23 +1,54 @@
-.container-1 {
-    border: 1px solid black;
-    width: 75%;
-    margin-top: 15%;
-    margin-left:10%; 
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
-.flex-box-container-1 {
+.contenedor{
+    width: 400px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: pink;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contenedor__flex {
     display: flex;
-    border: 1px solid black;
     padding: 10px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.flex-box-container-1 div {
-    display: flex;
+#entrada{
+    margin: 20px;
+    outline: none;
+    border: none;
     padding: 10px;
-    border: 1px solid black;
-    align-items: center;
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+}
+
+#resultado{
+    background: pink;
+    width: 400px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    transition: .3s;
 }
