@@ -14,7 +14,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    background: pink;
+    background: rgb(255, 73, 104);
     padding: 10px;
     border-radius: 5px;
 }
@@ -33,10 +33,15 @@
     border: none;
     padding: 10px;
     text-align: center;
+    border-radius: 5px;
 }
 
 button{
     padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
 }
 
 #resultado{
@@ -51,4 +56,5 @@ button{
     text-align: center;
     display: none;
     transition: .3s;
+    font-size: 1.5em;
 }
