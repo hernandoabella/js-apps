@@ -1,0 +1,31 @@
+body {
+  background: #333
+}
+
+.flexBox {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%
+}
+
+.mathCard {
+  background: white;
+  border-radius: 0.25rem;
+  padding: 4rem
+}
+
+.questionText {
+  padding-bottom: 2rem
+}
+
+.svg {
+  height: 24px;
+  width: 24px;
+}
+
+.correctAnswer {
+  color: #34a853;
+  font-size: 1.5rem
+}

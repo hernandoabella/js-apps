@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/app.css" />
+  <title>Math Trainer</title>
+</head>
+
+<body onload="randomCreator()">
+
+  <div class="container-fluid">
+    <div class="flexBox">
+      <div class="mathCard">
+        <div class="mathQuestion">
+          <h1 class="display-4 questionText text-center mb-0">Placeholder Text</h1>
+        </div>
+        <form id="mathForm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="answerInput" placeholder="Type your answer here">
+          </div>
+          <button type="submit" class="btn btn-outline-primary w-100">Submit</button>
+        </form>
+        <div class="d-flex">
+          <button class="btn btn-outline-light w-100 mt-3" onclick="randomCreator()"><img class="svg" src="./assets/img/refresh.svg" alt="New Question" /></button>
+          <button class="btn btn-outline-light w-100 mt-3" onclick="answerHelp()"><img class="svg" src="./assets/img/answer.svg" alt="Answer" /></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
