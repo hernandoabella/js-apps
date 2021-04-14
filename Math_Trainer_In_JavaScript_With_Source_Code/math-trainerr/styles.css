@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+*{
+  font-family: 'Raleway', sans-serif;
+}
 
 .flexBox {
   align-items: center;
@@ -9,16 +13,32 @@
 }
 
 .mathCard {
-  background: rgb(28, 207, 133);
+  background: #85FF9E;
   border-radius: 0.25rem;
-  padding: 4rem
-}
-
-.questionText {
-  padding-bottom: 2rem
+  padding: 2rem;
+  text-align: center;
 }
 
 .correctAnswer {
-  color: #34a853;
+  color: #1e5729;
   font-size: 1.5rem
+}
+
+input, button{
+  border: none;
+  outline: none;
+}
+
+input{
+  padding: 10px;
+}
+
+button{
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover{
+  background: #A6F4DC;
 }

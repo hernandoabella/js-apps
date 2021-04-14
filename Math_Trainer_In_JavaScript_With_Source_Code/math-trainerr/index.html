@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <title>Entrenador matemático</title>
 </head>
 
-<body onload="randomCreator()">
+<body onload="creadorAleatorio()">
 
   <div class="container-fluid">
     <div class="flexBox">
@@ -16,15 +17,17 @@
         <div class="mathQuestion">
           <h1 class="display-4 questionText text-center mb-0">Placeholder Text</h1>
         </div>
-        <form id="mathForm">
+        <form id="formularioMatematico">
           <div class="form-group">
-            <input type="text" class="form-control" id="answerInput" placeholder="Type your answer here">
+            <input type="text" class="form-control" id="answerInput" placeholder="Escribe tu respuesta aquí">
+            <button type="submit">Enviar</button>
+            <button  onclick="creadorAleatorio()"><i class="fas fa-sync-alt"></i></button>
+            <button  onclick="respuestaAyuda()"><i class="far fa-question-circle"></i></button>
           </div>
-          <button type="submit" class="btn btn-outline-primary w-100">Submit</button>
+          
         </form>
         <div class="d-flex">
-          <button class="btn btn-outline-light w-100 mt-3" onclick="randomCreator()"><img class="svg" src="./assets/img/refresh.svg" alt="New Question" /></button>
-          <button class="btn btn-outline-light w-100 mt-3" onclick="answerHelp()"><img class="svg" src="./assets/img/answer.svg" alt="Answer" /></button>
+          
         </div>
       </div>
     </div>

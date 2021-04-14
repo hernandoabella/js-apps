@@ -1,7 +1,7 @@
-// Globals
-var tempResult = 1.01;
+// Globales
+var resultadoTemporal = 1.01;
 
-function doMath(a, b, c) {
+function hacerMatematicas(a, b, c) {
   switch (a) {
     case "+":
       return b + c;
@@ -14,13 +14,13 @@ function doMath(a, b, c) {
   }
 }
 
-function submitAnswer(result) {
-  document.querySelector("#mathForm").addEventListener("submit", function(e) {
+function submitAnswer(resultado) {
+  document.querySelector("#formularioMatematico").addEventListener("submit", function(e) {
     e.preventDefault();
-    var userAnswer = document.querySelector("#answerInput").value;
-    var bool = (result == userAnswer) ? true : false;
+    var respuestaUsuario = document.querySelector("#answerInput").value;
+    var booleano = (resultado == respuestaUsuario) ? true : false;
 
-    if (bool === true) {
+    if (booleano === true) {
       // Set color to green for success
       document.body.style.backgroundColor = "#34a853";
       setTimeout(function() {
@@ -29,7 +29,7 @@ function submitAnswer(result) {
       // Clear input field
       document.querySelector("#answerInput").value = "";
       // Ask a new question
-      randomCreator();
+      creadorAleatorio();
     } else {
       // Set color to red for failure
       document.body.style.backgroundColor = "#dc3545";
@@ -40,43 +40,43 @@ function submitAnswer(result) {
   });
 }
 
-function randomCreator() {
+function creadorAleatorio() {
   // Remove the answer if a hint was used
   if (document.querySelector(".correctAnswer")) {
     document.querySelector(".correctAnswer").remove();
   }
 
   // Set up the random numbers and operator
-  var operators = ["+", "-", "*", "/"];
-  var randomIntOne = parseInt((Math.random() * 100), 10);
-  var randomIntTwo = parseInt((Math.random() * 100), 10);
-  var randomOperator = operators[Math.floor(Math.random() * operators.length)];
+  var operadores = ["+", "-", "*", "/"];
+  var enteroAleatorioUno = parseInt((Math.random() * 100), 10);
+  var enteroAleatorioDos = parseInt((Math.random() * 100), 10);
+  var operadorAleatorio = operadores[Math.floor(Math.random() * operadores.length)];
 
   // Create the question text and set it in the document
-  var el = document.querySelector(".questionText");
-  el.innerHTML = ("What is ").concat(randomIntOne, " ", randomOperator, " ", randomIntTwo, "?");
+  var elemento = document.querySelector(".questionText");
+  elemento.innerHTML = ("¿Cuánto es ").concat(enteroAleatorioUno, " ", operadorAleatorio, " ", enteroAleatorioDos, "?");
 
   // Do the math and round floats to two decimals
-  var preliminaryResult = doMath(randomOperator, randomIntOne, randomIntTwo);
-  var isFloat = (!Number.isInteger(preliminaryResult)) ? true : false;
-  var result = (isFloat === true) ? preliminaryResult.toFixed(2) : preliminaryResult;
-  tempResult = result;
+  var resultadoPreliminar = hacerMatematicas(operadorAleatorio, enteroAleatorioUno, enteroAleatorioDos);
+  var isFloat = (!Number.isInteger(resultadoPreliminar)) ? true : false;
+  var resultado = (isFloat === true) ? resultadoPreliminar.toFixed(2) : resultadoPreliminar;
+  resultadoTemporal = resultado;
 
   // Set event listener for the form based on browser type
-  var userAnswerInput = document.querySelector("#answerInput");
-  if (userAnswerInput.addEventListener) {
-    userAnswerInput.addEventListener("submit", submitAnswer(result), false);
-  } else if (userAnswerInput.attachEvent) {
-    userAnswerInput.attachEvent("onsubmit", submitAnswer(result));
+  var respuestaEntradaUsuario = document.querySelector("#answerInput");
+  if (respuestaEntradaUsuario.addEventListener) {
+    respuestaEntradaUsuario.addEventListener("submit", submitAnswer(resultado), false);
+  } else if (respuestaEntradaUsuario.attachEvent) {
+    respuestaEntradaUsuario.attachEvent("onsubmit", submitAnswer(resultado));
   }
 
-  return result;
+  return resultado;
 }
 
-function answerHelp() {
+function respuestaAyuda() {
   // Make sure the answer isn't already showing
   if (!document.querySelector(".correctAnswer")) {
     // Show the answer
-    document.querySelector(".mathQuestion").innerHTML += ("<p class='text-center correctAnswer m-0 mb-3'>The Answer is " + tempResult + "</p>");
+    document.querySelector(".mathQuestion").innerHTML += ("<p class='correctAnswer'>La respuesta correcta es: " + "<b>" + resultadoTemporal + "</b>" + "</p>");
   }
 }
