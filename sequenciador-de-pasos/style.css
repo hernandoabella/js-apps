@@ -1,0 +1,141 @@
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+    *{
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .mainController{
+        background: rgb(0, 87, 128);
+        display: flex;
+    }
+
+    .mainController i{
+        color: #fff;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .mainController i:hover{
+        color: #333;
+        transform: rotate(180deg);
+    }
+
+    .bpm input{
+        margin: 20px;
+        width: 40px;
+        border: none;
+        outline: none;
+        text-align: center;
+    }
+
+    .stepSequencer{
+        padding: 20px;
+        background: rgb(68, 134, 136);
+        width: 700px;
+    }
+
+    .stepLine{
+        margin-top: 10px;
+        display: flex;
+    }
+
+    .light{
+        width: 10px;
+        height: 10px;
+        background: greenyellow;
+        border-radius: 100px;
+        border: 1px solid #000;
+        position: relative;
+        top: 10px;
+        box-shadow: 0px 0px 10px 0px greenyellow;
+        cursor: pointer;
+    }
+
+    .volKnob{
+        width: 15px;
+        height: 15px;
+        background: rgb(51, 50, 50);
+        position: relative;
+        top: 8px;
+        right: -10px;
+        border-radius: 100px;
+        border: 1px solid #000;
+        cursor: pointer;
+
+    }
+
+    .panKnob{
+        width: 15px;
+        height: 15px;
+        background: rgb(51, 50, 50);
+        position: relative;
+        top: 8px;
+        right: -15px;
+        border-radius: 100px;
+        border: 1px solid #000;
+        cursor: pointer;
+
+
+    }
+
+    .stepSound{
+        color: #fff;
+        background: rgb(51, 50, 50);
+        padding: 10px;
+        width: 100px;
+        position: relative;
+        right: -25px;
+        text-align: center;
+        bottom: 5px;
+        border-radius: 4px;
+        border: 1px solid black;
+        cursor: pointer;
+
+    }
+
+    .stepSquare{
+        width: 8px;
+        height: 40px;
+        background: rgb(51, 50, 50);
+        position: relative;
+        right: -35px;
+        top: -4px;
+    }
+
+    .patSquare{
+        border: 1px solid #000;
+        position: relative;
+        right: -45px;
+        top: -4px;
+        width: 18px;
+        background: grey;
+        margin-left: 10px;
+        height: 40px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .patActive{
+        background: rgb(0, 87, 128);
+    }
+
+    .keyCommand{
+        margin-left: 10px;
+        background: rgb(107, 100, 105);
+        text-align: center;
+        width: 50px;
+        height: 40px;
+        border-radius: 4px;
+        color: #fff;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+
+
+
+
+
