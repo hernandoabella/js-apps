@@ -4,23 +4,24 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.flexBox {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100%
+.contenedor{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 400px;
 }
 
 .mathCard {
-  background: #85FF9E;
+  background: #337CA0;
+  color: #fff;
   border-radius: 0.25rem;
   padding: 2rem;
   text-align: center;
 }
 
-.correctAnswer {
-  color: #1e5729;
+.respuestaCorrecta {
+  color: #ffffff;
   font-size: 1.5rem
 }
 
@@ -40,5 +41,6 @@ button{
 }
 
 button:hover{
-  background: #A6F4DC;
+  background: #E13700;
+  color: #fff;
 }

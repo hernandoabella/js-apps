@@ -1,7 +1,7 @@
 // Globales
-var resultadoTemporal = 1.01;
+let resultadoTemporal = 1.01;
 
-function hacerMatematicas(a, b, c) {
+const hacerMatematicas = (a, b, c) => {
   switch (a) {
     case "+":
       return b + c;
@@ -14,25 +14,25 @@ function hacerMatematicas(a, b, c) {
   }
 }
 
-function submitAnswer(resultado) {
+const enviarRespuesta = (resultado) =>{
   document.querySelector("#formularioMatematico").addEventListener("submit", function(e) {
     e.preventDefault();
-    var respuestaUsuario = document.querySelector("#answerInput").value;
-    var booleano = (resultado == respuestaUsuario) ? true : false;
+    let respuestaUsuario = document.querySelector("#respuestaEntrada").value;
+    let booleano = (resultado == respuestaUsuario) ? true : false;
 
     if (booleano === true) {
-      // Set color to green for success
-      document.body.style.backgroundColor = "#34a853";
+      // Establece el color de fondo en verde en caso de que aciertes
+      document.body.style.backgroundColor = "#3EC300";
       setTimeout(function() {
-        document.body.style.backgroundColor = "#333";
+        document.body.style.backgroundColor = "#fff";
       }, 1000);
-      // Clear input field
-      document.querySelector("#answerInput").value = "";
-      // Ask a new question
+      // Limpia el campo de entrada
+      document.querySelector("#respuestaEntrada").value = "";
+      // Realiza una nueva pregunta
       creadorAleatorio();
     } else {
-      // Set color to red for failure
-      document.body.style.backgroundColor = "#dc3545";
+      // Establece el color de fondo en rojo en caso de que falles en la respuesta
+      document.body.style.backgroundColor = "#FF1D15";
       setTimeout(function() {
         document.body.style.backgroundColor = "#fff";
       }, 1000);
@@ -40,43 +40,43 @@ function submitAnswer(resultado) {
   });
 }
 
-function creadorAleatorio() {
-  // Remove the answer if a hint was used
-  if (document.querySelector(".correctAnswer")) {
-    document.querySelector(".correctAnswer").remove();
-  }
+const creadorAleatorio = () =>{
+  // Elimina la respuesta si se utilizó una pista
+  if (document.querySelector(".respuestaCorrecta")) {
+    document.querySelector(".respuestaCorrecta").remove();
+}
 
-  // Set up the random numbers and operator
-  var operadores = ["+", "-", "*", "/"];
-  var enteroAleatorioUno = parseInt((Math.random() * 100), 10);
-  var enteroAleatorioDos = parseInt((Math.random() * 100), 10);
-  var operadorAleatorio = operadores[Math.floor(Math.random() * operadores.length)];
+  // Configura el operador y los números aleatorios
+  let operadores = ["+", "-", "*", "/"];
+  let enteroAleatorioUno = parseInt((Math.random() * 100), 10);
+  let enteroAleatorioDos = parseInt((Math.random() * 100), 10);
+  let operadorAleatorio = operadores[Math.floor(Math.random() * operadores.length)];
 
-  // Create the question text and set it in the document
-  var elemento = document.querySelector(".questionText");
+  // Cree el texto de la pregunta y configuralo en el documento
+  let elemento = document.querySelector(".questionText");
   elemento.innerHTML = ("¿Cuánto es ").concat(enteroAleatorioUno, " ", operadorAleatorio, " ", enteroAleatorioDos, "?");
 
-  // Do the math and round floats to two decimals
-  var resultadoPreliminar = hacerMatematicas(operadorAleatorio, enteroAleatorioUno, enteroAleatorioDos);
-  var isFloat = (!Number.isInteger(resultadoPreliminar)) ? true : false;
-  var resultado = (isFloat === true) ? resultadoPreliminar.toFixed(2) : resultadoPreliminar;
+  // Hace los cálculos y redondea los floats a dos decimales
+  let resultadoPreliminar = hacerMatematicas(operadorAleatorio, enteroAleatorioUno, enteroAleatorioDos);
+  let esFlotante = (!Number.isInteger(resultadoPreliminar)) ? true : false;
+  let resultado = (esFlotante === true) ? resultadoPreliminar.toFixed(2) : resultadoPreliminar;
   resultadoTemporal = resultado;
 
-  // Set event listener for the form based on browser type
-  var respuestaEntradaUsuario = document.querySelector("#answerInput");
+  // Establece el detector de eventos para el formulario según el tipo de navegador
+  let respuestaEntradaUsuario = document.querySelector("#respuestaEntrada");
   if (respuestaEntradaUsuario.addEventListener) {
-    respuestaEntradaUsuario.addEventListener("submit", submitAnswer(resultado), false);
+    respuestaEntradaUsuario.addEventListener("submit", enviarRespuesta(resultado), false);
   } else if (respuestaEntradaUsuario.attachEvent) {
-    respuestaEntradaUsuario.attachEvent("onsubmit", submitAnswer(resultado));
+    respuestaEntradaUsuario.attachEvent("onsubmit", enviarRespuesta(resultado));
   }
 
   return resultado;
 }
 
-function respuestaAyuda() {
-  // Make sure the answer isn't already showing
-  if (!document.querySelector(".correctAnswer")) {
-    // Show the answer
-    document.querySelector(".mathQuestion").innerHTML += ("<p class='correctAnswer'>La respuesta correcta es: " + "<b>" + resultadoTemporal + "</b>" + "</p>");
+const respuestaAyuda = () => {
+  // Asegúrate de que la respuesta no se muestre todavía
+  if (!document.querySelector(".respuestaCorrecta")) {
+    // Muestra la respuesta
+    document.querySelector(".mathQuestion").innerHTML += ("<p class='respuestaCorrecta'>La respuesta correcta es: " + "<b>" + resultadoTemporal + "</b>" + "</p>");
   }
 }

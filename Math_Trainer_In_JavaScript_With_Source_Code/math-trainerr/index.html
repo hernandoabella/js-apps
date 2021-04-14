@@ -10,31 +10,22 @@
 </head>
 
 <body onload="creadorAleatorio()">
-
-  <div class="container-fluid">
-    <div class="flexBox">
+    <div class="contenedor">
       <div class="mathCard">
         <div class="mathQuestion">
-          <h1 class="display-4 questionText text-center mb-0">Placeholder Text</h1>
+          <h1 class="questionText"></h1>
         </div>
         <form id="formularioMatematico">
           <div class="form-group">
-            <input type="text" class="form-control" id="answerInput" placeholder="Escribe tu respuesta aquí">
+            <input type="text" class="form-control" id="respuestaEntrada" placeholder="Escribe tu respuesta aquí">
             <button type="submit">Enviar</button>
             <button  onclick="creadorAleatorio()"><i class="fas fa-sync-alt"></i></button>
             <button  onclick="respuestaAyuda()"><i class="far fa-question-circle"></i></button>
           </div>
           
         </form>
-        <div class="d-flex">
-          
-        </div>
       </div>
     </div>
-  </div>
-
-  <!-- JavaScript -->
   <script src="./script.js"></script>
 </body>
-
 </html>
