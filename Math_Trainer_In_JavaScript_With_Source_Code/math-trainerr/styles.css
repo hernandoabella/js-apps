@@ -1,6 +1,4 @@
-body {
-  background: #333
-}
+
 
 .flexBox {
   align-items: center;
@@ -11,18 +9,13 @@ body {
 }
 
 .mathCard {
-  background: white;
+  background: rgb(28, 207, 133);
   border-radius: 0.25rem;
   padding: 4rem
 }
 
 .questionText {
   padding-bottom: 2rem
-}
-
-.svg {
-  height: 24px;
-  width: 24px;
 }
 
 .correctAnswer {

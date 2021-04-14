@@ -34,7 +34,7 @@ function submitAnswer(result) {
       // Set color to red for failure
       document.body.style.backgroundColor = "#dc3545";
       setTimeout(function() {
-        document.body.style.backgroundColor = "#333";
+        document.body.style.backgroundColor = "#fff";
       }, 1000);
     }
   });
