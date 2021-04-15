@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type=text/css href="style.css">
+
+    <title>Examen de JavaScript</title>
+</head>
+<body>
+    <div id="page-container">
+        <section>
+            <div id="quizContainer">
+                <div id="currentTime" class="timer" class="d-flex justify-content-end time">
+                </div>
+            </div>
+            <div id="questionsSection">
+                <div class="contenedor">
+                    <p class="line-1 typewriter">Bienvenido al examen de JavaScript</p>
+                    <div class="card-deck">
+                        <div class="card-body">
+                            <p class="text">You have 75 seconds to answer questions testing your knowledge of JavaScript
+                                fundamentals. </p>
+                            <p class="text">Incorrect answers have a 10 second penalty! </p>
+                            <p class="text">Will you get
+                                the high score?
+                            </p>
+                        </div>
+                    </div>
+                    <h5 class="luck mb-5" style="font-family: sans-serif;">¡Buena suerte!</h5>
+                    <div class="controls">
+                        <button id="startTimer" type="button" class="start-btn btn btn-light">Start
+                            Quiz!</button>
+                    </div>
+                </div>
+            </div>
+
+            <ul id="questionsUl" style="color: white; background-color: black;"></ul>
+    </div>
+    </section>
+
+    <!-- Scores section -->
+
+    <section>
+        <div class id="scoresSection">
+            <ul id="highScoresUl" style="color: white; background-color: black;"></ul>
+        </div>
+    </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
