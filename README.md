@@ -1,4 +1,4 @@
-# Aplicaciones JS
+# JS APPS
 
 *Aplicaciones creadas con HTML, CSS y JAVASCRIPT.*
 

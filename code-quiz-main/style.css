@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+    padding: 10px;
+    width: 400px;
+    background: violet;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text{
+    padding: 10px;
+}
+
+button{
+    cursor: pointer;
+    transition: .3s;
+}
+
 .line-1 { 
     position: relative;
     top: 50%;  

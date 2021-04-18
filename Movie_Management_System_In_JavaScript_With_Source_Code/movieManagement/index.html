@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Filtering System</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://kit.fontawesome.com/9f767eca8f.js" crossorigin="anonymous"></script>
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <header>
+          
+        </header>
+        <div class="container">
+            <div class="container__header">
+                <img src="images/js-logo.png" id="logo" alt="JS logo">
+                <div class="container__title">
+                    <h1>JS Filtering System</name></h1>
+                    <h3>Date started: <date>April 10, 2020</date></h3>
+                    <h3>Date ended: <date>April 15, 2020</date></h3>
+                </div>
+            </div>
+            <div class="container__movie-system">
+                <nav>
+                    <li data-nav-list class="active">All movies</li>
+                    <li data-nav-list>Action</li>
+                    <li data-nav-list>Comedy</li>
+                    <li data-nav-list>Drama</li>
+                    <li data-nav-list>Horror</li>
+                    <li data-nav-list>Romance</li>
+                </nav>
+                <div class="movie-system__movie-list">
+                    <button class="movie-list__add-movie">
+                        <i class="fas fa-video"></i> Add movie
+                    </button>
+                    <div class="movie-list__empty-item">
+                        <i class="fas fa-plus fa-7x"></i><br><br>
+                        Click the 'Add Movie' button to enter an entry
+                    </div>
+                </div>
+                <div class="movie__modal-box">
+                    <div class="movie__modal-content">
+                        <div class="movie__modal-header">
+                            Enter movie credentials
+                            <div class="close">&times</div>
+                        </div>
+                        <div class="movie__add-movie">
+                            <div class="add-movie__genre-image"></div>  
+                            <div class="add-movie__input-form">
+                                <label for="movie-name">Enter name</label><br>
+                                <input name="name" type="text" id="movie-name" placeholder="Name of movie" required><br>
+
+                                <label for="movie-genre">Choose genre</label><br>
+                                <select name="genre" id="movie-genre">
+                                    <option value="None">--Select a genre--</option>
+                                    <option value="Action">Action</option>
+                                    <option value="Comedy">Comedy</option>
+                                    <option value="Drama">Drama</option>
+                                    <option value="Horror">Horror</option>
+                                    <option value="Romance">Romance</option>
+                                </select><br>
+
+                                <label for="movie-rating">Enter rating</label><br>
+                                <select name="rating" id="movie-rating">
+                                    <option value="None">--Choose rating--</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select><br>
+
+                                <label for="movie-description">Enter description</label><br>
+                                <textarea name="description" id="movie-description" placeholder="Description or summary of the movie"></textarea><br>
+
+                                <input type="submit" id="add-movie" value="Add movie">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

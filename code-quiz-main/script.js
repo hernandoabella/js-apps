@@ -4,7 +4,7 @@ var puntaje = 0;
 var questionIndex = 0;
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTimer");
-var questionsSection = document.querySelector("#questionsSection");
+var seccionPreguntas = document.querySelector("#seccionPreguntas");
 var quizContainer = document.querySelector("#quizContainer");
 var todosLosPuntajes = JSON.parse(localStorage.getItem("todosLosPuntajes")) || [];
 
@@ -22,7 +22,7 @@ var penalty = 10;
 
 // Quiz questions array
 
-var questions = [
+var preguntas = [
     {
         title: "How do you create a function in JavaScript?",
         options: ["function myFunction()", "callFunction()", "var myFunction", "myFunction()"],
@@ -51,9 +51,9 @@ var questions = [
 
 ];
 
-// Check questions array in console log
+// Comprueba el arreglo preguntas en la consola
 
-console.log(questions);
+console.log(preguntas);
 
 // Create ul for quiz questions
 
@@ -85,23 +85,23 @@ function render(questionIndex) {
 
     // Clears existing data 
 
-    questionsSection.innerHTML = "";
+    seccionPreguntas.innerHTML = "";
     ulEl.innerHTML = "";
 
     // Loop through questions array
 
-    for (var i = 0; i < questions.length; i++) {
+    for (var i = 0; i < preguntas.length; i++) {
         // Appends question title only
-        var userQuestion = questions[questionIndex].title;
-        var userChoices = questions[questionIndex].options;
-        questionsSection.textContent = userQuestion;
+        var userQuestion = preguntas[questionIndex].title;
+        var userChoices = preguntas[questionIndex].options;
+        seccionPreguntas.textContent = userQuestion;
     }
     // New for each for question
 
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
-        questionsSection.appendChild(ulEl);
+        seccionPreguntas.appendChild(ulEl);
         ulEl.appendChild(listItem);
         listItem.addEventListener("click", (compare));
     })
@@ -116,18 +116,18 @@ function compare(event) {
         var answerDiv = document.createElement("div");
         answerDiv.setAttribute("id", "answerDiv");
 
-        // Correct condition 
+        // Condición correcta 
 
-        if (element.textContent == questions[questionIndex].answer) {
+        if (element.textContent == preguntas[questionIndex].answer) {
             puntaje++;
-            answerDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
+            answerDiv.textContent = "¡Correcto! La respuesta es: " + preguntas[questionIndex].answer;
         }
         else {
 
             // Will deduct 10 seconds off secondsLeft for wrong answers
 
             secondsLeft = secondsLeft - penalty;
-            answerDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
+            answerDiv.textContent = "¡Incorrecto! La respuesta correcta es:  " + preguntas[questionIndex].answer;
         }
 
     }
@@ -136,20 +136,20 @@ function compare(event) {
 
     questionIndex++;
 
-    if (questionIndex >= questions.length) {
+    if (questionIndex >= preguntas.length) {
         quizComplete();
-        answerDiv.textContent = "Finished!" + " " + "You got  " + puntaje + "/" + questions.length + " Correct!";
+        answerDiv.textContent = "Finished!" + " " + "You got  " + puntaje + "/" + preguntas.length + " Correct!";
     }
     else {
         render(questionIndex);
     }
-    questionsSection.appendChild(answerDiv);
+    seccionPreguntas.appendChild(answerDiv);
 
 }
 // Quiz complete clear questionsSection
 
 function quizComplete() {
-    questionsSection.innerHTML = "";
+    seccionPreguntas.innerHTML = "";
     currentTime.innerHTML = "";
 
     // Create h1, p elements
@@ -158,12 +158,12 @@ function quizComplete() {
     h1El.setAttribute("id", "h1El");
     h1El.textContent = "Quiz Complete!"
 
-    questionsSection.appendChild(h1El);
+    seccionPreguntas.appendChild(h1El);
 
     var pEl = document.createElement("p");
     pEl.setAttribute("id", "pEl");
 
-    questionsSection.appendChild(pEl);
+    seccionPreguntas.appendChild(pEl);
 
     // Calculates time remaining and creates score
 
@@ -173,7 +173,7 @@ function quizComplete() {
         clearInterval(holdInterval);
         pEl.textContent = "Tu puntaje final es: " + timeRemaining;
 
-        questionsSection.appendChild(pEl2);
+        seccionPreguntas.appendChild(pEl2);
     }
 
     // User prompted to enter intials
@@ -182,7 +182,7 @@ function quizComplete() {
     enterInitials.setAttribute("id", "enterInitials");
     enterInitials.textContent = "Enter your initials: ";
 
-    questionsSection.appendChild(enterInitials);
+    seccionPreguntas.appendChild(enterInitials);
 
     // Enter initials
 
@@ -191,7 +191,7 @@ function quizComplete() {
     userInput.setAttribute("id", "initials");
     userInput.textContent = "";
 
-    questionsSection.appendChild(userInput);
+    seccionPreguntas.appendChild(userInput);
 
     // Submit user information
 
@@ -201,7 +201,7 @@ function quizComplete() {
     initialsSubmit.setAttribute("id", "submit");
     initialsSubmit.textContent = "Submit";
 
-    questionsSection.appendChild(initialsSubmit);
+    seccionPreguntas.appendChild(initialsSubmit);
 
     // Event listener to capture initials and score in local storage 
 
@@ -231,7 +231,7 @@ function quizComplete() {
 
             // Append element to page
 
-            questionsSection.appendChild(h2El);
+            seccionPreguntas.appendChild(h2El);
 
             todosLosPuntajes.push(finalScore);
             var newScore = JSON.stringify(todosLosPuntajes);

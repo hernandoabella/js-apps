@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Venta de frutas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <h1>Venta de frutas</h1>
+            <form>
+            <input type="text" id="nombreFruta" placeholder="Nombre de fruta" required> 
+            <br>
+            <input type="number" id="precioFruta" placeholder="1.99" required>
+    
+            <div>
+                <select name="fruit-quantity" id="cantidadFruta">
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+                        
+            <div class="flexBotones">
+                <button type="submit" id="agregarBoton">Agregar frutas</button>
+                <button type="button" id="canastaFruta">Canasta de frutas</button>
+                <button type="button" id="precioTotal">Precio total</button>
+            </div>
+            
+            </form>
+
+            </div>
+            <div id="lista" class="lista">
+            </div>
+            <div id="total-div">
+            </div>        
+        <script src="script.js"></script>
+    </body>
+</html>
