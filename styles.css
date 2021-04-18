@@ -26,25 +26,6 @@ h2{
     padding: 40px;
 }
 
-ol{
-    margin-left: 30px;
-}
-
-ol li{
-    margin: 10px 50px;
-}
-
-a{
-    color: #323330;
-    text-decoration: none;
-    transition: .3s;
-    text-transform: uppercase;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
 .red{
     color: red;
 }
@@ -60,34 +41,48 @@ footer p{
 }
 
 #myInput {
-    background-image: url('/css/searchicon.png');
-    background-position: 10px 12px;
-    background-repeat: no-repeat;
-    width: 100%;
+    width: 300px;
     font-size: 16px;
-    padding: 12px 20px 12px 40px;
+    padding: 10px;
     border: 1px solid #ddd;
-    margin-bottom: 12px;
-  }
+    margin: 10px;
+}
   
-  #myUL {
+#myUL {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    width: 300px;
-  }
+    margin: 10px;
+    width: 500px;
+}
   
-  #myUL li a {
+#myUL li a {
     border: 1px solid #ddd;
     margin-top: -1px; /* Prevent double borders */
     background-color: #f6f6f6;
-    padding: 12px;
+    padding: 10px;
     text-decoration: none;
     font-size: 18px;
     color: black;
-    display: block
-  }
+    display: block;
+    transition: .3s;
+}
   
-  #myUL li a:hover:not(.header) {
-    background-color: #eee;
-  }
+#myUL li a:hover:not(.header) {
+    background-color: rgb(211, 211, 211);
+}
+
+.dificulty{
+    float: right;
+}
+
+.basico{
+    background: rgb(255, 255, 76);
+}
+
+.intermedio{
+    background: rgb(238, 169, 41);
+}
+
+.avanzado{
+    background: #617fe2;
+}
