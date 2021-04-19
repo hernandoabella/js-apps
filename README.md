@@ -23,3 +23,16 @@ Las aplicaciones de la lista te permitirán practicar el código de JavaScript c
 5. Sistema para venta de frutas
 6. Convierte tu edad en días
 7. Entrenador matemático
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
