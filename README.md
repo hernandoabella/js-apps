@@ -12,7 +12,7 @@ Detrás de todo emprendimiento positivo hay una gran disciplina para lograr los 
 
 ## Comenzando 😎
 
-Estas aplicaciones fueron enumeradas en una lista desde el nivel más básico hasta el nivel más avanzado.
+Las aplicaciones de la lista te permitirán practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con esta maravillosa tecnología.
 
 *Lista de Aplicaciones:* 
 
