@@ -16,6 +16,10 @@ Estas aplicaciones fueron enumeradas en una lista desde el nivel más básico ha
 
 *Lista de Aplicaciones:* 
 
-1. numero 1
-2. numero 2
-3. numero 3
+1. Contador de carácteres
+2. Aplicación del clima
+3. Reserva de asientos para películas
+4. Sistema de listado de libros
+5. Sistema para venta de frutas
+6. Convierte tu edad en días
+7. Entrenador matemático
