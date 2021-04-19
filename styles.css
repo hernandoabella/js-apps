@@ -41,23 +41,22 @@ footer p{
 }
 
 #myInput {
-    width: 300px;
+    width: 100%;
     font-size: 16px;
     padding: 10px;
     border: 1px solid #ddd;
-    margin: 10px;
+    margin: 10px auto;
 }
   
 #myUL {
     list-style-type: none;
     padding: 0;
-    margin: 10px;
-    width: 800px;
+    margin: 10px auto;
+    width: 100%;
 }
   
 #myUL li a {
     border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
     background-color: #f6f6f6;
     padding: 10px;
     text-decoration: none;
@@ -85,4 +84,8 @@ footer p{
 
 .avanzado{
     background: #617fe2;
+}
+
+.pulp__container{
+    padding: 20px;
 }

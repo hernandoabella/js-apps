@@ -1,6 +1,6 @@
 # JS APPS
 
-*Aplicaciones creadas con la tecnología de HTML, CSS y JAVASCRIPT.*
+Aplicaciones creadas con la tecnología de HTML, CSS y JS para practicar.
 
 ## Historia
 
@@ -14,7 +14,15 @@ Detrás de todo emprendimiento positivo hay una gran disciplina para lograr los 
 
 Las aplicaciones de la lista te permitirán practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con esta maravillosa tecnología.
 
-*Lista de Aplicaciones:* 
+Las aplicaciones están divididas en 3 niveles.
+
+* Básico
+* Intermedio
+* Avanzado
+
+El límite lo colocas tú, decides por cual comenzar sin embargo yo las enlisto según las vaya subiendo.
+
+### Lista de Aplicaciones:
 
 1. Contador de carácteres
 2. Aplicación del clima
