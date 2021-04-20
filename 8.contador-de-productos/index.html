@@ -6,82 +6,32 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="style.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
-   
       <div class="counter">
-         <h1>Javascript Product Counter</h1>;
+         <h1>Contador de productos</h1>
 
          <div class="counter-inner">
                <div class="total-product">
                   <img src="https://static-01.daraz.pk/p/ff1123addcb22a4476c656d10bccf4ef.jpg_340x340q80.jpg_.webp" alt="">
                   <div>
-                       <h5>Price: 78 Rupees</h5>
-                       <h5>Quantity: <span id="quantity">0</span></h5>
-                      <h5>Total Price: <span id="total-price">0</span> Rupees</h5>
+                       <h5>Precio: 78 Rupias</h5>
+                       <h5>Cantidad: <span id="quantity">0</span></h5>
+                      <h5>Precio total: <span id="total-price">0</span> Rupias</h5>
                   </div>
                </div>
                
-               <!-- <button class="btn" id="minus">-</button> -->
-               <button class="btn" onclick="productCount(false)">-</button>
-               <input type="number" value="0" id="input">
-               <!-- <button class="btn" id="plus">+</button> -->
-               <button class="btn" onclick="productCount(true)">+</button>
-               <br>
-
-               <button class="btn btn-buy" id="buy">Buy Now Product</button>
+               <div class="flexStuff">
+                  <button class="btn" onclick="productCount(false)">-</button>
+                  <input type="number" value="0" id="input">
+                  <button class="btn" onclick="productCount(true)">+</button>
+               </div>
+               <button class="btn btn-buy" id="buy">Comprar</button>
          </div>
       </div>
  
-     <script>
-      //   const plusBtn = document.getElementById('plus');
-      //   plusBtn.addEventListener('click', function(){
-      //      const inputBtn = document.getElementById('input').value;
-      //      const newInputBtn = parseInt(inputBtn);
-      //      const totalPlus = newInputBtn + 1;
-      //      document.getElementById('input').value = totalPlus;
-      //   })
-      //   const minusBtn = document.getElementById('minus');
-      //   minusBtn.addEventListener('click', function(){
-      //      const inputBtn = document.getElementById('input').value;
-      //      const newInputBtn = parseInt(inputBtn);
-      //      const totalPlus = newInputBtn - 1;
-      //      document.getElementById('input').value = totalPlus;
-      //   })
-
-
-      //   const plusBtn = document.getElementById('plus');
-      //   plusBtn.addEventListener('click', function(){
-      //    productCount(true);
-      //   })
-      //   const minusBtn = document.getElementById('minus');
-      //   minusBtn.addEventListener('click', function(){
-      //    productCount(false);
-      //   })
-
-        function productCount(product){
-           const inputBtn = document.getElementById('input').value;
-           const newInputBtn = parseInt(inputBtn);
-           let total = newInputBtn;
-           if(product == true){
-            total = newInputBtn + 1;
-           }
-           if(product == false && newInputBtn > 0){
-            total = newInputBtn - 1;
-           }
-           document.getElementById('quantity').innerText = document.getElementById('input').value = total;
-           
-        }
-
-        const buyBtn = document.getElementById('buy');
-        buyBtn.addEventListener('click', function(){
-           const inputBtn =   document.getElementById('quantity').innerText =  document.getElementById('input').value;
-           const newInputBtn = parseInt(inputBtn);
-
-           const total = newInputBtn * 78;
-           document.getElementById('total-price').innerText = total;
-        })
-     </script>
+     <script src="./script.js"></script>
 </body>  
 </html>   
