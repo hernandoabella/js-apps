@@ -125,13 +125,13 @@ ul, div#questionsSection::after {
     text-align: center;
 }
 
-#h2El {
+#elementoH2 {
     padding-top: 90px;
     color: cornflowerblue;
     text-align: center;
 } 
 
-#enterInitials, input#Initials {
+#ingreseIniciales, input#Initials {
     text-align: center;
     background-color: black;
     color: white;

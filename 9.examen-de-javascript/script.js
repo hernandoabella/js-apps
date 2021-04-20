@@ -1,28 +1,30 @@
 // Variables
 
-var score = 0;
-var questionIndex = 0;
-var currentTime = document.querySelector("#currentTime");
-var timer = document.querySelector("#startTimer");
-var questionsSection = document.querySelector("#questionsSection");
-var quizContainer = document.querySelector("#quizContainer");
-var allScores = JSON.parse(localStorage.getItem("allScores")) || [];
+let puntuacion = 0;
+let indicePregunta = 0;
+let tiempoActual = document.querySelector("#currentTime");
+let temporizador = document.querySelector("#startTimer");
+let seccionDePreguntas = document.querySelector("#seccionDePreguntas");
+let quizContainer = document.querySelector("#quizContainer");
+let todasLasPuntuaciones = JSON.parse(localStorage.getItem("todasLasPuntuaciones")) || [];
 
-// Quiz time remaining
+// Tiempo restante del cuestionario
 
-var secondsLeft = 75;
+let segundosRestantes = 75;
 
-// Interval time
+// Tiempo de intervalo
 
-var holdInterval = 0;
+let mantenerIntervalo = 0;
 
 // Penalty 10 seconds
 
-var penalty = 10;
+let penalty = 10;
 
 // Quiz questions array
 
-var questions = [
+let questions;
+
+questions = [
     {
         title: "How do you create a function in JavaScript?",
         options: ["function myFunction()", "callFunction()", "var myFunction", "myFunction()"],
@@ -59,98 +61,98 @@ console.log(questions);
 
 var ulEl = document.createElement("ul");
 console.log(ulEl);
-console.log(timer);
-if (timer !== null) {
-    timer.addEventListener("click", function () {
-        if (holdInterval === 0) {
-            holdInterval = setInterval(function () {
-                secondsLeft--;
-                currentTime.textContent = secondsLeft + " seconds";
+console.log(temporizador);
+if (temporizador !== null) {
+    temporizador.addEventListener("click", function () {
+        if (mantenerIntervalo === 0) {
+            mantenerIntervalo = setInterval(function () {
+                segundosRestantes--;
+                tiempoActual.textContent = segundosRestantes + " seconds";
 
-                if (secondsLeft <= 0) {
-                    clearInterval(holdInterval);
-                    quizComplete();
-                    currentTime.textContent = "OOOPS! OUT OF TIME!";
+                if (segundosRestantes <= 0) {
+                    clearInterval(mantenerIntervalo);
+                    cuestionarioCompleto();
+                    tiempoActual.textContent = "OOOPS! OUT OF TIME!";
                 }
             }, 1000);
         }
-        render(questionIndex);
+        renderizar(indicePregunta);
     });
 }
-console.log(questionIndex);
+console.log(indicePregunta);
 
 // Renders questions
 
-function render(questionIndex) {
+function renderizar(indicePregunta) {
 
     // Clears existing data 
 
-    questionsSection.innerHTML = "";
+    seccionDePreguntas.innerHTML = "";
     ulEl.innerHTML = "";
 
     // Loop through questions array
 
     for (var i = 0; i < questions.length; i++) {
         // Appends question title only
-        var userQuestion = questions[questionIndex].title;
-        var userChoices = questions[questionIndex].options;
-        questionsSection.textContent = userQuestion;
+        var userQuestion = questions[indicePregunta].title;
+        var userChoices = questions[indicePregunta].options;
+        seccionDePreguntas.textContent = userQuestion;
     }
     // New for each for question
 
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
-        questionsSection.appendChild(ulEl);
+        seccionDePreguntas.appendChild(ulEl);
         ulEl.appendChild(listItem);
         listItem.addEventListener("click", (compare));
     })
 }
 // Event to compare options with answer
 
-function compare(event) {
-    var element = event.target;
+function compare(e) {
+    var elemento = e.target;
 
-    if (element.matches("li")) {
+    if (elemento.matches("li")) {
 
-        var answerDiv = document.createElement("div");
-        answerDiv.setAttribute("id", "answerDiv");
+        var divRespuesta = document.createElement("div");
+        divRespuesta.setAttribute("id", "divRespuesta");
 
         // Correct condition 
 
-        if (element.textContent == questions[questionIndex].answer) {
-            score++;
-            answerDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
+        if (elemento.textContent == questions[indicePregunta].answer) {
+            puntuacion++;
+            divRespuesta.textContent = "Correct! The answer is:  " + questions[indicePregunta].answer;
         }
         else {
 
             // Will deduct 10 seconds off secondsLeft for wrong answers
 
-            secondsLeft = secondsLeft - penalty;
-            answerDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
+            segundosRestantes = segundosRestantes - penalty;
+            divRespuesta.textContent = "Wrong! The correct answer is:  " + questions[indicePregunta].answer;
         }
 
     }
     // Question Index determines number question user is on 
     // Append page with user information
 
-    questionIndex++;
+    indicePregunta++;
 
-    if (questionIndex >= questions.length) {
-        quizComplete();
-        answerDiv.textContent = "Finished!" + " " + "You got  " + score + "/" + questions.length + " Correct!";
+    if (indicePregunta >= questions.length) {
+        cuestionarioCompleto();
+        divRespuesta.textContent = "Finished!" + " " + "You got  " + puntuacion + "/" + questions.length + " Correct!";
     }
     else {
-        render(questionIndex);
+        renderizar(indicePregunta);
     }
-    questionsSection.appendChild(answerDiv);
+    seccionDePreguntas.appendChild(divRespuesta);
 
 }
 // Quiz complete clear questionsSection
 
-function quizComplete() {
-    questionsSection.innerHTML = "";
-    currentTime.innerHTML = "";
+function cuestionarioCompleto() {
+    seccionDePreguntas.innerHTML = "";
+    tiempoActual.innerHTML = "";
 
     // Create h1, p elements
 
@@ -158,89 +160,89 @@ function quizComplete() {
     h1El.setAttribute("id", "h1El");
     h1El.textContent = "Quiz Complete!"
 
-    questionsSection.appendChild(h1El);
+    seccionDePreguntas.appendChild(h1El);
 
     var pEl = document.createElement("p");
     pEl.setAttribute("id", "pEl");
 
-    questionsSection.appendChild(pEl);
+    seccionDePreguntas.appendChild(pEl);
 
     // Calculates time remaining and creates score
 
-    if (secondsLeft >= 0) {
-        var timeRemaining = secondsLeft;
+    if (segundosRestantes >= 0) {
+        var tiempoRestante = segundosRestantes;
         var pEl2 = document.createElement("p");
-        clearInterval(holdInterval);
-        pEl.textContent = "Your final score is: " + timeRemaining;
+        clearInterval(mantenerIntervalo);
+        pEl.textContent = "Tu puntuación final es: " + tiempoRestante;
 
-        questionsSection.appendChild(pEl2);
+        seccionDePreguntas.appendChild(pEl2);
     }
 
     // User prompted to enter intials
 
-    var enterInitials = document.createElement("initials");
-    enterInitials.setAttribute("id", "enterInitials");
-    enterInitials.textContent = "Enter your initials: ";
+    var ingreseIniciales = document.createElement("iniciales");
+    ingreseIniciales.setAttribute("id", "ingreseIniciales");
+    ingreseIniciales.textContent = "Enter your initials: ";
 
-    questionsSection.appendChild(enterInitials);
+    seccionDePreguntas.appendChild(ingreseIniciales);
 
     // Enter initials
 
-    var userInput = document.createElement("input");
-    userInput.setAttribute("type", "text");
-    userInput.setAttribute("id", "initials");
-    userInput.textContent = "";
+    var entradaUsuario = document.createElement("input");
+    entradaUsuario.setAttribute("type", "text");
+    entradaUsuario.setAttribute("id", "iniciales");
+    entradaUsuario.textContent = "";
 
-    questionsSection.appendChild(userInput);
+    seccionDePreguntas.appendChild(entradaUsuario);
 
     // Submit user information
 
-    var initialsSubmit = document.createElement("button");
-    initialsSubmit.setAttribute("class", "btn btn-light");
-    initialsSubmit.setAttribute("type", "submit");
-    initialsSubmit.setAttribute("id", "submit");
-    initialsSubmit.textContent = "Submit";
+    var ingresarIniciales = document.createElement("button");
+    ingresarIniciales.setAttribute("class", "btn btn-light");
+    ingresarIniciales.setAttribute("type", "submit");
+    ingresarIniciales.setAttribute("id", "submit");
+    ingresarIniciales.textContent = "Submit";
 
-    questionsSection.appendChild(initialsSubmit);
+    seccionDePreguntas.appendChild(ingresarIniciales);
 
     // Event listener to capture initials and score in local storage 
 
-    initialsSubmit.addEventListener("click", function (event) {
-        event.preventDefault();
-        var initials = userInput.value;
-        console.log(initials);
-        if (!initials) {
-            document.querySelector("#submit").textContent = "Enter a valid value!";
-            console.log(initialsSubmit);
+    ingresarIniciales.addEventListener("click", function (e) {
+        e.preventDefault();
+        var iniciales = entradaUsuario.value;
+        console.log(iniciales);
+        if (!iniciales) {
+            document.querySelector("#submit").textContent = "¡Ingresa un valor válido!";
+            console.log(ingresarIniciales);
         }
         else {
-            var finalScore = {
-                initials: initials,
-                score: timeRemaining
+            var puntuacionFinal = {
+                iniciales: iniciales,
+                puntuacion: tiempoRestante
             }
 
             // Clearing HTML at #questionSection 
 
-            document.querySelector("#questionsSection").innerHTML = "";
+            document.querySelector("#seccionDePreguntas").innerHTML = "";
 
             // Create High Scores page heading
 
-            var h2El = document.createElement("h2");
-            h2El.setAttribute("id", "h2El");
-            h2El.textContent = "High Scores!"
+            var elementoH2 = document.createElement("h2");
+            elementoH2.setAttribute("id", "elementoH2");
+            elementoH2.textContent = "High Scores!"
 
             // Append element to page
 
-            questionsSection.appendChild(h2El);
+            seccionDePreguntas.appendChild(elementoH2);
 
-            allScores.push(finalScore);
-            var newScore = JSON.stringify(allScores);
-            localStorage.setItem("allScores", newScore);
+            todasLasPuntuaciones.push(puntuacionFinal);
+            var newScore = JSON.stringify(todasLasPuntuaciones);
+            localStorage.setItem("todasLasPuntuaciones", newScore);
 
             // Adds score to final page
 
-            for (let i = 0; i < allScores.length; i++) {
-                const el = allScores[i].initials + " " + allScores[i].score;
+            for (let i = 0; i < todasLasPuntuaciones.length; i++) {
+                const el = todasLasPuntuaciones[i].iniciales + " " + todasLasPuntuaciones[i].score;
                 var li2 = document.createElement("li");
                 li2.textContent = el;
                 var ul = document.querySelector("#highScoresUl");
