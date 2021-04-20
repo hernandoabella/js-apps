@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
    <title>Counter</title>
    <meta charset="utf-8">
@@ -10,25 +9,24 @@
 </head>
 
 <body>
-      <div class="counter">
-         <h1>Contador de productos</h1>
-
-         <div class="counter-inner">
-               <div class="total-product">
+      <div class="contador">
+         <div class="contador-interno">
+            <h1>Contador de productos</h1>
+               <div class="producto-total">
                   <img src="https://static-01.daraz.pk/p/ff1123addcb22a4476c656d10bccf4ef.jpg_340x340q80.jpg_.webp" alt="">
                   <div>
                        <h5>Precio: 78 Rupias</h5>
-                       <h5>Cantidad: <span id="quantity">0</span></h5>
-                      <h5>Precio total: <span id="total-price">0</span> Rupias</h5>
+                       <h5>Cantidad: <span id="cantidad">0</span></h5>
+                      <h5>Precio total: <span id="precio-total">0</span> Rupias</h5>
                   </div>
                </div>
                
                <div class="flexStuff">
-                  <button class="btn" onclick="productCount(false)">-</button>
-                  <input type="number" value="0" id="input">
-                  <button class="btn" onclick="productCount(true)">+</button>
+                  <button class="btn" onclick="contarProducto(false)"><i class="fas fa-minus"></i></button>
+                  <input type="number" value="0" id="entrada">
+                  <button class="btn" onclick="contarProducto(true)"><i class="fas fa-plus"></i></button>
                </div>
-               <button class="btn btn-buy" id="buy">Comprar</button>
+               <button class="btn btn-buy" id="comprar">Comprar</button>
          </div>
       </div>
  

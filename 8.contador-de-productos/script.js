@@ -1,22 +1,26 @@
-const productCount = product => {
-  const inputBtn = document.getElementById('input').value;
-  const newInputBtn = parseInt(inputBtn);
-  let total = newInputBtn;
-  if(product == true){
-   total = newInputBtn + 1;
-  }
-  if(product == false && newInputBtn > 0){
-   total = newInputBtn - 1;
-  }
-  document.getElementById('quantity').innerText = document.getElementById('input').value = total;
-  
+const contarProducto = producto => {
+    const botonEntrada = document.getElementById('entrada').value;
+    const nuevoBotonEntrada = parseInt(botonEntrada);
+
+    let total;
+    total = nuevoBotonEntrada;
+
+    if(producto == true){
+     total = nuevoBotonEntrada + 1;
+    }
+
+    if(producto == false && nuevoBotonEntrada > 0){
+     total = nuevoBotonEntrada - 1;
+    }
+
+    document.getElementById('cantidad').innerText = document.getElementById('entrada').value = total;
 };
 
-const buyBtn = document.getElementById('buy');
-buyBtn.addEventListener('click', function(){
-   const inputBtn =   document.getElementById('quantity').innerText =  document.getElementById('input').value;
-   const newInputBtn = parseInt(inputBtn);
+const botonComprar = document.getElementById('comprar');
 
-   const total = newInputBtn * 78;
-   document.getElementById('total-price').innerText = total;
+botonComprar.addEventListener('click', function(){
+   const botonEntrada = document.getElementById('cantidad').innerText =  document.getElementById('entrada').value;
+   const nuevoBotonEntrada = parseInt(botonEntrada);
+   const total = nuevoBotonEntrada * 78;
+   document.getElementById('precio-total').innerText = total;
 })
