@@ -7,13 +7,17 @@
 .contenedor{
     padding: 10px;
     width: 400px;
-    background: violet;
     transform: translate(-50%, -50%);
     position: absolute;
     top: 50%;
     left: 50%;
-    border-radius: 5px;
     text-align: center;
+    background-color: #f0db4f;
+}
+
+div #seccionPreguntas ul{
+    margin: 0px;
+    padding: 0px;
 }
 
 .text{
@@ -32,6 +36,31 @@ button{
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.timer{
+    padding: 10px;
+}
+
+#seccionPreguntas{
+    padding: 10px;
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+    transition: .3s;
+    margin: 10px;
+    padding: 10px;
+}
+
+ul li:hover{
+    background: #323330;
+    color: #fff;
+}
+
+#answerDiv{
+    margin: 10px;
 }
   
 .typewriter {

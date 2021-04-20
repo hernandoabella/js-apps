@@ -31,6 +31,7 @@ const removeAnimationClass = () => {
 }
 
 
-//activar contador automático: 
+//Activar contador automático: 
+
 //setInterval(sumar, 500);
 //setInterval(restar, 500);
