@@ -1,252 +1,247 @@
 // Variables
 
-var puntaje = 0;
-var questionIndex = 0;
-var currentTime = document.querySelector("#currentTime");
-var timer = document.querySelector("#startTimer");
-var seccionPreguntas = document.querySelector("#questionsSection");
-var quizContainer = document.querySelector("#quizContainer");
-var todasLasPuntuaciones = JSON.parse(localStorage.getItem("allScores")) || [];
+let puntaje = 0;
+let indicePregunta = 0;
+let tiempoActual = document.querySelector("#tiempoActual");
+let timer = document.querySelector("#startTimer");
+let seccionPreguntas = document.querySelector("#seccionPreguntas");
+let quizContainer = document.querySelector("#quizContainer");
+let todosLosPuntajes = JSON.parse(localStorage.getItem("todosLosPuntajes")) || [];
 
-// Quiz time remaining
+// Tiempo restante del examen
 
-var secondsLeft = 75;
+let segundosRestantes = 75;
 
-// Interval time
+// Tiempo de intervalo
 
-var holdInterval = 0;
+let mantenerIntervalo = 0;
 
-// Penalty 10 seconds
+// Penalización de 10 segundos
 
-var penalty = 10;
+let penalizacion = 10;
 
-// Quiz questions array
+// Arreglo de preguntas
 
-var preguntas = [
+const preguntas = [
     {
-        titulo: "¿Cómo se crea una función en JavaScript",
+        titulo: "¿Cómo se crea una función en JavaScript?",
         opciones: ["function myFunction()", "callFunction()", "var myFunction", "myFunction()"],
         respuesta: "function myFunction()"
     },
     {
-        titulo: "¿Cómo se crea una instrucción IF para ejecutar algún código si 'i' no es igual a 5?",
+        titulo: "¿Cómo se crea una declaración if para ejecutar un código si 'i' no es igual a 5?",
         opciones: ["if i=! 5 then", "if (i || 5)", "if (i != 5)", "if (i % 5)"],
         respuesta: "if (i != 5)"
     },
     {
-        titulo: "¿Cómo encuentras el número con el valor más alto de x - y?",
+        titulo: "¿Cómo encuentras el número con el valor más alto de x e y",
         opciones: ["Math.ceil(x ,y)", "Math.max(x, y)", "Math.round(x, y)", "Math.highest(x, y)"],
         respuesta: "Math.max(x, y)"
     },
     {
-        titulo: "¿Qué evento ocurre cuando el usuario hace clic en un elemento HTML?",
+        titulo: "¿Qué evento ocurre cuando haces clic sobre un elemento HTML?",
         opciones: ["onmouseclick", "onpush", "onclick", "mousepress"],
         respuesta: "onclick"
     },
     {
-        titulo: "¿Cómo comienza un bucle FOR?",
+        titulo: "¿Cómo empieza un bucle for?",
         opciones: ["for (i < 0; i ++ 5; i+-)", "for (i = 0; i % 5; [i])", "for (i = 0; i || 5; i+)", "for (i = 0; i < 5; i++)"],
         respuesta: "for (i = 0; i < 5; i++)"
     },
 
 ];
 
-// Check questions array in console log
+// Comprueba el arreglo preguntas en la consola
 
 console.log(preguntas);
 
-// Create ul for quiz questions
+// Crea un elemento ul para el arreglo preguntas
 
-var ulEl = document.createElement("ul");
-console.log(ulEl);
+let elementoUl = document.createElement("ul");
+console.log(elementoUl);
 console.log(timer);
 if (timer !== null) {
     timer.addEventListener("click", function () {
-        if (holdInterval === 0) {
-            holdInterval = setInterval(function () {
-                secondsLeft--;
-                currentTime.textContent = secondsLeft + " seconds";
+        if (mantenerIntervalo === 0) {
+            mantenerIntervalo = setInterval(function () {
+                segundosRestantes--;
+                tiempoActual.textContent = segundosRestantes + " seconds";
 
-                if (secondsLeft <= 0) {
-                    clearInterval(holdInterval);
-                    quizComplete();
-                    currentTime.textContent = "OOOPS! OUT OF TIME!";
+                if (segundosRestantes <= 0) {
+                    clearInterval(mantenerIntervalo);
+                    examenCompletado();
+                    tiempoActual.textContent = "OOOPS! Fuera de tiempo!";
                 }
             }, 1000);
         }
-        render(questionIndex);
+        renderizar(indicePregunta);
     });
 }
-console.log(questionIndex);
+console.log(indicePregunta);
 
-// Renders questions
+// Renderiza las preguntas
 
-const render = questionIndex => {
+const renderizar = indicePregunta => {
 
-    // Clears existing data 
+    // Limpia los datos existentes
 
     seccionPreguntas.innerHTML = "";
-    ulEl.innerHTML = "";
+    elementoUl.innerHTML = "";
 
-    // Loop through questions array
+    // Recorre el arreglo preguntas
 
     for (var i = 0; i < preguntas.length; i++) {
-        // Appends question title only
-        var userQuestion = preguntas[questionIndex].titulo;
-        var userChoices = preguntas[questionIndex].opciones;
-        seccionPreguntas.textContent = userQuestion;
+        // Agrega solo el título de la pregunta
+        var preguntaUsuario = preguntas[indicePregunta].titulo;
+        var eleccionesUsuario = preguntas[indicePregunta].opciones;
+        seccionPreguntas.textContent = preguntaUsuario;
     }
-    // New for each for question
+    // Nuevo forEach para las preguntas
 
-    userChoices.forEach(function (newItem) {
-        var listItem = document.createElement("li");
-        listItem.textContent = newItem;
-        seccionPreguntas.appendChild(ulEl);
-        ulEl.appendChild(listItem);
-        listItem.addEventListener("click", (comparar));
+    eleccionesUsuario.forEach(function (nuevoElemento) {
+        var lista = document.createElement("li");
+        lista.textContent = nuevoElemento;
+        seccionPreguntas.appendChild(elementoUl);
+        elementoUl.appendChild(lista);
+        lista.addEventListener("click", (comparar));
     })
 };
 
-// Event to compare options with answer
+// Evento para comparar opciones con respuesta
 
-const comparar = event => {
-    var element = event.target;
+const comparar = evento => {
+    let elemento = evento.target;
 
-    if (element.matches("li")) {
+    if (elemento.matches("li")) {
 
-        var answerDiv = document.createElement("div");
-        answerDiv.setAttribute("id", "answerDiv");
+        let divRespuesta = document.createElement("div");
+        divRespuesta.setAttribute("id", "divRespuesta");
 
-        // Correct condition 
-
-        if (element.textContent == preguntas[questionIndex].respuesta) {
+        // Condición correcta
+        
+        if (elemento.textContent == preguntas[indicePregunta].respuesta) {
             puntaje++;
-            answerDiv.textContent = "¡Correcto! La respuesta es:  " + preguntas[questionIndex].respuesta;
+            divRespuesta.textContent = "¡Correcto! La respuesta es:  " + preguntas[indicePregunta].respuesta;
+        }else {
+
+            // Reducirá 10 segundos de los segundos que quedan por respuestas incorrectas
+
+            segundosRestantes = segundosRestantes - penalizacion;
+            divRespuesta.textContent = "¡Te equivocaste! la respuesta es:  " + preguntas[indicePregunta].respuesta;
         }
-        else {
-            // Will deduct 10 seconds off secondsLeft for wrong answers
-
-            secondsLeft = secondsLeft - penalty;
-            answerDiv.textContent = "¡Te equivocaste! La respuesta es:  " + preguntas[questionIndex].respuesta;
-        }
 
     }
-    // Question Index determines number question user is on 
-    // Append page with user information
+    // El índice de preguntas determina el número de preguntas en las que está el usuario
+    // Agrega la página con información del usuario
 
-    questionIndex++;
+    indicePregunta++;
 
-    if (questionIndex >= preguntas.length) {
-        quizComplete();
-        answerDiv.textContent = "¡Has terminado!" + " " + "Obtuviste  " + puntaje + "/" + preguntas.length + " ¡Correctas!";
+    if (indicePregunta >= preguntas.length) {
+        examenCompletado();
+        divRespuesta.textContent = "¡Has finalizado!" + " " + "Obtuviste  " + puntaje + "/" + preguntas.length + "¡Correctas!";
+    }else {
+        renderizar(indicePregunta);
     }
-    else {
-        render(questionIndex);
-    }
-    seccionPreguntas.appendChild(answerDiv);
-
+    seccionPreguntas.appendChild(divRespuesta);
 };
 
-// Quiz complete clear questionsSection
+// examenCompleto() limpia seccionPreguntas
 
-const quizComplete = () => {
+const examenCompletado = () => {
     seccionPreguntas.innerHTML = "";
-    currentTime.innerHTML = "";
+    tiempoActual.innerHTML = "";
 
-    // Create h1, p elements
+    // Crea elementos h1, p
 
-    var h1El = document.createElement("h1");
-    h1El.setAttribute("id", "h1El");
-    h1El.textContent = "Quiz Complete!"
+    var elementoH1 = document.createElement("h1");
+    elementoH1.setAttribute("id", "elementoH1");
+    elementoH1.textContent = "¡Examen completado!"
 
-    seccionPreguntas.appendChild(h1El);
+    seccionPreguntas.appendChild(elementoH1);
 
-    var pEl = document.createElement("p");
-    pEl.setAttribute("id", "pEl");
+    var elementoP = document.createElement("p");
+    elementoP.setAttribute("id", "elementoP");
 
-    seccionPreguntas.appendChild(pEl);
+    seccionPreguntas.appendChild(elementoP);
 
-    // Calculates time remaining and creates score
+    // Calcula el tiempo restante y crea el puntaje
 
-    if (secondsLeft >= 0) {
-        var timeRemaining = secondsLeft;
-        var pEl2 = document.createElement("p");
-        clearInterval(holdInterval);
-        pEl.textContent = "Your final score is: " + timeRemaining;
-
-        seccionPreguntas.appendChild(pEl2);
+    if (segundosRestantes >= 0) {
+        var tiempoRestante = segundosRestantes;
+        var elementoP2 = document.createElement("p");
+        clearInterval(mantenerIntervalo);
+        elementoP2.textContent = "Tu puntaje final es: " + tiempoRestante;
+        seccionPreguntas.appendChild(elementoP2);
     }
 
-    // User prompted to enter intials
+    // Se le solicita al usuario que ingrese sus iniciales
 
-    var enterInitials = document.createElement("initials");
-    enterInitials.setAttribute("id", "enterInitials");
-    enterInitials.textContent = "Enter your initials: ";
+    var ingresarIniciales = document.createElement("iniciales");
+    ingresarIniciales.setAttribute("id", "ingresarIniciales");
+    ingresarIniciales.textContent = "Ingresa tus iniciales: ";
 
-    seccionPreguntas.appendChild(enterInitials);
+    seccionPreguntas.appendChild(ingresarIniciales);
 
-    // Enter initials
+    // Ingresa las iniciales
 
-    var userInput = document.createElement("input");
-    userInput.setAttribute("type", "text");
-    userInput.setAttribute("id", "initials");
-    userInput.textContent = "";
+    var entradaUsuario = document.createElement("input");
+    entradaUsuario.setAttribute("type", "text");
+    entradaUsuario.setAttribute("id", "iniciales");
+    entradaUsuario.textContent = "";
 
-    seccionPreguntas.appendChild(userInput);
+    seccionPreguntas.appendChild(entradaUsuario);
 
-    // Submit user information
+    // Envía la información del usuario
 
-    var initialsSubmit = document.createElement("button");
-    initialsSubmit.setAttribute("class", "btn btn-light");
-    initialsSubmit.setAttribute("type", "submit");
-    initialsSubmit.setAttribute("id", "submit");
-    initialsSubmit.textContent = "Submit";
+    var enviarIniciales = document.createElement("button");
+    enviarIniciales.setAttribute("class", "btn btn-light");
+    enviarIniciales.setAttribute("type", "submit");
+    enviarIniciales.setAttribute("id", "submit");
+    enviarIniciales.textContent = "Enviar";
 
-    seccionPreguntas.appendChild(initialsSubmit);
+    seccionPreguntas.appendChild(enviarIniciales);
 
-    // Event listener to capture initials and score in local storage 
+    // Evento para capturar las iniciales y la puntuación en localStorage
 
-    initialsSubmit.addEventListener("click", function (event) {
-        event.preventDefault();
-        var initials = userInput.value;
-        console.log(initials);
-        if (!initials) {
-            document.querySelector("#submit").textContent = "Enter a valid value!";
-            console.log(initialsSubmit);
-        }
-        else {
-            var finalScore = {
-                initials: initials,
-                puntaje: timeRemaining
+    enviarIniciales.addEventListener("click", function (evento) {
+        evento.preventDefault();
+        var iniciales = entradaUsuario.value;
+        console.log(iniciales);
+        if (!iniciales) {
+            document.querySelector("#submit").textContent = "¡Ingrese un valor válido!";
+            console.log(enviarIniciales);
+        }else {
+            var puntajeFinal = {
+                iniciales: iniciales,
+                puntaje: tiempoRestante
             }
 
-            // Clearing HTML at #questionSection 
+            // Limpiando el HTML de #seccionPreguntas
 
-            document.querySelector("#questionsSection").innerHTML = "";
+            document.querySelector("#seccionPreguntas").innerHTML = "";
 
-            // Create High Scores page heading
+            // Crea encabezado de puntuaciones altas
 
-            var h2El = document.createElement("h2");
-            h2El.setAttribute("id", "h2El");
-            h2El.textContent = "High Scores!"
+            var elementoH2 = document.createElement("h2");
+            elementoH2.setAttribute("id", "elementoH2");
+            elementoH2.textContent = "¡Puntuaciones altas!"
 
-            // Append element to page
+            // Añade el elemento a la página
 
-            seccionPreguntas.appendChild(h2El);
+            seccionPreguntas.appendChild(elementoH2);
+            todosLosPuntajes.push(puntajeFinal);
+            var nuevaPuntuacion = JSON.stringify(todosLosPuntajes);
+            localStorage.setItem("todosLosPuntajes", nuevaPuntuacion);
 
-            todasLasPuntuaciones.push(finalScore);
-            var newScore = JSON.stringify(todasLasPuntuaciones);
-            localStorage.setItem("allScores", newScore);
+            // Agrega la puntuación final
 
-            // Adds score to final page
-
-            for (let i = 0; i < todasLasPuntuaciones.length; i++) {
-                const el = todasLasPuntuaciones[i].initials + " " + todasLasPuntuaciones[i].puntaje;
-                var li2 = document.createElement("li");
-                li2.textContent = el;
-                var ul = document.querySelector("#highScoresUl");
-                ul.appendChild(li2);
-
+            for (let i = 0; i < todosLosPuntajes.length; i++) {
+                const el = todosLosPuntajes[i].iniciales + " " + todosLosPuntajes[i].puntaje;
+                var listaDos = document.createElement("li");
+                listaDos.textContent = el;
+                var ul = document.querySelector("#ulPuntajesAltos");
+                ul.appendChild(listaDos);
+                ul.style.display = "block";
             }
         }
     });

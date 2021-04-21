@@ -1,143 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-* {
+*{
     font-family: 'Lato', sans-serif;
 }
 
-.contenedor{
-    width: 400px;
+#seccionPreguntas{
+    background: yellow;
+    color: black;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-}
-
-.line-1 { 
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);   
-    background-color: transparent; 
-}
-  
-.typewriter {
-    animation: typewriter 4s steps(44) 1s 1 normal both,
-               blinkTextCursor 500ms steps(44) infinite normal;    
-}
-
-@keyframes typewriter {
-    from{width: 0;}
-    to{width: 22em;}
-} 
-
-@keyframes blinkTextCursor {
-    from{border-right-color: rgba(74, 112, 238, 0.75);}
-    to{border-right-color: transparent;}
-}
- 
-ul{
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    text-align: center;
-    list-style-type: none;
-    background: rgb(24, 136, 180);
     padding: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+#seccionPreguntas ul li{
+    background: black;
+    color: #fff;
+    cursor: pointer;
     transition: .3s;
 }
 
-li:hover{
-    background: rgb(20, 107, 141);
+#seccionPreguntas ul li:hover{
+    background: #333;
 }
 
-.card-body, p.text {
-    background-color: transparent;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-}
-
-.btn {
-    cursor: pointer;
-}
-
-/* Intro section styling */
-#quizIntro {
-    padding-top: 70px;
-}
-
-/* Questions section styling */
-ul, div#questionsSection {
-    background-color: rgb(208, 255, 0);
-}
-
-#answerDiv {
-    padding-top: 5px;
+#elementoH2{
     text-align: center;
 }
 
-#scoresRow {
-    padding-top: 100px;
+#iniciales{
+    font-weight: bold;
 }
 
-#h1El {
-    padding-top: 140px;
-    text-align: center;  
-    color: cornflowerblue; 
-}
-
-#pEl {
-    padding-top: 60px;
-    text-align: center;
-}
-
-#pEl2 {
-    text-align: center;
-}
-
-#h2El {
-    padding-top: 90px;
-    color: cornflowerblue;
-    text-align: center;
-} 
-
-#enterInitials, input#Initials {
-    text-align: center;
-    background-color: black;
-    color: white;
-    outline: none !important;
-}
-
-ul#highScoresUl, ul#questionsUl {
-    padding-top: 0px;
-    text-align: center;
-    align-items: center;
-}
-
-#initials {
-    text-align: center;
-    background-color: white;
-    width: 60px;
-}
-
-#submit {
-    margin-left: 10px;
-    margin-bottom: 4px;
-  }
-
-#home {
-    margin-bottom: 80px;
-    margin-top: 120px;
-}
-
-.onomatopoetica {
-    color: cornflowerblue;
-}
-
-#questionsSection{
-    text-align: center;
+input#iniciales{
     padding: 10px;
+    margin-right: 10px;
+}
+
+button#submit.btn.btn-light{
+    padding: 10px;
+}
+
+#divRespuesta{
+    margin: 20px;
+}
+
+.timer{
+    padding: 10px;
+    font-size: 2em;
+}
+
+.start-btn{
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+#ulPuntajesAltos{
+    background: yellow;
+    position: absolute;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    height: 100px;
+    overflow-y: scroll;
+    display: none;
 }
