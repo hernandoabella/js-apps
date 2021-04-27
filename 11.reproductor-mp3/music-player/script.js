@@ -5,51 +5,51 @@ const artista = document.getElementById('artista');
 const contenedorProgreso = document.getElementById('contenedor__progreso');
 const progreso = document.getElementById('progreso');
 const temporizador = document.getElementById('temporizador');
-const duration = document.getElementById('duracion');
-const prev = document.getElementById('prev');
-const play = document.getElementById('play');
-const next = document.getElementById('next');
+const duracion = document.getElementById('duracion');
+const anterior = document.getElementById('anterior');
+const reproducir = document.getElementById('reproducir');
+const siguiente = document.getElementById('siguiente');
 let indiceCancion = 0;
 
-// Songs info
+// Informacion canciones
 const canciones = [
   {
     titulo: 'Green Chair',
     artista: 'Diego Nava',
     coverPath: 'assets/images/cover1.jpg',
-    discPath: 'assets/music/music1.mp3',
-    duration: '1:33',
+    origenDisco: 'assets/music/music1.mp3',
+    duracion: '1:33',
   },
   {
     titulo: 'Dance with Me',
     artista: 'Ahjay Stelino',
     coverPath: 'assets/images/cover2.jpg',
-    discPath: 'assets/music/music2.mp3',
-    duration: '2:22',
+    origenDisco: 'assets/music/music2.mp3',
+    duracion: '2:22',
   },
   {
     titulo: 'Gimme that Bottle',
     artista: 'Michael Ramir',
     coverPath: 'assets/images/cover3.jpg',
-    discPath: 'assets/music/music3.mp3',
-    duration: '1:54',
+    origenDisco: 'assets/music/music3.mp3',
+    duracion: '1:54',
   },
 ];
 
-// Load song initially
-loadSong(canciones[indiceCancion]);
+// Cargar cancion inicialmente
+cargarCancion(canciones[indiceCancion]);
 
-// Load the given song
-function loadSong(song) {
+// Cargar la cancion dada
+function cargarCancion(song) {
   portada.src = song.coverPath;
-  disco.src = song.discPath;
+  disco.src = song.origenDisco;
   titulo.textContent = song.titulo;
   artista.textContent = song.artista;
-  duration.textContent = song.duration;
+  duracion.textContent = song.duracion;
 }
 
-// Toggle play and pause
-function playPauseMedia() {
+// Toggle reproducir y pausar
+function reproducirPausarMedios() {
   if (disco.paused) {
     disco.play();
   } else {
@@ -57,19 +57,19 @@ function playPauseMedia() {
   }
 }
 
-// Update icon
-function updatePlayPauseIcon() {
+// Actualizar icon
+function actualizarIconoReproducirPausar() {
   if (disco.paused) {
-    play.classList.remove('fa-pause');
-    play.classList.add('fa-play');
+    reproducir.classList.remove('fa-pause');
+    reproducir.classList.add('fa-play');
   } else {
-    play.classList.remove('fa-play');
-    play.classList.add('fa-pause');
+    reproducir.classList.remove('fa-play');
+    reproducir.classList.add('fa-pause');
   }
 }
 
-// Update progress bar
-function updateProgress() {
+// Actualizar barra de progreso
+const actualizarProgreso = () => {
   progreso.style.width = (disco.currentTime / disco.duration) * 100 + '%';
 
   let minutes = Math.floor(disco.currentTime / 60);
@@ -78,16 +78,16 @@ function updateProgress() {
     seconds = '0' + seconds;
   }
   temporizador.textContent = `${minutes}:${seconds}`;
-}
+};
 
-// Reset the progress
-function resetProgress() {
+// Reiniciar el progreso
+const reiniciarProgreso = () => {
   progreso.style.width = 0 + '%';
   temporizador.textContent = '0:00';
-}
+};
 
-// Go to previous song
-function gotoPreviousSong() {
+// Ir a la cancion anterior
+function irCancionAnterior() {
   if (indiceCancion === 0) {
     indiceCancion = canciones.length - 1;
   } else {
@@ -95,15 +95,15 @@ function gotoPreviousSong() {
   }
 
   const isDiscPlayingNow = !disco.paused;
-  loadSong(canciones[indiceCancion]);
-  resetProgress();
+  cargarCancion(canciones[indiceCancion]);
+  reiniciarProgreso();
   if (isDiscPlayingNow) {
-    playPauseMedia();
+    reproducirPausarMedios();
   }
 }
 
-// Go to next song
-function gotoNextSong(playImmediately) {
+// Ir a la siguiente cancion
+function irSiguienteCancion(playImmediately) {
   if (indiceCancion === canciones.length - 1) {
     indiceCancion = 0;
   } else {
@@ -111,14 +111,14 @@ function gotoNextSong(playImmediately) {
   }
 
   const isDiscPlayingNow = !disco.paused;
-  loadSong(canciones[indiceCancion]);
-  resetProgress();
+  cargarCancion(canciones[indiceCancion]);
+  reiniciarProgreso();
   if (isDiscPlayingNow || playImmediately) {
-    playPauseMedia();
+    reproducirPausarMedios();
   }
 }
 
-// Change song progress when clicked on progress bar
+// Cambiar el progreso de la cancion cuando hagas clic en la barra de progreso
 function setProgress(ev) {
   const totalWidth = this.clientWidth;
   const clickWidth = ev.offsetX;
@@ -126,20 +126,24 @@ function setProgress(ev) {
   disco.currentTime = clickWidthRatio * disco.duration;
 }
 
-// Play/Pause when play button clicked
-play.addEventListener('click', playPauseMedia);
+// Reproducir/pausar cuando hagas clic en el boton de reproducir
+reproducir.addEventListener('click', reproducirPausarMedios);
 
-// Various events on disc
-disco.addEventListener('play', updatePlayPauseIcon);
-disco.addEventListener('pause', updatePlayPauseIcon);
-disco.addEventListener('timeupdate', updateProgress);
-disco.addEventListener('ended', gotoNextSong.bind(null, true));
+// Varios eventos en el disco
+disco.addEventListener('play', actualizarIconoReproducirPausar);
+disco.addEventListener('pause', actualizarIconoReproducirPausar);
+disco.addEventListener('timeupdate', actualizarProgreso);
+disco.addEventListener('ended', irSiguienteCancion.bind(null, true));
 
-// Go to next song when next button clicked
-prev.addEventListener('click', gotoPreviousSong);
 
-// Go to previous song when previous button clicked
-next.addEventListener('click', gotoNextSong.bind(null, false));
+// Ir a la siguiente cancion cuando hagas clic en el boton siguiente
+anterior.addEventListener('click', irCancionAnterior);
 
-// Move to different place in the song
+
+// Ir a la cancion anterior cuando hagas clic en el boton anterior
+
+siguiente.addEventListener('click', irSiguienteCancion.bind(null, false));
+
+
+// Mover a un lugar diferente en la cancion
 contenedorProgreso.addEventListener('click', setProgress);

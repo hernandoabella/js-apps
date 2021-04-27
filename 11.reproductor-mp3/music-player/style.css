@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  background-color: #f0f0f0;
+  background-color: #1D3557;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,20 +22,11 @@ body {
   width: 30rem;
 }
 
-.heading {
-  color: #000;
-  text-align: center;
-  text-shadow: 2px 1px #848484;
-  font-size: 4rem;
-  font-weight: 600;
-}
-
 .music-container {
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
   padding: 1rem 2rem;
-  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,7 +127,7 @@ body {
 @media (hover: hover) {
   .btn:hover {
     background-color: #d8d8d8;
-    color: #545454;
+    color: #a7a7a7;
   }
 
   .special-btn:hover {

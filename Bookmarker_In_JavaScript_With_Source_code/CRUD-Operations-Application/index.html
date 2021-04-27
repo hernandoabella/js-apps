@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
+  <body>
+    <!-- Start Bookmarker Header -->
+    <header>
+      <div class="container py-4 pl-4 border-bottom border-dark">
+        <h2 class="">Bookmarker</h2>
+      </div>
+    </header>
+    <!-- End Bookmarker Header -->
+
+    <!-- Start Bookmarker Body-->
+    <section>
+      <div class="container py-3 pl-4 border-bottom border-dark">
+        <!-- Start Bookmark Site -->
+        <div id="bookmarkSite" class="text-center mb-4">
+          <h3 class="mb-5 text-capitalize">Bookmark your favorite sites</h3>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Site Name</label>
+              <input
+                type="text"
+                class="form-control mb-4"
+                id="siteName"
+                placeholder="Bookmark Name"
+              />
+              <label for="exampleInputEmail1">Site URL</label>
+              <input
+                type="text"
+                class="form-control mb-4"
+                id="siteUrl"
+                placeholder="Website URL"
+              />
+            </div>
+            <button type="button" id="addBtn" onclick="addWebsite()" class="btn btn-primary">Submit</button>
+              
+          </form>
+        </div>
+        <!-- End Bookmark Site -->
+
+        <!-- Start Sites Presentation -->
+        <div id="displaySite">
+          <div class="websiteItem">
+            <h3 class="d-inline-block">Facebook</h3>
+            <a id="visitBtn" class="btn btn-primary d-inline-block mx-2" href="https://www.facebook.com" target="_blank">Visit</a>
+            <button  id="deleteBtn" onclick="deleteWebsite(this)" class="btn btn-danger text-white d-inline-block mx-2">Delete</button>
+          </div>
+        </div>
+        <!-- End Sites Presentation -->
+      </div>
+    </section>
+    <!-- End Bookmarker Body-->
+
+    <!-- Start Bookmarker Footer -->
+    <footer>
+      <div class="container py-3 pl-4">
+        <p>&copy; 2019 Bookmarker Inc.</p>
+      </div>
+    </footer>
+    <!-- Start Bookmarker Footer -->
+    <input type="checkbox" id="checkInp"/>
+    <div id="imageDiv">
+    </div>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>>
+    <script src="js/main.js">
+      checkInp.on = function () 
+      {
+        var imageDiv = document.getElementById("imageDiv");
+        var myImg = "<img src=\" Path Here \" />";
+        imageDiv.innerHTML += myImg;
+      };
+    </script>
+  </body>
+</html>
