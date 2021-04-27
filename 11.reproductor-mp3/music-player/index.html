@@ -13,27 +13,26 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="./style.css"/>
     <title>Music Player</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="heading">Music Player</h1>
       <div class="music-container">
         <div id="cover-box">
-          <img src="assets/images/cover1.jpg" alt="cover-image" id="cover" />
+          <img src="assets/images/cover1.jpg" alt="cover-image" id="portada" />
         </div>
         <div id="music-box">
-          <audio id="disc"></audio>
+          <audio id="disco"></audio>
           <div id="music-info">
-            <h2 id="title"></h2>
-            <h3 id="artist"></h3>
-            <div id="progress-container">
-              <div id="progress"></div>
+            <h2 id="titulo"></h2>
+            <h3 id="artista"></h3>
+            <div id="contenedor__progreso">
+              <div id="progreso"></div>
             </div>
             <div id="timer-bar">
-              <span id="timer">0:00</span>
-              <span id="duration"></span>
+              <span id="temporizador">0:00</span>
+              <span id="duracion"></span>
             </div>
           </div>
           <div id="control-box">
@@ -44,6 +43,6 @@
         </div>
       </div>
     </div>
-    <script src="assets/scripts/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -50,7 +50,7 @@ body {
   width: 85%;
 }
 
-#cover {
+#portada {
   border-radius: inherit;
   display: block;
   height: 100%;
@@ -68,17 +68,17 @@ body {
   bottom: 2rem;
 }
 
-#title {
+#titulo {
   font-size: 2rem;
   font-weight: 600;
 }
 
-#artist {
+#artista {
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-#progress-container {
+#contenedor__progreso{
   height: 4px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -87,7 +87,7 @@ body {
   border-radius: 8px;
 }
 
-#progress {
+#progreso {
   background-color: #000;
   width: 0%;
   height: inherit;

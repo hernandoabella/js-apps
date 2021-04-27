@@ -1,35 +1,35 @@
-const cover = document.getElementById('cover');
-const disc = document.getElementById('disc');
-const title = document.getElementById('title');
-const artist = document.getElementById('artist');
-const progressContainer = document.getElementById('progress-container');
-const progress = document.getElementById('progress');
-const timer = document.getElementById('timer');
-const duration = document.getElementById('duration');
+const portada = document.getElementById('portada');
+const disco = document.getElementById('disco');
+const titulo = document.getElementById('titulo');
+const artista = document.getElementById('artista');
+const contenedorProgreso = document.getElementById('contenedor__progreso');
+const progreso = document.getElementById('progreso');
+const temporizador = document.getElementById('temporizador');
+const duration = document.getElementById('duracion');
 const prev = document.getElementById('prev');
 const play = document.getElementById('play');
 const next = document.getElementById('next');
-let songIndex = 0;
+let indiceCancion = 0;
 
 // Songs info
-const songs = [
+const canciones = [
   {
-    title: 'Green Chair',
-    artist: 'Diego Nava',
+    titulo: 'Green Chair',
+    artista: 'Diego Nava',
     coverPath: 'assets/images/cover1.jpg',
     discPath: 'assets/music/music1.mp3',
     duration: '1:33',
   },
   {
-    title: 'Dance with Me',
-    artist: 'Ahjay Stelino',
+    titulo: 'Dance with Me',
+    artista: 'Ahjay Stelino',
     coverPath: 'assets/images/cover2.jpg',
     discPath: 'assets/music/music2.mp3',
     duration: '2:22',
   },
   {
-    title: 'Gimme that Bottle',
-    artist: 'Michael Ramir',
+    titulo: 'Gimme that Bottle',
+    artista: 'Michael Ramir',
     coverPath: 'assets/images/cover3.jpg',
     discPath: 'assets/music/music3.mp3',
     duration: '1:54',
@@ -37,29 +37,29 @@ const songs = [
 ];
 
 // Load song initially
-loadSong(songs[songIndex]);
+loadSong(canciones[indiceCancion]);
 
 // Load the given song
 function loadSong(song) {
-  cover.src = song.coverPath;
-  disc.src = song.discPath;
-  title.textContent = song.title;
-  artist.textContent = song.artist;
+  portada.src = song.coverPath;
+  disco.src = song.discPath;
+  titulo.textContent = song.titulo;
+  artista.textContent = song.artista;
   duration.textContent = song.duration;
 }
 
 // Toggle play and pause
 function playPauseMedia() {
-  if (disc.paused) {
-    disc.play();
+  if (disco.paused) {
+    disco.play();
   } else {
-    disc.pause();
+    disco.pause();
   }
 }
 
 // Update icon
 function updatePlayPauseIcon() {
-  if (disc.paused) {
+  if (disco.paused) {
     play.classList.remove('fa-pause');
     play.classList.add('fa-play');
   } else {
@@ -70,32 +70,32 @@ function updatePlayPauseIcon() {
 
 // Update progress bar
 function updateProgress() {
-  progress.style.width = (disc.currentTime / disc.duration) * 100 + '%';
+  progreso.style.width = (disco.currentTime / disco.duration) * 100 + '%';
 
-  let minutes = Math.floor(disc.currentTime / 60);
-  let seconds = Math.floor(disc.currentTime % 60);
+  let minutes = Math.floor(disco.currentTime / 60);
+  let seconds = Math.floor(disco.currentTime % 60);
   if (seconds < 10) {
     seconds = '0' + seconds;
   }
-  timer.textContent = `${minutes}:${seconds}`;
+  temporizador.textContent = `${minutes}:${seconds}`;
 }
 
 // Reset the progress
 function resetProgress() {
-  progress.style.width = 0 + '%';
-  timer.textContent = '0:00';
+  progreso.style.width = 0 + '%';
+  temporizador.textContent = '0:00';
 }
 
 // Go to previous song
 function gotoPreviousSong() {
-  if (songIndex === 0) {
-    songIndex = songs.length - 1;
+  if (indiceCancion === 0) {
+    indiceCancion = canciones.length - 1;
   } else {
-    songIndex = songIndex - 1;
+    indiceCancion = indiceCancion - 1;
   }
 
-  const isDiscPlayingNow = !disc.paused;
-  loadSong(songs[songIndex]);
+  const isDiscPlayingNow = !disco.paused;
+  loadSong(canciones[indiceCancion]);
   resetProgress();
   if (isDiscPlayingNow) {
     playPauseMedia();
@@ -104,14 +104,14 @@ function gotoPreviousSong() {
 
 // Go to next song
 function gotoNextSong(playImmediately) {
-  if (songIndex === songs.length - 1) {
-    songIndex = 0;
+  if (indiceCancion === canciones.length - 1) {
+    indiceCancion = 0;
   } else {
-    songIndex = songIndex + 1;
+    indiceCancion = indiceCancion + 1;
   }
 
-  const isDiscPlayingNow = !disc.paused;
-  loadSong(songs[songIndex]);
+  const isDiscPlayingNow = !disco.paused;
+  loadSong(canciones[indiceCancion]);
   resetProgress();
   if (isDiscPlayingNow || playImmediately) {
     playPauseMedia();
@@ -123,17 +123,17 @@ function setProgress(ev) {
   const totalWidth = this.clientWidth;
   const clickWidth = ev.offsetX;
   const clickWidthRatio = clickWidth / totalWidth;
-  disc.currentTime = clickWidthRatio * disc.duration;
+  disco.currentTime = clickWidthRatio * disco.duration;
 }
 
 // Play/Pause when play button clicked
 play.addEventListener('click', playPauseMedia);
 
 // Various events on disc
-disc.addEventListener('play', updatePlayPauseIcon);
-disc.addEventListener('pause', updatePlayPauseIcon);
-disc.addEventListener('timeupdate', updateProgress);
-disc.addEventListener('ended', gotoNextSong.bind(null, true));
+disco.addEventListener('play', updatePlayPauseIcon);
+disco.addEventListener('pause', updatePlayPauseIcon);
+disco.addEventListener('timeupdate', updateProgress);
+disco.addEventListener('ended', gotoNextSong.bind(null, true));
 
 // Go to next song when next button clicked
 prev.addEventListener('click', gotoPreviousSong);
@@ -142,4 +142,4 @@ prev.addEventListener('click', gotoPreviousSong);
 next.addEventListener('click', gotoNextSong.bind(null, false));
 
 // Move to different place in the song
-progressContainer.addEventListener('click', setProgress);
+contenedorProgreso.addEventListener('click', setProgress);
