@@ -1,26 +1,14 @@
-/*
- **
- ** User stories:
- ** - Shows number of characters, words, sentences, paragraphs - Done
- ** - Show reading time - Done
- ** - Show keyword count - Done
- ** - Show reading level (Optional - how?) - Done
- ** - Above data should change/appear on every keypress - Done
- **
- */
-
-// Readability (Mashape) API Key for testing: PQ4FOFuaR6mshI6qpnQKQvkDZQXjp1o6Zcqjsnug7GvNggTzUE
-
 "use strict";
+
 var input = document.querySelectorAll('textarea')[0],
-  characterCount = document.querySelector('#characterCount'),
-  wordCount = document.querySelector('#wordCount'),
-  sentenceCount = document.querySelector('#sentenceCount'),
-  paragraphCount = document.querySelector('#paragraphCount'),
-  readingTime = document.querySelector('#readingTime'),
-  readability = document.querySelector('#readability'),
-  keywordsDiv = document.querySelectorAll('.keywords')[0],
-  topKeywords = document.querySelector('#topKeywords');
+  characterCount = document.querySelector('#ContadorCaracter'),
+  wordCount = document.querySelector('#contadorPalabra'),
+  sentenceCount = document.querySelector('#contadorOracion'),
+  paragraphCount = document.querySelector('#contadorParrafo'),
+  readingTime = document.querySelector('#tiempoLeer'),
+  readability = document.querySelector('#legibilidad'),
+  keywordsDiv = document.querySelectorAll('.palabrasClave')[0],
+  topKeywords = document.querySelector('#palabrasClavePrincipales');
 
 // updating the displayed stats after every keypress
 input.addEventListener('keyup', function() {
