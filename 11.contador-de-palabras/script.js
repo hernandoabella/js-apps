@@ -1,30 +1,30 @@
 "use strict";
 
-var input = document.querySelectorAll('textarea')[0],
-  characterCount = document.querySelector('#ContadorCaracter'),
-  wordCount = document.querySelector('#contadorPalabra'),
-  sentenceCount = document.querySelector('#contadorOracion'),
-  paragraphCount = document.querySelector('#contadorParrafo'),
-  readingTime = document.querySelector('#tiempoLeer'),
-  readability = document.querySelector('#legibilidad'),
-  keywordsDiv = document.querySelectorAll('.palabrasClave')[0],
-  topKeywords = document.querySelector('#palabrasClavePrincipales');
+var entrada = document.querySelectorAll('textarea')[0],
+  characterCount = document.querySelector('#characterCount'),
+  wordCount = document.querySelector('#wordCount'),
+  sentenceCount = document.querySelector('#sentenceCount'),
+  paragraphCount = document.querySelector('#paragraphCount'),
+  readingTime = document.querySelector('#readingTime'),
+  readability = document.querySelector('#readability'),
+  keywordsDiv = document.querySelectorAll('.keywords')[0],
+  topKeywords = document.querySelector('#topKeywords');
 
 // updating the displayed stats after every keypress
-input.addEventListener('keyup', function() {
+entrada.addEventListener('keyup', function() {
 
   //keeping the console clean to make only the latest data visible
   console.clear();
 
   // character count
   // just displaying the input length as everything is a character
-  characterCount.innerHTML = input.value.length;
+  characterCount.innerHTML = entrada.value.length;
 
   // word count using \w metacharacter - replacing this with .* to match anything between word boundaries since it was not taking 'a' as a word.
   // this is a masterstroke - to count words with any number of hyphens as one word
   // [-?(\w+)?]+ looks for hyphen and a word (we make both optional with ?). + at the end makes it a repeated pattern
   // \b is word boundary metacharacter
-  var words = input.value.match(/\b[-?(\w+)?]+\b/gi);
+  var words = entrada.value.match(/\b[-?(\w+)?]+\b/gi);
   // console.log(words);
   if (words) {
     wordCount.innerHTML = words.length;
@@ -34,7 +34,7 @@ input.addEventListener('keyup', function() {
 
   // sentence count	using ./!/? as sentense separators
   if (words) {
-    var sentences = input.value.split(/[.|!|?]+/g);
+    var sentences = entrada.value.split(/[.|!|?]+/g);
     console.log(sentences);
     sentenceCount.innerHTML = sentences.length - 1;
   } else {
@@ -45,7 +45,7 @@ input.addEventListener('keyup', function() {
   if (words) {
     // \n$ takes care of empty lines: lines with no characters, and only \n are not paragraphs
     // and need to be replaced with empty string
-    var paragraphs = input.value.replace(/\n$/gm, '').split(/\n/);
+    var paragraphs = entrada.value.replace(/\n$/gm, '').split(/\n/);
     paragraphCount.innerHTML = paragraphs.length;
   } else {
     paragraphCount.innerHTML = 0;
@@ -133,7 +133,7 @@ readability.addEventListener('click', function() {
   readability.innerHTML = "Fetching score...";
 
   var requestUrl = "https://ipeirotis-readability-metrics.p.mashape.com/getReadabilityMetrics?text=";
-  var data = input.value;
+  var data = entrada.value;
 
   var request = new XMLHttpRequest();
   request.open('POST', encodeURI(requestUrl + data), true);
