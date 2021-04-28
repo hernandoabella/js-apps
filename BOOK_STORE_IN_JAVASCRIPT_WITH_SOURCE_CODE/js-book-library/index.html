@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" conten="yogasmara">
+  <title>Javascript Book Library</title>
+  <link rel="shorcut icon" href="./img/top-icon.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="banner">
+      <div class="left-banner">
+        <div class="content">
+          <span>book</span>
+          <span>library</span>
+        </div>
+      </div> <!-- left-banner -->
+      <div class="right-banner">
+        <div class="content">
+          <span class="total-books"></span>
+          <span>books</span>
+        </div>
+      </div> <!-- right-banner -->
+    </div> <!-- banner -->
+
+    <div class="new-book-container">
+      <button id="modal-button" class="new-book">new book</button>
+    </div> <!-- new book container -->
+
+    <div class="card-container">
+      
+    </div> <!-- card-container -->
+  </div> <!-- container -->
+
+  <!-- modal related -->
+  <div id="modal-form" class="modal">
+
+    <!-- modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Add new book</h2>
+      </div> <!-- modal-header -->
+      <div class="modal-body">
+        <form id="new-book-form">
+          <label for="booktitle" class="form-label">Title:</label> <br>
+          <input type="text" name="booktitle" id="booktitle" class="form-input" autocomplete="off"> <br> <!-- book title -->
+          <label for="bookauthor" class="form-label">Author:</label> <br>
+          <input type="text" name="bookauthor" id="bookauthor" class="form-input" autocomplete="off"> <br> <!-- book author -->
+          <label for="bookpages" class="form-label">Pages:</label> <br>
+          <input type="number" name="bookpages" id="bookpages" class="form-input" autocomplete="off"> <br> <!-- book pages-->
+          <label for="hasbeenread" class="form-label">Has been read:</label> <br>
+          <select id="hasbeenread" class="form-dropdown"> <br> <!-- book has been read -->
+            <option value="read">Read</option>
+            <option value="unread">Unread</option>
+          </select> <br>
+          <hr>
+          <input type="submit" value="submit" class="submit-button">
+        </form>
+      </div> <!-- modal body -->
+    </div> <!-- modal content -->
+
+  </div> <!-- id modal form -->
+  
+  <script src="./script/script.js"></script>
+  <script src="./script/modal.js"></script>
+</body>
+</html>

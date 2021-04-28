@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="color.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <title>Color Game</title>
+    </head>
+    <body style="font-family: 'Raleway', sans-serif;" align="center">
+        <h1 class="header bounceInDown animated">The Color Game</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section align="center">
+                            <p class="bounceInRight animated">Can you guess the color which is formed when these colors are mixed?</p><br>
+                            <div class="col-lg-12" align="center">
+                                <button class="btn btn-danger bounceInLeft animated"><p>Red:<strong ><span id="r"></span>%</strong ></p></button>
+                                <button class="btn btn-success bounceInUp animated"><p>Green:<strong ><span id="g"></span>%</strong></p></button>
+                                <button class="btn btn-primary bounceInRight animated"><p>Blue:<strong ><span id="b"></span>%</strong></p></button>
+                            </div>
+                        </section>
+                    </div>
+                </div><hr>
+                <div class="container button-container" align="center">
+                    <button class="button btn btn-success flip animated hide" type="reset" id="reset" onClick="history.go(0)" onClick="window.location.reload()">START AGAIN</button>
+                </div>
+                <div class="message"><samp><h2 class="text"></h2></samp></div>
+                <div class="container square-container">
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
+                            <div class="square btn btn-primary bounceInLeft animated"></div>
+                            <div class="square btn btn-primary bounceInRight animated"></div>
+                            <div class="square btn btn-primary bounceInDown animated"></div>
+                            <div class="square btn btn-primary bounceInDown animated"></div>
+                            <div class="square btn btn-primary fadeInUpBig animated"></div>
+                            <div class="square btn btn-primary bounceInRight animated"></div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                </div>
+            </div>
+    <script src="color.js" type="text/javascript"></script>
+   </body>
+</html>

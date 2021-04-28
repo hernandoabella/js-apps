@@ -1,0 +1,60 @@
+body{
+    background-color: white;
+    height : 100%;
+
+}
+.header{
+    width: 100%;
+    padding : 3%;
+    margin : -3% 0 0 0;
+    color: white;
+    background-color: #00688B;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    text-align: center;
+}
+.button-container{
+    margin: auto;
+    display: block;
+}
+.button{
+    color:white;
+    font-weight: bold;
+}
+.square {
+    width: 30%;
+    height: 30%;
+    float: left;
+    background: purple;
+    padding-bottom: 1.66%;
+    margin: 5px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 600px;
+}
+.square-container{
+    text-align: center;
+}
+.message{
+    text-align: center;
+}
+.border{
+    border: solid;
+    border-color: grey;
+    border-width: 0.5px;
+}
+.footer-container{
+    background-color: #EDEDED;
+}
+.foot{
+    font-family: 'Acme', sans-serif;
+}
+
+.hide{
+    display: none;
+}

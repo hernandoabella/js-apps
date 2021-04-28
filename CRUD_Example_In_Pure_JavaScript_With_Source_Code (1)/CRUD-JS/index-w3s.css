@@ -1,0 +1,14 @@
+button {
+  color: aquamarine;
+  background-color: brown;
+}
+
+.w3-container {
+  width : 100vw;
+  /* border : 1px solid blue; */
+}
+
+.w3-input {
+  width : 100%;
+  margin : 0.5rem;
+}
