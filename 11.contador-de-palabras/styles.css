@@ -29,7 +29,7 @@ textarea{
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px;
-    border: 1px solid #d6dbd4;
+    border: 1px solid #f77f00;
     line-height: 20px;
 }
 
@@ -40,14 +40,14 @@ div{
 
 div span{
     font-weight: bold;
-    color: #003049;
+    color: #f77f00;
 }
 
 ul{
     overflow-y: scroll;
     height: 100px;
     margin-top: 20px;
-    border: 1px solid #003049;
+    border: 1px solid #f77f00;
     border-radius: 5px;
 }
 
@@ -56,7 +56,7 @@ ul li{
     padding: 10px 0px;
 }
 
-.keywords{
+.palabrasClave{
     color: #f77f00;
     font-weight: bold;
     margin-top: 30px;

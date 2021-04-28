@@ -5,10 +5,10 @@ var entrada = document.querySelectorAll('textarea')[0],
   contarPalabra = document.querySelector('#contarPalabra'),
   contarOracion = document.querySelector('#contarOracion'),
   contarParrafo = document.querySelector('#contarParrafo'),
-  readingTime = document.querySelector('#tiempoLeer'),
-  readability = document.querySelector('#readability'),
-  keywordsDiv = document.querySelectorAll('.keywords')[0],
-  topKeywords = document.querySelector('#topKeywords');
+  tiempoLeer = document.querySelector('#tiempoLeer'),
+  readability = document.querySelector('#legibilidad'),
+  palabrasClave = document.querySelectorAll('.palabrasClave')[0],
+  palabrasClavePrincipales = document.querySelector('#palabrasClavePrincipales');
 
 // updating the displayed stats after every keypress
 entrada.addEventListener('keyup', function() {
@@ -59,12 +59,12 @@ entrada.addEventListener('keyup', function() {
     if (seconds > 59) {
       var minutes = Math.floor(seconds / 60);
       seconds = seconds - minutes * 60;
-      readingTime.innerHTML = minutes + "m " + seconds + "s";
+      tiempoLeer.innerHTML = minutes + "m " + seconds + "s";
     } else {
-      readingTime.innerHTML = seconds + "s";
+      tiempoLeer.innerHTML = seconds + "s";
     }
   } else {
-    readingTime.innerHTML = "0s";
+    tiempoLeer.innerHTML = "0s";
   }
 
   // finding out top keywords and their count
@@ -109,19 +109,19 @@ entrada.addEventListener('keyup', function() {
     // console.log(sortedKeywords);
 
     // step-4: displaying top 4 keywords and their count
-    topKeywords.innerHTML = "";
+    palabrasClavePrincipales.innerHTML = "";
     for (var i = 0; i < sortedKeywords.length && i < 4; i++) {
       var li = document.createElement('li');
       li.innerHTML = "<b>" + sortedKeywords[i][0] + "</b>: " + sortedKeywords[i][1];
-      topKeywords.appendChild(li);
+      palabrasClavePrincipales.appendChild(li);
     }
   }
 
   // displaying top keywords only if there is a word in the text area
   if (words) {
-    keywordsDiv.style.display = "block";
+    palabrasClave.style.display = "block";
   } else {
-    keywordsDiv.style.display = "none";
+    palabrasClave.style.display = "none";
   }
 
 });
