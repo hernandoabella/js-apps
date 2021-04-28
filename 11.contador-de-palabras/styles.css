@@ -20,7 +20,6 @@ body{
     border-radius: 5px;
     padding: 10px;
     width: 400px;
-    
 }
 
 textarea{
@@ -31,21 +30,25 @@ textarea{
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #d6dbd4;
+    line-height: 20px;
 }
 
 div{
     margin: 10px 0px;
+    font-size: 18px;
 }
 
 div span{
     font-weight: bold;
+    color: #003049;
 }
 
 ul{
     overflow-y: scroll;
     height: 100px;
     margin-top: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #003049;
+    border-radius: 5px;
 }
 
 ul li{
@@ -54,9 +57,8 @@ ul li{
 }
 
 .keywords{
-    color: #e76f51;
+    color: #f77f00;
     font-weight: bold;
     margin-top: 30px;
     text-align: center;
-    font-style: italic;
 }

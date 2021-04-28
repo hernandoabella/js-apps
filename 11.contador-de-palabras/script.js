@@ -1,11 +1,11 @@
 "use strict";
 
 var entrada = document.querySelectorAll('textarea')[0],
-  characterCount = document.querySelector('#characterCount'),
-  wordCount = document.querySelector('#wordCount'),
-  sentenceCount = document.querySelector('#sentenceCount'),
-  paragraphCount = document.querySelector('#paragraphCount'),
-  readingTime = document.querySelector('#readingTime'),
+  contarCaracter = document.querySelector('#contarCaracter'),
+  contarPalabra = document.querySelector('#contarPalabra'),
+  contarOracion = document.querySelector('#contarOracion'),
+  contarParrafo = document.querySelector('#contarParrafo'),
+  readingTime = document.querySelector('#tiempoLeer'),
   readability = document.querySelector('#readability'),
   keywordsDiv = document.querySelectorAll('.keywords')[0],
   topKeywords = document.querySelector('#topKeywords');
@@ -18,7 +18,7 @@ entrada.addEventListener('keyup', function() {
 
   // character count
   // just displaying the input length as everything is a character
-  characterCount.innerHTML = entrada.value.length;
+  contarCaracter.innerHTML = entrada.value.length;
 
   // word count using \w metacharacter - replacing this with .* to match anything between word boundaries since it was not taking 'a' as a word.
   // this is a masterstroke - to count words with any number of hyphens as one word
@@ -27,18 +27,18 @@ entrada.addEventListener('keyup', function() {
   var words = entrada.value.match(/\b[-?(\w+)?]+\b/gi);
   // console.log(words);
   if (words) {
-    wordCount.innerHTML = words.length;
+    contarPalabra.innerHTML = words.length;
   } else {
-    wordCount.innerHTML = 0;
+    contarPalabra.innerHTML = 0;
   }
 
   // sentence count	using ./!/? as sentense separators
   if (words) {
     var sentences = entrada.value.split(/[.|!|?]+/g);
     console.log(sentences);
-    sentenceCount.innerHTML = sentences.length - 1;
+    contarOracion.innerHTML = sentences.length - 1;
   } else {
-    sentenceCount.innerHTML = 0;
+    contarOracion.innerHTML = 0;
   }
 
   // paragraph count from http://stackoverflow.com/a/3336537
@@ -46,9 +46,9 @@ entrada.addEventListener('keyup', function() {
     // \n$ takes care of empty lines: lines with no characters, and only \n are not paragraphs
     // and need to be replaced with empty string
     var paragraphs = entrada.value.replace(/\n$/gm, '').split(/\n/);
-    paragraphCount.innerHTML = paragraphs.length;
+    contarParrafo.innerHTML = paragraphs.length;
   } else {
-    paragraphCount.innerHTML = 0;
+    contarParrafo.innerHTML = 0;
   }
   // console.log(paragraphs);
 
