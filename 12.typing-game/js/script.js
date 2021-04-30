@@ -1,4 +1,4 @@
-window.addEventListener('load', init);
+window.addEventListener('load', iniciar);
 
 // Globals
 
@@ -13,7 +13,7 @@ const niveles = {
 let nivelActual = niveles.facil;
 let tiempoRestante = nivelActual;
 let puntuacionActual = 0;
-let isPlaying;
+let estaJugando;
 let maximaPuntuacion;
 
 
@@ -89,6 +89,7 @@ const palabras = [
     'server',
     'bash'
 ];
+
 //Opción
 const menu = document.getElementById('menu');
 const deslizarMenu = document.getElementById('deslizarMenu');
@@ -99,7 +100,7 @@ menu.addEventListener('click', function(){
 
 
 // Selección de nivel
-function setlevel(e){
+const ajustarNivel = e => {
     if(e.target === facil){
         nivelActual = niveles.facil;
     }else if(e.target === medio){
@@ -108,30 +109,30 @@ function setlevel(e){
         nivelActual = niveles.dificil;
     }
     console.log(nivelActual);
-    init();
-}
+    iniciar();
+};
 
 // Inicializar juego
-function init(){
+function iniciar(){
     // Show number of sec in UI
     segundos.innerHTML = nivelActual;
     // Load word from array
     showWord(palabras);
     // Start matching on word input
-    entrada.addEventListener('input', startMatch);
+    entrada.addEventListener('input', iniciarPartida);
     // Call countdown every second
     setInterval(countdown, 1000);
     // Check game status
-    setInterval(checkStatus, 50);
+    setInterval(comprobarEstado, 50);
     maximaPuntuacion = localStorage.getItem('highScore');
     puntuacionesMasAltas.innerHTML = maximaPuntuacion;
 }
 
-//Start match
-function startMatch(){
+//Iniciar partida
+const iniciarPartida = () => {
     entrada.value = entrada.value.toLowerCase();
     if(matchWords()){
-        isPlaying = true;
+        estaJugando = true;
         tiempoRestante = nivelActual + 1;
         showWord(palabras);
         entrada.value = '';
@@ -152,10 +153,10 @@ function startMatch(){
     maximaPuntuacion = localStorage.getItem('highScore');
     puntuacion.innerHTML = puntuacionActual;
     puntuacionesMasAltas.innerHTML = maximaPuntuacion;
-}
+};
 
 // Match currentWord to wordInput
-function matchWords(){
+const matchWords = () => {
     
         if(entrada.value === palabraActual.innerHTML){
             mensaje.innerHTML = 'Asombroso 👌';
@@ -164,38 +165,39 @@ function matchWords(){
             mensaje.innerHTML = '🙄';
             return false;
         }
-}
+};
 
 // Pick and show random word
-function showWord(word){
+const showWord = word => {
     // Generate random array index
     const randIndex = Math.floor(Math.random() * palabras.length);
     // Output random word
     palabraActual.innerHTML = palabras[randIndex];
-}
+};
+
 // Countdown timer
 
-function countdown(){
+const countdown = () => {
     // Make sure time is not runout
     if(tiempoRestante > 0){
         // decrement
         tiempoRestante--;
     }else if(tiempoRestante === 0){
         // Game is over
-        isPlaying = false;
+        estaJugando = false;
     }
     // Show time
     tiempo.innerHTML = tiempoRestante;
-}
+};
 
 // Check game status
-function checkStatus(){
-    if(!isPlaying && tiempoRestante === 0){
+const comprobarEstado = () => {
+    if(!estaJugando && tiempoRestante === 0){
         mensaje.innerHTML = '¡Juego terminado!🙅🏽';
         puntuacionActual = -1;
     }
-}
+};
 
-facil.addEventListener('click', setlevel);
-medio.addEventListener('click', setlevel);
-dificil.addEventListener('click', setlevel);
+facil.addEventListener('click', ajustarNivel);
+medio.addEventListener('click', ajustarNivel);
+dificil.addEventListener('click', ajustarNivel);

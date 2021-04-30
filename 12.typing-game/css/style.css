@@ -11,19 +11,10 @@ body{
     overflow: hidden;
 }
 
-footer{
-    width: 100%;
-    background-color: #333;
-    color: #EEE;
-    text-align: center;
-    padding: 1em;
-}
-
-footer img{
-    width: 30px;
-    background-color: #EEE;
-    padding: 2px;
-    border-radius: 4px;
+header{
+    background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #DBDBDB;
 }
 
 .menuInfo{
@@ -32,12 +23,6 @@ footer img{
 
 #menu{
     cursor: pointer;
-}
-
-header{
-    background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #DBDBDB;
 }
 
 .slide{
@@ -75,4 +60,19 @@ div button{
 #palabraActual{
     /* font-family: 'Source Code Pro', monospace; */
     font-family: 'VT323', monospace;
+}
+
+footer{
+    width: 100%;
+    background-color: #333;
+    color: #EEE;
+    text-align: center;
+    padding: 1em;
+}
+
+footer img{
+    width: 30px;
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 4px;
 }
