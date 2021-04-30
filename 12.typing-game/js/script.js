@@ -1,74 +1,73 @@
 window.addEventListener('load', init);
 
-// Globlas
+// Globals
 
-// Available Levels
-const levels = {
-    easy: 5,
-    medium: 3,
-    hard: 2
+// Niveles disponibles
+const niveles = {
+    facil: 5,
+    medio: 3,
+    dificil: 2
 }
 
-// To change level
-let currentLevel = levels.easy;
-
-let time = currentLevel;
-let score = 0;
+// Para cambiar de nivel
+let nivelActual = niveles.facil;
+let tiempoRestante = nivelActual;
+let puntuacionActual = 0;
 let isPlaying;
-let maxScore;
+let maximaPuntuacion;
 
 
-// DOM Elements
-const wordInput = document.querySelector('#word-input');
-const currentWord = document.querySelector('#current-word');
-const scoreDisplay = document.querySelector('#score');
-const timeDisplay = document.querySelector('#time');
-const message = document.querySelector('#message');
-const seconds = document.querySelector('#seconds');
-const highScoreElt = document.querySelector('#high-score');
-const easyBtn = document.querySelector('#easy');
-const mediumBtn = document.querySelector('#medium');
-const hardBtn = document.querySelector('#hard');
+// Elementos del DOM
+const entrada = document.querySelector('#entrada');
+const palabraActual = document.querySelector('#palabraActual');
+const puntuacion = document.querySelector('#puntuacion');
+const tiempo = document.querySelector('#tiempo');
+const mensaje = document.querySelector('#mensaje');
+const segundos = document.querySelector('#segundos');
+const puntuacionesMasAltas = document.querySelector('#puntuacionesMasAltas');
+const facil = document.querySelector('#facil');
+const medio = document.querySelector('#medio');
+const dificil = document.querySelector('#dificil');
 
-const words = [
+const palabras = [
     'angular',
-    'magico',
-    'brew',
-    'mientras',
+    'magia',
+    'elaborar cerveza',
+    'while',
     'throw',
     'css',
-    'romper',
+    'break',
     'swing',
     'echo',
     'let',
-    'wall',
+    'muro',
     'laughter',
     'hash',
     'spinner',
-    'beer',
+    'cerveza',
     'ninja',
     'javascript',
-    'master',
-    'program',
-    'coding',
-    'hero',
-    'learning',
-    'work',
+    'maestro',
+    'programa',
+    'codificar',
+    'héroe',
+    'aprendiendo',
+    'trabajo',
     'case',
     'react',
-    'dragon',
+    'dragón',
     'rush',
     'api',
     'init',
-    'motion',
+    'movimiento',
     'google',
     'float',
     'damn',
     'block',
     'ranking',
     'nice',
-    'machine',
-    'perfect',
+    'máquina',
+    'perfecto',
     'deploy',
     'terminal',
     'array',
@@ -90,79 +89,79 @@ const words = [
     'server',
     'bash'
 ];
-//option
-const settingOption = document.getElementById('optionBtn');
-const menuSlideElt = document.getElementById('menuSlide');
+//Opción
+const menu = document.getElementById('menu');
+const deslizarMenu = document.getElementById('deslizarMenu');
 
-settingOption.addEventListener('click', function(){
-    menuSlideElt.classList.toggle("slideIn");
+menu.addEventListener('click', function(){
+    deslizarMenu.classList.toggle("deslizar");
 });
 
 
-// Seclect level
+// Selección de nivel
 function setlevel(e){
-    if(e.target === easyBtn){
-        currentLevel = levels.easy;
-    }else if(e.target === mediumBtn){
-        currentLevel = levels.medium;
-    }else if(e.target === hardBtn){
-        currentLevel = levels.hard;
+    if(e.target === facil){
+        nivelActual = niveles.facil;
+    }else if(e.target === medio){
+        nivelActual = niveles.medio;
+    }else if(e.target === dificil){
+        nivelActual = niveles.dificil;
     }
-    console.log(currentLevel);
+    console.log(nivelActual);
     init();
 }
 
-// Initialize Game
+// Inicializar juego
 function init(){
     // Show number of sec in UI
-    seconds.innerHTML = currentLevel;
+    segundos.innerHTML = nivelActual;
     // Load word from array
-    showWord(words);
+    showWord(palabras);
     // Start matching on word input
-    wordInput.addEventListener('input', startMatch);
+    entrada.addEventListener('input', startMatch);
     // Call countdown every second
     setInterval(countdown, 1000);
     // Check game status
     setInterval(checkStatus, 50);
-    maxScore = localStorage.getItem('highScore');
-    highScoreElt.innerHTML = maxScore;
+    maximaPuntuacion = localStorage.getItem('highScore');
+    puntuacionesMasAltas.innerHTML = maximaPuntuacion;
 }
 
 //Start match
 function startMatch(){
-    wordInput.value = wordInput.value.toLowerCase();
+    entrada.value = entrada.value.toLowerCase();
     if(matchWords()){
         isPlaying = true;
-        time = currentLevel + 1;
-        showWord(words);
-        wordInput.value = '';
-        score++;
+        tiempoRestante = nivelActual + 1;
+        showWord(palabras);
+        entrada.value = '';
+        puntuacionActual++;
     }
 
     // If score is -1 display zero
-    if(score === -1){
-        scoreDisplay.innerHTML = 0;
+    if(puntuacionActual === -1){
+        puntuacion.innerHTML = 0;
     }else{
-        scoreDisplay.innerHTML = score;
-        highScoreElt.innerHTML = score;
+        puntuacion.innerHTML = puntuacionActual;
+        puntuacionesMasAltas.innerHTML = puntuacionActual;
         
-        if(score >= maxScore){
-            localStorage.setItem('highScore',score);
+        if(puntuacionActual >= maximaPuntuacion){
+            localStorage.setItem('highScore',puntuacionActual);
         }
     }
-    maxScore = localStorage.getItem('highScore');
-    scoreDisplay.innerHTML = score;
-    highScoreElt.innerHTML = maxScore;
+    maximaPuntuacion = localStorage.getItem('highScore');
+    puntuacion.innerHTML = puntuacionActual;
+    puntuacionesMasAltas.innerHTML = maximaPuntuacion;
 }
 
 // Match currentWord to wordInput
 function matchWords(){
     
-        if(wordInput.value === currentWord.innerHTML){
-            message.innerHTML = 'Great 👌';
+        if(entrada.value === palabraActual.innerHTML){
+            mensaje.innerHTML = 'Asombroso 👌';
             return true;
         }else{
-            message.innerHTML = '🙄';
+            mensaje.innerHTML = '🙄';
             return false;
         }
 }
@@ -170,33 +169,33 @@ function matchWords(){
 // Pick and show random word
 function showWord(word){
     // Generate random array index
-    const randIndex = Math.floor(Math.random() * words.length);
+    const randIndex = Math.floor(Math.random() * palabras.length);
     // Output random word
-    currentWord.innerHTML = words[randIndex];
+    palabraActual.innerHTML = palabras[randIndex];
 }
 // Countdown timer
 
 function countdown(){
     // Make sure time is not runout
-    if(time > 0){
+    if(tiempoRestante > 0){
         // decrement
-        time--;
-    }else if(time === 0){
+        tiempoRestante--;
+    }else if(tiempoRestante === 0){
         // Game is over
         isPlaying = false;
     }
     // Show time
-    timeDisplay.innerHTML = time;
+    tiempo.innerHTML = tiempoRestante;
 }
 
 // Check game status
 function checkStatus(){
-    if(!isPlaying && time === 0){
-        message.innerHTML = 'Game Over!🙅🏽';
-        score = -1;
+    if(!isPlaying && tiempoRestante === 0){
+        mensaje.innerHTML = '¡Juego terminado!🙅🏽';
+        puntuacionActual = -1;
     }
 }
 
-easyBtn.addEventListener('click', setlevel);
-mediumBtn.addEventListener('click', setlevel);
-hardBtn.addEventListener('click', setlevel);
+facil.addEventListener('click', setlevel);
+medio.addEventListener('click', setlevel);
+dificil.addEventListener('click', setlevel);
