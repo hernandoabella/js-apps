@@ -8,7 +8,11 @@
 }
 
 body{
-    background: #e9c46a;
+    background: #293241;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container{
@@ -16,7 +20,7 @@ body{
     position: absolute;
     top: 48%;
     left: 50%;
-    background: #f1faee;
+    background: #e0fbfc;
     border-radius: 5px;
     padding: 10px;
     width: 400px;
@@ -29,25 +33,26 @@ textarea{
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px;
-    border: 1px solid #f77f00;
+    border: 1px solid #ee6c4d;
     line-height: 20px;
 }
 
 div{
     margin: 10px 0px;
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
 }
 
 div span{
     font-weight: bold;
-    color: #f77f00;
+    color: #ee6c4d;
 }
 
 ul{
     overflow-y: scroll;
     height: 100px;
     margin-top: 20px;
-    border: 1px solid #f77f00;
+    border: 1px solid #ee6c4d;
     border-radius: 5px;
 }
 
@@ -57,7 +62,7 @@ ul li{
 }
 
 .palabrasClave{
-    color: #f77f00;
+    color: #ee6c4d;
     font-weight: bold;
     margin-top: 30px;
     text-align: center;

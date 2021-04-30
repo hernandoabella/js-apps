@@ -1,0 +1,75 @@
+/*
+// Google font
+font-family: 'Source Code Pro', monospace;
+font-family: 'Kalam', cursive;
+font-family: 'Boogaloo', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Ceviche One', cursive; */
+
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Boogaloo', cursive;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    height: 100vh;
+    overflow: hidden;
+}
+footer{
+    width: 100%;
+    background-color: #333;
+    color: #EEE;
+    text-align: center;
+    padding: 1em;
+}
+footer img{
+    width: 30px;
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 4px;
+}
+.menuInfo{
+    min-height: 80vh;
+}
+#optionBtn{
+    cursor: pointer;
+}
+header{
+    background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #DBDBDB;
+}
+.slide{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    z-index: 10;
+    box-shadow: #444 1px 0 6px 2px;
+    transition: .2s ease;
+    opacity: 0;
+}
+.slideIn{
+    opacity: 1;
+    top: 48px;
+}
+.menuCard{
+    font-family: 'Kalam', cursive;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    border: none;
+}
+div button{
+    width: 120px;
+    margin: 5px auto;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+#current-word{
+    /* font-family: 'Source Code Pro', monospace; */
+    font-family: 'VT323', monospace;
+}
