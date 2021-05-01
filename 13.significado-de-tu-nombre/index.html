@@ -1,0 +1,357 @@
+<!-- Created by Krishna Therokar-->
+
+<!--
+
+Author: Krishna Therokar;
+Time spent: 6hrs;
+Media: No media files used;
+
+Wishing you all Happy Coding!
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Meaning of Your Name | By Krishna Therokar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Code by Krishna Therokar">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+
+* {
+user-select:none;
+}
+    
+#body1 {
+font-family:calibri;
+letter-spacing:1px;
+background-color: #00d7ff;
+background: linear-gradient(45deg, #00d7ff 0%, #7b00ff 100%);
+background-size:100vw 100vh;
+background-attachment:fixed;
+}
+
+.name3 {
+text-transform: uppercase;
+font-size:26px;
+color:#FFFFFF;
+font-weight:900;
+}
+
+.name4 {
+font-size:26px;
+color:#FFFFFF; 
+font-weight:500;
+}
+    
+#input1 {
+padding:10px;
+font-size:16px;
+font-weight:600;
+outline:none;
+margin:6px;
+width:60vw;
+max-width:300px;
+color:white;
+background:#0000;
+border-radius:2px;
+background:#12212222;
+border:none;
+}
+    
+input:focus, button:focus {
+outline:none;
+}
+    
+::placeholder {
+color: #FFF;
+opacity: 1;
+}
+
+:-ms-input-placeholder {
+color: #FFF;
+}
+
+::-ms-input-placeholder {
+color: #FFF;
+}
+    
+#button1 {
+background:#12212244;
+border:none;
+width:30vw;
+max-width:100px;
+padding:10px;
+font-size:16px;
+margin:6px;
+font-weight:600;
+outline:none;
+border-radius:2px;
+color:white;
+}
+
+#div1 {
+font-size:26px;
+padding:20px;
+color:white;
+font-weight:500;
+}
+
+#div2 {
+font-size:26px;
+display:none;
+text-align:left;
+color:white;
+padding:20px;
+font-weight:500;
+}
+    
+@-webkit-keyframes load {
+20%, 80% {opacity: 1;}
+}
+
+@keyframes load {
+20%, 80% {opacity: 1;}
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+    
+#alert_ {
+display:none;
+font-size:18px;
+font-weight:500;
+opacity:0;
+-webkit-animation: load 2s infinite;
+animation: load 2s infinite;
+-webkit-transition: opacity 600ms;
+transition: opacity 600ms;
+}
+
+.btn1 {
+padding:16px;
+border-radius:100px;
+border-top:3px solid white;
+border-right:3px solid #0000;
+border-left:3px solid #0000;
+border-bottom:3px solid white;
+-webkit-animation: spin 4s infinite;
+animation: spin 4s infinite;
+background:#FF4E4E;
+animation-delay: 0s;
+}
+    
+.btn2 {
+padding:16px;
+border-radius:100px;
+border-top:3px solid white;
+border-right:3px solid #0000;
+border-left:3px solid #0000;
+border-bottom:3px solid white;
+-webkit-animation: spin 4s infinite;
+animation: spin 4s infinite;
+background:#5D00FF;
+animation-delay: 4s;
+}
+
+.btn3 {
+padding:16px;
+border-radius:100px;
+background:#008BFF;
+border-top:3px solid white;
+border-right:3px solid #0000;
+border-left:3px solid #0000;
+border-bottom:3px solid white;
+-webkit-animation: spin 4s infinite;
+animation: spin 4s infinite;
+animation-delay: 8s;
+}
+    
+.back_ {
+background:#12212233;
+padding:10px;
+margin:10px;
+border-radius:4px;
+border:none;
+width:90%;
+color:white;
+font-size:20px;
+font-weight:700;
+line-height:1;
+}
+
+</style>
+
+</head>
+<body id="body1"><center>
+
+<div class="back_">
+
+Click the Circles to change Background: 👇<br><br>
+<button onclick="change_color1()" class="btn1"></button>
+<button onclick="change_color2()" class="btn2"></button>
+<button onclick="change_color3()" class="btn3"></button>
+
+</div>
+
+<div id="div1">
+
+<br><br>Enter your Name in the Input and Press the Submit Button!<br><br>
+<form id="form1"><input id="input1" type="text" placeholder="Enter Your First Name"><button type="submit" id="button1">Submit</button></form>
+
+<br><div id="alert_">⚠️ ALERT: Please don't enter Spaces or Other Characters! Use Alphabets only.</div>
+
+</div>
+
+<div id="div2">
+
+<div id="div22"></div>
+
+</div>
+
+<script>
+
+var body_ = document.getElementById("body1");
+
+function change_color1(){
+body_.style.background = "#FF4E4E";
+}
+
+function change_color2(){
+body_.style.background = "#5D00FF";
+}
+
+function change_color3(){
+body_.style.background = "#008BFF";
+}
+
+$("#form1").submit(function(e){
+
+e.preventDefault();
+var name1 = document.getElementById("input1").value;
+var name2 = name1.toLowerCase();
+var len_ = name1.length;
+var name4 = "";
+
+if (len_ < 2){return false}
+    
+for (i = 0; i < len_; i++){
+name3 = name2.charAt(i);
+
+switch(name3) {
+case "a":
+name4 = "Amazing"
+break;
+case "b":
+name4 = "Brilliant"
+break;
+case "c":
+name4 = "Cute"
+break;
+case "d":
+name4 = "Dazzling"
+break;
+case "e":
+name4 = "Elegant"
+break;
+case "f":
+name4 = "Fabulous"
+break;
+case "g":
+name4 = "Gorgeous"
+break;
+case "h":
+name4 = "Healthy"
+break;
+case "i":
+name4 = "Impressive"
+break;
+case "j":
+name4 = "Joyful"
+break;
+case "k":
+name4 = "Kind"
+break;
+case "l":
+name4 = "Lucky"
+break;
+case "m":
+name4 = "Marvelous"
+break; 
+case "n": 
+name4 = "Nice" 
+break; 
+case "o": 
+name4 = "Open-Minded" 
+break; 
+case "p": 
+name4 = "Pleasant" 
+break; 
+case "q": 
+name4 = "Quality Person" 
+break; 
+case "r": 
+name4 = "Respectful" 
+break; 
+case "s": 
+name4 = "Splendid" 
+break; 
+case "t": 
+name4 = "Trustworthy" 
+break; 
+case "u": 
+name4 = "Uncompromising " 
+break; 
+case "v": 
+name4 = "Valuable" 
+break; 
+case "w": 
+name4 = "Wonderful" 
+break; 
+case "x": 
+name4 = "Xenial" 
+break; 
+case "y": 
+name4 = "Youthful" 
+break; 
+case "z": 
+name4 = "Zealous" 
+break; 
+default:
+name3 = "";
+name1 = "";
+name4 = ""
+}
+
+document.getElementById("div22").innerHTML += "<span class='name3'>"+name3+"</span><span class='name4'> - "+name4+"</span><br>";
+}
+
+var letters = /^[A-Za-z]+$/;
+if(name1.match(letters))
+{
+document.getElementById("alert_").style.display = "none";
+document.getElementById("div1").style.display = "none";
+document.getElementById("div2").style.display = "block";
+document.getElementById("div2").innerHTML += "<br>Thank you "+name1+" for Entering your Amazing Name 🤗 It's Really Meaningful! 😊<br><br>Upvote if You Like 👍";
+} else {
+document.getElementById("div22").innerHTML = "";
+document.getElementById("alert_").style.display = "block";
+return false;
+}
+
+});
+
+</script>
+
+</center></body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: #d62828;
+}
+
+header{
+    background: #003049;
+    color: #dbdbdb;
+    padding: 10px;
+}
+
+.contenedor{
+    background: #eae2b7;
+    width: 400px;
+    padding: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contenedor input{
+    width: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    outline: none;
+    font-size: 1.3em;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.menuInfo{
+    min-height: 80vh;
+}
+
+#menu{
+    cursor: pointer;
+}
+
+.slide{
+    position: absolute;
+    background: #003049;
+    color: #dbdbdb;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    z-index: 10;
+    transition: .3s ease;
+    opacity: 0;
+}
+
+.slide hr{
+    border: 1px solid #dbdbdb;
+    margin: 20px;
+    border-width: 5px;
+}
+
+.deslizar{
+    opacity: 1;
+    top: 0px;
+    border-radius: 5px;
+}
+
+.menuCard{
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.menuCard h5{
+    padding: 20px;
+}
+
+.menuCard button{
+    padding: 10px;
+}
+
+div button{
+    width: 120px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.display-2{
+    margin: 20px;
+    font-size: 2em;
+}
+
+.col-md-6{
+    margin: 20px auto;
+}
+
+#palabraActual{
+    font-family: 'VT323', monospace;
+}
