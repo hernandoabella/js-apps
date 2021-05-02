@@ -1,17 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 * {
     user-select: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body{
     transition: .3s;
 }
-        
+
+.centrarBotones{
+    text-align: center;
+}
+
+/* .cajaEntrada{
+    background: #12212233;
+} */
+
+h3{ 
+    text-align: center;
+}
+
+.contenedor{
+    background: #12212233;
+    border-radius: 5px;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
 #body1 {
     letter-spacing:1px;
     background-color: #00d7ff;
@@ -36,16 +58,15 @@ body{
 #input1 {
     padding:10px;
     font-size:16px;
-    font-weight:600;
-    outline:none;
-    margin:6px;
-    width:60vw;
-    max-width:300px;
-    color:white;
-    background:#0000;
-    border-radius:2px;
-    background:#12212222;
-    border:none;
+    outline: none;
+    color:#fff;
+    border-radius: 2px;
+    background:#2fe0ec22;
+    border: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 ::placeholder {
@@ -62,16 +83,20 @@ body{
 }
         
 #button1 {
-    background:#12212244;
+    background:#00000044;
     border:none;
     width: 100%;
     padding:10px;
     font-size:16px;
-    margin:6px;
     font-weight:600;
     outline:none;
     border-radius:2px;
     color:white;
+    transition: .3s;
+}
+
+#button1:hover{
+    background:#3c7d8144
 }
     
 #div1 {
@@ -165,36 +190,12 @@ button{
 .back_ {
     background:#12212233;
     padding:10px;
-    margin:10px;
-    border-radius:4px;
+    border-radius:5px;
     border:none;
-    width:90%;
+    width: 100%;
     color:white;
     font-size:20px;
     font-weight:700;
     line-height:1;
-}
-
-.centrarBotones{
-    text-align: center;
-}
-
-.cajaEntrada{
-    background: #12212233;
-}
-
-h3{ 
-    text-align: center;
-}
-
-.contenedor{
-    background: #12212233;
-    padding: 10px;
-    border-radius: 5px;
-    width: 400px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
 }
 
