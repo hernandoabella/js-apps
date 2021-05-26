@@ -31,12 +31,12 @@ El límite lo colocas tú, decides por cual comenzar sin embargo yo las enlisto 
 5. Sistema para venta de frutas
 6. Convierte tu edad en días
 7. Entrenador matemático
-8.
-9.
-10.
-11.
-12.
-13.
+8. Contador de productos
+9. Examen de JavaScript
+10. Reproductor MP3
+11. Contador de palabras
+12. Juego de mecanografía
+13. Significado de tu nombre
 14.
 15.
 16.

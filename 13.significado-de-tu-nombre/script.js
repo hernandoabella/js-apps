@@ -1,14 +1,14 @@
 const body_ = document.getElementById("body1");
 
-const change_color1 = () => {
+const cambiarColor1 = () => {
 body_.style.background = "#FF4E4E";
 };
 
-const change_color2 = () => {
+const cambiarColor2 = () => {
 body_.style.background = "#5D00FF";
 };
 
-const change_color3 = () => {
+const cambiarColor3 = () => {
 body_.style.background = "#008BFF";
 };
 
@@ -34,73 +34,73 @@ switch(name3) {
     name4 = "Bueno"
     break;
     case "c":
-    name4 = "Cute"
+    name4 = "Comedido"
     break;
     case "d":
-    name4 = "Dazzling"
+    name4 = "Decente"
     break;
     case "e":
     name4 = "Elegante"
     break;
     case "f":
-    name4 = "Fabulous"
+    name4 = "Fabuloso"
     break;
     case "g":
-    name4 = "Gorgeous"
+    name4 = "Gigante"
     break;
     case "h":
-    name4 = "Healthy"
+    name4 = "Hábil"
     break;
     case "i":
-    name4 = "Impressive"
+    name4 = "Imparable"
     break;
     case "j":
-    name4 = "Joyful"
+    name4 = "Jefe"
     break;
     case "k":
-    name4 = "Kind"
+    name4 = "Kinético"
     break;
     case "l":
-    name4 = "Lucky"
+    name4 = "Leopardo"
     break;
     case "m":
-    name4 = "Marvelous"
+    name4 = "Misionero"
     break; 
     case "n": 
-    name4 = "Nice" 
+    name4 = "Nocturno" 
     break; 
     case "o": 
-    name4 = "Open-Minded" 
+    name4 = "Obrador" 
     break; 
     case "p": 
-    name4 = "Pleasant" 
+    name4 = "Paciente" 
     break; 
     case "q": 
-    name4 = "Quality Person" 
+    name4 = "Quejoso" 
     break; 
     case "r": 
-    name4 = "Respectful" 
+    name4 = "Respetuoso" 
     break; 
     case "s": 
-    name4 = "Splendid" 
+    name4 = "Sinarca" 
     break; 
     case "t": 
-    name4 = "Trustworthy" 
+    name4 = "Tigre" 
     break; 
     case "u": 
-    name4 = "Uncompromising " 
+    name4 = "Unicornio " 
     break; 
     case "v": 
-    name4 = "Valuable" 
+    name4 = "Valioso" 
     break; 
     case "w": 
-    name4 = "Wonderful" 
+    name4 = "Web" 
     break; 
     case "x": 
-    name4 = "Xenial" 
+    name4 = "X-men" 
     break; 
     case "y": 
-    name4 = "Youthful" 
+    name4 = "Yacente" 
     break; 
     case "z": 
     name4 = "Zafiro" 
