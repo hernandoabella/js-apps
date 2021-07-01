@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deslizador de Imágenes</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, 
-    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="contenedor">
-    <div class="mySlides fade">
-      <img src="https://conceptodefinicion.de/wp-content/uploads/2015/08/naturaleza-e1439385445458.jpg" style="width:100%">
+    <div class="contenedor">
+        <div class="mySlides fade">
+          <img src="assets/imagen1.jpeg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="assets/imagen2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="assets/imagen3.jpg" style="width:100%">
+        </div>
+    
+        <a class="prev" onclick="siguienteSlide(-1)">&#10094;</a>
+        <a class="next" onclick="siguienteSlide(1)">&#10095;</a>
     </div>
-  
-    <div class="mySlides fade">
-      <img src="https://historiadelavida.editorialaces.com/wp-content/uploads/2017/05/diseno-en-la-naturaleza-portada.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides fade">
-      <img src="https://www.elcomercio.com/files/og_thumbnail/uploads/2019/05/01/5cc9bded378ed.jpeg" style="width:100%">
-    </div>
+    
 
-    <a class="prev" onclick="siguienteSlide(-1)">&#10094;</a>
-    <a class="next" onclick="siguienteSlide(1)">&#10095;</a>
-  </div>
-  <br>
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
 </html>
-
-
-
