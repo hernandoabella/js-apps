@@ -1,6 +1,6 @@
-# JS APPS
+# JS-APPS
 
-Aplicaciones creadas con la tecnología de HTML, CSS y JS para practicar.
+Aplicaciones creadas para practicar el código de JavaScript.
 
 ## Historia
 
@@ -27,8 +27,6 @@ El límite lo colocas tú, decides por cual comenzar sin embargo yo las enlisto 
 1. Contador de carácteres
 2. Aplicación del clima
 3. Reserva de asientos para películas
-4. Sistema de listado de libros
-5. Sistema para venta de frutas
 6. Convierte tu edad en días
 7. Entrenador matemático
 8. Contador de productos
@@ -37,10 +35,3 @@ El límite lo colocas tú, decides por cual comenzar sin embargo yo las enlisto 
 11. Contador de palabras
 12. Juego de mecanografía
 13. Significado de tu nombre
-14.
-15.
-16.
-17.
-18.
-19.
-20.
