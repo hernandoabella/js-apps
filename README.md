@@ -1,6 +1,6 @@
 # JS-APPS
 
-Aplicaciones creadas para practicar el código de JavaScript.
+Colección de aplicaciones creadas para practicar el código de JavaScript.
 
 ## Historia
 
@@ -14,15 +14,17 @@ Detrás de todo emprendimiento positivo hay una gran disciplina para lograr los 
 
 Las aplicaciones de la lista te permitirán practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con esta maravillosa tecnología.
 
-Las aplicaciones están divididas en 3 niveles.
+Las aplicaciones están divididas en 3 niveles:
 
-* Básico
-* Intermedio
-* Avanzado
+* Básico ⭐⭐
+* Intermedio ⭐⭐⭐
+* Avanzado ⭐⭐⭐⭐⭐
 
 El límite lo colocas tú, decides por cual comenzar sin embargo yo las enlisto según las vaya subiendo.
 
 ### Lista de Aplicaciones:
+
+(en actualizacion)
 
 1. Contador de carácteres
 2. Aplicación del clima

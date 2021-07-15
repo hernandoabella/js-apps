@@ -2,4 +2,28 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to left, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+p{
+    text-align: center;
+}
+
+ol{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ol li{
+    margin: 20px;
+    color: #fff;
+}
+
+ol li a{
+    color: #fff;
 }
