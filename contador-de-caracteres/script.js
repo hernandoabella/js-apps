@@ -3,18 +3,13 @@ let cadena = document.getElementById("cadena");
 
 let imprimir = (mensaje) => {
     let salida = document.getElementById("salida");
-    salida.style.display = "block";
-    salida.innerHTML = "El largo de caracteres es: " + "<b>" + mensaje + "</b>" + " (Incluyendo los espacios en blanco)";
+    salida.innerHTML = "El largo de caracteres es: " + "<b>" + mensaje + "</b>";
 }
 
 cadena.addEventListener("keyup", e =>{
-    if(e.key === 'Enter'){
+    if(e){
         e.preventDefault();
-        boton.click();
+        imprimir(document.getElementById('cadena').value.length);
     }
 }, false);
-
-boton.onclick = (e) =>{
-    imprimir(document.getElementById('cadena').value.length);
-}
 
