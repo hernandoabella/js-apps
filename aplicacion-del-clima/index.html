@@ -9,26 +9,23 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <div id="contenedorBusqueda">
-        <input type="text" placeholder="Ingresa el nombre de una ciudad" id="entradaBusqueda">
-        <button id="buscar"><i class="fas fa-search"></i></button>
-    </div>
+    <div class="app-wrap">
+        <header>
+          <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+        </header>
+        <main>
+          <section class="location">
+            <div class="city">Northampton, GB</div>
+            <div class="date">Thursday 10 January 2020</div>
+          </section>
+          <div class="current">
+            <div class="temp">15<span>°c</span></div>
+            <div class="weather">Sunny</div>
+            <div class="hi-low">13°c / 16°c</div>
+          </div>
+        </main>
+      </div>
 
-    <div id="contenedorClima">
-        <div>
-            <h2 id="encabezadoCiudad"></h2>
-            
-            <div class="swipe">
-                <div id="temperatura"></div>
-                <div><img id="iconoClima"></div>
-            </div>
-
-            <div id="descripcionClima"></div>
-            <div id="velocidadViento"></div>
-            <div id="humedad"></div>
-        </div>
-    </div>
-
-<script src="./script.js"></script>        
+<script src="/script.js"></script>        
 </body>
 </html>
