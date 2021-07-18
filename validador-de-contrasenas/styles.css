@@ -4,16 +4,21 @@ body{
     box-sizing: border-box;
     user-select: none;
     font-family: 'Aleo', serif;
+    background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contenedor{
-    background: #031D44;
-    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    border-radius: 25px;
     width: 400px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    padding: 10px;
 }
 
 #set{
@@ -27,7 +32,7 @@ body{
    position: relative ;
    margin: 4%; 
    margin-bottom: 2%;
-   color:#fff; 
+   color:#000; 
    font-size: 18px;
    text-indent: 40px;
    font-weight: bolder;
@@ -36,7 +41,7 @@ body{
 
 #ver{
     display: inline-block ;
-    color:#fff;
+    color:#000;
     margin: auto; 
     float: right;
     margin-right: 40px;
@@ -62,7 +67,7 @@ input[id='password']{
 }
 
 i{
-    font-size: 23px;
+    font-size: 20px;
     transition-duration: 600ms;
 }
 
@@ -81,5 +86,5 @@ span{
 }
 
 input:hover{
-    border-bottom: 5px solid #D5896F;
+    border-bottom: 5px solid #87d56f;
 }

@@ -1,4 +1,3 @@
-let boton = document.getElementById("boton");
 let cadena = document.getElementById("cadena");
 
 let imprimir = (mensaje) => {

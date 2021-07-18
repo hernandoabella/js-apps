@@ -5,16 +5,29 @@
   
 body{
     font-family: 'Courier New', Courier, monospace;
-    background-color: #cf123b;
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container{
     width: 400px;
     background: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }  
+
+.scrollStuff{
+  overflow-y: scroll;
+  height: 237px;
+  padding: 10px;
+}
+
  
   ul {
     margin: 0;
@@ -26,11 +39,12 @@ body{
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #ceefff;
+    background: #f77f00;
+    color: #fff;
     font-size: 18px;
     transition: 0.3s;
     list-style: none;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-bottom: 10px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -40,18 +54,18 @@ body{
   
  
   ul li:nth-child(odd) {
-    background: #25aeee;
+    background-color:#d62828;
   }
   
   
   ul li:hover {
-    background: #3b82b1;
-    color: #fff;
+    background: #eae2b7;
+    color: #000;
   }
   
   
   ul li.checked {
-    background: #3b82b1;
+    background: #003049;
     color: #fff;
     text-decoration: line-through;
   }
@@ -76,21 +90,19 @@ body{
     top: 0;
     padding: 12px 16px 12px 16px;
     transition: 0.3s;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 25px;
   }
   
   .cerrar:hover {
-    background-color:#5fc7f8;
+    background-color:#fcbf49;
     color: #000;
   }
   
   .header {
-    background-color: #3b82b1;
-    padding: 30px 40px;
     color: white;
     text-align: center;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   
   .header:after {
@@ -102,23 +114,25 @@ body{
   input {
     border: none;
     padding: 10px;
-    border-radius: 5px;
-    width: 200px;
+    border-radius: 25px;
+    width: 73%;
+    border: 1px solid #d62828;
+    text-align: center;
   }
   
   .addBtn {
     padding: 10px;
-    background: #5fc7f8;
-    color: #000;
+    background: #003049;
+    color: #fff;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 25px;
   }
   
   .addBtn:hover {
-    background-color: #3d93bb;
-    color: #fff;
+    background-color: #f77f00;
+    color: #000;
   }
 
   

@@ -7,7 +7,7 @@ function ver(){
     if(visible){
         input.type = 'password';
         visible = false; 
-        ver.style.color='#fff';
+        ver.style.color='red';
     }else{
         input.type = 'text';
         visible = true; 
