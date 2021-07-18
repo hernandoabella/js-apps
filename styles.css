@@ -2,34 +2,30 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    background: #4568DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
 }
 
 h1{
     text-align: center;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 p{
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
-ol{
-    display: flex;
-    flex-wrap: wrap;
+.coolStyle{
+    background: #fdc073;
+    padding: 10px;
 }
 
 ol li{
     margin: 20px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 ol li a{
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -38,8 +34,8 @@ ol li a:hover{
 }
 
 .gitBtn{
-    color: #fff;
+    color: rgb(0, 0, 0);
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 }
