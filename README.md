@@ -16,11 +16,9 @@ Las aplicaciones de la lista te permitirán practicar el código de JavaScript c
 
 Las aplicaciones están divididas en 3 niveles:
 
-* Básico ⭐⭐
-* Intermedio ⭐⭐⭐
-* Avanzado ⭐⭐⭐⭐⭐
-
-El límite lo colocas tú, decides por cual comenzar sin embargo yo las enlisto según las vaya subiendo.
+* Básico: ⭐⭐
+* Intermedio: ⭐⭐⭐
+* Avanzado: ⭐⭐⭐⭐⭐
 
 ### Lista de Aplicaciones:
 

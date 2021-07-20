@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap');
+
 body{
     margin:0; 
     padding:3px;
@@ -36,42 +38,36 @@ body{
    font-size: 18px;
    text-indent: 40px;
    font-weight: bolder;
-   
 }
 
 #ver{
-    display: inline-block ;
-    color:#000;
-    margin: auto; 
-    float: right;
-    margin-right: 40px;
-    margin-top: 10px;
+    color: #753a88;
+    position: absolute;
+    font-size: 1.5em;
+    top: 14px;
+    left: 320px;
     cursor: pointer;
-    transition-duration: 0.2s;
+    transition: .2s;
 }
 
 input[id='password']{
-    border: none; width:80%;
+    border: none; 
+    width:80%;
     outline: none;
-    border-bottom: 5px solid #efefef;
+    padding: 10px;
+    border-bottom: 5px solid #753a88;
     display: block; 
     position: relative;
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
     top: 20px;
     margin: 20px auto ;
     user-select: auto;
     font-family: 'Slabo 27px', serif;
     transition-duration: 600ms;
-    border-radius: 5px;
 }
 
-i{
-    font-size: 20px;
-    transition-duration: 600ms;
-}
-
-#validar0,#validar1,#validar2,#validar3,#validar4{
+#validar0, #validar1, #validar2, #validar3, #validar4{
    display: block;
    position: relative;
    margin: 4%;
@@ -86,5 +82,5 @@ span{
 }
 
 input:hover{
-    border-bottom: 5px solid #87d56f;
+    border-bottom: 5px solid #cc2b5e;
 }

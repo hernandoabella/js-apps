@@ -20,7 +20,7 @@ p{
 }
 
 ol li{
-    margin: 20px;
+    margin: 10px;
     color: rgb(0, 0, 0);
 }
 
@@ -37,5 +37,7 @@ ol li a:hover{
     color: rgb(0, 0, 0);
     position: absolute;
     top: 20px;
+    border: 5px dashed #000;
     right: 20px;
+    padding: 10px;
 }

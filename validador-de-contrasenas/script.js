@@ -7,11 +7,11 @@ function ver(){
     if(visible){
         input.type = 'password';
         visible = false; 
-        ver.style.color='red';
+        ver.style.color='#cc2b5e';
     }else{
         input.type = 'text';
         visible = true; 
-        ver.style.color='#70A288';
+        ver.style.color='#753a88';
     }
 }
 
@@ -26,32 +26,32 @@ function validar(){
     document.getElementById("largo").innerText="Largo : " + input.length;
     
     if(input.length>=5){
-        document.getElementById("validar0").style.color="#70A288";
+        document.getElementById("validar0").style.color="#cc2b5e";
     }else{
-       document.getElementById("validar0").style.color="#D5896F"; 
+       document.getElementById("validar0").style.color="#753a88"; 
     }
     
     if(input.length<=10){
-        document.getElementById("validar1").style.color="#70A288";
+        document.getElementById("validar1").style.color="#cc2b5e";
     }else{
-       document.getElementById("validar1").style.color="#D5896F"; 
+       document.getElementById("validar1").style.color="#753a88"; 
     }
     
     if(input.match(/[0-9]/i)){
-       document.getElementById("validar2").style.color="#70A288";
+       document.getElementById("validar2").style.color="#cc2b5e";
     }else{
-       document.getElementById("validar2").style.color="#D5896F"; 
+       document.getElementById("validar2").style.color="#753a88"; 
     }
     
     if(input.match(/[^A-Za-z0-9-' ']/i)){
-        document.getElementById("validar3").style.color="#70A288";
+        document.getElementById("validar3").style.color="#cc2b5e";
     }else{
-        document.getElementById("validar3").style.color="#D5896F"; 
+        document.getElementById("validar3").style.color="#753a88"; 
     }
     
     if(input.match(' ')){
-        document.getElementById("validar4").style.color="#D5896F";
+        document.getElementById("validar4").style.color="#753a88";
     }else{
-        document.getElementById("validar4").style.color="#70A288"; 
+        document.getElementById("validar4").style.color="#cc2b5e"; 
     }
 }
