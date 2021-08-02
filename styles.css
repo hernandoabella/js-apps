@@ -12,24 +12,33 @@ p{
     color: #000;
 }
 
+a{
+    color: #8789C0;
+}
+
 .coolStyle{
     color: #fff;
     padding: 10px;
-    background: #2F97C1;
+    background: #4059AD;
     border-radius: 25px;
 }
 
 ol{
     padding: 20px;
+    margin: 20px;
+    font-size: 1.3em;
+    color: #6B9AC4;
 }
 
 ol li{
-    margin: 10px;
+    margin: 20px;
+    border-bottom: 1px solid #4059AD;
+    padding: 20px;
 }
 
 ol li a{
     text-decoration: none;
-    color: #2F97C1;
+    color: #4059AD;
 }
 
 ol li a:hover{
@@ -44,6 +53,7 @@ ol li a:hover{
     right: 20px;
     padding: 10px;
     transition: .3s;
+    text-decoration: none;
 }
 
 .gitBtn:hover{
@@ -52,7 +62,47 @@ ol li a:hover{
     background: #000;
 }
 
+.donation{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: .3s;
+    color: #4059AD;
+    line-height: 30px;
+}
+
+.donation:hover::after{
+    content: 'Donación con paypal';
+    position: absolute;
+    left: 50px;
+    color: #4059AD;
+    width: 140px;
+    text-align: center;
+}
+
+.donation > i{
+    color: #4059AD;
+    font-size: 2em;
+}
+
 .love{
     color: red;
 }
 
+.download-manager{
+    color: #6B9AC4;
+    float: right;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.download-manager:hover{
+    background: #4059AD;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.estrellas{
+    color: #F4B942;
+    margin: 10px;
+}
