@@ -1,6 +1,6 @@
 # JS-APPS
 
-Colección de aplicaciones creadas para practicar el código de JavaScript.
+Colección de aplicaciones de 230 creadas para practicar el código de JavaScript.
 
 ## Historia
 
