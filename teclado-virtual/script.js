@@ -1,12 +1,3 @@
-/* 
- * There are probably better ways of doing a lot of this,
- * but I'm just starting to wade into the deep end of
- * of vanilla JavaScript, so ¯\_(ツ)_/¯
- *
- * Inspired by day 1 of Wes Bos's 30 Day JavaScript Challenge
- * https://javascript30.com/
- */
-	
 var x = 'x';
 let theTextBox = document.getElementById('enteredText'); 
 let allTheKeys = document.getElementById('keyboard'); 
@@ -23,16 +14,10 @@ for (i = 0; i<changeKeys.length; i++){
 //Set up an array for the replacement values of the non-alphabetical keys that get subbed in when Shift is pressed
 var shifterArray = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '"', '<', '>', '?'];
 
-
-
-
 //Function that clears the text box
 function clearText(){
 	theTextBox.innerHTML = '<br>';
 }
-
-
-
 
 //Function that detects keypresses and does the appropriate things
 function highlightAndType(e){
@@ -85,9 +70,6 @@ function highlightAndType(e){
 		theTextBox.innerHTML += '&emsp;&emsp;';
 	}
 }
-
-
-
 
 //Function that detects when the user lets off a key and does the appropriate things
 function removeKeypress(e){

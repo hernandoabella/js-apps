@@ -22,8 +22,6 @@ Las aplicaciones están divididas en 3 niveles:
 
 ### Lista de Aplicaciones:
 
-(en actualizacion)
-
 1. Contador de carácteres
 2. Aplicación del clima
 3. Reserva de asientos para películas

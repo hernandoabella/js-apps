@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,900&display=swap');
-
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1{
@@ -15,18 +13,23 @@ p{
 }
 
 .coolStyle{
-    background: #fdc073;
+    color: #fff;
     padding: 10px;
+    background: #2F97C1;
+    border-radius: 25px;
+}
+
+ol{
+    padding: 20px;
 }
 
 ol li{
     margin: 10px;
-    color: rgb(0, 0, 0);
 }
 
 ol li a{
-    color: rgb(0, 0, 0);
     text-decoration: none;
+    color: #2F97C1;
 }
 
 ol li a:hover{
@@ -40,4 +43,16 @@ ol li a:hover{
     border: 5px dashed #000;
     right: 20px;
     padding: 10px;
+    transition: .3s;
 }
+
+.gitBtn:hover{
+    border: 1px dashed rgb(175, 175, 175);
+    color: #fff;
+    background: #000;
+}
+
+.love{
+    color: red;
+}
+
