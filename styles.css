@@ -32,7 +32,7 @@ ol{
 
 ol li{
     margin: 20px;
-    border-bottom: 1px solid #4059AD;
+    border-bottom: 1px solid rgba(107, 154, 196, 0.2);
     padding: 20px 0px;
 }
 
