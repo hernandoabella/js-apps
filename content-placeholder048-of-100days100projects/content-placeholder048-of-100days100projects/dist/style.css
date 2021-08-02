@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #ecf0f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Muli", sans-serif;
+	min-height: 100vh;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.card {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	width: 350px;
+	max-width: 350px;
+}
+
+.card-header {
+	height: 200px;
+}
+
+.animated-bg {
+	background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 10%, #f6f7f8 20%, #f6f7f8 100%);
+	background-size: 200% 100%;
+	animation: bgPos 1s linear infinite;
+}
+
+.animated-bg-text {
+	border-radius: 50px;
+	display: inline-block;
+	margin: 0;
+	height: 10px;
+	width: 100%;
+}
+
+@-webkit-keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+.card-header img {
+	display: none;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.card-content {
+	background: #fff;
+	padding: 30px;
+}
+
+.card-title {
+	height: 20px;
+	margin: 0;
+}
+
+.card-excerpt {
+	color: #777;
+	margin: 10px 0 20px;
+}
+
+.author {
+	display: flex;
+}
+
+.profile-img {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+}
+
+.author-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 10px;
+	width: 100px;
+}
+
+.author-info small {
+	color: #aaa;
+	margin-top: 5px;
+}
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {
+	position: fixed;
+	right: 0;
+	bottom: 80px;
+	transform: translateX(100%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+	transform: translateX(-10px);
+}
+
+.social-panel {	
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
+	border: 5px solid #001F61;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Muli';
+	position: relative;
+	height: 169px;	
+	width: 370px;
+	max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+	border: 0;
+	color: #97A5CE;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+	outline: none;
+}
+
+.social-panel p {
+	background-color: #001F61;
+	border-radius: 0 0 10px 10px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 2px 17px 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 235px;
+}
+
+.social-panel p i {
+	margin: 0 5px;
+}
+
+.social-panel p a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+.social-panel h4 {
+	margin: 20px 0;
+	color: #97A5CE;	
+	font-family: 'Muli';	
+	font-size: 14px;	
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.social-panel ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social-panel ul li {
+	margin: 0 10px;
+}
+
+.social-panel ul li a {
+	border: 1px solid #DCE1F2;
+	border-radius: 50%;
+	color: #001F61;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+	border-color: #FF6A00;
+	box-shadow: 0 9px 12px -9px #FF6A00;
+}
+
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #001F61;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #ffffff;
+	color: #001F61;
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+.floating-text {
+	background-color: #001F61;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+.floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #222;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0.5);
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 50px;
+}
+
+.number {
+	position: relative;
+	height: 290px;
+	width: 170px;
+	margin: 20px;
+}
+
+.piece {
+	background-color: #fff;
+	border: 2px solid transparent; 
+	border-right-color: #aaa;
+ 	border-bottom-color: #aaa;
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	transform: scale(0);
+}
+
+.piece.show {
+	transform: scale(1);
+	transition: transform 0.2s linear;
+}
+
+.piece:nth-of-type(1) {
+	top: 0;
+	left: 0;
+}
+
+.piece:nth-of-type(2) {
+	top: 0;
+	left: 60px;
+}
+
+.piece:nth-of-type(3) {
+	top: 0;
+	left: 120px;
+}
+
+.piece:nth-of-type(4) {
+	top: 60px;
+	left: 0;
+}
+
+.piece:nth-of-type(5) {
+	top: 60px;
+	left: 120px;
+}
+
+.piece:nth-of-type(6) {
+	top: 120px;
+	left: 0;
+}
+
+.piece:nth-of-type(7) {
+	top: 120px;
+	left: 60px;
+}
+
+.piece:nth-of-type(8) {
+	top: 120px;
+	left: 120px;
+}
+
+.piece:nth-of-type(9) {
+	top: 180px;
+	left: 0px;
+}
+
+.piece:nth-of-type(10) {
+	top: 180px;
+	left: 120px;
+}
+
+.piece:nth-of-type(11) {
+	top: 240px;
+	left: 0px;
+}
+
+.piece:nth-of-type(12) {
+	top: 240px;
+	left: 60px;
+}
+
+.piece:nth-of-type(13) {
+	top: 240px;
+	left: 120px;
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		transform: scale(0.4);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.container {
+		transform: scale(0.2);
+	}
+}
+
+
+
+
+
+
+
+
+/* SOCIAL PANEL CSS */
+.social-panel-container {
+	position: fixed;
+	right: 0;
+	bottom: 80px;
+	transform: translateX(100%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.social-panel-container.visible {
+	transform: translateX(-10px);
+}
+
+.social-panel {	
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: 0 16px 31px -17px rgba(0,31,97,0.6);
+	border: 5px solid #001F61;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Muli';
+	position: relative;
+	height: 169px;	
+	width: 370px;
+	max-width: calc(100% - 10px);
+}
+
+.social-panel button.close-btn {
+	border: 0;
+	color: #97A5CE;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.social-panel button.close-btn:focus {
+	outline: none;
+}
+
+.social-panel p {
+	background-color: #001F61;
+	border-radius: 0 0 10px 10px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 2px 17px 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 235px;
+}
+
+.social-panel p i {
+	margin: 0 5px;
+}
+
+.social-panel p a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+.social-panel h4 {
+	margin: 20px 0;
+	color: #97A5CE;	
+	font-family: 'Muli';	
+	font-size: 14px;	
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.social-panel ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social-panel ul li {
+	margin: 0 10px;
+}
+
+.social-panel ul li a {
+	border: 1px solid #DCE1F2;
+	border-radius: 50%;
+	color: #001F61;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	text-decoration: none;
+}
+
+.social-panel ul li a:hover {
+	border-color: #FF6A00;
+	box-shadow: 0 9px 12px -9px #FF6A00;
+}
+
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #001F61;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+}
+
+.floating-btn:hover {
+	background-color: #ffffff;
+	color: #001F61;
+}
+
+.floating-btn:focus {
+	outline: none;
+}
+
+.floating-text {
+	background-color: #001F61;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+.floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}

@@ -33,7 +33,7 @@ ol{
 ol li{
     margin: 20px;
     border-bottom: 1px solid #4059AD;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 ol li a{
@@ -89,14 +89,14 @@ ol li a:hover{
     color: red;
 }
 
-.download-manager{
+.download-manager a{
     color: #6B9AC4;
     float: right;
     cursor: pointer;
     transition: .3s;
 }
 
-.download-manager:hover{
+.download-manager a:hover{
     background: #4059AD;
     color: #fff;
     text-decoration: underline;

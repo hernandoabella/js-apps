@@ -1,0 +1,21 @@
+.square {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.grid {
+    cursor: url("images/hammer.png"), grabbing;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 609px;
+    height: 609px;
+}
+
+.mole {
+    background-image: url("images/mole.png");
+    background-size: cover;
+}

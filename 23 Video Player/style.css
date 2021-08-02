@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Avenir", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: white;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	visibility: visible;
+	z-index: 999;
+	transition: all 0.2s ease;
+}
+.hide-preloader {
+	z-index: -999;
+	visibility: hidden;
+}
+
+header {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	display: grid;
+	place-items: center;
+}
+
+.video-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -2;
+}
+
+h2 {
+	color: white;
+	font-size: 10rem;
+}
+
+header::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0/0.3);
+	z-index: -1;
+}
+
+.switch-btn {
+	position: absolute;
+	bottom: 7%;
+	left: 7%;
+	width: 7rem;
+	height: 2rem;
+	display: flex;
+	border-radius: 16px;
+	align-items: center;
+	justify-content: space-around;
+	border: none;
+	transition: all 0.2s ease;
+}
+
+.switch-btn span {
+	display: inline-block;
+	font-size: 0.85rem;
+	cursor: pointer;
+	text-transform: capitalize;
+	color: rgb(24, 109, 36);
+}
+
+.switch {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(37, 187, 57);
+	border-radius: 16px;
+	margin: 0;
+	display: block;
+	transition: all 0.2s ease;
+}
+.slide .switch {
+	left: 50%;
+}

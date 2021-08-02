@@ -1,0 +1,103 @@
+html {
+  font-size: 10px;
+  background-size: cover;
+  background-color: blueviolet;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#drum{
+  font-size: 150%;
+}
+#drum :hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+header{
+  text-align: center;
+  margin-top: 10vh;
+  font-size:150%;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+  text-shadow: 0 0 .5rem black;
+
+}
+.keys {
+  min-height: 50vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid rgb(63, 4, 102);
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+.playing {
+  transform: scale(1.1);
+  border-color: #ffffff;
+  box-shadow: 0 0 1rem #ffffff;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+footer{
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-shadow: 0 0 .5rem black;
+  color: #ffffff;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+}
+footer a{
+  color: #ffc600;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}

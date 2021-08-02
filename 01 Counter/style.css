@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.count {
+	font-size: 4rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.btn {
+	padding: 6px 12px;
+	border-radius: 4px;
+	border: none;
+	font-size: 0.8rem;
+}
+
+.btn:hover {
+	background-color: rgb(0, 119, 255);
+	color: white;
+}

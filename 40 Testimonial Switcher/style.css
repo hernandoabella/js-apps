@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f4f4f4;
+	font-family: "Avenir", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	padding: 16px;
+}
+
+.testimonial-container {
+	background-color: rgb(62, 65, 68);
+	color: white;
+	border-radius: 16px;
+	margin: 24px auto;
+	padding: 48px 80px;
+	max-width: 768px;
+	position: relative;
+}
+
+.fa-quote {
+	color: rgba(255, 255 255, 0.3);
+	font-size: 24px;
+	position: absolute;
+	top: 72px;
+}
+
+.fa-quote-right {
+	left: 40px;
+}
+
+.fa-quote-left {
+	right: 40px;
+}
+
+.testimonial {
+	line-height: 24px;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+	margin-top: 24px;
+}
+
+.user .user-image {
+	border-radius: 50%;
+	height: 72px;
+	height: 72px;
+	object-fit: cover;
+}
+
+.user .user-details {
+	margin-left: 12px;
+}
+
+.progress-bar {
+	background-color: white;
+	height: 4px;
+	width: 100%;
+	animation: grow 10s linear infinite;
+	transform-origin: left;
+	margin-bottom: 1.5rem;
+}
+
+@keyframes grow {
+	0% {
+		transform: scaleX(0);
+	}
+}
+
+@media (max-width: 768px) {
+	.testimonial-container {
+		padding: 16px 32px;
+	}
+
+	.fa-quote {
+		display: none;
+	}
+}
