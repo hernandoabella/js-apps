@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Avenir", sans-serif;
+	font-size: 16px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 120px 0;
+	background-color: rgb(37, 37, 37);
+}
+
+.container {
+	width: 92%;
+	height: auto;
+	max-width: 1400px;
+	margin: 0 auto;
+	transition: all 0.3s ease-in-out;
+}
+
+.brand {
+	text-align: center;
+	font-size: 3rem;
+	color: rgb(255, 153, 0);
+}
+
+form {
+	width: 90%;
+	max-width: 480px;
+	margin: 24px auto;
+	background-color: rgb(206, 206, 206);
+	border-radius: 4px;
+	border: 1px solid white;
+	margin-bottom: 3rem;
+}
+
+form input {
+	width: 88%;
+	background-color: transparent;
+	padding: 8px 16px;
+	outline: none;
+	border: none;
+	font-size: 1.5rem;
+	color: rgb(117, 117, 117);
+	font-family: "Avenir", sans-serif;
+}
+
+form .search-btn {
+	background-color: transparent;
+	width: 10%;
+	border: none;
+}
+
+form ion-icon {
+	font-size: 2rem;
+	margin: -8px;
+	color: rgb(77, 77, 77);
+}
+
+.search-result {
+	margin-top: 48px;
+	width: 100%;
+	display: grid;
+	grid-gap: 32px;
+	grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+	width: 100%;
+	border-radius: 4px;
+	background-color: rgb(63, 63, 63);
+	padding: 12px;
+	overflow: hidden;
+}
+
+.item img {
+	width: 100%;
+	height: 320px;
+	border-radius: 4px;
+}
+
+.item .flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 16px 0;
+}
+
+.item .title {
+	color: rgb(255, 153, 0);
+	line-height: 1;
+}
+
+.view-btn {
+	text-decoration: none;
+	background-color: rgb(56, 177, 0);
+	padding: 4px 12px;
+	color: white;
+	min-width: 40%;
+	margin-left: 8px;
+	align-self: flex-start;
+	border-radius: 48px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.item-data {
+	color: rgb(117, 117, 117);
+	display: block;
+	color: white;
+	font-size: 1rem;
+	margin-top: 12px;
+	line-height: 1.5;
+}
+
+.item-data span {
+	font-weight: 900;
+}
+
+.conatiner.intial .brand {
+	font-size: 6rem;
+}
+
+.container.initial form {
+	max-width: 800px;
+}
+
+.container.initial form input {
+	padding: 16px;
+}
+
+@media (max-width: 768px) {
+	.search-result {
+		grid-gap: 16px;
+	}
+
+	.container.initial .brand {
+		font-size: 3rem;
+	}
+
+	.container.initial form {
+		max-width: 500px;
+	}
+
+	.container.initial form input {
+		padding: 10px;
+		font-size: 1.25rem;
+	}
+}

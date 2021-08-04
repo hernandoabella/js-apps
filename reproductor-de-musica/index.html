@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="player-container">
+        <!-- song -->
+        <div class="img-container">
+            <img src="img/01 Koffee.jpg" alt="album-art">
+        </div>
+        <h2 id="title">Rapture</h2>
+        <h3 id="artist">Koffee</h3>
+        <audio src="music/01 Rapture.mp3"></audio>
+        <!-- progress -->
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper" id="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">03:22</span>
+            </div>
+        </div>
+        <!-- controls -->
+        <div class="player-controls">
+            <ion-icon id="previous" title="previous" name="play-back-outline"></ion-icon>
+            <ion-icon id="play" title="play" class="main" name="play-circle-outline"></ion-icon>
+            <ion-icon id="next" title="next" name="play-forward-outline"></ion-icon>
+        </div>
+    </div>
+
+    <!-- ion-icons -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #c9ced3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Lato", sans-serif;
+	min-height: 100vh;
+}
+
+.player-container {
+	color: white;
+	width: 400px;
+	height: 540px;
+	background-color: rgb(37, 37, 37);
+	border-radius: 16px;
+	box-shadow: 0 12px 24px rgba(0, 0, 10, 0.1);
+}
+
+.img-container {
+	position: relative;
+	object-fit: cover;
+	width: 320px;
+	height: 320px;
+	top: -48px;
+	left: 40px;
+}
+
+.player-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 16px;
+	box-shadow: 0 12px 24px rgba(138, 138, 255, 0.301);
+}
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+}
+
+h3 {
+	font-size: 16px;
+	text-align: center;
+	font-weight: 400;
+	margin: 5px 0 0;
+	color: rgb(161, 161, 161);
+}
+
+/* Progress */
+.progress-container {
+	background: rgb(211, 211, 211);
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 36px 24px;
+	height: 4px;
+	width: 88%;
+}
+
+.progress {
+	background: #ff0000;
+	border-radius: 5px;
+	height: 100%;
+	/* change this to show progress */
+	width: 0%;
+	transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+	position: relative;
+	top: -32px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+	position: relative;
+	top: -15px;
+	left: 120px;
+	width: 240px;
+	display: flex;
+	align-items: center;
+}
+
+ion-icon {
+	font-size: 2rem;
+	color: rgb(190, 190, 190);
+	margin-right: 30px;
+	cursor: pointer;
+	user-select: none;
+	transition: all 0.1s ease-in;
+}
+
+ion-icon:hover {
+	transform: scale(1.2);
+	color: rgb(255, 255, 255);
+}
+
+.main {
+	font-size: 3.5rem;
+}
+
+.fas {
+	font-size: 30px;
+	color: rgb(129, 129, 129);
+	margin-right: 30px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+	.player-container {
+		width: 92vw;
+	}
+
+	.img-container {
+		left: 28px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 15px;
+	}
+
+	.player-controls {
+		top: -10px;
+		left: 100px;
+	}
+}

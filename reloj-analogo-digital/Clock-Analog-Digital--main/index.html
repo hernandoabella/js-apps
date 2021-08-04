@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS + CSS Clock</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #091921;
+    }
+
+    .clock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 350px;
+      background-image: url("clock.png");
+      background-size: cover;
+      border: 4px solid #091921;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .clock::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      z-index: 99;
+    }
+
+    .clock .hour,
+    .clock .minute,
+    .clock second {
+      position: absolute;
+    }
+
+    .clock .hour,
+    .hr {
+      width: 160px;
+      height: 160px;
+    }
+
+    .clock .minute,
+    .min {
+      width: 190px;
+      height: 190px;
+    }
+
+    .clock .second,
+    .sec {
+      width: 230px;
+      height: 230px;
+    }
+
+    .hr,
+    .min,
+    .sec {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hr::before,
+    .min::before,
+    .sec::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 80px;
+      background: #ff105e;
+      border-radius: 5px 5px 0 0;
+      z-index: 10;
+    }
+
+    .min::before {
+      background: #fff;
+      width: 4px;
+      height: 90px;
+      z-index: 11;
+    }
+
+    .sec::before {
+      background: #fff;
+      width: 2px;
+      height: 150px;
+      z-index: 12;
+    }
+
+    a.btn-abs {
+      color: #FFF;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animate 1.5s linear infinite;
+            user-select: none;
+      position: fixed;
+      right: 5px;
+      bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="clock">
+    <div class="hour">
+      <div class="hr"></div>
+    </div>
+    <div class="minute">
+      <div class="min"></div>
+    </div>
+    <div class="second">
+      <div class="sec"></div>
+    </div>
+  </div>
+
+  <a href="digital.html" class="btn-abs">Click here to see Digital Clock</a>
+
+
+  <script>
+    setInterval(anaClock, 1000);
+
+    function anaClock() {
+      const deg = 6;
+      const hour = document.querySelector('.hr');
+      const minutes = document.querySelector('.min');
+      const seconds = document.querySelector('.sec');
+
+      const day = new Date();
+
+      const sec = day.getSeconds() * deg;
+      const min = day.getMinutes() * deg;
+      const hr = day.getHours() * 30;
+
+      seconds.style.transform = `rotateZ(${sec}deg)`;
+      minutes.style.transform = `rotateZ(${min}deg)`;
+      hour.style.transform = `rotateZ(${(hr)+(min/12)}deg)`;
+    }
+
+    anaClock();
+  </script>
+</body>
+
+</html>
