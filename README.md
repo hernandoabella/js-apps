@@ -22,27 +22,11 @@ Las aplicaciones están divididas en 3 niveles:
 * Intermedio: ⭐⭐⭐
 * Avanzado: ⭐⭐⭐⭐⭐
 
-### Lista de Aplicaciones:
+### Tabla de aplicaciones
 
-1. Contador de carácteres
-2. Aplicación del clima
-3. Reserva de asientos para películas
-6. Convierte tu edad en días
-7. Entrenador matemático
-8. Contador de productos
-9. Examen de JavaScript
-10. Reproductor MP3
-11. Contador de palabras
-12. Juego de mecanografía
-13. Significado de tu nombre
-
-
-
-### Aplicaciones de javascript:
-
-|  #                |  Aplicación                |  Descripción                                                | Descarga      |
-| -------------     | -------------              |:-------------:                                              | -----:        |
-| 1                 | Contador                   | Esta aplicación te permite contar números.                  | Descargar     |
+|  #                |  Aplicación                |  Descripción                                | Dificultad    | Descarga      |
+| -------------     | -------------              |:-------------:                              |:-------------:| -----:        |
+| 1                 | Contador                   | Esta aplicación te permite contar números.  |  ★★☆☆☆     | Descargar     |
 
 
 
