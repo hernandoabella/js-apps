@@ -18,7 +18,6 @@ Las aplicaciones de la lista te permitirán practicar el código de JavaScript c
 
 Las aplicaciones están divididas en 3 niveles de dificultad:
 
-*  Indefinido:        ⭐
 *  Básico:           ⭐⭐
 *  Intermedio:      ⭐⭐⭐
 *  Avanzado:      ⭐⭐⭐⭐⭐
