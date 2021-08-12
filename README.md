@@ -23,7 +23,7 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 *  Intermedio:      ⭐⭐⭐
 *  Avanzado:      ⭐⭐⭐⭐⭐
 
-## Tabla de aplicaciones 🎉
+## Aplicaciones 🎉
  
 |  #                |  Aplicación                |  Descripción                                | Dificultad    | Descarga      | Youtube 👀  |    
 | -------------     | -------------              |:-------------:                              |:-------------:| -----:        |-----:        |
