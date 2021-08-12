@@ -35,3 +35,14 @@ Las aplicaciones están divididas en 3 niveles:
 11. Contador de palabras
 12. Juego de mecanografía
 13. Significado de tu nombre
+
+
+
+### Aplicaciones de javascript:
+
+|  #                |  Aplicación                |  Descripción                                                | Descarga      |
+| -------------     | -------------              |:-------------:                                              | -----:        |
+| 1                 | Contador                   | Esta aplicación te permite contar números.                  | Descargar     |
+
+
+
