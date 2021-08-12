@@ -16,17 +16,18 @@ Las aplicaciones de la lista te permitirán practicar el código de JavaScript c
 
 ## Niveles
 
-Las aplicaciones están divididas en 3 niveles:
+Las aplicaciones están divididas en 3 niveles de dificultad:
 
-* Básico: ⭐⭐
-* Intermedio: ⭐⭐⭐
-* Avanzado: ⭐⭐⭐⭐⭐
+*  Indefinido:        ⭐
+*  Básico:           ⭐⭐
+*  Intermedio:      ⭐⭐⭐
+*  Avanzado:      ⭐⭐⭐⭐⭐
 
 ### Tabla de aplicaciones
 
-|  #                |  Aplicación                |  Descripción                                | Dificultad    | Descarga      |
-| -------------     | -------------              |:-------------:                              |:-------------:| -----:        |
-| 1                 | Contador                   | Esta aplicación te permite contar números.  |  ★★☆☆☆     | Descargar     |
+|  #                |  Aplicación                |  Descripción                                | Dificultad    | Descarga      | Youtube 👀  |    
+| -------------     | -------------              |:-------------:                              |:-------------:| -----:        |-----:        |
+| 1                 | Contador                   | Esta aplicación te permite contar números.  |  ★★☆☆☆     | Descargar      |🔗 url           |
 
 
 
