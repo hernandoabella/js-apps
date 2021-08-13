@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicación del clima</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
-<body>
-    <div class="app-wrap">
-        <header>
-          <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
-        </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
         <main>
-          <section class="location">
-            <div class="city">Northampton, GB</div>
-            <div class="date">Thursday 10 January 2020</div>
-          </section>
-          <div class="current">
-            <div class="temp">15<span>°c</span></div>
-            <div class="weather">Sunny</div>
-            <div class="hi-low">13°c / 16°c</div>
-          </div>
+            <form class="inputForm">
+                <input class="inputCity" type="text" placeholder="Search for a city..." />
+                <input class="formBtn" type="submit" value="Show Weather" />
+            </form>
+            <div class="result">
+                <p><span class="city"></span><span class="country"></span></p>
+                <p class="temprature"></p>
+                <p class="sky"></p>
+                <p class="min-max"></p>
+            </div>
         </main>
-      </div>
 
-<script src="/script.js"></script>        
-</body>
+        <footer>
+            <p>Designed and Coded by <a href="http://amanmaharshi.com" target="_blank">Aman Maharshi</a></p>
+        </footer>
+        <script src="app.js"></script>
+    </body>
 </html>
