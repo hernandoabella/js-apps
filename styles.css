@@ -1,33 +1,35 @@
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #E7ECEF;
 }
 
 h1{
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #6096BA;
 }
 
 p{
     text-align: center;
-    color: #000;
+    color: #274C77;
 }
 
 a{
-    color: #8789C0;
+    color: #0F52BA;
+    text-decoration: none;
 }
 
 .coolStyle{
-    color: #fff;
-    padding: 10px;
-    background: #4059AD;
-    border-radius: 25px;
+    color: #274C77;
+    padding: 5px;
+    border: 1px solid #274C77;
 }
 
 ol{
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     font-size: 1.3em;
-    color: #6B9AC4;
+    color: #274C77;
+    width: 700px;
 }
 
 ol li{
@@ -38,18 +40,16 @@ ol li{
 
 ol li a{
     text-decoration: none;
-    color: #4059AD;
+    color: #6096BA;
+    
 }
 
-ol li a:hover{
-    text-decoration: underline;
-}
 
 .gitBtn{
-    color: rgb(0, 0, 0);
+    color: #8B8C89;
     position: absolute;
     top: 20px;
-    border: 5px dashed #000;
+    border: 1px solid #8B8C89;
     right: 20px;
     padding: 10px;
     transition: .3s;
@@ -57,9 +57,11 @@ ol li a:hover{
 }
 
 .gitBtn:hover{
-    border: 1px dashed rgb(175, 175, 175);
+    border: 1px solid #000;
     color: #fff;
     background: #000;
+    border-radius: 100px;
+    transform: scale(1.3);
 }
 
 .donation{
@@ -67,42 +69,47 @@ ol li a:hover{
     top: 20px;
     left: 20px;
     transition: .3s;
-    color: #4059AD;
+    color: #0F52BA;
     line-height: 30px;
 }
 
-.donation:hover::after{
+.donation:hover:after{
     content: 'Donación con paypal';
     position: absolute;
     left: 50px;
-    color: #4059AD;
+    color: #8B8C89;
     width: 140px;
     text-align: center;
 }
 
+.donation > i:hover{
+    color: #6096BA;
+}
+
 .donation > i{
-    color: #4059AD;
+    color: #8B8C89;
     font-size: 2em;
+    transition: .3s;
 }
 
 .love{
-    color: red;
+    color: #EF8354;
 }
 
 .download-manager a{
-    color: #6B9AC4;
+    color: #6096BA;
     float: right;
     cursor: pointer;
     transition: .3s;
 }
 
 .download-manager a:hover{
-    background: #4059AD;
+    background: #274C77;
     color: #fff;
     text-decoration: underline;
 }
 
 .estrellas{
-    color: #F4B942;
+    color: #0F52BA;
     margin: 10px;
 }
