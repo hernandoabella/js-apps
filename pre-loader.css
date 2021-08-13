@@ -1,0 +1,83 @@
+/* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+.text {
+  fill: none;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n+1) {
+  stroke: #274C77;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n+2) {
+  stroke: #A3CEF1;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n+3) {
+  stroke: #6096BA;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n+4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n+5) {
+  stroke: #E7ECEF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+/* Other styles */
+
+.pre__load{
+  
+  
+  
+  
+} 
+
+svg {
+  background: #19324f;
+  position: relative;
+  width: 100%;
+  height: 0vh;
+  margin: 0;
+  padding: 0;
+  display: block;
+  z-index: 1000;
+  font: 5em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  animation: anim1 1s;
+}
+
+@keyframes anim1{
+  0%{
+    height: 100vh;
+  }
+  
+  80%{
+    opacity: 0.8;
+  }
+
+  100%{
+    height: 100vh;
+  }
+}
