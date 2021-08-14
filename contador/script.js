@@ -1,4 +1,4 @@
-//variables
+//Variables
 
 const numero = document.getElementById('numero');
 let btn1 = document.getElementById('btn1');
@@ -31,7 +31,10 @@ const removeAnimationClass = () => {
 }
 
 
-//Activar contador automático: 
+// Activar contador automático: 
 
-//setInterval(sumar, 500);
-//setInterval(restar, 500);
+// Suma automáticamente
+// setInterval(sumar, 1000); 
+
+// Resta automáticamente
+// setInterval(restar, 1000); 

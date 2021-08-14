@@ -65,7 +65,7 @@ svg {
   z-index: 1000;
   font: 5em/1 Open Sans, Impact;
   text-transform: uppercase;
-  animation: anim1 1s;
+  animation: anim1 3s;
 }
 
 @keyframes anim1{
@@ -73,10 +73,6 @@ svg {
     height: 100vh;
   }
   
-  80%{
-    opacity: 0.8;
-  }
-
   100%{
     height: 100vh;
   }
