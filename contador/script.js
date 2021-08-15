@@ -1,10 +1,8 @@
 //Variables
 
 const numero = document.getElementById('numero');
-const numtoInt = parseInt(numero.innerHTML);
-let btn1 = document.getElementById('btn1');
-let btn2 = document.getElementById('btn2');
-
+const btn1 = document.getElementById('btn1');
+const btn2 = document.getElementById('btn2');
 
 const sumar = () => {
 
@@ -16,16 +14,10 @@ const sumar = () => {
 
    numero.innerText++;
 
-   if(numero.innerText === '0'){
-      numero.style.color = '#999';
-   }else if(numero.innerText < '0'){
-      numero.style.color = "red";
-   }else{
-      numero.style.color = "green";
-   }
+   testColor();
 
    console.log(numero.innerHTML);
-
+   
    return numero.innerText;
 
 }
@@ -40,13 +32,7 @@ const restar = () => {
 
    numero.innerText--;
 
-   if(numero.innerText === '0'){
-      numero.style.color = '#999';
-   }else if(numero.innerText < '0'){
-      numero.style.color = "red";
-   }else{
-      numero.style.color = "green";
-   }
+   testColor();
 
    console.log(numero.innerHTML);
 
@@ -55,6 +41,16 @@ const restar = () => {
 
 const removeAnimationClass = () => {
    numero.classList.remove('animation2', 'animation');
+}
+
+const testColor = () =>{
+   if(numero.innerText === '0'){
+      numero.style.color = '#999';
+   }else if(numero.innerText < '0'){
+      numero.style.color = "red";
+   }else{
+      numero.style.color = "green";
+   }
 }
 
 // Activar contador automático: 

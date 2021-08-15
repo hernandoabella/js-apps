@@ -30,7 +30,7 @@ body{
 }
 
 hr{
-    border: 1px dashed #999;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin: 20px 10px;
 }
 
