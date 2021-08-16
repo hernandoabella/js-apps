@@ -5,8 +5,8 @@
 }
 
 body{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #E7ECEF;
+    font-family:sans-serif;
+    background: #fff;
 }
 
 h1{
@@ -27,7 +27,7 @@ a{
 }
 
 .coolStyle{
-    color: #274C77;
+    color: #5BC3EB;
 }
 
 ol{
@@ -79,11 +79,11 @@ ol li a{
 }
 
 .donation:hover:after{
-    content: 'Donación con paypal';
+    content: 'Donación con PayPal';
     position: absolute;
     left: 50px;
     color: #8B8C89;
-    width: 140px;
+    width: 160px;
     text-align: center;
 }
 
@@ -106,12 +106,12 @@ ol li a{
     float: right;
     cursor: pointer;
     transition: .3s;
+    padding: 5px;
 }
 
 .download-manager a:hover{
     background: #274C77;
     color: #fff;
-    text-decoration: underline;
 }
 
 .estrellas{

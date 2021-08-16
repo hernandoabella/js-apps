@@ -3,4 +3,14 @@
 var loaderEffect;
 
 loaderEffect = document.getElementById('svgEffect');
-// loaderEffect.style.display = "none";
+// 
+
+const hello = () =>{
+    loaderEffect.style.display = "none";
+}
+
+window.onload = hello();
+
+setTimeout(() =>{
+
+}, 3000);
