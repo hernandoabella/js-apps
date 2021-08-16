@@ -1,16 +1,11 @@
 // Variables
-
-var loaderEffect;
-
-loaderEffect = document.getElementById('svgEffect');
-// 
+const body = document.querySelector('body');
+const loaderEffect = document.getElementById('svgEffect');
 
 const hello = () =>{
     loaderEffect.style.display = "none";
 }
 
-window.onload = hello();
-
 setTimeout(() =>{
-
+    hello();
 }, 3000);

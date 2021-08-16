@@ -1,5 +1,12 @@
 /* Main styles */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+
+
+body{
+  overflow: hidden;
+}
+
 .text {
   fill: none;
   stroke-width: 1;
@@ -51,22 +58,11 @@ svg {
   background: #19324f;
   position: relative;
   width: 100%;
-  height: 0vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   display: block;
   z-index: 1000;
   font: 5em/1 Open Sans, Impact;
   text-transform: uppercase;
-  animation: anim1 3s;
-}
-
-@keyframes anim1{
-  0%{
-    height: 100vh;
-  }
-  
-  100%{
-    height: 100vh;
-  }
 }
