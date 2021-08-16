@@ -28,7 +28,7 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
  
 |  #                |  Aplicación                |  Descripción                                | Dificultad    | Descarga     | Youtube      |    
 | -------------     | -------------              |-------------                            |-------------  | -----       |-----        |
-| 1                 | Contador                   | Esta aplicación te permite contar números.  |  ★★☆☆☆      | [⬇️]()      |  [👁️]()     |
+| 1                 | Contador                   | Esta aplicación te permite contar números.  |  ★★★☆☆      | [⬇️]()      |  [👁️]()     |
 
 
 
