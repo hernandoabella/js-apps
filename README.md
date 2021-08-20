@@ -1,6 +1,6 @@
 # JS-APPS
 
-Colección de aplicaciones de <b>+200</b> creadas para practicar el código de JavaScript.
+Colección de aplicaciones creadas para practicar el código de JavaScript.
 
 ## Historia 🖼️
 
@@ -26,9 +26,9 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 
 ## Aplicaciones 🎉
  
-|  #                |  Aplicación                |  Descripción                                | Dificultad    | Descarga     | Youtube      |    
-| -------------     | -------------              |-------------                            |-------------  | -----       |-----        |
-| 1                 | Contador                   | Esta aplicación te permite contar números.  |  ★★★☆☆      | [⬇️]()      |  [👁️]()     |
+|  #  |  Aplicación        | Dificultad    | Descarga                                             | Youtube      |    
+| --- | -------------      |------------   |-------------                                           | -----       |-----                                        |
+| 1   | Contador           |   ★★★☆☆    | [⬇️](https://www.hernandoabella.com/proyectos/contador) |  [👁️](https://www.youtube.com/watch?v=sgGEDuY5zOs&t)     |
 
 
 
