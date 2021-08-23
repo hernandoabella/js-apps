@@ -26,7 +26,7 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 
 ## Aplicaciones 🎉
  
-|  #  |  Aplicación        | Dificultad    | Descarga                                             | Youtube      |    
+|  #  |  Aplicación        | Dificultad    | Descarga                                               |              | Youtube                                     |  
 | --- | -------------      |------------   |-------------                                           | -----       |-----                                        |
 | 1   | Contador           |   ★★★☆☆    | [⬇️](https://www.hernandoabella.com/proyectos/contador) |  [👁️](https://www.youtube.com/watch?v=sgGEDuY5zOs&t)     |
 
