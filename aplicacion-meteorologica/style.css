@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #AFBBF2;
+    color: #292E1E;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+.container{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    animation: coolAnimation 1s;
+}
+
+.flex{
+    display: flex;
+    text-align: center;
+    width: 145px;
+    margin: auto;
+}
+
+.flex img{
+    margin-right: 10px;
+}
+
+.inputCity{
+    width: 219.5px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid rgb(239, 239, 239);
+    color: #7F0799;
+    animation: coolAnimation 1s;
+}
+
+.inputCity,
+.formBtn {
+    font-size: 1rem;
+    padding: 7px 14px;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Nanum Gothic", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.formBtn{
+    background: #9649CB;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s all ease;
+    animation: coolAnimation 1s;
+}
+
+.formBtn:hover {
+    background: #7F0799;
+    color: #fff;
+}
+
+.result p {
+    margin: 1rem 0;
+    text-align: center;
+    animation: coolAnimation 1s;
+}
+
+.result i{
+    font-size: 1.4rem;
+    color: #7F0799;
+}
+
+.city,
+.country {
+    font-size: 1.5rem;
+}
+
+.temprature {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #7F0799;
+}
+
+.sky {
+    font-size: 1.3rem;
+}
+
+.min-max {
+    font-size: 1.1rem;
+}
+
+
+
+@keyframes coolAnimation{
+
+    0%{
+        opacity: 0;
+    }
+
+}
