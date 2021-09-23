@@ -9,8 +9,15 @@
 
 body{
     color: #000;
-    background: #4F7CAC;
+    background: #009FB7;
     font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 120px;
+    color: #F4F4F8;
+    font-size: 2.5em;
 }
 
 .contenedor{
@@ -24,19 +31,22 @@ body{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.name{
+    color: #FED766;
+}
+
+.name4{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
 .name3 {
     text-transform: uppercase;
-    font-size: 26px;
-    color:#000;
-    font-weight: 900;
+    font-size: 2em;
+    font-weight: bold;
+    color: #FE4A49;
 }
-    
-.name4 {
-    font-size: 26px;
-    color:#000; 
-    font-weight: 500;
-}
-        
+
 #input1 {
     padding: 10px;
     font-size: 16px;
@@ -46,26 +56,27 @@ body{
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
-    border-bottom: 1px solid #3C474B;
+    border: 1px solid #FE4A49;
+    border-radius: 5px;
 }
  
 #button1 {
-    background:#162521;
+    background: #FE4A49;
+    color: #F4F4F8;
     border: none;
     width: 100%;
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
     outline: none;
-    border-radius: 2px;
-    color:white;
+    border-radius: 5px;
     transition: .3s;
     cursor: pointer;
 }
 
 #button1:hover{
-    background:#9EEFE5;
-    color: #162521;
+    background:#1A5E63;
+    color: #F4F4F8;
 }
     
 #div1 {
@@ -75,15 +86,12 @@ body{
     
 #div2 {
     display: none;
-    text-align: left;
     padding: 20px;
-    font-weight: 500;
-    background: #fff;
-    color: #000;
+    background: #F4F4F8;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
