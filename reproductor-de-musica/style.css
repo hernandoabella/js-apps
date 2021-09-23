@@ -52,22 +52,11 @@ body {
   bottom: 0;
   left: 0;
   animation: rotate 3s linear infinite;
-
   animation-play-state: paused;
 }
 
 .music-container.play .img-container img {
   animation-play-state: running;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .navigation {
@@ -134,4 +123,14 @@ body {
   height: 100%;
   width: 0%;
   transition: width 0.1s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }

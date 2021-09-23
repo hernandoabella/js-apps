@@ -116,7 +116,7 @@ function DurTime (e) {
 
 	get_sec (currentTime,sec);
 
-	// cambiar tiempo actual DOM
+	// Cambiar tiempo actual DOM
 	currTime.innerHTML = min +':'+ sec;
 
 	// Define la duración de los minutos
@@ -150,7 +150,7 @@ function DurTime (e) {
 		
 };
 
-// Eventlisteners
+// Event listeners
 playBtn.addEventListener('click', () => {
   const isPlaying = musicContainer.classList.contains('play');
 
