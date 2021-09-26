@@ -199,8 +199,8 @@ var gameCurrentLevel = levels[currentLevel]; //gameLevel + level number
 
 
 // ----------- Setting the level title and goal ----------- //
-levelNumberTitle.innerHTML = 'Level ' + currentLevel;
-levelGoalTitle.innerHTML = 'Try to catch ' + gameCurrentLevel.goal + ' emojis in ' + gameCurrentLevel.time + ' seconds.';
+levelNumberTitle.innerHTML = 'Nivel ' + currentLevel;
+levelGoalTitle.innerHTML = 'Intenta capturar ' + gameCurrentLevel.goal + ' emojis en ' + gameCurrentLevel.time + ' segundos.';
 
 
 // ------------------ Buttons ------------------ //
@@ -226,7 +226,7 @@ startLevelButton.onclick = function() {
 pauseGameButton.onclick = function() {
   gamePauseCont.style.display = "block";
   game.pause(); // Pause game
-  gamePausedDescription.innerHTML = 'You catched ' + emojiTapsCount + ' emojis, and you have to catch ' + gameCurrentLevel.goal + ' at least to complete this level.'
+  gamePausedDescription.innerHTML = 'Capturaste ' + emojiTapsCount + ' emoticones, y tienes que capturar ' + gameCurrentLevel.goal + ' al menos para completar este nivel.'
 }
 
 // Clicking Continue Game Button

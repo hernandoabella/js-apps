@@ -1,30 +1,17 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+
+*{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-  transition: all ease 0.2s;
 
-  /* Disable text selection/highlighting */
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
-
-  /* Remove Gray Highlight When Tapping Links in Mobile Safari/Chrome */
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
 
 body{
-  font: caption;
-  font-family: 'Open Sans', 'Roboto','Helvetica Neue', 'Lucida Grande', sans-serif;
-  background: rgb(30, 30, 30);
+  font-family: 'Gemunu Libre', sans-serif;
   font-size: 20px;
-
-  /* always hide scrollbars */
-  overflow: hidden;
+  background: #FF0855;
 }
 
 body, h1,h2,h3, p, menu{
@@ -55,9 +42,12 @@ h3 {
 .main-wrapper {
   background: yellow;
   width: 360px;
-  height: 640px;
-  margin: 0 auto;
-  position: relative;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .content-wrapper {
@@ -81,13 +71,12 @@ h3 {
 
 
 
-/* -------------- Main Menu -------------- */
-/*Menu Container*/
+/* -------------- Menú Principal -------------- */
+/*Contenedor menú*/
 .menu-cont {
   background-image: linear-gradient(0deg, #FF138E 0%, #FF0855 100%);
   color: white;
   text-align: center;
-  overflow: auto;
 }
 
 .logo {
@@ -350,4 +339,8 @@ h3 {
     height:100vh;
     max-height: 100vh;
   }
+}
+
+audio{
+  display: none;
 }
