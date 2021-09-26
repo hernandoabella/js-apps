@@ -7,11 +7,9 @@
   user-select: none;
 }
 
-
 body{
   font-family: 'Gemunu Libre', sans-serif;
   font-size: 20px;
-  background: #FF0855;
 }
 
 body, h1,h2,h3, p, menu{
@@ -40,7 +38,6 @@ h3 {
 }
 
 .main-wrapper {
-  background: yellow;
   width: 360px;
   height: 500px;
   position: absolute;
@@ -58,6 +55,7 @@ h3 {
   left:0;
   text-align: center;
   padding: 0 20px;
+  border-radius: 5px;
 }
 
 /* ---------- Pages - [START] ---------- */
@@ -72,7 +70,6 @@ h3 {
 
 
 /* -------------- Menú Principal -------------- */
-/*Contenedor menú*/
 .menu-cont {
   background-image: linear-gradient(0deg, #FF138E 0%, #FF0855 100%);
   color: white;
@@ -133,8 +130,7 @@ h3 {
 }
 
 
-/* -------------- Level Title -------------- */
-/*Level Title Container*/
+/* -------------- Titulo de nivel -------------- */
 .level-cont{
   background: rgba(255,255,255,1);
 }
@@ -162,13 +158,13 @@ h3 {
   transform: scale(1.1);
 }
 
-/* -------------- Game Space -------------- */
+/* -------------- Espacio del juego -------------- */
 .game-space-cont {
   background: white;
   padding: 0;
 }
 
-/* ----------- Heights for game main screen elemtns ----------- */
+/* -----------  Alto para los elementos de la pantalla principal del juego ----------- */
 .game-header { height: 10%; }
 .game-space { height: 80%; }
 .pause-button { height: 10%; }
@@ -185,6 +181,7 @@ h3 {
   height: 94%;
   font-size: 0;
   padding: 2% 0 0 0;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .game-stat {
@@ -214,7 +211,6 @@ h3 {
 
 .progress-line {
   background: #00E3FF;
-  /*width: 100%;*/
   height: 100%;
 }
 
@@ -232,6 +228,7 @@ h3 {
   font-size: 18px;
   outline: none;
   cursor: pointer;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .pause-button:active {
@@ -247,13 +244,12 @@ h3 {
   position: absolute;
   cursor: pointer;
   vertical-align: middle;
-
   animation: growAnimation 0.15s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s backwards;
   -webkit-animation: growAnimation 0.15s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s backwards;
   -moz-animation: growAnimation 0.15s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s backwards;
 }
 
-/* -------------- Time's Up -------------- */
+/* -------------- Se acabó el tiempo -------------- */
 .times-up-cont {
   background: rgba(100,0,0,0.9);
 }
@@ -282,12 +278,12 @@ h3 {
   transform: scale(1.1);
 }
 
-/* -------------- Game Paused -------------- */
+/* -------------- Juego pausado -------------- */
 .game-pasued-cont {
   background: rgba(0,0,0,0.9);
 }
 
-/* -------------- Level Passed -------------- */
+/* -------------- Nivel pasado -------------- */
 .level-passed-cont {
   background: rgba(0,255,150,0.95);
 }
@@ -308,9 +304,7 @@ h3 {
 }
 
 
-/*
-  Animation habibi
-*/
+/* Animación */
 @-webkit-keyframes growAnimation {
   0%   {
     opacity: 0;
@@ -332,7 +326,7 @@ h3 {
   }
 }
 
-/* Make me responsive */
+/* Responsive */
 @media screen and (max-width: 640px){
   .main-wrapper {
     width: 100%;
