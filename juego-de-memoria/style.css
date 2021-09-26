@@ -1,0 +1,59 @@
+body
+{
+	color: #fff;
+	background-image: url(img/tlo3.jpg);	
+	background-size:100vw;
+}
+#container
+{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+}
+#tytul
+{
+	font-size: 18px;
+	text-shadow:0px 0px 10px #000000;
+}
+
+.tail
+{
+	width: 200px;
+	height:200px;
+	margin: 10px;
+	float:left;
+	border: solid 1px #0000c0;
+	background-color:#fff;
+	
+}
+.tail:hover
+{
+	-webkit-box-shadow: 0px 0px 30px -3px rgba(18,18,79,1);
+	-moz-box-shadow: 0px 0px 30px -3px rgba(18,18,79,1);
+	box-shadow: 0px 0px 30px -3px rgba(18,18,79,1);
+	
+}
+input
+{
+	margin-top:30px;
+	font-size: 28px;
+	color:#fff;
+	padding: 10px;
+	border: solid 1px #fff;
+	background-color:#007a99;
+	opacity:0.8;
+	border-radius:10px;
+	
+}
+input:hover
+{
+	background-color:#33ff33;
+	border-color:#000;
+	color:#000;
+	-webkit-box-shadow: 0px 0px 84px -9px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 84px -9px rgba(255,255,255,1);
+	box-shadow: 0px 0px 84px -9px rgba(255,255,255,1);
+	
+	
+}
