@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap');
+
+body{
+    font-family: 'Fraunces', serif;
+    font-size: 1.3em;
+    background: #e7e7de;
+}
+
+.container{
+    position: absolute;
+    background: #008891;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.25);
+    width: 265px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 300px;
+}
+
+#reloj{
+    background: #0f3057;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+

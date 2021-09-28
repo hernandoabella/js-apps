@@ -1,0 +1,202 @@
+body {
+    margin: 0 0 auto auto;
+    background-image: url(images/food-pizza-box-chalkboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; 
+    font-family: 'Roboto', sans-serif; 
+    }
+
+/*
+==============================================================
+Pete's pizzera title
+==============================================================
+*/
+#mainh1 {
+    font-family: 'Nothing You Could Do', cursive;
+    color: white;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+/*
+==============================================================
+The box with the content
+==============================================================
+*/
+.section-card {
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    top:0 0;
+    margin-left: 3rem;
+    margin-top: 8rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 5px solid rgba(232, 232, 232,0.5);
+    width: 15rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    display: none;}
+
+h1 {
+	font-family: 'Nothing You Could Do', cursive;
+    color: black;
+	font-size: 1.8rem;
+}
+/*
+==============================================================
+The class that will hide all boxes unless the person clicks on next, in which case the next is going to appear.
+==============================================================
+*/
+.section-card.visible{
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  top:0 0;
+  margin-left: 3rem;
+  margin-top: 8rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 5px solid rgba(232, 232, 232,0.5);
+  width: 15rem;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  display: block;}
+}
+
+/*The title of the box*/
+h1 {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.7rem;
+    margin:0;
+}
+
+/*
+==============================================================
+aligning the check and radio buttons vertically
+==============================================================
+*/
+input[type="checkbox"],input[type="radio"]{
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+}
+/*
+==============================================================
+aligning the prices vertically
+==============================================================
+*/
+span {
+    display: inline-block;
+    position: absolute;
+    right: 4rem;
+}
+/*
+==============================================================
+line-spacing of paragraphs in the forms
+==============================================================
+*/
+.section-card p {
+    margin:0.4rem;
+}
+/*
+==============================================================
+Formatting of the "Next" button
+==============================================================
+*/
+.submit {
+    margin-top: 25px;
+    }
+/*
+==============================================================
+The box with the content
+==============================================================
+*/
+#tally {
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top:8rem;
+    right: 15rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 5px solid rgba(232, 232, 232,0.5);
+    width: 15rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5)
+    }
+
+#tally h1 {
+    top: 2rem;
+}
+
+#tally p {
+margin: 0.3rem;
+}
+#tally p span{
+ display: inline-block;
+    right: 4rem;
+    margin:0;
+}
+
+
+/*
+After pressing the last next button, the #ids change
+*/
+
+#finaltally{
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top:8rem;
+    right: 30%;
+    left: 30%;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 5px solid rgba(232, 232, 232,0.5);
+    width: 30rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    font-size: 1rem;
+    }
+#invisible {
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top:8rem;
+    right: 30%;
+    left: 30%;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 5px solid rgba(232, 232, 232,0.5);
+    width: 30rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    font-size: 1rem;
+    display: none;
+    }
+}
+#yourOrder {
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+}
+#finaltally p {
+    margin: 0.3rem;
+}
+
+.dollar {
+    display: inline-block;
+    right: 4rem;
+    margin:0;
+}
+#total {
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-top: 1px solid black;
+    line-height: 2.5;
+}
+#mainh2 {
+    font-family: 'Nothing You Could Do', cursive;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    left: 35%;
+    font-size: 4rem;
+    text-shadow: 1px 1px 5px #000000;
+    z-index: 500;
+}

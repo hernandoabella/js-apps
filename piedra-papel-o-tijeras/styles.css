@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Commissioner', sans-serif;
+  background: #cb2d3e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+  background: rgb(84, 189, 207);
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+  margin: 100px auto;
+}
+
+h1{
+  margin: 30px;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  margin: 20px;
+}
+
+.puntuacion{
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.mensaje{
+  text-align: center;
+  margin: 30px;
+  
+}
+
+.selection{
+  margin: auto;
+  width: 250px;
+}
+
+button{
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(116, 235, 225);
+  color: #000;
+  transition: .2s;
+  outline: none;
+}
+
+button:hover{
+  opacity: .8;
+  transform: translate(2px, 2px)
+}
+
+
