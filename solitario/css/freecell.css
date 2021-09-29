@@ -1,0 +1,89 @@
+body {
+    background-color: #eeeeee;
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1em 0em 0.3em 0em;
+}
+
+h2 {
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+p {
+    margin: 0.5em 0.5em 0em 0.5em;
+}
+
+ul {
+    margin: 0px;
+}
+
+.card {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 96px;
+}
+
+.column {
+	position: relative;
+	float: left;
+	margin: 50px 5px 0px 5px;
+    width: 72px;
+    height: 96px;
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    border-color: #58FA58;
+    border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+}
+
+.free {
+    float: left;
+}
+
+.highlight {
+    -moz-box-shadow: 0px 0px 8px #f00;
+    -webkit-box-shadow: 0px 0px 8px #f00;
+    box-shadow: 0px 0px 8px #f00;
+}
+
+.suit {
+    float: right;
+}
+
+.free, .suit {
+    width: 72px;
+    height: 96px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #58FA58;
+    margin: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#table {
+    background-color: #04B404;
+    width: 720px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-box-shadow: 15px 15px 15px #888888;
+    -webkit-box-shadow: 15px 15px 15px #888888;
+    box-shadow: 15px 15px 15px #888888;
+}

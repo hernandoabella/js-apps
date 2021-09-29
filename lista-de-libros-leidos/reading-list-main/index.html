@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        class="top-img"
+        src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2021/03/Open-Doodles-Reading.png"
+      />
+      <h1>Reading List</h1>
+      <form action="" class="form">
+        <div class="form-element">
+          <label for="title">Book Title:</label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <div class="form-element">
+          <label for="author">Author:</label>
+          <input type="text" name="author" id="author" />
+        </div>
+        <div class="form-element">
+          <label for="pages">Pages:</label>
+          <input type="text" name="pages" id="pages" />
+        </div>
+        <div class="form-element button-element">
+          <button class="add-book" type="submit">Add book!</button>
+        </div>
+      </form>
+      <p class="error"></p>
+      <table>
+        <tbody class="table-body">
+          <tr class="first-row">
+            <td>Title</td>
+            <td>Author</td>
+            <td>Pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

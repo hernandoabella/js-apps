@@ -1,0 +1,20 @@
+body {
+    background-color: #C9D6EA;
+}
+#head {
+    background-color: #587B7F;
+    color: #D8DBE2;
+    padding: 12px 0px;
+}
+
+/* p {
+    padding-top: 30px;
+} */
+
+.card {
+    background-color: #D8DBE2;
+}
+
+/* .card-text {
+    padding-left: 17px;
+} */

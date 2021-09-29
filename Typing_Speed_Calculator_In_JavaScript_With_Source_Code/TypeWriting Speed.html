@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Typing Speed & Accuracy</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Kumbh+Sans&family=Ranchers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap" rel="stylesheet"> 
+
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+body{
+	background-color: black;
+	animation: background;
+	animation-duration: 30s;
+	animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+}
+	
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.content{
+
+	text-align: center;
+	}
+
+.content h1{
+	/* font-family: 'Kufam', cursive; */
+}
+
+#message{
+	font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+#text{
+	font-size: 20px;
+	width: 85%;
+}
+	textarea:focus{
+		
+		animation: border-color-change;
+		animation-duration: 10s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		
+	}
+@keyframes background{
+	0%{
+		background-color: rgb(115, 168, 87);
+	}
+	50%{
+		background-color: skyblue;
+	}
+	100%{
+		background-color: #FF8C00;
+	}
+
+}
+	@keyframes border-color-change{
+		0%{
+			border: 3px solid white  ;
+		}
+
+		100%{
+			border: 3px solid  black;
+		}
+		
+	}
+
+</style>
+
+</head>
+
+<body >
+
+
+
+	<div class="main my-5">
+
+
+			<div class="content container-fluid">
+				
+
+					<h1 class="text-white font-weight-bold"> Check your Typing Speed & Accuracy </h1> <br>
+
+					<h3 id="message" class="text-dark mx-4 text-center my-4">Text will appear here once you click on Start</h3>
+
+					<textarea tabindex="0" autocomplete="off" id="text" rows="10" class=" bg-dark text-white" ></textarea>
+					<br>
+					<button class="btn btn-light px-4" id="start-btn" style="font-size: 25px;">Start</button>
+
+			</div>
+
+			<div id="result" class="mt-2 pt-2  text-center">
+					
+					<h4  class="text-dark"></h4>
+
+			</div>
+
+	</div>
+
+</body>
+<script src="TypingSpeed.js"></script>
+
+</html>
