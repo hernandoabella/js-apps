@@ -1,9 +1,7 @@
 body {
-    margin: 0 0 auto auto;
     background-image: url(images/food-pizza-box-chalkboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top; 
     font-family: 'Roboto', sans-serif; 
 }
 
@@ -15,7 +13,7 @@ Pete's pizzera title
 #mainh1{
     font-family: 'Nothing You Could Do', cursive;
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 30px;
     text-shadow: 1px 1px 2px #ffffff;
     text-align: center;
@@ -44,25 +42,23 @@ The class that will hide all boxes unless the person clicks on next, in which ca
 
 
 .section-card.visible{
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1.5rem;
   border-radius: 15px;
-  border: 5px solid rgba(232, 232, 232,0.5);
   width: 350px;
-  height: 350px;
   display: block;
 }
 
 
 /*The title of the box*/
-h1 {
+
+.section-card.visible h1{
+    text-align: center;
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 1.7rem;
-    margin:0;
 }
 
 /*
@@ -70,65 +66,76 @@ h1 {
 aligning the check and radio buttons vertically
 ==============================================================
 */
+
 input[type="checkbox"], input[type="radio"]{
     display: inline-block;
     position: absolute;
     right: 1rem;
 }
+
 /*
 ==============================================================
 aligning the prices vertically
 ==============================================================
 */
+
 span {
     display: inline-block;
     position: absolute;
     right: 4rem;
 }
+
 /*
 ==============================================================
 line-spacing of paragraphs in the forms
 ==============================================================
 */
+
 .section-card p {
-    margin:0.4rem;
+    margin: 0.4rem;
 }
+
 /*
 ==============================================================
 Formatting of the "Next" button
 ==============================================================
 */
+
 .submit {
     margin-top: 25px;
 }
+
 /*
 ==============================================================
 The box with the content
 ==============================================================
 */
+
 #tally {
     background-color: rgba(255,255,255,0.7);
     position: absolute;
     top: 10px;
     right: 10px;
-    padding: 1.5rem;
+    padding: 10px;
     border-radius: 15px;
-    border: 5px solid rgba(232, 232, 232,0.5);
-    width: 15rem;
+    width: 200px;
 }
 
 #tally h1 {
     top: 2rem;
+    font-family: 'Nothing You Could Do', cursive;
+    text-align: center;
 }
 
 #tally p {
-    margin: 0.3rem;
+    margin: .5rem;
 }
 
 #tally p span{
     display: inline-block;
-    right: 4rem;
+    right: 1rem;
     margin:0;
+    font-weight: bold;
 }
 
 
