@@ -15,15 +15,15 @@ function finalTally(){
 
     function total(totalPrice){
         let totalT = document.getElementById('total');
-        totalT.innerHTML = "Total to be paid: <span class='dollar'>$" +totalPrice+"<span>";
+        totalT.innerHTML = "Total a pagar: <span class='dollar'>$" +totalPrice+"<span>";
     }
     
     let visible = document.getElementsByClassName('visible')[0];
-    let paraContent =[];
+    let paraContent = [];
     
     visible.classList.remove('visible');
     tally.setAttribute('id','finaltally');
-    tally.getElementsByTagName('h1')[0].setAttribute('id','yourOrder')
+    tally.getElementsByTagName('h1')[0].setAttribute('id','yourOrder');
     createPara('id','total');
 
     for (let i=0; i < paras.length-1; i++){
@@ -56,7 +56,7 @@ function finalTally(){
         document.getElementById('mainh2').setAttribute('id','mainh1');
     }
 
-    //New function for new button
+    // Nueva función para nuevo botón
 
     function chng1(){
 
@@ -68,7 +68,7 @@ function finalTally(){
         }
 
         let message = document.createElement("h1");
-        let messageText = document.createTextNode("Your order has been successfully submitted.");
+        let messageText = document.createTextNode("Tu orden ha sido enviada.");
         
         message.setAttribute("id", "yourOrder2");
         message.style.fontFamily = "sans-serif";
@@ -81,7 +81,7 @@ function finalTally(){
 
         let newOrderBtn = document.createElement("button");
         
-        newOrderBtn.textContent = "New Order";
+        newOrderBtn.textContent = "Nueva Orden";
         newOrderBtn.addEventListener("click", chngO);
         newOrderBtn.style.cssFloat ="left";
         ft.appendChild(newOrderBtn);
@@ -93,9 +93,9 @@ function finalTally(){
     
     let lbtn = document.createElement('button');
     
-    lbtn.textContent ='Change order';
-    lbtn.style.fontSize='1rem';
-    lbtn.style.textAlign='center';
+    lbtn.textContent = 'Cambiar orden';
+    lbtn.style.fontSize = '1rem';
+    lbtn.style.textAlign = 'center';
 
     let lastwindow = document.getElementById('finaltally');
     
@@ -103,11 +103,11 @@ function finalTally(){
     lbtn.style.cssFloat = 'right';
     lbtn.addEventListener('click', chngO);
 
-    //New button added here for accepting order//
+    // Nuevo botón agregado aquí para aceptar el pedido
     
     let rbtn = document.createElement('button');
     
-    rbtn.textContent = 'Submit order';
+    rbtn.textContent = 'Enviar orden';
     rbtn.style.fontSize = '1rem';
     rbtn.style.textAlign = 'center';
     rbtn.style.cssFloat = 'left';
@@ -134,7 +134,7 @@ function CInputs(){
     let visible = document.getElementsByClassName("visible")[0];
     let inputs = visible.getElementsByTagName('input');
 
-    for (let chkd=0; chkd < inputs.length; chkd++) {
+    for (let chkd=0; chkd < inputs.length; chkd++){
         if (inputs[chkd].checked) {
             ch.push(inputs[chkd]);
         }
@@ -149,7 +149,7 @@ function check(){
     let visible = document.getElementsByClassName("visible")[0];
     let inputs = visible.getElementsByTagName('input');
 
-    for (let chkd=0; chkd < inputs.length; chkd++) {
+    for (let chkd=0; chkd < inputs.length; chkd++){
         if (inputs[chkd].checked) {
             ch += 1;
         }
@@ -159,12 +159,14 @@ function check(){
 }
 
 function nextS(){
-    for (let i = 0; i < sections.length - 1; i++) {
+
+    for (let i = 0; i < sections.length - 1; i++){
         
-//replace the display property with display:none and make the new section appear.
+        // Reemplace la propiedad de visualización con display: none y haga que aparezca la nueva sección.
+
         if (sections[i].classList.contains('visible')){  
-          sections[i].classList.remove('visible');
-          sections[i+1].classList.add('visible');
+            sections[i].classList.remove('visible');
+            sections[i+1].classList.add('visible');
             break;
         }
              
@@ -172,6 +174,7 @@ function nextS(){
 }
 
 function next(){
+
     let visible = document.getElementsByClassName("visible")[0];
     let inputs = visible.getElementsByTagName('input');
     let secParas = visible.getElementsByTagName('p');
@@ -179,24 +182,28 @@ function next(){
     if (visible.classList.contains('last') == false){
 
     if (check() == 0){ 
-        alert("You have to choose at least one item!")
+    
+        alert("¡Tienes que escoger almenos un artículo!");
+    
     } else if (check() == 1) {
+
         for (let c=0; c < inputs.length; c++) {
             
         if (inputs[c].checked && inputs[c].hasAttribute('data-price')) { 
             let ingredients =+ secParas[c].innerText || secParas[c].textContent;
-//console.log(ingredients);
+                
+            // console.log(ingredientes);
             let topay = inputs[c].getAttribute('data-price');
 
             createPara('data-name', inputs[c].getAttribute('id'));
 
             paras[paras.length - 1].innerHTML = ingredients+' <span>$'+topay+'</span>';
         }
-//otherwise if it is checked just get the text and output it into the receipt. 
+            // De lo contrario, si está marcada, obtenga el texto y envíelo al recibo.
             else if (inputs[c].checked && inputs[c].hasAttribute('data-price') === false){ 
                 inputs = visible.getElementsByTagName('input');
                  ingredients =+ secParas[c].innerText || secParas[c].textContent;
-//console.log(ingredients[0].className);
+            // console.log(ingredients[0].className);
               createPara('data-name',secParas[c].getElementsByTagName('input')[0].getAttribute('id'));
                  paras[paras.length - 1].innerHTML = ingredients+' <span>$0</span>';
              }
@@ -211,14 +218,16 @@ function next(){
         if (CInputs()[j] === CInputs()[0] && CInputs()[j].hasAttribute('data-price') === false) {
 
            ingredients =+ CInputs()[0].parentElement.innerText || CInputs()[0].parentElement.textContent;
-//console.log(CInputs()[0].parentElement);
+              
+              //console.log(CInputs()[0].parentElement);
               createPara('data-name',CInputs()[0].getAttribute('id'));
 
                  paras[paras.length - 1].innerHTML = ingredients+' <span> $0</span>';
         }else if (CInputs()[j] !== CInputs()[0] && CInputs()[j].hasAttribute('data-price') === false) {
                 
                 ingredients =+ CInputs()[j].parentElement.innerText || CInputs()[j].parentElement.textContent;
-//console.log(CInputs()[j].parentElement);
+        
+              //console.log(CInputs()[j].parentElement);
               createPara('data-name',CInputs()[j].getAttribute('id'));
                  
                   paras[paras.length - 1].innerHTML = ingredients+' <span> $1</span>';
@@ -233,45 +242,50 @@ function next(){
     
     }else {
 
-    if (check() == 0){ 
+    if(check() == 0){ 
 
         alert("¡Tienes que escoger almenos un artículo!");
 
-    } else if (check() == 1) {
+    }else if (check() == 1) {
 
         for (let c=0; c < inputs.length; c++) {
             
         if (inputs[c].checked && inputs[c].hasAttribute('data-price')) { 
             let ingredients =+ secParas[c].innerText || secParas[c].textContent;
 
-//console.log(ingredients);
+            // console.log(ingredientes);
 
                 let topay = inputs[c].getAttribute('data-price');
               createPara('data-name', inputs[c].getAttribute('id'));
                 paras[paras.length - 1].innerHTML = ingredients+' <span>$'+topay+'</span>';
-                   }
-//otherwise if it is checked just get the text and output it into the receipt. 
+            }
 
-            else if (inputs[c].checked && inputs[c].hasAttribute('data-price')===false){ 
+            // de lo contrario, si está marcada, obtenga el texto y envíelo al recibo.
+
+            else if (inputs[c].checked && inputs[c].hasAttribute('data-price') === false){ 
                 inputs = visible.getElementsByTagName('input');
                  ingredients =+ secParas[c].innerText || secParas[c].textContent;
-//console.log(ingredients[0].className);
+
+                //console.log(ingredients[0].className);
+
               createPara('data-name',secParas[c].getElementsByTagName('input')[0].getAttribute('id'));
                  paras[paras.length - 1].innerHTML = ingredients+' <span>$0</span>';
-             }
+            }
         }
+
     } else if  (check() > 1){
         for (let j=0; j < CInputs().length; j++) {
             
-        if (CInputs()[j] === CInputs()[0] && CInputs()[j].hasAttribute('data-price')===false) {
+        if (CInputs()[j] === CInputs()[0] && CInputs()[j].hasAttribute('data-price') === false) {
            ingredients =+ CInputs()[0].parentElement.innerText || CInputs()[0].parentElement.textContent;
-//console.log(CInputs()[0].parentElement);
+
+              //console.log(CInputs()[0].parentElement);
               createPara('data-name',CInputs()[0].getAttribute('id'));
                  paras[paras.length - 1].innerHTML = ingredients+' <span>$0</span>';
-        }
-            else if (CInputs()[j] !== CInputs()[0] && CInputs()[j].hasAttribute('data-price')===false) {
-                ingredients =+ CInputs()[j].parentElement.innerText || CInputs()[j].parentElement.textContent;
-//console.log(CInputs()[j].parentElement);
+        }else if (CInputs()[j] !== CInputs()[0] && CInputs()[j].hasAttribute('data-price') === false) {
+              ingredients =+ CInputs()[j].parentElement.innerText || CInputs()[j].parentElement.textContent;
+            
+              //console.log(CInputs()[j].parentElement);
               createPara('data-name',CInputs()[j].getAttribute('id'));
                  paras[paras.length - 1].innerHTML = ingredients+' <span>$1</span>';
                 
@@ -279,9 +293,7 @@ function next(){
         }
     }
 
-finalTally();
-
-
+    finalTally();
 
 }
 }

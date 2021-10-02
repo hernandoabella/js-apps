@@ -5,24 +5,13 @@ body {
     font-family: 'Roboto', sans-serif; 
 }
 
-/*
-==============================================================
-Pete's pizzera title
-==============================================================
-*/
 #mainh1{
     font-family: 'Nothing You Could Do', cursive;
     color: white;
-    font-size: 4rem;
-    margin: 30px;
+    font-size: 3rem;
     text-shadow: 1px 1px 2px #ffffff;
-    text-align: center;
+    margin: 10px;
 }
-/*
-==============================================================
-The box with the content
-==============================================================
-*/
 
 .section-card {
     background-color: rgba(255,255,255,0.5);
@@ -33,39 +22,28 @@ The box with the content
     display: none;
 }
 
-/*
-==============================================================
-The class that will hide all boxes unless the person clicks on next, in which case the next is going to appear.
-==============================================================
-*/
-
-
+.section-card button{
+    background: #000;
+    color: #fff;
+    border: 1px solid rgba(232, 232, 232,0.5);
+    cursor: pointer;
+}
 
 .section-card.visible{
-  background: rgba(255,255,255);
+  background: rgba(255,255,255, 0.5);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1.5rem;
   border-radius: 15px;
   width: 350px;
   display: block;
 }
 
-
-/*The title of the box*/
-
 .section-card.visible h1{
     text-align: center;
     font-family: 'Nothing You Could Do', cursive;
 }
-
-/*
-==============================================================
-aligning the check and radio buttons vertically
-==============================================================
-*/
 
 input[type="checkbox"], input[type="radio"]{
     display: inline-block;
@@ -73,43 +51,28 @@ input[type="checkbox"], input[type="radio"]{
     right: 1rem;
 }
 
-/*
-==============================================================
-aligning the prices vertically
-==============================================================
-*/
-
 span {
     display: inline-block;
     position: absolute;
     right: 4rem;
 }
 
-/*
-==============================================================
-line-spacing of paragraphs in the forms
-==============================================================
-*/
 
 .section-card p {
-    margin: 0.4rem;
+    margin: 1rem;
 }
 
-/*
-==============================================================
-Formatting of the "Next" button
-==============================================================
-*/
-
-.submit {
-    margin-top: 25px;
+.alignBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
 
-/*
-==============================================================
-The box with the content
-==============================================================
-*/
+.alignBtns button{
+    margin: 10px;
+    padding: 10px;
+}
 
 #tally {
     background-color: rgba(255,255,255,0.7);
@@ -117,8 +80,7 @@ The box with the content
     top: 10px;
     right: 10px;
     padding: 10px;
-    border-radius: 15px;
-    width: 200px;
+    width: 300px;
 }
 
 #tally h1 {
@@ -138,15 +100,10 @@ The box with the content
     font-weight: bold;
 }
 
-
-/*
-After pressing the last next button, the #ids change
-*/
-
 #finaltally{
     background-color: rgba(255,255,255,0.7);
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1.5rem;
@@ -202,8 +159,4 @@ After pressing the last next button, the #ids change
     text-shadow: 1px 1px 5px #000000;
     z-index: 500;
     margin: 1rem;
-}
-
-figcaption{
-    margin: 10px 0px;
 }
