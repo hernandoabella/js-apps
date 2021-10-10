@@ -1,162 +1,162 @@
-body {
-    background-image: url(images/food-pizza-box-chalkboard.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Roboto', sans-serif; 
-}
+    body {
+        background-image: url(images/food-pizza-box-chalkboard.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Roboto', sans-serif; 
+    }
 
-#mainh1{
-    font-family: 'Nothing You Could Do', cursive;
-    color: white;
-    font-size: 3rem;
-    text-shadow: 1px 1px 2px #ffffff;
-    margin: 10px;
-}
+    #mainh1{
+        font-family: 'Nothing You Could Do', cursive;
+        color: white;
+        font-size: 3rem;
+        text-shadow: 1px 1px 2px #ffffff;
+        margin: 10px;
+    }
 
-.section-card {
-    background-color: rgba(255,255,255,0.5);
+    .section-card {
+        background-color: rgba(255,255,255,0.5);
+        position: absolute;
+        border-radius: 5px;
+        border: 5px solid rgba(232, 232, 232,0.5);
+        width: 15rem;
+        display: none;
+    }
+
+    .section-card button{
+        background: #000;
+        color: #fff;
+        border: 1px solid rgba(232, 232, 232,0.5);
+        cursor: pointer;
+    }
+
+    .section-card.visible{
+    background: rgba(255,255,255, 0.5);
     position: absolute;
-    border-radius: 5px;
-    border: 5px solid rgba(232, 232, 232,0.5);
-    width: 15rem;
-    display: none;
-}
-
-.section-card button{
-    background: #000;
-    color: #fff;
-    border: 1px solid rgba(232, 232, 232,0.5);
-    cursor: pointer;
-}
-
-.section-card.visible{
-  background: rgba(255,255,255, 0.5);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 15px;
-  width: 350px;
-  display: block;
-}
-
-.section-card.visible h1{
-    text-align: center;
-    font-family: 'Nothing You Could Do', cursive;
-}
-
-input[type="checkbox"], input[type="radio"]{
-    display: inline-block;
-    position: absolute;
-    right: 1rem;
-}
-
-span {
-    display: inline-block;
-    position: absolute;
-    right: 4rem;
-}
-
-
-.section-card p {
-    margin: 1rem;
-}
-
-.alignBtns{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-.alignBtns button{
-    margin: 10px;
-    padding: 10px;
-}
-
-#tally {
-    background-color: rgba(255,255,255,0.7);
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 10px;
-    width: 300px;
-}
-
-#tally h1 {
-    top: 2rem;
-    font-family: 'Nothing You Could Do', cursive;
-    text-align: center;
-}
-
-#tally p {
-    margin: .5rem;
-}
-
-#tally p span{
-    display: inline-block;
-    right: 1rem;
-    margin:0;
-    font-weight: bold;
-}
-
-#finaltally{
-    background-color: rgba(255,255,255,0.7);
-    position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1.5rem;
-    border-radius: 5px;
-    border: 5px solid rgba(232, 232, 232,0.5);
-    width: 30rem;
-    font-size: 1rem;
-}
-
-#invisible {
-    background-color: rgba(255,255,255,0.7);
-    position: absolute;
-    top:8rem;
-    right: 30%;
-    left: 30%;
-    padding: 1.5rem;
     border-radius: 15px;
-    border: 5px solid rgba(232, 232, 232,0.5);
-    width: 30rem;
-    font-size: 1rem;
-    display: none;
-}
+    width: 350px;
+    display: block;
+    }
 
-#yourOrder {
-    font-size: 2.5rem;
-    text-align: center;
-    border-bottom: 2px solid black;
-    padding-bottom: 1rem;
-}
+    .section-card.visible h1{
+        text-align: center;
+        font-family: 'Nothing You Could Do', cursive;
+    }
 
-#finaltally p {
-    margin: 0.3rem;
-}
+    input[type="checkbox"], input[type="radio"]{
+        display: inline-block;
+        position: absolute;
+        right: 1rem;
+    }
 
-.dollar {
-    display: inline-block;
-    right: 4rem;
-    margin:0;
-}
+    span {
+        display: inline-block;
+        position: absolute;
+        right: 4rem;
+    }
 
-#total {
-    font-size: 1.3rem;
-    font-weight: bold;
-    border-top: 1px solid black;
-    line-height: 2.5;
-}
 
-#mainh2 {
-    font-family: 'Nothing You Could Do', cursive;
-    color: white;
-    text-align: center;
-    font-size: 4rem;
-    text-shadow: 1px 1px 5px #000000;
-    z-index: 500;
-    margin: 1rem;
-}
+    .section-card p {
+        margin: 1rem;
+    }
+
+    .alignBtns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .alignBtns button{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #tally {
+        background-color: rgba(255,255,255,0.7);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        width: 300px;
+    }
+
+    #tally h1 {
+        top: 2rem;
+        font-family: 'Nothing You Could Do', cursive;
+        text-align: center;
+    }
+
+    #tally p {
+        margin: .5rem;
+    }
+
+    #tally p span{
+        display: inline-block;
+        right: 1rem;
+        margin:0;
+        font-weight: bold;
+    }
+
+    #finaltally{
+        background-color: rgba(255,255,255,0.7);
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem;
+        border-radius: 5px;
+        border: 5px solid rgba(232, 232, 232,0.5);
+        width: 30rem;
+        font-size: 1rem;
+    }
+
+    #invisible {
+        background-color: rgba(255,255,255,0.7);
+        position: absolute;
+        top:8rem;
+        right: 30%;
+        left: 30%;
+        padding: 1.5rem;
+        border-radius: 15px;
+        border: 5px solid rgba(232, 232, 232,0.5);
+        width: 30rem;
+        font-size: 1rem;
+        display: none;
+    }
+
+    #yourOrder {
+        font-size: 2.5rem;
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding-bottom: 1rem;
+    }
+
+    #finaltally p {
+        margin: 0.3rem;
+    }
+
+    .dollar {
+        display: inline-block;
+        right: 4rem;
+        margin:0;
+    }
+
+    #total {
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-top: 1px solid black;
+        line-height: 2.5;
+    }
+
+    #mainh2 {
+        font-family: 'Nothing You Could Do', cursive;
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        text-shadow: 1px 1px 5px #000000;
+        z-index: 500;
+        margin: 1rem;
+    }
