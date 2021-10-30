@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/nationalparks-vintage-cropped.jpg");
+    background-image: url("./assets/images/nationalparks-vintage-cropped.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0;
@@ -8,19 +8,12 @@ body {
 .container {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #f7db9a;
-    letter-spacing: 0.5px;
-    text-shadow:
-    -1px -1px 0 #120d01,
-    1px -1px 0 #120d01,
-    -1px 1px 0 #120d01,
-    1px 1px 0 #120d01;
+    
 }
 
 .jumbotron {
     background: rgba(41, 30, 3, 0.8) !important;
     border: 2px solid #f9e4b2 !important;
-    max-width: 992px !important;
-    margin: 0 auto !important;
 }
 
 #currentWord {
@@ -38,7 +31,8 @@ body {
 }
 
 @keyframes blink{
-    0%{opacity: 0;}
-    50%{opacity: .5;}
+    0%{
+        opacity: 0;
+    }50%{opacity: .5;}
     100%{opacity: 1;}   
 }

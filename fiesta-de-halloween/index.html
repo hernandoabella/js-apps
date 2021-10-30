@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎃 Fiesta de Halloween</title>
+</head>
+<body>
+<form class="form">
+  
+  <h1>Fiesta de Halloween RSVP</h1>
+  
+  <div class="signup__field">
+    <label for="halloween_name" class="label">Halloween Name</label>
+    <input type="text" name="halloween_name" id="halloween_name" class="name_field" value="" maxlength="20" placeholder="Enter your name please." />
+  </div>
+
+  <fieldset>
+    <legend>Details</legend>
+
+    <div class="signup__field">
+      <label class="label" for="costume_type">What kind of costume are you wearing? </label>
+      <div class="select-field">
+        <select name="costume_type" id="costume_type" class="select-field__menu">
+          <option>Pick one</option>
+          <option value="monster">Monster</option>
+          <option value="spellcaster">Spellcaster</option>
+          <option value="vampire">Vampire</option>
+          <option value="ghost">Ghost</option>
+          <option value="zombie">Zombie</option>
+          <option value="pop_culture">Pop Culture Reference</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="signup__field">
+      <div class="label">Do you prefer Tricks or Treats?</div>
+      <label for="tricks">Tricks</label>
+      <input type="radio" value="tricks" id="tricks" name="prefers" checked="checked" />
+      <label for="treats">Treats</label>
+      <input type="radio" value="treats" id="treats" name="prefers" />
+    </div>
+  </fieldset>
+
+  <div class="signup__field">
+    <input type="checkbox" id="bringing_snacks" name="bringing_snacks" />
+    <label for="bringing_snacks">I volunteer to bring a shareable snack.</label>
+  </div>
+
+  <div class="signup__button">
+    <button class="button" type="submit">Submit</button>
+  </div>
+
+</form>
+
+<div id="name-tag">
+  <h1>Hello My Name Is</h1>
+  <p id="namefield">Jimbo</p>
+  <p id="costume">I'm supposed to be a vampire</p>
+  <p id="prefer">I prefer</p>
+  <p id="snack">No Snack so Eat Me</p>
+  <p class="present">Present this name tag at the door!</p>
+</div>
+
+</body>
+</html>
