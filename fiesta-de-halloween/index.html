@@ -5,64 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🎃 Fiesta de Halloween</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <form class="form">
   
-  <h1>Fiesta de Halloween RSVP</h1>
+  <h1>🎃 Fiesta de Halloween</h1>
   
   <div class="signup__field">
-    <label for="halloween_name" class="label">Halloween Name</label>
-    <input type="text" name="halloween_name" id="halloween_name" class="name_field" value="" maxlength="20" placeholder="Enter your name please." />
+    <label for="halloween_name" class="label"><b>Nombre:</b></label>
+    <input type="text" name="halloween_name" id="halloween_name" class="name_field" maxlength="20" placeholder="Por favor ingresa tu nombre." />
   </div>
 
   <fieldset>
-    <legend>Details</legend>
+
+    <legend>Detalles:</legend>
 
     <div class="signup__field">
-      <label class="label" for="costume_type">What kind of costume are you wearing? </label>
+      <label class="label" for="costume_type">¿Qué clase de disfráz estás usando?</label>
       <div class="select-field">
         <select name="costume_type" id="costume_type" class="select-field__menu">
-          <option>Pick one</option>
-          <option value="monster">Monster</option>
-          <option value="spellcaster">Spellcaster</option>
-          <option value="vampire">Vampire</option>
-          <option value="ghost">Ghost</option>
+          <option>Elige uno</option>
+          <option value="monster">Monstruo</option>
+          <option value="spellcaster">Hechicero</option>
+          <option value="vampire">Vampiro</option>
+          <option value="ghost">Fantasma</option>
           <option value="zombie">Zombie</option>
-          <option value="pop_culture">Pop Culture Reference</option>
-          <option value="other">Other</option>
+          <option value="pop_culture">Referencia de la cultura pop</option>
+          <option value="other">Otro</option>
         </select>
       </div>
     </div>
 
     <div class="signup__field">
-      <div class="label">Do you prefer Tricks or Treats?</div>
-      <label for="tricks">Tricks</label>
+      <div class="label">¿Prefieres dulces o trucos?</div>
       <input type="radio" value="tricks" id="tricks" name="prefers" checked="checked" />
-      <label for="treats">Treats</label>
+      <label for="tricks">Trucos</label>
       <input type="radio" value="treats" id="treats" name="prefers" />
+      <label for="treats">Dulces</label>
+      
     </div>
   </fieldset>
 
   <div class="signup__field">
     <input type="checkbox" id="bringing_snacks" name="bringing_snacks" />
-    <label for="bringing_snacks">I volunteer to bring a shareable snack.</label>
+    <label for="bringing_snacks">Me ofrezco de voluntario para traer un refrigerio.</label>
   </div>
 
   <div class="signup__button">
-    <button class="button" type="submit">Submit</button>
+    <button class="button" type="submit">Enviar</button>
   </div>
 
 </form>
 
 <div id="name-tag">
-  <h1>Hello My Name Is</h1>
-  <p id="namefield">Jimbo</p>
-  <p id="costume">I'm supposed to be a vampire</p>
-  <p id="prefer">I prefer</p>
-  <p id="snack">No Snack so Eat Me</p>
-  <p class="present">Present this name tag at the door!</p>
+  <h1>Hola mi nombre es</h1>
+  <p id="namefield">Hernando</p>
+  <p id="costume">Se supone que soy un Vampire</p>
+  <p id="prefer">Yo prefiero</p>
+  <p id="snack">No hay bocadillos, así que cómeme</p>
+  <p class="present">¡Muestra esta tarjeta en la puerta!</p>
 </div>
+
+<script src="./script.js"></script>
 
 </body>
 </html>

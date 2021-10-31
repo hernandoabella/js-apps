@@ -8,28 +8,33 @@ form.addEventListener("submit", (event) => {
   if (name.length > 0) {
     namefield.innerHTML = name;
   } else {
-    namefield.innerHTML = "I don't know who I am.";
+    namefield.innerHTML = "No se quien soy.";
   }
 
-  var select = document.getElementById("costume_type");
-  var text = select.options[select.selectedIndex].text;
-  if (text == "Pick one" || text == "Other") {
-    costume.innerHTML = "I don't who I'm supposed to be!";
+  let select = document.getElementById("costume_type");
+  let text = select.options[select.selectedIndex].text;
+
+  if (text == "Elige uno" || text == "Otro") {
+    costume.innerHTML = "¡No sé quién se supone que debo ser!";
   } else {
-    costume.innerHTML = `I'm supposed to be a ${text}`;
+    costume.innerHTML = `Se supone que soy un ${text}`;
   }
 
   if (document.getElementById("treats").checked) {
-    prefer.innerHTML = "I Prefer Treats!";
+    prefer.innerHTML = "¡Prefiero dulces!";
   } else {
-    prefer.innerHTML = "I Prefer Tricks!";
+    prefer.innerHTML = "¡Prefiero trucos!";
   }
+
   let snack = document.getElementById("snack");
-  snack.innerHTML = "No Snack so Eat ME!";
+  snack.innerHTML = "¡No hay bocadillos, así que cómeme!";
+
   if (document.getElementById("bringing_snacks").checked) {
-    snack.innerHTML = "I'm bringin munchies!";
+    snack.innerHTML = "¡Traigo bocadillos!";
   }
+
   document.getElementById("name-tag").style.display = "block";
   form.reset();
   event.preventDefault();
+  
 });

@@ -1,60 +1,27 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    font-size: 16px;
-    display: grid;
-    justify-items: center; 
-    min-height: 110vh;
-    font-family: 'New Tegomin', serif;
-    gap: 2rem;
-    background:black;
-    color: orangered;
-  }
-  h1 {
+body{
+    background: rgb(6, 6, 6);
+}
+
+h1{
     font-family: 'Lakki Reddy', cursive;
-    font-size: 3.5rem;
-    font-weight: 700;
-    
-    text-shadow: 4px 8px 10px orange;
+    text-shadow: 4px 4px 10px orange;
     text-align: center;
-  }
-  
-  form {
-    font-size: 1.5rem;
+}
+
+form{
     border-radius: 20px;
     padding: 1.5rem;
     border: 1px solid orange;
-    height: 500px;
-    margin-top: 10vh;
     background: #fbf4e0;
     box-shadow: 7px 14px 20px hsl(0 0% 0% / 20%);
-    width: 100%;
-  /*   display: none; */
-  }
-  #costume_type,
-  #halloween_name,
-  #namefield,
-  #costume,
-  #prefer,
-  #snack
-  {
-    font-size: 2rem;
-    width: 100%;
-    font-family: inherit;
-    text-align: center;
-    color: orangered;
-    background: inherit;
-  }
-  fieldset {
-    margin: 0.125rem auto;
-    padding: .5rem;
-  }
-  .button {
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.button {
     width: 100%;
     height: 4vh;
     outline: none;
@@ -65,32 +32,27 @@
     font-size: inherit;
     border-radius: 1rem;
     cursor: pointer;
-  }
+}
   
-  #name-tag {
-    height: 376px;
-    width: 100%;
+#name-tag {
+    width: 340px;
     border: 2px solid orange;
-     background: #fbf4e0;
+    background: #fbf4e0;
     box-shadow: 7px 14px 20px hsl(0 0% 0% / 20%);
-    border-radius: 20px;
     display: none;
-   
-  }
-  #namefield {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-top: 0;
-    padding-top: 0;
-  }
-  #costume {
-    font-size: 1.5rem;
     text-align: center;
-  }
-  .present{
-    font-size: 1rem;
+    float: right;
+}
+
+.signup__field{
+    padding: 10px;
+}
+
+.label{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="text"]{
     width: 100%;
-    font-family: inherit;
-    text-align: center;
-    color: orangered;
-  }
+}
