@@ -7,59 +7,7 @@ const possibleWords = [
   // "GRAND TETON", 
   // "GLACIER", 
   // "ACADIA", 
-  // "MAMMOTH CAVE", 
-  // "OLYMPIC", 
-  // "GREAT SMOKY MOUNTAINS",
-  // "ARCHES",
-  // "BRYCE CANYON",
-  // "CARLSBAD CAVERNS",
-  // "CRATER LAKE",
-  // "DEATH VALLEY",
-  // "DENALI",
-  // "JOSHUA TREE",
-  // "CAPITOL REEF",
-  // "CANYON LANDS",
-  // "BADLANDS",
-  // "BIG BEND",
-  // "SEQUOIA",
-  // "BISCAYNE",
-  // "SHENANDOAH",
-  // "HOT SPRINGS",
-  // "MOUNT RANIER",
-  // "SAGUARO",
-  // "KINGS CANYON",
-  // "EVERGLADES",
-  // "MESA VERDE",
-  // "REDWOOD",
-  // "CHANNEL ISLANDS",
-  // "BLACK CANYON OF THE GUNNISON",
-  // "CONGAREE",
-  // "CUYAHOGA VALLEY",
-  // "DRY TORTUGAS",
-  // "GATEWAY ARCH",
-  // "GATES OF THE ARCTIC",
-  // "AMERICAN SAMOA",
-  // "GLACIER BAY",
-  // "GREAT BASIN",
-  // "GUADALUPE MOUNTAINS",
-  // "HAWAII VOLCANOES",
-  // "HOT SPRINGS",
-  // "INDIANA DUNES",
-  // "KATMAI",
-  // "KENAI FJORDS",
-  // "LASSEN VOLCANIC",
-  // "NORTH CASCADES",
-  // "PETRIFIED FOREST",
-  // "PINNACLES",
-  // "THEODORE ROOSEVELT",
-  // "VIRGIN ISLANDS",
-  // "VOYAGEURS",
-  // "WRANGELL ST ELIAS",
-  // "WIND CAVE",
-  // "KOBUK VALLEY",
-  // "LAKE CLARK",
-  // "ISLE ROYALE",
-  // "HALEAKALA"
+  // "MAMMOTH CAVE"
 ];
 
 const guessedLetters = [];
@@ -101,6 +49,7 @@ function initializeGame() {
       guessingWord.push("_");
     }
   }
+  
   updateDisplay();
 };
 
@@ -127,13 +76,13 @@ function resetGame() {
     // Set number of guesses (higher or lower) based on word length
     if (wordToMatch.length <= 4) {
       numGuess = 4
-    } else if (wordToMatch.length >4 && wordToMatch.length <= 7) {
+    } else if (wordToMatch.length > 4 && wordToMatch.length <= 7) {
       numGuess = Math.floor(wordToMatch.length * .67)
-    } else if (wordToMatch.length >7 && wordToMatch.length <= 10) {
+    } else if (wordToMatch.length > 7 && wordToMatch.length <= 10) {
       numGuess = Math.floor(wordToMatch.length * .5)
-    } else if (wordToMatch.length >10 && wordToMatch.length <= 14) {
+    } else if (wordToMatch.length > 10 && wordToMatch.length <= 14) {
       numGuess = Math.floor(wordToMatch.length * .52)
-    } else if (wordToMatch.length >14) {
+    } else if (wordToMatch.length > 14) {
       numGuess = 7;
     }
 
