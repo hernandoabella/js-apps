@@ -14,6 +14,7 @@ body {
 .jumbotron {
     background: rgba(41, 30, 3, 0.8) !important;
     border: 2px solid #f9e4b2 !important;
+    text-align: center;
 }
 
 #currentWord {

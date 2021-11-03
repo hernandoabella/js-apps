@@ -4,6 +4,7 @@ const prefer = document.getElementById("prefer");
 const costume = document.getElementById("costume");
 
 form.addEventListener("submit", (event) => {
+    
   let name = document.getElementById("halloween_name").value;
   if (name.length > 0) {
     namefield.innerHTML = name;

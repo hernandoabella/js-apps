@@ -1,4 +1,4 @@
-var possibleWords = [
+const possibleWords = [
   "GRAND CANYON", 
   "ROCKY MOUNTAIN", 
   "ZION", 
@@ -62,16 +62,16 @@ var possibleWords = [
   // "HALEAKALA"
 ];
 
-var guessedLetters = [];
-var guessingWord = [];
-var usedGuessingwWords = [];
-var wordToMatch;
-var numGuess;
-var wins = 0;
-var pause = false; // This var and setTimout function to not listen for keypress while game resets
-var loseSound = new Audio("./assets/sounds/ahahah.mp3");
-var winSound = new Audio("./assets/sounds/clever.wav");
-var championSound = new Audio("./assets/sounds/crazysob.mp3");
+const guessedLetters = [];
+const guessingWord = [];
+const usedGuessingwWords = [];
+let wordToMatch;
+let numGuess;
+let wins = 0;
+let pause = false; // This var and setTimout function to not listen for keypress while game resets
+let loseSound = new Audio("./assets/sounds/ahahah.mp3");
+let winSound = new Audio("./assets/sounds/clever.wav");
+let championSound = new Audio("./assets/sounds/crazysob.mp3");
 
 //Starts game
 function initializeGame() {
@@ -104,20 +104,19 @@ function initializeGame() {
   updateDisplay();
 };
 
-//Reset the game
+// Reiniciar el juego
 function resetGame() {
   if (usedGuessingwWords.length === possibleWords.length) {
     championSound.play() // Toggle line comment on for almost the entire possibleWords array to hear this end of game sound clip
     usedGuessingwWords = []
     wins = 0
     setTimeout(resetGame, 6000); // Note for future change - shorten possibleWords, make jumbotron display congratulatory message upon guessing all possibilites
-  }
-  else {
+  }else {
     pause = false;
     // Restores blinking "...get started" message
     document.getElementById('welcome').className = 'blink';
     
-    // Get a new word
+    // Obtener una nueva palabra
     wordToMatch = possibleWords[Math.floor(Math.random() * possibleWords.length)].toUpperCase();
     console.log(wordToMatch)
     // If new word has already been used randomly select another
@@ -138,13 +137,13 @@ function resetGame() {
       numGuess = 7;
     }
 
-    // Reset word arrays
+    // Reinicia los arreglos de las palabras
     guessedLetters = [];
     guessingWord = [];
 
-    // Reset the guessed word
+    // Reinicia la palabra adivinada
     for (var i=0; i < wordToMatch.length; i++){
-      // Put a space instead of an underscore between multi-word options in possibleWords array
+      // Coloque un espacio en lugar de un guión bajo entre las opciones de varias palabras en el arreglo de palabras posibles
       if (wordToMatch[i] === " ") {
         guessingWord.push(" ")
       } 
@@ -156,7 +155,7 @@ function resetGame() {
   }
 };
 
-// Update the Display
+// Actualizar la pantalla
 function updateDisplay () {
   document.getElementById("totalWins").innerText = wins;
   document.getElementById("currentWord").innerText = guessingWord.join("");
@@ -164,7 +163,7 @@ function updateDisplay () {
   document.getElementById("guessedLetters").innerText =  guessedLetters.join(" ");
 };
 
-// Wait for key press
+// Espere a que se presione la tecla
 document.onkeydown = function(event) {
   // Make sure key pressed is an alpha character
   if (isLetter(event.key) && pause === false) {
@@ -174,26 +173,26 @@ document.onkeydown = function(event) {
   document.getElementById('welcome').className = 'noBlink';
 };
 
-// Check if key pressed is between A-Z or a-z
+// Comprueba si la letra presionada está entre A-Z o a-z
 var isLetter = function(ch){
   return typeof ch === "string" && ch.length === 1
   && (ch >= "a" && ch <= "z" || ch >= "A" && ch <= "Z");
 };
 
-// Check if letter is in word
+// Comprueba si la letra está en una palabra
 function checkForLetter(letter) {
   var foundLetter = false;
 
-  // Search string for letter
+  // Busca un string por letra 
   for (var i=0; i < wordToMatch.length; i++) {
     if (letter === wordToMatch[i]) {
       guessingWord[i] = letter
       foundLetter = true
       // If guessing word matches random word
       if (guessingWord.join("") === wordToMatch) {
-        // Increment # of wins and add word to usedGuessingWords
+        // Incrementar el número de victorias y agregar palabras a usedGuessingWords.
         wins++
-        // Add word to usedGuessingWords array to not be repeated
+        // Agregar palabra al arreglo usedGuessingWords para que no se repita
         usedGuessingwWords.push(wordToMatch)
         console.log(usedGuessingwWords)
         pause = true;
@@ -204,18 +203,18 @@ function checkForLetter(letter) {
     }
   }
   if (foundLetter === false) {
-    // Check if inccorrect guess is already on the list
+    // Compruebe si la suposición incorrecta ya está en la lista
     if (guessedLetters.includes(letter) === false) {
-      // Add incorrect letter to guessed letter list
+      // Agregar letra incorrecta a la lista de letras adivinadas
       guessedLetters.push(letter)
-      // Decrement the number of remaining guesses
+      // Disminuir el número de conjeturas restantes
       numGuess--
     }
     if (numGuess === 0) {
-      // Add word to usedGuessingWords array to not be repeated
+      // Agregar palabra al arreglo usedGuessingWords para que no se repita
       usedGuessingwWords.push(wordToMatch);
       console.log(usedGuessingwWords)
-      // Display word before reseting game
+      // Mostrar palabra antes de reiniciar el juego
       guessingWord = wordToMatch.split();
       pause = true;
       loseSound.play();
