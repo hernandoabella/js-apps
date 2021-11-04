@@ -16,17 +16,17 @@ const usedGuessingwWords = [];
 let wordToMatch;
 let numGuess;
 let wins = 0;
-let pause = false; // This var and setTimout function to not listen for keypress while game resets
+let pause = false; // Esta función var y setTimout es para no escuchar la pulsación de teclas mientras se reinicia el juego
 let loseSound = new Audio("./assets/sounds/ahahah.mp3");
 let winSound = new Audio("./assets/sounds/clever.wav");
 let championSound = new Audio("./assets/sounds/crazysob.mp3");
 
-//Starts game
+// Inicia el juego
 function initializeGame() {
 
-  // Get a new word
+  // Obtener una nueva palabra
   wordToMatch = possibleWords[Math.floor(Math.random() * possibleWords.length)].toUpperCase();
-  // Set number of guesses (higher or lower) based on word length
+  // Establezca el número de aciertos (mayor o menor) según la longitud de la palabra
   if (wordToMatch.length <= 4) {
     numGuess = 4
   } else if (wordToMatch.length >4 && wordToMatch.length <= 7) {
@@ -39,9 +39,9 @@ function initializeGame() {
     numGuess = 7;
   }
 
-  // Get underscores for guessingWord from wordToMatch
+  // Obtener guiones bajos para guessingWord desde wordToMatch
   for (var i=0; i < wordToMatch.length; i++){
-    // Put a space instead of an underscore between multi-word options in possibleWords array
+    // Coloque un espacio en lugar de un guión bajo entre las opciones de varias palabras en el arreglo de palabras posibles
     if (wordToMatch[i] === " ") {
       guessingWord.push(" ")
     } 
@@ -56,24 +56,24 @@ function initializeGame() {
 // Reiniciar el juego
 function resetGame() {
   if (usedGuessingwWords.length === possibleWords.length) {
-    championSound.play() // Toggle line comment on for almost the entire possibleWords array to hear this end of game sound clip
+    championSound.play() // Activa el comentario de línea para casi todo el arreglo de palabras posibles para escuchar este clip de sonido al final del juego
     usedGuessingwWords = []
     wins = 0
-    setTimeout(resetGame, 6000); // Note for future change - shorten possibleWords, make jumbotron display congratulatory message upon guessing all possibilites
+    setTimeout(resetGame, 6000); // Nota para cambios futuros: acorte las palabras posibles, haga que jumbotron muestre un mensaje de felicitación al adivinar todas las posibilidades
   }else {
     pause = false;
-    // Restores blinking "...get started" message
+    // Restaura el mensaje parpadeante "... empezar"
     document.getElementById('welcome').className = 'blink';
     
     // Obtener una nueva palabra
     wordToMatch = possibleWords[Math.floor(Math.random() * possibleWords.length)].toUpperCase();
     console.log(wordToMatch)
-    // If new word has already been used randomly select another
+    // Si una nueva palabra ya ha sido usada aleatoriamente selecciona otra
     if (usedGuessingwWords.includes(wordToMatch) === true) {
       resetGame();
     }
     
-    // Set number of guesses (higher or lower) based on word length
+    // Establezca el número de aciertos (mayor o menor) según la longitud de la palabra
     if (wordToMatch.length <= 4) {
       numGuess = 4
     } else if (wordToMatch.length > 4 && wordToMatch.length <= 7) {
@@ -114,30 +114,31 @@ function updateDisplay () {
 
 // Espere a que se presione la tecla
 document.onkeydown = function(event) {
-  // Make sure key pressed is an alpha character
+  // Asegúrese de que la tecla presionada sea un carácter alfabético
   if (isLetter(event.key) && pause === false) {
   checkForLetter(event.key.toUpperCase());
   }
-  // Turn off blinking "...get started" message on keypress
+  // Apaga el mensaje parpadeante "... empezar" al presionar una tecla
   document.getElementById('welcome').className = 'noBlink';
 };
 
 // Comprueba si la letra presionada está entre A-Z o a-z
-var isLetter = function(ch){
+let isLetter = function(ch){
   return typeof ch === "string" && ch.length === 1
   && (ch >= "a" && ch <= "z" || ch >= "A" && ch <= "Z");
 };
 
 // Comprueba si la letra está en una palabra
 function checkForLetter(letter) {
-  var foundLetter = false;
+  let foundLetter = false;
 
   // Busca un string por letra 
   for (var i=0; i < wordToMatch.length; i++) {
+
     if (letter === wordToMatch[i]) {
       guessingWord[i] = letter
       foundLetter = true
-      // If guessing word matches random word
+      // Si la palabra que adivinaste coincide con una palabra aleatoria
       if (guessingWord.join("") === wordToMatch) {
         // Incrementar el número de victorias y agregar palabras a usedGuessingWords.
         wins++
@@ -150,15 +151,18 @@ function checkForLetter(letter) {
         setTimeout(resetGame, 4000);
       }
     }
+
   }
+
   if (foundLetter === false) {
     // Compruebe si la suposición incorrecta ya está en la lista
     if (guessedLetters.includes(letter) === false) {
       // Agregar letra incorrecta a la lista de letras adivinadas
       guessedLetters.push(letter)
-      // Disminuir el número de conjeturas restantes
+      // Disminuir el número de aciertos restantes
       numGuess--
     }
+
     if (numGuess === 0) {
       // Agregar palabra al arreglo usedGuessingWords para que no se repita
       usedGuessingwWords.push(wordToMatch);
@@ -170,7 +174,9 @@ function checkForLetter(letter) {
       setTimeout(resetGame, 4000);
     }
   }
+
   updateDisplay();
+
 };
 
 initializeGame();

@@ -1,26 +1,37 @@
 body {
-    background-image: url("./assets/images/nationalparks-vintage-cropped.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 0;
+    background: #fff0ce;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .container {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #f7db9a;
-    
+    background: rgba(62, 11, 150, 0.8) !important;
+    border: 2px solid #f9e4b2 !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 400px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.jumbotron {
-    background: rgba(41, 30, 3, 0.8) !important;
-    border: 2px solid #f9e4b2 !important;
+.title{
+    text-align: center;
+}
+
+#welcome{
     text-align: center;
 }
 
 #currentWord {
-    font-size: 30px;
+    font-size: 1.3em;
     letter-spacing: 4px;
     color: #f9c0b1;
+}
+
+.wordStuff{
+    text-align: center;
 }
 
 .varColor {
@@ -31,9 +42,23 @@ body {
     visibility: hidden;
 }
 
+.necesitoEspacio{
+    margin-left: 20px;
+}
+
 @keyframes blink{
+
     0%{
         opacity: 0;
-    }50%{opacity: .5;}
-    100%{opacity: 1;}   
+    }
+    
+    50%{
+        opacity: .5;
+    }
+
+    100%{
+        opacity: 1;
+
+    }   
+
 }
