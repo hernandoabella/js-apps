@@ -5,10 +5,7 @@
 }
 
 body {
-  background-image: url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: #264653;
   height: 100vh;
   color: #fff;
   font-family: 'Lato', sans-serif;
@@ -19,21 +16,6 @@ body {
   text-align: center;
   margin: 0;
   overflow: hidden;
-}
-
-/* Add a dark overlay */
-body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-body * {
-  z-index: 1;
 }
 
 h1 {
@@ -52,7 +34,6 @@ h1 {
 }
 
 .countdown {
-  /* display: flex; */
   display: none;
   transform: scale(2);
 }
