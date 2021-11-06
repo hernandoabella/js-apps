@@ -23,9 +23,9 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 | 1   | Contador                    |   ★★★☆☆    | 
 | 2   | Aplicación meteorológica    |   ★★★☆☆    | 
 | 3   | Kit de Batería              |   ★★★☆☆    | 
-| 4   | Aplicación de Relajación    |   ★★★☆☆    |
-| 5   | Rompe Bloques               |   ★★★☆☆    | 
-| 6   | Carrito de Compras          |   ★★★☆☆    | 
+| 4   | Aplicación de Relajación    |   ★★☆☆☆    |
+| 5   | Rompe Bloques               |   ★★★★☆    | 
+| 6   | Carrito de Compras          |   ★★★★☆    | 
 | 7   | Significado de tu Nombre    |   ★★★☆☆    |
 | 8   | Reproductor de Música       |   ★★★☆☆    | 
 | 9   | Deslizador de Imágenes      |   ★★★☆☆    |
