@@ -1,13 +1,13 @@
 const possibleWords = [
-  "GRAND CANYON", 
-  "ROCKY MOUNTAIN", 
-  "ZION", 
-  // "YELLOWSTONE",
-  // "YOSEMITE", 
-  // "GRAND TETON", 
-  // "GLACIER", 
-  // "ACADIA", 
-  // "MAMMOTH CAVE"
+  "MENTE", 
+  "ALMA", 
+  "POSITIVO", 
+  // "CORAZON",
+  // "ESPIRITU", 
+  // "ENERGIA", 
+  // "PROSPERIDAD", 
+  // "DRAGON", 
+  // "AGUILA"
 ];
 
 const guessedLetters = [];
