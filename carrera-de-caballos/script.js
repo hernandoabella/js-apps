@@ -1,119 +1,122 @@
-/*
-Assignment: Javascript Assignment
-Filename: game.js
-@author: KITSANTAS FOTIOS (17421808)
-Date: 30/04/17
-*/
-
-/*Create a Javascript Object for a horse with 3 parameters: HTML ID, position x and y*/
+/* Cree un objeto Javascript para un caballo con 3 parámetros: ID HTML, posición x e y */
 function Horse(id, x, y){
-	this.element = document.getElementById(id);/*HTML element of the horse*/
-	this.speed = Math.random()*10 + 10; /*Initiate a random speed for each horse, the greater speed, the faster horse. The value is between 10 and 20*/
-	this.originX = x;/*Original X position*/
-	this.originY = y;/*Original Y position*/
-	this.x = x; /*Current X*/
-	this.y = y; /*Current Y*/
-	this.number = parseInt(id.replace(/[\D]/g, '')); /*Number of horse, number will be 1 or 2 or 3 or 4*/
-	this.lap = 0; //Current lap of the horse
+	this.element = document.getElementById(id); /* Elemento HTML del caballo */
+	this.speed = Math.random() * 10 + 10; /* Inicie una velocidad aleatoria para cada caballo, a mayor velocidad, el caballo más rápido. El valor está entre 10 y 20 */
+	this.originX = x; /* Posición X original */
+	this.originY = y; /* Posición Y original */
+	this.x = x; /* X actual */
+	this.y = y; /* Y actual */
+	this.number = parseInt(id.replace(/[\D]/g, '')); /* Número de caballo, el número será 1 o 2 o 3 o 4 */
+	this.lap = 0; // Vuelta actual del caballo
 
 	this.moveRight = function(){
-		var horse = this;/*Assign horse to this object*/
+		let horse = this; /* Asignar caballo a este objeto */
 
-		/*Use setTimeout to have the delay in moving the horse*/
+		/* Use setTimeout para retrasar el movimiento del caballo */
 		setTimeout(function(){
-			//Move the horse to right 1vw
+			// Mueve el caballo a la derecha 1vw
 			horse.x ++;
 			horse.element.style.left = horse.x +'vw';
 
-			//Check if goes through the start line, if horse runs enough number of laps and has pass the start line then stop
+			// Compruebe si pasa por la línea de salida, si el caballo corre un número suficiente de vueltas y ha pasado la línea de salida, deténgase.
 			if (horse.lap == num_lap && horse.x > horse.originX + 6){
 				horse.arrive();
 			}else{
-				//Make decision to move Down or not
-				//The width of the Down Road is 10wh, then the distance of each horse is 2.5vw (4 horses). The right position of the road is 82.5vw
-				//Continue to move right if not reach the point to turn
+				// Tomar la decisión de moverse hacia abajo o no
+				// El ancho de Down Road es 10wh, luego la distancia de cada caballo es 2.5vw (4 caballos). La posición correcta de la carretera es 82.5vw.
+				// Continúe moviéndose a la derecha si no llega al punto para girar
 				if (horse.x < 82.5 - horse.number*2.5){
 					horse.moveRight();
 				}else{
-					//Change HTML class of horse to runDown
+					// Cambiar la clase HTML de caballo a runDown
 					horse.element.className = 'horse runDown';
-					//Change the speed, will be random value from 10 to 20
-					horse.speed = Math.random()*10 + 10;
+					// Cambie la velocidad, será un valor aleatorio de 10 a 20
+					horse.speed = Math.random() * 10 + 10;
 					horse.moveDown();
 				}
 			}
 
 		}, 1000/this.speed);
-		/* 1000/this.speed is timeout time*/
+		/* 1000 / this.speed es el tiempo de espera */
 	}
 
-	/*Do the same for moveDown, moveLeft, moveUp*/
+	/* Haz lo mismo por moveDown, moveLeft, moveUp */
 	this.moveDown = function(){
-		var horse = this;
+		let horse = this;
 		setTimeout(function(){
 			horse.y ++;
-			horse.element.style.top = horse.y +'vh';
+			horse.element.style.top = horse.y + 'vh';
+
 			if (horse.y < horse.originY + 65){
 				horse.moveDown();
 			}else{
 				horse.element.className = 'horse runLeft';
-				horse.speed = Math.random()*10 + 10;
+				horse.speed = Math.random() * 10 + 10;
 				horse.moveLeft();
 			}
+
 		}, 1000/this.speed)
 	}
+
 	this.moveLeft = function(){
-		var horse = this;
+		let horse = this;
 		setTimeout(function(){
 			horse.x --;
 			horse.element.style.left = horse.x +'vw';
+			
 			if (horse.x > 12.5 - horse.number*2.5){
 				horse.moveLeft();
 			}else{
 				horse.element.className = 'horse runUp';
-				horse.speed = Math.random()*10 + 10;
+				horse.speed = Math.random() * 10 + 10;
 				horse.moveUp();
 			}
-		}, 1000/this.speed)
-	}
-	this.moveUp = function(){
-		var horse = this;
-		setTimeout(function(){
-			horse.y --;
-			horse.element.style.top = horse.y +'vh';
-			if (horse.y > horse.originY){
-				horse.speed = Math.random()*10 + 10;
-				horse.moveUp();
-			}else{
-				horse.element.className = 'horse runRight';
-				//Nearly finish the lap
-				horse.lap ++;
-				horse.moveRight();
-			}
+
 		}, 1000/this.speed)
 	}
 
-	/*Trigger the horse by run*/
+	this.moveUp = function(){
+		let horse = this;
+		
+		setTimeout(function(){
+			horse.y --;
+			horse.element.style.top = horse.y + 'vh';
+
+			if (horse.y > horse.originY){
+				horse.speed = Math.random() * 10 + 10;
+				horse.moveUp();
+			}else{
+				horse.element.className = 'horse runRight';
+				// Casi terminar la vuelta
+				horse.lap ++;
+				horse.moveRight();
+			}
+
+		}, 1000/this.speed)
+	}
+
+	/* Activa el caballo corriendo */
 	this.run = function(){
 		this.element.className = 'horse runRight';
 		this.moveRight();
 	}
+
 	this.arrive = function(){
-		//Stop the horse run by change class to standRight
+		// Detén al caballo corriendo por cambiar de clase a standRight
 		this.element.className = 'horse standRight';
-		this.lap = 0;//Reset the lap
+		this.lap = 0; // Restablecer la vuelta
 
-		/*Show the result*/
-		var tds = document.querySelectorAll('#results .result');//Get all table cell to display the result
-		//results.length is the current arrive position
-		tds[results.length].className = 'result horse'+this.number;//The class of result look like: result horse1...
+		/* Mostrar el resultado */
+		let tds = document.querySelectorAll('#results .result'); // Obtener todas las celdas de la tabla para mostrar el resultado
+		// results.length es la posición de llegada actual
+		tds[results.length].className = 'result horse'+this.number; // La clase de resultado se ve así: resultado caballo1 ...
 
-		//Push the horse number to results array, according the the results array, we know the order of race results
+		// Empuja el número de caballo al arreglo resultados, de acuerdo con la matriz de resultados, conocemos el orden de los resultados de la carrera
 		results.push(this.number);
 
-		//Win horse
+		// Ganar caballo
 		if (results.length == 1){
-			//If win horse is the bet horse, then add the fund
+			// Si el caballo ganador es el caballo de la apuesta, agregue el fondo
 			if (this.number == bethorse){
 				funds += amount;
 			}else{
@@ -121,23 +124,23 @@ function Horse(id, x, y){
 			}
 			document.getElementById('funds').innerText = funds;
 		}else if (results.length == 4){
-			//All horse arrived, enable again the Start Button
+			// Llegaron todos los caballos, habilite de nuevo el botón de inicio
 			document.getElementById('start').disabled = false;
 		}
 	}
 }
 
-var num_lap = 1, results = [], funds = 100, bethorse, amount;
+let num_lap = 1, results = [], funds = 100, bethorse, amount;
 
-//Start the function when the document loaded
+// Inicie la función cuando se cargue el documento
 document.addEventListener("DOMContentLoaded", function(event) {
 
-	var horse1 = new Horse('horse1', 20, 4);
-	var horse2 = new Horse('horse2', 20, 8);
-	var horse3 = new Horse('horse3', 20, 12);
-	var horse4 = new Horse('horse4', 20, 16);
+	let horse1 = new Horse('horse1', 20, 4);
+	let horse2 = new Horse('horse2', 20, 8);
+	let horse3 = new Horse('horse3', 20, 12);
+	let horse4 = new Horse('horse4', 20, 16);
 
-	//Event listener to the Start button
+	// Event listener para el botón empezar
 	document.getElementById('start').onclick = function(){
 		amount = parseInt(document.getElementById('amount').value);
 		num_lap = parseInt(document.getElementById('num_lap').value);
@@ -145,20 +148,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		if (funds < amount){
 			alert('Not enough funds.');
-		}
-		else if (num_lap <= 0){
+		}else if (num_lap <= 0){
 			alert('Number of lap must be greater than 1.');
 		}else{
-
-			/*Started the game*/
-			this.disabled = true;/*Disable the start button*/
-			var tds = document.querySelectorAll('#results .result');//Get all cells of result table.
-			for (var i = 0; i < tds.length; i++) {
-				tds[i].className = 'result';//Reset the result.
+			/*Empezó el juego */
+			this.disabled = true; /* Desactivar el botón de inicio */
+			let tds = document.querySelectorAll('#results .result'); // Obtenga todas las celdas de la tabla de resultados.
+			for (let i = 0; i < tds.length; i++) {
+				tds[i].className = 'result'; // Reinicia el resultado.
 			}
 
 			document.getElementById('funds').innerText = funds;
-			results = [];//Results array is to save the horse numbers when the race is finished.
+			results = []; // El arreglo resultados sirve para guardar los números de los caballos cuando finaliza la carrera.
 			horse1.run();
 			horse2.run();
 			horse3.run();
