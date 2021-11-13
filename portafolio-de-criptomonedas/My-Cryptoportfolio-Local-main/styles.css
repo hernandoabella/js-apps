@@ -1,0 +1,70 @@
+#portfolio-table th {
+    cursor: pointer;
+}
+
+  /* Align everything in the table header except the one with id=coin-name to the right*/
+#portfolio-table th:not(#coin-name) {
+    text-align: right;
+}
+
+  /*Sort arrows*/
+#portfolio-table .arrows-name {
+    display: inline-block
+}
+
+#portfolio-table .triangle-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #555;
+}
+
+#portfolio-table .triangle-up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #555;
+}
+
+  /* Align text in table cell with id=coin-name to the left */
+#coin-name {
+    text-align: left;
+}
+
+  /* Select all td elements except those, who are the first child of something */
+#portfolio-table td:not(:first-child) {
+    text-align: right;
+}
+
+.cryptoUp {
+    color: green;
+}
+
+.cryptoDown {
+    color: red;
+}
+
+#portfolio-table thead, tfoot {
+    background-color: #F0F8FF;
+    font-weight: bold;
+}
+
+#portfolio-table tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+#portfolio-table {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*Set width to 70%*/
+@media (min-width: 700px) {
+    #portfolio-table {
+      width: 70%;
+    }
+}
