@@ -29,49 +29,49 @@ const portfolio = {
       ]
   };
 
-  const fiats = [
-    { code: "AUD", name: "Australian Dollar", symbol: "$" },
-    { code: "BRL", name: "Brazilian real", symbol: "R$" },
-    { code: "CAD", name: "Canadian dollar", symbol: "$" },
-    { code: "CHF", name: "Swiss franc", symbol: "Fr." },
-    { code: "CLP", name: "Chilean peso", symbol: "$" },
-    { code: "CNY", name: "Chinese yuan", symbol: "¥" },
-    { code: "CZK", name: "Czech koruna", symbol: "Kč" },
-    { code: "DKK", name: "Danish krone", symbol: "kr" },
-    { code: "EUR", name: "Euro", symbol: "€" },
-    { code: "GBP", name: "Pound sterling", symbol: "£" },
-    { code: "HKD", name: "Hong Kong dollar", symbol: "$" },
-    { code: "HUF", name: "Hungarian forint", symbol: "Ft" },
-    { code: "IDR", name: "Indonesian rupiah", symbol: "Rp" },
-    { code: "ILS", name: "Israeli new shekel", symbol: "₪" },
-    { code: "INR", name: "Indian rupee", symbol: "₹" },
-    { code: "JPY", name: "Japanese yen", symbol: "¥" },
-    { code: "KRW", name: "South Korean won", symbol: "₩" },
-    { code: "MXN", name: "Mexican peso", symbol: "$" },
-    { code: "MYR", name: "Malaysian ringgit", symbol: "RM" },
-    { code: "NOK", name: "Norwegian krone", symbol: "kr" },
-    { code: "NZD", name: "New Zealand dollar", symbol: "$" },
-    { code: "PHP", name: "Philippine peso", symbol: "₱" },
-    { code: "PKR", name: "Pakistani rupee", symbol: "Rs" },
-    { code: "PLN", name: "Polish złoty", symbol: "zł" },
-    { code: "RUB", name: "Russian ruble", symbol: "₽" },
-    { code: "SEK", name: "Swedish krona", symbol: "kr" },
-    { code: "SGD", name: "Singapore dollar", symbol: "S$" },
-    { code: "THB", name: "Thai baht", symbol: "฿" },
-    { code: "TRY", name: "Turkish lira", symbol: "₺" },
-    { code: "TWD", name: "New Taiwan dollar", symbol: "NT$" },
-    { code: "USD", name: "United States dollar", symbol: "$" },
-    { code: "ZAR", name: "South African rand", symbol: "R" }
-  ];
+const fiats = [
+  { code: "AUD", name: "Australian Dollar", symbol: "$" },
+  { code: "BRL", name: "Brazilian real", symbol: "R$" },
+  { code: "CAD", name: "Canadian dollar", symbol: "$" },
+  { code: "CHF", name: "Swiss franc", symbol: "Fr." },
+  { code: "CLP", name: "Chilean peso", symbol: "$" },
+  { code: "CNY", name: "Chinese yuan", symbol: "¥" },
+  { code: "CZK", name: "Czech koruna", symbol: "Kč" },
+  { code: "DKK", name: "Danish krone", symbol: "kr" },
+  { code: "EUR", name: "Euro", symbol: "€" },
+  { code: "GBP", name: "Pound sterling", symbol: "£" },
+  { code: "HKD", name: "Hong Kong dollar", symbol: "$" },
+  { code: "HUF", name: "Hungarian forint", symbol: "Ft" },
+  { code: "IDR", name: "Indonesian rupiah", symbol: "Rp" },
+  { code: "ILS", name: "Israeli new shekel", symbol: "₪" },
+  { code: "INR", name: "Indian rupee", symbol: "₹" },
+  { code: "JPY", name: "Japanese yen", symbol: "¥" },
+  { code: "KRW", name: "South Korean won", symbol: "₩" },
+  { code: "MXN", name: "Mexican peso", symbol: "$" },
+  { code: "MYR", name: "Malaysian ringgit", symbol: "RM" },
+  { code: "NOK", name: "Norwegian krone", symbol: "kr" },
+  { code: "NZD", name: "New Zealand dollar", symbol: "$" },
+  { code: "PHP", name: "Philippine peso", symbol: "₱" },
+  { code: "PKR", name: "Pakistani rupee", symbol: "Rs" },
+  { code: "PLN", name: "Polish złoty", symbol: "zł" },
+  { code: "RUB", name: "Russian ruble", symbol: "₽" },
+  { code: "SEK", name: "Swedish krona", symbol: "kr" },
+  { code: "SGD", name: "Singapore dollar", symbol: "S$" },
+  { code: "THB", name: "Thai baht", symbol: "฿" },
+  { code: "TRY", name: "Turkish lira", symbol: "₺" },
+  { code: "TWD", name: "New Taiwan dollar", symbol: "NT$" },
+  { code: "USD", name: "United States dollar", symbol: "$" },
+  { code: "ZAR", name: "South African rand", symbol: "R" }
+];
 
-  // Download current coin prices from external API. Then call the displayPortfolio function
-  function downloadCoinPrices() {
+ // Download current coin prices from external API. Then call the displayPortfolio function
+function downloadCoinPrices() {
     //Array "allTickers" is filled with all crypto tickers.
-    var allTickers = portfolio.token.map(item => item.cryptoTicker);
+  let allTickers = portfolio.token.map(item => item.cryptoTicker);
     //console.log('allTicker: ' + allTickers);
 
     //Create API request URL
-    var coinAPI = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + allTickers + "&tsyms=" + portfolio.fiat;
+  let coinAPI = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + allTickers + "&tsyms=" + portfolio.fiat;
     //console.log('coinAPI: ' + coinAPI);
 
     //Hide fetch and undhide 2 lines below to show portfolio with locally saved demo prices
@@ -111,10 +111,10 @@ const portfolio = {
 
   // Display portfolio on page
   function displayPortfolio() {
-    var myContainer = document.getElementById("display-portfolio");
+    let myContainer = document.getElementById("display-portfolio");
 
     //GET-Anfrage an cryptocompare API
-    var thisHTML = "";
+    let thisHTML = "";
     thisHTML += "<table id='portfolio-table'>";
     thisHTML += "<thead>";
     thisHTML += "<tr>";
@@ -126,28 +126,28 @@ const portfolio = {
     thisHTML += "</tr>";
     thisHTML += "</thead>";
 
-    var i = 0;
-    var overallGainLoss = 0;
-    var overallGainLossToday = 0;
-    var cryptoStyle = "class='cryptoUp'";
-    var fiatSymbol = fiats.find(i => i.code === portfolio.fiat).symbol;
+    let i = 0;
+    let overallGainLoss = 0;
+    let overallGainLossToday = 0;
+    let cryptoStyle = "class='cryptoUp'";
+    let fiatSymbol = fiats.find(i => i.code === portfolio.fiat).symbol;
 
     thisHTML += "<tbody>";
     thisHTML += "<tr>";
 
     for (i = 0; i < Object.keys(coinPrices['RAW']).length; i++) {
-      var cryptoTicker = portfolio.token[i].cryptoTicker;
-      var fullName = portfolio.token[i].cryptoName;
-      var cryptoQty = portfolio.token[i].cryptoQty;
-      var cryptoInvestedSum = portfolio.token[i].cryptoInvestedSum;
-      var lastPrice = coinPrices['RAW'][cryptoTicker][portfolio.fiat]['PRICE'];
-      var changePct24H = coinPrices['RAW'][cryptoTicker][portfolio.fiat]['CHANGEPCT24HOUR'];
-      var change24H = coinPrices['RAW'][cryptoTicker][portfolio.fiat]['CHANGE24HOUR'];
-      // var fiatSymbol = coinPrices['DISPLAY'][cryptoTicker][portfolio.fiat]['TOSYMBOL'];
+      let cryptoTicker = portfolio.token[i].cryptoTicker;
+      let fullName = portfolio.token[i].cryptoName;
+      let cryptoQty = portfolio.token[i].cryptoQty;
+      let cryptoInvestedSum = portfolio.token[i].cryptoInvestedSum;
+      let lastPrice = coinPrices['RAW'][cryptoTicker][portfolio.fiat]['PRICE'];
+      let changePct24H = coinPrices['RAW'][cryptoTicker][portfolio.fiat]['CHANGEPCT24HOUR'];
+      let change24H = coinPrices['RAW'][cryptoTicker][portfolio.fiat]['CHANGE24HOUR'];
+      // let fiatSymbol = coinPrices['DISPLAY'][cryptoTicker][portfolio.fiat]['TOSYMBOL'];
 
-      var cryptoGainLoss = 0;
-      var cryptoGainLossToday = 0;
-      var cryptoBuyingPrice = 0;
+      let cryptoGainLoss = 0;
+      let cryptoGainLossToday = 0;
+      let cryptoBuyingPrice = 0;
 
       //Some values on CryptoCompare return "null". That would break ".toFixed" below:
       if (changePct24H != null) {
@@ -203,11 +203,11 @@ const portfolio = {
 
   // Sort DISPLAY PORTFOLIO table by clicking on the table headers
   function sortTable(n) {
-    var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0, xGreaterThanY;
+    let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0, xGreaterThanY;
     table = document.getElementById("portfolio-table");
     switching = true;
-    var arrowDown = document.getElementsByClassName("arrows-name")[n].firstElementChild;
-    var arrowUp = document.getElementsByClassName("arrows-name")[n].lastElementChild;
+    let arrowDown = document.getElementsByClassName("arrows-name")[n].firstElementChild;
+    let arrowUp = document.getElementsByClassName("arrows-name")[n].lastElementChild;
 
     //Set the sorting direction to ascending:
     dir = "asc";
@@ -277,10 +277,10 @@ const portfolio = {
 
   //Show all sort arrows
   function showAllArrows() {
-    var allArrows = document.getElementsByClassName("arrows-name");
+    let allArrows = document.getElementsByClassName("arrows-name");
     for (let i = 0; i < allArrows.length; i++) {
-      var arrowDown = document.getElementsByClassName("arrows-name")[i].firstElementChild;
-      var arrowUp = document.getElementsByClassName("arrows-name")[i].lastElementChild;
+      let arrowDown = document.getElementsByClassName("arrows-name")[i].firstElementChild;
+      let arrowUp = document.getElementsByClassName("arrows-name")[i].lastElementChild;
       arrowDown.classList.add("triangle-down");
       arrowUp.classList.add("triangle-up");
     }
@@ -288,7 +288,7 @@ const portfolio = {
 
   // If value fell: red, value rose: green
   function redOrGreen(value) {
-    var cryptoStyle;
+    let cryptoStyle;
     if (value == 0) {
       cryptoStyle = "";
     } else if (value < 0) {

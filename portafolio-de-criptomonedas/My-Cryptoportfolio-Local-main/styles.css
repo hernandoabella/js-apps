@@ -2,12 +2,12 @@
     cursor: pointer;
 }
 
-  /* Align everything in the table header except the one with id=coin-name to the right*/
+/* Align everything in the table header except the one with id=coin-name to the right*/
 #portfolio-table th:not(#coin-name) {
     text-align: right;
 }
 
-  /*Sort arrows*/
+/*Sort arrows*/
 #portfolio-table .arrows-name {
     display: inline-block
 }
@@ -30,12 +30,12 @@
     border-bottom: 8px solid #555;
 }
 
-  /* Align text in table cell with id=coin-name to the left */
+/* Align text in table cell with id=coin-name to the left */
 #coin-name {
     text-align: left;
 }
 
-  /* Select all td elements except those, who are the first child of something */
+/* Select all td elements except those, who are the first child of something */
 #portfolio-table td:not(:first-child) {
     text-align: right;
 }
