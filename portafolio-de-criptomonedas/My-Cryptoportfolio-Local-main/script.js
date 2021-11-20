@@ -1,33 +1,33 @@
 const portfolio = {
-    "fiat": "EUR",
-    "token":
-      [
-        {
-          "cryptoTicker": "BTC",
-          "cryptoName": "Bitcoin",
-          "cryptoQty": "0.5",
-          "cryptoInvestedSum": "4000"
-        },
-        {
-          "cryptoTicker": "ADA",
-          "cryptoName": "Cardano",
-          "cryptoQty": "25000",
-          "cryptoInvestedSum": "1000"
-        },
-        {
-          "cryptoTicker": "ETH",
-          "cryptoName": "Ethereum",
-          "cryptoQty": "15",
-          "cryptoInvestedSum": "1500"
-        },
-        {
-          "cryptoTicker": "XMR",
-          "cryptoName": "Monero",
-          "cryptoQty": "50",
-          "cryptoInvestedSum": "1000"
-        }
-      ]
-  };
+  "fiat": "EUR",
+  "token":
+    [
+      {
+        "cryptoTicker": "BTC",
+        "cryptoName": "Bitcoin",
+        "cryptoQty": "0.5",
+        "cryptoInvestedSum": "4000"
+      },
+      {
+        "cryptoTicker": "ADA",
+        "cryptoName": "Cardano",
+        "cryptoQty": "25000",
+        "cryptoInvestedSum": "1000"
+      },
+      {
+        "cryptoTicker": "ETH",
+        "cryptoName": "Ethereum",
+        "cryptoQty": "15",
+        "cryptoInvestedSum": "1500"
+      },
+      {
+        "cryptoTicker": "XMR",
+        "cryptoName": "Monero",
+        "cryptoQty": "50",
+        "cryptoInvestedSum": "1000"
+      }
+    ]
+};
 
 const fiats = [
   { code: "AUD", name: "Australian Dollar", symbol: "$" },
@@ -64,65 +64,68 @@ const fiats = [
   { code: "ZAR", name: "South African rand", symbol: "R" }
 ];
 
-// Download current coin prices from external API. Then call the displayPortfolio function
+// Descarga los precios actuales de las monedas desde una API externa. Luego llama a la función displayPortfolio
 function downloadCoinPrices() {
-    // Array "allTickers" is filled with all crypto tickers.
+  // El arreglo "allTickers" está lleno de todos los tickers criptográficos.
   let allTickers = portfolio.token.map(item => item.cryptoTicker);
-    // console.log('allTicker: ' + allTickers);
+  // console.log('allTicker: ' + allTickers);
 
-    // Create API request URL
+  // Crear una petición URL de API
   let coinAPI = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + allTickers + "&tsyms=" + portfolio.fiat;
-    //console.log('coinAPI: ' + coinAPI);
+  // console.log('coinAPI: ' + coinAPI);
 
-    // Hide fetch and undhide 2 lines below to show portfolio with locally saved demo prices
-    // coinPrices = coinpricesExample;
-    // displayPortfolio();
+  // Oculta, busca y muestra 2 líneas a continuación para mostrar la cartera con los precios de demostración guardados localmente
+  // coinPrices = coinpricesExample;
+  // displayPortfolio();
 
-    ///*
+  //*
+
   fetch(coinAPI)
     .then(handleErrors)
     .then(res => {
-        // console.log(res.clone());//res.json() cannot be used twice in the callback. Thus res.clone() (see https://stackoverflow.com/q/46742251/5263954)
-    return res.json();
+    // console.log(res.clone());
+    // res.json() no se puede usar 2 veces en el callback. Usa res.clone() (mira https://stackoverflow.com/q/46742251/5263954)
+      return res.json();
     })
     .then(prices => {
-        // console.log(prices);
-    coinPrices = prices;
-    displayPortfolio();
-        // createChartData();
-        // Once tables are fully rendered run the translate function to translate the app)
-        // let index = languages.indexOf(userLang);
-        // changeAppLanguage(index);
+      // console.log(prices);
+      coinPrices = prices;
+      displayPortfolio();
+      // createChartData();
+      // Una vez que las tablas estén completamente renderizadas, ejecute la función de traducción para traducir la aplicación
+      // let index = languages.indexOf(userLang);
+      // changeAppLanguage(index);
     })
     .catch(error => {
-        console.error('There was an error while downloading coin prices:', error.message);
+        console.error('Hubo un error al descargar los precios de las monedas.:', error.message);
     });
+    
     //*/
 }
 
-// Handle errors from fetch operation
+// Manejo de errores usando fetch
 function handleErrors(response) {
   // console.log(response);
   if (!response.ok) {
     throw Error(response.statusText);
   }
-  return response;
+    return response;
 }
 
-// Display portfolio on page
+// Mostrar portafolio en la página
 function displayPortfolio() {
   let myContainer = document.getElementById("display-portfolio");
 
-  // GET-Anfrage an cryptocompare API
+  // GET-Anfrage una API de cryptocompare
   let thisHTML = "";
   thisHTML += "<table id='portfolio-table'>";
   thisHTML += "<thead>";
   thisHTML += "<tr>";
-  thisHTML += "<th id='coin-name' onclick='sortTable(0)' title='Name of Cryptocurrency/Token. Click here to sort alphabetically'>Name <div class='arrows-name'><div title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
-  thisHTML += "<th id='last-price' onclick='sortTable(1)' title='Last price. Click here to sort.'>Last <div class='arrows-name'><div class='triangle-down' title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
-  thisHTML += "<th id='change-perc' onclick='sortTable(2)' title='Change in percent in the last 24h. Click here to sort.'>Change <div class='arrows-name'><div class='triangle-down' title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
-  thisHTML += "<th id='gain-loss-24h' onclick='sortTable(3)' title='Gain/loss in the last 24h. Click here to sort.'>G/L Today <div class='arrows-name'><div class='triangle-down' title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
-  thisHTML += "<th id='gain-loss' onclick='sortTable(4)' title='Overall gain/loss. Click here to sort.'>Gain / Loss <div class='arrows-name'><div class='triangle-down' title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
+  thisHTML += "<th id='coin-name' onclick='sortTable(0)' title='Name of Cryptocurrency/Token. Click here to sort alphabetically'>Nombre <div class='arrows-name'><div title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
+  thisHTML += "<th id='last-price' onclick='sortTable(1)' title='Last price. Click here to sort.'>Último <div class='arrows-name'><div class='triangle-down' title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
+  thisHTML += "<th id='change-perc' onclick='sortTable(2)' title='Change in percent in the last 24h. Click here to sort.'>Cambio <div class='arrows-name'><div class='triangle-down' title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
+  thisHTML += "<th id='gain-loss-24h' onclick='sortTable(3)' title='Gain/loss in the last 24h. Click here to sort.'>G/P Hoy <div class='arrows-name'><div class='triangle-down' title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
+  thisHTML += "<th id='gain-loss' onclick='sortTable(4)' title='Overall gain/loss. Click here to sort.'>Ganancia / Pérdida <div class='arrows-name'><div class='triangle-down' title='Descending'></div><div class='triangle-up' title='Ascending'></div></div></th>";
   thisHTML += "</tr>";
   thisHTML += "</thead>";
 
@@ -149,9 +152,9 @@ function displayPortfolio() {
     let cryptoGainLossToday = 0;
     let cryptoBuyingPrice = 0;
 
-    //Some values on CryptoCompare return "null". That would break ".toFixed" below:
+    // Algunos valores de CryptoCompare devuelven "null". Eso rompería ".toFixed" a continuación:
     if (changePct24H != null) {
-      changePct24H = changePct24H.toFixed(1).concat(" %"); //Example: 2.36: toFixed: Only one digit after the comma (2.4). Concat: Add percentage sign (2.4%).
+      changePct24H = changePct24H.toFixed(1).concat(" %"); // Ejemplo: 2.36: toFixed: Solo un dígito después de la coma (2.4). Concat: agrega el signo de porcentaje (2.4%).
     }
 
     if (cryptoQty != 0) {
@@ -162,7 +165,7 @@ function displayPortfolio() {
       overallGainLossToday += cryptoGainLossToday;
     }
 
-    //Code below makes sure that there are not too many digits after the comma. parseFloat is necessary, because lastPrice is apparently considered a string and toFixed only works with numbers.
+    // El código siguiente asegura que no haya demasiados dígitos después de la coma. parseFloat es necesario, porque lastPrice aparentemente se considera una cadena y toFixed solo funciona con números.
     if (lastPrice < 0.1) {
       lastPrice = parseFloat(lastPrice).toFixed(3);
     } else if (lastPrice < 10) {
@@ -174,7 +177,7 @@ function displayPortfolio() {
     thisHTML += "<td><a href='https://coinmarketcap.com/currencies/" + fullName.toLowerCase() + "' target=_blank>" + fullName + "</a></td>";
     thisHTML += "<td>" + lastPrice + " " + fiatSymbol + "</td>";
 
-    //Change color of changePct24H and cryptoGainLossToday number according to value (-, 0, + -> red, black, green)
+    // Cambiar el color del número changePct24H y cryptoGainLossToday según el valor (-, 0, + -> red, black, green)
     cryptoStyle = redOrGreen(change24H);
 
     thisHTML += "<td " + cryptoStyle + ">" + changePct24H + "</td>";
@@ -201,7 +204,7 @@ function displayPortfolio() {
     myContainer.innerHTML = thisHTML;
 }
 
-// Sort DISPLAY PORTFOLIO table by clicking on the table headers
+// Ordena la tabla DISPLAY PORTFOLIO haciendo clic en los encabezados de la tabla
 function sortTable(n) {
   let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0, xGreaterThanY;
   table = document.getElementById("portfolio-table");
@@ -209,44 +212,44 @@ function sortTable(n) {
   let arrowDown = document.getElementsByClassName("arrows-name")[n].firstElementChild;
   let arrowUp = document.getElementsByClassName("arrows-name")[n].lastElementChild;
 
-  //Set the sorting direction to ascending:
+  // Establezca la dirección de clasificación en ascendente:
   dir = "asc";
-  /*Make a loop that will continue until
-  no switching has been done:*/
+  /* Haz un bucle que continuará hasta
+   no se ha realizado ningún cambio: */
   while (switching) {
-  //start by saying: no switching is done:
+  // comience diciendo: no se realiza ningún cambio:
   switching = false;
   rows = table.rows;
-  /*Loop through all table rows (except the
-  first, which contains table headers and the
-  last - table footers):*/
+  /* Recorra todas las filas de la tabla (excepto el
+   primero, que contiene encabezados de tabla y el
+   último - pies de tabla): */
   for (i = 1; i < (rows.length - 2); i++) {
-  //start by saying there should be no switching:
+  // Comience diciendo que no debería haber cambios:
   shouldSwitch = false;
   xGreaterThanY = false;
-  /*Get the two elements you want to compare,
-  one from current row and one from the next:
-  n=0: Compare strings
-  n>0: Compare numbers*/
-  if (n === 0) { //Compare strings
+  /* Obtenga los dos elementos que desea comparar,
+   uno de la fila actual y uno de la siguiente:
+   n = 0: comparar cadenas
+   n> 0: comparar números */
+  if (n === 0) { // Compara cadenas de texto
     x = rows[i].getElementsByTagName("TD")[n].innerText.toLowerCase();
     y = rows[i + 1].getElementsByTagName("TD")[n].innerText.toLowerCase();
     if (x > y) xGreaterThanY = true;
-  } else { //Compare numbers
+  } else { // Compara números
     x = rows[i].getElementsByTagName("TD")[n].innerText.replace(/[^-0-9.]/g, '');//Regex: Remove everything except numbers, "-" and ".",e.g. "-35.6 %" --> "-35.6"
     y = rows[i + 1].getElementsByTagName("TD")[n].innerText.replace(/[^-0-9.]/g, '');
     if (Number(x) > Number(y)) xGreaterThanY = true;
   }
-  /*check if the two rows should switch place,
-  based on the direction, asc or desc:*/
+  /* comprueba si las dos filas deben cambiar de lugar,
+   basado en la dirección, asc o desc: */
   if (dir == "asc") {
-  //xGreaterThanY = true: switch rows!
+  // xGreaterThanY = true: cambia filas!
   if (xGreaterThanY) {
       shouldSwitch = true;
       break;
   }
   } else if (dir == "desc") {
-  //if xGreaterThanY = false AND the 2 numbers are not equal: switch rows! 2nd condition important because if numbers are equal there would be an infinite loop
+  // Si xGreaterThanY = false y los 2 números no son iguales: ¡cambia de fila! 2da condición importante porque si los números son iguales habría un bucle infinito
   if (!xGreaterThanY && Number(x) !== Number(y)) {
       shouldSwitch = true;
       break;
@@ -254,28 +257,28 @@ function sortTable(n) {
   }
   }
   if (shouldSwitch) {
-  /*If a switch has been marked, make the switch
-  and mark that a switch has been done:*/
+  /* Si se ha marcado un interruptor, hágalo
+   y marque que se ha realizado un cambio: */
     rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
     switching = true;
-      //Each time a switch is done, increase this count by 1:
+      // Cada vez que se realiza un cambio, aumente este recuento en 1:
     switchcount++;
   } else {
-  /*If no switching has been done AND the direction is "asc",
-  set the direction to "desc" and run the while loop again.*/
+  /* Si no se ha realizado ningún cambio Y la dirección es "asc",
+  establece la dirección en "desc" y ejecuta el ciclo while de nuevo. */
   if (switchcount == 0 && dir == "asc") {
     dir = "desc";
     switching = true;
   }
   }
   }
-  //Set the display of arrows according to "asc" or "desc"
-  showAllArrows(); //Show all arrows in the header, which might have been hidden during previous sort operation
-    if (dir == "asc") arrowDown.classList.remove("triangle-down"); //Change display to UP arrow only.
-    else if (dir == "desc") arrowUp.classList.remove("triangle-up"); //Change display to DOWN arrow only.
+  // Configure la visualización de flechas de acuerdo con "asc" o "desc"
+  showAllArrows(); // Mostrar todas las flechas en el encabezado, que podrían haber estado ocultas durante la operación de clasificación anterior
+    if (dir == "asc") arrowDown.classList.remove("triangle-down"); // Cambia la pantalla solo a la flecha ARRIBA.
+    else if (dir == "desc") arrowUp.classList.remove("triangle-up"); // Cambia la pantalla solo a la flecha ABAJO.
   }
 
-  //Show all sort arrows
+  // Muestra todas las flechas de clasificación
 function showAllArrows() {
   let allArrows = document.getElementsByClassName("arrows-name");
   for (let i = 0; i < allArrows.length; i++) {
@@ -286,7 +289,7 @@ function showAllArrows() {
   }
 }
 
-  // If value fell: red, value rose: green
+  // Si el valor cae en: red, value rose: green
 function redOrGreen(value) {
   let cryptoStyle;
   if (value == 0) {
@@ -299,13 +302,13 @@ function redOrGreen(value) {
     return cryptoStyle;
 }
 
-//Add a dot as thousand separator
+// Agregue un punto como separador de miles
 function add1000Separators(nStr) {
-  //Example: nStr = 1427900000.45
-  nStr += ''; //Convert input to string
-  const x = nStr.split('.');//Split string at . into arrays [ '1427900000', '45' ]
+  // Example: nStr = 1427900000.45
+  nStr += ''; // Convert input to string
+  const x = nStr.split('.'); // Divide la cadena de texto en arreglos [ '1427900000', '45' ]
   let x1 = x[0]; // 1427900000
-  const x2 = x.length > 1 ? ',' + x[1] : ''; //,45
+  const x2 = x.length > 1 ? ',' + x[1] : ''; // ,45
   const rgx = /(\d+)(\d{3})/;
   while (rgx.test(x1)) {
     x1 = x1.replace(rgx, '$1' + '.' + '$2'); // 1427900.000 --> 1427.900.000 --> 1.427.900.000

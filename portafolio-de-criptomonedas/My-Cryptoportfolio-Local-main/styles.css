@@ -1,13 +1,21 @@
+#display-portfolio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+}
+
 #portfolio-table th {
     cursor: pointer;
 }
 
-/* Align everything in the table header except the one with id=coin-name to the right*/
+/* Alinea todo en el encabezado de la tabla excepto el que tiene id=coin-name a la derecha */
 #portfolio-table th:not(#coin-name) {
     text-align: right;
 }
 
-/*Sort arrows*/
+/* Ordena las flechas */
 #portfolio-table .arrows-name {
     display: inline-block
 }
@@ -30,12 +38,12 @@
     border-bottom: 8px solid #555;
 }
 
-/* Align text in table cell with id=coin-name to the left */
+/* Alinea el texto en la celda de la tabla con id=coin-name a la izquierda */
 #coin-name {
     text-align: left;
 }
 
-/* Select all td elements except those, who are the first child of something */
+/* Selecciona todos los elementos td excepto aquellos que son el primer hijo de algo */
 #portfolio-table td:not(:first-child) {
     text-align: right;
 }
@@ -62,7 +70,7 @@
     width: 100%;
 }
 
-/*Set width to 70%*/
+/* Establece ancho en 70%*/
 @media (min-width: 700px) {
     #portfolio-table {
       width: 70%;
