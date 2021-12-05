@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* ------- variables ---------- */
 
 :root{
     --color-primario: #3C474B;
-    --color-secundario: #8338EC;
+    --color-secundario: #6956df;
     --color-de-fondo: #fff;
 }
 
@@ -12,28 +12,21 @@
 
 /* ------- estilos principales ---------- */
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+body{
+    font-family: sans-serif;
+    background: var(--color-de-fondo);
 }
 
-body{
-    font-family: 'STIX Two Math', serif;
-    background: var(--color-de-fondo);
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
     text-align: center;
-    color: var(--color-primario);
-    padding: 20px;
 }
 
 p{
     text-align: center;
-    color: var(--color-primario);
-    padding: 20px;
 }
 
 a{
@@ -41,23 +34,23 @@ a{
     text-decoration: none;
 }
 
-ol{
-    margin: 20px auto;
-    font-size: 1.3em;
-    color: var(--color-primario);
-    width: 700px;
+a h3{
+    display: inline;
 }
 
 ol li{
     margin: 20px;
-    border-bottom: 1px solid rgba(107, 154, 196, 0.2);
     padding: 20px 0px;
 }
 
 ol li a{
     text-decoration: none;
     color: var(--color-secundario);
-    
+}
+
+hr{
+    border: 1px solid #e7e3ff;
+    margin: 10px;
 }
 
 @media only screen and ( max-width: 768px ){
@@ -82,38 +75,28 @@ ol li a{
     right: 20px;
 }
 
-.donation{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    transition: .3s;
-    line-height: 30px;
-}
-
 .donation > i{
     color: var(--color-primario);
     font-size: 2em;
     transition: .3s;
-}
-
-.love{
-    color: #EF8354;
+    position: absolute;
+    top: 12px;
+    right: 50px;
 }
 
 .download-manager a{
     color: var(--color-secundario);
-    float: right;
-    cursor: pointer;
-    transition: .3s;
-    padding: 5px;
+    margin-left: 20px;
 }
 
 .estrellas{
-    color: var(--color-primario);
+    color: var(--color-secundario);
     font-size: .6em;
-    position: relative;
-    top: -2px;
-    margin: 20px;
+    float: right;
 }
+
+/* ------- estilos generales ---------- */
+
+/* ------- estilos generales ---------- */
 
 /* ------- estilos generales ---------- */
