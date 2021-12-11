@@ -19,6 +19,7 @@ h1{
     font-family: 'Bakbak One', cursive;
     margin: 10px;
     text-align: center;
+    line-height: 0;
 }
 
 p{
