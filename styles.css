@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+:root{
+    --color1: #241676;
+    --color2: rgb(103, 181, 255);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: serif;
+    font-size: 1em;
+}
+
+h1{
+    color: var(--color1);
+    font-family: 'Bakbak One', cursive;
+    margin: 10px;
+    text-align: center;
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+}
+
+b{
+    color: var(--color1);
+}
+
+.container{
+    padding: 10px;
+    
+}
+
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+ol > div{
+    width: 25%;
+}
+
+ol li{
+    color: var(--color1);
+    padding: 5px;
+}
+
+ol li a{
+    color: var(--color1);
+    display: block;
+    transition: .3s;
+    font-family: 'Bakbak One', cursive;
+}
+
+ol li a:hover{
+    opacity: .5;
+}
+
+footer{
+    padding: 10px;
+}
+
+footer p{
+    text-align: center;
+}
+
+.hero{
+    padding: 20px;
+}
+
+.redes__sociales i{
+    color: var(--color1);
+    font-size: 2em;
+    margin: 5px;
+   
+}
+
+.redes__sociales ol li a:hover{
+    opacity: .5;
+}
+
+@media only screen and (max-width: 768px){
+	
+}
