@@ -67,6 +67,10 @@ footer{
     padding: 10px;
 }
 
+footer a{
+    color: var(--color1);
+}
+
 footer p{
     text-align: center;
 }
@@ -77,7 +81,7 @@ footer p{
 
 .redes__sociales i{
     color: var(--color1);
-    font-size: 2em;
+    font-size: 1.3em;
     margin: 5px;
    
 }
