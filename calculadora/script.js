@@ -1,5 +1,5 @@
-var operador = document.getElementsByClassName("operador");
-var numero = document.getElementsByClassName("numero");
+let operador = document.getElementsByClassName("operador");
+let numero = document.getElementsByClassName("numero");
 
 function obtenerHistorial(){
     return document.getElementById("valor-historial").innerText;
@@ -26,8 +26,8 @@ function obtenerNumeroFormateado(num){
     if(num=="-"){
         return "";
     }
-    var n=Number(num);
-    var value= n.toLocaleString("en");
+    let n=Number(num);
+    let value= n.toLocaleString("en");
 
     return value;
 }
@@ -38,21 +38,21 @@ function revertirFormatoNumero(num){
 
 
 
-for(var i=0;i<operador.length;i++){
+for(let i=0;i<operador.length;i++){
     operador[i].addEventListener('click',function(){
             if(this.id=="clear"){
                 imprimirHistorial("");
                 imprimirSalida("");
             }else if(this.id=="backspace"){
-                var
+                let
                 salida=revertirFormatoNumero(obtenerSalida()).toString();
                 if(salida){// Si (salida tiene un valor) {...}
                     salida= salida.substr(0,salida.length-1);
                 imprimirSalida(salida);
                 }
             }else{
-                var salida = obtenerSalida();
-                var historial = obtenerHistorial();
+                let salida = obtenerSalida();
+                let historial = obtenerHistorial();
 
                 if(salida=="" && historial != ""){
                     if(isNaN(historial[historial.length-1])){
@@ -66,7 +66,7 @@ for(var i=0;i<operador.length;i++){
                     historial=historial+salida;
 
                     if(this.id=="="){
-                        var result= eval(historial);
+                        let result= eval(historial);
                         imprimirSalida(result);
                         imprimirHistorial("");
                     }else{
@@ -79,9 +79,9 @@ for(var i=0;i<operador.length;i++){
     });
 }
 
-for(var i=0;i<numero.length;i++){
+for(let i=0;i<numero.length;i++){
     numero[i].addEventListener('click', function(){
-        var salida = revertirFormatoNumero(obtenerSalida());
+        let salida = revertirFormatoNumero(obtenerSalida());
         if(salida!=NaN){
             salida=salida+this.id;
             imprimirSalida(salida);
