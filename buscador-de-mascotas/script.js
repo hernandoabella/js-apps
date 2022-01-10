@@ -25,7 +25,7 @@ function addPetNamesToHtml() {
 addPetNamesToHtml()
 
 dropDown.addEventListener("change", e => {
-    imageContainer.innerHTML = `<p>Loading...</p>`
+    imageContainer.innerHTML = `<p class="loading">Cargando...</p>`
     getPetImage(e.target.value).then(data => {
         let url = data.message
         imageContainer.innerHTML = `<img src="${url}">`

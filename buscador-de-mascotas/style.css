@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 body {
-    font-family: "Kumbh Sans", sans-serif;
-    color: #333;
+    font-family: sans-serif;
+    background: #FABC2A;
 }
 
 * {
@@ -10,39 +10,70 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 .app {
-    height: 95vh;
+    background: #F2EDEB;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.footer {
-    text-align: center;
+
+select{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
+
+option{
+    padding: 10px;
+}
+
 .header {
     text-align: center;
-    padding: 2rem 0;
+    font-family: "Kumbh Sans", sans-serif;
 }
-.title {
-    margin: 1rem 0;
+
+.title{
+    padding: 10px;
 }
-.subtitle {
-    margin: 10px 0;
+
+.txt{
+    padding: 10px;
+    text-align: justify;
 }
-.subtitle--muted {
-    color: gray;
-    font-weight: 400;
+
+.subtitle{
+    font-size: 1em;
+    padding: 10px;
 }
+
+
 .breed-container {
     margin-top: 1rem;
 }
+
 .breeds {
     padding: 5px 10px;
     font-size: 1rem;
 }
+
+.slideshow img{
+    position: relative;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    height: 350px;
+    width: 100%;
+    display: block;
+}
+
 .slideshow p {
     text-align: center;
 }
-.slideshow img {
-    max-height: 500px;
-    max-width: 900px;
-    margin: 0 auto;
-    display: block;
+
+.loading{
+    padding: 10px;
 }

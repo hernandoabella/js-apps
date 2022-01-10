@@ -17,7 +17,7 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 *  Avanzado:      ⭐⭐⭐⭐⭐
 
 ## Aplicaciones 🎉
- 
+
 |  #  |  Aplicación                 | Dificultad    |
 | --- | -------------               |------------   |
 | 1   | Contador                    |   ★★★☆☆    | 

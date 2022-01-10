@@ -14,7 +14,6 @@ emptyBox.forEach(function(box) {
     box.addEventListener('drop', dragDrop);
 });
 
-
 // FUNCTIONS
 function dragStart() {
     this.className += ' hold';
