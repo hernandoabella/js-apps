@@ -3,6 +3,7 @@ const detener = document.querySelector("#stop");
 const reset = document.querySelector("#reset");
 
 let count = 0;
+
 let minutes = 0;
 let seconds = 0;
 let milliSeconds = 0;
