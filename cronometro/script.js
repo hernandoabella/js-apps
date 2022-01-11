@@ -1,16 +1,15 @@
 const start = document.querySelector("#start");
-const stop = document.querySelector("#stop");
+const detener = document.querySelector("#stop");
 const reset = document.querySelector("#reset");
 
 let count = 0;
-
 let minutes = 0;
 let seconds = 0;
 let milliSeconds = 0;
 
 let startTimer = () => {
 	count++;
-	// formula for time calculation
+	// Fórmula para calcular el tiempo
 	// minutes = Math.floor((count / 100) / 60);
 	// seconds = Math.floor((count / 100 ) - (minutes * 60));
 	// milliSeconds = Math.floor(count - (seconds * 100 ) - (minutes * 6000));
@@ -24,10 +23,10 @@ let startTimer = () => {
 	document.querySelector("#m-seconds").innerText = addZero(milliSeconds);
 };
 
-// start timer
+// Inicia el temporizador
 let interval = 0;
 
-// check timer is running
+// Verifica que el tiempo del temporizador esté corriendo
 let timerRunning = false;
 
 start.addEventListener("click", function () {
@@ -37,12 +36,12 @@ start.addEventListener("click", function () {
 	}
 });
 
-// stop timer
-stop.addEventListener("click", function () {
+// Detiene el temporizador
+detener.addEventListener("click", function () {
 	clearInterval(interval);
 });
 
-// reset timer
+// Reinicia el temporizador
 reset.addEventListener("click", function () {
 	clearInterval(interval);
 	count = 0;
@@ -56,7 +55,7 @@ reset.addEventListener("click", function () {
 	document.querySelector("#m-seconds").innerText = "00";
 });
 
-// add zero for numbers below 10
+// Agrega zero a los números por debajo de 10
 let addZero = (time) => {
 	if (time <= 9) {
 		return "0" + time;
