@@ -24,7 +24,7 @@ async function fetchAPI() {
 	generateHTML(data.hits);
 }
 
-// content for the dom
+// Contenido para el DOM
 function generateHTML(results) {
 	container.classList.remove("initial");
 
