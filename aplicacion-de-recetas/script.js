@@ -17,10 +17,9 @@ searchForm.addEventListener("submit", (e) => {
 });
 
 async function fetchAPI() {
-	const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=0&to=20`;
+	const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=0&to=6`;
 	const response = await fetch(baseURL);
 	const data = await response.json();
-
 	generateHTML(data.hits);
 }
 
@@ -34,13 +33,13 @@ function generateHTML(results) {
         <img src="${result.recipe.image}" alt="${result.recipe.label}">
         <div class="flex-container">
             <h2 class="title">${result.recipe.label}</h2>
-            <a href="${result.recipe.url}" target="_blank" class="view-btn">view recipe</a>
+            <a href="${result.recipe.url}" target="_blank" class="view-btn">Ver Receta</a>
         </div>
-        <p class="item-data"><span>Calorie count:</span> ${result.recipe.calories.toFixed(2)}</p>
-        <p class="item-data"><span>DietLabel:</span> ${
+        <p class="item-data"><span>Conteo de calorías:</span> ${result.recipe.calories.toFixed(2)}</p>
+        <p class="item-data"><span>Etiqueta de la dieta:</span> ${
 					result.recipe.dietLabels.length > 0 ? result.recipe.dietLabels.length : "No data available"
 				}</p>
-        <p class="item-data"><span>Health Label:</span> ${result.recipe.healthLabels}</p>
+        <p class="item-data"><span>Etiqueta de Salud:</span> ${result.recipe.healthLabels}</p>
     </div>`;
 	});
 	searchResult.innerHTML = generatedHTML;
