@@ -1,46 +1,46 @@
 const searchForm = document.querySelector("form");
-const searchResult = document.querySelector(".search-result");
+const searchResultDiv = document.querySelector(".search-result");
 const container = document.querySelector(".container");
-const searchBtn = document.querySelector(".search-btn");
-
-// API
-const APP_ID = "aedf7beb";
-const APP_key = "644f6cbdeae22a47b314259c7479f1c9";
-
 let searchQuery = "";
-
+const APP_ID = "0afafdc7";
+const APP_key = "69cb8af4aa436ea914b9305824fa8871";
+// console.log(container)
 searchForm.addEventListener("submit", (e) => {
-	e.preventDefault();
-	searchQuery = e.target.querySelector("input").value;
-
-	fetchAPI();
+  e.preventDefault();
+  searchQuery = e.target.querySelector("input").value;
+  fetchAPI();
 });
 
 async function fetchAPI() {
-	const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=0&to=6`;
-	const response = await fetch(baseURL);
-	const data = await response.json();
-	generateHTML(data.hits);
+  const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=0&to=20`;
+  const response = await fetch(baseURL);
+  const data = await response.json();
+  generateHTML(data.hits);
+  console.log(data);
 }
 
-// Contenido para el DOM
 function generateHTML(results) {
-	container.classList.remove("initial");
-
-	let generatedHTML = "";
-	results.map((result) => {
-		generatedHTML += `<div class="item">
-        <img src="${result.recipe.image}" alt="${result.recipe.label}">
+  container.classList.remove("initial");
+  let generatedHTML = "";
+  results.map((result) => {
+    generatedHTML += `
+      <div class="item">
+        <img src="${result.recipe.image}" alt="img">
         <div class="flex-container">
-            <h2 class="title">${result.recipe.label}</h2>
-            <a href="${result.recipe.url}" target="_blank" class="view-btn">Ver Receta</a>
+          <h1 class="title">${result.recipe.label}</h1>
+          <a class="view-btn" target="_blank" href="${
+            result.recipe.url
+          }">View Recipe</a>
         </div>
-        <p class="item-data"><span>Conteo de calorías:</span> ${result.recipe.calories.toFixed(2)}</p>
-        <p class="item-data"><span>Etiqueta de la dieta:</span> ${
-					result.recipe.dietLabels.length > 0 ? result.recipe.dietLabels.length : "No data available"
-				}</p>
-        <p class="item-data"><span>Etiqueta de Salud:</span> ${result.recipe.healthLabels}</p>
-    </div>`;
-	});
-	searchResult.innerHTML = generatedHTML;
+        <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
+        <p class="item-data">Diet label: ${
+          result.recipe.dietLabels.length > 0
+            ? result.recipe.dietLabels
+            : "No Data Found"
+        }</p>
+        <p class="item-data">Health labels: ${result.recipe.healthLabels}</p>
+      </div>
+    `;
+  });
+  searchResultDiv.innerHTML = generatedHTML;
 }
