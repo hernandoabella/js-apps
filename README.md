@@ -16,7 +16,7 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 *  Intermedio:      ⭐⭐⭐
 *  Avanzado:      ⭐⭐⭐⭐⭐
 
-## Aplicaciones 🎉
+## Tabla de Aplicaciones 🎉
 
 |  #  |  Aplicación                 | Dificultad    |
 | --- | -------------               |------------   |
@@ -32,5 +32,58 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 | 10  | Fiesta de Halloween         |   ★★☆☆☆    | 
 | 11  | Adivina la Palabra          |   ★★★☆☆    | 
 | 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
-
-
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo       |   ★★☆☆☆    |
+| 102 | Estacionamiento Sencillo    |   ★★☆☆☆    |
