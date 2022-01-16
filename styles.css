@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
-
 :root{
     --color1: #241676;
     --color2: rgb(103, 181, 255);
@@ -56,7 +54,6 @@ ol li a{
     color: var(--color1);
     display: block;
     transition: .3s;
-    font-family: 'Bakbak One', cursive;
 }
 
 ol li a:hover{

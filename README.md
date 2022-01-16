@@ -6,7 +6,7 @@ Aprender [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) no e
 
 ## Comenzando 😎
 
-Las aplicaciones de la lista te permitirán practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con <b>JavaScript</b>.
+Las aplicaciones de la lista te ayudarán a practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con <b>JavaScript</b>.
 
 ## Niveles ⚔️
 
