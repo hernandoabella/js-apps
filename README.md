@@ -29,9 +29,9 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 | 7   | Significado de tu Nombre                |   ★★★☆☆    |
 | 8   | Reproductor de Música                   |   ★★★☆☆    | 
 | 9   | Deslizador de Imágenes                  |   ★★★☆☆    |
-| 10  | Fiesta de Halloween                     |   ★★☆☆☆    | 
+| 10  | Fiesta de Halloween                     |   ★★★☆☆    | 
 | 11  | Adivina la Palabra                      |   ★★★☆☆    | 
-| 12  | Contador de Año Nuevo                   |   ★★☆☆☆    |
+| 12  | Contador de Año Nuevo                   |   ★★★☆☆    |
 | 13  | Ordernar Pizzas                         |   ★★☆☆☆    |
 | 14  | Captura Al Emoji                        |   ★★☆☆☆    |
 | 15  | Calculadora                             |   ★★☆☆☆    |
