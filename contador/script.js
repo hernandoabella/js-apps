@@ -1,62 +1,75 @@
-//Variables
+// Variables
 
 const numero = document.getElementById('numero');
-const btn1 = document.getElementById('btn1');
-const btn2 = document.getElementById('btn2');
+const boton1 = document.getElementById('boton1');
+const boton2 = document.getElementById('boton2');
+
+/* ----------------------------------------------------------
+   1. Elimina las clases animacion y animacion2
+   2. Agrega la clase animación luego de 10 milisegundos de haber presionado el botón
+   3. Incremena la variable numero
+   4. Ejecuta la función testColor()
+   5. Imprime la consola
+   6. Devuelve el contenido de la variable numero
+------------------------------------------------------------- */
 
 const sumar = () => {
-
    removeAnimationClass();
-
    setTimeout(() =>{
-      numero.classList.add('animation');
+      numero.classList.add('animacion');
    }, 10);
-
    numero.innerText++;
-
    testColor();
-
    console.log(numero.innerHTML);
-   
    return numero.innerText;
-
 }
+
+/* ----------------------------------------------------------
+   1. Elimina las clases animacion y animacion2
+   2. Agrega la clase animacion2 luego de 10 milisegundos de haber presionado el botón
+   3. Decrementa la variable numero
+   4. Ejecuta la función testColor()
+   5. Imprime la consola
+   6. Devuelve el contenido de la variable numero
+------------------------------------------------------------- */
 
 const restar = () => {
-
    removeAnimationClass();
-
    setTimeout(() =>{
-      numero.classList.add('animation2');
+      numero.classList.add('animacion2');
    }, 10);
-
    numero.innerText--;
-
    testColor();
-
    console.log(numero.innerHTML);
-
    return numero.innerText;
 }
 
+// Elimina las clases animacion y animacion2
+
 const removeAnimationClass = () => {
-   numero.classList.remove('animation2', 'animation');
+   numero.classList.remove('animacion2', 'animacion');
 }
+
+/* ----------------------------------------------------------
+   Comprueba si el color del número es mayor o menor que 0
+   Si es menor el número se coloca de color verde
+   Si es menor el número se coloca de color rojo
+------------------------------------------------------------- */
 
 const testColor = () =>{
    if(numero.innerText === '0'){
       numero.style.color = '#999';
    }else if(numero.innerText < '0'){
-      numero.style.color = "red";
+      numero.style.color = "var(--color__2)";
    }else{
-      numero.style.color = "green";
+      numero.style.color = "var(--color__1)";
    }
 }
 
-// Activar contador automático: 
+// Activa el contador automático: 
 
-// Suma automáticamente
+// Sumar automáticamente
 // setInterval(sumar, 1000);
- 
-// Resta automáticamente
-// setInterval(restar, 1000); 
+
+// Restar automáticamente
+// setInterval(restar, 1000);
