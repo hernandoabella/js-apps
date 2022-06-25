@@ -1,5 +1,5 @@
 :root{
-    --color1: #241676;
+    --color1: #323330;
     --color2: rgb(103, 181, 255);
 }
 
@@ -10,6 +10,8 @@
 body{
     font-family: serif;
     font-size: 1em;
+    color: #323330;
+    background: #F0DB4F;
 }
 
 h1{
@@ -29,9 +31,12 @@ b{
     color: var(--color1);
 }
 
-.container{
+.hero{
     padding: 10px;
-    
+}
+
+.hero h1{
+    padding: 20px;
 }
 
 ol{
@@ -46,18 +51,23 @@ ol > div{
 }
 
 ol li{
-    color: var(--color1);
     padding: 5px;
 }
 
 ol li a{
-    color: var(--color1);
     display: block;
     transition: .3s;
 }
 
-ol li a:hover{
-    opacity: .5;
+.redes__sociales{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.redes__sociales i{
+    color: var(--color1);
+    margin: 5px;
+    
 }
 
 footer{
@@ -72,21 +82,14 @@ footer p{
     text-align: center;
 }
 
-.hero{
-    padding: 20px;
-}
 
-.redes__sociales i{
-    color: var(--color1);
-    font-size: 1.3em;
-    margin: 5px;
-   
-}
-
-.redes__sociales ol li a:hover{
-    opacity: .5;
-}
-
+/* Mobile view */
 @media only screen and (max-width: 768px){
-	
+	ol{
+        flex-direction: column;
+    }
+
+    ol > div{
+        width: 100%;
+    }
 }
