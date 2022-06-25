@@ -82,6 +82,212 @@ footer p{
     text-align: center;
 }
 
+:root {
+    --color-primary: #f1f1f1;
+    --color-primary-light: #152640;
+    --color-secondary: #eec413;
+  }
+  :root.theme--night {
+    --color-primary: #0a192f;
+    --color-primary-light: #152640;
+    --color-secondary: #e684af;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  body {
+    background: var(--color-primary);
+  }
+  
+  .theme-toggle {
+    height: 37px;
+    width: 37px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%, -50%);
+  }
+  .theme-toggle .sun {
+    background: var(--color-secondary);
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 4px solid var(--color-primary);
+  }
+  .theme-toggle .sun__ray {
+    width: 2px;
+    background: var(--color-secondary);
+    display: block;
+    height: 121%;
+    position: absolute;
+    z-index: -1;
+    transition: 0.4s all, height 0.3s ease-in-out;
+  }
+  .theme-toggle .sun__ray:nth-child(1) {
+    transform: rotate(calc(1 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(2) {
+    transform: rotate(calc(2 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(3) {
+    transform: rotate(calc(3 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(4) {
+    transform: rotate(calc(4 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(5) {
+    transform: rotate(calc(5 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(6) {
+    transform: rotate(calc(6 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(7) {
+    transform: rotate(calc(7 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(8) {
+    transform: rotate(calc(8 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(9) {
+    transform: rotate(calc(9 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(10) {
+    transform: rotate(calc(10 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(11) {
+    transform: rotate(calc(11 * calc(360deg / 12)));
+  }
+  .theme-toggle .sun__ray:nth-child(12) {
+    transform: rotate(calc(12 * calc(360deg / 12)));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(1) {
+    transform: rotate(calc(calc(1 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(2) {
+    transform: rotate(calc(calc(2 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(3) {
+    transform: rotate(calc(calc(3 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(4) {
+    transform: rotate(calc(calc(4 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(5) {
+    transform: rotate(calc(calc(5 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(6) {
+    transform: rotate(calc(calc(6 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(7) {
+    transform: rotate(calc(calc(7 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(8) {
+    transform: rotate(calc(calc(8 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(9) {
+    transform: rotate(calc(calc(9 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(10) {
+    transform: rotate(calc(calc(10 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(11) {
+    transform: rotate(calc(calc(11 * calc(360deg / 12)) - 20deg));
+  }
+  .theme-toggle:hover .sun__ray:nth-child(12) {
+    transform: rotate(calc(calc(12 * calc(360deg / 12)) - 20deg));
+  }
+  
+  .moon {
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    background: var(--color-primary);
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    transform: scale(0) translate(25%, -25%);
+    z-index: 9;
+    transition: 0.4s transform;
+    transform-origin: right;
+  }
+  
+  .theme--night .theme-toggle {
+    background-color: var(--color-primary);
+  }
+  .theme--night .theme-toggle:hover .moon {
+    transform: scale(1) translate(-3%, -18%);
+  }
+  .theme--night .moon {
+    transform: scale(1) translate(11%, -11%);
+  }
+  .theme--night .theme-toggle .sun__ray {
+    height: 0;
+    transition: 0.4s, transform 0.4s, height 0.2s 0.1s;
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(1) {
+    transform: rotate(calc(calc(1 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(2) {
+    transform: rotate(calc(calc(2 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(3) {
+    transform: rotate(calc(calc(3 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(4) {
+    transform: rotate(calc(calc(4 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(5) {
+    transform: rotate(calc(calc(5 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(6) {
+    transform: rotate(calc(calc(6 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(7) {
+    transform: rotate(calc(calc(7 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(8) {
+    transform: rotate(calc(calc(8 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(9) {
+    transform: rotate(calc(calc(9 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(10) {
+    transform: rotate(calc(calc(10 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(11) {
+    transform: rotate(calc(calc(11 * calc(360deg / 12)) - 45deg));
+  }
+  .theme--night .theme-toggle .sun__ray:nth-child(12) {
+    transform: rotate(calc(calc(12 * calc(360deg / 12)) - 45deg));
+  }
+
 
 /* Mobile view */
 @media only screen and (max-width: 768px){
