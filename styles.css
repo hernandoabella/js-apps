@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Lobster&display=swap');
+
 :root{
     --color-primary: #f1f1f1;
     --color-primary-light: #152640;
@@ -22,7 +24,7 @@ body{
 
 h1{
     color: var(--color-secondary);
-    font-family: 'Bakbak One', cursive;
+    font-family: 'Lobster', cursive;
     margin: 10px;
     text-align: center;
     line-height: 0;
@@ -31,6 +33,7 @@ h1{
 p{
     margin: 10px;
     text-align: center;
+    font-family: 'Dosis', sans-serif;
 }
 
 b{
@@ -48,8 +51,9 @@ b{
 ol{
     display: flex;
     flex-wrap: wrap;
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin: 10px;
+    font-family: 'Dosis', sans-serif;
 }
 
 ol > div{
@@ -63,6 +67,7 @@ ol li{
 ol li a{
     display: block;
     transition: .3s;
+    text-decoration: none;
 }
 
 .redes__sociales{
