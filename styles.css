@@ -1,13 +1,13 @@
 :root{
     --color-primary: #f1f1f1;
     --color-primary-light: #152640;
-    --color-secondary: #f0db4f;
+    --color-secondary: #848fe6;
 }
 
 :root.theme--night {
     --color-primary: #0a192f;
     --color-primary-light: #152640;
-    --color-secondary: #848fe6;
+    --color-secondary: #f0db4f;
 }
 
 *{
