@@ -78,7 +78,6 @@ ol li a{
 .redes__sociales i{
     color: var(--color1);
     margin: 5px;
-    
 }
 
 footer{
@@ -96,7 +95,7 @@ footer p{
 .theme-toggle {
     height: 37px;
     width: 37px;
-    position: fixed;
+    position: absolute;
     top: 50px;
     right: 50px;
     cursor: pointer;
