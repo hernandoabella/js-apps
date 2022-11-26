@@ -22,12 +22,17 @@ body{
     background: var(--color-primary);
 }
 
-h1{
+h1 {
     color: var(--color-secondary);
     font-family: 'Lobster', cursive;
     margin: 10px;
     text-align: center;
     line-height: 0;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    color: var(--color-secondary);
 }
 
 p{
@@ -68,6 +73,7 @@ ol li a{
     display: block;
     transition: .3s;
     text-decoration: none;
+    color: var(--color-primary-light);
 }
 
 .redes__sociales{
@@ -237,8 +243,12 @@ footer p{
     color: #fff;
 }
 
-.theme--night a,.theme--night h1{
+.theme--night h1{
     color: var(--color-secondary);
+}
+
+.theme--night a {
+    color: #f1f1f1;
 }
 
 .theme--night .theme-toggle {
