@@ -41,6 +41,10 @@ p{
     font-family: 'Dosis', sans-serif;
 }
 
+i {
+    color: var(--color-secondary);
+}
+
 b{
     color: var(--color1);
 }
