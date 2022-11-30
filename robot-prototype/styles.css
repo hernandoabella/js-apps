@@ -1,0 +1,177 @@
+
+/* background */
+
+body {
+    background: #7978FF;
+}
+
+.robot__container {
+    width: 200px;
+    height: 200px;
+    background: #A4C5FF;
+    border-radius: 25px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.antenna {
+    position: absolute;
+    top: -75px;
+    right: 70px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #86ABE1;
+}
+
+.inner__circle {
+    width: 30px;
+    height: 30px;
+    background: #C42726;
+    border-radius: 100%;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+
+.stick {
+    background: #6AA2DC;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    z-index: -1;
+}
+
+.eye__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.left__eye {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 3px solid #3175C5;
+}
+
+.inner__left__eye {
+    background: #255384;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+    border-radius: 100%;
+}
+
+.right__eye {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 3px solid #3175C5;
+}
+
+.inner__right__eye {
+    background: #255384;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+    border-radius: 100%;
+}
+
+.left__ear {
+    width: 20px;
+    height: 60px;
+    background: #C42726;
+    position: absolute;
+    left: -20px;
+    top: 70px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.right__ear {
+    width: 20px;
+    height: 60px;
+    background: #C42726;
+    position: absolute;
+    left: 200px;
+    top: 70px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.nose {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #3276C6;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    left: 75px;
+    bottom: 30px;
+}
+
+.mouth {
+    background: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    top: -10px;
+    left: 20px;
+    display: flex;
+    border: 3px solid #3175C5;
+}
+
+.teeth {
+    background: #C5CDDB;
+    height: 30px;
+    width: 10px;
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.funBtn {
+    padding: 10px;
+    text-transform: uppercase;
+    background: #3276C6;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* animations */
+
+@keyframes animation1 {
+    50%{
+        transform: translate(-50%, -100%);
+    }
+}
+
+@keyframes evilEye {
+    50%{
+        background: red;
+        transform: scale(1.3);
+    }
+}
+
