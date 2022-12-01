@@ -20,6 +20,7 @@
 body{
     font-size: 1.3em;
     font-family: 'Dosis', sans-serif;
+    background: #DEF5E5;
 }
 
 h1 {
@@ -65,13 +66,20 @@ ol li{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: #0E5E6F;
+    color: #fff;
+    border-radius: 25px;
+    margin: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
 }
 
 ol li a{
     display: block;
     transition: .3s;
     text-decoration: none;
-    color: blue;
+    color: #fff;
 }
 
 .btns {
@@ -83,7 +91,7 @@ ol li a{
 }
 
 .fa-star {
-    color: blue;
+    color: yellow;
 }
 
 .download {
@@ -95,7 +103,6 @@ ol li a{
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
     width: 50px;
@@ -116,7 +123,6 @@ ol li a{
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
     width: 50px;
@@ -137,7 +143,7 @@ ol li a{
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 20px #eee;
+    
     border-radius: 10px;
     display: block;
     width: 50px;
@@ -173,9 +179,6 @@ footer p{
 
 /* Mobile view */
 @media only screen and (max-width: 768px){
-    .container {
-        margin: 20px;
-    }
 
 	ol{
         flex-direction: column;
@@ -183,12 +186,11 @@ footer p{
 
     ol li {
         flex-direction: column;
+        text-align: center;
     }
 
-    
-
     ol > div{
-        width: 100%;
+        margin: 0;
     }
 
     
