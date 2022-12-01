@@ -18,9 +18,9 @@
 }
 
 body{
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: 'Dosis', sans-serif;
-    background: #DEF5E5;
+    background: #EFF5F5;
 }
 
 h1 {
@@ -36,6 +36,7 @@ h3 {
     text-align: center;
     padding: 20px;
     text-transform: capitalize;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 p{
@@ -66,7 +67,7 @@ ol li{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #0E5E6F;
+    background: #264653;
     color: #fff;
     border-radius: 25px;
     margin: 20px;
@@ -80,10 +81,17 @@ ol li a{
     transition: .3s;
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .btns {
     display: flex;
+}
+
+.title {
+    display: flex;
+    align-items: center;
 }
 
 .stars {
@@ -95,7 +103,7 @@ ol li a{
 }
 
 .download {
-    background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%);
+    background: #196069;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -106,16 +114,10 @@ ol li a{
     border-radius: 10px;
     display: block;
     width: 50px;
-}
-
-.download:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
 }
 
 .github-btn {
-    background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+    background: #333333;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -126,16 +128,10 @@ ol li a{
     border-radius: 10px;
     display: block;
     width: 50px;
-}
-
-.github-btn:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
 }
 
 .youtube-btn {
-    background-image: linear-gradient(to right, #F00000 0%, #DC281E  51%, #F00000  100%);
+    background: #FF0000;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -143,16 +139,9 @@ ol li a{
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    
     border-radius: 10px;
     display: block;
     width: 50px;
-}
-
-.youtube-btn:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
 }
 
 .redes__sociales{
@@ -180,6 +169,10 @@ footer p{
 /* Mobile view */
 @media only screen and (max-width: 768px){
 
+    body {
+        font-size: 1.3em;
+    }
+
 	ol{
         flex-direction: column;
     }
@@ -189,9 +182,22 @@ footer p{
         text-align: center;
     }
 
+    ol li a {
+        margin: 20px;
+    }
+
     ol > div{
         margin: 0;
     }
 
-    
+    .title {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
 }
