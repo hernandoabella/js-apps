@@ -14,6 +14,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -31,6 +32,9 @@ h1 {
 
 h3 {
     font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
 }
 
 p{
@@ -47,46 +51,102 @@ p{
 }
 
 ol{
-    text-transform:capitalize;
+    text-transform: uppercase;
     font-family: 'Dosis', sans-serif;
-    
 }
 
 ol div {
-    border: 1px solid red;
-    width: 33.33%;
+    margin: auto 20px;
+    transition: .3s;
 }
 
 ol li{
-    
     padding: 10px 0px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 ol li a{
     display: block;
     transition: .3s;
     text-decoration: none;
+    color: blue;
 }
 
-ol li a:hover {
-    text-decoration: underline;
+.btns {
+    display: flex;
+}
+
+.stars {
+    margin: 20px;
+}
+
+.fa-star {
+    color: blue;
 }
 
 .download {
-    background: blue;
-    color: #fff;
+    background-image: linear-gradient(to right, #6441A5 0%, #2a0845  51%, #6441A5  100%);
+    margin: 10px;
     padding: 10px;
-    border-radius: 10px;
     text-align: center;
-    border: 1px solid blue;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 50px;
 }
 
 .download:hover {
-    background: #fff;
-    color: blue;
-    border: 1px solid blue;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.github-btn {
+    background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 50px;
+}
+
+.github-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.youtube-btn {
+    background-image: linear-gradient(to right, #F00000 0%, #DC281E  51%, #F00000  100%);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 50px;
+}
+
+.youtube-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
 
 .redes__sociales{
@@ -113,11 +173,23 @@ footer p{
 
 /* Mobile view */
 @media only screen and (max-width: 768px){
+    .container {
+        margin: 20px;
+    }
+
 	ol{
         flex-direction: column;
     }
 
+    ol li {
+        flex-direction: column;
+    }
+
+    
+
     ol > div{
         width: 100%;
     }
+
+    
 }
