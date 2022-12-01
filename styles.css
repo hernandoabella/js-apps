@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Lobster&display=swap');
 
+:root {
+    --primary-color: red;
+    --secondary-color: blue;
+}
+
+:root.dark-mode {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -36,7 +46,6 @@ p{
 
 ol{
     display: flex;
-    flex-wrap: wrap;
     text-transform: uppercase;
     font-family: 'Dosis', sans-serif;
 }
@@ -46,9 +55,10 @@ ol > div{
 }
 
 ol li{
-    padding: 10px;
+    padding: 10px 0px;
     background: var(--color-secondary);
     list-style-type: none;
+    display: flex;
 }
 
 ol li a{
@@ -56,6 +66,18 @@ ol li a{
     transition: .3s;
     text-decoration: none;
     color: var(--color-primary);
+}
+
+ol li a:hover {
+    text-decoration: underline;
+}
+
+.download {
+    background: blue;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .redes__sociales{
