@@ -26,6 +26,21 @@ body{
 
 /* nav */
 
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    margin-right: 20px;
+    list-style: none;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #232323;
@@ -129,6 +144,8 @@ p{
     color: #edf2f4;
 }
 
+/* hero section */
+
 .hero{
     padding: 10px;
     background: #2b2d42;
@@ -140,6 +157,8 @@ p{
 .hero h1{
     padding: 20px;
 }
+
+/* hero section */
 
 ol{
     background: #edf2f4;

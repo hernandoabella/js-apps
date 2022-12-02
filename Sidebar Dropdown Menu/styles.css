@@ -1,0 +1,207 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #252a32;
+    background: #f1f5f8;
+    overflow: hidden;
+  }
+  img {
+    display: block;
+    width: 60%;
+    height: 50%;
+    margin: 1rem 20rem;
+  }
+  a, button {
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+  }
+  
+  .open-menu, .close-menu {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #252a32;
+    background: none;
+  }
+  .close-menu {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    border: none;
+    outline: none;
+    color: #252a32;
+    background: none;
+  }
+  .brand {
+    font-family: inherit;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #d32f2f;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.5rem;
+    color: #252a32;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  }
+  .header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .navbar .menu-wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: background 0.5s;
+  }
+  .header .navbar .menu-wrapper.offcanvas .menu {
+    transform: translate3d(0, 0, 0);
+    transition-duration: 0.7s;
+    transition-delay: 0.2s;
+  }
+  .header .navbar .menu-wrapper.offcanvas::before {
+    background: rgba(37, 42, 50, 0.6);
+    z-index: 1;
+  }
+  .header .navbar .menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 20rem;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    z-index: 2;
+    overflow-y: auto;
+    color: #252a32;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .header .navbar .menu-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .header .navbar .menu-link {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: inherit;
+    text-transform: uppercase;
+    transition: color 0.35s ease-out;
+  }
+  .header .navbar .menu-link:hover {
+    color: #d32f2f;
+  }
+  .header .navbar .menu-item {
+    position: relative;
+  }
+  .header .navbar .menu-item a {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: inherit;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    display: block;
+    color: #252a32;
+    transition: color 0.35s ease-out;
+  }
+  .header .navbar .menu-item a:hover {
+    color: #d32f2f;
+  }
+  .header .navbar .menu-item.has-collapsible {
+    position: relative;
+  }
+  .header .navbar .menu-item.has-collapsible .menu-child {
+    display: none;
+  }
+  .header .navbar .menu-item.has-collapsible .menu-child .menu-child-item a {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: inherit;
+    padding: 0.25rem;
+    color: #252a32;
+    padding-left: 2.5rem;
+    text-transform: uppercase;
+    transition: color 0.35s ease-out;
+  }
+  .header .navbar .menu-item.has-collapsible .menu-child .menu-child-item a:hover {
+    color: #d32f2f;
+  }
+  .header .navbar .menu-item.has-collapsible span::after {
+    font-family: "Material Icons";
+    content: "\2B9A";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: inherit;
+    position: absolute;
+    top: 0.15rem;
+    right: 1rem;
+    color: #252a32;
+    transition: all 0.35s ease;
+  }
+  .header .navbar .menu-item.has-collapsible span::after:hover {
+    color: #d32f2f;
+  }
+  .header .navbar .menu-item.active.has-collapsible .menu-child {
+    display: block;
+    transition: all 0.35s ease;
+  }
+  .header .navbar .menu-item.active.has-collapsible span::after {
+    transform: rotate(90deg);
+  }
+  
+  @media screen and (max-width:900px){
+    img{
+      width: 90%;
+      height: 500px;
+      margin: 10px 30px;
+      background-color: #d32f2f;
+    }
+  }
+  @media screen and (max-width:500px){
+    img{
+      width: 70%;
+      height: 300px;
+      margin: 10px 30px;
+      background-color: #d32f2f;
+    }
+  }
