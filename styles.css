@@ -3,6 +3,8 @@
 :root {
     --primary-color: red;
     --secondary-color: blue;
+    --black: #232323;
+    --white: #eaeeea;
 }
 
 :root.dark-mode {
@@ -26,7 +28,7 @@ body{
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #232323;
 }
 
 .topnav a {
@@ -130,6 +132,9 @@ p{
 .hero{
     padding: 10px;
     background: #2b2d42;
+    background: url('https://source.unsplash.com/random/1000x10000');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero h1{
