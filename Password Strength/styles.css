@@ -1,0 +1,82 @@
+body {
+    background: #cccccc;
+    text-align: center;
+    color: #000;
+    font-family: serif;
+  }
+  
+  h1 {
+    text-shadow: 0 3px 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  h1:hover {
+    color: green;
+  }
+  
+  form {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 50px;
+  }
+  #container {
+    height: 100px;
+  }
+  input {
+    height: 20px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: #cccccc;
+  }
+  input:focus {
+    outline: none;
+    box-shadow: 1px 2px 5px 3px;
+  }
+  
+  input::placeholder {
+    padding: 5px;
+    text-align: center;
+    color: #cccccc;
+  }
+  
+  div {
+    margin-top: 10px;
+  }
+  div.progress {
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    width: 240px;
+    height: 5px;
+    display: inline-block;
+    text-align: left;
+    padding: 2px;
+    display: none;
+  }
+  div div.progressBar {
+    width: 50px;
+    height: 100%;
+    margin-top: 0;
+    transition-timing-function: ease-out;
+    transition: 3s;
+  }
+  span#percent {
+    color: transparent;
+  }
+  button {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+    margin-top: 3%;
+    outline: none;
+    cursor: pointer;
+  }
+  button:hover {
+    outline: none;
+    box-shadow: 1px 1px 0px 3px;
+    background-color: grey;
+  }

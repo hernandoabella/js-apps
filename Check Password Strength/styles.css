@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    transition: all 0.1s;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #222;
+    background: #fafafa;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+form {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0.3rem 2rem -0.5rem rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+}
+
+form>div:not( :last-child) {
+    margin-bottom: 3rem;
+}
+
+form label {
+    display: block;
+    color: #4b7bec;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    font-size: 1.3rem;
+}
+
+form input[type="password"] {
+    padding: 1.5rem 0;
+    border-bottom: 0.1rem solid #999;
+    margin-bottom: 1.5rem;
+}
+
+form input[type="password"]:hover {
+    border-bottom-color: #444;
+}
+
+form input[type="password"]:focus {
+    border-bottom-color: #4b7bec;
+}
+
+form input[type="submit"] {
+    max-width: 15rem;
+    border-radius: 2rem;
+    color: #fff;
+    background: #4b7bec;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+    background: #3867d6;
+}
+
+.password-meter {
+    width: 100%;
+}
+
+.password-meter__bar {
+    width: 33.333%;
+    height: 1rem;
+    background: #eee;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.password-meter__bar__inner {
+    width: 0;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left 0;
+}
+
+.password-meter__label {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.password-meter__label span {
+    font-weight: bold;
+}

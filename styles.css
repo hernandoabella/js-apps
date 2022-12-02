@@ -18,34 +18,39 @@
 }
 
 body{
-    font-size: 1.5em;
     font-family: 'Dosis', sans-serif;
-    background: #EFF5F5;
+    background: #edf2f4;
 }
 
 h1 {
     font-family: 'Lobster', cursive;
+    font-size: 2.5em;
     margin: 10px;
     text-align: center;
     line-height: 0;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    color: #edf2f4;
 }
 
 h3 {
     font-family: 'Lobster', cursive;
+    font-size: 2em;
     text-align: center;
     padding: 20px;
     text-transform: capitalize;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    color: #2b2d42;
 }
 
 p{
     margin: 20px;
     text-align: center;
+    color: #edf2f4;
 }
 
 .hero{
     padding: 10px;
+    background: #2b2d42;
 }
 
 .hero h1{
@@ -53,8 +58,10 @@ p{
 }
 
 ol{
+    background: #edf2f4;
     text-transform: uppercase;
     font-family: 'Dosis', sans-serif;
+    border-radius: 25px;
 }
 
 ol div {
@@ -67,7 +74,7 @@ ol li{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #264653;
+    background: #2b2d42;
     color: #fff;
     border-radius: 25px;
     margin: 20px;
@@ -80,7 +87,7 @@ ol li a{
     display: block;
     transition: .3s;
     text-decoration: none;
-    color: #fff;
+    color: #edf2f4;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -99,35 +106,47 @@ ol li a{
 }
 
 .fa-star {
-    color: yellow;
+    color: #8d99ae;
 }
 
 .download {
-    background: #196069;
+    background: #edf2f4;
     margin: 10px;
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: 0.3s;
     background-size: 200% auto;
-    color: white;            
+    color: #333;            
     border-radius: 10px;
     display: block;
     width: 50px;
+    border: 3px dashed #edf2f4;
+}
+
+.download:hover {
+    background: #333;
+    color: #edf2f4;
 }
 
 .github-btn {
-    background: #333333;
+    background: #edf2f4;
     margin: 10px;
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: 0.3s;
     background-size: 200% auto;
-    color: white;            
+    color: #333;            
     border-radius: 10px;
     display: block;
     width: 50px;
+    border: 3px dashed #edf2f4;
+}
+
+.github-btn:hover {
+    background: #333;
+    color: #edf2f4;
 }
 
 .youtube-btn {
@@ -136,7 +155,7 @@ ol li a{
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: 0.3s;
     background-size: 200% auto;
     color: white;            
     border-radius: 10px;
@@ -150,7 +169,7 @@ ol li a{
 }
 
 .redes__sociales i{
-    color: var(--color1);
+    color: #2b2d42;
     margin: 5px;
 }
 
@@ -169,10 +188,6 @@ footer p{
 /* Mobile view */
 @media only screen and (max-width: 768px){
 
-    body {
-        font-size: 1.3em;
-    }
-
 	ol{
         flex-direction: column;
     }
@@ -183,7 +198,7 @@ footer p{
     }
 
     ol li a {
-        margin: 20px;
+        margin: 10px;
     }
 
     ol > div{
@@ -194,10 +209,4 @@ footer p{
         flex-direction: column;
     }
 
-}
-
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 1em;
-    }
 }

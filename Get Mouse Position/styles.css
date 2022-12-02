@@ -1,0 +1,20 @@
+html{
+    overflow-y: hidden;
+    }
+    .container {
+    width: 80vw;
+    height: 80vh;
+    background: rgba(20,20,20,0.5);
+    margin:5% auto;
+    border-radius: 20px;
+    border: 10px solid black;
+    }
+    .mainText{
+    pointer-events: none;
+    font-family: 'Roboto Condensed';
+    sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 280%;
+    margin: 25vh 18vw;
+    }
