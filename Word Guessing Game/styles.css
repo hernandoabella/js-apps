@@ -1,0 +1,21 @@
+* {
+
+}
+
+body {
+  background-image: url("http://dailyroabox.com/wp-content/uploads/2016/11/Lined-Paper-Template-Google-Docs.jpg");
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  text-align: center;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}

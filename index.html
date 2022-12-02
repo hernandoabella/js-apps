@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS-APPS</title>
-    <!-- <link rel="icon" type="image/png" href="/images/favicon.ico"> -->
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">JS-APPS 📱</a>
+            <a href="#contact">Contáctanos</a>
+            <a href="#about">¿Qué es JS-APPS?</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+    </header>
+
     <div class="hero">
         <h1><span class="coolStyle">JS-APPS 📱</span></h1>
         <p>Colección de aplicaciones de JavaScript.</p>
+        <div class="input-container">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar app...">
+        </div>
     </div>
     
     <div class="container">
-        <ol>
+        <ol id="myUL">
             <div>
                 <h3>Adivina 🔮</h3>
                     <li>
                         <div class="title">
+                            <img src="./images/guess-the-word.png" width="50px" />
                             <a href="./adivina-la-palabra/">adivina la palabra</a>
                             <span class="stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star y-star"></i>
+                                <i class="fa fa-star y-star"></i>
+                                <i class="fa fa-star y-star"></i>
+                                <i class="fa fa-star y-star"></i>
+                                <i class="fa fa-star y-star"></i>
                             </span>
                         </div>
                         
@@ -39,13 +55,14 @@
                     </li>
                     <li>
                         <div class="title">
+                            <img src="./images/guess-the-number.png" width="50px" />
                             <a href="./adivina-el-numero/">adivina el número</a>
                             <span class="stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star y-star"></i>
+                                <i class="fa fa-star y-star"></i>
+                                <i class="fa fa-star y-star"></i>
+                                <i class="fa fa-star y-star"></i>
+                                <i class="fa fa-star y-star"></i>
                             </span>
                         </div>
                         

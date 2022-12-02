@@ -1,0 +1,28 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+.container {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    min-height: 100vh;  
+    background: #efefef;  
+    font-family: 'Lato', sans-serif;  
+}  
+.container .date {  
+    font-size: 24px;  
+    font-weight: 500;  
+    font-family: 'Lato', sans-serif;  
+}  
+.container .date#printDate {  
+    color: #e74c3c;  
+}  
+.container .date#printDay {  
+    margin: 0 20px;  
+    color: #2ecc71;  
+}  
+.container .date#printTime {  
+    color: #9b59b6;  
+}  

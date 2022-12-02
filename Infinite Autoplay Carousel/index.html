@@ -1,0 +1,48 @@
+<h2>CSS Autoplay Carousel</h2>
+<div id="sliderSettings">
+    <label for="slider-width">Slider width in px:</label>
+    <input
+        type="text"
+        id="slider-width"
+        name="slider-width"
+        minlength="2"
+        maxlength="4"
+        size="6"
+        placeholder="300"
+    />
+    <label for="slider-height">Slider height in px:</label>
+    <input
+        type="text"
+        id="slider-height"
+        name="slider-height"
+        minlength="2"
+        maxlength="4"
+        size="6"
+        placeholder="300"
+    />
+</div>
+<div id="pSlider">
+    <ol id="slider-container" dir="ltr">
+        <li id="slide_1" class="li_slide">
+            <div class="slide-snapper"></div>
+            <a class="prev_slide" href="#slide_4"></a>
+            <a class="next_slide" href="#slide_2"></a>
+        </li>
+        <li id="slide_2" class="li_slide">
+            <div class="slide-snapper"></div>
+            <a class="prev_slide" href="#slide_1"></a>
+            <a class="next_slide" href="#slide_3"></a>
+        </li>
+        <li id="slide_3" class="li_slide">
+            It have 4
+            <div class="slide-snapper"></div>
+            <a class="prev_slide" href="#slide_2"></a>
+            <a class="next_slide" href="#slide_4"></a>
+        </li>
+        <li id="slide_4" class="li_slide">
+            <div class="slide-snapper"></div>
+            <a class="prev_slide" href="#slide_3"></a>
+            <a class="next_slide" href="#slide_1"></a>
+        </li>
+    </ol>
+</div>
