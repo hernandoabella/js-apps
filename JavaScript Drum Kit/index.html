@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Drum Kit</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <h1>Sound Pad in Javascript</h1>
+  <div class="keys">
+    <div data-key="65" class="key"><kbd>A</kbd><span class="sound">Clap</span></div>
+    <div data-key="83" class="key"><kbd>S</kbd><span class="sound">Hi Hat</span></div>
+    <div data-key="68" class="key"><kbd>D</kbd><span class="sound">Kick</span></div>
+    <div data-key="70" class="key"><kbd>F</kbd><span class="sound">Open Hat</span></div>
+    <div data-key="71" class="key"><kbd>G</kbd><span class="sound">Boom</span></div>
+    <div data-key="72" class="key"><kbd>H</kbd><span class="sound">Ride</span></div>
+    <div data-key="74" class="key"><kbd>J</kbd><span class="sound">Snare</span></div>
+    <div data-key="75" class="key"><kbd>K</kbd><span class="sound">Tom</span></div>
+    <div data-key="76" class="key"><kbd>L</kbd><span class="sound">Tink</span></div>
+  </div>
+
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/clap.wav" data-key="83"></audio>
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/hihat.wav" data-key="68"></audio>
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/kick.wav" data-key="70"></audio>
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/openhat.wav" data-key="65"></audio>
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/boom.wav" data-key="71"></audio>
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/ride.wav" data-key="72"></audio>
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/snare.wav" data-key="74"></audio>
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/tom.wav" data-key="75"></audio>
+  <audio src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/67723/tink.wav" data-key="76"></audio>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
