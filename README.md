@@ -16,7 +16,7 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 *  Intermedio:      ⭐⭐⭐
 *  Avanzado:      ⭐⭐⭐⭐⭐
 
-## Tabla de Aplicaciones 🎉
+## Lista de aplicaciones 🎉
 
 | #   | Aplicación                              | Dificultad    |
 |-----|-----------------------------------------|---------------|
@@ -124,3 +124,14 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 | 102 | Estacionamiento Sencillo                |   ★★☆☆☆    |
 
 ## ¿Cómo contribuir? ✨
+
+- crear un nuevo proyecto
+- agregando caracteristicas a un proyecto 
+- resolviendo un bug / error
+- mejorando la documentación
+- actualizando issues
+
+
+## Cómprame un café ☕
+
+<a href="https://www.buymeacoffee.com/hernandoabella" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
