@@ -122,3 +122,5 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 | 100 | Calculadora simple                      |   ★★☆☆☆    |
 | 101 | Juego de asteroides                     |   ★★☆☆☆    |
 | 102 | Estacionamiento Sencillo                |   ★★☆☆☆    |
+
+## ¿Cómo contribuir? ✨
