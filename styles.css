@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #232323;
+    
 }
 
 header ul {
@@ -40,14 +40,6 @@ header ul {
 header ul li {
     margin-right: 20px;
     list-style: none;
-}
-
-header ul li a {
-    color: #edf2f4;
-}
-
-.logo {
-    color: #edf2f4;
 }
 
 /* header */
@@ -134,11 +126,13 @@ ol li{
     justify-content: space-around;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
-    border-radius: 25px;
-    margin: 20px;
+    border-radius: 50px;
+    margin: 25px auto;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+    width: 900px;
+    transition: .3s;
 }
 
 ol li a{
@@ -157,6 +151,8 @@ ol li a{
 .title {
     display: flex;
     align-items: center;
+    justify-content: left;
+    width: 600px;
 }
 
 .title img {
@@ -254,6 +250,12 @@ footer p{
 }
 
 /* Mobile view */
+@media only screen and (max-width: 950px) {
+    ol li {
+        width: 700px;
+    }
+}
+
 @media only screen and (max-width: 768px){
 
     .input-container {
@@ -267,6 +269,7 @@ footer p{
     ol li {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     ol li a {
@@ -274,11 +277,13 @@ footer p{
     }
 
     ol > div{
-        margin: 0;
+        margin: 20px;
     }
 
     .title {
         flex-direction: column;
+        width: 100%;
     }
 
 }
+
