@@ -1,0 +1,403 @@
+/*
+            Loading css animation by tobias ahlin. http://tobiasahlin.com/spinkit/
+            Weather icons by erik flowers. https://erikflowers.github.io/weather-icons/
+            */
+            body {
+                background: #e0e0e0;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            a:hover, a:focus {
+                color: inherit;
+                text-decoration: none;
+                opacity: 0.7;
+            }
+            #pMe,#pBy {
+                display: inline-block;
+                margin-left: 5px;
+                margin-top: 20px;
+            }
+            
+            #pMe a {
+                z-index: -1;
+                color: #666666;
+                font-weight: bold;
+                transition: opacity 0.3s ease-in;
+            }
+            #pMe a:hover {
+                opacity: 0.7;
+                text-decoration: none;
+            }
+            #pMe a:visited {
+                color: #666666;
+            }
+            
+            @keyframes pMe {
+                from { 
+                    -webkit-transform: translate(-50px,0px); opacity: 0;
+                    transform: translate(-50px,0px); opacity: 0;
+                }
+                to { 
+                    -webkit-transform: translate(0px,0px); opacity: 1;
+                    transform: translate(0px,0px); opacity: 1;
+                }
+            }
+
+            @keyframes pBy {
+                from { 
+                    -webkit-transform: translate(0px,-50px); opacity: 0;
+                    transform: translate(0px,-50px); opacity: 0;
+                }
+                to { 
+                    -webkit-transform: translate(0px,0px); opacity: 1;
+                    transform: translate(0px,0px); opacity: 1;
+                }
+            }
+
+            .bg-primary {
+                background-color: #039be5;
+            }
+            .bg-white {
+                background-color: #FFFFFF;
+            }
+            .text-white {
+                color: #FFFFFF;
+            }
+            .text-light {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            .text-accent {
+                color: #b2ff59;
+            }
+            .text-capitalize {
+                text-transform: capitalize;
+            }
+            .text-shadow {
+                text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+            }
+            .hr-title {
+                border-width: 2px;
+                max-width: 30%;
+                margin: 15px auto;
+            }
+            .hr-title-primary {
+                border-color: #039be5;
+            }
+
+            /* weather top section */
+            .w-section {
+                padding: 30px 0 90px 0;
+            }
+            .w-header, .w-main {
+                margin-bottom: 20px;
+            }
+            .w-header .glyphicon-map-marker {
+                margin-top: 5px;
+            }
+            .w-header input {
+                float: left;
+                min-width: 85%;
+                max-width: 90%;
+            }
+
+            /* Tooltip text */
+            .tooltiptext {
+                visibility: hidden;
+                width: 100%;
+                background-color: #555;
+                text-align: center;
+                padding: 5px 0;
+                border-radius: 6px;
+
+                /* Position the tooltip text */
+
+                position: absolute;
+                z-index: 1;
+                top: 90%;
+
+                /* Fade in tooltip */
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+
+            /* Tooltip arrow */
+            .tooltiptext::after {
+                position: absolute;
+                top: -12px;
+                left: 20px;
+                content: ' ';
+                border: 6px solid transparent;
+                border-bottom-color: #555;
+            }
+            #location {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 0;
+                outline: none;
+                width: 100%;
+                margin: 0 0 15px 0;
+                padding: 0;
+                box-shadow: none;
+                box-sizing: content-box;
+                transition: all 0.3s;
+                line-height: 30px;
+            }
+            #date {
+                line-height: 30px;
+            }
+            .wi-main {
+                font-size: 5.5em;
+                position: relative;
+                vertical-align: top;
+                top: 15px;
+                margin-bottom: 30px;
+                margin-right: 20px;
+            }
+            #temperature {
+                font-size: 4em;
+                line-height: 1.7em;
+                vertical-align: top;
+            }
+            .unit-block, .min-max-block {
+                display: inline-block;
+            }
+            .unit-block {
+                margin-left: -9px;
+                vertical-align: top;
+            }
+            .min-max-block {
+                margin-top: 30px;
+                margin-left: 10px;
+            }
+            .min-max-block p {
+                margin: 0;
+            }
+            .w-desc-box {
+                margin-top: 30px;
+            }
+            /* end weather top section */
+
+
+            /* weather card section */
+            .card-section {
+                margin-top: -80px;
+            }
+            .thumbnail {
+                padding: 0;
+                border: none;
+                border-radius: 3px;
+                background-color: #FFF;
+                -webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.75);
+                box-shadow: 0 0 10px 0 rgba(0,0,0,0.30);
+            }
+            .card-header {
+                background-color: #DDD;
+                position: relative;
+            }
+            .card-header > img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+            .card-title {
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 20px;
+            }
+            .card-image {
+                max-height: 60%;
+                overflow: hidden;
+                position: relative;
+            }
+            .thumbnail .caption {
+                padding: 20px;
+            }
+            .card-content p {
+                margin: 0;
+            }
+
+            .days-box {
+                padding: 30px 0;
+                -webkit-box-shadow: 0 3px 15px rgba(0,0,0,0.7);
+                /*box-shadow: 0 0 10px rgba(0,0,0,0.4);*/
+                box-shadow: 0 6px 5px -5px rgba(0,0,0,.5), 0 7px 0 -2px rgb(255, 255, 255), 0 11px 5px -5px rgba(0,0,0,.5), 0 13px 0 -4px rgba(255, 255, 255, 0.7), 0 16px 5px -5px rgba(0, 0, 0, 0.5), 0 20px 0 -8px rgba(255, 255, 255, 0.5);
+            }
+            .days-box .wi {
+                font-size: 2.5em;
+            }
+            .days-box > div {
+                border-left: 1px solid #ddd;
+            }
+            .days-box .day-first {
+                border: none;
+            }
+            .d-min-temp {
+                color: #039be5;
+            }
+            .d-max-temp {
+                color: #ef5350;
+            }
+            /* end weather card section */
+      /* https://codepen.io/sinapsis7 */
+            /* weather icon animation */
+            @keyframes wi-scale {
+                0%,100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(0.8);
+                }
+            }
+            @keyframes wi-rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(45deg);
+                }
+            }
+            @keyframes wi-moveX {
+                0%,100% {
+                    transform: translate(0,0);
+                }
+                50% {
+                    transform: translate(-20px,0);
+                }
+            }
+            @keyframes wi-moveY {
+                0%,100% {
+                    transform: translate(0,0);
+                }
+                50% {
+                    transform: translate(0,20px);
+                }
+            }
+            @keyframes wi-fade {
+                0%,100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+            }
+            /* end weather icon animation */
+            
+            /* main animation */
+            @keyframes scale {
+                from { transform: scale(0,0) translate(0px,-550px); }
+                to { transform: scale(1,1) translate(0px,0px); }
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            
+            /*loading animation*/
+            .loading {
+                width: 100%;
+                height: 100%;
+                background-color: #039be5;
+                display: none;
+                position: absolute;
+                z-index: 1;
+            }
+            .spinner {
+                top: 40%;
+                margin: 100px auto;
+                width: 40px;
+                height: 40px;
+                position: relative;
+                text-align: center;
+                
+                -webkit-animation: sk-rotate 2.0s infinite linear;
+                animation: sk-rotate 2.0s infinite linear;
+            }
+
+            .dot1, .dot2 {
+                width: 60%;
+                height: 60%;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                background-color: #333;
+                border-radius: 100%;
+                
+                -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+                animation: sk-bounce 2.0s infinite ease-in-out;
+            }
+
+            .dot2 {
+                top: auto;
+                bottom: 0;
+                -webkit-animation-delay: -1.0s;
+                animation-delay: -1.0s;
+            }
+
+            @-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+            @keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+            @-webkit-keyframes sk-bounce {
+                0%, 100% { -webkit-transform: scale(0.0) }
+                50% { -webkit-transform: scale(1.0) }
+            }
+
+            @keyframes sk-bounce {
+                0%, 100% { 
+                    transform: scale(0.0);
+                    -webkit-transform: scale(0.0);
+                } 50% { 
+                    transform: scale(1.0);
+                    -webkit-transform: scale(1.0);
+                }
+            }
+
+            /* Switch button */
+            .onoffswitch {
+                position: relative; width: 80px;
+                -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+            }
+            .onoffswitch-checkbox {
+                display: none;
+            }
+            .onoffswitch-label {
+                display: block; overflow: hidden; cursor: pointer;
+                border: 2px solid #CCC; border-radius: 20px;
+            }
+            .onoffswitch-inner {
+                display: block; width: 200%; margin-left: -100%;
+                transition: margin 0.3s ease-in 0s;
+            }
+            .onoffswitch-inner:before, .onoffswitch-inner:after {
+                display: block; float: left; width: 50%; height: 28px; padding: 0; line-height: 28px;
+                font-size: 21px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+                box-sizing: border-box;
+            }
+            .onoffswitch-inner:before {
+                content: "°C";
+                padding-left: 10px;
+                background-color: #333; color: #B2FF59;
+            }
+            .onoffswitch-inner:after {
+                content: "°F";
+                padding-right: 10px;
+                background-color: #333; color: #B2FF59;
+                text-align: right;
+            }
+            .onoffswitch-switch {
+                display: block; width: 32px; margin: 0px;
+                background: #EEE;
+                position: absolute; top: 0; bottom: 0;
+                right: 48px;
+                border: 2px solid #CCC; border-radius: 20px;
+                transition: all 0.3s ease-in 0s; 
+            }
+            .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+                margin-left: 0;
+            }
+            .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+                right: 0px; 
+            }

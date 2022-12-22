@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Acchiappa la talpa - Fomodei94</title>
+    <!-- <author>Federico Omodei</author> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" media="only screen and (min-width:800px)"/>
+    <link rel="stylesheet" href="mobile.css" type="text/css"/>
+</head>
+
+<body>
+    <h1>Whack a mole!</h1>
+
+        <div id="scoreBox">
+            <h2>Your score: <span id="score">0</span></h2>
+        </div>
+        
+        <div id="timeBox">
+            <h2>Seconds left: <span id="time-left">30</span></h2>
+        </div>
+        
+        <label for="time">Set timer to:</label>
+
+        <select id="time">
+            <option value="15">15 sec</option>
+            <option value="30" selected>30 sec</option>
+            <option value="45">45 sec</option>
+            <option value="60">60 sec</option>
+        </select>
+        <br/>
+        <label for="difficulty">Select difficulty:</label>
+
+        <select id="difficulty">
+            <option value="1000" style="color: green;">Easy</option>
+            <option value="750" selected>Normal</option>
+            <option value="520" style="color: orange;">Hard</option>
+            <option value="400" style="color: red;">Brutal</option>
+        </select>
+        <br/>
+        <button id="start_btn" onclick="startGame()">Play!</button>
+
+        <div class="grid">
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+            <div class="square" id="9"></div>
+        </div>
+
+        <script src="Whackamole.js"></script>
+</body>
+
+
+
+</html>

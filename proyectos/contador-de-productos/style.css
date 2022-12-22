@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+.contador h1{
+	text-align: center;
+}
+
+.contador-interno{
+	width: 400px;
+	margin: 0 auto;
+	padding: 30px;
+	background-color:rgb(226, 223, 17);
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+
+.producto-total{
+	display:flex;
+	align-items: center;
+}
+
+.contador-interno img{
+	width: 150px;
+	margin-right: 30px;
+}
+
+.contador-interno h5{
+	font-size: 1em;
+}
+
+.contador-interno input{
+	box-shadow: 5px 5px 10px grey;
+	border: 3px solid transparent;
+	outline: none;
+	text-align: center;
+	font-size:20px;
+}
+
+.contador-interno input:hover{
+	box-shadow: 5px 5px 10px grey;
+	border: 3px solid #fff;
+	outline: none;
+}
+
+.contador-interno input::placeholder{
+	color: #000;
+}
+
+.contador-interno .btn{
+	width: 100px;
+	height: 50px;
+	background: #000;
+	color: #fff;
+	border: 3px solid #fff;
+	outline:none;
+	box-shadow: 5px 5px 10px grey;
+	font-size:20px;
+	text-align: center;
+}
+
+.contador-interno .btn-buy{
+	width: 100%;
+}
+
+.contador-interno .btn:hover{
+	background-color: #ff9d01;
+	color: #fff;
+}
+
+button{
+	cursor: pointer;
+	transition: .3s;
+}
+
+.flexStuff{
+	display: flex;
+	margin-bottom: 20px;
+}

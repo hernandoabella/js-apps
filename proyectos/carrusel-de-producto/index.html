@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Carousel</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="side">
+            <div class="items active">
+                <img src="./images/series-3-apple-watch-series-1.png" alt="apple watch">
+            </div>
+            <div class="items">
+                <img src="./images/series-3-apple-watch-series-2.png" alt="apple watch">
+            </div>
+            <div class="items">
+                <img src="./images/series-3-apple-watch-series-3.png" alt="apple watch">
+            </div>
+            <div class="items">
+                <img src="./images/series-3-apple-watch-series-4.png" alt="apple watch">
+            </div>
+        </div>
+        <div class="main">
+            <div class="carousel">
+                <button id="prevBtn"><i class="fas fa-angle-left"></i></button>
+                <button id="nextBtn"><i class="fas fa-angle-right"></i></button>
+                <div class="slides-container">
+                    <div class="slide">
+                        <img src="./images/series-3-apple-watch-series-1.png" alt="apple watch">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/series-3-apple-watch-series-2.png" alt="apple watch">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/series-3-apple-watch-series-3.png" alt="apple watch">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/series-3-apple-watch-series-4.png" alt="apple watch">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

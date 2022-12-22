@@ -1,0 +1,40 @@
+<!-- Created by ♧••Nila••♧-->
+
+<!-- Created by ♧••Nila••♧ -->
+<!--helped by Sofi-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text resizer</title>
+        <link rel="stylesheet" href="https://raw.githack.com/programming2007/illustration.css/main/illustration.css">
+    </head>
+    <body>
+        <h1>Resize Text</h1>
+        <div id="lamp" class="volume">
+            <div id="inner" class="inner"></div>
+        </div>
+        <button id="mines" onclick="decrease()" class="btn font3 blue-bg lightblue-clr">-</button>
+        <input type="text" id="size" value="10" placeholder="Enter Size....." class="input"/>
+        <button id="mine" onclick="increase()" class="btn font3 blue-bg lightblue-clr">+</button>
+        
+        <p id="text" class="font2"><b>Change my Size</b></p>
+        <script>
+            var size=document.getElementById("size");
+            var text=document.getElementById("text");
+            function decrease(){
+                var textSize=Number(size.value);
+                if(textSize>0){
+                    size.value=textSize-1;
+                    text.style.fontSize=size.value+"px"
+                }
+            }
+            function increase(){
+                var textSize=Number(size.value);
+                if(textSize<500){
+                    size.value=textSize+1;
+                    text.style.fontSize=size.value+"px";
+                }
+            }
+        </script>
+    </body>
+</html>

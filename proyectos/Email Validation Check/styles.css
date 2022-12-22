@@ -1,0 +1,57 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    font-family: 'Poppins', sans-serif;  
+   }  
+   body {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    min-height: 100vh;  
+    background: #373737;  
+   }  
+   #form {  
+    position: relative;  
+   }  
+   #form #email {  
+    width: 300px;  
+    background: #292929;  
+    outline: none;  
+    border: none;  
+    padding: 10px;  
+    border-radius: 6px;  
+    color: #fff;  
+    font-style: 18px;  
+   }  
+   #form .input-box {  
+    position: relative;  
+   }  
+   #text {  
+    display: block;  
+    color: #000;  
+    font-weight: 300;  
+    font-style: italic;  
+    padding: 5px;  
+   }  
+   #form.invalid .input-box::before {  
+    content: '';  
+    position: absolute;  
+    right: 12px;  
+    top: 9px;  
+    width: 24px;  
+    height: 24px;  
+    background: url(https://fadzrinmadu.github.io/hosted-assets/email-validation-check-using-javascript/invalid.png);  
+    -webkit-background-size: cover;  
+    background-size: cover;  
+   }  
+   #form.valid .input-box::before {  
+    content: '';  
+    position: absolute;  
+    right: 12px;  
+    top: 9px;  
+    width: 24px;  
+    height: 24px;  
+    background: url(https://fadzrinmadu.github.io/hosted-assets/email-validation-check-using-javascript/valid.png);  
+    -webkit-background-size: cover;  
+    background-size: cover;  
+   }  

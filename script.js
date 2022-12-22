@@ -26,3 +26,4 @@ function myFunction2() {
         x.className = "topnav";
     }
 }
+

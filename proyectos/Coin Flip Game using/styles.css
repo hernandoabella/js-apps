@@ -1,0 +1,143 @@
+/* -------- Coin Flip Sim styles -------- */
+body {
+    padding:50px 25px;
+    background-color:#444349;
+  }
+  
+  h1 {
+      font-family: 'Bungee Shade', cursive;
+      text-align:center;
+      font-size:5em;
+      color:rgba(255,64,76,1);
+  }
+  
+  #flip, #stats-container, #reset-stats {
+      font-family: 'Montserrat', sans-serif;
+  }
+  
+  #flip, #reset-stats {
+      letter-spacing:1px;
+      border-radius:5px;
+      border-bottom-width:3px;
+      outline:none;
+  }
+  
+  #flip:hover, #reset-stats:hover {
+      cursor:pointer;
+  }
+  
+  #wrapper {
+      background-color:rbga(34,33,39,1) !important;
+      width:500px;
+      padding:50px 50px;
+      margin:auto;
+      border:3px solid rgba(150,150,150,0.1);
+      border-bottom-width:6px;
+      border-radius:5px;
+      background-color:rgba(225,225,225,1);
+      text-align:center;
+  }
+  
+  #coin-container { text-align:center; }
+  #coin {
+      width:300px;
+      height:300px;
+      margin:auto;
+      position:relative;
+  }
+  
+  #heads, #tails {
+      width:300px;
+      height:300px;
+      display:inline-block;
+      backface-visibility: hidden;
+      position:absolute;
+      right:0;
+      left:0;
+      top:0;
+      bottom:0;
+  }
+  
+  #heads {
+      z-index:12;
+      opacity:1;
+  }
+  #tails {
+      z-index:10;
+      opacity:1;
+  }
+  .heads-flip-animation { animation: flip-heads 0.2s linear 0s infinite alternate; }
+  .tails-flip-animation { animation: flip-tails 0.2s linear 0s infinite alternate; }
+  
+  @keyframes flip-heads {
+      0%, 100% { transform: rotateY(0deg); }
+      50% { transform: rotateY(180deg); }
+    }
+    
+    @keyframes flip-tails {
+      0%, 100% { transform: rotateY(180deg); }
+      50% { transform: rotateY(0deg); }
+    }
+  
+  #notification {
+      margin-top:25px;
+      font-family: 'Montserrat', sans-serif;
+      font-size:1.25em;
+      color:rgba(68,67,73,1);
+      opacity:0;
+  }
+  
+  #result {
+      font-family: 'Bungee Shade', cursive;
+      color:rgba(255,64,76,1);
+      font-size:3em;
+      display:block;
+  }
+  
+  #flip {
+      margin:auto;
+      margin-top:25px;
+      padding:20px 50px;
+      background-color:rgba(255,251,89,1);
+      border-color:rgba(255,251,89,0.5);
+      color:rgba(255,64,76,1);
+      font-size:2.2em;
+      transition:0.3s;
+      letter-spacing:3px;
+  }
+  
+  #stats-container {
+      margin-top:20px;
+  }
+  
+  #heads-stats, #tails-stats {
+      display:inline-block;
+      width:45%;
+      background-color:rgba(240,240,240,1);
+      border:1px solid rgba(150,150,150,0.25);
+      border-bottom-width:3px;
+      border-radius:5px;
+      font-size:1.5em;
+  }
+  
+  #heads-stat, #tails-stat { 
+      display:block; 
+      font-size:2.5em; 
+      color:rgba(255,64,76,1);
+      margin-top:10px;
+  }
+  #reset-stats {
+      margin:auto;
+      margin-top:20px;
+      padding:10px 25px;
+      font-size:1.3em;
+      color:rgba(255,255,255,1);
+      background-color:rgba(68,67,73,1);
+      border-color:rgba(68,67,73,0.5);
+  }
+  
+  /* -- Media Queries -- */
+  @media screen and (max-width:1200px) {
+      body { padding-bottom:50px; }
+      #reset-stats { font-size:2.5em; padding: 25px 50px; }
+  }

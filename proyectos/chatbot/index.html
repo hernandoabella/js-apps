@@ -1,0 +1,24 @@
+<!DOCTYPE html>  
+<html lang="en">  
+    <head>  
+        <meta charset="UTF-8" />  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+        <title>🤖 Chatbot</title>  
+        <link rel="stylesheet" href="./styles.css" /> 
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    </head>  
+    <body>  
+        <div class="container">  
+            <h1>🤖 ¿Cual es su pregunta?</h1>  
+            
+            <div id="registroDelChat"></div>  
+            
+            <input type="text" id="entrada" onkeydown="if(event.keyCode == 13){ charlar() }" placeholder="Escribe tu pregunta" />  
+            
+            <button onclick=" charlar() "><i class="fa fa-paper-plane"></i></button>
+        </div> 
+
+    <script src="script.js"></script>  
+</body>  
+</html>  

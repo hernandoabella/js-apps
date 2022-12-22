@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #5922c7;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 310px;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.q {
+  background: rgb(212, 0, 255);
+  animation: coolAnimation .5s;
+}
+
+.w {
+  background: rgb(212, 0, 255);
+  animation: coolAnimation .5s;
+  animation-delay: .2s;
+}
+
+.e {
+  background: rgb(212, 0, 255);
+  animation: coolAnimation .5s;
+  animation-delay: .3s;
+}
+
+.r {
+  background: rgb(212, 0, 255);
+  animation: coolAnimation .5s;
+  animation-delay: .4s;
+}
+
+.t {
+  background: rgb(0, 255, 72);
+  animation: coolAnimation2 .5s;
+  animation-delay: .5s;
+}
+
+.y {
+  background: rgb(0, 255, 72);
+  animation: coolAnimation2 .5s;
+  animation-delay: .6s;
+}
+
+.u {
+  background: rgb(0, 255, 72);
+  animation: coolAnimation2 .5s;
+  animation-delay: .7s;
+}
+
+.i{
+  background: rgb(0, 255, 72);
+  animation: coolAnimation2 .5s;
+  animation-delay: .8s;
+}
+
+.a{
+  background: rgb(33, 9, 250);
+  animation: coolAnimation3 .5s;
+  animation-delay: .9s;
+}
+
+.s{
+  background: rgb(33, 9, 250);
+  animation: coolAnimation3 .5s;
+  animation-delay: 1s;
+}
+
+.d{
+  background: rgb(33, 9, 250);
+  animation: coolAnimation3 .5s;
+  animation-delay: 1.1s;
+}
+
+.f{
+  background: rgb(33, 9, 250);
+  animation: coolAnimation3 .5s;
+  animation-delay: 1.2s;
+}
+
+.g{
+  background: rgb(199, 0, 53);
+  animation: coolAnimation4 .5s;
+  animation-delay: 1.3s;
+  
+}
+
+.h{
+  background: rgb(199, 0, 53);
+  animation: coolAnimation4 .5s;
+  animation-delay: 1.4s;
+}
+
+.j{
+  background: rgb(199, 0, 53);
+  animation: coolAnimation4 .5s;
+  animation-delay: 1.5s;
+}
+
+.k{
+  background: rgb(199, 0, 53);
+  animation: coolAnimation4 .5s;
+  animation-delay: 1.6s;
+}
+
+/* 🤗 esquinas */
+
+.drum:nth-child(1){
+  border-radius: 5px 0px 0px 0px;
+}
+
+.drum:nth-child(4){
+  border-radius: 0px 5px 0px 0px;
+}
+
+.drum:nth-child(13){
+  border-radius: 0px 0px 0px 5px;
+}
+
+.drum:nth-child(16){
+  border-radius: 0px 0px 5px 0px;
+}
+
+/* esquinas */
+
+
+.pressed {
+  opacity: 0.5;
+  transform: scale(1.1);
+  background: rgb(42, 237, 17) !important;
+}
+
+.pressed:nth-child(5){
+  background: rgb(251, 255, 0) !important;
+}
+
+.pressed:nth-child(6){
+  background: rgb(251, 255, 0) !important;
+}
+
+.pressed:nth-child(7){
+  background: rgb(251, 255, 0) !important;
+}
+
+.pressed:nth-child(8){
+  background: rgb(251, 255, 0) !important;
+}
+
+.pressed:nth-child(9){
+  background: rgb(14, 237, 233) !important;
+}
+
+.pressed:nth-child(10){
+  background: rgb(14, 237, 233) !important;
+}
+
+.pressed:nth-child(11){
+  background: rgb(14, 237, 233) !important;
+}
+
+.pressed:nth-child(12){
+  background: rgb(14, 237, 233) !important;
+}
+
+.pressed:nth-child(13){
+  background: rgb(199, 0, 176) !important;
+}
+
+.pressed:nth-child(14){
+  background: rgb(199, 0, 176) !important;
+}
+
+.pressed:nth-child(15){
+  background: rgb(199, 0, 176) !important;
+}
+
+.pressed:nth-child(16){
+  background: rgb(199, 0, 176) !important;
+}
+
+.drum {
+  outline: none;
+  color: #fff;
+  width: 25%;
+  height: 80px;
+  font-size: 2em;
+}
+
+.drum:nth-child(1){
+  background: radial-gradient(circle, rgb(35, 206, 12), rgb(42, 237, 17));
+}
+
+.drum:nth-child(2){
+  background: radial-gradient(circle, rgb(35, 206, 12), rgb(42, 237, 17));
+}
+
+.drum:nth-child(3){
+  background: radial-gradient(circle, rgb(35, 206, 12), rgb(42, 237, 17));
+}
+
+.drum:nth-child(4){
+  background: radial-gradient(circle, rgb(35, 206, 12), rgb(42, 237, 17));
+}
+
+.drum:nth-child(5){
+  background: radial-gradient(circle, rgb(208, 211, 13), rgb(251, 255, 0));
+}
+
+.drum:nth-child(6){
+  background: radial-gradient(circle, rgb(208, 211, 13), rgb(251, 255, 0));
+}
+
+.drum:nth-child(7){
+  background: radial-gradient(circle, rgb(208, 211, 13), rgb(251, 255, 0));
+}
+
+.drum:nth-child(8){
+  background: radial-gradient(circle, rgb(208, 211, 13), rgb(251, 255, 0));
+}
+
+.drum:nth-child(9){
+  background: radial-gradient(circle, rgb(26, 196, 193), rgb(14, 237, 233));
+}
+
+.drum:nth-child(10){
+  background: radial-gradient(circle, rgb(26, 196, 193), rgb(14, 237, 233));
+}
+
+.drum:nth-child(11){
+  background: radial-gradient(circle, rgb(26, 196, 193), rgb(14, 237, 233));
+}
+
+.drum:nth-child(12){
+  background: radial-gradient(circle, rgb(26, 196, 193), rgb(14, 237, 233));
+}
+
+.drum:nth-child(13){
+  background: radial-gradient(circle, rgb(157, 27, 141), rgb(199, 0, 176));
+}
+
+.drum:nth-child(14){
+  background: radial-gradient(circle, rgb(157, 27, 141), rgb(199, 0, 176));
+}
+
+.drum:nth-child(15){
+  background: radial-gradient(circle, rgb(157, 27, 141), rgb(199, 0, 176)); 
+}
+
+.drum:nth-child(16){
+  background: radial-gradient(circle, rgb(157, 27, 141), rgb(199, 0, 176));
+}
+
+
+@keyframes coolAnimation{
+  0%{
+    opacity: 0.5;
+    background: rgb(42, 237, 17);
+  }
+}
+
+@keyframes coolAnimation2{
+  0%{
+    opacity: 0.5;
+    background: rgb(251, 255, 0);
+  }
+}
+
+@keyframes coolAnimation3{
+  0%{
+    opacity: 0.5;
+    background: rgb(14, 237, 233);
+  }
+}
+
+@keyframes coolAnimation4{
+  0%{
+    opacity: 0.5;
+    background: rgb(199, 0, 176);
+  }
+}

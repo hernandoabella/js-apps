@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	<title>FLAMES</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<script type='text/javascript' src='flames.js'></script>
+
+</head>
+
+<body>
+<div class="row i">
+	<div class="col-md-6">
+		<img class="my "src="luv.svg" alt="">
+	</div>
+	<div class="col-md-6">
+		<div class="main">
+		<h1 class="top">FLAMES Calculator </h1>
+		</div>
+			<form name=first>
+				<div class=" "id='maindiv'>
+					<div class='group'>
+
+		       <p class="def">Enter the names: </p>
+							<input value='' name=name onkeyup=check(this) type=text class='txt' id='yname'>
+							<input value='' name=name1 onkeyup=check(this) type=text class='txt' id='pname'>
+
+
+						<div name=n1 id=nam1>Click the button to know the relationship status:</div>
+						<div id='display_flame'></div>
+
+
+					</div>
+
+
+					<div class='but_por'>
+						<button name=calculate type="button" onclick=calc() class="btn btn-secondary btn-lg">FLAMES</button>
+						<!-- <input name=calculate type=button value=FLAMES onclick=calc() class='buttonMini'> -->
+						<!-- <input type=reset value=Reset onclick='clear_all()' class='buttonMini'> -->
+						<button type=reset onclick='clear_all()' class="btn btn-secondary btn-lg">Reset</button>
+						<span align='center' id="dumdiv">
+						</span>
+					</div>
+
+				</div>
+
+
+				<div id='result' class='clearfix'>
+					<div class='group' align='center'>
+						<div class='love_result'>
+							<span name=n1 id=nam1></span>
+							</div> </div> </div> </form>
+	</div>
+</div>
+
+
+ </body> </html>

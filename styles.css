@@ -235,6 +235,23 @@ ol li a{
     margin: 5px;
 }
 
+.about-us {
+    color:#232323;
+}
+
+.about-us ol li {
+    
+}
+
+.about-us h2 {
+    text-align: center;
+}
+
+.about-us p {
+    color: #232323;
+    text-align: left;
+}
+
 footer{
     padding: 10px;
 }

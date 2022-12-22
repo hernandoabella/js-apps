@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Reproductor MP3</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-container">
+        <div id="cover-box">
+          <img src="assets/images/cover1.jpg" alt="cover-image" id="portada" />
+        </div>
+        <div id="music-box">
+          <audio id="disco"></audio>
+          <div id="music-info">
+            <h2 id="titulo"></h2>
+            <h3 id="artista"></h3>
+            <div id="contenedor__progreso">
+              <div id="progreso"></div>
+            </div>
+            <div id="timer-bar">
+              <span id="temporizador">0:00</span>
+              <span id="duracion"></span>
+            </div>
+          </div>
+          <div id="control-box">
+            <i id="anterior" class="btn fas fa-backward"></i>
+            <i id="reproducir" class="special-btn fas fa-play"></i>
+            <i id="siguiente" class="btn fas fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

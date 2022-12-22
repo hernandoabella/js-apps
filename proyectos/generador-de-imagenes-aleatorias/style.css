@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: "Avenir", sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.container img {
+	object-fit: cover;
+	width: 310px;
+	height: 310px;
+	max-width: 100%;
+	margin: 12px;
+}

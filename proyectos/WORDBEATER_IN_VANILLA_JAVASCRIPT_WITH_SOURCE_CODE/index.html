@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WordBeater</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+
+    <header class="text-center container-fluid" id="head">
+            <h1>WordBeater</h1>
+    </header>
+
+    <div class="container">
+            <div class="row">
+        
+                <p class="col-12 mx-auto text-center mt-5">Type the given word within 
+                    <span class="text-success" id="seconds"></span>
+                    seconds</p>
+            
+                <h1 class="display-2 col-12 mx-auto text-center" id="current-word">hello</h1>
+            
+                <input type="text" placeholder="Start typing..." class="col-4 mx-auto mt-5 form-control" id="word-input" autofocus>
+        
+                <h5 id="message" class="col-12 text-center"></h5>
+
+                <h4 class="col-12 mt-5 text-center">Time Left: 
+                    <span id="time">0</span>
+                </h4>
+        
+                <h4 class="col-12 mt-1 text-center">Score: 
+                    <span id="score">0</span>
+                </h4>
+
+                <div class="card mt-3 col-6 mx-auto">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Instructions</h5>
+                        <p class="card-text text-center">
+                            Type each word in the given amount of seconds to score. To play again, just type the current word. Your score will reset.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

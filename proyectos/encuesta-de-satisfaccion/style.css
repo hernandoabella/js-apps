@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Avenir", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #dddddd;
+	overflow: hidden;
+}
+
+.panel-container {
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	font-size: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 32px;
+	max-width: 480px;
+}
+
+.panel-container strong {
+	line-height: 16px;
+}
+
+.ratings-container {
+	display: flex;
+	margin: 24px 0;
+}
+
+.rating {
+	flex: 1;
+	cursor: pointer;
+	padding: 16px;
+	margin: 8px 4px;
+}
+
+.rating:hover,
+.rating.active {
+	border-radius: 4px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.rating img {
+	width: 96px;
+}
+
+.rating small {
+	color: #555;
+	display: inline-block;
+	margin: 10px 0 0;
+}
+
+.rating:hover small,
+.rating.active small {
+	color: #111;
+}
+
+.btn {
+	background-color: #302d2b;
+	color: white;
+	border: 0;
+	padding: 12px 32px;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 0.85rem;
+}
+
+.btn-focus {
+	outline: 0;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+ion-icon {
+	color: red;
+	font-size: 32px;
+	margin-bottom: 12px;
+}
+
+.feedback {
+	margin-top: 2rem;
+}

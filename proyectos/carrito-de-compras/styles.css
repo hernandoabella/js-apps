@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Glory', sans-serif;
+}
+
+body{
+    background: #FF3562;
+}
+
+.container{
+    width: 320px;
+    background: #1B1B3A;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#choices{
+    width: 100%;
+}
+
+#choices td{
+    background: #F84AA7;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#choices td img{
+    width: 100% !important;
+    height: 100% !important;
+    line-height: 0;
+}
+
+#choices td:hover{
+    opacity: .8;
+}
+
+#carrito{
+    height: 230px;
+    width: 100%;
+}
+
+#carrito td{
+    height: 220px;
+    width: 57.59px;
+    background: #fff;
+    text-align: center;
+}
+
+#carrito .fixed{
+    display: block;
+}
+
+.fixed{
+    position: relative;
+    top: 15px;
+    color: #000;
+}
+
+.fa-times {
+    color: #000;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: -36px;
+    right: -22px;
+    font-size: 0.8em;
+}
+
+#contain{
+    padding: 10px 0px 0px 0px;
+    display: flex;
+}
+
+#contain div{
+    width: 50%;
+}
+
+#contain input{
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+#contain input:hover{
+    background: #F84AA7;
+    color: #fff;
+}
+
+#total{
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+

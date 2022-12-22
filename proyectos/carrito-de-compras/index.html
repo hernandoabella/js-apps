@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+    <meta charset='UTF-8' />
+    <title>Carrito de supermercado</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <table id="choices">
+            <tbody>
+                <tr>
+                    <td><img src="./images/egg.png" alt="Egg" id="egg" /></td>
+                    <td><img src="./images/muffin.png" alt="muffin" id="muffin" /></td>
+                    <td><img src="./images/pancake.png" alt="pancakes" id="pancake" /></td>
+                    <td><img src="./images/biscuit.png" alt="biscuit" id="biscuit" /></td>
+                    <td><img src="./images/oj.png" alt="Orange juice" id="oj" /></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/pbj.png" alt="Peanut butter and jelly" id="pbj" /></td>
+                    <td><img src="./images/bologna.png" alt="bologna" id="bologna" /></td>
+                    <td><img src="./images/taco.png" alt="taco" id="taco" /></td>
+                    <td><img src="./images/soup.png" alt="soup" id="soup" /></td>
+                    <td><img src="./images/water.png" alt="water" id="water" /></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/burger.gif" alt="burger" id="burger" /></td>
+                    <td><img src="./images/pizza.png" alt="pizza" id="pizza" /></td>
+                    <td><img src="./images/chicken.png" alt="chicken" id="chicken" /></td>
+                    <td><img src="./images/salad.png" alt="salad" id="salad" /></td>
+                    <td><img src="./images/soda.png" alt="soda" id="soda" /></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/icecream.png" alt="Ice cream" id="icecream" /></td>
+                    <td><img src="./images//flan.png" alt="flan" id="flan" /></td>
+                    <td><img src="./images/cookie.png" alt="cookie" id="cookie" /></td>
+                    <td><img src="./images/cupcake.png" alt="cupcake" id="cupcake" /></td>
+                    <td><img src="./images/milkshake.png" alt="milkshake" id="milkshake" /></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table id="carrito">
+            <tbody>
+                <tr>
+                    <td>
+                        <div id="breakfast"></div>
+                    </td>
+
+                    <td>
+                        <div id="lunch"></div>
+                        
+                    </td>
+                    
+                    <td>
+                        <div id="dinner"></div>
+                       
+                    </td>
+                    
+                    <td>
+                        <div id="sweet"></div>
+                        
+                    </td>
+                    
+                    <td>
+                        <div id="drink"></div>
+                        
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <div id="contain">
+            <div>
+                <input type="button" value="Vaciar carrito" onclick="clearList()" />
+                <input type="button" value="Total" onclick="calculatePrice()" />
+            </div>
+            <div id="total">
+                Total: $0.00
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./script.js" type="text/javascript"></script>
+
+</body>
+</html>

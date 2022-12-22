@@ -1,0 +1,52 @@
+body{
+	background: linear-gradient(to right, #1c92d2, #f2fcfe);
+	font-size: normal;
+	background-size: cover;
+}
+
+form{
+	width: 420px;
+	height: 410px;
+	/*color: white;*/
+	margin: 0 auto;
+	margin-top: 50px;
+	border: 1px solid black;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	background-color:#e8e8e8;
+	box-shadow: 0 20px 50px rgba(8, 112, 184, 0.7);
+}
+
+select, input {
+	margin-bottom: 15px
+}
+select {
+  background-color: #0563af;
+  color: white;
+  padding: 3px;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 3px
+   }
+
+#result{
+	height:  45px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.55);
+	border-radius: 5px;
+	margin-bottom: 5px;
+	border: 1px solid gray;
+	
+}
+#result p{
+	line-height: 45px;
+	padding-left:  10px;
+	font-weight: 700
+}
+@media (max-width: 500px){
+	form{
+		max-width: 100%;
+	}
+}

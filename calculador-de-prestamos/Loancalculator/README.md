@@ -1,1 +1,0 @@
-# Loancalculator-js

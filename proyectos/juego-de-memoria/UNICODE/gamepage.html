@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COSMOS</title>
+
+    <!--GOOGLE FONTS-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body id="game">
+    <header>
+      <h1 class="text-center mt-4 mb-2 headTag">COSMOS CONSCIOUS</h1>
+    </header>
+
+    <section class="container mx-auto">
+      <section class="mx-auto">
+        <div class="row">
+          <div class="col-12 text-center points">
+            <p>Battles won: <span id="point"> 0</span></p>
+          </div>
+        </div>
+
+        <div id="won" class="text-center">
+          <h1>You have conquered the galaxy!</h1>
+          <p>Battles won: <span id="finalPoints">0</span></p>
+          <button class="btn" id="playAgain">Conquer another galaxy</button>
+        </div>
+
+        <section class="memory-game">
+          <div class="memory-card" data-cards="card1">
+            <img class="front-face" src="Images/alien.svg" alt="avacado" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+          <div class="memory-card" data-cards="card1">
+            <img class="front-face" src="Images/alien.svg" alt="avacado" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+
+          <div class="memory-card" data-cards="card2">
+            <img class="front-face" src="Images/space-gun.svg" alt="burgers" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+          <div class="memory-card" data-cards="card2">
+            <img class="front-face" src="Images/space-gun.svg" alt="burgers" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+
+          <div class="memory-card" data-cards="card3">
+            <img class="front-face" src="Images/spaceship.svg" alt="carrot" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+          <div class="memory-card" data-cards="card3">
+            <img class="front-face" src="Images/spaceship.svg" alt="carrot" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+
+          <div class="memory-card" data-cards="card4">
+            <img class="front-face" src="Images/plant.svg" alt="cheese" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+          <div class="memory-card" data-cards="card4">
+            <img class="front-face" src="Images/plant.svg" alt="cheese" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+
+          <div class="memory-card" data-cards="card5">
+            <img class="front-face" src="Images/alien (1).svg" alt="pancakes" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+          <div class="memory-card" data-cards="card5">
+            <img class="front-face" src="Images/alien (1).svg" alt="pancakes" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+
+          <div class="memory-card" data-cards="card6">
+            <img class="front-face" src="Images/universe.svg" alt="salad" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+          <div class="memory-card" data-cards="card6">
+            <img class="front-face" src="Images/universe.svg" alt="salad" />
+            <img class="back-face" src="Images/vortex.svg" alt="sky" />
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

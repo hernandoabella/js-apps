@@ -1,0 +1,65 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #08f0f8;
+}
+::selection{
+  color: #fff;
+  background: #08f0f8;
+}
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 450px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.06);
+}
+.wrapper header{
+  font-size: 23px;
+  font-weight: 500;
+  padding: 17px 30px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper header.active{
+  cursor: move;
+  user-select: none;
+}
+.wrapper .content{
+  display: flex;
+  padding: 30px 30px 40px 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.content .icon{
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  border: 5px solid #08f0f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .icon i{
+  color: #08f0f8;
+  font-size: 60px;
+}
+.content .title{
+  margin: 15px 0;
+  font-size: 29px;
+  font-weight: 500;
+}
+.content p{
+  font-size: 16px;
+  text-align: center;
+}

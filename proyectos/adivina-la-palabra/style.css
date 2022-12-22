@@ -1,0 +1,66 @@
+body {
+    background: #fff0ce;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.container {
+    color: #f7db9a;
+    background: rgba(62, 11, 150, 0.8) !important;
+    border: 2px solid #f9e4b2 !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 400px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title{
+    text-align: center;
+}
+
+#welcome{
+    text-align: center;
+    padding: 20px !important;
+}
+
+#currentWord {
+    font-size: 1.3em;
+    letter-spacing: 4px;
+    color: #f9c0b1;
+}
+
+.wordStuff{
+    text-align: center;
+}
+
+.varColor {
+    color: #b1c6f9;
+}
+
+.noBlink {
+    visibility: hidden;
+}
+
+.necesitoEspacio{
+    margin-left: 20px;
+    margin-bottom: 20px !important;
+}
+
+@keyframes blink{
+
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: .5;
+    }
+
+    100%{
+        opacity: 1;
+
+    }   
+
+}

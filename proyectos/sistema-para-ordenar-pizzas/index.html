@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sistema para ordenar pizzas</title>
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Mr+Dafoe|Nothing+You+Could+Do|Yellowtail|Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <h1 id="mainh1">🪐 Planet Pizza</h1>
+
+        <main>
+        
+        <div class="section-card visible first">
+
+            <header>
+                <h1>Escoge tu tamaño:</h1>
+            </header>
+            
+            <p>
+                Personal
+                <input type="radio" name="size" id="Personal size" data-price="6">                
+            </p>
+            
+            <p>
+                Mediana
+                <input type="radio" name="size" id="Medium size" data-price="10">
+            </p>
+            
+            
+            <p>
+                Large
+                <input type="radio" name="size" id="Large size" data-price="14">
+            </p>
+            
+            
+            <p>
+                Extra Large 
+                <input type="radio" name="size" id="Extra large" data-price="16">
+            </p>
+            
+            <div class="alignBtns">
+                <button class="back">Atrás</button>    
+                <button class="submit">Siguiente</button>
+            </div>
+                
+        </div>
+            
+        <div class="section-card">
+            <header>
+                <h1>¡Mucho gusto en conocerte!</h1>
+                <p>El primer artículo de carne es gratuito. Todos los artículos de carne adicionales cuestan $ 1 cada uno.</p>
+            </header>
+            
+            <p>
+                Pepperoni
+                <input type="checkbox" name="meat" id="Pepperoni">
+            </p>
+            
+            
+            <p>
+                Chorizo
+                <input type="checkbox" name="meat" id="Sausage">
+            </p>
+            
+            
+            <p>
+                Tocino canadiense
+                <input type="checkbox" name="meat" id="Canadian Bacon">                
+            </p>
+            
+            
+            <p>
+                Carne molida
+                <input type="checkbox" name="meat" id="Ground Beef">
+            </p>
+            
+            
+            <p>
+                Anchoas
+                <input type="checkbox" name="meat" id="Anchovy">                
+            </p>
+            
+            
+            <p>
+                Pollo
+                <input type="checkbox" name="meat" id="Chicken">
+            </p>
+
+            <div class="alignBtns">
+                <button class="back">Atrás</button>    
+                <button class="submit">Siguiente</button>
+            </div>
+        </div>
+            
+         <div class="section-card">
+
+             <header>
+                 <h1>Cantidad de<br>queso:</h1>
+             </header>
+             
+             <p>
+                 Regular
+                 <input type="radio" name="cheese" id="Regular cheese">
+             </p>
+             
+             <p>
+                 Sin queso
+                 <input type="radio" name="cheese" id="No cheese">
+             </p>
+             
+             <p>
+                 Extra queso
+                 <input type="radio" name="cheese" id="Extra Cheese" data-price="3">
+            </p>
+             
+            <div class="alignBtns">
+                <button class="back">Atrás</button>    
+                <button class="submit">Siguiente</button>
+            </div>
+        </div>
+            
+        <div class="section-card">
+            <header>
+                <h1>Todo el mundo muerde<br>el borde</h1>
+            </header>
+
+            <p>Borde simple<input type="radio" name="crust" id="Plain Crust"></p>
+            <p>Borde de mantequilla de ajo<input type="radio" name="crust" id="Garlic Butter Crust"></p>
+            <p>Borde relleno de queso<input data-price="3" type="radio" name="crust" id="Cheese Stuffed Crust" ></p>
+            <p>Borde picante<input type="radio" name="crust" id="Spicy Crust"></p>
+            <p>Borde especial de la casa<input type="radio" name="crust" id="House Special Crust"></p>
+            
+            <div class="alignBtns">
+                <button class="back">Atrás</button>    
+                <button class="submit">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="section-card">
+
+            <header>
+                <h1>Nuestras pizzas tienen salsas</h1>
+            </header>
+
+            <p>Salsa marinera<input type="radio" name="sauce" id="Marinara sauce"></p>
+            <p>Salsa blanca<input type="radio" name="sauce" id="White sauce" ></p>
+            <p>Salsa BBQ<input type="radio" name="sauce" id="Barbeque sauce" ></p>
+            <p>Sin salsa<input type="radio" name="sauce" id="No Sauce"></p>
+            
+            <div class="alignBtns">
+                <button class="back">Atrás</button>    
+                <button class="submit">Siguiente</button>
+            </div>
+        </div>
+
+        <div class="section-card last">
+            <header>
+                <h1>Siempre come tus vegetales</h1>
+                <p>El primer tipo de verdura es gratuito. Todos los artículos vegetales adicionales cuestan $1 cada uno.</p>
+            </header>
+
+            <p>Tomates<input type="checkbox" name="veggies" id="Tomatoes"></p>
+            <p>Cebollas<input type="checkbox" name="veggies" id="Onions" ></p>
+            <p>Aceitunas<input type="checkbox" name="veggies" id="Olives" ></p>
+            <p>Pimientos verdes<input type="checkbox" name="veggies" id="Green Peppers"></p>
+            <p>Champiñones<input type="checkbox" name="veggies" id="Mushrooms"></p>
+            <p>Piña<input type="checkbox" name="veggies" id="Pineapple"></p>
+            <p>Espinacas <input type="checkbox" name="veggies" id="Spinach"></p>
+            <p>Jalapeño <input type="checkbox" name="veggies" id="Jalapeno"></p>
+            
+            <div class="alignBtns">
+                <button class="back">Atrás</button>    
+                <button class="submit">Siguiente</button>
+            </div>
+        </div>
+
+        <div id="tally">
+            <h1>Tu orden:</h1>
+        </div>
+</main>
+
+
+        <script src="scripts.js"></script>
+    </body>
+</html>

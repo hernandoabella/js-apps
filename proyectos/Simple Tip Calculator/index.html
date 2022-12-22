@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tip Calculator App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="index.html" method="post" id="tipForm">
+      <h1>Tip Calculator</h1>
+      <div class="inputs">
+        <div class="flex">
+          <label for="bill_amount">Bill total:</label>
+          <input type="number" name="bill_amount" id="bill" min="0" placeholder="$0">
+        </div>
+        <div class="flex">
+          <label for="service_quality">Service quality:</label>
+          <select name="service_quality" id="service" form="tipForm">
+                            <option value="0.05">Bad</option>
+                            <option value="0.10">Good</option>
+                            <option value="0.20">Excellent</option>
+                        </select>
+        </div>
+        <div class="flex">
+          <label for="split_bill">People sharing bill?</label>
+          <input type="number" name="split_bill" id="split" min="1" placeholder="0">
+        </div>
+        <div id="result">$--</div>
+      </div>
+      <div class="flex-btn">
+        <button type="button" onclick="calculateTip()" id="calc-btn">Calculate</button>
+      </div>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
