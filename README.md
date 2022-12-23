@@ -12,9 +12,17 @@ Las aplicaciones de la lista te ayudarán a practicar el código de JavaScript c
 
 Las aplicaciones están divididas en 3 niveles de dificultad:
 
-*  Básico:           ⭐⭐
-*  Intermedio:      ⭐⭐⭐
-*  Avanzado:      ⭐⭐⭐⭐⭐
+### Básico: ⭐⭐ <br>
+
+Desarrolladores en las primeras etapas de su viaje de aprendizaje. Aquellos que normalmente se enfocan en crear aplicaciones orientadas al usuario.
+
+### Intermedio: ⭐⭐⭐ <br>
+
+Desarrolladores en una etapa intermedia de aprendizaje y experiencia. Se sienten cómodos en UI/UX, usan herramientas de desarrollo y crean aplicaciones que usan servicios API.
+
+### Avanzado: ⭐⭐⭐⭐⭐ <br>
+
+Desarrolladores que tienen todo lo anterior y están aprendiendo técnicas más avanzadas, como implementar aplicaciones back-end y servicios de bases de datos.
 
 ## ¿Cómo contribuir? ✨
 
