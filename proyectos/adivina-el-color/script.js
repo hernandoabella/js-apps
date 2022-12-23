@@ -8,7 +8,7 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 var clickedColor;
-var game= {}
+var game = {}
 
 game.init = function(){
 setupModeButtons();

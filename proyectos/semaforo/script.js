@@ -3,7 +3,7 @@ let activeLight = 0;
 
 setInterval(() => {
 	changeLight();
-}, 1000);
+}, 5000);
 
 function changeLight() {
 	circles[activeLight].className = 'circle';
