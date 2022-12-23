@@ -1,7 +1,6 @@
 // GUESS THE NUMBER GAME STEP BY STEP EXPLANATION
-//     ~ Hitik Saini.
 //Generating a random number from 1-500
-let randomNumber = parseInt((Math.random()*500)+1);
+let randomNumber = parseInt((Math.random() * 500) + 1);
 //make variables
 const submit = document.querySelector('#user_guess');
 const userInput = document.querySelector('#guessField');
@@ -82,8 +81,8 @@ function endGame(){
     //disable the submit button
     submit.setAttribute('disabled', '');
     //Display Start new Game Button
-          p.classList.add('button');
-          p.innerHTML = `<h1 id="newGame">PLAY AGAIN</h1>`
+        p.classList.add('button');
+        p.innerHTML = `<h1 id="newGame">PLAY AGAIN</h1>`
     startOver.appendChild(p);
     playGame = false;
     newGame();
