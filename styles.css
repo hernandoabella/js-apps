@@ -144,6 +144,45 @@ ol li a{
     letter-spacing: 2px;
 }
 
+.about-us {
+    color:#232323;
+}
+
+.about-us ul {
+    margin-left: 50px;
+}
+
+.about-us ul li {
+    margin: 20px;
+    font-size: 1.3em;
+}
+
+.about-us ol li {
+    padding: 0px 0px;
+    display: none; 
+    align-items: none; 
+    justify-content: none; 
+    background-image: none;
+    color: #000;
+    border-radius: 0px; 
+    box-shadow: none;
+    font-size: 1.3em;
+}
+
+.about-us h2 {
+    text-align: center;
+}
+
+.about-us p {
+    color: #232323;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.about-us hr {
+    margin: 50px 20px;
+}
+
 .btns {
     display: flex;
 }
@@ -233,23 +272,6 @@ ol li a{
 .redes__sociales i{
     color: #2b2d42;
     margin: 5px;
-}
-
-.about-us {
-    color:#232323;
-}
-
-.about-us ol li {
-    
-}
-
-.about-us h2 {
-    text-align: center;
-}
-
-.about-us p {
-    color: #232323;
-    text-align: left;
 }
 
 footer{
