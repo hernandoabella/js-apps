@@ -30,7 +30,8 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    
+    background: #2b2d42;
+    color: #edf2f4;
 }
 
 header ul {
@@ -40,6 +41,14 @@ header ul {
 header ul li {
     margin-right: 20px;
     list-style: none;
+}
+
+header ul li a {
+    color: #edf2f4;
+}
+
+.logo {
+    color: #edf2f4;
 }
 
 /* header */
@@ -88,7 +97,7 @@ h3 {
     color: #2b2d42;
 }
 
-p{
+p {
     margin: 20px;
     text-align: center;
     color: #edf2f4;
@@ -96,12 +105,12 @@ p{
 
 /* hero section */
 
-.hero{
+.hero {
     padding: 10px;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.hero h1{
+.hero h1 {
     padding: 20px;
 }
 
@@ -119,7 +128,7 @@ ol div {
     transition: .3s;
 }
 
-ol li{
+ol li {
     padding: 10px 0px;
     display: flex;
     align-items: center;
@@ -135,7 +144,7 @@ ol li{
     transition: .3s;
 }
 
-ol li a{
+ol li a {
     display: block;
     transition: .3s;
     text-decoration: none;
@@ -181,6 +190,7 @@ ol li a{
 
 .about-us hr {
     margin: 50px 20px;
+    border: 1px dashed #bfbfc0;
 }
 
 .btns {
@@ -269,21 +279,21 @@ ol li a{
     margin: 0 auto;
 }
 
-.redes__sociales i{
+.redes__sociales i {
     color: #2b2d42;
     margin: 5px;
 }
 
-footer{
+footer {
     padding: 10px;
 }
 
-footer a{
+footer a {
     color: #2b2d42;
     font-style: italic;
 }
 
-footer p{
+footer p {
     text-align: center;
     color: #2b2d42;
 }
@@ -301,7 +311,7 @@ footer p{
         width: 100%;
     }
 
-	ol{
+	ol {
         flex-direction: column;
     }
 
@@ -315,7 +325,7 @@ footer p{
         margin: 10px;
     }
 
-    ol > div{
+    ol > div {
         margin: 20px;
     }
 
