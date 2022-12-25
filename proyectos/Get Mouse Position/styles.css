@@ -1,20 +1,30 @@
-html{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
     overflow-y: hidden;
-    }
-    .container {
-    width: 80vw;
+}
+
+.container {
+    width: 400px;
     height: 80vh;
     background: rgba(20,20,20,0.5);
-    margin:5% auto;
     border-radius: 20px;
-    border: 10px solid black;
-    }
-    .mainText{
+    border: 3px solid black;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.mainText {
     pointer-events: none;
-    font-family: 'Roboto Condensed';
-    sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: white;
     text-align: center;
     font-size: 280%;
-    margin: 25vh 18vw;
-    }
+}

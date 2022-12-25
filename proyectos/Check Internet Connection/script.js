@@ -8,7 +8,7 @@ let random = document.getElementById("random");
       random.style.color = "green";  
     });  
     window.addEventListener("offline",function(){  
-     random.textContent = "We Are Offine !";  
+     random.textContent = "We Are Offine!";  
       random.style.color = "red";  
       vibratePattern();  
     });  
