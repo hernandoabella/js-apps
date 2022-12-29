@@ -29,9 +29,10 @@ body{
 header {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    
     background: #2b2d42;
     color: #edf2f4;
+    align-items: center;
 }
 
 header ul {
@@ -45,10 +46,15 @@ header ul li {
 
 header ul li a {
     color: #edf2f4;
+    text-decoration: none;
 }
 
 .logo {
     color: #edf2f4;
+}
+
+.logo img {
+    width: 150px;
 }
 
 /* header */

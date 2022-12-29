@@ -9,10 +9,10 @@ html {
 }
 
 .container {
-    width: 400px;
+    width: 350px;
     height: 80vh;
     background: rgba(20,20,20,0.5);
-    border-radius: 20px;
+    border-radius: 25px;
     border: 3px solid black;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -27,4 +27,8 @@ html {
     color: white;
     text-align: center;
     font-size: 280%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }

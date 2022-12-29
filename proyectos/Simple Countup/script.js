@@ -6,7 +6,7 @@ const increaseNumber = () => {
     const numberElement = document.getElementById("js-number") || {};
   
     setInterval(function startCount() {
-      counter < 99 ? (numberElement.innerHTML = ++counter) : (counter = 0);
+      counter < 10 ? (numberElement.innerHTML = ++counter) : (counter = 0);
     }, 1000);
   };
   

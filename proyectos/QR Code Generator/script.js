@@ -1,4 +1,4 @@
-unction generateQRCode() {
+function generateQRCode() {
     let website = document.getElementById("website").value;
     if (website) {
       let qrcodeContainer = document.getElementById("qrcode");
