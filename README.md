@@ -1,4 +1,4 @@
-# JS-APPS
+<div align="center"><img src="https://raw.githubusercontent.com/hernandoabella/javascript-apps/master/images/js-apps-new-logo.png"></div>
 
 Colección de aplicaciones creadas con el fin de practicar el código de <b>JavaScript</b>.
 
