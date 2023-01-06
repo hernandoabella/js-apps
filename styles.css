@@ -4,7 +4,7 @@
     --primary-color: red;
     --secondary-color: blue;
     --black: #232323;
-    --white: #eaeeea;
+    --white: #f8fdff;
 }
 
 :root.dark-mode {
@@ -18,103 +18,25 @@
     margin: 0;
 }
 
+.dark-mode-btn {
+    width: 20px;
+    height: 20px;
+    background: #5271FF;
+    color: var(--black);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background: #162770;
+    color: #232323;
+    transition: .3s;
+}
+
 body{
     font-family: 'Dosis', sans-serif;
-    background-color: rgb(255, 243, 217);
-    background-image: radial-gradient(
-        circle,
-        rgba(48, 67, 39, 1) 20%,
-        rgba(48, 67, 39, 0) 21%
-        ),
-        radial-gradient(
-        circle,
-        rgba(207, 122, 55, 1) 20%,
-        rgba(207, 122, 55, 0) 21%
-        ),
-        linear-gradient(
-        -45deg,
-        rgb(236, 246, 237, 1) 20%,
-        rgb(236, 246, 237, 0) 21%
-        ),
-        linear-gradient(
-        -45deg,
-        rgb(236, 246, 237, 0) 79%,
-        rgb(236, 246, 237, 1) 80%
-        ),
-        linear-gradient(45deg, rgba(90, 181, 211, 0) 80%, rgba(90, 181, 211, 1) 81%),
-        linear-gradient(45deg, rgba(90, 181, 211, 1) 20%, rgba(90, 181, 211, 0) 21%),
-        linear-gradient(-45deg, rgba(207, 122, 55, 1) 25%, transparent 26%),
-        linear-gradient(
-        -45deg,
-        rgba(207, 122, 55, 0) 74%,
-        rgba(207, 122, 55, 1) 75%
-        ),
-        linear-gradient(
-        45deg,
-        rgba(237, 201, 112, 0) 74%,
-        rgba(237, 201, 112, 1) 75%
-        ),
-        linear-gradient(
-        45deg,
-        rgba(237, 201, 112, 1) 25%,
-        rgba(237, 201, 112, 0) 26%
-        ),
-        linear-gradient(
-        rgb(236, 246, 237, 0) 38%,
-        rgb(236, 246, 237, 1) 39% 60%,
-        rgb(236, 246, 237, 0) 61%
-        ),
-        linear-gradient(
-        to right,
-        rgba(237, 201, 112, 0) 35%,
-        rgba(237, 201, 112, 1) 36% 40%,
-        rgb(236, 246, 237, 1) 36% 60%,
-        rgba(237, 201, 112, 1) 61% 65%,
-        rgba(237, 201, 112, 0) 66%
-        ),
-        linear-gradient(
-        rgba(237, 201, 112, 0) 34%,
-        rgba(237, 201, 112, 1) 35% 39%,
-        rgb(236, 246, 237, 1) 40% 60%,
-        rgba(237, 201, 112, 1) 61% 65%,
-        rgba(237, 201, 112, 0) 66%
-        ),
-        linear-gradient(
-        to right,
-        rgba(48, 67, 39, 0) 35%,
-        rgba(48, 67, 39, 1) 36% 65%,
-        rgba(48, 67, 39, 0) 66%
-        ),
-        linear-gradient(
-        to right,
-        rgba(48, 67, 39, 0) 35%,
-        rgba(48, 67, 39, 1) 36% 40%,
-        rgb(236, 246, 237, 1) 36% 60%,
-        rgba(48, 67, 39, 1) 61% 65%,
-        rgba(48, 67, 39, 0) 66%
-        ),
-        linear-gradient(
-        rgba(48, 67, 39, 0) 34%,
-        rgba(48, 67, 39, 1) 35% 65%,
-        rgba(48, 67, 39, 0) 66%
-        ),
-        linear-gradient(
-        rgba(48, 67, 39, 0) 60%,
-        rgba(48, 67, 39, 1) 61% 65%,
-        rgba(48, 67, 39, 0) 66%
-        ),
-        linear-gradient(
-        to right,
-        rgba(90, 181, 211, 0) 0%,
-        rgba(90, 181, 211, 1) 31% 69%,
-        rgba(90, 181, 211, 0) 70%
-        );
-    background-position: 30px 85px, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0,
-        0 0, 0 0, 0 0, -3.5px 0, 3.5px 0, 0 -3.5px, 0 3.5px, 0 0;
-    background-size: 62px 170px, 62px 170px, 62px 170px, 62px 170px, 62px 170px,
-        62px 170px, 62px 170px, 62px 170px, 62px 170px, 62px 170px, 62px 170px,
-        62px 170px, 62px 170px, 62px 170px, 62px 170px, 62px 170px, 62px 170px,
-        1px 170px;
+    background-color: #491d8b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%235271ff' fill-opacity='1'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 
@@ -123,11 +45,13 @@ body{
 header {
     display: flex;
     justify-content: space-around;
-    background: #2b2d42;
-    color: #edf2f4;
+    background: var(--white);
+    color: var(--white);
     align-items: center;
     font-weight: bold;
+    border-bottom: 1px solid #5271FF;
 }
+
 
 header ul {
     display: flex;
@@ -139,7 +63,7 @@ header ul li {
 }
 
 header ul li a {
-    color: #edf2f4;
+    color: #5271FF;
     text-decoration: none;
 }
 
@@ -184,7 +108,7 @@ h1 {
     text-align: center;
     line-height: 0;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    color: #edf2f4;
+    color: var(--black);
 }
 
 h3 {
@@ -193,17 +117,15 @@ h3 {
     text-align: center;
     padding: 20px;
     text-transform: capitalize;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    color: #edf2f4;
-    background: #3979cc;
+    color: var(--white);
     border-radius: 25px 25px 0px 0px;
     letter-spacing: 3px;
 }
 
 p {
     margin: 20px;
-    
-    color: #edf2f4;
+    font-size: 1.3em;
+    color: var(--white);
 }
 
 /* hero section */
@@ -215,9 +137,18 @@ p {
 
 .hero h1 {
     padding: 20px;
+    text-align: left;
+}
+
+.hero p {
+    text-align: left;
 }
 
 /* hero section */
+
+.container p {
+    margin-bottom: 50px;
+}
 
 ol {
     font-family: 'Dosis', sans-serif;
@@ -227,34 +158,29 @@ ol {
 }
 
 ol > div {
-    background: #3b3e5a;
     width: 45.5%;
     border-radius: 25px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
     margin: 30px;
+    background: #5271FF;
 }
 
 ol li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #3979cc;
-    color: #fff;
+    background: #6f40a5;
+    color: var(--white);
     border-radius: 25px;
     margin: 20px 10px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
     transition: .3s;
+    border: 1px solid #5271FF;
 }
 
 ol li a {
     display: block;
     transition: .3s;
     text-decoration: none;
-    color: #edf2f4;
+    color: var(--white);
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -299,12 +225,28 @@ ol li a {
     border-radius: 10px;
     display: block;
     width: 50px;
-    border: 3px dashed #edf2f4;
+    border: 1px solid #5271FF;
 }
 
 .download:hover {
     background: #333;
-    color: #edf2f4;
+    color: #00d26a;
+    animation: 1s shake infinite;
+    border: 2px dashed #00d26a;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .github-btn {
@@ -319,12 +261,14 @@ ol li a {
     border-radius: 10px;
     display: block;
     width: 50px;
-    border: 3px dashed #edf2f4;
+    border: 1px solid #5271FF;
 }
 
 .github-btn:hover {
     background: #333;
     color: #edf2f4;
+    border: none;
+    transform: scale(1.5) rotate(15deg);
 }
 
 .youtube-btn {
@@ -347,27 +291,36 @@ ol li a {
 }
 
 .redes__sociales i {
-    color: #2b2d42;
+    color: var(--white);
     margin: 5px;
 }
 
 footer {
-    padding: 10px;
+    border-top: 1px solid #5271FF;
+    padding: 30px;
 }
 
 footer a {
-    color: #2b2d42;
+    color: var(--white);
     font-style: italic;
 }
 
 footer p {
     text-align: center;
-    color: #2b2d42;
+    color: var(--white);
 }
 
 /* Mobile view */
 
 @media only screen and (max-width: 768px){
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-bottom: 30px;
+    }
+
     ol div{
         flex-direction: column;
     }
