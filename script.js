@@ -1,3 +1,8 @@
+// modo oscuro
+const modoOscuro = () => {
+    document.body.classList.toggle('dark-mode');
+}
+
 function myFunction() {
     // Declare variables
     var input, filter, ul, li, a, i, txtValue;

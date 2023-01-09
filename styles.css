@@ -174,7 +174,7 @@ ol li {
 ol li a {
     display: block;
     transition: .3s;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--white);
     font-weight: bold;
     letter-spacing: 2px;
