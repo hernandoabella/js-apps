@@ -28,15 +28,16 @@
 }
 
 .dark-mode {
-    background: #162770;
-    color: #232323;
+    background: #101e5c;
+    color: #f0eaea;
     transition: .3s;
 }
 
 body{
+    background: var(--blanco);
+    color: var(--black);
+    transition: .3s;
     font-family: 'Dosis', sans-serif;
-    background-color: #491d8b;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%235271ff' fill-opacity='1'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 
@@ -49,7 +50,7 @@ header {
     color: var(--white);
     align-items: center;
     font-weight: bold;
-    border-bottom: 1px solid #5271FF;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 
@@ -77,29 +78,6 @@ header ul li a {
 
 /* header */
 
-/* search box */
-
-.input-container {
-    width: 600px;
-    margin: auto;
-}
-
-#myInput {
-    background-image: url('/images/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin: 20px auto; /* Add some space below the input */
-    border-radius: 25px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
-}
-
-/* search box */
 
 h1 {
     font-family: 'Lobster', cursive;
@@ -122,17 +100,13 @@ h3 {
     letter-spacing: 3px;
 }
 
-p {
-    margin: 20px;
-    font-size: 1.3em;
-    color: var(--white);
-}
+
 
 /* hero section */
 
 .hero {
     padding: 10px;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(135deg, #c5d0ff 0%, #764ba2 100%);
 }
 
 .hero h1 {
@@ -164,11 +138,32 @@ ol > div {
     background: #5271FF;
 }
 
+.li__container {
+    background: #2d3a77;
+    padding: 10px;
+    border-radius: 25px;
+    width: 94%;
+    margin: 20px auto;
+
+}
+
+.descripcion {
+    background: #1b2657;
+    border-radius: 25px;
+    height: 90px;
+    width: 97%;
+    margin: 10px;
+}
+
+.descripcion p {
+    color: var(--white);
+    padding: 10px;
+}
+
 ol li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #2d3a77;
     color: var(--black);
     border-radius: 25px;
     margin: 20px 10px;
@@ -184,6 +179,12 @@ ol li a {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+ol p {
+    color: var(--white);
+    font-size: 1.3em;
+    margin: 0px 20px;
 }
 
 .btns {
@@ -289,23 +290,24 @@ ol li a {
 }
 
 .redes__sociales i {
-    color: var(--white);
     margin: 5px;
 }
 
 footer {
-    border-top: 1px solid #5271FF;
     padding: 30px;
 }
 
 footer a {
-    color: var(--white);
     font-style: italic;
+    color: var(--black);
 }
 
 footer p {
     text-align: center;
-    color: var(--white);
+}
+
+footer i {
+    color: var(--black);
 }
 
 /* Mobile view */

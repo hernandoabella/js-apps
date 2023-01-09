@@ -27,8 +27,3 @@ function myFunction2() {
     }
 }
 
-// modo oscuro
-function modoOscuro() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-}
