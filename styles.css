@@ -6,6 +6,13 @@
     --black: #232323;
     --white: #f8fdff;
     --gris-claro: #F0F2F5;
+    --blanco: #F4F4F8;
+    --negro: #333;
+    --gris-claro: #e0e0e0;
+    --gris-oscuro: #999;
+    --verde-hacker: #20c20e;
+    --fuente-titulo: 'Alata';
+    --fuente-texto: 'Syne';
 }
 
 :root.dark-mode {
