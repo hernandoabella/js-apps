@@ -143,6 +143,7 @@ ol > div {
     border-radius: 25px;
     margin: 30px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    background: #222d5f;
 }
 
 .li__container {
@@ -174,7 +175,7 @@ ol li {
     border-radius: 25px;
     margin: 20px 10px;
     transition: .3s;
-    border: 3px solid #8fa1f3;
+    border: 3px solid #cfd7ff;
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
@@ -199,7 +200,6 @@ ol p {
 .card-text {
     border-radius: 25px 25px 0px 0px;
     padding: 10px;
-    height: 300px;
 }
 
 .card-text h3 {
@@ -366,8 +366,5 @@ footer i {
         width: 100%;
         border-radius: none;
         margin: 20px auto;
-    }
-    .card-text {
-        height: auto;
     }
 }
