@@ -175,7 +175,8 @@ ol li {
     margin: 20px 10px;
     transition: .3s;
     border: 3px solid #8fa1f3;
-    
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 ol li a {
