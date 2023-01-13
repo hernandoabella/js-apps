@@ -180,7 +180,7 @@ ol li {
 ol li a {
     display: block;
     transition: .3s;
-    color: var(--negro);
+    color: #5271FF;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -317,7 +317,7 @@ ol p {
 
 .redes__sociales{
     width: 180px;
-    margin: 0 auto;
+    
     float: left;
 }
 
@@ -327,7 +327,7 @@ ol p {
 
 footer {
     padding: 30px;
-    display: flex;
+    background: var(--blanco);
 }
 
 footer a {
@@ -336,7 +336,7 @@ footer a {
 }
 
 footer p {
-    text-align: center;
+    text-align: right;
 }
 
 footer i {
