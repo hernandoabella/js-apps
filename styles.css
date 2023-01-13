@@ -1,24 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Open+Sans&display=swap');
 
 :root {
-    --primary-color: red;
-    --secondary-color: blue;
-    --black: #232323;
-    --white: #f8fdff;
-    --gris-claro: #F0F2F5;
-    --blanco: #F4F4F8;
-    --negro: #333;
-    --gris-claro: #e0e0e0;
-    --gris-oscuro: #999;
+    --blanco: #fff;
+    --negro: #050505;
+    --gris-claro: #f0f2f5;
+    --gris-oscuro: rgb(226, 226, 226);
     --verde-hacker: #20c20e;
     --fuente-titulo: 'Alata';
     --fuente-texto: 'Syne';
 }
 
-:root.dark-mode {
-    --primary-color: #2b2d42;
-    --secondary-color: white;
-}
+/* :root.dark-mode {
+    
+} */
 
 *{
     box-sizing: border-box;
@@ -30,7 +24,7 @@
     width: 20px;
     height: 20px;
     background: #5271FF;
-    color: var(--black);
+    color: var(--negro);
     border-radius: 25px;
     cursor: pointer;
 }
@@ -55,9 +49,9 @@
 
 body{
     background: var(--gris-claro);
-    color: var(--black);
+    color: var(--negro);
     transition: .3s;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* header */
@@ -65,8 +59,8 @@ body{
 header {
     display: flex;
     justify-content: space-around;
-    background: var(--white);
-    color: var(--white);
+    background: var(--blanco);
+    color: var(--blanco);
     align-items: center;
     font-weight: bold;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
@@ -105,7 +99,7 @@ h1 {
     text-align: center;
     line-height: 0;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    color: var(--black);
+    color: var(--negro);
 }
 
 h3 {
@@ -114,7 +108,7 @@ h3 {
     text-align: center;
     padding: 20px;
     text-transform: capitalize;
-    color: var(--white);
+    color: var(--blanco);
     border-radius: 25px 25px 0px 0px;
     letter-spacing: 3px;
 }
@@ -150,27 +144,27 @@ ol > div {
     border-radius: 25px;
     margin: 30px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    background: #222d5f;
+    background: #fff;
 }
 
 .li__container {
-    background: #2d3a77;
     padding: 10px;
     border-radius: 25px;
     width: 94%;
     margin: 20px auto;
-
+    background: #f8f8f8;
 }
 
 .descripcion {
-    background: #1b2657;
+    background: #F0F2F5;
+    color: var(--negro);
     border-radius: 25px;
     width: 97%;
     margin: 10px;
 }
 
 .descripcion p {
-    color: var(--white);
+    color: var(--negro);
     padding: 10px;
 }
 
@@ -178,27 +172,25 @@ ol li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: var(--black);
+    color: var(--negro);
     border-radius: 25px;
-    margin: 20px 10px;
     transition: .3s;
-    border: 3px solid #cfd7ff;
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 ol li a {
     display: block;
     transition: .3s;
-    /* text-decoration: none; */
-    color: #cfd7ff;
+    color: var(--negro);
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
+.dificultad {
+    padding: 10px 10px 0px 0px;
+}
+
 ol p {
-    color: var(--white);
     font-size: 1.3em;
     margin: 0px 20px;
     line-height: 30px;
@@ -210,11 +202,11 @@ ol p {
 }
 
 .card-text h3 {
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.5);
+    color: #050505;
 }
 
 .card-text p {
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.5);
+    color: #050505;
 }
 
 
@@ -227,6 +219,8 @@ ol p {
     align-items: center;
     justify-content: left;
     width: 600px;
+    background: #F0F2F5;
+    border-radius: 25px;
 }
 
 .title img {
@@ -234,7 +228,8 @@ ol p {
 }
 
 .stars {
-    margin: 20px;
+    margin-top: 10px;
+    display: block;
 }
 
 .fa-star {
@@ -242,7 +237,7 @@ ol p {
 }
 
 .y-star {
-    color: #FCD53F;
+    color: var(--negro);
 }
 
 .download {
@@ -264,6 +259,11 @@ ol p {
     color: #00d26a;
     animation: 1s shake infinite;
     border: 2px dashed #00d26a;
+}
+
+.span-flex {
+    display: flex;
+    
 }
 
 @keyframes shake {
@@ -309,7 +309,7 @@ ol p {
     text-transform: uppercase;
     transition: 0.3s;
     background-size: 200% auto;
-    color: white;            
+    color: blanco;            
     border-radius: 10px;
     display: block;
     width: 50px;
@@ -332,7 +332,7 @@ footer {
 
 footer a {
     font-style: italic;
-    color: var(--black);
+    color: var(--negro);
 }
 
 footer p {
@@ -340,7 +340,7 @@ footer p {
 }
 
 footer i {
-    color: var(--black);
+    color: var(--negro);
 }
 
 /* Mobile view */
