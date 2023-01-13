@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;800;900&display=swap');
 
 :root {
     --blanco: #fff;
@@ -93,8 +93,6 @@ header ul li a {
 
 
 h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 2.5em;
     margin: 10px;
     text-align: center;
     line-height: 0;
@@ -103,14 +101,12 @@ h1 {
 }
 
 h3 {
-    font-family: 'Lobster', cursive;
-    font-size: 2em;
     text-align: center;
     padding: 20px;
     text-transform: capitalize;
     color: var(--blanco);
     border-radius: 25px 25px 0px 0px;
-    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 /* hero section */
@@ -160,7 +156,7 @@ ol > div {
     color: var(--negro);
     border-radius: 25px;
     width: 97%;
-    margin: 10px;
+    margin: 20px 0px;
 }
 
 .descripcion p {
@@ -181,8 +177,6 @@ ol li a {
     display: block;
     transition: .3s;
     color: #5271FF;
-    font-weight: bold;
-    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -218,9 +212,9 @@ ol p {
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 600px;
     background: #F0F2F5;
     border-radius: 25px;
+    width: 100%;
 }
 
 .title img {
@@ -356,6 +350,10 @@ footer i {
 
     ol div{
         flex-direction: column;
+    }
+
+    .stars {
+        margin-bottom: 20px;
     }
 }
 
