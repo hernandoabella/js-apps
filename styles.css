@@ -91,7 +91,6 @@ header ul li a {
 
 /* header */
 
-
 h1 {
     margin: 10px;
     text-align: center;
@@ -129,29 +128,23 @@ h3 {
 
 .fila {
     display: flex;
-    background: transparent;
+    width: 100%;
 }
 
 .fila > div {
-    width: 50%;
-    margin: 20px;
     border-radius: 25px;
-}
-
-ol {
-    font-family: 'Dosis', sans-serif;
-    width: 100%;
+    margin: 30px;
 }
 
 ol > div {
     width: 100%;
     border-radius: 25px;
-    margin: 30px;
 }
 
 .card-container {
     background: var(--blanco);
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    width: 50%;
 }
 
 .li__container {
@@ -164,17 +157,12 @@ ol > div {
 }
 
 .descripcion {
-    background: #F0F2F5;
     color: var(--negro);
-    border-radius: 25px;
-    width: 97%;
-    margin: 20px 0px;
-    border: 1px solid #E4E6EB;
 }
 
 .descripcion p {
     color: var(--negro);
-    padding: 10px;
+    
 }
 
 ol li {
@@ -184,7 +172,6 @@ ol li {
     color: var(--negro);
     border-radius: 25px;
     transition: .3s;
-    border: 1px solid #E4E6EB;
 }
 
 ol li a {
@@ -199,8 +186,7 @@ ol li a {
 }
 
 ol p {
-    font-size: 1.3em;
-    margin: 0px 20px;
+    margin: 10px;
     line-height: 30px;
 }
 
@@ -260,6 +246,7 @@ ol p {
     border-radius: 10px;
     display: block;
     width: 50px;
+    border: 2px dashed transparent;
 }
 
 .download:hover {
@@ -271,7 +258,6 @@ ol p {
 
 .span-flex {
     display: flex;
-    
 }
 
 @keyframes shake {
@@ -300,6 +286,7 @@ ol p {
     border-radius: 10px;
     display: block;
     width: 50px;
+    border: 2px dashed transparent;
 }
 
 .github-btn:hover {
@@ -323,9 +310,10 @@ ol p {
     width: 50px;
 }
 
+/* footer */
+
 .redes__sociales{
     width: 180px;
-    
     float: left;
 }
 
@@ -351,9 +339,11 @@ footer i {
     color: var(--negro);
 }
 
+/* footer */
+
 /* Mobile view */
 
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
     header {
         flex-direction: column;
     }
@@ -362,18 +352,32 @@ footer i {
         margin-bottom: 30px;
     }
 
-    ol div{
-        flex-direction: column;
-    }
-
     .stars {
         margin-bottom: 20px;
     }
+
+    .span-flex {
+        flex-direction: column;
+    }
+
+    ol li {
+        flex-direction: column;
+    }
+
+    .title a {
+        padding-top: 20px;
+    }
+
+    .card-container {
+        margin-bottom: 10px;
+    }
+
 }
 
-@media only screen and (max-width: 950px) {
-    
+.container {
+    background: rgb(4, 0, 255);
 }
+
 
 @media only screen and (max-width: 1115px) {
     ol {
@@ -384,6 +388,14 @@ footer i {
     ol > div {
         width: 100%;
         border-radius: none;
-        margin: 20px auto;
     }
-}
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .fila > div {
+        width: 100%;
+        margin: 30px 0px;
+    }
+} */
