@@ -127,28 +127,40 @@ h3 {
 
 /* hero section */
 
+.fila {
+    display: flex;
+    background: transparent;
+}
+
+.fila > div {
+    width: 50%;
+    margin: 20px;
+    border-radius: 25px;
+}
 
 ol {
     font-family: 'Dosis', sans-serif;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 ol > div {
-    width: 45.5%;
+    width: 100%;
     border-radius: 25px;
     margin: 30px;
+}
+
+.card-container {
+    background: var(--blanco);
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    background: #fff;
 }
 
 .li__container {
-    padding: 10px;
     border-radius: 25px;
-    width: 94%;
+    width: 90%;
     margin: 20px auto;
     background: #f8f8f8;
+    border: 1px solid #E4E6EB;
+    padding: 10px;
 }
 
 .descripcion {
@@ -157,6 +169,7 @@ ol > div {
     border-radius: 25px;
     width: 97%;
     margin: 20px 0px;
+    border: 1px solid #E4E6EB;
 }
 
 .descripcion p {
@@ -171,6 +184,7 @@ ol li {
     color: var(--negro);
     border-radius: 25px;
     transition: .3s;
+    border: 1px solid #E4E6EB;
 }
 
 ol li a {
@@ -235,7 +249,7 @@ ol p {
 }
 
 .download {
-    background: #edf2f4;
+    background: #D8DADF;
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -275,7 +289,7 @@ ol p {
 }
 
 .github-btn {
-    background: #edf2f4;
+    background: #D8DADF;
     margin: 10px;
     padding: 10px;
     text-align: center;
