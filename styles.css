@@ -10,46 +10,29 @@
     --fuente-texto: 'Syne';
 }
 
-/* :root.dark-mode {
-    
-} */
-
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.dark-mode-btn {
-    width: 20px;
-    height: 20px;
-    background: #5271FF;
-    color: var(--negro);
-    border-radius: 25px;
-    cursor: pointer;
+h1 {
+    margin: 10px;
+    text-align: center;
+    line-height: 0;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.dark-mode-btn:hover {
-    animation: animation1 3s infinite;
-}
-
-@keyframes animation1 {
-    50%{
-        border-radius: 0px;
-        transform: rotate(-1200deg) scale(1.3);
-        background: #59e8a0;
-    }
-}
-
-.dark-mode {
-    background: #223897;
-    color: #f0eaea;
-    transition: .3s;
+h3 {
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+    border-radius: 25px 25px 0px 0px;
+    text-transform: uppercase;
 }
 
 body{
     background: var(--gris-claro);
-    color: var(--negro);
     transition: .3s;
     font-family: 'Open Sans', sans-serif;
 }
@@ -60,12 +43,10 @@ header {
     display: flex;
     justify-content: space-around;
     background: var(--blanco);
-    color: var(--blanco);
     align-items: center;
     font-weight: bold;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
-
 
 header ul {
     display: flex;
@@ -89,24 +70,22 @@ header ul li a {
     width: 150px;
 }
 
-/* header */
 
-h1 {
-    margin: 10px;
-    text-align: center;
-    line-height: 0;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+.dark-mode-btn {
+    width: 20px;
+    height: 20px;
+    background: #5271FF;
     color: var(--negro);
+    border-radius: 25px;
+    cursor: pointer;
 }
 
-h3 {
-    text-align: center;
-    padding: 20px;
-    text-transform: capitalize;
+.dark-mode {
+    background: #5271FF;
     color: var(--blanco);
-    border-radius: 25px 25px 0px 0px;
-    text-transform: uppercase;
 }
+
+/* header */
 
 /* hero section */
 
@@ -153,15 +132,6 @@ h3 {
     padding: 10px;
 }
 
-.descripcion {
-    color: var(--negro);
-}
-
-.descripcion p {
-    color: var(--negro);
-    
-}
-
 ol li {
     display: flex;
     align-items: center;
@@ -178,11 +148,7 @@ ol li a {
     text-transform: uppercase;
 }
 
-.dificultad {
-    padding: 10px 10px 0px 0px;
-}
-
-ol p {
+.card-container p {
     margin: 10px;
     line-height: 30px;
 }
@@ -200,6 +166,9 @@ ol p {
     color: #050505;
 }
 
+.dificultad {
+    padding: 10px 10px 0px 0px;
+}
 
 .btns {
     display: flex;
