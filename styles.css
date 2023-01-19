@@ -42,10 +42,11 @@ body{
 header {
     display: flex;
     justify-content: space-around;
-    background: var(--blanco);
     align-items: center;
     font-weight: bold;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    padding: 30px;
+    background: var(--blanco);
 }
 
 header ul {
@@ -63,15 +64,11 @@ header ul li a {
 }
 
 .logo {
-    color: #edf2f4;
+    text-transform: uppercase;
+    color: #5271FF;
 }
 
-.logo img {
-    width: 150px;
-}
-
-
-.dark-mode-btn {
+.switch {
     width: 20px;
     height: 20px;
     background: #5271FF;
@@ -80,10 +77,32 @@ header ul li a {
     cursor: pointer;
 }
 
+.dark-mode-btn .dark-mode {
+    background: var(--blanco);
+}
+
 .dark-mode {
     background: #5271FF;
     color: var(--blanco);
 }
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .darkMode {
+    background-color: black;
+  }
+  .darkMode > .box {
+    background-color: white;
+    color: black;
+  }
 
 /* header */
 
