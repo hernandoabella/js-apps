@@ -14,21 +14,6 @@
     margin: 0;
 }
 
-h1 {
-    margin: 10px;
-    text-align: center;
-    line-height: 0;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    text-align: center;
-    padding: 20px;
-    text-transform: capitalize;
-    border-radius: 25px 25px 0px 0px;
-    text-transform: uppercase;
-}
-
 body{
     background: var(--gris-claro);
     transition: .3s;
@@ -37,6 +22,12 @@ body{
 
 body.darkMode  {
     background: #3045a1;
+}
+
+.git-stars {
+    position: absolute;
+    right: 20px;
+    top: 25px;
 }
 
 /* header */
@@ -49,6 +40,7 @@ header {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     padding: 30px;
     background: var(--blanco);
+    font-family: 'Major Mono Display', monospace;
 }
 
 .darkMode header {
@@ -111,6 +103,8 @@ header ul li a {
 
 .hero {
     padding: 30px;
+    background: #5271FF;
+    color: var(--blanco);
 }
 
 .darkMode .hero {
@@ -122,6 +116,7 @@ header ul li a {
     text-align: left;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .hero p {
@@ -207,6 +202,9 @@ header ul li a {
     border-radius: 25px 25px 0px 0px;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 3em;
 }
 
 .darkMode .card-text h3 {
@@ -398,7 +396,7 @@ footer i {
 
 /* Mobile view */
 
-/* @media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     header {
         flex-direction: column;
     }
@@ -429,18 +427,13 @@ footer i {
 
 }
 
-.container {
-    background: rgb(4, 0, 255);
-}
-
-
 @media only screen and (max-width: 1115px) {
-    ol {
+    .cards {
         flex-direction: column;
         padding: 20px;
     }
 
-    ol > div {
+    .cards > div {
         width: 100%;
         border-radius: none;
     }
@@ -453,4 +446,8 @@ footer i {
         width: 100%;
         margin: 30px 0px;
     }
-} */
+
+    .git-stars {
+        display: none;
+    }
+}
