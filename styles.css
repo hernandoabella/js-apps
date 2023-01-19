@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:wght@300&display=swap');
 
 :root {
     --blanco: #fff;
@@ -6,8 +6,6 @@
     --gris-claro: #f0f2f5;
     --gris-oscuro: rgb(226, 226, 226);
     --verde-hacker: #20c20e;
-    --fuente-titulo: 'Alata';
-    --fuente-texto: 'Syne';
 }
 
 *{
@@ -37,6 +35,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+body.darkMode  {
+    background: #3045a1;
+}
+
 /* header */
 
 header {
@@ -47,6 +49,10 @@ header {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     padding: 30px;
     background: var(--blanco);
+}
+
+.darkMode header {
+    background: #5271FF;
 }
 
 header ul {
@@ -66,6 +72,11 @@ header ul li a {
 .logo {
     text-transform: uppercase;
     color: #5271FF;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.darkMode .logo {
+    color: var(--blanco);
 }
 
 .switch {
@@ -77,6 +88,10 @@ header ul li a {
     cursor: pointer;
 }
 
+.darkMode .switch {
+    background: var(--blanco);
+}
+
 .dark-mode-btn .dark-mode {
     background: var(--blanco);
 }
@@ -86,31 +101,21 @@ header ul li a {
     color: var(--blanco);
 }
 
-.box {
-    height: 100px;
-    width: 100px;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .darkMode {
-    background-color: black;
-  }
-  .darkMode > .box {
+.darkMode > .box {
     background-color: white;
     color: black;
-  }
+}
 
 /* header */
 
 /* hero section */
 
 .hero {
-    padding: 10px;
-    background-image: linear-gradient(135deg, #c5d0ff 0%, #764ba2 100%);
+    padding: 30px;
+}
+
+.darkMode .hero {
+    color: var(--blanco);
 }
 
 .hero h1 {
@@ -119,7 +124,7 @@ header ul li a {
 }
 
 .hero p {
-    text-align: left;
+    padding: 20px;
 }
 
 /* hero section */
@@ -142,6 +147,10 @@ header ul li a {
     width: 50%;
 }
 
+.darkMode .card-container {
+    background: #5271FF;
+}
+
 .li__container {
     border-radius: 25px;
     width: 90%;
@@ -149,6 +158,12 @@ header ul li a {
     background: #f8f8f8;
     border: 1px solid #E4E6EB;
     padding: 10px;
+}
+
+.darkMode .li__container {
+    background: #3a55c9;
+    color: var(--blanco);
+    border: 1px solid #243ca8;
 }
 
 ol li {
@@ -167,6 +182,14 @@ ol li a {
     text-transform: uppercase;
 }
 
+.darkMode ol li a{
+    color: var(--blanco);
+}
+
+.darkMode header li a {
+    color: var(--blanco);
+}
+
 .card-container p {
     margin: 10px;
     line-height: 30px;
@@ -181,6 +204,10 @@ ol li a {
     color: #050505;
 }
 
+.darkMode .card-text h3 {
+    color: var(--blanco);
+}
+
 .card-text p {
     color: #050505;
 }
@@ -189,8 +216,8 @@ ol li a {
     padding: 10px 10px 0px 0px;
 }
 
-.btns {
-    display: flex;
+.darkMode {
+    color: var(--gris-claro);
 }
 
 .title {
@@ -206,6 +233,11 @@ ol li a {
     margin: 20px;
 }
 
+.darkMode .title {
+    background: #22327c;
+    color: var(--blanco);
+}
+
 .stars {
     margin-top: 10px;
     display: block;
@@ -217,6 +249,19 @@ ol li a {
 
 .y-star {
     color: var(--negro);
+}
+
+.darkMode .y-star {
+    color: yellow;
+}
+
+.btns {
+    display: flex;
+}
+
+.darkMode .download {
+    background: #273c9a;
+    color: var(--blanco);
 }
 
 .download {
@@ -243,6 +288,11 @@ ol li a {
 
 .span-flex {
     display: flex;
+}
+
+.darkMode .github-btn {
+    background: #273c9a;
+    color: var(--blanco);
 }
 
 .github-btn {
@@ -311,6 +361,19 @@ ol li a {
 footer {
     padding: 30px;
     background: var(--blanco);
+}
+
+.darkMode footer {
+    background: #5271FF;
+    color: var(--blanco);
+}
+
+.darkMode footer a {
+    color: var(--blanco);
+}
+
+.darkMode footer i {
+    color: var(--blanco);
 }
 
 footer a {
