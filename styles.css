@@ -67,6 +67,16 @@ header ul li a {
     font-family: 'Major Mono Display', monospace;
 }
 
+.first-letter {
+    background: #5271FF;
+    color: var(--blanco);
+}
+
+.darkMode .first-letter {
+    background: var(--blanco);
+    color: #5271ff;
+}
+
 .darkMode .logo {
     color: var(--blanco);
 }
@@ -99,11 +109,13 @@ header ul li a {
 
 /* header */
 
-/* hero section */
+/* hero */
 
 .hero {
     padding: 30px;
     background: #5271FF;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(82%2c 113%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c589.277C109.388%2c597.581%2c206.555%2c523.911%2c294.895%2c458.866C378.913%2c397.003%2c438.127%2c313.726%2c493.951%2c225.58C558.003%2c124.443%2c659.692%2c26.086%2c644.161%2c-92.616C628.63%2c-211.318%2c507.685%2c-283.14%2c417.143%2c-361.457C337.922%2c-429.981%2c252.226%2c-487.251%2c152.154%2c-518.188C50.982%2c-549.465%2c-60.882%2c-580.719%2c-158.376%2c-539.38C-253.604%2c-499.001%2c-293.131%2c-389.976%2c-351.54%2c-304.611C-403.107%2c-229.244%2c-451.559%2c-155.756%2c-480.191%2c-69.041C-513.954%2c33.214%2c-575.634%2c144.514%2c-532.395%2c243.137C-489.166%2c341.737%2c-357.72%2c357.493%2c-267.46%2c416.176C-176.586%2c475.258%2c-108.081%2c581.072%2c0%2c589.277' fill='%230f3aff'%3e%3c/path%3e%3cpath d='M1440 1081.182C1539.326 1087.815 1630.38 1039.187 1719.663 995.164 1819.231 946.069 1952.558 915.5550000000001 1988.752 810.607 2025.364 704.446 1908.714 606.06 1892.158 494.99 1875.7350000000001 384.807 1959.993 256.489 1892.902 167.558 1826.5059999999999 79.54700000000003 1687.288 108.86099999999999 1580.421 81.77100000000002 1478.409 55.911 1381.721-11.280999999999949 1279.08 11.95799999999997 1174.695 35.59100000000001 1086.937 114.48700000000002 1031.516 206.04700000000003 980.031 291.104 988.3299999999999 395.426 986.7950000000001 494.839 985.4390000000001 582.646 988.887 669.514 1023.1089999999999 750.388 1058.0230000000001 832.8969999999999 1113.172 903.6610000000001 1183.354 959.3489999999999 1259.07 1019.428 1343.559 1074.742 1440 1081.182' fill='%2395a8ff'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     color: var(--blanco);
 }
 
@@ -123,7 +135,28 @@ header ul li a {
     padding: 20px;
 }
 
-/* hero section */
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.hero-flex div {
+    padding: 20px;
+    width: 50%;
+}
+
+.hero-flex .h-two {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.hero-flex img {
+    width: 300px;
+}
+
+/* hero */
 
 /* contenedor principal */
 
@@ -402,7 +435,7 @@ footer i {
     }
 
     header nav ul {
-        margin-bottom: 30px;
+        margin: 30px;
     }
 
     .stars {
