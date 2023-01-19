@@ -473,8 +473,8 @@ footer i {
         width: 200px;
     }
 
-    .hero-flex .h-two {
-        
+    .card-text h3 {
+        font-size: 1.3em;
     }
 
 }
