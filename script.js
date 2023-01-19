@@ -1,5 +1,5 @@
 function cambiar(x) {
-    x.classList.toggle("fa-moon-o");
+    x.classList.toggle("fa-thumbs-down");
 }
 
 // modo oscuro

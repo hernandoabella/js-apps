@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans:wght@300&family=Roboto:wght@700;900&display=swap');
 
 :root {
     --blanco: #fff;
@@ -82,14 +82,13 @@ header ul li a {
 .switch {
     width: 20px;
     height: 20px;
-    background: #5271FF;
-    color: var(--negro);
+    color: #5271FF;
     border-radius: 25px;
     cursor: pointer;
 }
 
 .darkMode .switch {
-    background: var(--blanco);
+    color: var(--blanco);
 }
 
 .dark-mode-btn .dark-mode {
@@ -121,6 +120,8 @@ header ul li a {
 .hero h1 {
     padding: 20px;
     text-align: left;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero p {
@@ -166,7 +167,7 @@ header ul li a {
     border: 1px solid #243ca8;
 }
 
-ol li {
+.cards li {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -175,14 +176,14 @@ ol li {
     transition: .3s;
 }
 
-ol li a {
+.cards li a {
     display: block;
     transition: .3s;
     color: #5271FF;
     text-transform: uppercase;
 }
 
-.darkMode ol li a{
+.darkMode .cards li a{
     color: var(--blanco);
 }
 
@@ -202,6 +203,10 @@ ol li a {
 
 .card-text h3 {
     color: #050505;
+    padding: 20px;
+    border-radius: 25px 25px 0px 0px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
 }
 
 .darkMode .card-text h3 {
