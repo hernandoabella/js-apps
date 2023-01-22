@@ -111,6 +111,21 @@ header ul li a {
 
 /* header */
 
+.card-navigator {
+    background: #2b376e;
+    padding: 30px;
+}
+
+.card-navigator a {
+    color: #fff;
+    background: #3046ac;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
 /* hero */
 
 .hero {
@@ -158,6 +173,15 @@ header ul li a {
 
 .hero-flex img {
     width: 100%;
+}
+
+.h-one h4 {
+    margin-left: 20px;
+}
+
+.h-one span {
+    color: #FFD200;
+    font-size: 2em;
 }
 
 /* hero */
