@@ -35,4 +35,6 @@ function copyright() {
     let yearRef = document.querySelector('.year');
     yearRef.innerHTML = year;
 }
-copyright();
+copyright(); 
+
+console.log(2+3) 
