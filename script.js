@@ -37,4 +37,16 @@ function copyright() {
 }
 copyright(); 
 
-console.log(2+3) 
+var count = 0;
+var counterContainer = document.getElementById("counter");
+
+var intervalId = setInterval(function() {
+    if (count === 74) {
+        clearInterval(intervalId);
+        counterContainer.style.animation = "none";
+    } else {
+        count++;
+        counterContainer.style.animation = "contador 1s infinite";
+        counterContainer.innerHTML = count;
+    }
+}, 300);

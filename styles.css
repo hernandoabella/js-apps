@@ -181,8 +181,16 @@ header ul li a {
 
 .h-one span {
     color: #FFD200;
-    font-size: 2em;
+    font-size: 3em;
 }
+
+@keyframes contador {
+    50% {
+        
+    }
+
+}
+
 
 /* hero */
 
