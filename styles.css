@@ -204,18 +204,21 @@ header ul li a {
 }
 
 .fila > div:hover {
-    background: #b0bfff;
+    background: #ebefff;
 }
 
 .darkMode .fila > div:hover {
-    background: #ad42f9;
+    background: #2B376E;
+}
+
+.bi-flex {
+    display: flex;
 }
 
 .card-container {
     background: var(--blanco);
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    width: 50%;
-    padding-bottom: 20px;
+    width: 60%;
 }
 
 .darkMode .card-container {
@@ -223,12 +226,10 @@ header ul li a {
 }
 
 .li__container {
-    border-radius: 25px;
-    width: 90%;
-    margin: 40px;
     background: #f8f8f8;
     border: 1px solid #E4E6EB;
-    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
 }
 
 .darkMode .li__container {
@@ -268,19 +269,22 @@ header ul li a {
 }
 
 .card-text {
-    border-radius: 25px 25px 0px 0px;
     padding: 10px;
+    background: var(--gris-oscuro);
+    border-radius: 25px 25px 0px 0px;
 }
 
 .card-text h3 {
-    color: #050505;
-    padding: 20px;
-    border-radius: 25px 25px 0px 0px;
+    color: var(--negro);
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     letter-spacing: 2px;
     font-size: 3em;
+}
+
+.darkMode .card-text {
+    background: #2B376E;
 }
 
 .darkMode .card-text h3 {
@@ -318,6 +322,8 @@ header ul li a {
 .flexDiv {
     padding: 10px;
 }
+
+
 
 .stars {
     margin-top: 10px;
@@ -492,7 +498,7 @@ footer i {
     }
 
     .stars {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .span-flex {
@@ -551,7 +557,11 @@ footer i {
     }
 
     .fila > div {
-        width: 80%;
+        width: 100%;
+    }
+
+    .bi-flex {
+        flex-direction: column;
     }
 
 }
@@ -560,4 +570,5 @@ footer i {
     .git-stars {
         display: none;
     }
+
 }

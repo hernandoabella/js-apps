@@ -41,7 +41,7 @@ var count = 0;
 var counterContainer = document.getElementById("counter");
 
 var intervalId = setInterval(function() {
-    if (count === 74) {
+    if (count === 100) {
         clearInterval(intervalId);
     } else {
         count++;
