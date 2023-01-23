@@ -43,10 +43,8 @@ var counterContainer = document.getElementById("counter");
 var intervalId = setInterval(function() {
     if (count === 74) {
         clearInterval(intervalId);
-        counterContainer.style.animation = "none";
     } else {
         count++;
-        counterContainer.style.animation = "contador 1s infinite";
         counterContainer.innerHTML = count;
     }
-}, 300);
+}, 50);
