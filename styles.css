@@ -405,17 +405,23 @@ header ul li a {
 }
 
 .youtube-btn {
-    background: #FF0000;
+    background: #D8DADF;
     margin: 10px;
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.3s;
     background-size: 200% auto;
-    color: blanco;            
+    color: #333;            
     border-radius: 10px;
     display: block;
     width: 50px;
+    border: 2px dashed transparent;
+}
+
+.youtube-btn:hover {
+    background: #FF0000;
+    color: #fff;
 }
 
 @keyframes shake {
