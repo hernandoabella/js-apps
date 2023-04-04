@@ -1,54 +1,37 @@
-# Contributing to Transcriptase
-We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
+# Contributing
 
-- Reporting a bug
-- Discussing the current state of the code
-- Submitting a fix
-- Proposing new features
-- Becoming a maintainer
+👋 ¡Hola y gracias por considerar contribuir a `js-apps`! 👨‍💻👩‍💻
 
-## We Develop with Github
-We use github to host code, to track issues and feature requests, as well as accept pull requests.
+## Cómo contribuir
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
-Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
+¡Hay muchas maneras en las que puedes contribuir a este proyecto! Algunas de ellas incluyen:
 
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-6. Issue that pull request!
+🐞 Reportando errores: si encuentras algún error en el código, por favor abre un issue describiendo el problema y cómo podemos reproducirlo.
 
-## Any contributions you make will be under the MIT Software License
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
+🎁 Mejorando la documentación: si crees que la documentación puede mejorarse o si encuentras algún error, por favor abre un issue o envía una solicitud de pull request.
 
-## Report bugs using Github's [issues](https://github.com/briandk/transcriptase-atom/issues)
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
+💻 Escribiendo código: si te gusta programar y quieres agregar una nueva característica, por favor crea un fork del repositorio y envía una solicitud de pull request.
 
-## Write bug reports with detail, background, and sample code
-[This is an example](http://stackoverflow.com/q/12488905/180626) of a bug report I wrote, and I think it's not a bad model. Here's [another example from Craig Hockenberry](http://www.openradar.me/11905408), an app developer whom I greatly respect.
+🤔 Ofreciendo ideas y sugerencias: si tienes alguna idea o sugerencia para mejorar el proyecto, por favor crea un issue para discutirlo.
 
-**Great Bug Reports** tend to have:
+## Guía de contribución
 
-- A quick summary and/or background
-- Steps to reproduce
-  - Be specific!
-  - Give sample code if you can. [My stackoverflow question](http://stackoverflow.com/q/12488905/180626) includes sample code that *anyone* with a base R setup can run to reproduce what I was seeing
-- What you expected would happen
-- What actually happens
-- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
+Antes de comenzar a contribuir, asegúrate de seguir estas pautas:
 
-People *love* thorough bug reports. I'm not even kidding.
+👥 Asegúrate de que tu código sea legible y fácil de entender para otros contribuyentes.
 
-## Use a Consistent Coding Style
-I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+👨‍👩‍👧‍👦 Si vas a enviar una solicitud de pull request, asegúrate de que incluya una descripción detallada de los cambios que has realizado.
 
-* 2 spaces for indentation rather than tabs
-* You can try running `npm run lint` for style unification
+👍 Sigue los estándares de codificación y convenciones del proyecto.
 
-## License
-By contributing, you agree that your contributions will be licensed under its MIT License.
+🚨 Asegúrate de que las pruebas de unidad pasen correctamente antes de enviar tu solicitud de pull request.
 
-## References
-This document was adapted from the open-source contribution guidelines for [Facebook's Draft](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
+## Cómo hacer una solicitud de pull request
+
+1. Crea un fork del repositorio.
+2. Crea una nueva rama con un nombre descriptivo (por ejemplo, `mi-nueva-funcionalidad`).
+3. Realiza tus cambios en esta rama y asegúrate de seguir las pautas de contribución.
+4. Envía una solicitud de pull request a la rama principal del repositorio.
+5. Asegúrate de que tu solicitud de pull request incluya una descripción detallada de los cambios que has realizado.
+
+¡Gracias de nuevo por considerar contribuir a `js-apps`! 👏
