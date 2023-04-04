@@ -1,37 +1,40 @@
 <div align="center"><img src="https://raw.githubusercontent.com/hernandoabella/javascript-apps/master/images/js-apps-new-logo.png"></div>
 
-Colección de aplicaciones creadas con el fin de practicar el código de <b>JavaScript</b>.
+# 🚀 JavaScript Apps 
+
+Colección de aplicaciones creadas con el fin de practicar el código de **JavaScript**.
 
 Aprender [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) no es sencillo... por lo tanto he diseñado una solución perfecta para ayudarte a mejorar tus habilidades mientras aprendes a crear maravillosas aplicaciones.
 
 ## Comenzando 😎
 
-Las aplicaciones de la lista te ayudarán a practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con <b>JavaScript</b>.
+Las aplicaciones de la lista te ayudarán a practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con **JavaScript**.
 
 ## Niveles ⚔️
 
 Las aplicaciones están divididas en 3 niveles de dificultad:
 
-### Básico: ⭐ <br>
+| Nivel     | Descripción                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------- |
+| Básico    | Desarrolladores en las primeras etapas de su viaje de aprendizaje.                           |
+| Intermedio| Desarrolladores en una etapa intermedia de aprendizaje y experiencia.                         |
+| Avanzado  | Desarrolladores que tienen todo lo anterior y están aprendiendo técnicas más avanzadas.     |
 
-Desarrolladores en las primeras etapas de su viaje de aprendizaje. Aquellos que normalmente se enfocan en crear aplicaciones orientadas al usuario.
+## Aplicaciones 📱
 
-### Intermedio: ⭐⭐⭐ <br>
+Las aplicaciones disponibles son:
 
-Desarrolladores en una etapa intermedia de aprendizaje y experiencia. Se sienten cómodos en UI/UX, usan herramientas de desarrollo y crean aplicaciones que usan servicios API.
-
-### Avanzado: ⭐⭐⭐⭐⭐ <br>
-
-Desarrolladores que tienen todo lo anterior y están aprendiendo técnicas más avanzadas, como implementar aplicaciones back-end y servicios de bases de datos.
+| Nombre            | Descripción                                                                                   | Nivel   | Estrellas |
+| ----------------- | -------------------------------------------------------------------------------------------- | ------  | --------- |
+| TODO List         | Aplicación de lista de tareas simple.                                                        | Básico  | ⭐⭐       |
+| Weather App       | Aplicación que muestra la información climática actual de una ciudad.                       | Intermedio| ⭐⭐⭐     |
+| Movie Search App   | Aplicación que permite buscar información de películas y series.                            | Intermedio| ⭐⭐⭐     |
+| Quiz App          | Aplicación de cuestionario de opción múltiple.                                               | Avanzado | ⭐⭐⭐⭐   |
+| Chat App          | Aplicación de chat en tiempo real.                                                           | Avanzado | ⭐⭐⭐⭐⭐ |
 
 ## ¿Cómo contribuir? ✨
 
-- crear un nuevo proyecto
-- agregando caracteristicas a un proyecto 
-- resolviendo un bug / error
-- mejorando la documentación
-- actualizando issues
-
+Si te gustaría contribuir, por favor, consulta nuestra guía de [contribución](./CONTRIBUTING.md) para más detalles.
 
 ## Cómprame un café ☕
 
