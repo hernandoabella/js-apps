@@ -1,6 +1,6 @@
 <div align="center"><img src="https://raw.githubusercontent.com/hernandoabella/javascript-apps/master/images/js-apps-new-logo.png"></div>
 
-# 🚀 JavaScript Apps
+# 🚀 JavaScript Apps 
 
 Colección de aplicaciones creadas con el fin de practicar el código de **JavaScript**.
 
@@ -14,23 +14,23 @@ Las aplicaciones de la lista te ayudarán a practicar el código de JavaScript c
 
 Las aplicaciones están divididas en 3 niveles de dificultad:
 
-| Nivel      | Descripción                                                                             |
-| ---------- | --------------------------------------------------------------------------------------- |
-| Básico     | Desarrolladores en las primeras etapas de su viaje de aprendizaje.                      |
-| Intermedio | Desarrolladores en una etapa intermedia de aprendizaje y experiencia.                   |
-| Avanzado   | Desarrolladores que tienen todo lo anterior y están aprendiendo técnicas más avanzadas. |
+| Nivel     | Descripción                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------- |
+| Básico    | Desarrolladores en las primeras etapas de su viaje de aprendizaje.                           |
+| Intermedio| Desarrolladores en una etapa intermedia de aprendizaje y experiencia.                         |
+| Avanzado  | Desarrolladores que tienen todo lo anterior y están aprendiendo técnicas más avanzadas.     |
 
 ## Aplicaciones 📱
 
 Las aplicaciones disponibles son:
 
-| Nombre           | Descripción                                                           | Nivel      | Estrellas  |
-| ---------------- | --------------------------------------------------------------------- | ---------- | ---------- |
-| TODO List        | Aplicación de lista de tareas simple.                                 | Básico     | ⭐⭐       |
-| Weather App      | Aplicación que muestra la información climática actual de una ciudad. | Intermedio | ⭐⭐⭐     |
-| Movie Search App | Aplicación que permite buscar información de películas y series.      | Intermedio | ⭐⭐⭐     |
-| Quiz App         | Aplicación de cuestionario de opción múltiple.                        | Avanzado   | ⭐⭐⭐⭐   |
-| Chat App         | Aplicación de chat en tiempo real.                                    | Avanzado   | ⭐⭐⭐⭐⭐ |
+| Nombre            | Descripción                                                                                   | Nivel   | Estrellas |
+| ----------------- | -------------------------------------------------------------------------------------------- | ------  | --------- |
+| TODO List         | Aplicación de lista de tareas simple.                                                        | Básico  | ⭐⭐       |
+| Weather App       | Aplicación que muestra la información climática actual de una ciudad.                       | Intermedio| ⭐⭐⭐     |
+| Movie Search App   | Aplicación que permite buscar información de películas y series.                            | Intermedio| ⭐⭐⭐     |
+| Quiz App          | Aplicación de cuestionario de opción múltiple.                                               | Avanzado | ⭐⭐⭐⭐   |
+| Chat App          | Aplicación de chat en tiempo real.                                                           | Avanzado | ⭐⭐⭐⭐⭐ |
 
 ## ¿Cómo contribuir? ✨
 
