@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+<div align="center"><img src="https://raw.githubusercontent.com/hernandoabella/javascript-apps/master/images/js-apps-new-logo.png"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🚀 JavaScript Apps
 
-## Available Scripts
+Colección de aplicaciones creadas con el fin de practicar el código de **JavaScript**.
 
-In the project directory, you can run:
+Aprender [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) no es sencillo... por lo tanto he diseñado una solución perfecta para ayudarte a mejorar tus habilidades mientras aprendes a crear maravillosas aplicaciones.
 
-### `npm start`
+## Comenzando 😎
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Las aplicaciones de la lista te ayudarán a practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con **JavaScript**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Niveles ⚔️
 
-### `npm test`
+Las aplicaciones están divididas en 3 niveles de dificultad:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Nivel      | Descripción                                                                             |
+| ---------- | --------------------------------------------------------------------------------------- |
+| Básico     | Desarrolladores en las primeras etapas de su viaje de aprendizaje.                      |
+| Intermedio | Desarrolladores en una etapa intermedia de aprendizaje y experiencia.                   |
+| Avanzado   | Desarrolladores que tienen todo lo anterior y están aprendiendo técnicas más avanzadas. |
 
-### `npm run build`
+## Aplicaciones 📱
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Las aplicaciones disponibles son:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Nombre           | Descripción                                                           | Nivel      | Estrellas  |
+| ---------------- | --------------------------------------------------------------------- | ---------- | ---------- |
+| TODO List        | Aplicación de lista de tareas simple.                                 | Básico     | ⭐⭐       |
+| Weather App      | Aplicación que muestra la información climática actual de una ciudad. | Intermedio | ⭐⭐⭐     |
+| Movie Search App | Aplicación que permite buscar información de películas y series.      | Intermedio | ⭐⭐⭐     |
+| Quiz App         | Aplicación de cuestionario de opción múltiple.                        | Avanzado   | ⭐⭐⭐⭐   |
+| Chat App         | Aplicación de chat en tiempo real.                                    | Avanzado   | ⭐⭐⭐⭐⭐ |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ¿Cómo contribuir? ✨
 
-### `npm run eject`
+Si te gustaría contribuir, por favor, consulta nuestra guía de [contribución](./CONTRIBUTING.md) para más detalles.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Cómprame un café ☕
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://www.buymeacoffee.com/hernandoabella" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
