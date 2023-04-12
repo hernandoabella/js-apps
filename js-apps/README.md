@@ -1,38 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center"><img src="https://raw.githubusercontent.com/hernandoabella/javascript-apps/master/images/js-apps-new-logo.png"></div>
 
-## Getting Started
+# 🚀 JavaScript Apps 
 
-First, run the development server:
+Colección de aplicaciones creadas con el fin de practicar el código de **JavaScript**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Aprender [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) no es sencillo... por lo tanto he diseñado una solución perfecta para ayudarte a mejorar tus habilidades mientras aprendes a crear maravillosas aplicaciones.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Comenzando 😎
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Las aplicaciones de la lista te ayudarán a practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con **JavaScript**.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Niveles ⚔️
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Las aplicaciones están divididas en 3 niveles de dificultad:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Nivel     | Descripción                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------- |
+| Básico    | Desarrolladores en las primeras etapas de su viaje de aprendizaje.                           |
+| Intermedio| Desarrolladores en una etapa intermedia de aprendizaje y experiencia.                         |
+| Avanzado  | Desarrolladores que tienen todo lo anterior y están aprendiendo técnicas más avanzadas.     |
 
-## Learn More
+## Aplicaciones 📱
 
-To learn more about Next.js, take a look at the following resources:
+Las aplicaciones disponibles son:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Nombre            | Descripción                                                                                   | Nivel   | Estrellas |
+| ----------------- | -------------------------------------------------------------------------------------------- | ------  | --------- |
+| TODO List         | Aplicación de lista de tareas simple.                                                        | Básico  | ⭐⭐       |
+| Weather App       | Aplicación que muestra la información climática actual de una ciudad.                       | Intermedio| ⭐⭐⭐     |
+| Movie Search App   | Aplicación que permite buscar información de películas y series.                            | Intermedio| ⭐⭐⭐     |
+| Quiz App          | Aplicación de cuestionario de opción múltiple.                                               | Avanzado | ⭐⭐⭐⭐   |
+| Chat App          | Aplicación de chat en tiempo real.                                                           | Avanzado | ⭐⭐⭐⭐⭐ |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ¿Cómo contribuir? ✨
 
-## Deploy on Vercel
+Si te gustaría contribuir, por favor, consulta nuestra guía de [contribución](./CONTRIBUTING.md) para más detalles.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Cómprame un café ☕
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="https://www.buymeacoffee.com/hernandoabella" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>

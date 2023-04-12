@@ -1,0 +1,44 @@
+/* Header styles */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  flex: 1;
+  max-width: 200px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+.navigation li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.loginButton {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
