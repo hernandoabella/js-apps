@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./Header.module.css";
-import logo from "/Users/pc/Documents/GitHub/js-apps/js-apps/js-apps/public/logo.png";
+import logo from "../../../public/logo.png";
 
 const Header: React.FC = () => {
   return (
