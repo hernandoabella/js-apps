@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Aplicación del clima</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+
+            <form class="inputForm">
+                <input class="inputCity" type="text" placeholder="Busca una ciudad..."/>
+                <button class="formBtn"><i class="far fa-search"></i></button>
+            </form>
+
+            <div class="result">
+                <p>
+                    <i class="fal fa-map-marker-alt"></i>
+                    <span class="city"></span>
+                    <span class="country"></span>
+                </p>
+
+                <p class="temprature"></p>
+                
+                <div class="flex">
+                    <img src="" class="icono">
+                    <p class="sky"></p>
+                </div>
+                
+                <p class="min-max"></p>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

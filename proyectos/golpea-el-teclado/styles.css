@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", comic-sans;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: table;
+    }
+    #activity {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    }
+    #activity:before {
+    content: "Hit Any Key On Your Keyboard";
+    position: absolute;
+    top: -1;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background: rgba(10, 10, 10, 10, 10);
+    }
+    #activity:after {
+    content: "Codewithrandom";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    }
+    #result {
+    text-transform: uppercase;
+    }
+    a:link,
+    a:hover,
+    a:visited,
+    a:active {
+    text-decoration: bold;
+    }
+    .hits {
+    font-size: 5.75em;
+    font-weight: bolder;
+    }

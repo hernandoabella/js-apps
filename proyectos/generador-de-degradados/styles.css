@@ -1,0 +1,137 @@
+/* Created by Shourya */
+
+body {
+    text-align: center;
+    margin: 0;
+    background:rgba(143 , 199 , 205 , .6);
+    font-family: 'Comfortaa', cursive;
+}
+
+.top {
+    display: grid;
+    justify-content: center;
+}
+
+a{
+    font-family: 'Righteous', cursive ;
+    font-size:2em;
+    text-decoration:none;
+    -webkit-text-fill-color:transparent ;
+    -webkit-background-clip:text;
+    background-image:linear-gradient(to right , #ff815f , #7ac8ff , #a221ff ,  #ff6032 , #3065b6);
+    opacity:.5;
+    letter-spacing:.1em;
+    word-spacing:.1em;
+    background-size:500%;
+    background-position:50%;
+}
+
+.gradients {
+    padding: 1em;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-gap: 1em;
+}
+
+.first {
+    background: linear-gradient(45deg, #1ae09b, #1d539f);
+    grid-column: 1/3;
+    grid-row: 1/7;
+    border-top-left-radius: 1vw;
+}
+
+.second {
+    background: linear-gradient(135deg, #ecf471, #52eb69);
+    grid-column: 3/4;
+    grid-row: 1/14;
+    border-top-right-radius: 1vw;
+}
+
+.third {
+    background: linear-gradient(54deg, #eb2828, #eb8d28);
+    grid-row: 7/21;
+    grid-column: 1/2;
+    border-bottom-left-radius: 1vw;
+}
+
+.fourth {
+    background: linear-gradient(67deg, #5c239a, #67e9de);
+    grid-column: 2/3;
+    grid-row: 7/14;
+}
+
+.fifth {
+    background: linear-gradient(32deg, #e36c16, #7616e3);
+    grid-column: 2/4;
+    grid-row: 14 / 21;
+    border-bottom-right-radius: 1vw;
+}
+
+.randomgen {
+    margin-top: 1em;
+    width: 98vw;
+    height: 25vw;
+}
+
+.random {
+    width: 90vw;
+    height: 15vw;
+    margin-left: 5vw;
+    background: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(0, 0, 0, 0.7) 10px,
+            rgba(0, 0, 0, 0.7) 20px
+        )
+        white;
+}
+
+.s {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    transition-duration: 0.5s;
+}
+
+.source {
+    background: rgba(0, 0, 0, 0.3);
+    width: min-content;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.s:hover .source {
+    opacity: 1;
+}
+
+.button {
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 7em;
+    border-radius: 2em;
+    border: 1px solid rgb(68, 65, 246);
+    box-shadow: 0px 0px 6px rgb(68, 65, 246);
+    background: transparent ;
+    transition-duration: 0.2s;
+    font-family: 'Comfortaa', cursive;
+    outline:none;
+}
+
+.button:hover {
+    background: rgb(68, 65, 246);
+}
+
+.circles{
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    width: 100vw ;
+    height: 100vh;
+    z-index: -5;
+}

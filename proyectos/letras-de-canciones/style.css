@@ -1,0 +1,130 @@
+html{
+  box-sizing: border-box;
+}
+
+*,*:before,*:after {
+margin:0;
+padding: 0;
+box-sizing: inherit;
+
+}
+
+body {
+  background: #333333;
+}
+
+.container {
+  margin: 0 auto;
+  /* padding: rem 0; */
+} 
+
+::placeholder {
+  color: gold;
+}
+
+.intro-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2rem 0;
+  color: gold
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem 0;
+} 
+
+
+#lyricsHead {
+  color: white;
+}
+
+#lyrics-search {
+  text-align: center;
+  align-items: center;
+  margin:  20px;
+  padding: 20px;
+}
+
+form {
+  margin: 0 auto;
+  padding-left: 10rem;
+}
+
+#lyricSearch {
+  background-color: transparent;
+  color: #eeeeee;
+  outline: none;
+  height: 30px;
+  width: 64%;
+  margin: 0 auto;
+  padding-right: 2rem;
+  font-size: 16px;
+  font-family: cursive;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom:1px solid #eeeeee;
+}
+
+.lyrics {
+  width: 70%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.lyrics li {
+  font-size: 1.4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid  gold;
+}
+
+.lyrics li span {
+  font-size: 1.4rem;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  /* outline: none;
+  background-color: gold; */
+  
+}
+
+.lyrics li span:hover {
+  background-color: lightyellow;
+}
+
+
+#copy-lyrics {
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  outline: none;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: gold;
+  color: white;
+}
+
+#lyrics-display {
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}

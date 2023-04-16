@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>JavaScript Random Number Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="description" content="Use Vanilla JavaScript to generator a number in a given range!">
+
+</head>
+<body>
+   <div class="row">
+     <div class="col-2"></div>
+     <div class="col-8" align="center">
+       <h1>JavaScript Random Number Generator</h1>
+       <div class="myform">
+      I will generate a random integer between <br><br><input type="number" id="min_value" placeholder="Min Value"><br>
+      <br>and<br><br>
+      <input type="number" id="max_value" placeholder="Max Value"><br>
+      <br><br>
+      <button id="myBut" onclick="generate()" onmousedown="sound.play()">Generate!</button><br><br>
+        <div class="green" id="output"> </div>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
