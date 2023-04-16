@@ -10,9 +10,7 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href="/">
-          
             <Image src={logo} alt="Logo" width={120} height={40} />
-          
         </Link>
       </div>
       <nav className={styles.nav}>
