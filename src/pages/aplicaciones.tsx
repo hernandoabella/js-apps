@@ -1,11 +1,12 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import Projects from "../components/Projects/Projects";
 
 const AplicacionesPage = () => {
   return (
     <>
       <Header />
-      <div>hello</div>
+      <Projects />
       <Footer />
     </>
   );
