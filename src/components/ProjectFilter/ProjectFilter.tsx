@@ -1,6 +1,3 @@
-import React from "react";
-import { FaStar } from "react-icons/fa";
-
 const ProjectFilter = () => {
   return (
     <div className="flex justify-center items-center py-10">
@@ -23,11 +20,11 @@ const ProjectFilter = () => {
           id="ratingFilter"
           className="rounded-lg border border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
         >
-          <option value="<FaStar />"> 1 estrella</option>
-          <option value={1}><FaStar  /> 2 estrellas</option>
-          <option value={2}><FaStar  /> 3 estrellas</option>
-          <option value={3}><FaStar  /> 4 estrellas</option>
-          <option value={4}><FaStar  /> 5 estrellas</option>
+          <option value={0}>🌟</option>
+          <option value={1}>🌟🌟</option>
+          <option value={2}>🌟🌟🌟</option>
+          <option value={3}>🌟🌟🌟🌟</option>
+          <option value={4}>🌟🌟🌟🌟🌟</option>
         </select>
       </div>
       <div className="flex items-center">

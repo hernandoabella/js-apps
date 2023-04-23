@@ -10,21 +10,3 @@
   margin: 0 auto;
   max-width: 1300px;
 }
-
-.categoria-texto {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.cat-title {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.cat-description {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
