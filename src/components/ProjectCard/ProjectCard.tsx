@@ -10,6 +10,7 @@ interface ProjectCardProps {
   demoLink: string;
   imageSrc: string;
   imageAlt: string;
+  categoria: String;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -21,6 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   demoLink,
   imageSrc,
   imageAlt,
+  categoria
 }) => {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col">
@@ -36,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="p-6 flex flex-col justify-between flex-1">
         <h2 className="text-2xl font-bold text-center mb-4">{name}</h2>
         <p className="text-justify mb-4">{description}</p>
-        <div className="flex items-center mb-4">
+        <div className="flex items-center mb-4 pt-4 border-t">
           <p className="font-bold mr-2">Dificultad:</p>
           <div className="flex">
             {[...Array(difficulty)].map((_, index) => (
@@ -44,7 +46,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
           </div>
         </div>
-        <div className="flex  items-center border-t pt-4 pb-4">
+        <div className="flex items-center mb-4">
+          <p className="font-bold mr-2">Categoría:</p>
+          <p>{categoria}</p>
+        </div>
+        <div className="flex  items-center pb-4">
           <p className="font-bold mr-2">Tecnologías:</p>
           <div className="flex items-center">
             <div className="flex items-center mr-2">

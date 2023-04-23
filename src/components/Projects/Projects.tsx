@@ -20,6 +20,7 @@ const Projects = () => {
             demoLink="https://ejemplo.com/demo"
             imageSrc={"/project-image.webp"}
             imageAlt={"project image"}
+            categoria={"Texto"}
           />
           <ProjectCard
             name="Mi proyecto 2"
@@ -30,6 +31,7 @@ const Projects = () => {
             demoLink="https://ejemplo.com/demo"
             imageSrc={"/project-image.webp"}
             imageAlt={"project image"}
+            categoria={"Imágenes"}
           />
           <ProjectCard
             name="Mi proyecto 3"
@@ -40,6 +42,7 @@ const Projects = () => {
             demoLink="https://ejemplo.com/demo"
             imageSrc={"/project-image.webp"}
             imageAlt={"project image"}
+            categoria={"Adivinanzas"}
           />
         </div>
       </section>
