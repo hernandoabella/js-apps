@@ -42,7 +42,7 @@ const Projects = () => {
             demoLink="https://ejemplo.com/demo"
             imageSrc={"/project-image.webp"}
             imageAlt={"project image"}
-            categoria={"Adivinanzas"}
+            categoria={"Color"}
           />
         </div>
       </section>

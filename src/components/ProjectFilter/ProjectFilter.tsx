@@ -1,39 +1,67 @@
+import { useState } from "react";
+
+interface FilterValues {
+  nameFilter: string;
+  ratingFilter: number;
+  categoryFilter: number;
+}
+
 const ProjectFilter = () => {
+  const [filterValues, setFilterValues] = useState<FilterValues>({
+    nameFilter: "",
+    ratingFilter: 0,
+    categoryFilter: 0,
+  });
+
+  const handleFilterChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = event.target;
+    setFilterValues((prevValues) => ({ ...prevValues, [name]: value }));
+  };
+
   return (
     <div className="flex justify-center items-center py-10">
       <div className="flex items-center mr-4">
         <label htmlFor="nameFilter" className="mr-2">
-          Filtrar por nombre:
+          Nombre del proyecto:
         </label>
         <input
           id="nameFilter"
+          name="nameFilter"
           type="text"
           placeholder="Escribe aquí..."
           className="rounded-lg border border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+          value={filterValues.nameFilter}
+          onChange={handleFilterChange}
         />
       </div>
       <div className="flex items-center mr-4">
         <label htmlFor="ratingFilter" className="mr-2">
-          Filtrar por dificultad:
+          Dificultad:
         </label>
         <select
           id="ratingFilter"
+          name="ratingFilter"
           className="rounded-lg border border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+          value={filterValues.ratingFilter}
+          onChange={handleFilterChange}
         >
-          <option value={0}>🌟</option>
-          <option value={1}>🌟🌟</option>
-          <option value={2}>🌟🌟🌟</option>
-          <option value={3}>🌟🌟🌟🌟</option>
-          <option value={4}>🌟🌟🌟🌟🌟</option>
+          <option value={0}>Muy fácil</option>
+          <option value={1}>Fácil</option>
+          <option value={2}>Intermedio</option>
+          <option value={3}>Difícil</option>
+          <option value={4}>Muy difícil</option>
         </select>
       </div>
       <div className="flex items-center">
         <label htmlFor="categoryFilter" className="mr-2">
-          Filtrar por categoría:
+          Categoría:
         </label>
         <select
           id="categoryFilter"
+          name="categoryFilter"
           className="rounded-lg border border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+          value={filterValues.categoryFilter}
+          onChange={handleFilterChange}
         >
           <option value={0}>Todas las categorías</option>
           <option value={1}>Texto</option>
