@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaDownload, FaGithub, FaStar, FaPlayCircle } from "react-icons/fa";
+import { FaDownload, FaGithub, FaStar, FaPlayCircle, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 
 interface ProjectCardProps {
   name: string;
@@ -42,6 +42,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {[...Array(difficulty)].map((_, index) => (
               <FaStar key={index} className="text-yellow-400" />
             ))}
+          </div>
+        </div>
+        <div className="flex  items-center border-t pt-4 pb-4">
+          <p className="font-bold mr-2">Tecnologías:</p>
+          <div className="flex items-center">
+            <div className="flex items-center mr-2">
+              <FaHtml5 className="text-red-600 w-6 h-6" />
+            </div>
+            <div className="flex items-center mr-2">
+              <FaCss3Alt className="text-blue-500 w-6 h-6" />
+            </div>
+            <div className="flex items-center">
+              <FaJsSquare className="text-yellow-400 w-6 h-6" />
+            </div>
           </div>
         </div>
         <div className="flex justify-between">
