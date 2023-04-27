@@ -65,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
         <div className="flex justify-between">
-          <a href={downloadLink} className="flex items-center gap-2 bg-blue-600 hover:bg-white text-white hover:text-blue-600 rounded-lg py-2 px-4 border border-blue-600">
+          <a href={downloadLink} className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-2 px-4">
             <FaDownload className="w-4 h-4" />
             Descargar
           </a>
