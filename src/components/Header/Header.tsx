@@ -24,11 +24,11 @@ const Header: React.FC = () => {
                 <span className="hover:text-blue-500">Aplicaciones</span>
               </Link>
             </li>
-            <li className="mx-3">
+            {/* <li className="mx-3">
               <Link href="/aprende">
                 <span className="hover:text-blue-500 mr-20">Aprende</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

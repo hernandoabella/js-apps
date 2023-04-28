@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import heroImage from "../../../public/hero-image.jpg";
 
 const Hero: React.FC = () => {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    if (counter < 100) {
+      setTimeout(() => setCounter(counter + 1), 50);
+    }
+  }, [counter]);
+
   return (
-    <section className="bg-gray-100 py-20">
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
-        <div className="flex flex-col w-full lg:w-1/2 justify-center items-start py-6 px-6 md:px-0 md:pl-10">
+    <section className="bg-gray-100 py-30 flex flex-col md:flex-row md:h-screen">
+      <div className="w-full md:w-1/2 flex items-center ">
+        <div style={{ padding: "0 50px" }}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-            <span className="text-blue-500">+100</span> aplicaciones para practicar JavaScript
+            <span className="text-blue-500">+{counter}</span> aplicaciones para practicar JavaScript
           </h1>
           <p className="text-xl lg:text-2xl font-light text-gray-900 my-8">
             ¡Inspírate y crea las mejores aplicaciones en JavaScript! Aplicaciones de JavaScript para mejorar tus habilidades como desarrollador.
@@ -21,9 +29,9 @@ const Hero: React.FC = () => {
             </button>
           </Link>
         </div>
-        <div className="w-full lg:w-1/2 py-6 hidden lg:block">
-          <Image src={heroImage} alt="Hero" width={600} height={400} className="rounded-lg" />
-        </div>
+      </div>
+      <div className="w-full md:w-1/2 flex items-center" style={{ padding: "0 50px" }}>
+        <Image src={heroImage} alt="hero-image" className="w-full" />
       </div>
     </section>
 

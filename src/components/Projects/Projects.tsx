@@ -22,7 +22,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.webp",
+    imageSrc: "/project-image.jpg",
     imageAlt: "Project Image",
   },
   {
@@ -33,7 +33,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.webp",
+    imageSrc: "/project-image.jpg",
     imageAlt: "Project Image",
   },
   {
@@ -44,7 +44,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.webp",
+    imageSrc: "/project-image.jpg",
     imageAlt: "Project Image",
   },
   {
@@ -55,7 +55,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.webp",
+    imageSrc: "/project-image.jpg",
     imageAlt: "Project Image",
   },
 ];
