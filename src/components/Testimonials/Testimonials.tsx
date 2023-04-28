@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Testimonials = () => {
   return (
-    <div className="bg-gray-100 py-12 text-center">
+    <div className="bg-white py-12 text-center">
       <h2 className="text-4xl font-bold text-gray-800 mb-8">Testimonios de nuestros clientes</h2>
       <div className="flex justify-center flex-wrap">
         <div className="bg-white rounded-lg shadow-md mx-4 my-8 p-8 w-80">
