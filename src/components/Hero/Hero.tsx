@@ -14,9 +14,9 @@ const Hero: React.FC = () => {
   }, [counter]);
 
   return (
-    <section className="bg-gray-100 py-30 flex flex-col md:flex-row md:h-screen">
-      <div className="w-full md:w-1/2 flex items-center ">
-        <div style={{ padding: "0 50px" }}>
+    <section className="bg-gray-100 py-30 flex flex-col md:flex-row h-full">
+      <div className="w-full md:w-1/2 flex items-center px-4 md:px-16">
+        <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
             <span className="text-blue-500">+{counter}</span> aplicaciones para practicar JavaScript
           </h1>
@@ -30,11 +30,10 @@ const Hero: React.FC = () => {
           </Link>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex items-center" style={{ padding: "0 50px" }}>
+      <div className="w-full md:w-1/2 flex items-center">
         <Image src={heroImage} alt="hero-image" className="w-full" />
       </div>
     </section>
-
   );
 };
 
