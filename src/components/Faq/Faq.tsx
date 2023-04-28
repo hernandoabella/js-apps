@@ -1,26 +1,89 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Faq = () => {
+const Accordion = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  
+  const handleAccordion = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
-    <div class="container mx-auto px-4 py-8">
-  <h2 class="text-3xl font-bold mb-4">Preguntas Frecuentes</h2>
-  <div class="grid gap-4">
-    <div class="bg-white shadow rounded-lg p-4">
-      <h3 class="text-lg font-bold mb-2">¿Cómo usar JS-APPS?</h3>
-      <p class="text-gray-700">1. Encuentra un proyecto de Javascript sugerido para construir usando las categorías provistas en la navegación lateral de JSBeginners. 2. Lea la descripción y haga clic en el proyecto para verlo en vivo en su navegador. 3. Clona Git o descarga el código fuente en tu entorno de desarrollo local. 4. ELIMINE por completo el archivo javascript de origen (generalmente llamado app.js) y luego cree el proyecto Javascript usted mismo. 5. Una vez completado, proporciona un enlace a tu proyecto en la sección de comentarios para que otros puedan darte su opinión y reconocimiento.</p>
+    <div className="container mx-auto px-4 py-8">
+      <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase mb-5">
+        Preguntas frecuentes
+      </h2>
+      <div className="grid gap-5">
+        <div className="bg-white shadow rounded-lg">
+          <button
+            className="flex justify-between w-full px-4 py-3 text-lg font-bold focus:outline-none"
+            onClick={() => handleAccordion(0)}
+          >
+            <h3 className="text-gray-700">¿Cómo usar JS-APPS?</h3>
+            <span
+              className={
+                activeIndex === 0
+                  ? "transform rotate-180 transition duration-300"
+                  : "transform transition duration-300"
+              }
+            >
+              &#x25B6;
+            </span>
+          </button>
+          <div className={activeIndex === 0 ? "px-4 py-3" : "hidden"}>
+              <ol className="list-decimal list-inside">
+                    <li className="mb-2">Encuentra un proyecto de Javascript sugerido para construir usando las categorías provistas en la navegación lateral de JSBeginners</li>
+                    <li className="mb-2">Lee la descripción y haz clic en el proyecto para verlo en vivo en tu navegador.</li>
+                    <li className="mb-2">Clona Git o descarga el código fuente en tu entorno de desarrollo local.</li>
+                    <li className="mb-2">ELIMINA por completo el archivo javascript de origen (generalmente llamado app.js) y luego crea el proyecto Javascript tú mismo.</li>
+                    <li>Una vez completado, proporciona un enlace a tu proyecto en la sección de comentarios para que otros puedan darte su opinión y reconocimiento.</li>
+                </ol>
+                
+            
+          </div>
+        </div>
+        <div className="bg-white shadow rounded-lg">
+          <button
+            className="flex justify-between w-full px-4 py-3 text-lg font-bold focus:outline-none"
+            onClick={() => handleAccordion(1)}
+          >
+            <h3 className="text-gray-700">¿Por qué usar JS-APPS?</h3>
+            <span
+              className={
+                activeIndex === 1
+                  ? "transform rotate-180 transition duration-300"
+                  : "transform transition duration-300"
+              }
+            >
+              &#x25B6;
+            </span>
+          </button>
+          <div className={activeIndex === 1 ? "px-4 py-3" : "hidden"}>
+            <p className="text-gray-700"><b>Te proponemos un reto:</b> crear al menos 100 proyectos de JavaScript de distintos niveles por ti mismo antes de adentrarte en un nuevo framework o lenguaje. Es recomendable evitar seguir tutoriales y, en su lugar, ver videos para entender cómo se construye el proyecto. ¡Acepta el desafío y conviértete en un experto en JavaScript!</p>
+          </div>
+        </div>
+        <div className="bg-white shadow rounded-lg">
+          <button
+            className="flex justify-between w-full px-4 py-3 text-lg font-bold focus:outline-none"
+            onClick={() => handleAccordion(2)}
+          >
+            <h3 className="text-gray-700">¿Cómo puedo contribuir a un proyecto?</h3>
+            <span
+              className={
+                activeIndex === 2
+                  ? "transform rotate-180 transition duration-300"
+                  : "transform transition duration-300"
+              }
+            >
+              &#x25B6;
+            </span>
+          </button>
+          <div className={activeIndex === 2 ? "px-4 py-3" : "hidden"}>
+            <p className="text-gray-700">Puedes encontrar información detallada sobre cómo contribuir en nuestro archivo CONTRIBUTING.md en GitHub: <a href="https://github.com/hernandoabella/js-apps/blob/master/CONTRIBUTING.md" className="text-blue-600 hover:text-blue-800">https://github.com/hernandoabella/js-apps/blob/master/CONTRIBUTING.md</a></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="bg-white shadow rounded-lg p-4">
-      <h3 class="text-lg font-bold mb-2">¿Por qué JS-APPS?</h3>
-      <p class="text-gray-700">Hay tantos recursos de Internet de JavaScript que compiten por tu atención, y hay tantos educadores de JavaScript que te alientan a aprender el framework de JavaScript más nuevo antes de que te sientas cómodo con JavaScript básico. JS-APPS te desafía a que primero crees al menos 100 proyectos de JavaScript de nivel básico, intermedio y avanzado por ti mismo. Si debes ver un video tutorial, miralo para ver cómo se construye el proyecto, pero NO para codificar junto con el instructor. Tu trabajo es codificar el proyecto tú mismo. Solo debes pasar a aprender un nuevo framework o lenguaje cuando hayas completado e implementado al menos 100 proyectos sin seguir un tutorial.</p>
-    </div>
-    <div class="bg-white shadow rounded-lg p-4">
-      <h3 class="text-lg font-bold mb-2">¿Cómo contribuir?</h3>
-      <p class="text-gray-700">Si deseas contribuir al proyecto, puedes hacerlo de varias maneras, como sugiriendo nuevos proyectos para agregar a la lista, mejorando el sitio web o proporcionando comentarios sobre cómo hacerlo mejor. Para hacerlo, puedes contactarnos a través de nuestro correo electrónico o dejando un comentario en nuestro sitio web.</p>
-    </div>
-  </div>
-</div>
-
   );
 };
 
-export default Faq;
+export default Accordion;

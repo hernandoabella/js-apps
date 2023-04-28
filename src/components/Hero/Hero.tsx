@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             <span className="text-blue-500">+{counter}</span> aplicaciones para practicar JavaScript
           </h1>
           <p className="text-xl lg:text-2xl font-light text-gray-900 my-8">
-            ¡Inspírate y crea las mejores aplicaciones en JavaScript! Aplicaciones de JavaScript para mejorar tus habilidades como desarrollador.
+            ¡Inspírate y crea las mejores aplicaciones JavaScript!
           </p>
           <Link href="/aplicaciones">
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-lg">
