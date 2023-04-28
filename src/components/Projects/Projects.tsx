@@ -11,7 +11,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
   {
@@ -22,7 +22,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
   {
@@ -33,7 +33,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
   {
@@ -44,7 +44,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
   {
@@ -55,7 +55,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
 ];
