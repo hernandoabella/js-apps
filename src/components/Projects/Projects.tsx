@@ -112,9 +112,9 @@ const Projects = () => {
     <div>
       <section>
         <div>
-          <div className="flex justify-evenly items-center py-8">
+          <div className="bg-gray-100 flex justify-evenly">
             {/* Filter by name */}
-            <div className="mb-4">
+            <div className="m-4">
               <label htmlFor="filterInput" className="mr-2">
                 <b>Nombre del proyecto:</b>
               </label>
@@ -127,7 +127,7 @@ const Projects = () => {
               />
             </div>
             {/* Filter by difficulty */}
-            <div className="mb-4">
+            <div className="m-4">
               <label htmlFor="difficultyFilter" className="mr-2">
                 <b>Dificultad:</b>
               </label>
@@ -147,7 +147,7 @@ const Projects = () => {
             </div>
 
             {/* Filter by category */}
-            <div className="mb-4">
+            <div className="m-4">
               <label htmlFor="categoryFilter" className="mr-2">
                 <b>Categoría:</b>
               </label>
