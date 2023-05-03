@@ -1,6 +1,5 @@
 import { SetStateAction, useState } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import styles from "../Projects/Projects.module.css";
 
 const projectsData = [
   {
@@ -103,58 +102,60 @@ const Projects = () => {
 
   return (
     <div>
-      <section className={styles.projects}>
-        <div className={styles.container}>
-          {/* Filter by name */}
-          <div className="mb-4">
-            <label htmlFor="filterInput" className="mr-2">
-              Filter by name:
-            </label>
-            <input
-              type="text"
-              id="filterInput"
-              value={filterText}
-              onChange={handleFilterChange}
-              className="border border-gray-300 rounded py-2 px-4"
-            />
-          </div>
-          {/* Filter by difficulty */}
-          <div className="mb-4">
-            <label htmlFor="difficultyFilter" className="mr-2">
-              Filter by difficulty:
-            </label>
-            <select
-              id="difficultyFilter"
-              value={filterDifficulty}
-              onChange={handleDifficultyFilterChange}
-              className="border border-gray-300 rounded py-2 px-4"
-            >
-              <option value="">All</option>
-              <option value="1">Very Easy</option>
-              <option value="2">Easy</option>
-              <option value="3">Intermediate</option>
-              <option value="4">Difficult</option>
-              <option value="5">Very Difficult</option>
-            </select>
-          </div>
+      <section>
+        <div>
+            <div className="flex justify-evenly items-center py-8">
+              {/* Filter by name */}
+            <div className="mb-4">
+              <label htmlFor="filterInput" className="mr-2">
+                <b>Nombre del proyecto:</b>
+              </label>
+              <input
+                type="text"
+                id="filterInput"
+                value={filterText}
+                onChange={handleFilterChange}
+                className="border border-gray-300 rounded py-2 px-4"
+              />
+            </div>
+            {/* Filter by difficulty */}
+            <div className="mb-4">
+              <label htmlFor="difficultyFilter" className="mr-2">
+                <b>Dificultad:</b>
+              </label>
+              <select
+                id="difficultyFilter"
+                value={filterDifficulty}
+                onChange={handleDifficultyFilterChange}
+                className="border border-gray-300 rounded py-2 px-4"
+              >
+                <option value="">Todo</option>
+                <option value="1">Muy fácil 🐣</option>
+                <option value="2">Fácil 🌺</option>
+                <option value="3">Intermedio 🌈</option>
+                <option value="4">Difícil 🦾</option>
+                <option value="5">Muy Difícil 🚀</option>
+              </select>
+            </div>
 
-          {/* Filter by category */}
-          <div className="mb-4">
-            <label htmlFor="categoryFilter" className="mr-2">
-              Filter by category:
-            </label>
-            <select
-              id="categoryFilter"
-              value={filterCategory}
-              onChange={handleCategoryFilterChange}
-              className="border border-gray-300 rounded py-2 px-4"
-            >
-              <option value="">All</option>
-              <option value="Images">Images</option>
-              <option value="Text">Text</option>
-              <option value="Colors">Colors</option>
-              <option value="Other">Other</option>
-            </select>
+            {/* Filter by category */}
+            <div className="mb-4">
+              <label htmlFor="categoryFilter" className="mr-2">
+                <b>Categoría:</b>
+              </label>
+              <select
+                id="categoryFilter"
+                value={filterCategory}
+                onChange={handleCategoryFilterChange}
+                className="border border-gray-300 rounded py-2 px-4"
+              >
+                <option value="">All</option>
+                <option value="Images">Images</option>
+                <option value="Text">Text</option>
+                <option value="Colors">Colors</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
           </div>
 
           {filteredProjects.length === 0 && <p>No projects found</p>}

@@ -15,7 +15,7 @@ const Featured = () => {
           <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Download now</button>
         </div>
       </div>
-      <div className="container mx-auto py-8">
+      <div className="container py-8">
         <h3 className="text-2xl font-bold mb-4">Other Apps</h3>
         <div className="flex flex-wrap -mx-4">
           <div className="px-4 mb-4 w-full md:w-1/3">
@@ -28,7 +28,7 @@ const Featured = () => {
           </div>
           <div className="px-4 mb-4 w-full md:w-1/3">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <Image src="/path/to/other-image2.jpg" alt="Other App 2" className="h-48 w-full object-cover" width={400} height={100}/>
+              <Image src={featuredImg} alt="Other App 2" className="h-48 w-full object-cover" width={400} height={100}/>
               <div className="p-4">
                 <h4 className="text-lg font-bold mb-2">Other App 2 Title</h4>
               </div>
@@ -36,7 +36,7 @@ const Featured = () => {
           </div>
           <div className="px-4 mb-4 w-full md:w-1/3">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <Image src="/path/to/other-image3.jpg" alt="Other App 3" className="h-48 w-full object-cover" width={400} height={100}/>
+              <Image src={featuredImg} alt="Other App 3" className="h-48 w-full object-cover" width={400} height={100}/>
               <div className="p-4">
                 <h4 className="text-lg font-bold mb-2">Other App 3 Title</h4>
               </div>
