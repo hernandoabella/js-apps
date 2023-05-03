@@ -160,20 +160,24 @@ const Projects = () => {
 
           {filteredProjects.length === 0 && <p>No projects found</p>}
 
-          {filteredProjects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              name={project.name}
-              description={project.description}
-              difficulty={project.difficulty}
-              downloadLink={project.downloadLink}
-              githubLink={project.githubLink}
-              demoLink={project.demoLink}
-              imageSrc={project.imageSrc}
-              imageAlt={project.imageAlt}
-              category={project.category}
-            />
-          ))}
+          <div className="flex flex-wrap">
+  {filteredProjects.map((project, index) => (
+    <div key={index} className="w-1/3 p-8">
+      <ProjectCard
+        name={project.name}
+        description={project.description}
+        difficulty={project.difficulty}
+        downloadLink={project.downloadLink}
+        githubLink={project.githubLink}
+        demoLink={project.demoLink}
+        imageSrc={project.imageSrc}
+        imageAlt={project.imageAlt}
+        category={project.category}
+      />
+    </div>
+  ))}
+</div>
+
         </div>
       </section>
     </div>
