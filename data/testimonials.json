@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "text": "Me encantó la aplicación. Me ayudó a ser más productivo y organizado en mi día a día.",
+    "name": "Juan Pérez",
+    "jobTitle": "CEO en ABC Company",
+    "photo": "/customer1.jpg"
+  },
+  {
+    "id": 2,
+    "text": "La mejor aplicación que he utilizado. Me permite trabajar en cualquier lugar y momento, sin preocuparme por la seguridad de mis datos.",
+    "name": "María González",
+    "jobTitle": "Diseñadora gráfica freelance",
+    "photo": "/customer2.jpg"
+  },
+  {
+    "id": 3,
+    "text": "Esta aplicación ha cambiado mi vida. Me ayuda a mantenerme enfocado en mis tareas y proyectos, y me permite alcanzar mis metas con mayor facilidad.",
+    "name": "Ana Ramírez",
+    "jobTitle": "Profesora de yoga",
+    "photo": "/customer3.webp"
+  }
+]
