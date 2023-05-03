@@ -21,7 +21,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
   {
@@ -32,7 +32,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
   {
@@ -43,7 +43,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
   {
@@ -54,7 +54,7 @@ const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.jpg",
+    imageSrc: "/project-image.webp",
     imageAlt: "Project Image",
   },
 ];
@@ -64,23 +64,31 @@ const Projects = () => {
   const [filterDifficulty, setFilterDifficulty] = useState("");
   const [filterCategory, setFilterCategory] = useState("");
 
-  const handleFilterChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+  const handleFilterChange = (e: {
+    target: { value: SetStateAction<string> };
+  }) => {
     setFilterText(e.target.value);
   };
 
-  const handleDifficultyFilterChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+  const handleDifficultyFilterChange = (e: {
+    target: { value: SetStateAction<string> };
+  }) => {
     setFilterDifficulty(e.target.value);
   };
 
-  const handleCategoryFilterChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+  const handleCategoryFilterChange = (e: {
+    target: { value: SetStateAction<string> };
+  }) => {
     setFilterCategory(e.target.value);
   };
 
   const filteredProjects = projectsData.filter(
     (project) =>
       project.name.toLowerCase().includes(filterText.toLowerCase()) &&
-      (filterDifficulty === "" || project.difficulty.toString() === filterDifficulty) &&
-      (filterCategory === "" || project.category.toLowerCase() === filterCategory.toLowerCase())
+      (filterDifficulty === "" ||
+        project.difficulty.toString() === filterDifficulty) &&
+      (filterCategory === "" ||
+        project.category.toLowerCase() === filterCategory.toLowerCase())
   );
 
   const difficultyToStars = (difficulty: number) => {
@@ -104,8 +112,8 @@ const Projects = () => {
     <div>
       <section>
         <div>
-            <div className="flex justify-evenly items-center py-8">
-              {/* Filter by name */}
+          <div className="flex justify-evenly items-center py-8">
+            {/* Filter by name */}
             <div className="mb-4">
               <label htmlFor="filterInput" className="mr-2">
                 <b>Nombre del proyecto:</b>
@@ -160,24 +168,23 @@ const Projects = () => {
 
           {filteredProjects.length === 0 && <p>No projects found</p>}
 
-          <div className="flex flex-wrap">
-  {filteredProjects.map((project, index) => (
-    <div key={index} className="w-1/3 p-8">
-      <ProjectCard
-        name={project.name}
-        description={project.description}
-        difficulty={project.difficulty}
-        downloadLink={project.downloadLink}
-        githubLink={project.githubLink}
-        demoLink={project.demoLink}
-        imageSrc={project.imageSrc}
-        imageAlt={project.imageAlt}
-        category={project.category}
-      />
-    </div>
-  ))}
-</div>
-
+          <div className="flex flex-wrap px-8">
+            {filteredProjects.map((project, index) => (
+              <div key={index} className="w-1/3 p-8">
+                <ProjectCard
+                  name={project.name}
+                  description={project.description}
+                  difficulty={project.difficulty}
+                  downloadLink={project.downloadLink}
+                  githubLink={project.githubLink}
+                  demoLink={project.demoLink}
+                  imageSrc={project.imageSrc}
+                  imageAlt={project.imageAlt}
+                  category={project.category}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>

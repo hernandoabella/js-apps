@@ -6,7 +6,7 @@ import logo from "../../../public/logo.png";
 const Header: React.FC = () => {
   return (
     <header className="bg-white text-black">
-      <div className="container mx-auto flex justify-between items-center py-4">
+      <div className="container mx-auto flex justify-between items-center py-5">
         <div className="flex items-center ml-20">
           <Link href="/">
             <Image src={logo} alt="Logo" width={120} height={40} />
