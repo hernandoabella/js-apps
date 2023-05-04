@@ -4,7 +4,10 @@ import featuredImg from '/public/featured-image.png';
 
 const Featured = () => {
   return (
-    <div className="bg-gray-100 md:px-16">
+    <div className="bg-gray-100 md:px-16 p-8">
+      <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase mb-5">
+        Aplicaciones destacadas
+      </h2>
       <div className="container mx-auto px-4 py-12 md:flex md:items-center ">
         <div className="md:w-1/2">
           <Image src={featuredImg} alt="Featured App" className="mx-auto md:w-3/4 lg:w-3/5" />

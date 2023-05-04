@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className="bg-white py-20 px-4 sm:px-6 md:px-16">
+    <div className="bg-white py-20 p-8 sm:px-6 md:px-16">
   <div className="text-center lg:text-left">
     <h2 className="text-3xl text-indigo-600 font-semibold tracking-wider uppercase py-5">Acerca de JS-APPS</h2>
     <h3 className="mt-2 text-2xl font-bold leading-8 tracking-tight text-gray-900 sm:text-3xl">Desafía tu habilidad como desarrollador de JavaScript</h3>
