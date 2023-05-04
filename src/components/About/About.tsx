@@ -25,7 +25,7 @@ const About = () => {
             height={80}
             className="mb-5"
           />
-          <h4 className="text-2xl font-bold m-3">Aprende Haciendo</h4>
+          <h4 className="text-black text-2xl font-bold m-3">Aprende Haciendo</h4>
           <p className="text-lg text-gray-500 text-center">
             Construye muchos proyectos pequeños y medianos para mejorar tus
             habilidades.
@@ -39,7 +39,7 @@ const About = () => {
             height={80}
             className="mb-5"
           />
-          <h4 className="text-2xl font-bold m-3">Proyectos Sugeridos</h4>
+          <h4 className="text-black text-2xl font-bold m-3">Proyectos Sugeridos</h4>
           <p className="text-lg text-gray-500 text-center">
             Selecciona uno de los proyectos sugeridos aquí para aprender algo
             nuevo o reutilizar técnicas ya aprendidas.
@@ -53,7 +53,7 @@ const About = () => {
             height={80}
             className="mb-5"
           />
-          <h4 className="text-2xl font-bold m-3">Desafía Tus Habilidades</h4>
+          <h4 className="text-black text-2xl font-bold m-3">Desafía Tus Habilidades</h4>
           <p className="text-lg text-gray-500 text-center">
             <em>
               <b>JS-APPS</b>
