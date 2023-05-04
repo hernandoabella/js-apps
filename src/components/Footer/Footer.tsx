@@ -12,7 +12,7 @@ function Footer() {
           <a href="https://github.com/hernandoabella/js-apps" target="_blank">
             <FaGithub className="text-gray-700 hover:text-gray-800 mx-2 h-6 w-6" />
           </a>
-          <a href="https://www.buymeacoffee.com/your-buymeacoffee-username" target="_blank">
+          <a href="https://www.buymeacoffee.com/hernandoabella" target="_blank">
             <FaCoffee className="text-gray-700 hover:text-gray-800 mx-2 h-6 w-6" />
           </a>
         </div>
