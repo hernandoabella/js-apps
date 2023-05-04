@@ -15,7 +15,7 @@ const Featured = () => {
         <div className="mt-8 md:mt-0 md:ml-8 md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">Featured App Title</h2>
           <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in rutrum purus. Sed non enim tincidunt, varius orci non, fringilla lorem.</p>
-          <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Download now</button>
+          <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Descargar ahora</button>
         </div>
       </div>
       <div className="py-8">
