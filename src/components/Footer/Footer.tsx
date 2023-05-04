@@ -3,7 +3,7 @@ import { FaGithub, FaCoffee } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-gray-100">
+    <footer className="bg-white">
       <div className="flex justify-between items-center p-8">
         <p className="text-sm">
           &copy; 2023 JS-APPS. All rights reserved.

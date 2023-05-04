@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-white py-20 p-8 sm:px-6 md:px-16">
+    <div className="bg-gray-100 py-20 p-8 sm:px-6 md:px-16">
       <div className="text-center lg:text-left">
       <h2 className="text-base text-center text-indigo-600 font-semibold tracking-wide uppercase mb-5">
         Acerca de JS-APPS
@@ -31,7 +31,7 @@ const About = () => {
             habilidades.
           </p>
         </div>
-        <div className="mb-8 sm:mb-0 flex flex-col items-center mx-4">
+        <div className="mb-8 sm:mb-0 flex flex-col items-center">
           <Image
             src="/icon2.png"
             alt="Icono 2"
