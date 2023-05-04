@@ -47,14 +47,15 @@ Las aplicaciones disponibles son:
 ## Capturas de pantalla 📷
 
 - ### TODO List
-![TODO List App](/public/screenshots/todo-list.png "TODO List App")
+
+  ![TODO List App](/public/screenshots/calendar.png "TODO List App")
 
 - ### Weather App
-![Weather App](/public/screenshots/weather-app.png "Weather App")
+
+  ![Weather App](/public/screenshots/BMI-Calculator.png "Weather App")
 
 - ### Movie Search App
-![Movie Search App](/public/screenshots/movie-search-app.png "Movie Search App")
-
+  ![Movie Search App](/public/screenshots/acordeon-de-imagenes.png "Movie Search App")
 
 ## ¿Cómo contribuir? ✨
 
