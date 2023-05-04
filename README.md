@@ -1,6 +1,8 @@
-<img src="/public/logo.png">
+<div align="center"><img src="/public/logo.png"></div>
+<br>
+<p align="center">Colección de aplicaciones en JavaScript </p>
 
-## Colección de aplicaciones en JavaScript 🔥
+<hr>
 
 Bienvenido/a a esta colección de aplicaciones en JavaScript, diseñada para ayudarte a mejorar tus habilidades de programación. Aprender [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) puede ser todo un reto, pero estas aplicaciones te brindarán la oportunidad de aplicar lo que has aprendido y mejorar tus habilidades en el proceso.
 
@@ -10,10 +12,10 @@ Aquí encontrarás una amplia variedad de aplicaciones en JavaScript, clasificad
 
 ## ¿Por qué usar esta colección de aplicaciones? 🤔
 
-**1.** Te permitirán poner en práctica lo que has aprendido de forma progresiva y estructurada.
-**2.** Te ayudarán a mejorar tus habilidades en JavaScript y en programación en general.
-**3.** Te permitirán explorar diferentes áreas de la programación en JavaScript.
-**4.** Te brindarán la oportunidad de resolver problemas reales a través de la programación.
+**1.** Te permitirán poner en práctica lo que has aprendido de forma progresiva y estructurada.<br>
+**2.** Te ayudarán a mejorar tus habilidades en JavaScript y en programación en general.<br>
+**3.** Te permitirán explorar diferentes áreas de la programación en JavaScript.<br>
+**4.** Te brindarán la oportunidad de resolver problemas reales a través de la programación.<br>
 **5.** Podrás enfrentarte a retos de diferentes niveles de dificultad.
 
 ## Comenzando 😎
