@@ -24,18 +24,21 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 
 Las aplicaciones disponibles son:
 
-| Nombre            | Descripción                                                                                   | Categoría | Nivel        | Estrellas |
-| ----------------- | -------------------------------------------------------------------------------------------- | --------- | ------------ | --------- |
-| TODO List         | Aplicación de lista de tareas simple.                                                        | Texto     | Básico       | ⭐⭐       |
-| Weather App       | Aplicación que muestra la información climática actual de una ciudad.                       | API       | Intermedio   | ⭐⭐⭐     |
-| Movie Search App   | Aplicación que permite buscar información de películas y series.                            | API       | Intermedio   | ⭐⭐⭐     |
-| Quiz App          | Aplicación de cuestionario de opción múltiple.                                               | Interfaz  | Avanzado     | ⭐⭐⭐⭐   |
-| Chat App          | Aplicación de chat en tiempo real.                                                           | Interfaz  | Avanzado     | ⭐⭐⭐⭐⭐ |
-
+| Nombre            | Descripción                                                                                   | Categoría | Nivel        | Estrellas | Demo    |
+| ----------------- | -------------------------------------------------------------------------------------------- | --------- | ------------ | --------- | ------- |
+| TODO List         | Aplicación de lista de tareas simple.                                                        | Texto     | Básico       | ⭐⭐       | [Ver demo](https://todolist-demo.com) |
+| Weather App       | Aplicación que muestra la información climática actual de una ciudad.                       | API       | Intermedio   | ⭐⭐⭐     | [Ver demo](https://weatherapp-demo.com) |
+| Movie Search App   | Aplicación que permite buscar información de películas y series.                            | API       | Intermedio   | ⭐⭐⭐     | [Ver demo](https://moviesearch-demo.com) |
+| Quiz App          | Aplicación de cuestionario de opción múltiple.                                               | Interfaz  | Avanzado     | ⭐⭐⭐⭐   | [Ver demo](https://quizapp-demo.com) |
+| Chat App          | Aplicación de chat en tiempo real.                                                           | Interfaz  | Avanzado     | ⭐⭐⭐⭐⭐ | [Ver demo](https://chatapp-demo.com) |
 
 ## ¿Cómo contribuir? ✨
 
 Si te gustaría contribuir, por favor, consulta nuestra guía de [contribución](./CONTRIBUTING.md) para más detalles.
+
+## Licencia 📜
+
+Este proyecto está bajo la licencia [nombre de la licencia](ruta/al/archivo/license.md). Por favor, lee el archivo de licencia para más información.
 
 ## Cómprame un café ☕
 
