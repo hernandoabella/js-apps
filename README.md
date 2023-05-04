@@ -19,18 +19,19 @@ Las aplicaciones están divididas en 3 niveles de dificultad:
 | Básico    | Desarrolladores en las primeras etapas de su viaje de aprendizaje.                           |
 | Intermedio| Desarrolladores en una etapa intermedia de aprendizaje y experiencia.                         |
 | Avanzado  | Desarrolladores que tienen todo lo anterior y están aprendiendo técnicas más avanzadas.     |
-W
+
 ## Aplicaciones 📱
 
 Las aplicaciones disponibles son:
 
-| Nombre            | Descripción                                                                                   | Nivel   | Estrellas |
-| ----------------- | -------------------------------------------------------------------------------------------- | ------  | --------- |
-| TODO List         | Aplicación de lista de tareas simple.                                                        | Básico  | ⭐⭐       |
-| Weather App       | Aplicación que muestra la información climática actual de una ciudad.                       | Intermedio| ⭐⭐⭐     |
-| Movie Search App   | Aplicación que permite buscar información de películas y series.                            | Intermedio| ⭐⭐⭐     |
-| Quiz App          | Aplicación de cuestionario de opción múltiple.                                               | Avanzado | ⭐⭐⭐⭐   |
-| Chat App          | Aplicación de chat en tiempo real.                                                           | Avanzado | ⭐⭐⭐⭐⭐ |
+| Nombre            | Descripción                                                                                   | Categoría | Nivel        | Estrellas |
+| ----------------- | -------------------------------------------------------------------------------------------- | --------- | ------------ | --------- |
+| TODO List         | Aplicación de lista de tareas simple.                                                        | Texto     | Básico       | ⭐⭐       |
+| Weather App       | Aplicación que muestra la información climática actual de una ciudad.                       | API       | Intermedio   | ⭐⭐⭐     |
+| Movie Search App   | Aplicación que permite buscar información de películas y series.                            | API       | Intermedio   | ⭐⭐⭐     |
+| Quiz App          | Aplicación de cuestionario de opción múltiple.                                               | Interfaz  | Avanzado     | ⭐⭐⭐⭐   |
+| Chat App          | Aplicación de chat en tiempo real.                                                           | Interfaz  | Avanzado     | ⭐⭐⭐⭐⭐ |
+
 
 ## ¿Cómo contribuir? ✨
 
