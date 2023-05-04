@@ -1,7 +1,7 @@
 import { SetStateAction, useState } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { projectsData } from "../../../data/ProjectsData";
-
+import NoProjectsFound from "../NoProjectsFound/NoProjectsFound";
 
 const Projects = () => {
   const [filterText, setFilterText] = useState("");
@@ -34,23 +34,6 @@ const Projects = () => {
       (filterCategory === "" ||
         project.category.toLowerCase() === filterCategory.toLowerCase())
   );
-
-  const difficultyToStars = (difficulty: number) => {
-    switch (difficulty) {
-      case 1:
-        return "⭐️";
-      case 2:
-        return "⭐️⭐️";
-      case 3:
-        return "⭐️⭐️⭐️";
-      case 4:
-        return "⭐️⭐️⭐️⭐️";
-      case 5:
-        return "⭐️⭐️⭐️⭐️⭐️";
-      default:
-        return "";
-    }
-  };
 
   return (
     <div>
@@ -110,11 +93,14 @@ const Projects = () => {
             </div>
           </div>
 
-          {filteredProjects.length === 0 && <p>No projects found</p>}
+          {filteredProjects.length === 0 && <NoProjectsFound />}
 
           <div className="flex flex-wrap px-8">
             {filteredProjects.map((project, index) => (
-              <div key={index} className="w-1/3 p-8">
+              <div
+                key={index}
+                className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 p-8"
+              >
                 <ProjectCard
                   name={project.name}
                   description={project.description}
