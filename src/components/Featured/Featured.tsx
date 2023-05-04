@@ -18,8 +18,8 @@ const Featured = () => {
           <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Download now</button>
         </div>
       </div>
-      <div className="container py-8">
-        <h3 className="text-2xl font-bold mb-4">Other Apps</h3>
+      <div className="py-8">
+        <h3 className="text-2xl font-bold mb-4">Otras aplicaciones</h3>
         <div className="flex flex-wrap -mx-4">
           <div className="px-4 mb-4 w-full md:w-1/3">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">

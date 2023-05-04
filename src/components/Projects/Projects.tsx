@@ -1,63 +1,7 @@
 import { SetStateAction, useState } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
+import { projectsData } from "../../../data/ProjectsData";
 
-const projectsData = [
-  {
-    name: "My project 1",
-    description: "Description of my project",
-    category: "Images",
-    difficulty: 1,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
-  },
-  {
-    name: "My project 2",
-    description: "Description of my project",
-    category: "Text",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
-  },
-  {
-    name: "My project 3",
-    description: "Description of my project",
-    category: "Colors",
-    difficulty: 3,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
-  },
-  {
-    name: "My project 4",
-    description: "Description of my project",
-    category: "Colors",
-    difficulty: 4,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
-  },
-  {
-    name: "My project 5",
-    description: "Description of my project",
-    category: "Colors",
-    difficulty: 5,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
-  },
-];
 
 const Projects = () => {
   const [filterText, setFilterText] = useState("");

@@ -47,26 +47,20 @@ const Header: React.FC = () => {
             </button>
           </div>
           <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-            <ul>
-              <li>
+            <ul className="bg-white absolute top-16 right-0 w-48 rounded-lg shadow-md">
+              <li className="py-2 px-4">
                 <Link href="/">
-                  <span className="block px-4 py-2 hover:bg-gray-300">
-                    Inicio
-                  </span>
+                  <span className="hover:text-blue-500">Inicio</span>
                 </Link>
               </li>
-              <li>
+              <li className="py-2 px-4">
                 <Link href="/aplicaciones">
-                  <span className="block px-4 py-2 hover:bg-gray-300">
-                    Aplicaciones
-                  </span>
+                  <span className="hover:text-blue-500">Aplicaciones</span>
                 </Link>
               </li>
-              <li>
+              <li className="py-2 px-4">
                 <Link href="/aprende">
-                  <span className="block px-4 py-2 hover:bg-gray-300">
-                    Aprende
-                  </span>
+                  <span className="hover:text-blue-500">Aprende</span>
                 </Link>
               </li>
             </ul>

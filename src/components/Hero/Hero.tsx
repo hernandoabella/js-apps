@@ -13,11 +13,11 @@ const Hero: React.FC = () => {
   }, [counter]);
 
   return (
-    <section className="bg-gray-100 py-30 flex flex-col md:flex-row h-full">
+    <section className="bg-gray-100 p-8 flex md:flex-row ">
       <div className="w-full md:w-1/2 flex items-center px-4 md:px-16">
         <div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-            <span className="text-blue-500">+{counter}</span> aplicaciones para practicar JavaScript
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+            <span className="text-blue-500">+{counter}</span> Aplicaciones para practicar JavaScript
           </h1>
           <p className="text-xl lg:text-2xl font-light text-gray-900 my-8">
             ¡Inspírate y crea las mejores aplicaciones JavaScript!
