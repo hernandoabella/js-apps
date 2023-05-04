@@ -17,7 +17,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex flex-col items-center justify-between mt-20 md:flex-row">
-        <div className="mb-4 sm:mb-0 sm:mr-4 flex flex-col items-center">
+        <div className="mb-8 sm:mb-0 sm:mr-4 flex flex-col items-center">
           <Image
             src="/icon1.png"
             alt="Icono 1"
@@ -25,13 +25,13 @@ const About = () => {
             height={80}
             className="mb-5"
           />
-          <h4 className="text-xl font-bold m-5">Aprende Haciendo</h4>
-          <p className="text-lg text-gray-500">
+          <h4 className="text-2xl font-bold m-3">Aprende Haciendo</h4>
+          <p className="text-lg text-gray-500 text-center">
             Construye muchos proyectos pequeños y medianos para mejorar tus
             habilidades.
           </p>
         </div>
-        <div className="mb-4 sm:mb-0 sm:mx-4 flex flex-col items-center">
+        <div className="mb-8 sm:mb-0 flex flex-col items-center">
           <Image
             src="/icon2.png"
             alt="Icono 2"
@@ -39,8 +39,8 @@ const About = () => {
             height={80}
             className="mb-5"
           />
-          <h4 className="text-xl font-bold m-5">Proyectos Sugeridos</h4>
-          <p className="text-lg text-gray-500">
+          <h4 className="text-2xl font-bold m-3">Proyectos Sugeridos</h4>
+          <p className="text-lg text-gray-500 text-center">
             Selecciona uno de los proyectos sugeridos aquí para aprender algo
             nuevo o reutilizar técnicas ya aprendidas.
           </p>
@@ -53,8 +53,8 @@ const About = () => {
             height={80}
             className="mb-5"
           />
-          <h4 className="text-xl font-bold m-5">Desafía Tus Habilidades</h4>
-          <p className="text-lg text-gray-500">
+          <h4 className="text-2xl font-bold m-5">Desafía Tus Habilidades</h4>
+          <p className="text-lg text-gray-500 text-center">
             <em>
               <b>JS-APPS</b>
             </em>{" "}
