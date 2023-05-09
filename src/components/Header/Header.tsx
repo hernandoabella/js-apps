@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from "../../../public/logo.png";
-import dynamic from 'next/dynamic'
+import darkLogo from "../../../public/dark-logo.png";
+import dynamic from "next/dynamic";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,20 +19,27 @@ const Header: React.FC = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const FiSun = dynamic(() => import('react-icons/fi').then(mod => mod.FiSun), { ssr: false })
-const FiMoon = dynamic(() => import('react-icons/fi').then(mod => mod.FiMoon), { ssr: false })
+  const FiSun = dynamic(
+    () => import("react-icons/fi").then((mod) => mod.FiSun),
+    { ssr: false }
+  );
+  const FiMoon = dynamic(
+    () => import("react-icons/fi").then((mod) => mod.FiMoon),
+    { ssr: false }
+  );
+
+  const logoImage = theme === "light" ? logo : darkLogo;
 
   return (
     <header>
       <div className="container mx-auto flex justify-between items-center py-5">
-      <div className="flex items-center">
-  <Link href="/">
-    <div className="flex items-center">
-      <Image src={logo} alt="Logo" width={40} height={40} />
-      <span className="ml-2 font-bold">APPS</span>
-    </div>
-  </Link>
-</div>
+        <div className="flex items-center">
+          <Link href="/">
+            <div className="flex items-center">
+              <Image src={logoImage} alt="Logo" width={120} height={40} />
+            </div>
+          </Link>
+        </div>
 
         <nav>
           <ul className="hidden md:flex">
@@ -82,7 +90,6 @@ const FiMoon = dynamic(() => import('react-icons/fi').then(mod => mod.FiMoon), {
                   <span className="hover:text-blue-500">Aprende</span>
                 </Link>
               </li>
-              
             </ul>
           </div>
         </nav>
