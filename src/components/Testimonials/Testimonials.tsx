@@ -15,11 +15,11 @@ const Testimonials = () => {
   const testimonials: Testimonial[] = testimonialsData;
 
   return (
-    <div className="bg-white p-8 text-center">
+    <div className="p-8 text-center mx-8">
       <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase mb-5">
         Testimonios
       </h2>
-      <h2 className="text-4xl font-bold text-gray-800 mb-8">
+      <h2 className="text-4xl font-bold mb-8">
         Lo que otros dicen
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

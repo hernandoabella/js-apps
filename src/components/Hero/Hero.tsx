@@ -7,29 +7,43 @@ import heroImage3 from "../../../public/hero-image-3.jpg";
 
 const Hero: React.FC = () => {
   const [counter, setCounter] = useState(0);
-  const [heroImages, setHeroImages] = useState([heroImage1, heroImage2, heroImage3]);
+  const [heroImages, setHeroImages] = useState([
+    heroImage1,
+    heroImage2,
+    heroImage3,
+  ]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleDarkModeToggle = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   useEffect(() => {
     if (counter < 100) {
-      setTimeout(() => setCounter(counter + 1), 50);
+      setTimeout(() => setCounter(counter + 1), 20);
     }
   }, [counter]);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex(currentImageIndex => (currentImageIndex + 1) % heroImages.length);
+      setCurrentImageIndex(
+        (currentImageIndex) => (currentImageIndex + 1) % heroImages.length
+      );
     }, 10000);
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
   return (
-    <section className="bg-white flex flex-col md:flex-row md:items-center">
+    <section className="flex flex-col md:flex-row md:items-center mx-8">
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start md:px-10 p-8">
-        <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 text-center md:text-left">
-          <span className="text-blue-500">+{counter}</span> Aplicaciones para practicar JavaScript
+        <h1 className="text-4xl md:text-5xl font-bold md:text-left text-center">
+          <span className="text-indigo-600 text-4xl md:text-5xl lg:text-5xl font-bold md:text-left">
+            +{counter}{" "}
+          </span>
+          Aplicaciones para practicar JavaScript
         </h1>
-        <p className="text-xl lg:text-2xl font-light text-gray-900 my-8 text-center md:text-left">
+        <p className="text-xl lg:text-2xl my-8 text-center md:text-left text-gray-500">
           ¡Inspírate y crea las mejores aplicaciones JavaScript!
         </p>
         <Link href="/aplicaciones">
@@ -39,8 +53,12 @@ const Hero: React.FC = () => {
         </Link>
       </div>
       <div className="w-full md:w-1/2 flex items-center justify-center">
-        <div className="image-container mt-8">
-          <Image src={heroImages[currentImageIndex]} alt="hero-image" className="w-full" />
+        <div>
+          <Image
+            src={heroImages[currentImageIndex]}
+            alt="hero-image"
+            className="w-full"
+          />
         </div>
         <style jsx>{`
           .image-container {
@@ -48,6 +66,10 @@ const Hero: React.FC = () => {
           }
           .image-container img {
             width: 100%;
+          }
+          .dark-mode {
+            background-color: #1a202c;
+            color: #fff;
           }
         `}</style>
       </div>

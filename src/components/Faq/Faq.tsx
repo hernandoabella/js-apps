@@ -8,7 +8,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-8 md:p-16">
+    <div className="p-8 md:p-16">
       <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase mb-5">
         Preguntas frecuentes
       </h2>
@@ -30,19 +30,25 @@ const Accordion = () => {
             </span>
           </button>
           <div className={activeIndex === 0 ? "px-4 py-3" : "hidden"}>
-            <b>1.</b> Encuentra un proyecto de Javascript sugerido para
-            construir usando las categorías provistas en la navegación lateral
-            de JSBeginners.<br />
-            <b>2.</b> Lee la descripción y haz clic en el proyecto para verlo en
-            vivo en tu navegador.<br />
-            <b>3.</b> Clona Git o descarga el código fuente en tu entorno de
-            desarrollo local.<br />
-            <b>4.</b> ELIMINA por completo el archivo javascript de origen
-            (generalmente llamado app.js) y luego crea el proyecto Javascript tú
-            mismo.<br />
-            <b>5.</b> Una vez completado, proporciona un enlace a tu proyecto en
-            la sección de comentarios para que otros puedan darte su opinión y
-            reconocimiento.
+            <p className="text-gray-700">
+              <b>1.</b> Encuentra un proyecto de Javascript sugerido para
+              construir usando las categorías provistas en la navegación lateral
+              de JSBeginners.
+              <br />
+              <b>2.</b> Lee la descripción y haz clic en el proyecto para verlo
+              en vivo en tu navegador.
+              <br />
+              <b>3.</b> Clona Git o descarga el código fuente en tu entorno de
+              desarrollo local.
+              <br />
+              <b>4.</b> ELIMINA por completo el archivo javascript de origen
+              (generalmente llamado app.js) y luego crea el proyecto Javascript
+              tú mismo.
+              <br />
+              <b>5.</b> Una vez completado, proporciona un enlace a tu proyecto
+              en la sección de comentarios para que otros puedan darte su
+              opinión y reconocimiento.
+            </p>
           </div>
         </div>
         <div className="bg-white shadow rounded-lg">
@@ -62,7 +68,7 @@ const Accordion = () => {
             </span>
           </button>
           <div className={activeIndex === 1 ? "px-4 py-3" : "hidden"}>
-            <p className="text-gray-700">
+            <p className="text-gray-700 ">
               <b>Te proponemos un reto:</b> crear al menos 100 proyectos de
               JavaScript de distintos niveles por ti mismo antes de adentrarte
               en un nuevo framework o lenguaje. Es recomendable evitar seguir

@@ -1,24 +1,38 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
+import { useTheme } from "next-themes";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import logo from "../../../public/logo.png";
+import dynamic from 'next/dynamic'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleThemeToggle = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  const FiSun = dynamic(() => import('react-icons/fi').then(mod => mod.FiSun), { ssr: false })
+const FiMoon = dynamic(() => import('react-icons/fi').then(mod => mod.FiMoon), { ssr: false })
+
   return (
-    <header className="bg-white text-black">
+    <header>
       <div className="container mx-auto flex justify-between items-center py-5">
-        <div className="flex items-center ml-5">
-          <Link href="/">
-            <Image src={logo} alt="Logo" width={120} height={40} />
-          </Link>
-        </div>
+      <div className="flex items-center">
+  <Link href="/">
+    <div className="flex items-center">
+      <Image src={logo} alt="Logo" width={40} height={40} />
+      <span className="ml-2 font-bold">APPS</span>
+    </div>
+  </Link>
+</div>
+
         <nav>
           <ul className="hidden md:flex">
             <li className="mx-3">
@@ -33,8 +47,13 @@ const Header: React.FC = () => {
             </li>
             <li className="mx-3">
               <Link href="/aprende">
-                <span className="hover:text-blue-500 mr-20">Aprende</span>
+                <span className="hover:text-blue-500">Aprende</span>
               </Link>
+            </li>
+            <li className="mx-3" onClick={handleThemeToggle}>
+              <span className="flex py-1">
+                {theme === "light" ? <FiMoon /> : <FiSun />}
+              </span>
             </li>
           </ul>
           <div className="md:hidden flex items-center mr-5">
@@ -47,7 +66,7 @@ const Header: React.FC = () => {
             </button>
           </div>
           <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-            <ul className="bg-white absolute top-16 right-0 w-48 rounded-lg shadow-md">
+            <ul className="bg-white dark:bg-gray-800 absolute top-16 right-0 w-48 rounded-lg shadow-md">
               <li className="py-2 px-4">
                 <Link href="/">
                   <span className="hover:text-blue-500">Inicio</span>
@@ -63,6 +82,7 @@ const Header: React.FC = () => {
                   <span className="hover:text-blue-500">Aprende</span>
                 </Link>
               </li>
+              
             </ul>
           </div>
         </nav>
