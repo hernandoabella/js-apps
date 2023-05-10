@@ -39,10 +39,10 @@ const Projects = () => {
     <div>
       <section>
         <div>
-          <div className="bg-gray-100 flex justify-evenly">
+          <div className="flex justify-evenly">
             {/* Filter by name */}
             <div className="m-4">
-              <label htmlFor="filterInput" className="mr-2">
+              <label htmlFor="filterInput" className="mr-2" placeholder="Nombre">
                 <b>Nombre del proyecto:</b>
               </label>
               <input

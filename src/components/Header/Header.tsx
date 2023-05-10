@@ -28,11 +28,11 @@ const Header: React.FC = () => {
     { ssr: false }
   );
 
-  const logoImage = theme === "light" ? logo : darkLogo;
+  const logoImage = theme === "dark" ? darkLogo : logo;
 
   return (
     <header>
-      <div className="container mx-auto flex justify-between items-center py-5">
+      <div className="flex justify-between py-5 px-20">
         <div className="flex items-center">
           <Link href="/">
             <div className="flex items-center">
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
         </div>
 
         <nav>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex flex justify-center items-center">
             <li className="mx-3">
               <Link href="/">
                 <span className="hover:text-blue-500">Inicio</span>
@@ -58,13 +58,16 @@ const Header: React.FC = () => {
                 <span className="hover:text-blue-500">Aprende</span>
               </Link>
             </li>
-            <li className="mx-3" onClick={handleThemeToggle}>
-              <span className="flex py-1">
+            <li>
+              <span className="mx-3 select-none">|</span>
+            </li>
+            <li className="ml-3" onClick={handleThemeToggle}>
+              <span>
                 {theme === "light" ? <FiMoon /> : <FiSun />}
               </span>
             </li>
           </ul>
-          <div className="md:hidden flex items-center mr-5">
+          <div className="md:hidden flex items-center">
             <button onClick={handleMenuClick}>
               {isMenuOpen ? (
                 <AiOutlineClose className="h-6 w-6" />
@@ -74,7 +77,7 @@ const Header: React.FC = () => {
             </button>
           </div>
           <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-            <ul className="bg-white dark:bg-gray-800 absolute top-16 right-0 w-48 rounded-lg shadow-md">
+            <ul className="bg-white text-black absolute rounded-lg shadow-md">
               <li className="py-2 px-4">
                 <Link href="/">
                   <span className="hover:text-blue-500">Inicio</span>
@@ -90,6 +93,11 @@ const Header: React.FC = () => {
                   <span className="hover:text-blue-500">Aprende</span>
                 </Link>
               </li>
+              <li className="mr-3" onClick={handleThemeToggle}>
+              <span className="flex py-1">
+                {theme === "light" ? <FiMoon /> : <FiSun />}
+              </span>
+            </li>
             </ul>
           </div>
         </nav>
