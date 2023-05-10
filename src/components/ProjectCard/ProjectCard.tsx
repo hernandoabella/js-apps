@@ -33,19 +33,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   category,
 }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col">
-      <div className="w-full h-52 overflow-hidden">
+    <div className="bg-white text-black rounded-lg overflow-hidden shadow-md">
+      <div className="w-full">
         <Image
           src={imageSrc}
           alt={imageAlt}
           width={300}
           height={200}
-          layout="responsive"
+          className="w-full"
         />
       </div>
+
       <div className="p-6 flex flex-col justify-between flex-1">
         <h2 className="text-2xl font-bold text-center mb-4">{name}</h2>
-        <p className="text-justify mb-4">{description}</p>
+        <p className="text-justify mb-4 text-gray-600">{description}</p>
         <div className="flex items-center mb-4 pt-4 border-t">
           <p className="font-bold mr-2">Dificultad:</p>
           <div className="flex">
@@ -56,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="flex items-center mb-4">
           <p className="font-bold mr-2">Categoría:</p>
-          <p>{category}</p>
+          <p className="text-gray-600">{category}</p>
         </div>
         <div className="flex  items-center pb-4">
           <p className="font-bold mr-2">Tecnologías:</p>
@@ -72,26 +73,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row">
           <a
             href={downloadLink}
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-2 px-4"
+            className="flex items-center my-2 w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-2 px-4 justify-center flex"
           >
-            <FaDownload className="w-4 h-4" />
+            <FaDownload className="w-4 h-4 mr-2" />
             Descargar
           </a>
           <a
             href={githubLink}
-            className="flex items-center gap-2 bg-white hover:bg-blue-600 text-blue-600 hover:text-white rounded-lg py-2 px-4 border border-blue-600"
+            className="flex items-center my-2 w-full md:w-auto bg-white hover:bg-blue-600 text-blue-600 hover:text-white rounded-lg py-2 px-4 border border-blue-600 justify-center flex"
           >
-            <FaGithub className="w-4 h-4" />
+            <FaGithub className="w-4 h-4 mr-2" />
             GitHub
           </a>
           <a
             href={demoLink}
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white rounded-lg py-2 px-4"
+            className="flex items-center my-2 w-full md:w-auto bg-green-500 hover:bg-green-600 text-white rounded-lg py-2 px-4 justify-center flex"
           >
-            <FaPlayCircle className="w-4 h-4" />
+            <FaPlayCircle className="w-4 h-4 mr-2" />
             Demo
           </a>
         </div>

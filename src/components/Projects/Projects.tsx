@@ -39,10 +39,10 @@ const Projects = () => {
     <div>
       <section>
         <div>
-          <div className="flex justify-evenly">
+          <div className="mx-8">
             {/* Filter by name */}
             <div className="m-4">
-              <label htmlFor="filterInput" className="mr-2" placeholder="Nombre">
+              <label htmlFor="filterInput" className="mr-2">
                 <b>Nombre del proyecto:</b>
               </label>
               <input
@@ -99,7 +99,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <div
                 key={index}
-                className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 p-8"
+                className="w-full sm:w/1 md:w-1/2 lg:w-1/3 py-8 px-4"
               >
                 <ProjectCard
                   name={project.name}

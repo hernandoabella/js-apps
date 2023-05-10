@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -27,6 +27,12 @@ const Header: React.FC = () => {
     () => import("react-icons/fi").then((mod) => mod.FiMoon),
     { ssr: false }
   );
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+    }
+  }, []);
 
   const logoImage = theme === "dark" ? darkLogo : logo;
 
