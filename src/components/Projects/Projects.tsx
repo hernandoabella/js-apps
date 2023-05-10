@@ -39,7 +39,7 @@ const Projects = () => {
     <div>
       <section>
         <div>
-          <div className="mx-8">
+          <div className="w-full px-8 md:flex md:items-center md:justify-center">
             {/* Filter by name */}
             <div className="m-4">
               <label htmlFor="filterInput" className="mr-2">
@@ -99,7 +99,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <div
                 key={index}
-                className="w-full sm:w/1 md:w-1/2 lg:w-1/3 py-8 px-4"
+                className="w-full sm:w/1 md:w-1/2 lg:w-1/3 p-4"
               >
                 <ProjectCard
                   name={project.name}

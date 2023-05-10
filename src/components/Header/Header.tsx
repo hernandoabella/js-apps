@@ -32,7 +32,7 @@ const Header: React.FC = () => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
     }
-  }, []);
+  }, [setTheme]);
 
   const logoImage = theme === "dark" ? darkLogo : logo;
 
@@ -68,9 +68,7 @@ const Header: React.FC = () => {
               <span className="mx-3 select-none">|</span>
             </li>
             <li className="ml-3" onClick={handleThemeToggle}>
-              <span>
-                {theme === "light" ? <FiMoon /> : <FiSun />}
-              </span>
+              <span>{theme === "light" ? <FiMoon /> : <FiSun />}</span>
             </li>
           </ul>
           <div className="md:hidden flex items-center">
@@ -100,10 +98,10 @@ const Header: React.FC = () => {
                 </Link>
               </li>
               <li className="mr-3" onClick={handleThemeToggle}>
-              <span className="flex py-1">
-                {theme === "light" ? <FiMoon /> : <FiSun />}
-              </span>
-            </li>
+                <span className="flex py-1">
+                  {theme === "light" ? <FiMoon /> : <FiSun />}
+                </span>
+              </li>
             </ul>
           </div>
         </nav>
