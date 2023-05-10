@@ -6,7 +6,7 @@ export const projectsData = [
     difficulty: 1,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://hernandoabella.github.io/tamano-del-texto/",
+    demoLink: "https://effulgent-pasca-40a1c9.netlify.app/",
   },
   {
     name: "My project 2",
@@ -15,7 +15,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "#",
+    demoLink: "",
   },
   {
     name: "My project 3",
@@ -24,7 +24,7 @@ export const projectsData = [
     difficulty: 3,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "#",
+    demoLink: "",
   },
   {
     name: "My project 4",
@@ -33,7 +33,7 @@ export const projectsData = [
     difficulty: 4,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "#",
+    demoLink: "",
   },
   {
     name: "My project 5",
@@ -42,6 +42,15 @@ export const projectsData = [
     difficulty: 5,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "#",
+    demoLink: "",
+  },
+  {
+    name: "My project 6",
+    description: "Description of my project",
+    category: "Colors",
+    difficulty: 5,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "",
   },
 ];
