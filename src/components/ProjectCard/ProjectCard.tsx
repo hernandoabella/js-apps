@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   FaDownload,
   FaGithub,
@@ -16,8 +15,6 @@ interface ProjectCardProps {
   downloadLink: string;
   githubLink: string;
   demoLink: string;
-  imageSrc: string;
-  imageAlt: string;
   category: string;
 }
 
@@ -28,20 +25,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   downloadLink,
   githubLink,
   demoLink,
-  imageSrc,
-  imageAlt,
   category,
 }) => {
   return (
     <div className="bg-white text-black rounded-lg overflow-hidden shadow-md">
-      <div className="w-full">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={300}
-          height={200}
-          className="w-full"
-        />
+      <div className="w-full h-48">
+        <iframe src={demoLink} className="w-full h-full" title={name}></iframe>
       </div>
 
       <div className="p-6 flex flex-col justify-between flex-1">

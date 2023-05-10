@@ -1,11 +1,12 @@
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from "../components/Header/Header";
+import Learn from "../components/Learn/Learn";
+import Footer from "../components/Footer/Footer";
 
 const AprendePage = () => {
   return (
     <>
       <Header />
-      {/* Aquí irá el contenido de la página de aprende */}
+      <Learn />
       <Footer />
     </>
   );

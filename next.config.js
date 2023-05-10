@@ -1,32 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  async redirects() {
-    return [
-      {
-        source: '/aplicaciones',
-        destination: '/aplicaciones',
-        permanent: true,
-      },
-      {
-        source: '/aprende',
-        destination: '/aprende',
-        permanent: true,
-      },
-    ];
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/aplicaciones',
-        destination: '/aplicaciones',
-      },
-      {
-        source: '/aprende',
-        destination: '/aprende',
-      },
-    ];
-  },
   async headers() {
     return [
       {

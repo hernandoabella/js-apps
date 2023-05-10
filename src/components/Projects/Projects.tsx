@@ -108,8 +108,6 @@ const Projects = () => {
                   downloadLink={project.downloadLink}
                   githubLink={project.githubLink}
                   demoLink={project.demoLink}
-                  imageSrc={project.imageSrc}
-                  imageAlt={project.imageAlt}
                   category={project.category}
                 />
               </div>

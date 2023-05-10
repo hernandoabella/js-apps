@@ -6,9 +6,7 @@ export const projectsData = [
     difficulty: 1,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
+    demoLink: "https://hernandoabella.github.io/tamano-del-texto/",
   },
   {
     name: "My project 2",
@@ -18,8 +16,6 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
   },
   {
     name: "My project 3",
@@ -29,8 +25,6 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
   },
   {
     name: "My project 4",
@@ -40,8 +34,6 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
   },
   {
     name: "My project 5",
@@ -51,7 +43,5 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "#",
-    imageSrc: "/project-image.webp",
-    imageAlt: "Project Image",
   },
 ];
