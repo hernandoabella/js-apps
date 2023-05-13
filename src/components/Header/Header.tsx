@@ -10,6 +10,7 @@ import dynamic from "next/dynamic";
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [logoImage, setLogoImage] = useState(logo);
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -29,12 +30,24 @@ const Header: React.FC = () => {
   );
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    // Obtener el valor del tema almacenado en el almacenamiento local
+    const storedTheme = window.localStorage.getItem("theme");
+
+    // Si hay un valor almacenado, establecer el tema
+    if (storedTheme && (storedTheme === "light" || storedTheme === "dark")) {
+      setTheme(storedTheme);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme("dark");
     }
   }, [setTheme]);
 
-  const logoImage = theme === "dark" ? darkLogo : logo;
+  useEffect(() => {
+    // Almacenar el valor del tema en el almacenamiento local
+    window.localStorage.setItem("theme", theme);
+
+    // Establecer la imagen del logo basada en el valor del tema
+    setLogoImage(theme === "dark" ? darkLogo : logo);
+  }, [theme]);
 
   return (
     <header>

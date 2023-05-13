@@ -28,8 +28,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   category,
 }) => {
   return (
-    <div className="bg-white text-black rounded-lg overflow-hidden shadow-md">
-      <div className="w-full h-48">
+    <div className="bg-white text-black rounded-lg overflow-hidden shadow-md h-full">
+      <div className="w-full h-60 md:h-72">
         <iframe src={demoLink} className="w-full h-full" title={name}></iframe>
       </div>
 

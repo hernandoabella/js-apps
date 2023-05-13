@@ -95,7 +95,7 @@ const Projects = () => {
 
           {filteredProjects.length === 0 && <NoProjectsFound />}
 
-          <div className="flex flex-wrap px-8">
+          <div className="flex flex-wrap md:container md:mx-auto">
             {filteredProjects.map((project, index) => (
               <div
                 key={index}
