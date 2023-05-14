@@ -51,7 +51,7 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <div className="flex justify-between py-5 px-20">
+      <div className="flex justify-between py-10 px-20">
         <div className="flex items-center">
           <Link href="/">
             <div className="flex items-center">

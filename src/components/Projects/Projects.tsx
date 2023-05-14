@@ -97,10 +97,7 @@ const Projects = () => {
 
           <div className="flex flex-wrap md:container md:mx-auto">
             {filteredProjects.map((project, index) => (
-              <div
-                key={index}
-                className="w-full sm:w/1 md:w-1/2 lg:w-1/3 p-4"
-              >
+              <div key={index} className="w-full sm:w/1 md:w-1/2 lg:w-1/3 p-4">
                 <ProjectCard
                   name={project.name}
                   description={project.description}
