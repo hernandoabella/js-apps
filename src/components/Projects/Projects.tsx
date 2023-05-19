@@ -84,11 +84,10 @@ const Projects = () => {
                 onChange={handleCategoryFilterChange}
                 className="border border-gray-300 rounded py-2 px-4"
               >
-                <option value="">All</option>
+                <option value="">Todo</option>
                 <option value="Images">Images</option>
                 <option value="Text">Text</option>
                 <option value="Colors">Colors</option>
-                <option value="Other">Other</option>
               </select>
             </div>
           </div>
