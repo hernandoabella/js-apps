@@ -1,5 +1,6 @@
 export const projectsData = [
   {
+    id: 1,
     name: "Redimensionador de texto 📐",
     description: "Esta aplicación te permite ajustar el tamaño del texto a tus necesidades.",
     category: "Texto",
@@ -9,6 +10,7 @@ export const projectsData = [
     demoLink: "https://effulgent-pasca-40a1c9.netlify.app/",
   },
   {
+    id: 2,
     name: "Carrusel de imágenes 🖼️",
     description: "Carrusel de imágenes personalizable con desplazamiento y reproducción automática.",
     category: "Imagen",
@@ -18,6 +20,7 @@ export const projectsData = [
     demoLink: "https://superb-heliotrope-a182fc.netlify.app/",
   },
   {
+    id: 3,
     name: "Calificación con emojis 🙂",
     description: "Un componente de calificación con emojis simple que permite a los usuarios valorar algo utilizando emojis.",
     category: "Emojis",
@@ -27,6 +30,7 @@ export const projectsData = [
     demoLink: "https://phenomenal-florentine-e1bc03.netlify.app/",
   },
   {
+    id: 4,
     name: "Contador 🧮",
     description: "Aplicación básica de contador que permite a los usuarios incrementar, decrementar y reiniciar un contador.",
     category: "Contador",
@@ -36,6 +40,7 @@ export const projectsData = [
     demoLink: "https://incredible-boba-57ba5d.netlify.app/",
   },
   {
+    id: 5,
     name: "Campeón de palabras 🏆",
     description: "Este juego te jugar desafía a escribir tantas palabras como puedas en un límite de tiempo.",
     category: "Juegos",
@@ -45,6 +50,7 @@ export const projectsData = [
     demoLink: "https://iridescent-fox-bdb4e8.netlify.app/",
   },
   {
+    id: 6,
     name: "Sonido al hacer clic 🔔",
     description: "Aplicación web que reproduce un efecto de sonido cuando un usuario hace clic en un botón.",
     category: "Audio",
@@ -54,6 +60,7 @@ export const projectsData = [
     demoLink: "https://ephemeral-cheesecake-015964.netlify.app/",
   },
   {
+    id: 7,
     name: "Validación de contraseña 🔒",
     description: "Aplicación para validar las contraseñas de los usuarios.",
     category: "Validación",
@@ -63,6 +70,7 @@ export const projectsData = [
     demoLink: "https://superlative-cupcake-2a9bd7.netlify.app/",
   },
   {
+    id: 8,
     name: "Generador de perfil de github 🐱",
     description: "Esta aplicación te permite generar un perfil de github.",
     category: "Validación",
@@ -72,6 +80,7 @@ export const projectsData = [
     demoLink: "https://adorable-custard-09481a.netlify.app/",
   },
   {
+    id: 9,
     name: "Cambiar color de fondo 🟩",
     description: "Esta aplicación te permite cambiar el color de fondo.",
     category: "Validación",
@@ -81,6 +90,7 @@ export const projectsData = [
     demoLink: "https://prismatic-seahorse-3f7a5c.netlify.app",
   },
   {
+    id: 10,
     name: "Carrito de compras 🛒",
     description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Validación",
@@ -90,6 +100,7 @@ export const projectsData = [
     demoLink: "https://sensational-salamander-cf3425.netlify.app",
   },
   {
+    id: 11,
     name: "Calculadora ",
     description: "Esta aplicación te permite realizar calculos matemáticos.",
     category: "Validación",
@@ -99,6 +110,7 @@ export const projectsData = [
     demoLink: "https://roaring-speculoos-9b2532.netlify.app",
   },
   {
+    id: 12,
     name: "Calculadora de edad ",
     description: "Esta aplicación te permite calcular la edad de una persona.",
     category: "Validación",
@@ -108,6 +120,7 @@ export const projectsData = [
     demoLink: "https://cool-dodol-d5b2cc.netlify.app",
   },
   {
+    id: 13,
     name: "Kit de batería",
     description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Audio",
@@ -117,6 +130,7 @@ export const projectsData = [
     demoLink: "https://dashing-yeot-f69ea3.netlify.app",
   },
   {
+    id: 14,
     name: "Reproductor MP3",
     description: "Esta aplicación te permite realizar calculos matemáticos.",
     category: "Audio",
@@ -126,6 +140,7 @@ export const projectsData = [
     demoLink: "https://serene-lamington-5aab02.netlify.app",
   },
   {
+    id: 15,
     name: "Reloj digital",
     description: "Esta aplicación te permite calcular la edad de una persona.",
     category: "Validación",
@@ -135,6 +150,7 @@ export const projectsData = [
     demoLink: "https://ubiquitous-klepon-29f6bc.netlify.app",
   },
   {
+    id: 16,
     name: "Cronómetro",
     description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Validación",
@@ -144,6 +160,7 @@ export const projectsData = [
     demoLink: "https://venerable-halva-38027d.netlify.app",
   },
   {
+    id: 17,
     name: "Temporizador pomodoro",
     description: "La técnica Pomodoro consiste en usar un temporizador para dividir el trabajo en bloques de tiempo enfocados (generalmente 25 minutos).",
     category: "Validación",
@@ -153,6 +170,7 @@ export const projectsData = [
     demoLink: "https://grand-faloodeh-69ef7e.netlify.app",
   },
   {
+    id: 18,
     name: "Generador de bromas",
     description: "Esta aplicación te permite generar bromas.",
     category: "Validación",
@@ -162,6 +180,7 @@ export const projectsData = [
     demoLink: "https://chic-douhua-da8067.netlify.app",
   },
   {
+    id: 19,
     name: "Generador fibonacci",
     description: "Esta aplicación te permite generar números de fibonacci.",
     category: "Validación",
@@ -171,6 +190,7 @@ export const projectsData = [
     demoLink: "https://frolicking-gingersnap-81eb24.netlify.app",
   },
   {
+    id: 20,
     name: "Generador de contraseñas",
     description: "Esta aplicación te permite generar contraseñas.",
     category: "Validación",
@@ -180,6 +200,7 @@ export const projectsData = [
     demoLink: "https://verdant-fenglisu-a95152.netlify.app",
   },
   {
+    id: 21,
     name: "Generador de imágenes",
     description: "Esta aplicación te permite generar imágenes.",
     category: "Validación",
@@ -189,6 +210,7 @@ export const projectsData = [
     demoLink: "https://helpful-hummingbird-e58695.netlify.app",
   },
   {
+    id: 22,
     name: "Generador de comidas",
     description: "Esta aplicación te permite generar comidas.",
     category: "Validación",
@@ -198,6 +220,7 @@ export const projectsData = [
     demoLink: "https://transcendent-tapioca-6f10ff.netlify.app",
   },
   {
+    id: 23,
     name: "Contador de carácteres",
     description: "Esta aplicación te permite contar el número de carácteres de un texto.",
     category: "Validación",
@@ -207,6 +230,7 @@ export const projectsData = [
     demoLink: "https://stunning-stroopwafel-ad7ef4.netlify.app",
   },
   {
+    id: 24,
     name: "Calculadora de BMI",
     description: "Esta aplicación te permite calcular el BMI de una persona.",
     category: "Validación",
@@ -216,6 +240,7 @@ export const projectsData = [
     demoLink: "https://preeminent-cendol-ef8bae.netlify.app",
   },
   {
+    id: 25,
     name: "Calculadora de tipado",
     description: "Esta aplicación te permite calcular la edad de una persona.",
     category: "Validación",
@@ -225,6 +250,7 @@ export const projectsData = [
     demoLink: "https://dynamic-cajeta-8ab8c6.netlify.app",
   },
   {
+    id: 26,
     name: "Calendario",
     description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Validación",
@@ -234,6 +260,7 @@ export const projectsData = [
     demoLink: "https://remarkable-macaron-98cbe2.netlify.app",
   },
   {
+    id: 27,
     name: "Caja modal",
     description: "Esta aplicación te permite realizar calculos matemáticos.",
     category: "Caja modal",
@@ -243,6 +270,7 @@ export const projectsData = [
     demoLink: "https://celebrated-beignet-0ab5af.netlify.app",
   },
   {
+    id: 28,
     name: "Verificar conexión de red",
     description: "Esta aplicación te permite calcular la edad de una persona.",
     category: "Validación",
@@ -252,6 +280,7 @@ export const projectsData = [
     demoLink: "https://musical-lily-78ebf4.netlify.app",
   },
   {
+    id: 29,
     name: "Validación de email",
     description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Validación",
@@ -261,6 +290,7 @@ export const projectsData = [
     demoLink: "https://merry-cajeta-6bc82d.netlify.app",
   },
   {
+    id: 30,
     name: "Verificar fuerza de contraseña",
     description: "Esta aplicación te permite realizar calculos matemáticos.",
     category: "Validación",
@@ -270,6 +300,7 @@ export const projectsData = [
     demoLink: "https://dancing-granita-c4c594.netlify.app",
   },
   {
+    id: 31,
     name: "Detectar navegador",
     description: "Esta aplicación te permite calcular la edad de una persona.",
     category: "Navegador",
@@ -279,6 +310,7 @@ export const projectsData = [
     demoLink: "https://reliable-pithivier-640794.netlify.app",
   },
   {
+    id: 32,
     name: "Contador de productos",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Contador",
@@ -288,6 +320,7 @@ export const projectsData = [
     demoLink: "https://dazzling-banoffee-acfe6e.netlify.app",
   },
   {
+    id: 33,
     name: "Piano",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -297,6 +330,7 @@ export const projectsData = [
     demoLink: "https://merry-cassata-7cae39.netlify.app",
   },
   {
+    id: 34,
     name: "Visualizador de audio",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -306,6 +340,7 @@ export const projectsData = [
     demoLink: "https://starlit-rolypoly-6197fe.netlify.app",
   },
   {
+    id: 35,
     name: "Validación de formulario",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -315,6 +350,7 @@ export const projectsData = [
     demoLink: "https://inquisitive-ganache-d85029.netlify.app",
   },
   {
+    id: 36,
     name: "Calculadora de porcentaje",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -324,6 +360,7 @@ export const projectsData = [
     demoLink: "https://delightful-salmiakki-6a9f1a.netlify.app",
   },
   {
+    id: 37,
     name: "Calculadora de amor",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -333,6 +370,7 @@ export const projectsData = [
     demoLink: "https://resplendent-fenglisu-02a5f7.netlify.app",
   },
   {
+    id: 38,
     name: "Semáforo",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -342,6 +380,7 @@ export const projectsData = [
     demoLink: "https://inspiring-croissant-aaea4d.netlify.app",
   },
   {
+    id: 39,
     name: "Combinación de colores",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -351,6 +390,7 @@ export const projectsData = [
     demoLink: "https://endearing-selkie-58973a.netlify.app",
   },
   {
+    id: 40,
     name: "Juego del tesoro",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -360,6 +400,7 @@ export const projectsData = [
     demoLink: "https://polite-florentine-9fc12a.netlify.app",
   },
   {
+    id: 41,
     name: "Juego del ahorcado",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -369,6 +410,7 @@ export const projectsData = [
     demoLink: "https://willowy-semolina-6fa82a.netlify.app",
   },
   {
+    id: 42,
     name: "Juego de asteroides",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -378,6 +420,7 @@ export const projectsData = [
     demoLink: "https://rainbow-sunflower-0309dd.netlify.app",
   },
   {
+    id: 43,
     name: "Adivina el número",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -387,6 +430,7 @@ export const projectsData = [
     demoLink: "https://dynamic-empanada-7e232f.netlify.app",
   },
   {
+    id: 44,
     name: "Adivina el color",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -396,6 +440,7 @@ export const projectsData = [
     demoLink: "https://profound-valkyrie-179f94.netlify.app",
   },
   {
+    id: 45,
     name: "Adivina la palabra",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Audio",
@@ -405,6 +450,7 @@ export const projectsData = [
     demoLink: "https://keen-mousse-cca4ea.netlify.app",
   },
   {
+    id: 46,
     name: "Calculadora de propinas",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Calculadora",
@@ -414,6 +460,7 @@ export const projectsData = [
     demoLink: "https://stunning-malabi-694d5f.netlify.app",
   },
   {
+    id: 47,
     name: "Reloj análogo",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -423,6 +470,7 @@ export const projectsData = [
     demoLink: "https://zesty-begonia-4a6189.netlify.app",
   },
   {
+    id: 48,
     name: "Personaliza el loro",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -432,6 +480,7 @@ export const projectsData = [
     demoLink: "https://gleeful-khapse-2bd1d3.netlify.app",
   },
   {
+    id: 49,
     name: "Tic tac toe",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -441,6 +490,7 @@ export const projectsData = [
     demoLink: "https://dreamy-treacle-14c1b6.netlify.app",
   },
   {
+    id: 50,
     name: "Robot prototype",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -450,6 +500,7 @@ export const projectsData = [
     demoLink: "https://gorgeous-malabi-506527.netlify.app",
   },
   {
+    id: 51,
     name: "Bot de charla",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -459,6 +510,7 @@ export const projectsData = [
     demoLink: "https://stirring-sopapillas-c0c8a9.netlify.app",
   },
   {
+    id: 52,
     name: "Generador de degradados",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -468,6 +520,7 @@ export const projectsData = [
     demoLink: "https://candid-torrone-b66209.netlify.app",
   },
   {
+    id: 53,
     name: "Piedra, papel o tijeras",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -477,6 +530,7 @@ export const projectsData = [
     demoLink: "https://loquacious-paletas-2bfd28.netlify.app",
   },
   {
+    id: 54,
     name: "Fiesta de halloween",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -486,6 +540,7 @@ export const projectsData = [
     demoLink: "https://keen-duckanoo-b9f982.netlify.app",
   },
   {
+    id: 55,
     name: "Aplicacion meteorologica",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -495,6 +550,7 @@ export const projectsData = [
     demoLink: "https://dreamy-treacle-14c1b6.netlify.app",
   },
   {
+    id: 56,
     name: "Contador de año nuevo",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -504,6 +560,7 @@ export const projectsData = [
     demoLink: "https://sprightly-cactus-3fbf33.netlify.app",
   },
   {
+    id: 57,
     name: "Significado de tu nombre",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -513,6 +570,7 @@ export const projectsData = [
     demoLink: "https://silly-fox-ccdfe8.netlify.app",
   },
   {
+    id: 58,
     name: "Arrastra y suelta",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -522,6 +580,7 @@ export const projectsData = [
     demoLink: "https://heroic-swan-76e763.netlify.app",
   },
   {
+    id: 59,
     name: "Captura al emoji",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -531,6 +590,7 @@ export const projectsData = [
     demoLink: "https://tangerine-starship-960b72.netlify.app",
   },
   {
+    id: 60,
     name: "Aplicación de recetas",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -540,6 +600,7 @@ export const projectsData = [
     demoLink: "https://monumental-otter-7b41c9.netlify.app",
   },
   {
+    id: 61,
     name: "Presupuesto semanal",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -549,6 +610,7 @@ export const projectsData = [
     demoLink: "https://glittery-cendol-b90697.netlify.app",
   },
   {
+    id: 62,
     name: "Evento keycode",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -558,6 +620,7 @@ export const projectsData = [
     demoLink: "https://elegant-starlight-518463.netlify.app",
   },
   {
+    id: 63,
     name: "Entrenador matemático",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Tiempo",
@@ -566,5 +629,124 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://effulgent-bombolone-bde7e9.netlify.app",
   },
-];
-
+  {
+    id: 64,
+    name: "Ajedrez",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://earnest-beijinho-8a8f4a.netlify.app",
+  },
+  {
+    id: 65,
+    name: "Lanzamiento de moneda",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 66,
+    name: "Carrusel de producto",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 67,
+    name: "Conversor de altura",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 67,
+    name: "Conversor de altura",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 68,
+    name: "Tabla de billonarios",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 69,
+    name: "Tablero de colores",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 70,
+    name: "Ruleta giratoria",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 71,
+    name: "Reproductor de música",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 72,
+    name: "Bueno barato rapido",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 73,
+    name: "Aplicación de examen",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+  {
+    id: 74,
+    name: "Buscador de mascotas",
+    description: "Esta aplicación te permite contar el número de productos.",
+    category: "Juegos",
+    difficulty: 2,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+  },
+];                                                                                                                            
