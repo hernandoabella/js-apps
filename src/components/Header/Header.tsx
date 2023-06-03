@@ -28,15 +28,6 @@ const Header: React.FC = () => {
     { ssr: false }
   );
 
-  useEffect(() => {
-    const storedTheme = window.localStorage.getItem("theme");
-    if (storedTheme && (storedTheme === "light" || storedTheme === "dark")) {
-      setTheme(storedTheme);
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    }
-  }, [setTheme]);
-
   const logoImage = theme === "dark" ? darkLogo : logo ?? ""; // Agregado ?? "" para proporcionar un valor predeterminado en caso de que logo sea null o undefined
 
   return (
