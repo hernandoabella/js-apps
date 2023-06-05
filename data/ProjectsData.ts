@@ -2,7 +2,8 @@ export const projectsData = [
   {
     id: 1,
     name: "Redimensionador de texto 📐",
-    description: "Esta aplicación te permite ajustar el tamaño del texto a tus necesidades.",
+    description:
+      "Esta aplicación te permite ajustar el tamaño del texto a tus necesidades.",
     category: "Texto",
     difficulty: 1,
     downloadLink: "#",
@@ -12,7 +13,8 @@ export const projectsData = [
   {
     id: 2,
     name: "Carrusel de imágenes 🖼️",
-    description: "Carrusel de imágenes personalizable con desplazamiento y reproducción automática.",
+    description:
+      "Carrusel de imágenes personalizable con desplazamiento y reproducción automática.",
     category: "Imagen",
     difficulty: 2,
     downloadLink: "#",
@@ -22,7 +24,8 @@ export const projectsData = [
   {
     id: 3,
     name: "Calificación con emojis 🙂",
-    description: "Un componente de calificación con emojis simple que permite a los usuarios valorar algo utilizando emojis.",
+    description:
+      "Un componente de calificación con emojis simple que permite a los usuarios valorar algo utilizando emojis.",
     category: "Emojis",
     difficulty: 2,
     downloadLink: "#",
@@ -32,7 +35,8 @@ export const projectsData = [
   {
     id: 4,
     name: "Contador 🧮",
-    description: "Aplicación básica de contador que permite a los usuarios incrementar, decrementar y reiniciar un contador.",
+    description:
+      "Aplicación básica de contador que permite a los usuarios incrementar, decrementar y reiniciar un contador.",
     category: "Contador",
     difficulty: 1,
     downloadLink: "#",
@@ -52,7 +56,8 @@ export const projectsData = [
   {
     id: 6,
     name: "Sonido al hacer clic 🔔",
-    description: "Aplicación web que reproduce un efecto de sonido cuando un usuario hace clic en un botón.",
+    description:
+      "Aplicación web que reproduce un efecto de sonido cuando un usuario hace clic en un botón.",
     category: "Audio",
     difficulty: 1,
     downloadLink: "#",
@@ -122,7 +127,8 @@ export const projectsData = [
   {
     id: 13,
     name: "Kit de batería",
-    description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
+    description:
+      "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Audio",
     difficulty: 3,
     downloadLink: "#",
@@ -152,7 +158,8 @@ export const projectsData = [
   {
     id: 16,
     name: "Cronómetro",
-    description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
+    description:
+      "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Validación",
     difficulty: 3,
     downloadLink: "#",
@@ -162,7 +169,8 @@ export const projectsData = [
   {
     id: 17,
     name: "Temporizador pomodoro",
-    description: "La técnica Pomodoro consiste en usar un temporizador para dividir el trabajo en bloques de tiempo enfocados (generalmente 25 minutos).",
+    description:
+      "La técnica Pomodoro consiste en usar un temporizador para dividir el trabajo en bloques de tiempo enfocados (generalmente 25 minutos).",
     category: "Validación",
     difficulty: 2,
     downloadLink: "#",
@@ -222,7 +230,8 @@ export const projectsData = [
   {
     id: 23,
     name: "Contador de carácteres",
-    description: "Esta aplicación te permite contar el número de carácteres de un texto.",
+    description:
+      "Esta aplicación te permite contar el número de carácteres de un texto.",
     category: "Validación",
     difficulty: 2,
     downloadLink: "#",
@@ -252,7 +261,8 @@ export const projectsData = [
   {
     id: 26,
     name: "Calendario",
-    description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
+    description:
+      "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Validación",
     difficulty: 3,
     downloadLink: "#",
@@ -282,7 +292,8 @@ export const projectsData = [
   {
     id: 29,
     name: "Validación de email",
-    description: "Esta aplicación te permite añadir productos a tu carrito de compras.",
+    description:
+      "Esta aplicación te permite añadir productos a tu carrito de compras.",
     category: "Validación",
     difficulty: 3,
     downloadLink: "#",
@@ -717,7 +728,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://stellular-cendol-8183a1.netlify.app",
+    demoLink: "https://luminous-pasca-e1ac68.netlify.app",
   },
   {
     id: 73,
@@ -1399,4 +1410,4 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://shiny-salamander-0dc42e.netlify.app",
   },
-];                                                                                                                            
+];

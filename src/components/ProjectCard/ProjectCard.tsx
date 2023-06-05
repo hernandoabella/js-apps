@@ -82,6 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <a
             href={demoLink}
             className="flex items-center my-2 w-full md:w-auto bg-green-500 hover:bg-green-600 text-white rounded-lg py-2 px-4 justify-center flex"
+            target="_blank"
           >
             <FaPlayCircle className="w-4 h-4 mr-2" />
             Demo
