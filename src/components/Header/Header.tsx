@@ -68,15 +68,15 @@ const Header: React.FC = () => {
               >
               </svg>
             </div>
-            <li className="ml-3 " onClick={handleThemeToggle}>
-              <span>{theme === "light" ? <FiMoon /> : <FiSun />}</span>
+            <li className="" onClick={handleThemeToggle}>
+              <span>{theme === "light" ? <FiMoon className="w-5 h-5"/> : <FiSun className="w-5 h-5" />}</span>
             </li>
-            <li className="ml-3">
+            <li className="mx-3">
               <Link
                 href="https://github.com/hernandoabella/js-apps"
                 target="_blank"
               >
-                <FaGithub className="hover:text-gray-600 mx-2 h-6 w-6" />
+                <FaGithub className="hover:text-gray-600 w-5 h-5" />
               </Link>
             </li>
           </ul>
