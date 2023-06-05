@@ -281,7 +281,7 @@ export const projectsData = [
   },
   {
     id: 28,
-    name: "Verificar sxión de red",
+    name: "Verificar conexión de red 🌐",
     description: "Esta aplicación te permite calcular la edad de una persona.",
     category: "Validación",
     difficulty: 2,
@@ -745,10 +745,20 @@ export const projectsData = [
     name: "Buscador de mascotas",
     description: "Esta aplicación te permite contar el número de productos.",
     category: "Juegos",
-    difficulty: 2,
+    difficulty: 3,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://sparkly-gecko-315dcf.netlify.app",
+  },
+  {
+    id: 74,
+    name: "Buscador de imágenes",
+    description: "Esta aplicación te permite buscar imágenes.",
+    category: "Buscador",
+    difficulty: 3,
+    downloadLink: "#",
+    githubLink: "#",
+    demoLink: "https://luminous-sopapillas-eb83a2.netlify.app",
   },
   {
     id: 75,
@@ -1068,7 +1078,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://effortless-sunflower-88f50b.netlify.app",
   },
   {
     id: 109,
@@ -1078,7 +1088,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://monumental-crostata-6757f4.netlify.app",
   },
   {
     id: 110,
@@ -1088,7 +1098,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://storied-malabi-1ab6c4.netlify.app",
   },
   {
     id: 111,
@@ -1098,7 +1108,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://prismatic-sprite-847e80.netlify.app",
   },
   {
     id: 112,
@@ -1108,7 +1118,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://lovely-pavlova-2ac548.netlify.app",
   },
   {
     id: 112,
@@ -1118,7 +1128,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://gorgeous-mandazi-c9fb8b.netlify.app",
   },
   {
     id: 113,
@@ -1128,7 +1138,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://gregarious-jalebi-369f4f.netlify.app",
   },
   {
     id: 114,
@@ -1138,7 +1148,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://dulcet-sawine-04216d.netlify.app",
   },
   {
     id: 115,
@@ -1148,7 +1158,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://timely-bienenstitch-7158d3.netlify.app",
   },
   {
     id: 116,
@@ -1158,7 +1168,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://resplendent-elf-6a61c1.netlify.app",
   },
   {
     id: 117,
@@ -1168,7 +1178,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://effortless-boba-be7bce.netlify.app",
   },
   {
     id: 118,
@@ -1178,7 +1188,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://benevolent-gnome-e33a30.netlify.app",
   },
   {
     id: 119,
@@ -1188,7 +1198,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://bespoke-dolphin-382735.netlify.app",
   },
   {
     id: 120,
@@ -1218,7 +1228,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://sweet-cuchufli-a3b3e9.netlify.app",
   },
   {
     id: 123,
@@ -1393,16 +1403,6 @@ export const projectsData = [
   {
     id: 140,
     name: "Palindrome checker",
-    description: "Esta aplicación te saber cuantas teclas has presionado.",
-    category: "Contador",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
-  },
-  {
-    id: 141,
-    name: "Drop the kick",
     description: "Esta aplicación te saber cuantas teclas has presionado.",
     category: "Contador",
     difficulty: 2,
