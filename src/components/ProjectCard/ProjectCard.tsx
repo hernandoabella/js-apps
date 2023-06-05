@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   category,
 }) => {
   return (
-    <div className="bg-white text-black rounded-lg overflow-hidden shadow-md h-full">
+    <div className="bg-white text-black rounded-xl overflow-hidden border shadow-xl w-full lg:w-3/4 mx-auto">
       <div className="w-full h-72 md:h-72 lg:h-80">
         <iframe src={demoLink} className="w-full h-full" title={name}></iframe>
       </div>
@@ -46,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
           <div className="flex items-center mb-4">
-            <p className="font-bold mr-2">Categoria:</p>
+            <p className="font-bold mr-2">Categoría:</p>
             <p className="text-gray-600">{category}</p>
           </div>
           <div className="flex items-center pb-4">

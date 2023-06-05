@@ -41,7 +41,7 @@ const Projects = () => {
         <div>
           <div className="w-full px-8 md:flex md:items-center md:justify-center">
             {/* Filter by name */}
-            <div className="m-4">
+            <div className="m-8">
               <label htmlFor="filterInput" className="mr-2">
                 <b>Nombre del proyecto:</b>
               </label>
@@ -51,6 +51,7 @@ const Projects = () => {
                 value={filterText}
                 onChange={handleFilterChange}
                 className="border border-gray-300 rounded py-2 px-4"
+                placeholder="Contador..."
               />
             </div>
             {/* Filter by difficulty */}
@@ -94,20 +95,25 @@ const Projects = () => {
 
           {filteredProjects.length === 0 && <NoProjectsFound />}
 
-          <div className="flex flex-wrap md:container md:mx-auto">
-            {filteredProjects.map((project, index) => (
-              <div key={index} className="w-full sm:w/1 md:w-1/2 lg:w-1/2 p-4 border">
-                <ProjectCard
-                  name={project.name}
-                  description={project.description}
-                  difficulty={project.difficulty}
-                  downloadLink={project.downloadLink}
-                  githubLink={project.githubLink}
-                  demoLink={project.demoLink}
-                  category={project.category}
-                />
-              </div>
-            ))}
+          <div>
+            <div className="flex flex-wrap md:container md:mx-auto">
+              {filteredProjects.map((project, index) => (
+                <div
+                  key={index}
+                  className="w-full sm:w/1 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4"
+                >
+                  <ProjectCard
+                    name={project.name}
+                    description={project.description}
+                    difficulty={project.difficulty}
+                    downloadLink={project.downloadLink}
+                    githubLink={project.githubLink}
+                    demoLink={project.demoLink}
+                    category={project.category}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
