@@ -46,17 +46,17 @@ const Header: React.FC = () => {
           <ul className="hidden md:flex flex justify-center items-center">
             <li className="mx-3">
               <Link href="/">
-                <span className="hover:text-blue-500">Inicio</span>
+                <span className="hover:text-sky-400">Inicio</span>
               </Link>
             </li>
             <li className="mx-3">
               <Link href="/aplicaciones">
-                <span className="hover:text-blue-500">Aplicaciones</span>
+                <span className="hover:text-sky-400">Aplicaciones</span>
               </Link>
             </li>
             <li className="mx-3">
               <Link href="/aprende">
-                <span className="hover:text-blue-500">Aprende</span>
+                <span className="hover:text-sky-400">Aprende</span>
               </Link>
             </li>
             <div className="flex items-center border-l border-slate-200 ml-3 dark:border-slate-800">
@@ -65,13 +65,18 @@ const Header: React.FC = () => {
                 className="w-5 h-5"
                 fill="currentColor"
                 aria-hidden="true"
-              >
-              </svg>
+              ></svg>
             </div>
-            <li className="" onClick={handleThemeToggle}>
-              <span>{theme === "light" ? <FiMoon className="w-5 h-5"/> : <FiSun className="w-5 h-5" />}</span>
+            <li className="mr-3" onClick={handleThemeToggle}>
+              <span>
+                {theme === "light" ? (
+                  <FiMoon className="w-5 h-5" />
+                ) : (
+                  <FiSun className="w-5 h-5" />
+                )}
+              </span>
             </li>
-            <li className="mx-3">
+            <li className="ml-3">
               <Link
                 href="https://github.com/hernandoabella/js-apps"
                 target="_blank"
@@ -83,9 +88,9 @@ const Header: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button onClick={handleMenuClick}>
               {isMenuOpen ? (
-                <AiOutlineClose className="h-6 w-6" />
+                <AiOutlineClose className="h-5 w-5" />
               ) : (
-                <AiOutlineMenu className="h-6 w-6" />
+                <AiOutlineMenu className="h-5 w-5" />
               )}
             </button>
           </div>
