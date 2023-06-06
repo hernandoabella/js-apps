@@ -32,7 +32,7 @@ const Header: React.FC = () => {
   const logoImage = theme === "dark" ? darkLogo : logo ?? ""; // Agregado ?? "" para proporcionar un valor predeterminado en caso de que logo sea null o undefined
 
   return (
-    <header className=" dark:bg-slate-800 dark:text-white">
+    <header className="dark:bg-slate-900 dark:text-white">
       <div className="flex justify-between py-10 px-20 font-semibold">
         <div className="flex items-center">
           <Link href="/">
