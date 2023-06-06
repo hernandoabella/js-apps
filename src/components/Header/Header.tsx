@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -32,8 +32,8 @@ const Header: React.FC = () => {
   const logoImage = theme === "dark" ? darkLogo : logo ?? ""; // Agregado ?? "" para proporcionar un valor predeterminado en caso de que logo sea null o undefined
 
   return (
-    <header>
-      <div className="flex justify-between py-10 px-20">
+    <header className=" dark:bg-slate-800 dark:text-white">
+      <div className="flex justify-between py-10 px-20 font-semibold">
         <div className="flex items-center">
           <Link href="/">
             <div className="flex items-center">
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               ></svg>
             </div>
             <li className="mr-3" onClick={handleThemeToggle}>
-              <span>
+              <span className="text-sky-500 dark:text-sky-400">
                 {theme === "light" ? (
                   <FiMoon className="w-5 h-5" />
                 ) : (
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                 )}
               </span>
             </li>
-            <li className="ml-3">
+            <li className="ml-3 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
               <Link
                 href="https://github.com/hernandoabella/js-apps"
                 target="_blank"

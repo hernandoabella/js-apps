@@ -26,8 +26,3 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.dark {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 34, 34, 102;
-  --background-end-rgb: 8, 8, 27;
-}

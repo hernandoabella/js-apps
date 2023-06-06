@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
       setCurrentImageIndex(
         (currentImageIndex) => (currentImageIndex + 1) % heroImages.length
       );
-    }, 10000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
           </button>
         </Link>
       </div>
-      <div className="w-full md:w-1/2 flex items-center justify-center">
+      <div className="w-full md:w-1/2 flex items-center justify-center hero-image-container">
         <div>
           <Image
             src={heroImages[currentImageIndex]}
@@ -60,19 +60,23 @@ const Hero: React.FC = () => {
             className="w-full"
           />
         </div>
-        <style jsx>{`
-          .image-container {
-            transition: opacity 0.5s ease-in-out;
-          }
-          .image-container img {
-            width: 100%;
-          }
-          .dark-mode {
-            background-color: #1a202c;
-            color: #fff;
-          }
-        `}</style>
       </div>
+      <style jsx>{`
+        .hero-image-container {
+          background-image: url(${heroImages[currentImageIndex]});
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .dark-mode .hero-image-container {
+          background-color: #1a202c;
+          color: #fff;
+        }
+      `}</style>
     </section>
   );
 };
