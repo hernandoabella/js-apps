@@ -5,8 +5,8 @@ import { FaStar } from "react-icons/fa";
 
 const Featured = () => {
   return (
-    <div className="md:px-16 p-8">
-      <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase mb-5">
+    <div className="md:px-16 p-8 dark:bg-slate-900 dark:text-white">
+      <h2 className="text-base text-sky-600 dark:text-sky-400 font-semibold tracking-wide uppercase mb-5">
         Aplicaciones destacadas
       </h2>
       <h3 className="mt-2 text-2xl font-bold leading-8 tracking-tight sm:text-3xl">

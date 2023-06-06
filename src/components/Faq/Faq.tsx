@@ -8,8 +8,8 @@ const Accordion = () => {
   };
 
   return (
-    <div className="p-8 md:p-16">
-      <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase mb-5">
+    <div className="p-8 md:p-16 dark:bg-slate-900">
+      <h2 className="text-base text-sky-500 dark:text-sky-400 font-semibold tracking-wide uppercase mb-5">
         Preguntas frecuentes
       </h2>
       <div className="grid gap-5">

@@ -35,19 +35,19 @@ const Hero: React.FC = () => {
   }, [heroImages.length]);
 
   return (
-    <section className="flex flex-col md:flex-row md:items-center mx-8">
+    <section className="flex flex-col md:flex-row md:items-center dark:bg-slate-900 dark:text-white">
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start md:px-10 p-8">
         <h1 className="text-4xl md:text-5xl font-bold md:text-left text-center">
-          <span className="text-indigo-600 text-4xl md:text-5xl lg:text-5xl font-bold md:text-left">
+          <span className="text-sky-500 dark:text-sky-400 text-4xl md:text-5xl lg:text-5xl font-bold md:text-left">
             +{counter}{" "}
           </span>
           Aplicaciones para practicar JavaScript
         </h1>
-        <p className="text-xl lg:text-2xl my-8 text-center md:text-left text-gray-500">
+        <p className="text-xl lg:text-2xl my-8 text-center md:text-left text-slate-600 dark:text-slate-400">
           ¡Inspírate y crea las mejores aplicaciones JavaScript!
         </p>
         <Link href="/aplicaciones">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-lg">
+          <button className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">
             Ver aplicaciones
           </button>
         </Link>
@@ -78,6 +78,7 @@ const Hero: React.FC = () => {
         }
       `}</style>
     </section>
+    
   );
 };
 

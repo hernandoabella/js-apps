@@ -54,11 +54,6 @@ const Header: React.FC = () => {
                 <span className="hover:text-sky-400">Aplicaciones</span>
               </Link>
             </li>
-            <li className="mx-3">
-              <Link href="/aprende">
-                <span className="hover:text-sky-400">Aprende</span>
-              </Link>
-            </li>
             <div className="flex items-center border-l border-slate-200 ml-3 dark:border-slate-800">
               <svg
                 viewBox="0 0 16 16"

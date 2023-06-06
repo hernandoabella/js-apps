@@ -15,8 +15,8 @@ const Testimonials = () => {
   const testimonials: Testimonial[] = testimonialsData;
 
   return (
-    <div className="p-8 text-center mx-8">
-      <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase mb-5">
+    <div className="p-8 text-center dark:bg-slate-900 text-white">
+      <h2 className="text-base text-sky-500 dark:text-sky-400 font-semibold tracking-wide uppercase mb-5">
         Testimonios
       </h2>
       <h2 className="text-4xl font-bold mb-8">
@@ -26,16 +26,12 @@ const Testimonials = () => {
         {testimonials.map((testimonial) => (
           <article
             key={testimonial.id}
-            className="bg-white rounded-lg shadow-md flex flex-col justify-between p-8"
+            className="bg-white rounded-lg shadow-md flex flex-col justify-between p-8 relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5"
           >
             <p className="text-gray-600 text-lg leading-7 mb-6">
-              <span className="text-sm pr-2">
-                <FaQuoteLeft />
-              </span>
+              
               {testimonial.text}
-              <span className="text-sm pl-2">
-                <FaQuoteRight />
-              </span>
+              
             </p>
             <div className="flex items-center">
               <Image
@@ -46,7 +42,7 @@ const Testimonials = () => {
                 className="rounded-full mr-3"
               />
               <div>
-                <p className="font-medium text-gray-800 text-lg mb-1">
+                <p className="text-base text-slate-900 font-semibold dark:text-slate-300">
                   {testimonial.name}
                 </p>
                 <p className="text-gray-500 text-sm">{testimonial.jobTitle}</p>
