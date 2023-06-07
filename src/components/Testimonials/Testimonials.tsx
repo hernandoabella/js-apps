@@ -26,7 +26,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="bg-white rounded-lg shadow-lg flex flex-col justify-between p-8 relative flex bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5 mb-8 md:mb-0"
+            className="rounded-lg shadow-lg flex flex-col justify-between p-8 relative flex bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5 mb-8 md:mb-0 w-full"
           >
             <div className="flex flex-col md:flex-row items-center items-center">
               <div className="mr-0 mb-4 md:mr-4 md:mb-0">

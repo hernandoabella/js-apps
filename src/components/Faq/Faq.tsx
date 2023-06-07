@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -26,7 +27,7 @@ const Accordion = () => {
                   : "transform transition duration-300"
               }
             >
-              &#x25B6;
+              <ChevronDownIcon className="w-5 h-5 dark:text-white" />
             </span>
           </button>
           <div className={activeIndex === 0 ? "px-4 py-3" : "hidden"}>
@@ -56,9 +57,7 @@ const Accordion = () => {
             className="flex justify-between w-full px-4 py-6 text-lg font-bold focus:outline-none dark:bg-slate-800 rounded-lg"
             onClick={() => handleAccordion(1)}
           >
-            <h3 className="text-slate-600 dark:text-white">
-              ¿Por qué usar JS-APPS?
-            </h3>
+            <h3 className="dark:text-white">¿Por qué usar JS-APPS?</h3>
             <span
               className={
                 activeIndex === 1
@@ -66,7 +65,7 @@ const Accordion = () => {
                   : "transform transition duration-300"
               }
             >
-              &#x25B6;
+              <ChevronDownIcon className="w-5 h-5 dark:text-white" />
             </span>
           </button>
           <div className={activeIndex === 1 ? "px-4 py-3" : "hidden"}>
@@ -82,7 +81,7 @@ const Accordion = () => {
         </div>
         <div className="bg-white shadow rounded-lg dark:bg-slate-700">
           <button
-            className="flex justify-between w-full px-4 py-6 text-lg font-bold focus:outline-none dark:bg-slate-800 bg-slate-50 rounded-lg"
+            className="flex justify-between w-full px-4 py-6 text-lg font-bold focus:outline-none dark:bg-slate-800 rounded-lg"
             onClick={() => handleAccordion(2)}
           >
             <h3 className="dark:text-white">
@@ -95,7 +94,7 @@ const Accordion = () => {
                   : "transform transition duration-300"
               }
             >
-              &#x25B6;
+              <ChevronDownIcon className="w-5 h-5 dark:text-white" />
             </span>
           </button>
           <div className={activeIndex === 2 ? "px-4 py-3" : "hidden"}>
