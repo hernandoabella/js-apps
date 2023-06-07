@@ -33,10 +33,10 @@ const Header: React.FC = () => {
 
   return (
     <header className="dark:bg-slate-900 dark:text-white">
-      <div className="flex justify-between py-10 px-20 font-semibold">
+      <div className="flex justify-between p-8 md:py-10 md:px-20 font-semibold">
         <div className="flex items-center">
           <Link href="/">
-            <div className="flex items-center">
+            <div className="">
               <Image src={logoImage} alt="Logo" width={120} height={40} />
             </div>
           </Link>

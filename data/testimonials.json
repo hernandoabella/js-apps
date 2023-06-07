@@ -19,5 +19,12 @@
     "name": "Ana Ramírez",
     "jobTitle": "Estudiante de Desarrollo Web",
     "photo": "/customer3.webp"
+  },
+  {
+    "id": 4,
+    "text": "Esta aplicación es simplemente increíble. Aprendí JavaScript de una manera clara y concisa, sin sentirme abrumada por la cantidad de información. Ahora me siento más confiada en mi capacidad para desarrollar proyectos web y estoy ansiosa por poner mis nuevas habilidades en práctica.",
+    "name": "Ana Ramírez",
+    "jobTitle": "Estudiante de Desarrollo Web",
+    "photo": "/customer3.webp"
   }
 ]

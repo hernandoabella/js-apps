@@ -4,7 +4,7 @@ import { FaCoffee } from "react-icons/fa";
 function Footer() {
   return (
     <footer>
-      <div className="flex justify-between items-center p-8 md:p-20 dark:text-white dark:bg-slate-900">
+      <div className="flex justify-between items-center p-8 md:py-10 md:px-20 dark:text-white dark:bg-slate-900">
         <p className="text-sm">
           &copy; 2023 JS-APPS by <b>Hernando Abella</b>. La creatividad en tus
           manos.

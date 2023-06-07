@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="rounded-xl overflow-hidden border shadow-xl w-full lg:w-3/4 mx-auto">
-      <div className="w-full h-72 md:h-72 lg:h-80">
+      <div className="w-full  md:h-72 lg:h-80">
         <iframe src={demoLink} className="w-full h-full" title={name}></iframe>
       </div>
 

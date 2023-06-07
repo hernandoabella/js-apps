@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="py-20 p-8 sm:px-6 md:px-16 dark:bg-slate-900 dark:text-white">
+    <div className="p-8 md:p-20 dark:bg-slate-900 dark:text-white">
       <div className="text-center lg:text-left">
         <h2 className="text-base text-center text-sky-600 dark:text-sky-400 font-semibold tracking-wide uppercase mb-5">
           Acerca de JS-APPS
         </h2>
-        <h3 className="mt-2 text-2xl font-bold leading-8 tracking-tight sm:text-3xl text-center">
+        <h3 className="text-4xl font-bold mb-5 text-center text-slate-900 dark:text-white">
           Desafía tu habilidad como desarrollador de JavaScript
         </h3>
-        <p className="mt-4 text-base text-slate-600 dark:text-slate-400 text-center">
+        <p className="mt-5 text-base text-slate-600 dark:text-slate-400 text-center">
           JS-APPS proporciona proyectos de JavaScript para que puedas desafiarte
           a ti mismo y convertirte en un mejor desarrollador.
         </p>
@@ -61,8 +61,8 @@ const About = () => {
             Desafía Tus Habilidades
           </h4>
           <p className="text-lg text-slate-600 dark:text-slate-400 text-center">
-            Te desafiamos a practicar la sintaxis de JavaScript
-            mediante la creación de proyectos.
+            Te desafiamosz a practicar la sintaxis de JavaScript mediante la
+            creación de proyectos.
           </p>
         </div>
       </div>

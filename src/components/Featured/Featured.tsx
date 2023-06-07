@@ -5,23 +5,23 @@ import { FaStar } from "react-icons/fa";
 
 const Featured = () => {
   return (
-    <div className="md:px-16 p-8 dark:bg-slate-900 dark:text-white">
+    <div className="p-8 md:px-20 dark:bg-slate-900 dark:text-white">
       <h2 className="text-base text-sky-600 dark:text-sky-400 font-semibold tracking-wide uppercase mb-5">
         Aplicaciones destacadas
       </h2>
-      <h3 className="mt-2 text-2xl font-bold leading-8 tracking-tight sm:text-3xl">
+      <h3 className="text-4xl font-bold mb-5 text-slate-900 dark:text-white">
         Descubre algunas de las mejores aplicaciones desarrolladas
       </h3>
-      <p className="mt-4 text-base text-gray-500">
+      <p className="mt-5 text-base text-slate-600 dark:text-slate-400">
       En esta sección encontrarás una cuidadosa selección de las aplicaciones más destacadas. Desde juegos y aplicaciones interactivas hasta herramientas de productividad y utilidades para el día a día, estas aplicaciones son un ejemplo del potencial de JavaScript y de las posibilidades que ofrece JS-APPS como plataforma de desarrollo. Explora estas aplicaciones destacadas y descubre todo lo que puedes hacer con JS-APPS.
       </p>
-      <div className="mx-auto  py-12 md:flex md:items-center ">
+      <div className="mx-auto py-12 md:flex md:items-center ">
         <div className="md:w-1/2">
           <Image src={featuredImg} alt="Featured App" className="mx-auto md:w-3/4 lg:w-3/5" />
         </div>
         <div className="mt-8 md:mt-0 md:ml-8 md:w-1/2">
           <h2 className="text-3xl font-bold mb-4">Featured App Title</h2>
-          <p className="mb-4 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in rutrum purus. Sed non enim tincidunt, varius orci non, fringilla lorem.</p>
+          <p className="mb-4 text-slate-600 dark:text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in rutrum purus. Sed non enim tincidunt, varius orci non, fringilla lorem.</p>
           <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Download now</button>
         </div>
       </div>
