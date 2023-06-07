@@ -15,7 +15,7 @@ const Testimonials = () => {
   const testimonials: Testimonial[] = testimonialsData;
 
   return (
-    <div className="p-8 dark:bg-slate-900 text-white">
+    <div className="p-8 md:p-20 bg-white dark:bg-slate-900 text-white">
       <h2 className="text-base text-center text-sky-500 dark:text-sky-400 font-semibold tracking-wide uppercase mb-2">
         Testimonios
       </h2>
