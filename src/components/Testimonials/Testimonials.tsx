@@ -15,40 +15,44 @@ const Testimonials = () => {
   const testimonials: Testimonial[] = testimonialsData;
 
   return (
-    <div className="p-8 text-center dark:bg-slate-900 text-white">
-      <h2 className="text-base text-sky-500 dark:text-sky-400 font-semibold tracking-wide uppercase mb-5">
+    <div className="p-8 dark:bg-slate-900 text-white">
+      <h2 className="text-base text-center text-sky-500 dark:text-sky-400 font-semibold tracking-wide uppercase mb-2">
         Testimonios
       </h2>
-      <h2 className="text-4xl font-bold mb-8">
+      <h2 className="text-4xl font-bold mb-10 text-center">
         Lo que otros dicen
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="flex flex-col md:flex-row items-center justify-center sm:gap-4 md:gap-8">
         {testimonials.map((testimonial) => (
-          <article
+          <div
             key={testimonial.id}
-            className="bg-white rounded-lg shadow-md flex flex-col justify-between p-8 relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5"
+            className="bg-white rounded-lg shadow-lg flex flex-col justify-between p-8 relative flex bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5 mb-8 md:mb-0"
           >
-            <p className="text-gray-600 text-lg leading-7 mb-6">
-              
-              {testimonial.text}
-              
-            </p>
-            <div className="flex items-center">
-              <Image
-                src={testimonial.photo}
-                alt={testimonial.name}
-                width={60}
-                height={60}
-                className="rounded-full mr-3"
-              />
-              <div>
+            <div className="flex flex-col md:flex-row items-center items-center">
+              <div className="mr-0 mb-4 md:mr-4 md:mb-0">
+                <Image
+                  src={testimonial.photo}
+                  alt={testimonial.name}
+                  width={60}
+                  height={60}
+                  className="rounded-full"
+                />
+              </div>
+              <div className="text-center md:text-left">
                 <p className="text-base text-slate-900 font-semibold dark:text-slate-300">
                   {testimonial.name}
                 </p>
-                <p className="text-gray-500 text-sm">{testimonial.jobTitle}</p>
+                <p className="text-slate-500 dark:text-slate-400 mt-1">
+                  {testimonial.jobTitle}
+                </p>
               </div>
             </div>
-          </article>
+            <div>
+              <p className="mt-3 text-slate-700 dark:text-slate-300 text-center md:text-left">
+                {testimonial.text}
+              </p>
+            </div>
+          </div>
         ))}
       </div>
     </div>

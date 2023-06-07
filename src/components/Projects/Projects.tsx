@@ -36,7 +36,7 @@ const Projects = () => {
   );
 
   return (
-    <div>
+    <div className="dark:text-white dark:bg-slate-900">
       <section>
         <div>
           <div className="w-full px-8 md:flex md:items-center md:justify-center">

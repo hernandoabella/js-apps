@@ -30,7 +30,7 @@ const Accordion = () => {
             </span>
           </button>
           <div className={activeIndex === 0 ? "px-4 py-3" : "hidden"}>
-            <p className="text-gray-700">
+            <p className="text-slate-600 dark:text-slate-400">
               <b>1.</b> Encuentra un proyecto de Javascript sugerido para
               construir usando las categorías provistas en la navegación lateral
               de JSBeginners.
@@ -56,7 +56,7 @@ const Accordion = () => {
             className="flex justify-between w-full px-4 py-3 text-lg font-bold focus:outline-none"
             onClick={() => handleAccordion(1)}
           >
-            <h3 className="text-gray-700">¿Por qué usar JS-APPS?</h3>
+            <h3 className="text-slate-600">¿Por qué usar JS-APPS?</h3>
             <span
               className={
                 activeIndex === 1
