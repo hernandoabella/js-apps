@@ -8,17 +8,17 @@ const Accordion = () => {
   };
 
   return (
-    <div className="p-8 md:p-16 dark:bg-slate-900">
+    <div className="p-8 md:p-20 dark:bg-slate-900">
       <h2 className="text-base text-sky-500 dark:text-sky-400 font-semibold tracking-wide uppercase mb-5">
         Preguntas frecuentes
       </h2>
       <div className="grid gap-5">
-        <div className="bg-white shadow rounded-lg">
+        <div className="bg-white shadow rounded-lg dark:bg-slate-700">
           <button
-            className="flex justify-between w-full px-4 py-3 text-lg font-bold focus:outline-none"
+            className="flex justify-between w-full px-4 py-6 text-lg font-bold focus:outline-none dark:bg-slate-800 rounded-lg"
             onClick={() => handleAccordion(0)}
           >
-            <h3 className="text-gray-700">¿Cómo usar JS-APPS?</h3>
+            <h3 className="dark:text-white">¿Cómo usar JS-APPS?</h3>
             <span
               className={
                 activeIndex === 0
@@ -51,12 +51,14 @@ const Accordion = () => {
             </p>
           </div>
         </div>
-        <div className="bg-white shadow rounded-lg">
+        <div className="bg-white dark:bg-slate-700 shadow rounded-lg">
           <button
-            className="flex justify-between w-full px-4 py-3 text-lg font-bold focus:outline-none"
+            className="flex justify-between w-full px-4 py-6 text-lg font-bold focus:outline-none dark:bg-slate-800 rounded-lg"
             onClick={() => handleAccordion(1)}
           >
-            <h3 className="text-slate-600">¿Por qué usar JS-APPS?</h3>
+            <h3 className="text-slate-600 dark:text-white">
+              ¿Por qué usar JS-APPS?
+            </h3>
             <span
               className={
                 activeIndex === 1
@@ -68,7 +70,7 @@ const Accordion = () => {
             </span>
           </button>
           <div className={activeIndex === 1 ? "px-4 py-3" : "hidden"}>
-            <p className="text-gray-700 ">
+            <p className="text-slate-600 dark:text-slate-400">
               <b>Te proponemos un reto:</b> crear al menos 100 proyectos de
               JavaScript de distintos niveles por ti mismo antes de adentrarte
               en un nuevo framework o lenguaje. Es recomendable evitar seguir
@@ -78,12 +80,12 @@ const Accordion = () => {
             </p>
           </div>
         </div>
-        <div className="bg-white shadow rounded-lg">
+        <div className="bg-white shadow rounded-lg dark:bg-slate-700">
           <button
-            className="flex justify-between w-full px-4 py-3 text-lg font-bold focus:outline-none"
+            className="flex justify-between w-full px-4 py-6 text-lg font-bold focus:outline-none dark:bg-slate-800 bg-slate-50 rounded-lg"
             onClick={() => handleAccordion(2)}
           >
-            <h3 className="text-gray-700">
+            <h3 className="dark:text-white">
               ¿Cómo puedo contribuir a un proyecto?
             </h3>
             <span
@@ -97,12 +99,12 @@ const Accordion = () => {
             </span>
           </button>
           <div className={activeIndex === 2 ? "px-4 py-3" : "hidden"}>
-            <p className="text-gray-700">
+            <p className="text-slate-600 dark:text-slate-400">
               Puedes encontrar información detallada sobre cómo contribuir en
               nuestro archivo CONTRIBUTING.md en GitHub:{" "}
               <a
                 href="https://github.com/hernandoabella/js-apps/blob/master/CONTRIBUTING.md"
-                className="text-blue-600 hover:text-blue-800"
+                className="text-sky-600 hover:text-sky-400 dark:text-sky-400 dark:hover:text-sky-300"
               >
                 https://github.com/hernandoabella/js-apps/blob/master/CONTRIBUTING.md
               </a>

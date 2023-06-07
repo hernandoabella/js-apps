@@ -19,7 +19,7 @@ const Testimonials = () => {
       <h2 className="text-base text-center text-sky-500 dark:text-sky-400 font-semibold tracking-wide uppercase mb-2">
         Testimonios
       </h2>
-      <h2 className="text-4xl font-bold mb-10 text-center">
+      <h2 className="text-4xl font-bold mb-10 text-center text-slate-900 dark:text-white">
         Lo que otros dicen
       </h2>
       <div className="flex flex-col md:flex-row items-center justify-center sm:gap-4 md:gap-8">
