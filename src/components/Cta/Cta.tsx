@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ArrowRightIcon } from "@heroicons/react/solid";
 
 const Cta = () => {
   return (
@@ -13,10 +12,7 @@ const Cta = () => {
       </p>
       <div className="flex justify-center">
         <Link href="/aplicaciones">
-          <button className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-200 hover:text-sky-700 focus:ring-sky-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-8">
-            Explorar aplicaciones
-            <ArrowRightIcon className="ml-2 h-5 w-5" />
-          </button>
+        <button className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-8">Explorar aplicaciones<span className="sr-only">, reusing styles</span><svg className="overflow-visible ml-3 text-sky-300 group-hover:text-sky-400 dark:text-slate-500 dark:group-hover:text-slate-400" width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0L3 3L0 6"></path></svg></button>
         </Link>
       </div>
     </div>

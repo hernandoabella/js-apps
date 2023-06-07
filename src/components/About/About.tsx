@@ -61,10 +61,7 @@ const About = () => {
             Desafía Tus Habilidades
           </h4>
           <p className="text-lg text-slate-600 dark:text-slate-400 text-center">
-            <em>
-              <b>JS-APPS</b>
-            </em>{" "}
-            desafía a los desarrolladores a practicar la sintaxis de JavaScript
+            Te desafiamos a practicar la sintaxis de JavaScript
             mediante la creación de proyectos.
           </p>
         </div>

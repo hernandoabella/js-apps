@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <p className="font-bold mr-2">Nivel:</p>
             <div className="flex">
               {[...Array(difficulty)].map((_, index) => (
-                <FaStar key={index} className="text-slate-600 dark:text-slate-400"/>
+                <FaStar key={index} className="text-slate-600 dark:text-yellow-400"/>
               ))}
             </div>
           </div>
@@ -53,13 +53,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <p className="font-bold mr-2">Tecnologías:</p>
             <div className="flex items-center">
               <div className="flex items-center mr-2">
-                <FaHtml5 className="w-6 h-6 text-slate-600 dark:text-slate-400" />
+                <FaHtml5 className="w-6 h-6 text-slate-600 dark:text-orange-500" />
               </div>
               <div className="flex items-center mr-2">
-                <FaCss3Alt className="w-6 h-6 text-slate-600 dark:text-slate-400" />
+                <FaCss3Alt className="w-6 h-6 text-slate-600 dark:text-blue-500" />
               </div>
               <div className="flex items-center">
-                <FaJsSquare className="w-6 h-6 text-slate-600 dark:text-slate-400" />
+                <FaJsSquare className="w-6 h-6 text-slate-600 dark:text-yellow-400" />
               </div>
             </div>
           </div>

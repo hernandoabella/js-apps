@@ -50,7 +50,7 @@ const Projects = () => {
                 id="filterInput"
                 value={filterText}
                 onChange={handleFilterChange}
-                className="border border-gray-300 rounded py-2 px-4"
+                className="border border-gray-300 rounded py-2 px-4 dark:bg-slate-800"
                 placeholder="Contador..."
               />
             </div>
@@ -63,7 +63,7 @@ const Projects = () => {
                 id="difficultyFilter"
                 value={filterDifficulty}
                 onChange={handleDifficultyFilterChange}
-                className="border border-gray-300 rounded py-2 px-4"
+                className="border border-gray-300 rounded py-2 px-4 dark:bg-slate-800"
               >
                 <option value="">Todo</option>
                 <option value="1">Muy fácil 🐣</option>
@@ -83,7 +83,7 @@ const Projects = () => {
                 id="categoryFilter"
                 value={filterCategory}
                 onChange={handleCategoryFilterChange}
-                className="border border-gray-300 rounded py-2 px-4"
+                className="border border-gray-300 rounded py-2 px-4 dark:bg-slate-800"
               >
                 <option value="">Todo</option>
                 <option value="Images">Images</option>

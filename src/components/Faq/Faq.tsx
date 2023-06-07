@@ -32,23 +32,18 @@ const Accordion = () => {
           </button>
           <div className={activeIndex === 0 ? "px-4 py-3" : "hidden"}>
             <p className="text-slate-600 dark:text-slate-400">
-              <b>1.</b> Encuentra un proyecto de Javascript sugerido para
-              construir usando las categorías provistas en la navegación lateral
-              de JSBeginners.
+              <b>1.</b> Encuentra un proyecto de JavaScript para
+              construir en la sección de aplicaciones usando la navegación.
               <br />
-              <b>2.</b> Lee la descripción y haz clic en el proyecto para verlo
+              <b>2.</b> Lee la descripción y haz clic en demo para verlo
               en vivo en tu navegador.
               <br />
-              <b>3.</b> Clona Git o descarga el código fuente en tu entorno de
+              <b>3.</b> Clona o descarga el código fuente en tu entorno de
               desarrollo local.
               <br />
-              <b>4.</b> ELIMINA por completo el archivo javascript de origen
-              (generalmente llamado app.js) y luego crea el proyecto Javascript
-              tú mismo.
+              <b>4.</b> Analiza los archivos HTML, CSS y JavaScript.
               <br />
-              <b>5.</b> Una vez completado, proporciona un enlace a tu proyecto
-              en la sección de comentarios para que otros puedan darte su
-              opinión y reconocimiento.
+              <b>5.</b> Una vez completado, sube tu proyecto y proporciona un enlace para que otros puedan darte su opinión y reconocimiento.
             </p>
           </div>
         </div>
