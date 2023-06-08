@@ -41,7 +41,7 @@ const Projects = () => {
         <div>
           <div className="w-full px-8 md:flex md:items-center md:justify-center">
             {/* Filter by name */}
-            <div className="m-8">
+            <div>
               <label htmlFor="filterInput" className="mr-2">
                 <b>Nombre del proyecto:</b>
               </label>
@@ -96,11 +96,11 @@ const Projects = () => {
           {filteredProjects.length === 0 && <NoProjectsFound />}
 
           <div>
-            <div className="flex flex-wrap p-8 md:px-20">
+            <div className="flex flex-wrap md:px-20">
               {filteredProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="w-full md:w-1/2 lg:w-1/3 p-4"
+                  className="w-full md:w-1/2 xl:w-1/3 p-4"
                 >
                   <ProjectCard
                     name={project.name}
