@@ -96,11 +96,11 @@ const Projects = () => {
           {filteredProjects.length === 0 && <NoProjectsFound />}
 
           <div>
-            <div className="flex flex-wrap md:container md:mx-auto">
+            <div className="flex flex-wrap p-8 md:px-20">
               {filteredProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="w-full sm:w/1 md:w-1/2 lg:w-1/2 xl:w-1/2 p-4"
+                  className="w-full md:w-1/2 lg:w-1/3 p-4"
                 >
                   <ProjectCard
                     name={project.name}
