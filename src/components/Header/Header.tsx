@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -11,6 +11,7 @@ import dynamic from "next/dynamic";
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [logoImage, setLogoImage] = useState<string | null>(null);
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -29,7 +30,17 @@ const Header: React.FC = () => {
     { ssr: false }
   );
 
-  const logoImage = theme === "dark" ? darkLogo : logo ?? ""; // Agregado ?? "" para proporcionar un valor predeterminado en caso de que logo sea null o undefined
+  useEffect(() => {
+    localStorage.setItem("theme", theme ?? "light"); // Valor predeterminado "light" si theme es undefined
+  }, [theme]);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      setLogoImage(darkLogo.src);
+    } else {
+      setLogoImage(logo.src);
+    }
+  }, [theme]);
 
   return (
     <header className="dark:bg-slate-900 dark:text-white">
@@ -37,7 +48,15 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link href="/">
             <div className="">
-              <Image src={logoImage} alt="Logo" width={120} height={40} />
+              {logoImage && (
+                <Image
+                  src={logoImage}
+                  alt="Logo"
+                  width={120}
+                  height={40}
+                  priority
+                />
+              )}
             </div>
           </Link>
         </div>
