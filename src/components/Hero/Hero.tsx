@@ -35,15 +35,15 @@ const Hero: React.FC = () => {
   }, [heroImages.length]);
 
   return (
-    <section className="md:px-10 flex flex-col md:flex-row md:items-center dark:bg-slate-900 dark:text-white">
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start md:px-10 p-8">
+    <section className="px-8 md:p-20 flex flex-col md:flex-row md:items-center dark:bg-slate-900 dark:text-white">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start mb-8 md:bm-0">
         <h1 className="text-4xl md:text-5xl font-bold md:text-left text-center">
           <span className="text-sky-500 dark:text-sky-400 font-bold md:text-left">
             +{counter}{" "}
           </span>
           Aplicaciones para practicar el código de JavaScript
         </h1>
-        <p className="text-xl lg:text-2xl my-8 text-center md:text-left text-slate-600 dark:text-slate-400">
+        <p className="text-xl lg:text-2xl mt-5 mb-5 text-center md:text-left text-slate-600 dark:text-slate-400">
           ¡Inspírate y crea las mejores aplicaciones JavaScript!
         </p>
         <Link href="/aplicaciones">
@@ -78,7 +78,6 @@ const Hero: React.FC = () => {
         }
       `}</style>
     </section>
-    
   );
 };
 
