@@ -39,33 +39,30 @@ const Projects = () => {
     <div className="dark:text-white dark:bg-slate-900">
       <section>
         <div>
-          <div className="w-full px-8 md:flex md:items-center md:justify-center">
+          <div className="w-full flex flex-col items-center md:flex-row md:justify-center">
             {/* Filter by name */}
             <div>
-              <label htmlFor="filterInput" className="mr-2">
-                <b>Nombre del proyecto:</b>
-              </label>
+              
               <input
                 type="text"
                 id="filterInput"
                 value={filterText}
                 onChange={handleFilterChange}
-                className="border border-gray-300 rounded py-2 px-4 dark:bg-slate-800"
+                className="border border-slate-300 rounded dark:bg-slate-800"
                 placeholder="Contador..."
               />
             </div>
             {/* Filter by difficulty */}
             <div className="m-4">
-              <label htmlFor="difficultyFilter" className="mr-2">
-                <b>Dificultad:</b>
-              </label>
+              
               <select
+                title="Seleccionar dificultad"
                 id="difficultyFilter"
                 value={filterDifficulty}
                 onChange={handleDifficultyFilterChange}
-                className="border border-gray-300 rounded py-2 px-4 dark:bg-slate-800"
+                className="border border-gray-300 rounded dark:bg-slate-800"
               >
-                <option value="">Todo</option>
+                <option value="">Dificultad</option>
                 <option value="1">Muy fácil 🐣</option>
                 <option value="2">Fácil 🌺</option>
                 <option value="3">Intermedio 🌈</option>
@@ -75,17 +72,15 @@ const Projects = () => {
             </div>
 
             {/* Filter by category */}
-            <div className="m-4">
-              <label htmlFor="categoryFilter" className="mr-2">
-                <b>Categoría:</b>
-              </label>
+            <div className="">
               <select
+                title="Seleccionar categoría"
                 id="categoryFilter"
                 value={filterCategory}
                 onChange={handleCategoryFilterChange}
-                className="border border-gray-300 rounded py-2 px-4 dark:bg-slate-800"
+                className="border border-gray-300 rounded dark:bg-slate-800"
               >
-                <option value="">Todo</option>
+                <option value="">Categoría</option>
                 <option value="Images">Images</option>
                 <option value="Text">Text</option>
                 <option value="Colors">Colors</option>
@@ -96,11 +91,11 @@ const Projects = () => {
           {filteredProjects.length === 0 && <NoProjectsFound />}
 
           <div>
-            <div className="flex flex-wrap md:px-20">
+            <div className="flex flex-wrap md:px-10 lg:px-20 xl:px-40">
               {filteredProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="w-full md:w-1/2 lg:w-1/3 p-4"
+                  className="w-full md:w-1/2 lg:w-1/2 xl:1/3 p-4"
                 >
                   <ProjectCard
                     name={project.name}
