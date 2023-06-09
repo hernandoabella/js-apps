@@ -1,4 +1,5 @@
-import { FaDownload, FaGithub, FaStar, FaPlayCircle } from "react-icons/fa";
+import { useState } from "react";
+import { FaDownload, FaGithub, FaStar, FaPlayCircle, FaCode } from "react-icons/fa";
 
 import Image from "next/image";
 
@@ -21,6 +22,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   demoLink,
   category,
 }) => {
+  const [showCode, setShowCode] = useState(false);
+
+  const handleCodeButtonClick = () => {
+    setShowCode(!showCode);
+  };
+
   return (
     <div className="rounded-xl overflow-hidden border shadow-lg">
       <div className="w-full h-72 md:h-72 lg:h-80">
@@ -79,27 +86,37 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="flex space-x-4 w-full text-center">
           <a
             href={downloadLink}
-            className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4"
+            className="md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-2"
           >
             <FaDownload className="" />
-            
           </a>
           <a
             href={githubLink}
-            className="w-full bg-slate-600 hover:bg-slate-700 text-white rounded-lg p-4"
+            className="bg-slate-600 hover:bg-slate-700 text-white rounded-lg p-2"
           >
             <FaGithub className="" />
-            
           </a>
           <a
             href={demoLink}
-            className=" w-full bg-green-600 hover:bg-green-700 text-white rounded-lg p-4"
+            className="bg-green-600 hover:bg-green-700 text-white rounded-lg p-2"
             target="_blank"
           >
             <FaPlayCircle className="" />
-            
+          </a>
+          <a
+            onClick={handleCodeButtonClick}
+            className="bg-gray-600 hover:bg-gray-700 text-white rounded-lg p-2"
+          >
+            <FaCode className="" />
           </a>
         </div>
+        {showCode && (
+          <div>
+            <p>codigo html</p>
+            <p>codigo css</p>
+            <p>codigo javascript</p>
+          </div>
+        )}
       </div>
     </div>
   );

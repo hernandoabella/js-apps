@@ -2,10 +2,9 @@ export const projectsData = [
   {
     id: 1,
     name: "Redimensionador de texto 📐",
-    description:
-      "Esta aplicación te permite ajustar el tamaño del texto a tus necesidades.",
+    description: "Personaliza el tamaño del texto según tus necesidades con esta útil aplicación de ajuste.",
     category: "Texto",
-    difficulty: 1,
+    difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://effulgent-pasca-40a1c9.netlify.app/",
@@ -13,8 +12,7 @@ export const projectsData = [
   {
     id: 2,
     name: "Carrusel de imágenes 🖼️",
-    description:
-      "Carrusel de imágenes personalizable con desplazamiento y reproducción automática.",
+    description: "Disfruta de un carrusel de imágenes versátil y personalizable con desplazamiento automático para mostrar tus fotos de manera impresionante.",
     category: "Imagen",
     difficulty: 2,
     downloadLink: "#",
@@ -24,8 +22,7 @@ export const projectsData = [
   {
     id: 3,
     name: "Calificación con emojis 🙂",
-    description:
-      "Un componente de calificación con emojis simple que permite a los usuarios valorar algo utilizando emojis.",
+    description: "Permite que tus usuarios expresen su opinión de manera divertida y sencilla mediante emojis con este componente de calificación único.",
     category: "Emojis",
     difficulty: 2,
     downloadLink: "#",
@@ -35,10 +32,9 @@ export const projectsData = [
   {
     id: 4,
     name: "Contador 🧮",
-    description:
-      "Aplicación básica de contador que permite a los usuarios incrementar, decrementar y reiniciar un contador.",
+    description: "Controla fácilmente tus contadores con esta sencilla y práctica aplicación que te permite incrementar, decrementar y reiniciar los valores.",
     category: "Contador",
-    difficulty: 1,
+    difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://incredible-boba-57ba5d.netlify.app/",
@@ -56,8 +52,7 @@ export const projectsData = [
   {
     id: 6,
     name: "Sonido al hacer clic 🔔",
-    description:
-      "Aplicación web que reproduce un efecto de sonido cuando un usuario hace clic en un botón.",
+    description: "Agrega un toque de interactividad a tu sitio web reproduciendo efectos de sonido encantadores cuando los usuarios hacen clic en los botones.",
     category: "Audio",
     difficulty: 1,
     downloadLink: "#",
@@ -67,7 +62,7 @@ export const projectsData = [
   {
     id: 7,
     name: "Validación de contraseña 🔒",
-    description: "Aplicación para validar las contraseñas de los usuarios.",
+    description: "Asegura la protección de tus usuarios mediante esta aplicación que verifica la fortaleza y validez de las contraseñas ingresadas.",
     category: "Validación",
     difficulty: 3,
     downloadLink: "#",
@@ -77,7 +72,7 @@ export const projectsData = [
   {
     id: 8,
     name: "Generador de perfil de github 🐱",
-    description: "Esta aplicación te permite generar un perfil de github.",
+    description: "Crea perfiles de GitHub llamativos y personalizados con esta aplicación que te ayuda a destacar en la comunidad de desarrolladores.",
     category: "Generador",
     difficulty: 3,
     downloadLink: "#",
@@ -87,9 +82,9 @@ export const projectsData = [
   {
     id: 9,
     name: "Cambiar color de fondo 🟩",
-    description: "Esta aplicación te permite cambiar el color de fondo.",
+    description: "Personaliza el aspecto visual de tu sitio web al instante al cambiar el color de fondo de forma fácil y rápida.",
     category: "Color",
-    difficulty: 1,
+    difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://prismatic-seahorse-3f7a5c.netlify.app",
@@ -106,9 +101,9 @@ export const projectsData = [
   // },
   {
     id: 11,
-    name: "Calculadora ",
-    description: "Esta aplicación te permite realizar calculos matemáticos.",
-    category: "Validación",
+    name: "Calculadora 📟",
+    description: "Realiza cálculos matemáticos precisos y rápidos con esta calculadora intuitiva y funcional.",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -116,8 +111,8 @@ export const projectsData = [
   },
   {
     id: 12,
-    name: "Calculadora de edad ",
-    description: "Esta aplicación te permite calcular la edad de una persona.",
+    name: "Calculadora de edad 🎂",
+    description: "Descubre la edad de una persona con solo ingresar su fecha de nacimiento en esta práctica herramienta de cálculo de edades.",
     category: "Validación",
     difficulty: 2,
     downloadLink: "#",
@@ -137,8 +132,8 @@ export const projectsData = [
   },
   {
     id: 14,
-    name: "Reproductor MP3",
-    description: "Esta aplicación te permite realizar calculos matemáticos.",
+    name: "Reproductor MP3 🎧",
+    description: "Disfruta de tus canciones favoritas con este reproductor de música en línea que te permite reproducir archivos MP3 con facilidad.",
     category: "Audio",
     difficulty: 4,
     downloadLink: "#",
@@ -147,8 +142,8 @@ export const projectsData = [
   },
   {
     id: 15,
-    name: "Reloj digital",
-    description: "Esta aplicación te permite calcular la edad de una persona.",
+    name: "Reloj digital ⌚",
+    description: "Mantén un seguimiento preciso del tiempo con este reloj digital elegante y fácil de leer que muestra la hora actual en tu navegador.",
     category: "Validación",
     difficulty: 2,
     downloadLink: "#",
@@ -157,9 +152,8 @@ export const projectsData = [
   },
   {
     id: 16,
-    name: "Cronómetro",
-    description:
-      "Esta aplicación te permite añadir productos a tu carrito de compras.",
+    name: "Cronómetro ⏱️",
+    description: "Mide el tiempo transcurrido con precisión utilizando este cronómetro digital que te ayuda a contar intervalos y eventos con facilidad.",
     category: "Validación",
     difficulty: 3,
     downloadLink: "#",
@@ -168,9 +162,8 @@ export const projectsData = [
   },
   {
     id: 17,
-    name: "Temporizador pomodoro",
-    description:
-      "La técnica Pomodoro consiste en usar un temporizador para dividir el trabajo en bloques de tiempo enfocados (generalmente 25 minutos).",
+    name: "Temporizador Pomodoro 🍅",
+    description: "Aumenta tu productividad utilizando la popular técnica Pomodoro, que divide tu tiempo en bloques enfocados para maximizar tu eficiencia.",
     category: "Validación",
     difficulty: 2,
     downloadLink: "#",
@@ -179,8 +172,8 @@ export const projectsData = [
   },
   {
     id: 18,
-    name: "Generador de bromas",
-    description: "Esta aplicación te permite generar bromas.",
+    name: "Generador de bromas 😄",
+    description: "Genera risas y alegría con este divertido generador de bromas que te proporciona chistes y ocurrencias para compartir con tus amigos.",
     category: "Validación",
     difficulty: 2,
     downloadLink: "#",
@@ -189,8 +182,8 @@ export const projectsData = [
   },
   {
     id: 19,
-    name: "Generador fibonacci",
-    description: "Esta aplicación te permite generar números de fibonacci.",
+    name: "Generador Fibonacci 🔢",
+    description: "Explora la secuencia matemática de Fibonacci con este generador que te muestra los números en la famosa sucesión de forma rápida y sencilla.",
     category: "Validación",
     difficulty: 3,
     downloadLink: "#",
@@ -199,8 +192,8 @@ export const projectsData = [
   },
   {
     id: 20,
-    name: "Generador de contraseñas",
-    description: "Esta aplicación te permite generar contraseñas.",
+    name: "Generador de contraseñas 🔐",
+    description: "Crea contraseñas seguras y robustas al instante con esta herramienta que genera combinaciones aleatorias y difíciles de adivinar.",
     category: "Validación",
     difficulty: 2,
     downloadLink: "#",
@@ -1202,13 +1195,13 @@ export const projectsData = [
   },
   {
     id: 120,
-    name: "Snake",
+    name: "Juego de la serpiente 🐍",
     description: "Esta aplicación te saber cuantas teclas has presionado.",
     category: "Contador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://effervescent-souffle-601d53.netlify.app",
   },
   {
     id: 121,
@@ -1218,7 +1211,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://reliable-empanada-3a00e5.netlify.app",
   },
   {
     id: 122,

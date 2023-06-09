@@ -17,7 +17,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex flex-col items-center justify-center mt-10 md:flex-row">
-        <div className="mb-8 sm:mb-0 flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full p-4">
           <Image
             src="/icon1.png"
             alt="Icono 1"
@@ -33,7 +33,7 @@ const About = () => {
             habilidades.
           </p>
         </div>
-        <div className="mb-8 sm:mb-0  flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full p-4">
           <Image
             src="/icon2.png"
             alt="Icono 2"
@@ -49,7 +49,7 @@ const About = () => {
             nuevo o reutilizar técnicas ya aprendidas.
           </p>
         </div>
-        <div className="mb-8 sm:mb-0 flex flex-col items-center w-full">
+        <div className=" flex flex-col items-center w-full p-4">
           <Image
             src="/icon3.png"
             alt="Icono 3"
