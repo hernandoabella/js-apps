@@ -95,7 +95,7 @@ const Projects = () => {
               {filteredProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="w-full md:w-1/2 lg:w-1/2 xl:1/3 p-4"
+                  className="w-full md:w-1/2 lg:w-1/3 xl:1/3 p-4"
                 >
                   <ProjectCard
                     name={project.name}

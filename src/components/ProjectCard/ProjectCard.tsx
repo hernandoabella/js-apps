@@ -48,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="flex items-center pb-6">
             <p className="font-bold mr-2">Tecnologías:</p>
 
-            <div className="flex items-center">
+            <div className="flex items-center align-middle">
               <div className="flex items-center mr-2">
                 <Image
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -76,28 +76,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
         </div>
-        <div className="flex justify-between flex-col md:flex-col ">
+        <div className="flex space-x-4 w-full text-center">
           <a
             href={downloadLink}
-            className="flex items-center my-3 w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-2 px-4 justify-center flex"
+            className="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4"
           >
-            <FaDownload className="w-4 h-4 mr-2" />
-            Descargar
+            <FaDownload className="" />
+            
           </a>
           <a
             href={githubLink}
-            className="flex items-center my-3 w-full md:w-auto bg-white hover:bg-blue-600 text-blue-600 hover:text-white rounded-lg py-2 px-4 border border-blue-600 justify-center flex"
+            className="w-full bg-slate-600 hover:bg-slate-700 text-white rounded-lg p-4"
           >
-            <FaGithub className="w-4 h-4 mr-2" />
-            GitHub
+            <FaGithub className="" />
+            
           </a>
           <a
             href={demoLink}
-            className="flex items-center my-3 w-full bg-green-500 hover:bg-green-600 text-white rounded-lg py-2 px-4 justify-center flex"
+            className=" w-full bg-green-600 hover:bg-green-700 text-white rounded-lg p-4"
             target="_blank"
           >
-            <FaPlayCircle className="w-4 h-4 mr-2" />
-            Demo
+            <FaPlayCircle className="" />
+            
           </a>
         </div>
       </div>
