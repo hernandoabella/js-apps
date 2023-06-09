@@ -16,8 +16,8 @@ const About = () => {
           a ti mismo y convertirte en un mejor desarrollador.
         </p>
       </div>
-      <div className="flex flex-col items-center justify-between mt-20 md:flex-row">
-        <div className="mb-8 sm:mb-0 sm:mr-4 flex flex-col items-center mx-4">
+      <div className="flex flex-col items-center justify-between mt-10 md:flex-row">
+        <div className="mb-8 sm:mb-0 sm:mr-4 flex flex-col items-center w-full">
           <Image
             src="/icon1.png"
             alt="Icono 1"
@@ -28,12 +28,12 @@ const About = () => {
           <h4 className="text-2xl font-bold m-3 text-center">
             Aprende Haciendo
           </h4>
-          <p className="text-lg text-slate-600 dark:text-slate-400 text-center">
+          <p className="text-slate-600 dark:text-slate-400 text-center">
             Construye muchos proyectos pequeños y medianos para mejorar tus
             habilidades.
           </p>
         </div>
-        <div className="mb-8 sm:mb-0 flex flex-col items-center">
+        <div className="mb-8 sm:mb-0 sm:mr-4 flex flex-col items-center w-full">
           <Image
             src="/icon2.png"
             alt="Icono 2"
@@ -44,12 +44,12 @@ const About = () => {
           <h4 className="text-2xl font-bold m-3 text-center">
             Proyectos Sugeridos
           </h4>
-          <p className="text-lg text-slate-600 dark:text-slate-400 text-center">
+          <p className="text-slate-600 dark:text-slate-400 text-center">
             Selecciona uno de los proyectos sugeridos aquí para aprender algo
             nuevo o reutilizar técnicas ya aprendidas.
           </p>
         </div>
-        <div className="flex flex-col items-center mx-4">
+        <div className="mb-8 sm:mb-0 sm:mr-4 flex flex-col items-center w-full">
           <Image
             src="/icon3.png"
             alt="Icono 3"
@@ -60,7 +60,7 @@ const About = () => {
           <h4 className="text-2xl font-bold m-3 text-center">
             Desafía Tus Habilidades
           </h4>
-          <p className="text-lg text-slate-600 dark:text-slate-400 text-center">
+          <p className="text-slate-600 dark:text-slate-400 text-center">
             Te desafiamosz a practicar la sintaxis de JavaScript mediante la
             creación de proyectos.
           </p>
