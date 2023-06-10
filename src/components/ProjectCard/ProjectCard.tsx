@@ -122,7 +122,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className="md:w-auto bg-yellow-600 hover:bg-yellow-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
           >
             <FaCode className="mr-2" />
-            {showCode ? "Ocultar código" : "Ver código"}
+            {showCode}
           </button>
         </div>
       </div>
