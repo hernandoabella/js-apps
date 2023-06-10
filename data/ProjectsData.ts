@@ -6,7 +6,7 @@ export const projectsData = [
     category: "Texto",
     difficulty: 2,
     downloadLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/hernandoabella/redimensionador-de-texto",
     demoLink: "https://effulgent-pasca-40a1c9.netlify.app/",
   },
   {
@@ -1231,7 +1231,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://unrivaled-kleicha-1e2d10.netlify.app",
   },
   {
     id: 124,
@@ -1241,7 +1241,7 @@ export const projectsData = [
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
-    demoLink: "https://shiny-salamander-0dc42e.netlify.app",
+    demoLink: "https://symphonious-piroshki-ca71c2.netlify.app",
   },
   {
     id: 125,

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaDownload, FaGithub, FaStar, FaPlayCircle, FaCode } from "react-icons/fa";
 
 import Image from "next/image";
+import CodeViewer from "@/components/CodeViewer/CodeViewer";
 
 interface ProjectCardProps {
   name: string;
@@ -11,6 +12,8 @@ interface ProjectCardProps {
   githubLink: string;
   demoLink: string;
   category: string;
+  repositories: string[]; // Array de URLs de repositorios en GitHub
+  filePaths: string[]; // Array de rutas de archivos de código dentro de los repositorios
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -21,6 +24,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   githubLink,
   demoLink,
   category,
+  repositories,
+  filePaths,
 }) => {
   const [showCode, setShowCode] = useState(false);
 
@@ -111,10 +116,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </a>
         </div>
         {showCode && (
-          <div>
-            <p>codigo html</p>
-            <p>codigo css</p>
-            <p>codigo javascript</p>
+          <div className="bg-slate-100 dark:bg-slate-600 rounded-lg p-4 absolute">
+            <CodeViewer repositories={repositories} filePaths={filePaths} />
           </div>
         )}
       </div>

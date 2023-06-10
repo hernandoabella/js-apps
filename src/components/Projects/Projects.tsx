@@ -42,7 +42,6 @@ const Projects = () => {
           <div className="w-full flex flex-col items-center md:flex-row md:justify-center">
             {/* Filter by name */}
             <div>
-              
               <input
                 type="text"
                 id="filterInput"
@@ -54,7 +53,6 @@ const Projects = () => {
             </div>
             {/* Filter by difficulty */}
             <div className="m-4">
-              
               <select
                 title="Seleccionar dificultad"
                 id="difficultyFilter"
@@ -105,6 +103,8 @@ const Projects = () => {
                     githubLink={project.githubLink}
                     demoLink={project.demoLink}
                     category={project.category}
+                    repositories={[]}
+                    filePaths={[]}
                   />
                 </div>
               ))}
