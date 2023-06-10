@@ -2,7 +2,6 @@ import { useState } from "react";
 import { FaDownload, FaGithub, FaStar, FaPlayCircle, FaCode } from "react-icons/fa";
 
 import Image from "next/image";
-import CodeViewer from "@/components/CodeViewer/CodeViewer";
 
 interface ProjectCardProps {
   name: string;
@@ -12,8 +11,9 @@ interface ProjectCardProps {
   githubLink: string;
   demoLink: string;
   category: string;
-  repositories: string[]; // Array de URLs de repositorios en GitHub
-  filePaths: string[]; // Array de rutas de archivos de código dentro de los repositorios
+  htmlCode: string;
+  cssCode: string;
+  jsCode: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -24,8 +24,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   githubLink,
   demoLink,
   category,
-  repositories,
-  filePaths,
+  htmlCode,
+  cssCode,
+  jsCode,
 }) => {
   const [showCode, setShowCode] = useState(false);
 
@@ -91,36 +92,63 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="flex space-x-4 w-full text-center">
           <a
             href={downloadLink}
-            className="md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-2"
+            className="md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaDownload className="" />
+            <FaDownload className="mr-2" />
+            
           </a>
           <a
             href={githubLink}
-            className="bg-slate-600 hover:bg-slate-700 text-white rounded-lg p-2"
+            className="md:w-auto bg-gray-600 hover:bg-gray-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaGithub className="" />
+            <FaGithub className="mr-2" />
+          
           </a>
           <a
             href={demoLink}
-            className="bg-green-600 hover:bg-green-700 text-white rounded-lg p-2"
+            className="md:w-auto bg-green-600 hover:bg-green-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaPlayCircle className="" />
+            <FaPlayCircle className="mr-2" />
+            
           </a>
-          <a
+          <button
             onClick={handleCodeButtonClick}
-            className="bg-gray-600 hover:bg-gray-700 text-white rounded-lg p-2"
+            className="md:w-auto bg-yellow-600 hover:bg-yellow-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
           >
-            <FaCode className="" />
-          </a>
+            <FaCode className="mr-2" />
+            {showCode ? "Ocultar código" : "Ver código"}
+          </button>
         </div>
-        {showCode && (
-          <div className="bg-slate-100 dark:bg-slate-600 rounded-lg p-4 absolute">
-            <CodeViewer repositories={repositories} filePaths={filePaths} />
-          </div>
-        )}
       </div>
+
+      {showCode && (
+        <div className="bg-gray-100 dark:bg-slate-900 p-8">
+          <div className="mb-4">
+            <h3 className="text-lg font-bold mb-2">Código HTML</h3>
+            <pre className="whitespace-pre-wrap text-slate-600 dark:text-slate-400 overflow-auto p-2 bg-white dark:bg-slate-800 rounded">
+              {htmlCode}
+            </pre>
+          </div>
+          <div className="mb-4">
+            <h3 className="text-lg font-bold mb-2">Código CSS</h3>
+            <pre className="whitespace-pre-wrap text-slate-600 dark:text-slate-400 overflow-auto p-2 bg-white dark:bg-slate-800 rounded">
+              {cssCode}
+            </pre>
+          </div>
+          <div>
+            <h3 className="text-lg font-bold mb-2">Código JavaScript</h3>
+            <pre className="whitespace-pre-wrap text-slate-600 dark:text-slate-400 overflow-auto p-2 bg-white dark:bg-slate-800 rounded">
+              {jsCode}
+            </pre>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

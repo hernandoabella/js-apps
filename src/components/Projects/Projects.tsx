@@ -103,8 +103,9 @@ const Projects = () => {
                     githubLink={project.githubLink}
                     demoLink={project.demoLink}
                     category={project.category}
-                    repositories={[]}
-                    filePaths={[]}
+                    htmlCode={project.htmlCode || ""}
+                    cssCode={project.cssCode || ""}
+                    jsCode={project.jsCode || ""}
                   />
                 </div>
               ))}

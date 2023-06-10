@@ -8,6 +8,15 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "https://github.com/hernandoabella/redimensionador-de-texto",
     demoLink: "https://effulgent-pasca-40a1c9.netlify.app/",
+    htmlCode: `
+      <!-- Código HTML del proyecto Redimensionador de texto -->
+    `,
+    cssCode: `
+      /* Código CSS del proyecto Redimensionador de texto */
+    `,
+    jsCode: `
+      // Código JavaScript del proyecto Redimensionador de texto
+    `
   },
   {
     id: 2,
@@ -18,6 +27,15 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://superb-heliotrope-a182fc.netlify.app/",
+    htmlCode: `
+      <!-- Código HTML del proyecto Carrusel de imágenes -->
+    `,
+    cssCode: `
+      /* Código CSS del proyecto Carrusel de imágenes */
+    `,
+    jsCode: `
+      // Código JavaScript del proyecto Carrusel de imágenes
+    `
   },
   {
     id: 3,
@@ -28,6 +46,15 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://phenomenal-florentine-e1bc03.netlify.app/",
+    htmlCode: `
+      <!-- Código HTML del proyecto Calificación con emojis -->
+    `,
+    cssCode: `
+      /* Código CSS del proyecto Calificación con emojis */
+    `,
+    jsCode: `
+      // Código JavaScript del proyecto Calificación con emojis
+    `
   },
   {
     id: 4,
@@ -38,6 +65,15 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://incredible-boba-57ba5d.netlify.app/",
+    htmlCode: `
+      qef
+    `,
+    cssCode: `
+      qefqef
+    `,
+    jsCode: `
+      qefqe
+    `
   },
   // {
   //   id: 5,
