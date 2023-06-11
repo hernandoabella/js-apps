@@ -253,28 +253,28 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://verdant-fenglisu-a95152.netlify.app",
   },
-  {
-    id: 21,
-    name: "Generador de imágenes 📷",
-    description:
-      "Descubre la creatividad ilimitada con este generador de imágenes. ¡Crea composiciones únicas y experimenta con diferentes estilos visuales!",
-    category: "Validación",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://helpful-hummingbird-e58695.netlify.app",
-  },
-  {
-    id: 22,
-    name: "Generador de comidas 🍔",
-    description:
-      "¿Necesitas ideas para tu próxima comida? Este generador de comidas te ofrecerá una amplia variedad de opciones deliciosas. ¡Prepárate para disfrutar de una experiencia culinaria única!",
-    category: "Validación",
-    difficulty: 3,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://transcendent-tapioca-6f10ff.netlify.app",
-  },
+  // {
+  //   id: 21,
+  //   name: "Generador de imágenes 📷",
+  //   description:
+  //     "Descubre la creatividad ilimitada con este generador de imágenes. ¡Crea composiciones únicas y experimenta con diferentes estilos visuales!",
+  //   category: "Validación",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://helpful-hummingbird-e58695.netlify.app",
+  // },
+  // {
+  //   id: 22,
+  //   name: "Generador de comidas 🍔",
+  //   description:
+  //     "¿Necesitas ideas para tu próxima comida? Este generador de comidas te ofrecerá una amplia variedad de opciones deliciosas. ¡Prepárate para disfrutar de una experiencia culinaria única!",
+  //   category: "Validación",
+  //   difficulty: 3,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://transcendent-tapioca-6f10ff.netlify.app",
+  // },
   {
     id: 23,
     name: "Contador de caracteres ✏️",
@@ -385,17 +385,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://dazzling-banoffee-acfe6e.netlify.app",
   },
-  {
-    id: 33,
-    name: "Piano 🎹",
-    description:
-      "Explora tu lado musical y disfruta tocando melodías en este piano virtual. Crea hermosas composiciones musicales y diviértete con diferentes notas y tonos.",
-    category: "Audio",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://merry-cassata-7cae39.netlify.app",
-  },
+  // {
+  //   id: 33,
+  //   name: "Piano 🎹",
+  //   description:
+  //     "Explora tu lado musical y disfruta tocando melodías en este piano virtual. Crea hermosas composiciones musicales y diviértete con diferentes notas y tonos.",
+  //   category: "Audio",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://merry-cassata-7cae39.netlify.app",
+  // },
   {
     id: 34,
     name: "Visualizador de audio 🎵",
@@ -484,17 +484,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://willowy-semolina-6fa82a.netlify.app",
   },
-  {
-    id: 42,
-    name: "Juego de asteroides 🚀",
-    description:
-      "Embárcate en una aventura espacial llena de acción y emoción en este desafiante juego de asteroides. Pilota tu nave espacial y esquiva los peligrosos asteroides mientras intentas llegar lo más lejos posible. Pon a prueba tus reflejos y habilidades de navegación para alcanzar nuevas puntuaciones récord.",
-    category: "Juegos",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://rainbow-sunflower-0309dd.netlify.app",
-  },
+  // {
+  //   id: 42,
+  //   name: "Juego de asteroides 🚀",
+  //   description:
+  //     "Embárcate en una aventura espacial llena de acción y emoción en este desafiante juego de asteroides. Pilota tu nave espacial y esquiva los peligrosos asteroides mientras intentas llegar lo más lejos posible. Pon a prueba tus reflejos y habilidades de navegación para alcanzar nuevas puntuaciones récord.",
+  //   category: "Juegos",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://rainbow-sunflower-0309dd.netlify.app",
+  // },
   {
     id: 43,
     name: "Adivina el número 🔢",
@@ -583,28 +583,28 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://stirring-sopapillas-c0c8a9.netlify.app",
   },
-  {
-    id: 52,
-    name: "Generador de degradados 🌈",
-    description:
-      "Crea hermosos degradados de colores con esta aplicación fácil de usar. Personaliza y experimenta con diferentes combinaciones de colores para obtener resultados impresionantes.",
-    category: "Tiempo",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://candid-torrone-b66209.netlify.app",
-  },
-  {
-    id: 53,
-    name: "Piedra, papel o tijeras ✊🖐✌️",
-    description:
-      " ¡Desafía a la computadora en este clásico juego de piedra, papel o tijeras! Pon a prueba tu suerte y habilidades estratégicas para derrotar a tu oponente virtual.",
-    category: "Tiempo",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://loquacious-paletas-2bfd28.netlify.app",
-  },
+  // {
+  //   id: 52,
+  //   name: "Generador de degradados 🌈",
+  //   description:
+  //     "Crea hermosos degradados de colores con esta aplicación fácil de usar. Personaliza y experimenta con diferentes combinaciones de colores para obtener resultados impresionantes.",
+  //   category: "Tiempo",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://candid-torrone-b66209.netlify.app",
+  // },
+  // {
+  //   id: 53,
+  //   name: "Piedra, papel o tijeras ✊🖐✌️",
+  //   description:
+  //     " ¡Desafía a la computadora en este clásico juego de piedra, papel o tijeras! Pon a prueba tu suerte y habilidades estratégicas para derrotar a tu oponente virtual.",
+  //   category: "Tiempo",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://loquacious-paletas-2bfd28.netlify.app",
+  // },
   {
     id: 54,
     name: "Fiesta de halloween 🎃",
@@ -716,17 +716,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://effulgent-bombolone-bde7e9.netlify.app",
   },
-  {
-    id: 64,
-    name: "Ajedrez",
-    description:
-      "Sumérgete en el fascinante mundo del ajedrez con esta aplicación. Juega contra la computadora o reta a tus amigos en partidas estratégicas. Mejora tus habilidades y disfruta de este juego milenario.",
-    category: "Juegos 🎮",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://earnest-beijinho-8a8f4a.netlify.app",
-  },
+  // {
+  //   id: 64,
+  //   name: "Ajedrez",
+  //   description:
+  //     "Sumérgete en el fascinante mundo del ajedrez con esta aplicación. Juega contra la computadora o reta a tus amigos en partidas estratégicas. Mejora tus habilidades y disfruta de este juego milenario.",
+  //   category: "Juegos 🎮",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://earnest-beijinho-8a8f4a.netlify.app",
+  // },
   {
     id: 65,
     name: "Lanzamiento de moneda",
@@ -881,17 +881,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://exquisite-maamoul-2036ef.netlify.app",
   },
-  {
-    id: 79,
-    name: "Aplicación de recetas",
-    description:
-      "Descubre nuevas recetas y mejora tus habilidades culinarias con esta aplicación de recetas interactiva. Explora una amplia colección de platos, encuentra inspiración y sigue instrucciones detalladas para crear deliciosas comidas en casa.",
-    category: "Calculadora 🧮",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://cool-snickerdoodle-cea8eb.netlify.app",
-  },
+  // {
+  //   id: 79,
+  //   name: "Aplicación de recetas",
+  //   description:
+  //     "Descubre nuevas recetas y mejora tus habilidades culinarias con esta aplicación de recetas interactiva. Explora una amplia colección de platos, encuentra inspiración y sigue instrucciones detalladas para crear deliciosas comidas en casa.",
+  //   category: "Calculadora 🧮",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://cool-snickerdoodle-cea8eb.netlify.app",
+  // },
   {
     id: 81,
     name: "Calculadora BMI",
@@ -947,17 +947,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://gilded-haupia-ce5dab.netlify.app",
   },
-  {
-    id: 87,
-    name: "Aplicación de notas",
-    description:
-      "Mantén tus pensamientos organizados y toma notas fácilmente con esta aplicación de notas. Captura tus ideas, crea listas y realiza un seguimiento de tus tareas pendientes. Mantén tu vida digital en orden y nunca olvides una idea importante.",
-    category: "Calculadora 🧮",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://luminous-malabi-2e438f.netlify.app",
-  },
+  // {
+  //   id: 87,
+  //   name: "Aplicación de notas",
+  //   description:
+  //     "Mantén tus pensamientos organizados y toma notas fácilmente con esta aplicación de notas. Captura tus ideas, crea listas y realiza un seguimiento de tus tareas pendientes. Mantén tu vida digital en orden y nunca olvides una idea importante.",
+  //   category: "Calculadora 🧮",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://luminous-malabi-2e438f.netlify.app",
+  // },
   {
     id: 88,
     name: "Aplicación de notificaciones",
@@ -969,17 +969,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://classy-alfajores-46d91d.netlify.app",
   },
-  {
-    id: 89,
-    name: "Aplicación de películas",
-    description:
-      "Explora el mundo del cine y descubre nuevas películas con esta aplicación interactiva. Obtén información detallada sobre películas populares, consulta reseñas, mira trailers y mantente al día con las últimas novedades de la industria cinematográfica.",
-    category: "Calculadora 🧮",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://lucent-paletas-9bc58d.netlify.app",
-  },
+  // {
+  //   id: 89,
+  //   name: "Aplicación de películas",
+  //   description:
+  //     "Explora el mundo del cine y descubre nuevas películas con esta aplicación interactiva. Obtén información detallada sobre películas populares, consulta reseñas, mira trailers y mantente al día con las últimas novedades de la industria cinematográfica.",
+  //   category: "Calculadora 🧮",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://lucent-paletas-9bc58d.netlify.app",
+  // },
   {
     id: 90,
     name: "Calculadora de préstamos",
@@ -1285,17 +1285,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://resplendent-elf-6a61c1.netlify.app",
   },
-  {
-    id: 117,
-    name: "Grabar la pantalla",
-    description:
-      "Esta aplicación te permite grabar la pantalla de tu dispositivo.",
-    category: "Video",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://effortless-boba-be7bce.netlify.app",
-  },
+  // {
+  //   id: 117,
+  //   name: "Grabar la pantalla",
+  //   description:
+  //     "Esta aplicación te permite grabar la pantalla de tu dispositivo.",
+  //   category: "Video",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://effortless-boba-be7bce.netlify.app",
+  // },
   {
     id: 118,
     name: "Indicador de pasos",
@@ -1373,17 +1373,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://symphonious-piroshki-ca71c2.netlify.app",
   },
-  {
-    id: 125,
-    name: "Mesa de tenis",
-    description:
-      "Un juego de mesa de tenis virtual para jugar en línea contra la computadora o un oponente.",
-    category: "Juegos de mesa",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://profound-liger-bf4a3e.netlify.app",
-  },
+  // {
+  //   id: 125,
+  //   name: "Mesa de tenis",
+  //   description:
+  //     "Un juego de mesa de tenis virtual para jugar en línea contra la computadora o un oponente.",
+  //   category: "Juegos de mesa",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://profound-liger-bf4a3e.netlify.app",
+  // },
   {
     id: 126,
     name: "Número aleatorio",
