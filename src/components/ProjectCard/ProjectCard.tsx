@@ -1,5 +1,15 @@
 import { useState } from "react";
-import { FaDownload, FaGithub, FaStar, FaPlayCircle, FaCode } from "react-icons/fa";
+import {
+  FaDownload,
+  FaGithub,
+  FaStar,
+  FaPlayCircle,
+  FaCode,
+  FaCopy,
+  FaCheck,
+} from "react-icons/fa";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import Image from "next/image";
 
@@ -29,9 +39,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   jsCode,
 }) => {
   const [showCode, setShowCode] = useState(false);
+  const [copied, setCopied] = useState([false, false, false]);
 
   const handleCodeButtonClick = () => {
     setShowCode(!showCode);
+  };
+
+  const handleCopyCodeClick = (index: number, code: string) => {
+    navigator.clipboard.writeText(code);
+    setCopied((prevState) => {
+      const newState = [...prevState];
+      newState[index] = true;
+      return newState;
+    });
+    setTimeout(() => {
+      setCopied((prevState) => {
+        const newState = [...prevState];
+        newState[index] = false;
+        return newState;
+      });
+    }, 2000);
   };
 
   return (
@@ -97,7 +124,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             rel="noopener noreferrer"
           >
             <FaDownload className="mr-2" />
-            
           </a>
           <a
             href={githubLink}
@@ -106,7 +132,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             rel="noopener noreferrer"
           >
             <FaGithub className="mr-2" />
-          
           </a>
           <a
             href={demoLink}
@@ -115,14 +140,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             rel="noopener noreferrer"
           >
             <FaPlayCircle className="mr-2" />
-            
           </a>
           <button
             onClick={handleCodeButtonClick}
             className="md:w-auto bg-yellow-600 hover:bg-yellow-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
           >
             <FaCode className="mr-2" />
-            {showCode}
+            {showCode ? "Hide Code" : "Show Code"}
           </button>
         </div>
       </div>
@@ -131,21 +155,54 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="bg-gray-100 dark:bg-slate-900 p-8">
           <div className="mb-4">
             <h3 className="text-lg font-bold mb-2">Código HTML</h3>
-            <pre className="whitespace-pre-wrap text-slate-600 dark:text-slate-400 overflow-auto p-2 bg-white dark:bg-slate-800 rounded">
-              {htmlCode}
-            </pre>
+            <div className="relative">
+              <SyntaxHighlighter language="html" style={vscDarkPlus}>
+                {htmlCode}
+              </SyntaxHighlighter>
+              <button
+                onClick={() => handleCopyCodeClick(0, htmlCode)}
+                className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+              >
+                {copied[0] ? <FaCheck /> : <FaCopy />}
+              </button>
+              {copied[0] && (
+                <span className="text-green-500 text-sm ml-2">¡Copiado!</span>
+              )}
+            </div>
           </div>
           <div className="mb-4">
             <h3 className="text-lg font-bold mb-2">Código CSS</h3>
-            <pre className="whitespace-pre-wrap text-slate-600 dark:text-slate-400 overflow-auto p-2 bg-white dark:bg-slate-800 rounded">
-              {cssCode}
-            </pre>
+            <div className="relative">
+              <SyntaxHighlighter language="css" style={vscDarkPlus}>
+                {cssCode}
+              </SyntaxHighlighter>
+              <button
+                onClick={() => handleCopyCodeClick(1, cssCode)}
+                className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+              >
+                {copied[1] ? <FaCheck /> : <FaCopy />}
+              </button>
+              {copied[1] && (
+                <span className="text-green-500 text-sm ml-2">¡Copiado!</span>
+              )}
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-bold mb-2">Código JavaScript</h3>
-            <pre className="whitespace-pre-wrap text-slate-600 dark:text-slate-400 overflow-auto p-2 bg-white dark:bg-slate-800 rounded">
-              {jsCode}
-            </pre>
+            <div className="relative">
+              <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
+                {jsCode}
+              </SyntaxHighlighter>
+              <button
+                onClick={() => handleCopyCodeClick(2, jsCode)}
+                className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+              >
+                {copied[2] ? <FaCheck /> : <FaCopy />}
+              </button>
+              {copied[2] && (
+                <span className="text-green-500 text-sm ml-2">¡Copiado!</span>
+              )}
+            </div>
           </div>
         </div>
       )}
