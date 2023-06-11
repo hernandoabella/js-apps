@@ -159,7 +159,7 @@ export const projectsData = [
     name: "Calculadora de edad 🎂",
     description:
       "Descubre la edad de una persona con solo ingresar su fecha de nacimiento en esta práctica herramienta de cálculo de edades.",
-    category: "Validación",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -167,7 +167,7 @@ export const projectsData = [
   },
   {
     id: 13,
-    name: "🥁 Kit de batería",
+    name: "Kit de batería 🥁",
     description:
       "Experimenta la emoción de tocar la batería con este divertido kit virtual. ¡Crea ritmos, demuestra tus habilidades y disfruta de la experiencia de ser un baterista virtual!",
     category: "Audio",
@@ -192,7 +192,7 @@ export const projectsData = [
     name: "Reloj digital ⌚",
     description:
       "Mantén un seguimiento preciso del tiempo con este reloj digital elegante y fácil de leer que muestra la hora actual en tu navegador.",
-    category: "Validación",
+    category: "Tiempo",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -203,7 +203,7 @@ export const projectsData = [
     name: "Cronómetro ⏱️",
     description:
       "Mide el tiempo transcurrido con precisión utilizando este cronómetro digital que te ayuda a contar intervalos y eventos con facilidad.",
-    category: "Validación",
+    category: "Tiempo",
     difficulty: 3,
     downloadLink: "#",
     githubLink: "#",
@@ -214,7 +214,7 @@ export const projectsData = [
     name: "Temporizador Pomodoro 🍅",
     description:
       "Aumenta tu productividad utilizando la popular técnica Pomodoro, que divide tu tiempo en bloques enfocados para maximizar tu eficiencia.",
-    category: "Validación",
+    category: "Tiempo",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -225,7 +225,7 @@ export const projectsData = [
     name: "Generador de bromas 😄",
     description:
       "Genera risas y alegría con este divertido generador de bromas que te proporciona chistes y ocurrencias para compartir con tus amigos.",
-    category: "Validación",
+    category: "Generador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -236,7 +236,7 @@ export const projectsData = [
     name: "Generador Fibonacci 🔢",
     description:
       "Explora la secuencia matemática de Fibonacci con este generador que te muestra los números en la famosa sucesión de forma rápida y sencilla.",
-    category: "Validación",
+    category: "Generador",
     difficulty: 3,
     downloadLink: "#",
     githubLink: "#",
@@ -247,7 +247,7 @@ export const projectsData = [
     name: "Generador de contraseñas 🔐",
     description:
       "Crea contraseñas seguras y robustas al instante con esta herramienta que genera combinaciones aleatorias y difíciles de adivinar.",
-    category: "Validación",
+    category: "Generador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -280,7 +280,7 @@ export const projectsData = [
     name: "Contador de caracteres ✏️",
     description:
       "Mantén un registro preciso del número de caracteres en tus textos con este práctico contador. Útil para escribir mensajes, publicaciones en redes sociales y mucho más.",
-    category: "Validación",
+    category: "Contador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -291,7 +291,7 @@ export const projectsData = [
     name: "Calculadora de BMI 🏋️‍♂️",
     description:
       "Determina rápidamente el Índice de Masa Corporal (BMI) de una persona con esta calculadora. Obtén información sobre la salud y el bienestar basada en medidas simples.",
-    category: "Validación",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -302,7 +302,7 @@ export const projectsData = [
     name: "Calculadora de edad 🎂",
     description:
       "Descubre la edad de una persona al ingresar su fecha de nacimiento en esta práctica calculadora. ¡Celebra los cumpleaños y planifica eventos de manera eficiente!",
-    category: "Validación",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -313,7 +313,7 @@ export const projectsData = [
     name: "Calendario 📅",
     description:
       "Mantén un registro organizado de tus eventos, reuniones y actividades diarias con este calendario interactivo. Nunca te pierdas una fecha importante nuevamente.",
-    category: "Validación",
+    category: "Tiempo",
     difficulty: 3,
     downloadLink: "#",
     githubLink: "#",
@@ -423,7 +423,7 @@ export const projectsData = [
     name: "Calculadora de porcentaje 📊",
     description:
       "Realiza cálculos de porcentaje de manera rápida y sencilla con esta calculadora. Perfecta para calcular descuentos, incrementos y otras operaciones relacionadas con porcentajes.",
-    category: "Matemáticas",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -434,7 +434,7 @@ export const projectsData = [
     name: "Calculadora de amor ❤️",
     description:
       "Descubre la compatibilidad y el nivel de amor entre dos personas con esta calculadora de amor. Ingresa los nombres y descubre si están destinados a estar juntos.",
-    category: "Entretenimiento",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -456,7 +456,7 @@ export const projectsData = [
     name: "Combinación de colores 🎨",
     description:
       "Explora diferentes combinaciones de colores y descubre qué colores funcionan bien juntos con esta herramienta de combinación de colores. Útil para diseñadores y artistas.",
-    category: "Diseño",
+    category: "Color",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -577,7 +577,7 @@ export const projectsData = [
     name: "Bot de charla 🤖💬",
     description:
       "Interactúa con este bot inteligente y descubre cómo puede responder a tus preguntas e iniciar conversaciones interesantes. ¡Una experiencia de chat única!",
-    category: "Tiempo",
+    category: "Chat",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -610,7 +610,7 @@ export const projectsData = [
     name: "Fiesta de halloween 🎃",
     description:
       "Sumérgete en el espíritu de Halloween con esta aplicación llena de diversión y emocionantes actividades temáticas. Disfruta de juegos, disfraces virtuales y más sorpresas espeluznantes.",
-    category: "Tiempo",
+    category: "Halloween",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -632,7 +632,7 @@ export const projectsData = [
     name: "Contador de año nuevo 🎉",
     description:
       "¡Prepárate para la cuenta regresiva del Año Nuevo con este contador interactivo! Mide el tiempo que falta para la medianoche y celebra la llegada del nuevo año con estilo.",
-    category: "Tiempo",
+    category: "Contador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -643,7 +643,7 @@ export const projectsData = [
     name: "Significado de tu nombre 📜",
     description:
       "Descubre el significado oculto detrás de tu nombre con esta aplicación intrigante. Explora el origen, las características y curiosidades asociadas a tu nombre personal.",
-    category: "Tiempo",
+    category: "Entretenimiento",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -654,7 +654,7 @@ export const projectsData = [
     name: "Arrastra y suelta 🖱️🖼️",
     description:
       "on a prueba tu habilidad y destreza con esta divertida aplicación de arrastrar y soltar. Completa desafíos y resuelve puzzles moviendo elementos en la pantalla.",
-    category: "Tiempo",
+    category: "Entretenimiento",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -665,7 +665,7 @@ export const projectsData = [
     name: "Captura al emoji 🎯",
     description:
       "Atrapa rápidamente los emojis que aparecen en la pantalla en esta emocionante carrera contra el tiempo. Demuestra tus reflejos y precisión en esta adictiva aplicación de captura de emojis.",
-    category: "Tiempo",
+    category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -676,7 +676,7 @@ export const projectsData = [
     name: "Aplicación de recetas 🍽️",
     description:
       "Explora una amplia colección de deliciosas recetas con esta aplicación culinaria. Encuentra inspiración para cocinar platos sabrosos y sorprende a tus seres queridos con nuevas creaciones gastronómicas.",
-    category: "Tiempo",
+    category: "Recetas",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -688,7 +688,7 @@ export const projectsData = [
     name: "Presupuesto semanal",
     description:
       "Organiza tus finanzas con esta práctica aplicación que te permite realizar un seguimiento de tus gastos y calcular tu presupuesto semanal. Mantén tus finanzas bajo control de manera fácil y eficiente.",
-    category: "Tiempo ⏰",
+    category: "Finanzas",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -699,7 +699,7 @@ export const projectsData = [
     name: "Evento keycode",
     description:
       "Explora el mundo de los eventos de teclado con esta aplicación interactiva. Observa y registra los códigos de teclas generados por tus pulsaciones y descubre cómo se maneja la interacción de teclado en tiempo real.",
-    category: "Tiempo ⏰",
+    category: "Teclado",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -710,7 +710,7 @@ export const projectsData = [
     name: "Entrenador matemático",
     description:
       "Mejora tus habilidades matemáticas con este práctico entrenador. Practica operaciones básicas, resuelve problemas desafiantes y pon a prueba tus conocimientos matemáticos en un entorno interactivo.",
-    category: "Tiempo ⏰",
+    category: "Matemáticas",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -732,7 +732,7 @@ export const projectsData = [
     name: "Lanzamiento de moneda",
     description:
       "Toma decisiones al azar con esta aplicación de lanzamiento de moneda virtual. Simula los resultados de lanzamientos de moneda y deja que el destino tome las riendas. Perfecto para juegos y toma de decisiones aleatorias.",
-    category: "Juegos 🎮",
+    category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -743,7 +743,7 @@ export const projectsData = [
     name: "Carrusel de producto",
     description:
       "Crea un atractivo carrusel de productos con esta aplicación personalizable. Muestra tus productos de manera elegante y permite a los usuarios explorar diferentes opciones y detalles de cada artículo.",
-    category: "Juegos 🎮",
+    category: "Slider",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -754,7 +754,7 @@ export const projectsData = [
     name: "Convertidor de altura",
     description:
       "Convierte medidas de altura de manera rápida y sencilla con este práctico convertidor. Cambia entre diferentes unidades de medida y obtén resultados precisos en centímetros, pulgadas, pies y más.",
-    category: "Juegos 🎮",
+    category: "Convertidor",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -765,7 +765,7 @@ export const projectsData = [
     name: "Tabla de billonarios",
     description:
       "Explora el fascinante mundo de los billonarios con esta tabla interactiva. Descubre quiénes son las personas más ricas del mundo, sus fortunas y las industrias en las que han acumulado su riqueza.",
-    category: "Juegos 🎮",
+    category: "Tabla",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -787,7 +787,7 @@ export const projectsData = [
     name: "Ruleta giratoria",
     description:
       "Haz girar la ruleta y añade emoción a tus juegos y actividades con esta aplicación interactiva. Personaliza los sectores de la ruleta y observa cómo gira para seleccionar al azar un ganador, una pregunta o cualquier otra opción.",
-    category: "Juegos 🎮",
+    category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -798,7 +798,7 @@ export const projectsData = [
     name: "Reproductor de música",
     description:
       "Disfruta de tu música favorita con este reproductor de música intuitivo y elegante. Explora tus canciones, crea listas de reproducción personalizadas y sumérgete en una experiencia auditiva excepcional.",
-    category: "Juegos 🎮",
+    category: "Audio",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -809,7 +809,7 @@ export const projectsData = [
     name: "Bueno barato rápido",
     description:
       "Tomar decisiones puede ser difícil, pero esta aplicación te ayuda a elegir entre tres opciones. Ingresa tus preferencias y descubre la mejor opción para ti: ¿Bueno, barato o rápido? Encuentra el equilibrio perfecto para tus necesidades.",
-    category: "Juegos 🎮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -820,7 +820,7 @@ export const projectsData = [
     name: "Aplicación de examen",
     description:
       "Prepárate para tus exámenes con esta útil aplicación. Crea y administra exámenes personalizados, realiza un seguimiento de tu progreso y mejora tus habilidades en diversas áreas. Obtén la confianza que necesitas para tener éxito.",
-    category: "Juegos 🎮",
+    category: "Examen",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -831,7 +831,7 @@ export const projectsData = [
     name: "Buscador de mascotas",
     description:
       "Encuentra a tu compañero peludo perfecto con este buscador de mascotas. Explora una amplia variedad de perros, gatos y otras mascotas disponibles para adopción. Ayuda a estas adorables criaturas a encontrar un hogar amoroso.",
-    category: "Juegos 🎮",
+    category: "Buscador",
     difficulty: 3,
     downloadLink: "#",
     githubLink: "#",
@@ -842,7 +842,7 @@ export const projectsData = [
     name: "Buscador de imágenes",
     description:
       "Explora el vasto mundo de las imágenes con este buscador interactivo. Encuentra imágenes de alta calidad sobre cualquier tema que desees. Amplía tus horizontes visuales y descubre nuevas inspiraciones.",
-    category: "Buscador 🔍",
+    category: "Buscador",
     difficulty: 3,
     downloadLink: "#",
     githubLink: "#",
@@ -853,7 +853,7 @@ export const projectsData = [
     name: "Búsqueda expandible",
     description:
       "Simplifica tus búsquedas con esta práctica aplicación. Realiza búsquedas y obtén resultados expandibles que proporcionan información adicional sin tener que abandonar la página de resultados. Ahorra tiempo y mejora tu eficiencia.",
-    category: "Juegos 🎮",
+    category: "Buscador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -861,10 +861,10 @@ export const projectsData = [
   },
   {
     id: 77,
-    name: "Aplicación de relajación",
+    name: "Aplicación de relajación 😌",
     description:
       "Escapa del estrés diario y encuentra la calma con esta aplicación de relajación. Disfruta de sonidos relajantes, meditaciones guiadas y actividades tranquilas que te ayudarán a restablecer el equilibrio y la paz interior.",
-    category: "Relajación 😌",
+    category: "Relajación",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -875,7 +875,7 @@ export const projectsData = [
     name: "Tasa de cambio",
     description:
       "Realiza conversiones rápidas y precisas entre diferentes tasas de cambio con esta práctica calculadora. Mantente al día con las fluctuaciones del mercado y realiza cálculos en tiempo real para diferentes monedas y tipos de cambio.",
-    category: "Calculadora 🧮",
+    category: "Finanzas",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -894,10 +894,10 @@ export const projectsData = [
   // },
   {
     id: 81,
-    name: "Calculadora BMI",
+    name: "Calculadora BMI 🧮",
     description:
       "Calcula tu índice de masa corporal (IMC) y obtén una visión general de tu salud y condición física. Esta calculadora te ayuda a evaluar tu peso en relación con tu altura y proporciona información útil para mantener un estilo de vida saludable.",
-    category: "Calculadora 🧮",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -908,7 +908,7 @@ export const projectsData = [
     name: "Sistema para ordenar pizzas",
     description:
       "Disfruta de una experiencia personalizada al ordenar pizzas con este sistema intuitivo. Selecciona tus ingredientes favoritos, el tamaño de la pizza y personaliza tu pedido. ¡Satisface tus antojos y disfruta de una deliciosa pizza hecha a tu medida!",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -919,7 +919,7 @@ export const projectsData = [
     name: "Acordeón",
     description:
       "Explora información y contenido de manera interactiva con este acordeón. Con un diseño atractivo y fácil de usar, puedes expandir y contraer secciones para acceder a detalles adicionales. Organiza y muestra información de manera efectiva y elegante.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -930,7 +930,7 @@ export const projectsData = [
     name: "Reserva de asientos para películas",
     description:
       "Disfruta de una experiencia de cine personalizada con esta aplicación de reserva de asientos. Explora la selección de películas, elige tus asientos favoritos en el cine y asegura tu lugar para disfrutar de una película en la comodidad de una butaca reservada.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -941,7 +941,7 @@ export const projectsData = [
     name: "Lista de libros",
     description:
       "Organiza y gestiona tu colección de libros con esta práctica aplicación. Registra tus libros favoritos, lleva un seguimiento de los libros que has leído y descubre nuevas recomendaciones. Mantén tu pasión por la lectura al día.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -963,7 +963,7 @@ export const projectsData = [
     name: "Aplicación de notificaciones",
     description:
       "Mantente actualizado y nunca te pierdas información importante con esta aplicación de notificaciones. Recibe alertas y avisos en tiempo real sobre eventos, noticias y actualizaciones relevantes. Mantén tu dedo en el pulso de lo que está sucediendo a tu alrededor.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -985,7 +985,7 @@ export const projectsData = [
     name: "Calculadora de préstamos",
     description:
       "Realiza cálculos precisos y planifica tus préstamos con esta calculadora financiera. Obtén una visión clara de los pagos mensuales, las tasas de interés y el período de tiempo necesario para pagar un préstamo. Toma decisiones financieras informadas y administra tu deuda de manera efectiva.",
-    category: "Calculadora 🧮",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -996,7 +996,7 @@ export const projectsData = [
     name: "Contenedor arrastrable",
     description:
       "Organiza tu contenido de manera intuitiva y fácil con este contenedor arrastrable. Arrastra y suelta elementos para reorganizarlos, personaliza tu interfaz y optimiza tu flujo de trabajo. Simplifica la gestión de elementos y mejora tu productividad.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1007,7 +1007,7 @@ export const projectsData = [
     name: "Control de rango",
     description:
       "Administra y controla rangos de valores con esta aplicación intuitiva. Establece límites y restricciones para garantizar que tus valores se mantengan dentro de un rango específico. Facilita el seguimiento y la gestión de variables numéricas.",
-    category: "Calculadora 🧮",
+    category: "Controlador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1018,7 +1018,7 @@ export const projectsData = [
     name: "Convertidor de peso",
     description:
       "Convierte fácilmente entre diferentes unidades de peso con este convertidor. Transforma kilogramos a libras, gramos a onzas y mucho más. Simplifica tus cálculos de peso y obtén resultados precisos en segundos.",
-    category: "Calculadora 🧮",
+    category: "Convertidor",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1029,7 +1029,7 @@ export const projectsData = [
     name: "Temporizador de cuenta regresiva",
     description:
       "Establece y controla el tiempo con este temporizador de cuenta regresiva. Ya sea que estés realizando un seguimiento del tiempo para un proyecto o esperando un evento especial, este temporizador te mantendrá informado y te recordará cuánto tiempo queda.",
-    category: "Calculadora 🧮",
+    category: "Tiempo",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1040,7 +1040,7 @@ export const projectsData = [
     name: "Lista de tareas",
     description:
       "Organiza tus tareas y haz un seguimiento de tu lista de quehaceres con esta aplicación de lista de tareas. Agrega, edita y marca tareas como completadas para mantener un registro claro de tus actividades diarias. Aumenta tu productividad y mantén todo bajo control.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1051,7 +1051,7 @@ export const projectsData = [
     name: "Diccionario",
     description:
       "Explora y busca palabras en este práctico diccionario en línea. Encuentra definiciones, sinónimos, antónimos y ejemplos de uso para ampliar tu vocabulario y mejorar tus habilidades lingüísticas. Obtén información detallada sobre las palabras que te interesan.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1062,7 +1062,7 @@ export const projectsData = [
     name: "Autenticación con contraseña de un solo uso",
     description:
       "Asegura tus aplicaciones y sistemas con una autenticación adicional mediante contraseñas de un solo uso. Genera contraseñas únicas que expiran después de su uso, proporcionando una capa adicional de seguridad para tus usuarios. Protege tu información confidencial.",
-    category: "Calculadora 🧮",
+    category: "Contraseña",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1073,7 +1073,7 @@ export const projectsData = [
     name: "Calculador de fechas",
     description:
       "Realiza cálculos y operaciones con fechas con esta práctica calculadora. Suma o resta días, semanas, meses o años a una fecha determinada, calcula la diferencia entre dos fechas y mucho más. Simplifica tus tareas relacionadas con fechas y optimiza tu flujo de trabajo.",
-    category: "Calculadora 🧮",
+    category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1084,7 +1084,7 @@ export const projectsData = [
     name: "Convertir Decimal a binario",
     description:
       "Convierte números decimales a su equivalente en sistema binario con esta útil herramienta. Realiza conversiones precisas y obtén resultados rápidamente. Aprende sobre el sistema binario y su aplicación en el campo de la informática.",
-    category: "Calculadora 🧮",
+    category: "Convertidor",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1095,7 +1095,7 @@ export const projectsData = [
     name: "Detectar tecla",
     description:
       "Obtén información sobre las teclas que se presionan en tu teclado con esta aplicación de detección de teclas. Realiza un seguimiento de las teclas presionadas y muestra detalles como el código de tecla y el carácter correspondiente. Útil para el desarrollo de aplicaciones y juegos basados en teclado.",
-    category: "Calculadora 🧮",
+    category: "Teclado",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1106,7 +1106,7 @@ export const projectsData = [
     name: "Lista ordenable con arrastrar y soltar",
     description:
       "Organiza tus elementos de manera intuitiva con esta lista ordenable. Arrastra y suelta elementos para cambiar su orden y reorganizar tu contenido. Simplifica la gestión de listas y mejora la experiencia del usuario al permitirles personalizar su disposición.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1117,7 +1117,7 @@ export const projectsData = [
     name: "Generador de QR",
     description:
       "Crea códigos QR personalizados con esta herramienta generadora de QR. Ingresa el contenido deseado y genera un código QR único que puedes usar en diversos contextos, como promociones, publicidad o compartir información de contacto.",
-    category: "Calculadora 🧮",
+    category: "Generador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1128,7 +1128,7 @@ export const projectsData = [
     name: "Generador de Lorem Ipsum",
     description:
       "Crea texto de relleno con este generador de Lorem Ipsum. Obtén párrafos de texto aleatorio que se pueden utilizar para rellenar diseños, maquetas y prototipos. Facilita el proceso de diseño al tener contenido simulado para visualizar el aspecto final.",
-    category: "Calculadora 🧮",
+    category: "Generador",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1139,7 +1139,7 @@ export const projectsData = [
     name: "Efecto de escritura",
     description:
       "Agrega un efecto de escritura animada a tu texto con esta aplicación. Crea una experiencia visualmente atractiva al mostrar el texto como si se estuviera escribiendo en tiempo real. Personaliza la velocidad, el estilo y más para lograr el efecto deseado.",
-    category: "Calculadora 🧮",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1160,7 +1160,7 @@ export const projectsData = [
     name: "Encuesta de satisfacción",
     description:
       "Esta aplicación te permite crear y realizar encuestas de satisfacción para obtener comentarios y opiniones de los usuarios.",
-    category: "Calculadora",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1171,7 +1171,7 @@ export const projectsData = [
     name: "Filtro de usuarios",
     description:
       "Esta aplicación te permite filtrar y buscar usuarios en una lista según diferentes criterios.",
-    category: "Calculadora",
+    category: "Extra",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
@@ -1182,7 +1182,7 @@ export const projectsData = [
     name: "Fuerza de contraseña con imagen",
     description:
       "Esta aplicación evalúa la fortaleza de una contraseña y muestra una imagen correspondiente al nivel de seguridad.",
-    category: "Calculadora",
+    category: "Contraseña",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
