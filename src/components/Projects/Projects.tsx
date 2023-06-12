@@ -39,7 +39,7 @@ const Projects = () => {
     <div className="dark:text-white dark:bg-slate-900">
       <section>
         <div>
-          <div className="px-4 md:px-32 flex flex-col items-center md:flex-row md:justify-center">
+          <div className="px-4 md:px-72 flex flex-col items-center md:flex-row md:justify-center">
             {/* Filter by name */}
             <div className="w-full">
               <input
