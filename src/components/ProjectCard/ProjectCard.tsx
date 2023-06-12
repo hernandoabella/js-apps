@@ -116,14 +116,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
         </div>
-        <div className="flex space-x-4 w-full text-center">
+        <div className="flex space-x-4 w-full text-center overflow-x-scroll">
           <a
             href={downloadLink}
             className="md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaDownload className="mr-2" />
+            <FaDownload className="mr-2" /> Descargar
           </a>
           <a
             href={githubLink}
@@ -131,7 +131,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="mr-2" />
+            <FaGithub className="mr-2" /> Github
           </a>
           <a
             href={demoLink}
@@ -139,14 +139,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaPlayCircle className="mr-2" />
+            <FaPlayCircle className="mr-2" /> Demo
           </a>
           <button
             onClick={handleCodeButtonClick}
             className="md:w-auto bg-yellow-600 hover:bg-yellow-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
           >
             <FaCode className="mr-2" />
-            {showCode ? "Hide Code" : "Show Code"}
+            {showCode ? "Ocultar código" : "Mostrar código"}
           </button>
         </div>
       </div>

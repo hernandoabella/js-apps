@@ -39,26 +39,26 @@ const Projects = () => {
     <div className="dark:text-white dark:bg-slate-900">
       <section>
         <div>
-          <div className="w-full flex flex-col items-center md:flex-row md:justify-center">
+          <div className="px-4 md:px-20 flex flex-col items-center md:flex-row md:justify-center">
             {/* Filter by name */}
-            <div>
+            <div className="w-full">
               <input
                 type="text"
                 id="filterInput"
                 value={filterText}
                 onChange={handleFilterChange}
-                className="border border-slate-300 rounded dark:bg-slate-800"
+                className="w-full dark:border border-slate-300 rounded dark:bg-slate-800"
                 placeholder="Contador..."
               />
             </div>
             {/* Filter by difficulty */}
-            <div className="m-4">
+            <div className="w-full m-4">
               <select
                 title="Seleccionar dificultad"
                 id="difficultyFilter"
                 value={filterDifficulty}
                 onChange={handleDifficultyFilterChange}
-                className="border border-gray-300 rounded dark:bg-slate-800"
+                className="w-full border border-gray-300 rounded dark:bg-slate-800"
               >
                 <option value="">Dificultad</option>
                 <option value="1">Muy fácil 🐣</option>
@@ -70,18 +70,25 @@ const Projects = () => {
             </div>
 
             {/* Filter by category */}
-            <div className="">
+            <div className="w-full">
               <select
                 title="Seleccionar categoría"
                 id="categoryFilter"
                 value={filterCategory}
                 onChange={handleCategoryFilterChange}
-                className="border border-gray-300 rounded dark:bg-slate-800"
+                className="w-full border border-gray-300 rounded dark:bg-slate-800"
               >
                 <option value="">Categoría</option>
-                <option value="Images">Images</option>
-                <option value="Text">Text</option>
-                <option value="Colors">Colors</option>
+                <option value="Imagen">Imagen</option>
+                <option value="Contador">Contador</option>
+                <option value="Texto">Texto</option>
+                <option value="Emojis">Emojis</option>
+                <option value="Color">Color</option>
+                <option value="Validacion">Validación</option>
+                <option value="Calculadora">Calculadora</option>
+                <option value="Matematicas">Matemáticas</option>
+                <option value="Audio">Audio</option>
+                <option value="Extra">Extra</option>
               </select>
             </div>
           </div>
