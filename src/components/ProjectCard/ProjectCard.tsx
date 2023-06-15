@@ -164,9 +164,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               >
                 {copied[0] ? <FaCheck /> : <FaCopy />}
               </button>
-              {copied[0] && (
-                <span className="text-green-500 text-sm ml-2">¡Copiado!</span>
-              )}
             </div>
           </div>
           <div className="mb-4">
@@ -181,9 +178,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               >
                 {copied[1] ? <FaCheck /> : <FaCopy />}
               </button>
-              {copied[1] && (
-                <span className="text-green-500 text-sm ml-2">¡Copiado!</span>
-              )}
             </div>
           </div>
           <div>
@@ -198,9 +192,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               >
                 {copied[2] ? <FaCheck /> : <FaCopy />}
               </button>
-              {copied[2] && (
-                <span className="text-green-500 text-sm ml-2">¡Copiado!</span>
-              )}
             </div>
           </div>
         </div>

@@ -65,15 +65,256 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://incredible-boba-57ba5d.netlify.app/",
-    htmlCode: `
-      qef
-    `,
-    cssCode: `
-      qefqef
-    `,
-    jsCode: `
-      qefqe
-    `,
+    htmlCode: `<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contador</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+          rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          crossorigin="anonymous"
+        />
+      </head>
+      <body>
+        <div id="container">
+          <div id="numero" class="numero">0</div>
+          <div class="flexStyle">
+            <button id="boton2" onclick="restar()">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button id="boton3" onclick="reiniciar()">
+              <i class="fas fa-redo"></i>
+            </button>
+            <button id="boton1" onclick="sumar()">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <script src="./script.js"></script>
+      </body>
+    </html>`,
+    cssCode: `@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap");
+
+    /* Variables */
+    
+    :root {
+      --color1: #2ab7ca;
+      --color2: #fe4a49;
+      --color3: #585757;
+    }
+    
+    body {
+      font-size: 1.3em;
+      font-family: "Fraunces", serif;
+      overflow: hidden;
+      background: linear-gradient(270deg, #f6d365, #fda085);
+      background-size: 400% 400%;
+      -webkit-animation: animacionFondo 6s ease infinite;
+      -moz-animation: animacionFondo 6s ease infinite;
+      -o-animation: animacionFondo 6s ease infinite;
+      animation: animacionFondo 6s ease infinite;
+    }
+    
+    #container {
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      height: 250px;
+    }
+    
+    .flexStyle {
+      display: flex;
+      justify-content: space-evenly;
+      position: relative;
+      top: 65px;
+    }
+    
+    #numero {
+      font-size: 3.5em;
+      text-align: center;
+      user-select: none;
+      font-weight: bold;
+      color: var(--color3);
+      position: relative;
+      top: 30px;
+    }
+    
+    /* Botones */
+    
+    #boton1,
+    #boton2,
+    #boton3 {
+      padding: 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.4s;
+      border: none;
+      outline: none;
+      position: relative;
+    }
+    
+    #boton1:active,
+    #boton2:active,
+    #boton3:active {
+      opacity: 0.9;
+      transform: translateY(-2px) scale(1.1);
+    }
+    
+    #boton1,
+    #boton2 {
+      background: #59c77a;
+      color: #585757;
+    }
+    
+    #boton1:hover {
+      background: var(--color1);
+      color: #fff;
+    }
+    
+    #boton2:hover {
+      background: var(--color2);
+      color: #fff;
+    }
+    
+    #boton3 {
+      color: #fff;
+      background: var(--color3);
+    }
+    
+    /* Animaciones */
+    
+    .animacion,
+    .animacion2 {
+      animation: animacion 0.1s;
+    }
+    
+    @keyframes animacion {
+      50% {
+        transform: scale(1.5);
+      }
+    }
+    
+    @keyframes animacion2 {
+      50% {
+        transform: scale(1.5);
+      }
+    }
+    
+    @-webkit-keyframes animacionFondo {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @-moz-keyframes animacionFondo {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @-o-keyframes animacionFondo {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @keyframes animacionFondo {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }`,
+    jsCode: `// Variables
+    let contador = 0; // Inicializamos la variable contador en 0
+    const numero = document.getElementById('numero'); // Obtenemos el elemento con el ID 'numero'
+    const boton1 = document.getElementById('boton1'); // Obtenemos el elemento con el ID 'boton1'
+    const boton2 = document.getElementById('boton2'); // Obtenemos el elemento con el ID 'boton2'
+    
+    const sumar = () => {
+       removeAnimationClass(); // Elimina las clases 'animacion' y 'animacion2'
+       setTimeout(() => {
+          numero.classList.add('animacion'); // Agrega la clase 'animacion' después de 10 milisegundos
+       }, 10);
+       contador++; // Incrementa la variable contador
+       testColor(); // Actualiza el color del número
+       console.log(contador); // Imprime el valor actual del contador en la consola
+       numero.innerText = contador; // Actualiza el contenido del elemento 'numero' con el valor de la variable contador
+       return contador; // Devuelve el valor actual del contador
+    }
+    
+    const restar = () => {
+       removeAnimationClass(); // Elimina las clases 'animacion' y 'animacion2'
+       setTimeout(() => {
+          numero.classList.add('animacion2'); // Agrega la clase 'animacion2' después de 10 milisegundos
+       }, 10);
+       contador--; // Decrementa la variable contador
+       testColor(); // Actualiza el color del número
+       console.log(contador); // Imprime el valor actual del contador en la consola
+       numero.innerText = contador; // Actualiza el contenido del elemento 'numero' con el valor de la variable contador
+       return contador; // Devuelve el valor actual del contador
+    }
+    
+    // Elimina las clases 'animacion' y 'animacion2'
+    const removeAnimationClass = () => {
+       numero.classList.remove('animacion2', 'animacion');
+    }
+    
+    const testColor = () => {
+       if (contador < 0) {
+          numero.style.color = "var(--color2)"; // Color 'color2' para números negativos
+       } else if (contador > 0) {
+          numero.style.color = "var(--color1)"; // Color 'color1' para números positivos
+       } else {
+          numero.style.color = '#585757'; // Color '#333' para el número 0
+       }
+    }
+    
+    // Sumar automáticamente
+    // setInterval(sumar, 1000);
+    
+    // Restar automáticamente
+    // setInterval(restar, 1000);
+    
+    // Reinicia el contador y actualiza el color del número
+    const reiniciar = () => {
+       contador = 0; // Reinicia la variable contador a 0
+       removeAnimationClass(); // Elimina las clases de animación
+       testColor(); // Actualiza el color del número
+       console.log(contador); // Imprime el valor reiniciado del contador en la consola
+       numero.innerText = contador; // Actualiza el contenido del elemento 'numero' con el valor de la variable contador
+       return contador; // Devuelve el valor reiniciado del contador
+    }`,
   },
   // {
   //   id: 5,
