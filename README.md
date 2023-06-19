@@ -38,26 +38,15 @@ Cada aplicación de nuestra colección se clasifica según el nivel de dificulta
 
 Las aplicaciones disponibles son:
 
-| Nombre           | Descripción                                                           | Categoría | Nivel      | Estrellas  | Demo                                     |
-| ---------------- | --------------------------------------------------------------------- | --------- | ---------- | ---------- | ---------------------------------------- |
-| TODO List        | Aplicación de lista de tareas simple.                                 | Texto     | Básico     | ⭐⭐       | [Ver demo](https://todolist-demo.com)    |
-| Weather App      | Aplicación que muestra la información climática actual de una ciudad. | API       | Intermedio | ⭐⭐⭐     | [Ver demo](https://weatherapp-demo.com)  |
-| Movie Search App | Aplicación que permite buscar información de películas y series.      | API       | Intermedio | ⭐⭐⭐     | [Ver demo](https://moviesearch-demo.com) |
-| Quiz App         | Aplicación de cuestionario de opción múltiple.                        | Interfaz  | Avanzado   | ⭐⭐⭐⭐   | [Ver demo](https://quizapp-demo.com)     |
-| Chat App         | Aplicación de chat en tiempo real.                                    | Interfaz  | Avanzado   | ⭐⭐⭐⭐⭐ | [Ver demo](https://chatapp-demo.com)     |
+| Nombre                       | Descripción                                                           | Categoría | Nivel      | Estrellas  | Demo                                     |
+| ---------------------------- | --------------------------------------------------------------------- | --------- | ---------- | ---------- | ---------------------------------------- |
+| Contador                     | Aplicación de lista de tareas simple.                                 | Texto     | Básico     | ⭐⭐       | [Ver demo](https://todolist-demo.com)    |
+| Calificación con emojis      | Aplicación que muestra la información climática actual de una ciudad. | API       | Intermedio | ⭐⭐⭐     | [Ver demo](https://weatherapp-demo.com)  |
 
 ## Capturas de pantalla 📷
 
-- ### TODO List
+### TODO List
 
-  ![TODO List App](/public/screenshots/calendar.png "TODO List App")
-
-- ### Weather App
-
-  ![Weather App](/public/screenshots/BMI-Calculator.png "Weather App")
-
-- ### Movie Search App
-  ![Movie Search App](/public/screenshots/acordeon-de-imagenes.png "Movie Search App")
 
 ## ¿Cómo contribuir? ✨
 
