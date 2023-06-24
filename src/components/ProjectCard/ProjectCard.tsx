@@ -61,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="rounded-xl overflow-hidden border shadow-lg">
+    <div className="rounded-xl overflow-hidden shadow-xl border">
       <div className="w-full h-72 md:h-72 lg:h-80">
         <iframe src={demoLink} className="w-full h-full" title={name}></iframe>
       </div>
@@ -151,7 +151,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {showCode && (
-        <div className="bg-gray-100 dark:bg-slate-900 p-8">
+        <div className="bg-gray-200 dark:bg-slate-800 p-8 absolute">
           <div className="mb-4">
             <h3 className="text-lg font-bold mb-2">Código HTML</h3>
             <div className="relative">
