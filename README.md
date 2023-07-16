@@ -4,7 +4,7 @@
 
 <hr>
 
-Bienvenido/a a esta colección de aplicaciones en JavaScript, diseñada para ayudarte a mejorar tus habilidades de programación. Aprender [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) puede ser todo un reto, pero estas aplicaciones te brindarán la oportunidad de aplicar lo que has aprendido y mejorar tus habilidades en el proceso.
+¡Bienvenido/a a esta colección de aplicaciones en JavaScript! Si estás buscando mejorar tus habilidades de programación, estás en el lugar correcto. Aprender JavaScript puede ser un desafío, pero estas aplicaciones te brindarán la oportunidad de aplicar lo que has aprendido y mejorar tus habilidades a medida que avanzas. Ya sea que seas un principiante o un programador experimentado, estas aplicaciones te ayudarán a desarrollar tus habilidades y a prepararte para futuros proyectos. ¡Comencemos!
 
 ## ¿Qué encontrarás aquí? 💡
 
