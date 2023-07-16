@@ -74,5 +74,5 @@ Este proyecto está bajo la licencia [Licencia MIT](./LICENSE.md). Por favor, le
 
 Si tienes preguntas o comentarios sobre este proyecto, puedes contactarme en:
 
-- Email: hernandoabella@gmail.com
-- Twitter: [@hernandoabella](https://twitter.com/hernandoabella)
+- **Email:** hernandoabella@gmail.com
+- **Twitter:** [@hernandoabella](https://twitter.com/hernandoabella)
