@@ -118,15 +118,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="flex space-x-4 w-full text-center">
           <a
             href={downloadLink}
-            className="md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
+            className="md:w-auto bg-blue-600 hover:bg-blue-700 text-white rounded p-4 flex items-center justify-center transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaDownload/>
+            <FaDownload />
           </a>
           <a
             href={githubLink}
-            className="md:w-auto bg-gray-600 hover:bg-gray-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
+            className="md:w-auto bg-gray-600 hover:bg-gray-700 text-white rounded p-4 flex items-center justify-center transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -134,15 +134,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </a>
           <a
             href={demoLink}
-            className="md:w-auto bg-green-600 hover:bg-green-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
+            className="md:w-auto bg-green-600 hover:bg-green-700 text-white rounded p-4 flex items-center justify-center transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaPlayCircle/>
+            <FaPlayCircle />
           </a>
           <button
             onClick={handleCodeButtonClick}
-            className="md:w-auto bg-yellow-600 hover:bg-yellow-700 text-white rounded py-2 px-4 flex items-center justify-center transition duration-300"
+            className="md:w-auto bg-yellow-600 hover:bg-yellow-700 text-white rounded p-4 flex items-center justify-center transition duration-300"
           >
             <FaCode />
             {showCode}
