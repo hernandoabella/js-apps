@@ -843,17 +843,17 @@ export const projectsData = [
   //   githubLink: "#",
   //   demoLink: "https://loquacious-paletas-2bfd28.netlify.app",
   // },
-  {
-    id: 54,
-    name: "Fiesta de halloween 🎃",
-    description:
-      "Sumérgete en el espíritu de Halloween con esta aplicación llena de diversión y emocionantes actividades temáticas. Disfruta de juegos, disfraces virtuales y más sorpresas espeluznantes.",
-    category: "Halloween",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://keen-duckanoo-b9f982.netlify.app",
-  },
+  // {
+  //   id: 54,
+  //   name: "Fiesta de halloween 🎃",
+  //   description:
+  //     "Sumérgete en el espíritu de Halloween con esta aplicación llena de diversión y emocionantes actividades temáticas. Disfruta de juegos, disfraces virtuales y más sorpresas espeluznantes.",
+  //   category: "Halloween",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://keen-duckanoo-b9f982.netlify.app",
+  // },
   {
     id: 55,
     name: "Aplicacion meteorologica ☀️🌦️",
@@ -887,17 +887,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://silly-fox-ccdfe8.netlify.app",
   },
-  {
-    id: 58,
-    name: "Arrastra y suelta 🖱️🖼️",
-    description:
-      "on a prueba tu habilidad y destreza con esta divertida aplicación de arrastrar y soltar. Completa desafíos y resuelve puzzles moviendo elementos en la pantalla.",
-    category: "Entretenimiento",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://heroic-swan-76e763.netlify.app",
-  },
+  // {
+  //   id: 58,
+  //   name: "Arrastra y suelta 🖱️🖼️",
+  //   description:
+  //     "on a prueba tu habilidad y destreza con esta divertida aplicación de arrastrar y soltar. Completa desafíos y resuelve puzzles moviendo elementos en la pantalla.",
+  //   category: "Entretenimiento",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://heroic-swan-76e763.netlify.app",
+  // },
   {
     id: 59,
     name: "Captura al emoji 🎯",
@@ -1020,17 +1020,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://classy-gumption-7892ee.netlify.app",
   },
-  {
-    id: 70,
-    name: "Ruleta giratoria",
-    description:
-      "Haz girar la ruleta y añade emoción a tus juegos y actividades con esta aplicación interactiva. Personaliza los sectores de la ruleta y observa cómo gira para seleccionar al azar un ganador, una pregunta o cualquier otra opción.",
-    category: "Juegos",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://stirring-melomakarona-c1163c.netlify.app",
-  },
+  // {
+  //   id: 70,
+  //   name: "Ruleta giratoria",
+  //   description:
+  //     "Haz girar la ruleta y añade emoción a tus juegos y actividades con esta aplicación interactiva. Personaliza los sectores de la ruleta y observa cómo gira para seleccionar al azar un ganador, una pregunta o cualquier otra opción.",
+  //   category: "Juegos",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://stirring-melomakarona-c1163c.netlify.app",
+  // },
   {
     id: 71,
     name: "Reproductor de música",
@@ -1042,17 +1042,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://cosmic-pothos-f4f82a.netlify.app",
   },
-  {
-    id: 72,
-    name: "Bueno barato rápido",
-    description:
-      "Tomar decisiones puede ser difícil, pero esta aplicación te ayuda a elegir entre tres opciones. Ingresa tus preferencias y descubre la mejor opción para ti: ¿Bueno, barato o rápido? Encuentra el equilibrio perfecto para tus necesidades.",
-    category: "Extra",
-    difficulty: 2,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://luminous-pasca-e1ac68.netlify.app",
-  },
+  // {
+  //   id: 72,
+  //   name: "Bueno barato rápido",
+  //   description:
+  //     "Tomar decisiones puede ser difícil, pero esta aplicación te ayuda a elegir entre tres opciones. Ingresa tus preferencias y descubre la mejor opción para ti: ¿Bueno, barato o rápido? Encuentra el equilibrio perfecto para tus necesidades.",
+  //   category: "Extra",
+  //   difficulty: 2,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://luminous-pasca-e1ac68.netlify.app",
+  // },
   {
     id: 73,
     name: "Aplicación de examen",
