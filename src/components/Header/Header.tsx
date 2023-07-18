@@ -44,7 +44,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="dark:bg-slate-900 dark:text-white">
-      <div className="flex justify-between p-8 md:py-10 md:px-20 font-semibold">
+      <div className="flex justify-between p-8 md:py-10 md:px-28 font-semibold">
         <div className="flex items-center">
           <Link href="/">
             <div className="">
