@@ -63,7 +63,7 @@ const Header: React.FC = () => {
 
         <nav>
           <ul className="hidden md:flex flex justify-center items-center">
-            <li className="mx-3">
+            {/* <li className="mx-3">
               <Link href="/">
                 <span className="hover:text-sky-400">Inicio</span>
               </Link>
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
               <Link href="/aplicaciones">
                 <span className="hover:text-sky-400">Aplicaciones</span>
               </Link>
-            </li>
+            </li> */}
             <div className="flex items-center border-l border-slate-200 ml-3 dark:border-slate-800">
               <svg
                 viewBox="0 0 16 16"
