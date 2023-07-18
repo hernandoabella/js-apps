@@ -41,7 +41,7 @@ const Projects = () => {
         <div>
           <div className="px-4 md:px-72 flex flex-col items-center md:flex-row md:justify-center">
             {/* Filter by name */}
-            <div className="w-full">
+            {/* <div className="w-full">
               <input
                 type="text"
                 id="filterInput"
@@ -50,9 +50,9 @@ const Projects = () => {
                 className="w-full dark:border border-slate-300 rounded dark:bg-slate-800"
                 placeholder="Contador..."
               />
-            </div>
+            </div> */}
             {/* Filter by difficulty */}
-            <div className="w-full m-4">
+            {/* <div className="w-full m-4">
               <select
                 title="Seleccionar dificultad"
                 id="difficultyFilter"
@@ -67,10 +67,10 @@ const Projects = () => {
                 <option value="4">Difícil 🦾</option>
                 <option value="5">Muy Difícil 🚀</option>
               </select>
-            </div>
+            </div> */}
 
             {/* Filter by category */}
-            <div className="w-full">
+            {/* <div className="w-full">
               <select
                 title="Seleccionar categoría"
                 id="categoryFilter"
@@ -90,7 +90,7 @@ const Projects = () => {
                 <option value="Audio">Audio</option>
                 <option value="Extra">Extra</option>
               </select>
-            </div>
+            </div> */}
           </div>
 
           {filteredProjects.length === 0 && <NoProjectsFound />}
