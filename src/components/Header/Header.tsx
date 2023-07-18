@@ -9,13 +9,13 @@ import darkLogo from "../../../public/dark-logo.png";
 import dynamic from "next/dynamic";
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const [logoImage, setLogoImage] = useState<string | null>(null);
 
-  const handleMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const handleMenuClick = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   const handleThemeToggle = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
         </div>
 
         <nav>
-          <ul className="hidden md:flex flex justify-center items-center">
+          <ul className="md:flex flex justify-center items-center">
             {/* <li className="mx-3">
               <Link href="/">
                 <span className="hover:text-sky-400">Inicio</span>
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
               </Link>
             </li>
           </ul>
-          <div className="md:hidden flex items-center">
+          {/* <div className="md:hidden flex items-center">
             <button onClick={handleMenuClick}>
               {isMenuOpen ? (
                 <AiOutlineClose className="h-5 w-5" />
@@ -107,8 +107,8 @@ const Header: React.FC = () => {
                 <AiOutlineMenu className="h-5 w-5" />
               )}
             </button>
-          </div>
-          <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
+          </div> */}
+          {/* <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
             <ul className="bg-white text-black absolute rounded-lg shadow-md">
               <li className="py-2 px-4">
                 <Link href="/">
@@ -131,7 +131,7 @@ const Header: React.FC = () => {
                 </span>
               </li>
             </ul>
-          </div>
+          </div> */}
         </nav>
       </div>
     </header>
