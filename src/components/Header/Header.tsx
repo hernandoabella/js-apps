@@ -73,14 +73,14 @@ const Header: React.FC = () => {
                 <span className="hover:text-sky-400">Aplicaciones</span>
               </Link>
             </li> */}
-            <div className="flex items-center border-l border-slate-200 ml-3 dark:border-slate-800">
+            {/* <div className="flex items-center border-l border-slate-200 ml-3 dark:border-slate-800">
               <svg
                 viewBox="0 0 16 16"
                 className="w-5 h-5"
                 fill="currentColor"
                 aria-hidden="true"
               ></svg>
-            </div>
+            </div> */}
             <li className="mr-3" onClick={handleThemeToggle}>
               <span className="text-sky-500 dark:text-sky-400">
                 {theme === "light" ? (
