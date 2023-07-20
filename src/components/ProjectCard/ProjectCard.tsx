@@ -67,12 +67,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       <div className="p-8 flex flex-col justify-between flex-1 bg-white dark:bg-slate-800">
-        <h2 className="text-2xl font-bold text-center mb-6">{name}</h2>
+        <h2 className="font-bold text-2xl mb-4">{name}</h2>
         <p className="text-justify mb-6 text-slate-600 dark:text-slate-400">
           {description}
         </p>
         <div>
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-4">
             <p className="font-bold mr-2">Nivel:</p>
             <div className="flex">
               {[...Array(difficulty)].map((_, index) => (
@@ -80,11 +80,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               ))}
             </div>
           </div>
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-4">
             <p className="font-bold mr-2">Categoría:</p>
             <p className="text-slate-600 dark:text-slate-400">{category}</p>
           </div>
-          <div className="flex items-center pb-6">
+          <div className="flex items-center pb-4">
             <p className="font-bold mr-2">Tecnologías:</p>
 
             <div className="flex items-center align-middle">
