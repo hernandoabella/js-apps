@@ -61,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="rounded-xl overflow-hidden shadow-xl border">
+    <div className="rounded-xl overflow-hidden shadow-xl">
       <div className="w-full h-72 md:h-72 lg:h-80">
         <iframe src={demoLink} className="w-full h-full" title={name}></iframe>
       </div>
@@ -122,7 +122,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaDownload />
+            <FaDownload className="mr-2" /> Descargar
           </a>
           <a
             href={demoLink}
@@ -130,7 +130,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaPlayCircle />
+            <FaPlayCircle className="mr-2" /> Demo
           </a>
         </div>
       </div>
