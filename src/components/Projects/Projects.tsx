@@ -93,7 +93,7 @@ const Projects = () => {
             </div> */}
           </div>
 
-          {filteredProjects.length === 0 && <NoProjectsFound />}
+            {/* {filteredProjects.length === 0 && <NoProjectsFound />} */}
 
           <div>
             <div className="flex flex-wrap md:px-10 lg:px-20 xl:px-20">
