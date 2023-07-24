@@ -125,14 +125,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <FaDownload />
           </a>
           <a
-            href={githubLink}
-            className="md:w-auto bg-gray-600 hover:bg-gray-700 text-white rounded p-4 flex items-center justify-center transition duration-300"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-          </a>
-          <a
             href={demoLink}
             className="md:w-auto bg-green-600 hover:bg-green-700 text-white rounded p-4 flex items-center justify-center transition duration-300"
             target="_blank"
@@ -140,13 +132,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           >
             <FaPlayCircle />
           </a>
-          <button
-            onClick={handleCodeButtonClick}
-            className="md:w-auto bg-yellow-600 hover:bg-yellow-700 text-white rounded p-4 flex items-center justify-center transition duration-300"
-          >
-            <FaCode />
-            {showCode}
-          </button>
         </div>
       </div>
 
