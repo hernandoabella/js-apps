@@ -469,17 +469,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://chic-douhua-da8067.netlify.app",
   },
-  {
-    id: 19,
-    name: "Generador Fibonacci 🔢",
-    description:
-      "Explora la secuencia matemática de Fibonacci con este generador que te muestra los números en la famosa sucesión de forma rápida y sencilla.",
-    category: "Generador",
-    difficulty: 3,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://frolicking-gingersnap-81eb24.netlify.app",
-  },
+  // {
+  //   id: 19,
+  //   name: "Generador Fibonacci 🔢",
+  //   description:
+  //     "Explora la secuencia matemática de Fibonacci con este generador que te muestra los números en la famosa sucesión de forma rápida y sencilla.",
+  //   category: "Generador",
+  //   difficulty: 3,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://frolicking-gingersnap-81eb24.netlify.app",
+  // },
   {
     id: 20,
     name: "Generador de contraseñas 🔐",
