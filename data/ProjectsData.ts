@@ -343,7 +343,7 @@ export const projectsData = [
   },
   {
     id: 7,
-    name: "Validación de contraseña 🔒",
+    name: "Validación de Contraseña 🔒",
     description:
       "Asegura la protección de tus usuarios mediante esta aplicación que verifica la fortaleza y validez de las contraseñas ingresadas.",
     category: "Validación",
@@ -355,7 +355,8 @@ export const projectsData = [
   {
     id: 8,
     name: "Generador de PDG 🐱",
-    description: "Crea perfiles de GitHub llamativos y personalizados con esta aplicación que te ayuda a destacar en la comunidad de desarrolladores.",
+    description:
+      "Crea perfiles de GitHub llamativos y personalizados con esta aplicación que te ayuda a destacar en la comunidad de desarrolladores.",
     category: "Generador",
     difficulty: 3,
     downloadLink: "#",
