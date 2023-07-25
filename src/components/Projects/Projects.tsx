@@ -93,7 +93,7 @@ const Projects = () => {
             </div> */}
           </div>
 
-            {/* {filteredProjects.length === 0 && <NoProjectsFound />} */}
+          {/* {filteredProjects.length === 0 && <NoProjectsFound />} */}
 
           <div>
             <div className="flex flex-wrap md:px-10 lg:px-20 xl:px-20">
@@ -107,12 +107,8 @@ const Projects = () => {
                     description={project.description}
                     difficulty={project.difficulty}
                     downloadLink={project.downloadLink}
-                    githubLink={project.githubLink}
                     demoLink={project.demoLink}
-                    category={project.category}
-                    htmlCode={project.htmlCode || ""}
-                    cssCode={project.cssCode || ""}
-                    jsCode={project.jsCode || ""}
+                    githubLink={""}
                   />
                 </div>
               ))}
