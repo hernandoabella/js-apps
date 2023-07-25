@@ -354,9 +354,8 @@ export const projectsData = [
   },
   {
     id: 8,
-    name: "Generador de perfil de github 🐱",
-    description:
-      "Crea perfiles de GitHub llamativos y personalizados con esta aplicación que te ayuda a destacar en la comunidad de desarrolladores.",
+    name: "Generador de PDG 🐱",
+    description: "Crea perfiles de GitHub llamativos y personalizados con esta aplicación que te ayuda a destacar en la comunidad de desarrolladores.",
     category: "Generador",
     difficulty: 3,
     downloadLink: "#",
@@ -365,7 +364,7 @@ export const projectsData = [
   },
   {
     id: 9,
-    name: "Cambiar color de fondo 🟩",
+    name: "Cambiar Color de Fondo 🟩",
     description:
       "Personaliza el aspecto visual de tu sitio web al instante al cambiar el color de fondo de forma fácil y rápida.",
     category: "Color",
@@ -396,7 +395,7 @@ export const projectsData = [
   // },
   {
     id: 12,
-    name: "Calculadora de edad 🎂",
+    name: "Calculadora de Edad 🎂",
     description:
       "Descubre la edad de una persona con solo ingresar su fecha de nacimiento en esta práctica herramienta de cálculo de edades.",
     category: "Calculadora",
