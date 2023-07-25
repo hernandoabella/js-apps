@@ -1,16 +1,5 @@
 import { useState } from "react";
-import {
-  FaDownload,
-  FaGithub,
-  FaStar,
-  FaPlayCircle,
-  FaCode,
-  FaCopy,
-  FaCheck,
-} from "react-icons/fa";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/cjs/styles/prism";
-import Image from "next/image";
+import { FaDownload, FaPlayCircle } from "react-icons/fa";
 
 interface ProjectCardProps {
   name: string;
@@ -19,23 +8,13 @@ interface ProjectCardProps {
   downloadLink: string;
   githubLink: string;
   demoLink: string;
-  category: string;
-  htmlCode: string;
-  cssCode: string;
-  jsCode: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   description,
-  difficulty,
   downloadLink,
-  githubLink,
   demoLink,
-  category,
-  htmlCode,
-  cssCode,
-  jsCode,
 }) => {
   const [showCode, setShowCode] = useState(false);
   const [copied, setCopied] = useState([false, false, false]);
@@ -71,11 +50,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <p className="text-justify mb-6 text-slate-600 dark:text-slate-400">
           {description}
         </p>
-        
-        <div className="flex w-full text-center">
+
+        <div className="flex flex-col md:flex-row w-full text-center">
           <a
             href={downloadLink}
-            className="mr-5 flex-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
+            className="md:mr-5 flex-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -83,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </a>
           <a
             href={demoLink}
-            className="flex-1 bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
+            className="mt-5 md:mt-0 flex-1 bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
