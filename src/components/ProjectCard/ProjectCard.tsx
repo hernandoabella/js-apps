@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FaDownload, FaPlayCircle } from "react-icons/fa";
 
 interface ProjectCardProps {
@@ -16,29 +15,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   downloadLink,
   demoLink,
 }) => {
-  const [showCode, setShowCode] = useState(false);
-  const [copied, setCopied] = useState([false, false, false]);
-
-  const handleCodeButtonClick = () => {
-    setShowCode(!showCode);
-  };
-
-  const handleCopyCodeClick = (index: number, code: string) => {
-    navigator.clipboard.writeText(code);
-    setCopied((prevState) => {
-      const newState = [...prevState];
-      newState[index] = true;
-      return newState;
-    });
-    setTimeout(() => {
-      setCopied((prevState) => {
-        const newState = [...prevState];
-        newState[index] = false;
-        return newState;
-      });
-    }, 2000);
-  };
-
   return (
     <div className="rounded-xl overflow-hidden shadow-xl">
       <div className="w-full h-96 md:h-96 lg:h-96">
@@ -46,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       <div className="p-8 flex flex-col justify-between flex-1 bg-white dark:bg-slate-800">
-        <h2 className="font-bold text-2xl mb-4">{name}</h2>
+        <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
         <p className="text-justify mb-6 text-slate-600 dark:text-slate-400">
           {description}
         </p>
