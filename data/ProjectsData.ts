@@ -482,7 +482,7 @@ export const projectsData = [
   // },
   {
     id: 20,
-    name: "Generador de Contraseñas 🔐",
+    name: "Generador de Contraseña 🔐",
     description:
       "Crea contraseñas seguras y robustas al instante con esta herramienta que genera combinaciones aleatorias y difíciles de adivinar.",
     category: "Generador",
