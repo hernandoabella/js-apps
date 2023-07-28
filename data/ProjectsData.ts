@@ -581,7 +581,7 @@ export const projectsData = [
   },
   {
     id: 29,
-    name: "Validación de email ✉️",
+    name: "Validación de Email ✉️",
     description:
       "Valida la autenticidad y el formato correcto de las direcciones de correo electrónico con esta herramienta de validación. Asegura una comunicación efectiva y sin errores con tus usuarios.",
     category: "Validación",
@@ -592,7 +592,7 @@ export const projectsData = [
   },
   {
     id: 30,
-    name: "Verificar fuerza de contraseña 🔐",
+    name: "Verificar Fuerza de Contraseña 🔐",
     description:
       "Evalúa la fortaleza y seguridad de las contraseñas con esta calculadora de fuerza de contraseñas. Ayuda a los usuarios a proteger sus cuentas y datos personales.",
     category: "Validación",
@@ -603,7 +603,7 @@ export const projectsData = [
   },
   {
     id: 31,
-    name: "Detectar navegador 🌐",
+    name: "Detectar Navegador 🌐",
     description:
       "Identifica y obtén información sobre el navegador web utilizado por los usuarios de tu sitio web con esta aplicación. Adapta tu contenido y funcionalidad según las características del navegador.",
     category: "Navegador",
