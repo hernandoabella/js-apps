@@ -264,7 +264,7 @@ export const projectsData = [
   // },
   {
     id: 23,
-    name: "Contador de caracteres ✏️",
+    name: "Contador de Carácteres ✏️",
     description:
       "Mantén un registro preciso del número de caracteres en tus textos con este práctico contador. Útil para escribir mensajes, publicaciones en redes sociales y mucho más.",
     category: "Contador",
@@ -588,7 +588,7 @@ export const projectsData = [
   // },
   {
     id: 55,
-    name: "Aplicacion meteorologica ☀️🌦️",
+    name: "Aplicacion Meteorológica ☀️🌦️",
     description: "Mantente informado sobre las condiciones climáticas actuales y pronósticos precisos con esta aplicación meteorológica intuitiva. Obtén información detallada sobre temperatura, humedad, viento y más.",
     category: "Tiempo",
     difficulty: 2,
