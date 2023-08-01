@@ -42,21 +42,13 @@ export const projectsData = [
   {
     id: 3,
     name: "Calificación con emojis 🙂",
-    description: "Permite que tus usuarios expresen su opinión de manera divertida y sencilla mediante emojis con este componente de calificación único.",
+    description:
+      "Permite que tus usuarios expresen su opinión de manera divertida y sencilla mediante emojis con este componente de calificación único.",
     category: "Emojis",
     difficulty: 2,
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://phenomenal-florentine-e1bc03.netlify.app/",
-    htmlCode: `
-      <!-- Código HTML del proyecto Calificación con emojis -->
-    `,
-    cssCode: `
-      /* Código CSS del proyecto Calificación con emojis */
-    `,
-    jsCode: `
-      // Código JavaScript del proyecto Calificación con emojis
-    `,
   },
   // {
   //   id: 4,
@@ -92,7 +84,7 @@ export const projectsData = [
   },
   {
     id: 7,
-    name: "Validación de Contraseña 🔒",
+    name: "Validación de contraseña 🔒",
     description:
       "Asegura la protección de tus usuarios mediante esta aplicación que verifica la fortaleza y validez de las contraseñas ingresadas.",
     category: "Validación",
@@ -114,7 +106,7 @@ export const projectsData = [
   },
   {
     id: 9,
-    name: "Cambiar Color de Fondo 🟩",
+    name: "Cambiar color de fondo 🟩",
     description:
       "Personaliza el aspecto visual de tu sitio web al instante al cambiar el color de fondo de forma fácil y rápida.",
     category: "Color",
@@ -145,7 +137,7 @@ export const projectsData = [
   // },
   {
     id: 12,
-    name: "Calculadora de Edad 🎂",
+    name: "Calculadora de edad 🎂",
     description:
       "Descubre la edad de una persona con solo ingresar su fecha de nacimiento en esta práctica herramienta de cálculo de edades.",
     category: "Calculadora",
@@ -176,7 +168,7 @@ export const projectsData = [
   // },
   {
     id: 15,
-    name: "Reloj Digital ⌚",
+    name: "Reloj digital ⌚",
     description:
       "Mantén un seguimiento preciso del tiempo con este reloj digital elegante y fácil de leer que muestra la hora actual en tu navegador.",
     category: "Tiempo",
@@ -198,7 +190,7 @@ export const projectsData = [
   },
   {
     id: 17,
-    name: "Temporizador Pomodoro 🍅",
+    name: "Temporizador pomodoro 🍅",
     description:
       "Aumenta tu productividad utilizando la popular técnica Pomodoro, que divide tu tiempo en bloques enfocados para maximizar tu eficiencia.",
     category: "Tiempo",
@@ -231,7 +223,7 @@ export const projectsData = [
   // },
   {
     id: 20,
-    name: "Generador de Contraseña 🔐",
+    name: "Generador de contraseña 🔐",
     description:
       "Crea contraseñas seguras y robustas al instante con esta herramienta que genera combinaciones aleatorias y difíciles de adivinar.",
     category: "Generador",
@@ -264,7 +256,7 @@ export const projectsData = [
   // },
   {
     id: 23,
-    name: "Contador de Carácteres ✏️",
+    name: "Contador de carácteres ✏️",
     description:
       "Mantén un registro preciso del número de caracteres en tus textos con este práctico contador. Útil para escribir mensajes, publicaciones en redes sociales y mucho más.",
     category: "Contador",
@@ -364,7 +356,8 @@ export const projectsData = [
   {
     id: 32,
     name: "Contador de Productos 📊",
-    description: "Lleva un seguimiento preciso del número de productos en inventario con este contador. Útil para administrar el stock y realizar un seguimiento de las ventas y los niveles de existencias.",
+    description:
+      "Lleva un seguimiento preciso del número de productos en inventario con este contador. Útil para administrar el stock y realizar un seguimiento de las ventas y los niveles de existencias.",
     category: "Contador",
     difficulty: 2,
     downloadLink: "#",
@@ -385,7 +378,8 @@ export const projectsData = [
   {
     id: 34,
     name: "Visualizador de Audio 🎵",
-    description: "Sumérgete en el mundo de la música con este visualizador de audio. Observa cómo las ondas de sonido cobran vida y sincronizan con la reproducción de tus canciones favoritas.",
+    description:
+      "Sumérgete en el mundo de la música con este visualizador de audio. Observa cómo las ondas de sonido cobran vida y sincronizan con la reproducción de tus canciones favoritas.",
     category: "Audio",
     difficulty: 2,
     downloadLink: "#",
@@ -395,7 +389,8 @@ export const projectsData = [
   {
     id: 35,
     name: "Validación de formulario ✉️",
-    description: "Asegúrate de que los datos ingresados en tus formularios sean válidos y consistentes con esta herramienta de validación de formularios. Mejora la calidad de los datos y la experiencia del usuario.",
+    description:
+      "Asegúrate de que los datos ingresados en tus formularios sean válidos y consistentes con esta herramienta de validación de formularios. Mejora la calidad de los datos y la experiencia del usuario.",
     category: "Validación",
     difficulty: 2,
     downloadLink: "#",
@@ -405,7 +400,8 @@ export const projectsData = [
   {
     id: 36,
     name: "Calculadora de porcentaje 📊",
-    description: "Realiza cálculos de porcentaje de manera rápida y sencilla con esta calculadora. Perfecta para calcular descuentos, incrementos y otras operaciones relacionadas con porcentajes.",
+    description:
+      "Realiza cálculos de porcentaje de manera rápida y sencilla con esta calculadora. Perfecta para calcular descuentos, incrementos y otras operaciones relacionadas con porcentajes.",
     category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
@@ -415,7 +411,8 @@ export const projectsData = [
   {
     id: 37,
     name: "Calculadora de amor ❤️",
-    description: "Descubre la compatibilidad y el nivel de amor entre dos personas con esta calculadora de amor. Ingresa los nombres y descubre si están destinados a estar juntos.",
+    description:
+      "Descubre la compatibilidad y el nivel de amor entre dos personas con esta calculadora de amor. Ingresa los nombres y descubre si están destinados a estar juntos.",
     category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
@@ -425,7 +422,8 @@ export const projectsData = [
   {
     id: 38,
     name: "Semáforo 🚦",
-    description: "Simula un semáforo con esta aplicación interactiva. Aprende sobre los diferentes estados y tiempos de un semáforo y experimenta cómo cambian las luces en respuesta a tus acciones.",
+    description:
+      "Simula un semáforo con esta aplicación interactiva. Aprende sobre los diferentes estados y tiempos de un semáforo y experimenta cómo cambian las luces en respuesta a tus acciones.",
     category: "Simulación",
     difficulty: 2,
     downloadLink: "#",
@@ -435,7 +433,8 @@ export const projectsData = [
   {
     id: 39,
     name: "Combinación de colores 🎨",
-    description: "Explora diferentes combinaciones de colores y descubre qué colores funcionan bien juntos con esta herramienta de combinación de colores. Útil para diseñadores y artistas.",
+    description:
+      "Explora diferentes combinaciones de colores y descubre qué colores funcionan bien juntos con esta herramienta de combinación de colores. Útil para diseñadores y artistas.",
     category: "Color",
     difficulty: 2,
     downloadLink: "#",
@@ -445,7 +444,8 @@ export const projectsData = [
   {
     id: 40,
     name: "Juego del tesoro 🏴‍☠️",
-    description: "Embárcate en una emocionante búsqueda del tesoro con este juego interactivo. Descubre pistas, resuelve acertijos y encuentra el tesoro oculto. ¡Diviértete en esta aventura virtual!",
+    description:
+      "Embárcate en una emocionante búsqueda del tesoro con este juego interactivo. Descubre pistas, resuelve acertijos y encuentra el tesoro oculto. ¡Diviértete en esta aventura virtual!",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -455,7 +455,8 @@ export const projectsData = [
   {
     id: 41,
     name: "Juego del ahorcado 💀",
-    description: "Adivina la palabra oculta antes de que se complete el dibujo del ahorcado en este emocionante juego clásico. Pon a prueba tu vocabulario y habilidades de deducción mientras intentas adivinar la palabra con la menor cantidad de intentos posible.",
+    description:
+      "Adivina la palabra oculta antes de que se complete el dibujo del ahorcado en este emocionante juego clásico. Pon a prueba tu vocabulario y habilidades de deducción mientras intentas adivinar la palabra con la menor cantidad de intentos posible.",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -476,7 +477,8 @@ export const projectsData = [
   {
     id: 43,
     name: "Adivina el número 🔢",
-    description: "Ponte a prueba en este divertido juego de adivinanzas numéricas. Intenta adivinar el número secreto generado aleatoriamente dentro de un rango específico. Utiliza pistas y tu intuición para encontrar la respuesta correcta. ¿Tienes lo necesario para descubrir el número en el menor número de intentos posible?",
+    description:
+      "Ponte a prueba en este divertido juego de adivinanzas numéricas. Intenta adivinar el número secreto generado aleatoriamente dentro de un rango específico. Utiliza pistas y tu intuición para encontrar la respuesta correcta. ¿Tienes lo necesario para descubrir el número en el menor número de intentos posible?",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -486,7 +488,8 @@ export const projectsData = [
   {
     id: 44,
     name: "Adivina el color 🎨",
-    description: "Demuestra tus habilidades para reconocer colores en este entretenido juego de adivinanzas. Se te mostrará un color en pantalla y deberás adivinar cuál es su nombre. Cuanto más rápido aciertes, mayor será tu puntuación. ¡Diviértete explorando el fascinante mundo de los colores!",
+    description:
+      "Demuestra tus habilidades para reconocer colores en este entretenido juego de adivinanzas. Se te mostrará un color en pantalla y deberás adivinar cuál es su nombre. Cuanto más rápido aciertes, mayor será tu puntuación. ¡Diviértete explorando el fascinante mundo de los colores!",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -496,7 +499,8 @@ export const projectsData = [
   {
     id: 45,
     name: "Adivina la palabra 📚",
-    description: "Demuestra tu habilidad lingüística en este desafiante juego de adivinanzas de palabras. Se te presentará una serie de imágenes y deberás adivinar la palabra que representa cada una de ellas. Pon a prueba tu vocabulario y conocimientos mientras te diviertes tratando de adivinar todas las palabras correctamente.",
+    description:
+      "Demuestra tu habilidad lingüística en este desafiante juego de adivinanzas de palabras. Se te presentará una serie de imágenes y deberás adivinar la palabra que representa cada una de ellas. Pon a prueba tu vocabulario y conocimientos mientras te diviertes tratando de adivinar todas las palabras correctamente.",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -506,7 +510,8 @@ export const projectsData = [
   {
     id: 46,
     name: "Calculadora de propinas 💰",
-    description: "Calcula rápidamente la propina adecuada con esta práctica calculadora. Ingresa el monto de la cuenta y selecciona el porcentaje de propina que deseas dejar. Obtén de inmediato el monto total a pagar, incluyendo la propina. Facilita tus cálculos y asegúrate de dejar propinas justas en cualquier situación.",
+    description:
+      "Calcula rápidamente la propina adecuada con esta práctica calculadora. Ingresa el monto de la cuenta y selecciona el porcentaje de propina que deseas dejar. Obtén de inmediato el monto total a pagar, incluyendo la propina. Facilita tus cálculos y asegúrate de dejar propinas justas en cualquier situación.",
     category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
@@ -516,7 +521,8 @@ export const projectsData = [
   {
     id: 47,
     name: "Reloj análogo ⏰",
-    description: "Observa el paso del tiempo de forma clásica con este reloj análogo virtual. Admira la elegancia de las manecillas en movimiento y verifica rápidamente la hora actual. Un reloj sencillo y funcional que te ayudará a mantener el control del tiempo en cualquier momento y lugar.",
+    description:
+      "Observa el paso del tiempo de forma clásica con este reloj análogo virtual. Admira la elegancia de las manecillas en movimiento y verifica rápidamente la hora actual. Un reloj sencillo y funcional que te ayudará a mantener el control del tiempo en cualquier momento y lugar.",
     category: "Tiempo",
     difficulty: 2,
     downloadLink: "#",
@@ -526,7 +532,8 @@ export const projectsData = [
   {
     id: 48,
     name: "Personaliza el loro 🦜",
-    description: "Diviértete personalizando a un adorable loro en esta entretenida aplicación interactiva. Cambia el plumaje, el pico y los accesorios del loro para crear tu propia combinación única. Muestra tu creatividad y comparte tu loro personalizado con tus amigos.",
+    description:
+      "Diviértete personalizando a un adorable loro en esta entretenida aplicación interactiva. Cambia el plumaje, el pico y los accesorios del loro para crear tu propia combinación única. Muestra tu creatividad y comparte tu loro personalizado con tus amigos.",
     category: "Entretenimiento",
     difficulty: 2,
     downloadLink: "#",
@@ -536,7 +543,8 @@ export const projectsData = [
   {
     id: 49,
     name: "Tic Tac Toe ⭕❌",
-    description: "Disfruta del clásico juego de tres en raya en esta versión en línea. Juega contra la computadora o reta a un amigo para ver quién puede colocar tres símbolos en línea primero. Pon a prueba tu estrategia y lógica en este divertido desafío que nunca pasa de moda.",
+    description:
+      "Disfruta del clásico juego de tres en raya en esta versión en línea. Juega contra la computadora o reta a un amigo para ver quién puede colocar tres símbolos en línea primero. Pon a prueba tu estrategia y lógica en este divertido desafío que nunca pasa de moda.",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -546,7 +554,8 @@ export const projectsData = [
   {
     id: 51,
     name: "Bot de charla 🤖💬",
-    description: "Interactúa con este bot inteligente y descubre cómo puede responder a tus preguntas e iniciar conversaciones interesantes. ¡Una experiencia de chat única!",
+    description:
+      "Interactúa con este bot inteligente y descubre cómo puede responder a tus preguntas e iniciar conversaciones interesantes. ¡Una experiencia de chat única!",
     category: "Chat",
     difficulty: 2,
     downloadLink: "#",
@@ -589,7 +598,8 @@ export const projectsData = [
   {
     id: 55,
     name: "Aplicacion Meteorológica ☀️🌦️",
-    description: "Mantente informado sobre las condiciones climáticas actuales y pronósticos precisos con esta aplicación meteorológica intuitiva. Obtén información detallada sobre temperatura, humedad, viento y más.",
+    description:
+      "Mantente informado sobre las condiciones climáticas actuales y pronósticos precisos con esta aplicación meteorológica intuitiva. Obtén información detallada sobre temperatura, humedad, viento y más.",
     category: "Tiempo",
     difficulty: 2,
     downloadLink: "#",
@@ -599,7 +609,8 @@ export const projectsData = [
   {
     id: 56,
     name: "Contador de Año Nuevo 🎉",
-    description: "¡Prepárate para la cuenta regresiva del Año Nuevo con este contador interactivo! Mide el tiempo que falta para la medianoche y celebra la llegada del nuevo año con estilo.",
+    description:
+      "¡Prepárate para la cuenta regresiva del Año Nuevo con este contador interactivo! Mide el tiempo que falta para la medianoche y celebra la llegada del nuevo año con estilo.",
     category: "Contador",
     difficulty: 2,
     downloadLink: "#",
@@ -609,7 +620,8 @@ export const projectsData = [
   {
     id: 57,
     name: "Significado de tu nombre 📜",
-    description: "Descubre el significado oculto detrás de tu nombre con esta aplicación intrigante. Explora el origen, las características y curiosidades asociadas a tu nombre personal.",
+    description:
+      "Descubre el significado oculto detrás de tu nombre con esta aplicación intrigante. Explora el origen, las características y curiosidades asociadas a tu nombre personal.",
     category: "Entretenimiento",
     difficulty: 2,
     downloadLink: "#",
@@ -630,7 +642,8 @@ export const projectsData = [
   {
     id: 59,
     name: "Captura al emoji 🎯",
-    description: "Atrapa rápidamente los emojis que aparecen en la pantalla en esta emocionante carrera contra el tiempo. Demuestra tus reflejos y precisión en esta adictiva aplicación de captura de emojis.",
+    description:
+      "Atrapa rápidamente los emojis que aparecen en la pantalla en esta emocionante carrera contra el tiempo. Demuestra tus reflejos y precisión en esta adictiva aplicación de captura de emojis.",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -640,7 +653,8 @@ export const projectsData = [
   {
     id: 60,
     name: "Aplicación de recetas 🍽️",
-    description: "Explora una amplia colección de deliciosas recetas con esta aplicación culinaria. Encuentra inspiración para cocinar platos sabrosos y sorprende a tus seres queridos con nuevas creaciones gastronómicas.",
+    description:
+      "Explora una amplia colección de deliciosas recetas con esta aplicación culinaria. Encuentra inspiración para cocinar platos sabrosos y sorprende a tus seres queridos con nuevas creaciones gastronómicas.",
     category: "Recetas",
     difficulty: 2,
     downloadLink: "#",
@@ -651,7 +665,8 @@ export const projectsData = [
   {
     id: 61,
     name: "Presupuesto semanal",
-    description: "Organiza tus finanzas con esta práctica aplicación que te permite realizar un seguimiento de tus gastos y calcular tu presupuesto semanal. Mantén tus finanzas bajo control de manera fácil y eficiente.",
+    description:
+      "Organiza tus finanzas con esta práctica aplicación que te permite realizar un seguimiento de tus gastos y calcular tu presupuesto semanal. Mantén tus finanzas bajo control de manera fácil y eficiente.",
     category: "Finanzas",
     difficulty: 2,
     downloadLink: "#",
@@ -661,7 +676,8 @@ export const projectsData = [
   {
     id: 62,
     name: "Evento keycode",
-    description: "Explora el mundo de los eventos de teclado con esta aplicación interactiva. Observa y registra los códigos de teclas generados por tus pulsaciones y descubre cómo se maneja la interacción de teclado en tiempo real.",
+    description:
+      "Explora el mundo de los eventos de teclado con esta aplicación interactiva. Observa y registra los códigos de teclas generados por tus pulsaciones y descubre cómo se maneja la interacción de teclado en tiempo real.",
     category: "Teclado",
     difficulty: 2,
     downloadLink: "#",
@@ -671,7 +687,8 @@ export const projectsData = [
   {
     id: 63,
     name: "Entrenador matemático",
-    description: "Mejora tus habilidades matemáticas con este práctico entrenador. Practica operaciones básicas, resuelve problemas desafiantes y pon a prueba tus conocimientos matemáticos en un entorno interactivo.",
+    description:
+      "Mejora tus habilidades matemáticas con este práctico entrenador. Practica operaciones básicas, resuelve problemas desafiantes y pon a prueba tus conocimientos matemáticos en un entorno interactivo.",
     category: "Matemáticas",
     difficulty: 2,
     downloadLink: "#",
@@ -692,7 +709,8 @@ export const projectsData = [
   {
     id: 65,
     name: "Lanzamiento de moneda",
-    description: "Toma decisiones al azar con esta aplicación de lanzamiento de moneda virtual. Simula los resultados de lanzamientos de moneda y deja que el destino tome las riendas. Perfecto para juegos y toma de decisiones aleatorias.",
+    description:
+      "Toma decisiones al azar con esta aplicación de lanzamiento de moneda virtual. Simula los resultados de lanzamientos de moneda y deja que el destino tome las riendas. Perfecto para juegos y toma de decisiones aleatorias.",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -702,7 +720,8 @@ export const projectsData = [
   {
     id: 66,
     name: "Carrusel de producto",
-    description: "Crea un atractivo carrusel de productos con esta aplicación personalizable. Muestra tus productos de manera elegante y permite a los usuarios explorar diferentes opciones y detalles de cada artículo.",
+    description:
+      "Crea un atractivo carrusel de productos con esta aplicación personalizable. Muestra tus productos de manera elegante y permite a los usuarios explorar diferentes opciones y detalles de cada artículo.",
     category: "Slider",
     difficulty: 2,
     downloadLink: "#",
@@ -712,7 +731,8 @@ export const projectsData = [
   {
     id: 67,
     name: "Convertidor de altura",
-    description: "Convierte medidas de altura de manera rápida y sencilla con este práctico convertidor. Cambia entre diferentes unidades de medida y obtén resultados precisos en centímetros, pulgadas, pies y más.",
+    description:
+      "Convierte medidas de altura de manera rápida y sencilla con este práctico convertidor. Cambia entre diferentes unidades de medida y obtén resultados precisos en centímetros, pulgadas, pies y más.",
     category: "Convertidor",
     difficulty: 2,
     downloadLink: "#",
@@ -722,7 +742,8 @@ export const projectsData = [
   {
     id: 68,
     name: "Tabla de billonarios",
-    description: "Explora el fascinante mundo de los billonarios con esta tabla interactiva. Descubre quiénes son las personas más ricas del mundo, sus fortunas y las industrias en las que han acumulado su riqueza.",
+    description:
+      "Explora el fascinante mundo de los billonarios con esta tabla interactiva. Descubre quiénes son las personas más ricas del mundo, sus fortunas y las industrias en las que han acumulado su riqueza.",
     category: "Tabla",
     difficulty: 2,
     downloadLink: "#",
@@ -732,7 +753,8 @@ export const projectsData = [
   {
     id: 69,
     name: "Tablero de colores",
-    description: "Crea combinaciones de colores llamativas y experimenta con esquemas de colores utilizando este tablero interactivo. Encuentra inspiración para tus proyectos de diseño y descubre cómo se ven las combinaciones de colores en acción.",
+    description:
+      "Crea combinaciones de colores llamativas y experimenta con esquemas de colores utilizando este tablero interactivo. Encuentra inspiración para tus proyectos de diseño y descubre cómo se ven las combinaciones de colores en acción.",
     category: "Juegos 🎮",
     difficulty: 2,
     downloadLink: "#",
@@ -753,7 +775,8 @@ export const projectsData = [
   {
     id: 71,
     name: "Reproductor de música",
-    description: "Disfruta de tu música favorita con este reproductor de música intuitivo y elegante. Explora tus canciones, crea listas de reproducción personalizadas y sumérgete en una experiencia auditiva excepcional.",
+    description:
+      "Disfruta de tu música favorita con este reproductor de música intuitivo y elegante. Explora tus canciones, crea listas de reproducción personalizadas y sumérgete en una experiencia auditiva excepcional.",
     category: "Audio",
     difficulty: 2,
     downloadLink: "#",
@@ -774,7 +797,8 @@ export const projectsData = [
   {
     id: 73,
     name: "Aplicación de examen",
-    description: "Prepárate para tus exámenes con esta útil aplicación. Crea y administra exámenes personalizados, realiza un seguimiento de tu progreso y mejora tus habilidades en diversas áreas. Obtén la confianza que necesitas para tener éxito.",
+    description:
+      "Prepárate para tus exámenes con esta útil aplicación. Crea y administra exámenes personalizados, realiza un seguimiento de tu progreso y mejora tus habilidades en diversas áreas. Obtén la confianza que necesitas para tener éxito.",
     category: "Examen",
     difficulty: 2,
     downloadLink: "#",
@@ -784,7 +808,8 @@ export const projectsData = [
   {
     id: 74,
     name: "Buscador de mascotas",
-    description: "Encuentra a tu compañero peludo perfecto con este buscador de mascotas. Explora una amplia variedad de perros, gatos y otras mascotas disponibles para adopción. Ayuda a estas adorables criaturas a encontrar un hogar amoroso.",
+    description:
+      "Encuentra a tu compañero peludo perfecto con este buscador de mascotas. Explora una amplia variedad de perros, gatos y otras mascotas disponibles para adopción. Ayuda a estas adorables criaturas a encontrar un hogar amoroso.",
     category: "Buscador",
     difficulty: 3,
     downloadLink: "#",
@@ -794,7 +819,8 @@ export const projectsData = [
   {
     id: 75,
     name: "Buscador de imágenes",
-    description: "Explora el vasto mundo de las imágenes con este buscador interactivo. Encuentra imágenes de alta calidad sobre cualquier tema que desees. Amplía tus horizontes visuales y descubre nuevas inspiraciones.",
+    description:
+      "Explora el vasto mundo de las imágenes con este buscador interactivo. Encuentra imágenes de alta calidad sobre cualquier tema que desees. Amplía tus horizontes visuales y descubre nuevas inspiraciones.",
     category: "Buscador",
     difficulty: 3,
     downloadLink: "#",
@@ -804,7 +830,8 @@ export const projectsData = [
   {
     id: 76,
     name: "Búsqueda expandible",
-    description: "Simplifica tus búsquedas con esta práctica aplicación. Realiza búsquedas y obtén resultados expandibles que proporcionan información adicional sin tener que abandonar la página de resultados. Ahorra tiempo y mejora tu eficiencia.",
+    description:
+      "Simplifica tus búsquedas con esta práctica aplicación. Realiza búsquedas y obtén resultados expandibles que proporcionan información adicional sin tener que abandonar la página de resultados. Ahorra tiempo y mejora tu eficiencia.",
     category: "Buscador",
     difficulty: 2,
     downloadLink: "#",
@@ -814,7 +841,8 @@ export const projectsData = [
   {
     id: 77,
     name: "Aplicación de relajación 😌",
-    description: "Escapa del estrés diario y encuentra la calma con esta aplicación de relajación. Disfruta de sonidos relajantes, meditaciones guiadas y actividades tranquilas que te ayudarán a restablecer el equilibrio y la paz interior.",
+    description:
+      "Escapa del estrés diario y encuentra la calma con esta aplicación de relajación. Disfruta de sonidos relajantes, meditaciones guiadas y actividades tranquilas que te ayudarán a restablecer el equilibrio y la paz interior.",
     category: "Relajación",
     difficulty: 2,
     downloadLink: "#",
@@ -824,7 +852,8 @@ export const projectsData = [
   {
     id: 78,
     name: "Tasa de cambio",
-    description: "Realiza conversiones rápidas y precisas entre diferentes tasas de cambio con esta práctica calculadora. Mantente al día con las fluctuaciones del mercado y realiza cálculos en tiempo real para diferentes monedas y tipos de cambio.",
+    description:
+      "Realiza conversiones rápidas y precisas entre diferentes tasas de cambio con esta práctica calculadora. Mantente al día con las fluctuaciones del mercado y realiza cálculos en tiempo real para diferentes monedas y tipos de cambio.",
     category: "Finanzas",
     difficulty: 2,
     downloadLink: "#",
@@ -845,7 +874,8 @@ export const projectsData = [
   {
     id: 81,
     name: "Calculadora BMI 🧮",
-    description: "Calcula tu índice de masa corporal (IMC) y obtén una visión general de tu salud y condición física. Esta calculadora te ayuda a evaluar tu peso en relación con tu altura y proporciona información útil para mantener un estilo de vida saludable.",
+    description:
+      "Calcula tu índice de masa corporal (IMC) y obtén una visión general de tu salud y condición física. Esta calculadora te ayuda a evaluar tu peso en relación con tu altura y proporciona información útil para mantener un estilo de vida saludable.",
     category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
@@ -866,7 +896,8 @@ export const projectsData = [
   {
     id: 84,
     name: "Acordeón",
-    description: "Explora información y contenido de manera interactiva con este acordeón. Con un diseño atractivo y fácil de usar, puedes expandir y contraer secciones para acceder a detalles adicionales. Organiza y muestra información de manera efectiva y elegante.",
+    description:
+      "Explora información y contenido de manera interactiva con este acordeón. Con un diseño atractivo y fácil de usar, puedes expandir y contraer secciones para acceder a detalles adicionales. Organiza y muestra información de manera efectiva y elegante.",
     category: "Extra",
     difficulty: 2,
     downloadLink: "#",
@@ -876,7 +907,8 @@ export const projectsData = [
   {
     id: 85,
     name: "Reserva de asientos para películas",
-    description: "Disfruta de una experiencia de cine personalizada con esta aplicación de reserva de asientos. Explora la selección de películas, elige tus asientos favoritos en el cine y asegura tu lugar para disfrutar de una película en la comodidad de una butaca reservada.",
+    description:
+      "Disfruta de una experiencia de cine personalizada con esta aplicación de reserva de asientos. Explora la selección de películas, elige tus asientos favoritos en el cine y asegura tu lugar para disfrutar de una película en la comodidad de una butaca reservada.",
     category: "Extra",
     difficulty: 2,
     downloadLink: "#",
@@ -886,7 +918,8 @@ export const projectsData = [
   {
     id: 86,
     name: "Lista de libros",
-    description: "Organiza y gestiona tu colección de libros con esta práctica aplicación. Registra tus libros favoritos, lleva un seguimiento de los libros que has leído y descubre nuevas recomendaciones. Mantén tu pasión por la lectura al día.",
+    description:
+      "Organiza y gestiona tu colección de libros con esta práctica aplicación. Registra tus libros favoritos, lleva un seguimiento de los libros que has leído y descubre nuevas recomendaciones. Mantén tu pasión por la lectura al día.",
     category: "Extra",
     difficulty: 2,
     downloadLink: "#",
@@ -907,7 +940,8 @@ export const projectsData = [
   {
     id: 88,
     name: "Aplicación de notificaciones",
-    description: "Mantente actualizado y nunca te pierdas información importante con esta aplicación de notificaciones. Recibe alertas y avisos en tiempo real sobre eventos, noticias y actualizaciones relevantes. Mantén tu dedo en el pulso de lo que está sucediendo a tu alrededor.",
+    description:
+      "Mantente actualizado y nunca te pierdas información importante con esta aplicación de notificaciones. Recibe alertas y avisos en tiempo real sobre eventos, noticias y actualizaciones relevantes. Mantén tu dedo en el pulso de lo que está sucediendo a tu alrededor.",
     category: "Extra",
     difficulty: 2,
     downloadLink: "#",
@@ -928,7 +962,8 @@ export const projectsData = [
   {
     id: 90,
     name: "Calculadora de préstamos",
-    description: "Realiza cálculos precisos y planifica tus préstamos con esta calculadora financiera. Obtén una visión clara de los pagos mensuales, las tasas de interés y el período de tiempo necesario para pagar un préstamo. Toma decisiones financieras informadas y administra tu deuda de manera efectiva.",
+    description:
+      "Realiza cálculos precisos y planifica tus préstamos con esta calculadora financiera. Obtén una visión clara de los pagos mensuales, las tasas de interés y el período de tiempo necesario para pagar un préstamo. Toma decisiones financieras informadas y administra tu deuda de manera efectiva.",
     category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
@@ -938,7 +973,8 @@ export const projectsData = [
   {
     id: 92,
     name: "Contenedor arrastrable",
-    description: "Organiza tu contenido de manera intuitiva y fácil con este contenedor arrastrable. Arrastra y suelta elementos para reorganizarlos, personaliza tu interfaz y optimiza tu flujo de trabajo. Simplifica la gestión de elementos y mejora tu productividad.",
+    description:
+      "Organiza tu contenido de manera intuitiva y fácil con este contenedor arrastrable. Arrastra y suelta elementos para reorganizarlos, personaliza tu interfaz y optimiza tu flujo de trabajo. Simplifica la gestión de elementos y mejora tu productividad.",
     category: "Extra",
     difficulty: 2,
     downloadLink: "#",
@@ -948,7 +984,8 @@ export const projectsData = [
   {
     id: 93,
     name: "Control de rango",
-    description: "Administra y controla rangos de valores con esta aplicación intuitiva. Establece límites y restricciones para garantizar que tus valores se mantengan dentro de un rango específico. Facilita el seguimiento y la gestión de variables numéricas.",
+    description:
+      "Administra y controla rangos de valores con esta aplicación intuitiva. Establece límites y restricciones para garantizar que tus valores se mantengan dentro de un rango específico. Facilita el seguimiento y la gestión de variables numéricas.",
     category: "Controlador",
     difficulty: 2,
     downloadLink: "#",
@@ -958,7 +995,8 @@ export const projectsData = [
   {
     id: 94,
     name: "Convertidor de peso",
-    description: "Convierte fácilmente entre diferentes unidades de peso con este convertidor. Transforma kilogramos a libras, gramos a onzas y mucho más. Simplifica tus cálculos de peso y obtén resultados precisos en segundos.",
+    description:
+      "Convierte fácilmente entre diferentes unidades de peso con este convertidor. Transforma kilogramos a libras, gramos a onzas y mucho más. Simplifica tus cálculos de peso y obtén resultados precisos en segundos.",
     category: "Convertidor",
     difficulty: 2,
     downloadLink: "#",
@@ -968,7 +1006,8 @@ export const projectsData = [
   {
     id: 96,
     name: "Temporizador de cuenta regresiva",
-    description: "Establece y controla el tiempo con este temporizador de cuenta regresiva. Ya sea que estés realizando un seguimiento del tiempo para un proyecto o esperando un evento especial, este temporizador te mantendrá informado y te recordará cuánto tiempo queda.",
+    description:
+      "Establece y controla el tiempo con este temporizador de cuenta regresiva. Ya sea que estés realizando un seguimiento del tiempo para un proyecto o esperando un evento especial, este temporizador te mantendrá informado y te recordará cuánto tiempo queda.",
     category: "Tiempo",
     difficulty: 2,
     downloadLink: "#",
@@ -978,7 +1017,8 @@ export const projectsData = [
   {
     id: 97,
     name: "Lista de tareas",
-    description: "Organiza tus tareas y haz un seguimiento de tu lista de quehaceres con esta aplicación de lista de tareas. Agrega, edita y marca tareas como completadas para mantener un registro claro de tus actividades diarias. Aumenta tu productividad y mantén todo bajo control.",
+    description:
+      "Organiza tus tareas y haz un seguimiento de tu lista de quehaceres con esta aplicación de lista de tareas. Agrega, edita y marca tareas como completadas para mantener un registro claro de tus actividades diarias. Aumenta tu productividad y mantén todo bajo control.",
     category: "Extra",
     difficulty: 2,
     downloadLink: "#",
@@ -988,7 +1028,8 @@ export const projectsData = [
   {
     id: 98,
     name: "Diccionario",
-    description: "Explora y busca palabras en este práctico diccionario en línea. Encuentra definiciones, sinónimos, antónimos y ejemplos de uso para ampliar tu vocabulario y mejorar tus habilidades lingüísticas. Obtén información detallada sobre las palabras que te interesan.",
+    description:
+      "Explora y busca palabras en este práctico diccionario en línea. Encuentra definiciones, sinónimos, antónimos y ejemplos de uso para ampliar tu vocabulario y mejorar tus habilidades lingüísticas. Obtén información detallada sobre las palabras que te interesan.",
     category: "Extra",
     difficulty: 2,
     downloadLink: "#",
@@ -998,7 +1039,8 @@ export const projectsData = [
   {
     id: 99,
     name: "Autenticación con contraseña de un solo uso",
-    description: "Asegura tus aplicaciones y sistemas con una autenticación adicional mediante contraseñas de un solo uso. Genera contraseñas únicas que expiran después de su uso, proporcionando una capa adicional de seguridad para tus usuarios. Protege tu información confidencial.",
+    description:
+      "Asegura tus aplicaciones y sistemas con una autenticación adicional mediante contraseñas de un solo uso. Genera contraseñas únicas que expiran después de su uso, proporcionando una capa adicional de seguridad para tus usuarios. Protege tu información confidencial.",
     category: "Contraseña",
     difficulty: 2,
     downloadLink: "#",
@@ -1008,7 +1050,8 @@ export const projectsData = [
   {
     id: 101,
     name: "Calculador de fechas",
-    description: "Realiza cálculos y operaciones con fechas con esta práctica calculadora. Suma o resta días, semanas, meses o años a una fecha determinada, calcula la diferencia entre dos fechas y mucho más. Simplifica tus tareas relacionadas con fechas y optimiza tu flujo de trabajo.",
+    description:
+      "Realiza cálculos y operaciones con fechas con esta práctica calculadora. Suma o resta días, semanas, meses o años a una fecha determinada, calcula la diferencia entre dos fechas y mucho más. Simplifica tus tareas relacionadas con fechas y optimiza tu flujo de trabajo.",
     category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
@@ -1018,7 +1061,8 @@ export const projectsData = [
   {
     id: 102,
     name: "Convertir Decimal a binario",
-    description: "Convierte números decimales a su equivalente en sistema binario con esta útil herramienta. Realiza conversiones precisas y obtén resultados rápidamente. Aprende sobre el sistema binario y su aplicación en el campo de la informática.",
+    description:
+      "Convierte números decimales a su equivalente en sistema binario con esta útil herramienta. Realiza conversiones precisas y obtén resultados rápidamente. Aprende sobre el sistema binario y su aplicación en el campo de la informática.",
     category: "Convertidor",
     difficulty: 2,
     downloadLink: "#",
@@ -1028,7 +1072,8 @@ export const projectsData = [
   {
     id: 103,
     name: "Detectar tecla",
-    description: "Obtén información sobre las teclas que se presionan en tu teclado con esta aplicación de detección de teclas. Realiza un seguimiento de las teclas presionadas y muestra detalles como el código de tecla y el carácter correspondiente. Útil para el desarrollo de aplicaciones y juegos basados en teclado.",
+    description:
+      "Obtén información sobre las teclas que se presionan en tu teclado con esta aplicación de detección de teclas. Realiza un seguimiento de las teclas presionadas y muestra detalles como el código de tecla y el carácter correspondiente. Útil para el desarrollo de aplicaciones y juegos basados en teclado.",
     category: "Teclado",
     difficulty: 2,
     downloadLink: "#",
@@ -1049,7 +1094,8 @@ export const projectsData = [
   {
     id: 105,
     name: "Generador de QR",
-    description: "Crea códigos QR personalizados con esta herramienta generadora de QR. Ingresa el contenido deseado y genera un código QR único que puedes usar en diversos contextos, como promociones, publicidad o compartir información de contacto.",
+    description:
+      "Crea códigos QR personalizados con esta herramienta generadora de QR. Ingresa el contenido deseado y genera un código QR único que puedes usar en diversos contextos, como promociones, publicidad o compartir información de contacto.",
     category: "Generador",
     difficulty: 2,
     downloadLink: "#",
@@ -1059,7 +1105,8 @@ export const projectsData = [
   {
     id: 106,
     name: "Generador de Lorem Ipsum",
-    description: "Crea texto de relleno con este generador de Lorem Ipsum. Obtén párrafos de texto aleatorio que se pueden utilizar para rellenar diseños, maquetas y prototipos. Facilita el proceso de diseño al tener contenido simulado para visualizar el aspecto final.",
+    description:
+      "Crea texto de relleno con este generador de Lorem Ipsum. Obtén párrafos de texto aleatorio que se pueden utilizar para rellenar diseños, maquetas y prototipos. Facilita el proceso de diseño al tener contenido simulado para visualizar el aspecto final.",
     category: "Generador",
     difficulty: 2,
     downloadLink: "#",
@@ -1069,7 +1116,8 @@ export const projectsData = [
   {
     id: 107,
     name: "Efecto de escritura",
-    description: "Agrega un efecto de escritura animada a tu texto con esta aplicación. Crea una experiencia visualmente atractiva al mostrar el texto como si se estuviera escribiendo en tiempo real. Personaliza la velocidad, el estilo y más para lograr el efecto deseado.",
+    description:
+      "Agrega un efecto de escritura animada a tu texto con esta aplicación. Crea una experiencia visualmente atractiva al mostrar el texto como si se estuviera escribiendo en tiempo real. Personaliza la velocidad, el estilo y más para lograr el efecto deseado.",
     category: "Extra",
     difficulty: 2,
     downloadLink: "#",
@@ -1121,7 +1169,8 @@ export const projectsData = [
   {
     id: 109,
     name: "Generador de animales",
-    description: "Esta aplicación genera imágenes y descripciones de animales de forma aleatoria.",
+    description:
+      "Esta aplicación genera imágenes y descripciones de animales de forma aleatoria.",
     category: "Generador",
     difficulty: 2,
     downloadLink: "#",
@@ -1151,7 +1200,8 @@ export const projectsData = [
   {
     id: 112,
     name: "Contador ascendente",
-    description: "Una aplicación que cuenta de forma ascendente a partir de un número inicial.",
+    description:
+      "Una aplicación que cuenta de forma ascendente a partir de un número inicial.",
     category: "Contador",
     difficulty: 2,
     downloadLink: "#",
@@ -1161,7 +1211,8 @@ export const projectsData = [
   {
     id: 112,
     name: "Mostrar/ocultar contraseña",
-    description: "Una aplicación que permite mostrar u ocultar contraseñas en campos de entrada.",
+    description:
+      "Una aplicación que permite mostrar u ocultar contraseñas en campos de entrada.",
     category: "Contraseña",
     difficulty: 2,
     downloadLink: "#",
@@ -1181,7 +1232,8 @@ export const projectsData = [
   {
     id: 114,
     name: "Golpea al topo",
-    description: "Juego en el que debes golpear topos que aparecen aleatoriamente en la pantalla.",
+    description:
+      "Juego en el que debes golpear topos que aparecen aleatoriamente en la pantalla.",
     category: "Juegos",
     difficulty: 2,
     downloadLink: "#",
@@ -1191,7 +1243,8 @@ export const projectsData = [
   {
     id: 115,
     name: "Generador de color",
-    description: "Esta aplicación genera colores de forma aleatoria y te muestra su código hexadecimal.",
+    description:
+      "Esta aplicación genera colores de forma aleatoria y te muestra su código hexadecimal.",
     category: "Generador",
     difficulty: 2,
     downloadLink: "#",
@@ -1201,7 +1254,8 @@ export const projectsData = [
   {
     id: 116,
     name: "Contador de teclas",
-    description: "Esta aplicación cuenta cuántas teclas has presionado en tiempo real.",
+    description:
+      "Esta aplicación cuenta cuántas teclas has presionado en tiempo real.",
     category: "Contador",
     difficulty: 2,
     downloadLink: "#",
@@ -1222,7 +1276,8 @@ export const projectsData = [
   {
     id: 118,
     name: "Indicador de pasos",
-    description: "Esta aplicación registra y muestra el número de páginas que has navegado en un sitio web específico. Te permite llevar un seguimiento de tus visitas y exploración en la página.",
+    description:
+      "Esta aplicación registra y muestra el número de páginas que has navegado en un sitio web específico. Te permite llevar un seguimiento de tus visitas y exploración en la página.",
     category: "Contador",
     difficulty: 2,
     downloadLink: "#",
@@ -1232,7 +1287,8 @@ export const projectsData = [
   {
     id: 119,
     name: "Tetris",
-    description: "Juega al clásico juego Tetris y trata de encajar las piezas correctamente.",
+    description:
+      "Juega al clásico juego Tetris y trata de encajar las piezas correctamente.",
     category: "Juegos",
     difficulty: 4,
     downloadLink: "#",
@@ -1242,7 +1298,8 @@ export const projectsData = [
   {
     id: 120,
     name: "Juego de la serpiente 🐍",
-    description: "Juega al clásico juego de la serpiente, controlando el movimiento y evitando colisionar con los bordes y tu propio cuerpo.",
+    description:
+      "Juega al clásico juego de la serpiente, controlando el movimiento y evitando colisionar con los bordes y tu propio cuerpo.",
     category: "Juegos",
     difficulty: 3,
     downloadLink: "#",
@@ -1252,7 +1309,8 @@ export const projectsData = [
   {
     id: 121,
     name: "Juego de memoria",
-    description: "Un juego de memoria que pone a prueba tu capacidad de recordar y emparejar cartas.",
+    description:
+      "Un juego de memoria que pone a prueba tu capacidad de recordar y emparejar cartas.",
     category: "Juegos de memoria",
     difficulty: 2,
     downloadLink: "#",
@@ -1272,7 +1330,8 @@ export const projectsData = [
   {
     id: 123,
     name: "Juego de concentración",
-    description: "Un juego de concentración en el que debes mantener el enfoque y evitar distracciones.",
+    description:
+      "Un juego de concentración en el que debes mantener el enfoque y evitar distracciones.",
     category: "Juegos de concentración",
     difficulty: 2,
     downloadLink: "#",
@@ -1282,7 +1341,8 @@ export const projectsData = [
   {
     id: 124,
     name: "Modo claro/oscuro",
-    description: "Una aplicación que permite cambiar entre los modos claro y oscuro de una interfaz.",
+    description:
+      "Una aplicación que permite cambiar entre los modos claro y oscuro de una interfaz.",
     category: "Utilidades",
     difficulty: 2,
     downloadLink: "#",
@@ -1303,7 +1363,8 @@ export const projectsData = [
   {
     id: 126,
     name: "Número aleatorio",
-    description: "Una aplicación que genera números aleatorios dentro de un rango especificado.",
+    description:
+      "Una aplicación que genera números aleatorios dentro de un rango especificado.",
     category: "Utilidades",
     difficulty: 2,
     downloadLink: "#",
@@ -1313,7 +1374,8 @@ export const projectsData = [
   {
     id: 127,
     name: "Posición del mouse",
-    description: "Una aplicación que muestra las coordenadas de la posición actual del mouse en la pantalla.",
+    description:
+      "Una aplicación que muestra las coordenadas de la posición actual del mouse en la pantalla.",
     category: "Utilidades",
     difficulty: 2,
     downloadLink: "#",
@@ -1323,7 +1385,8 @@ export const projectsData = [
   {
     id: 128,
     name: "Marcador de favoritos",
-    description: "Una aplicación para guardar y gestionar tus sitios web favoritos.",
+    description:
+      "Una aplicación para guardar y gestionar tus sitios web favoritos.",
     category: "Utilidades",
     difficulty: 2,
     downloadLink: "#",
@@ -1333,7 +1396,8 @@ export const projectsData = [
   {
     id: 129,
     name: "Leer menos / leer más",
-    description: "Una función que permite mostrar u ocultar el contenido largo para una lectura más cómoda.",
+    description:
+      "Una función que permite mostrar u ocultar el contenido largo para una lectura más cómoda.",
     category: "Utilidades",
     difficulty: 2,
     downloadLink: "#",
@@ -1363,7 +1427,8 @@ export const projectsData = [
   {
     id: 132,
     name: "Juego del tesoro",
-    description: "Un emocionante juego en el que debes buscar y encontrar tesoros ocultos en un mapa.",
+    description:
+      "Un emocionante juego en el que debes buscar y encontrar tesoros ocultos en un mapa.",
     category: "Juegos de aventura",
     difficulty: 2,
     downloadLink: "#",
@@ -1433,7 +1498,8 @@ export const projectsData = [
   {
     id: 140,
     name: "Comprobador palíndromo",
-    description: "Una aplicación que te permite verificar si una palabra o frase es un palíndromo, es decir, si se lee igual de izquierda a derecha y viceversa.",
+    description:
+      "Una aplicación que te permite verificar si una palabra o frase es un palíndromo, es decir, si se lee igual de izquierda a derecha y viceversa.",
     category: "Herramientas de texto",
     difficulty: 2,
     downloadLink: "#",
