@@ -267,9 +267,8 @@ export const projectsData = [
   },
   {
     id: 24,
-    name: "Calculadora de BMI 🏋️‍♂️",
-    description:
-      "Determina rápidamente el Índice de Masa Corporal (BMI) de una persona con esta calculadora. Obtén información sobre la salud y el bienestar basada en medidas simples.",
+    name: "Calculadora de IMC 🏋️‍♂️",
+    description: "Determina rápidamente el Índice de Masa Corporal (BMI) de una persona con esta calculadora. Obtén información sobre la salud y el bienestar basada en medidas simples.",
     category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
