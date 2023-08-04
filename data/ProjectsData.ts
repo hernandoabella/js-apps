@@ -321,7 +321,7 @@ export const projectsData = [
   },
   {
     id: 29,
-    name: "Validación de Email ✉️",
+    name: "Validación de email ✉️",
     description:
       "Valida la autenticidad y el formato correcto de las direcciones de correo electrónico con esta herramienta de validación. Asegura una comunicación efectiva y sin errores con tus usuarios.",
     category: "Validación",
