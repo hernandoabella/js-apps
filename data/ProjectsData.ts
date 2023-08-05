@@ -332,7 +332,7 @@ export const projectsData = [
   },
   {
     id: 30,
-    name: "Verificar Fuerza de Contraseña 🔐",
+    name: "Verificar fuerza de contraseña 🔐",
     description:
       "Evalúa la fortaleza y seguridad de las contraseñas con esta calculadora de fuerza de contraseñas. Ayuda a los usuarios a proteger sus cuentas y datos personales.",
     category: "Validación",
