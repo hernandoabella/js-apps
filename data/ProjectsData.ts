@@ -343,7 +343,7 @@ export const projectsData = [
   },
   {
     id: 31,
-    name: "Detectar Navegador 🌐",
+    name: "Detectar navegador 🌐",
     description:
       "Identifica y obtén información sobre el navegador web utilizado por los usuarios de tu sitio web con esta aplicación. Adapta tu contenido y funcionalidad según las características del navegador.",
     category: "Navegador",
