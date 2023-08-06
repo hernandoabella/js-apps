@@ -354,7 +354,7 @@ export const projectsData = [
   },
   {
     id: 32,
-    name: "Contador de Productos 📊",
+    name: "Contador de productos 📊",
     description:
       "Lleva un seguimiento preciso del número de productos en inventario con este contador. Útil para administrar el stock y realizar un seguimiento de las ventas y los niveles de existencias.",
     category: "Contador",
@@ -376,7 +376,7 @@ export const projectsData = [
   // },
   {
     id: 34,
-    name: "Visualizador de Audio 🎵",
+    name: "Visualizador de audio 🎵",
     description:
       "Sumérgete en el mundo de la música con este visualizador de audio. Observa cómo las ondas de sonido cobran vida y sincronizan con la reproducción de tus canciones favoritas.",
     category: "Audio",
