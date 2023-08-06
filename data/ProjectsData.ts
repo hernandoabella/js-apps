@@ -596,7 +596,7 @@ export const projectsData = [
   // },
   {
     id: 55,
-    name: "Aplicacion Meteorológica ☀️🌦️",
+    name: "Aplicacion meteorológica ☀️🌦️",
     description:
       "Mantente informado sobre las condiciones climáticas actuales y pronósticos precisos con esta aplicación meteorológica intuitiva. Obtén información detallada sobre temperatura, humedad, viento y más.",
     category: "Tiempo",
@@ -607,7 +607,7 @@ export const projectsData = [
   },
   {
     id: 56,
-    name: "Contador de Año Nuevo 🎉",
+    name: "Contador de año nuevo 🎉",
     description:
       "¡Prepárate para la cuenta regresiva del Año Nuevo con este contador interactivo! Mide el tiempo que falta para la medianoche y celebra la llegada del nuevo año con estilo.",
     category: "Contador",
