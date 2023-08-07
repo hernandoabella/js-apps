@@ -275,17 +275,17 @@ export const projectsData = [
     githubLink: "#",
     demoLink: "https://preeminent-cendol-ef8bae.netlify.app",
   },
-  {
-    id: 25,
-    name: "Velocidad y precisión de escritura ⌨️",
-    description:
-      "Esta aplicación te permite evaluar tu velocidad y precisión al escribir. Pon a prueba tus habilidades de mecanografía y comprueba qué tan rápido y preciso puedes escribir diferentes textos.",
-    category: "Teclado",
-    difficulty: 4,
-    downloadLink: "#",
-    githubLink: "#",
-    demoLink: "https://dynamic-cajeta-8ab8c6.netlify.app",
-  },
+  // {
+  //   id: 25,
+  //   name: "Velocidad y precisión de escritura ⌨️",
+  //   description:
+  //     "Esta aplicación te permite evaluar tu velocidad y precisión al escribir. Pon a prueba tus habilidades de mecanografía y comprueba qué tan rápido y preciso puedes escribir diferentes textos.",
+  //   category: "Teclado",
+  //   difficulty: 4,
+  //   downloadLink: "#",
+  //   githubLink: "#",
+  //   demoLink: "https://dynamic-cajeta-8ab8c6.netlify.app",
+  // },
   {
     id: 26,
     name: "Calendario 📅",
