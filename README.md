@@ -1,8 +1,5 @@
 <div align="center"><img src="/public/logo.png"></div>
 <br>
-<p align="center">Colección de aplicaciones en JavaScript </p>
-
-<hr>
 
 ¡Bienvenido/a a esta colección de aplicaciones en JavaScript! Si estás buscando mejorar tus habilidades de programación, estás en el lugar correcto. Aprender JavaScript puede ser un desafío, pero estas aplicaciones te brindarán la oportunidad de aplicar lo que has aprendido y mejorar tus habilidades a medida que avanzas. Ya sea que seas un principiante o un programador experimentado, estas aplicaciones te ayudarán a desarrollar tus habilidades y a prepararte para futuros proyectos. ¡Comencemos!
 
