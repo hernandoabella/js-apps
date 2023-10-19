@@ -36,12 +36,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link href="/">
             <div className="">
-                <Image
-                  src=""
-                  alt="Logo"
-                  width={120}
-                  height={40}
-                />
+                <h1>JS-APPS</h1>
             </div>
           </Link>
         </div>
