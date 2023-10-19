@@ -40,12 +40,16 @@ const Projects = () => {
         {filteredProjects.map((project, index) => (
           <div key={index} className="px-4">
             <ProjectCard
-              name={project.name}
-              description={project.description}
-              difficulty={project.difficulty}
-              downloadLink={project.downloadLink}
-              demoLink={project.demoLink}
-              githubLink={""} htmlCode={""} cssCode={""} javascriptCode={""} />
+              name={project.name || ""}
+              description={project.description || ""}
+              difficulty={project.difficulty || 0}
+              downloadLink={project.downloadLink || ""}
+              demoLink={project.demoLink || ""}
+              githubLink={project.githubLink || ""}
+              htmlCode={project.htmlCode || ""}
+              cssCode={project.cssCode || ""}
+              javascriptCode={project.jsCode || ""}
+            />
           </div>
         ))}
       </div>
