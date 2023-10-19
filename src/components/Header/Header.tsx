@@ -2,20 +2,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
-import logo from "../../../public/logo.png";
-import darkLogo from "../../../public/dark-logo.png";
+
+
 import dynamic from "next/dynamic";
 
 const Header: React.FC = () => {
   // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
-  const [logoImage, setLogoImage] = useState<string | null>(null);
-
-  // const handleMenuClick = () => {
-  //   setIsMenuOpen(!isMenuOpen);
-  // };
 
   const handleThemeToggle = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -34,13 +28,7 @@ const Header: React.FC = () => {
     localStorage.setItem("theme", theme ?? "light"); // Valor predeterminado "light" si theme es undefined
   }, [theme]);
 
-  useEffect(() => {
-    if (theme === "dark") {
-      setLogoImage(darkLogo.src);
-    } else {
-      setLogoImage(logo.src);
-    }
-  }, [theme]);
+
 
   return (
     <header className="dark:bg-slate-900 dark:text-white">
@@ -48,15 +36,12 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link href="/">
             <div className="">
-              {logoImage && (
                 <Image
-                  src={logoImage}
+                  src=""
                   alt="Logo"
                   width={120}
                   height={40}
-                  priority
                 />
-              )}
             </div>
           </Link>
         </div>
