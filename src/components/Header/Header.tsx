@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useTheme } from "next-themes";
 import { FaGithub } from "react-icons/fa";
 
@@ -35,8 +34,9 @@ const Header: React.FC = () => {
       <div className="flex justify-between p-8 md:py-10 md:px-28 font-semibold">
         <div className="flex items-center">
           <Link href="/">
-            <div className="">
-                <h1>JS-APPS</h1>
+            <div className="flex items-center justify-center">
+                <div className="bg-yellow-500 w-3 h-3 rounded-xl"></div>
+                <h1 className="mx-2">JS-APPS</h1>
             </div>
           </Link>
         </div>
