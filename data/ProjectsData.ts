@@ -49,6 +49,15 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://phenomenal-florentine-e1bc03.netlify.app/",
+    htmlCode: `
+       html code
+  `,
+    cssCode: `
+      css code
+        `,
+    jsCode: `
+      js code
+        `,
   },
   // {
   //   id: 4,
@@ -268,7 +277,8 @@ export const projectsData = [
   {
     id: 24,
     name: "Calculadora de IMC 🏋️‍♂️",
-    description: "Determina rápidamente el Índice de Masa Corporal (BMI) de una persona con esta calculadora. Obtén información sobre la salud y el bienestar basada en medidas simples.",
+    description:
+      "Determina rápidamente el Índice de Masa Corporal (BMI) de una persona con esta calculadora. Obtén información sobre la salud y el bienestar basada en medidas simples.",
     category: "Calculadora",
     difficulty: 2,
     downloadLink: "#",
