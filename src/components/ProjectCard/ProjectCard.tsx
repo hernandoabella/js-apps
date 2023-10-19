@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
           <div className="p-8 flex flex-col justify-between flex-1 bg-slate-200 dark:bg-slate-800">
             <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
-            <p className="text-justify mb-6 text-slate-600 dark-text-slate-400">
+            <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
               {description}
             </p>
 
@@ -62,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
         </div>
-        <div className="p-4 w-full md:w-1/2">
+        <div className="p-4 w-full md:w-1/2 bg-slate-300 dark:bg-slate-700">
           <h3 className="text-xl mb-2">HTML</h3>
           <SyntaxHighlighter language="html" style={dark}>
             {htmlCode}
