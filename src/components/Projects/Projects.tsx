@@ -36,31 +36,22 @@ const Projects = () => {
   );
 
   return (
-    <div className="dark:text-white dark:bg-slate-900">
-      <section>
-        <div>
-          <div>
-            <div className="flex flex-wrap md:px-10 lg:px-20 xl:px-20">
-              {filteredProjects.map((project, index) => (
-                <div
-                  key={index}
-                  className="w-full md:w-1/2 lg:w-1/3 xl:1/3 p-4"
-                >
-                  <ProjectCard
-                    name={project.name}
-                    description={project.description}
-                    difficulty={project.difficulty}
-                    downloadLink={project.downloadLink}
-                    demoLink={project.demoLink}
-                    githubLink={""}
-                  />
-                </div>
-              ))}
-            </div>
+    <section className="dark:text-white dark:bg-slate-900">
+      <div className="">
+        {filteredProjects.map((project, index) => (
+          <div key={index}>
+            <ProjectCard
+              name={project.name}
+              description={project.description}
+              difficulty={project.difficulty}
+              downloadLink={project.downloadLink}
+              demoLink={project.demoLink}
+              githubLink={""}
+            />
           </div>
-        </div>
-      </section>
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
