@@ -1,7 +1,6 @@
 import { SetStateAction, useState } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { projectsData } from "../../../data/ProjectsData";
-import NoProjectsFound from "../NoProjectsFound/NoProjectsFound";
 
 const Projects = () => {
   const [filterText, setFilterText] = useState("");
@@ -37,7 +36,7 @@ const Projects = () => {
 
   return (
     <section className="dark:text-white dark:bg-slate-900">
-      <div className="">
+      <div>
         {filteredProjects.map((project, index) => (
           <div key={index}>
             <ProjectCard
