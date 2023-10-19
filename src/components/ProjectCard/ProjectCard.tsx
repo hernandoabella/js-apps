@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="border-solid border-2 border-slate-200 shadow-lg">
       <div className="md:flex">
-        <div>
+        <div className="w-full md:w-1/2">
           <div className="w-full h-96 md:h-96 lg:h-96">
             <iframe
               src={demoLink}
@@ -36,9 +36,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             ></iframe>
           </div>
 
-          <div className="p-8 flex flex-col justify-between flex-1 bg-white dark:bg-slate-800">
+          <div className="p-8 flex flex-col justify-between flex-1 bg-slate-200 dark:bg-slate-800">
             <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
-            <p className="text-justify mb-6 text-slate-600 dark:text-slate-400">
+            <p className="text-justify mb-6 text-slate-600 dark-text-slate-400">
               {description}
             </p>
 
@@ -62,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
         </div>
-        <div className="p-4">
+        <div className="p-4 w-full md:w-1/2">
           <h3 className="text-xl mb-2">HTML</h3>
           <SyntaxHighlighter language="html" style={dark}>
             {htmlCode}
