@@ -38,15 +38,14 @@ const Projects = () => {
     <section className="dark:text-white dark:bg-slate-900">
       <div>
         {filteredProjects.map((project, index) => (
-          <div key={index}>
+          <div key={index} className="px-4">
             <ProjectCard
               name={project.name}
               description={project.description}
               difficulty={project.difficulty}
               downloadLink={project.downloadLink}
               demoLink={project.demoLink}
-              githubLink={""}
-            />
+              githubLink={""} htmlCode={""} cssCode={""} javascriptCode={""} />
           </div>
         ))}
       </div>
