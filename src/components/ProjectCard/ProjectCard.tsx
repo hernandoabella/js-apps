@@ -43,27 +43,52 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const [isFullScreen, setFullScreen] = useState(false);
 
   const toggleFullScreen = () => {
+    if (!isFullScreen) {
+      openFullscreen();
+    } else {
+      closeFullscreen();
+    }
     setFullScreen(!isFullScreen);
   };
+
+  const openFullscreen = () => {
+    const iframe = document.getElementById("demo-iframe") as HTMLIFrameElement;
+    if (iframe) {
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      }
+    }
+  };
+
+  const closeFullscreen = () => {
+    if (document.fullscreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    }
+  };
+  
 
   return (
     <div className="border-solid border-2 border-slate-200 shadow-lg md:flex">
       <div className="w-full md:w-1/2">
         <div className="w-full h-96 md:h-96 lg:h-96">
           <div className="flex justify-between relative w-full">
-            <div className=" bg-slate-300 text-slate-500 dark:bg-slate-700 text-center p-2 dark:text-slate-200 flex absolute">
+            <div className="bg-slate-300 text-slate-500 dark:bg-slate-700 text-center p-2 dark:text-slate-200 flex absolute">
               {generateStars(difficulty)}
             </div>
-            <div
-              className="expand-icon absolute right-2 top-2"
-              onClick={toggleFullScreen}
-            >
+            <div className="expand-icon absolute right-2 top-2" onClick={toggleFullScreen}>
               {isFullScreen ? <FaCompress /> : <FaExpand />}
             </div>
           </div>
           <iframe
+            id="demo-iframe"
             src={demoLink}
-            className="w-full h-full select-none"
+            className={`w-full h-full select-none ${isFullScreen ? "fullscreen" : ""}`}
             title={name}
           ></iframe>
         </div>
@@ -94,27 +119,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
       </div>
-      <div className="p-4 w-full md:w-1/2 bg-slate-300 dark:bg-slate-700 h-auto">
-        <h3 className="text-xl py-4 flex align-center items-center gap-1">
+      <div className="p-2 w-full md:w-1/2 bg-slate-300 dark:bg-slate-700 h-fit">
+        <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-html5-plain"></i> HTML
         </h3>
-        <div className="h-72 overflow-y-auto">
+        <div className="h-36 overflow-y-auto">
           <SyntaxHighlighter language="html" style={dark}>
             {htmlCode}
           </SyntaxHighlighter>
         </div>
-        <h3 className="text-xl py-4 flex align-center items-center gap-1">
+        <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-css3-plain"></i> CSS
         </h3>
-        <div className="h-96 overflow-y-auto">
+        <div className="h-36 overflow-y-auto">
           <SyntaxHighlighter language="css" style={dark}>
             {cssCode}
           </SyntaxHighlighter>
         </div>
-        <h3 className="text-xl py-4 flex align-center items-center gap-1">
+        <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-javascript-plain"></i> JavaScript
         </h3>
-        <div className="h-96 overflow-y-auto">
+        <div className="h-36 overflow-y-auto">
           <SyntaxHighlighter language="javascript" style={dark}>
             {javascriptCode}
           </SyntaxHighlighter>
