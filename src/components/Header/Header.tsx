@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { FaGithub } from "react-icons/fa";
-
+import Image from 'next/image'
 
 import dynamic from "next/dynamic";
 
@@ -27,16 +27,13 @@ const Header: React.FC = () => {
     localStorage.setItem("theme", theme ?? "light"); // Valor predeterminado "light" si theme es undefined
   }, [theme]);
 
-
-
   return (
     <header className="dark:bg-slate-900 dark:text-white">
-      <div className="flex justify-between p-8 md:py-10 md:px-28 font-semibold">
+      <div className="flex justify-between p-10 md:px-20 font-semibold">
         <div className="flex items-center">
           <Link href="/">
             <div className="flex items-center justify-center">
-                <div className="bg-yellow-500 w-3 h-3 rounded-xl"></div>
-                <h1 className="mx-2">JS-APPS</h1>
+              <Image src="/logo.png" width={100} height={150} alt="logo" />
             </div>
           </Link>
         </div>
@@ -62,7 +59,7 @@ const Header: React.FC = () => {
               ></svg>
             </div> */}
             <li className="mr-3" onClick={handleThemeToggle}>
-              <span className="text-sky-500 dark:text-sky-400">
+              <span className="text-sky-500 dark:text-sky-400 cursor-pointer">
                 {theme === "light" ? (
                   <FiMoon className="w-5 h-5" />
                 ) : (
