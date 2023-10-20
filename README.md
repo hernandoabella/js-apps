@@ -1,76 +1,75 @@
 # JS-APPS
 
-Colección de aplicaciones para practicar el código de JavaScript.
+**Collection of applications for practicing JavaScript code.**
 
-¡Bienvenido/a a esta colección de aplicaciones en JavaScript! Si estás buscando mejorar tus habilidades de programación, estás en el lugar correcto. Aprender JavaScript puede ser un desafío, pero estas aplicaciones te brindarán la oportunidad de aplicar lo que has aprendido y mejorar tus habilidades a medida que avanzas. Ya sea que seas un principiante o un programador experimentado, estas aplicaciones te ayudarán a desarrollar tus habilidades y a prepararte para futuros proyectos. ¡Comencemos!
+Welcome to this collection of JavaScript applications! If you're looking to improve your programming skills, you're in the right place. Learning JavaScript can be a challenge, but these applications will provide you with the opportunity to apply what you've learned and enhance your skills as you progress. Whether you're a beginner or an experienced programmer, these applications will help you develop your skills and prepare for future projects. Let's get started!
 
-## ¿Qué puedes esperar encontrar aquí? 💡
+## What can you expect to find here? 💡
 
-En esta colección, encontrarás una amplia variedad de aplicaciones en JavaScript clasificadas en 5 niveles de dificultad: Muy Fácil, Fácil, Intermedio, Difícil y Muy Difícil. Cada aplicación ha sido diseñada cuidadosamente para ayudarte a mejorar diferentes aspectos de la programación en JavaScript. Desde aplicaciones simples que te ayudarán a comprender los conceptos básicos hasta aplicaciones más complejas que pondrán a prueba tus habilidades, esta colección te ayudará a perfeccionar tus habilidades de programación y a avanzar en tu carrera. ¡Explora y diviértete!
+In this collection, you'll find a wide variety of JavaScript applications classified into 5 difficulty levels: Very Easy, Easy, Intermediate, Difficult, and Very Difficult. Each application has been carefully designed to help you improve different aspects of JavaScript programming. From simple applications to help you grasp the basics to more complex applications that will challenge your skills, this collection will help you refine your programming skills and advance in your career. Explore and have fun!
 
-## ¿Por qué utilizar esta colección de aplicaciones? 🤔
+## Why use this collection of applications? 🤔
 
-Hay muchas razones por las que esta colección de aplicaciones en JavaScript puede ser útil para ti:
+There are many reasons why this collection of JavaScript applications can be useful to you:
 
-- **Práctica estructurada:** Las aplicaciones están diseñadas para ayudarte a poner en práctica tus habilidades de programación de forma progresiva y estructurada.
+- **Structured practice:** The applications are designed to help you practice your programming skills progressively and in a structured manner.
 
-- **Mejora de habilidades:** Las aplicaciones te ayudarán a mejorar tus habilidades en JavaScript y en programación en general.
+- **Skill improvement:** The applications will help you enhance your JavaScript skills and programming skills in general.
 
-- **Exploración de áreas:** Las aplicaciones te permitirán explorar diferentes áreas de la programación en JavaScript, lo que puede ayudarte a descubrir nuevas áreas de interés.
+- **Exploration of areas:** The applications will allow you to explore different areas of JavaScript programming, helping you discover new areas of interest.
 
-- **Resolución de problemas:** Las aplicaciones te brindarán la oportunidad de resolver problemas reales a través de la programación, lo que puede ser muy gratificante.
+- **Problem-solving:** The applications provide you with the opportunity to solve real problems through programming, which can be very rewarding.
 
-- **Retos para todos los niveles:** Las aplicaciones están clasificadas en diferentes niveles de dificultad, lo que significa que podrás enfrentarte a retos que se adapten a tu nivel de habilidad actual.
+- **Challenges for all levels:** The applications are classified into different difficulty levels, meaning you can tackle challenges that match your current skill level.
 
-## Comenzando 😎
+## Getting Started 😎
 
-Las aplicaciones de la lista te ayudarán a practicar el código de JavaScript con el fin de obtener las habilidades necesarias para construir cualquier tipo de proyecto relacionado con **JavaScript**.
+The applications on the list will help you practice JavaScript code to gain the necessary skills for building any kind of **JavaScript**-related project.
 
-## Niveles de dificultad ⚔️
+## Difficulty Levels ⚔️
 
-Las aplicaciones están divididas en 5 niveles de dificultad:
+The applications are divided into 5 difficulty levels:
 
-- **Muy Fácil:** Este nivel es ideal para aquellos que están comenzando en el desarrollo de aplicaciones. Aquí encontrarás aplicaciones que te ayudarán a comprender los conceptos básicos de la programación en JavaScript.
+- **Very Easy:** This level is ideal for those who are just starting in app development. Here, you'll find applications that help you understand the basics of JavaScript programming.
 
-- **Fácil:** Este nivel es adecuado para desarrolladores con alguna experiencia previa en programación. Aquí encontrarás aplicaciones que te ayudarán a mejorar tus habilidades y a profundizar en los conceptos básicos.
+- **Easy:** This level is suitable for developers with some prior programming experience. Here, you'll find applications to improve your skills and delve deeper into the basics.
 
-- **Intermedio:** Este nivel es para desarrolladores que están en una etapa intermedia de aprendizaje y experiencia. Aquí encontrarás aplicaciones que te ayudarán a perfeccionar tus habilidades y a aprender nuevos conceptos.
+- **Intermediate:** This level is for developers at an intermediate stage of learning and experience. Here, you'll find applications to refine your skills and learn new concepts.
 
-- **Difícil:** Este nivel es para desarrolladores con experiencia en programación que buscan un desafío. Aquí encontrarás aplicaciones que te desafiarán y te ayudarán a mejorar tus habilidades de resolución de problemas.
+- **Difficult:** This level is for experienced developers seeking a challenge. Here, you'll find applications that will challenge you and help improve your problem-solving skills.
 
-- **Muy Difícil:** Este nivel es para desarrolladores expertos que buscan un reto aún mayor. Aquí encontrarás aplicaciones que te desafiarán y te ayudarán a mejorar tus habilidades de programación avanzada.
+- **Very Difficult:** This level is for expert developers looking for an even greater challenge. Here, you'll find applications that will push your advanced programming skills.
 
-Cada aplicación de nuestra colección se clasifica según el nivel de dificultad que representa. ¡Comienza por el nivel que mejor se adapte a tus habilidades y desafía tus habilidades de programación en JavaScript!
+Each application in our collection is categorized based on the difficulty level it represents. Start with the level that best suits your skills and challenge your JavaScript programming abilities!
 
-## Aplicaciones 📱
+## Applications 📱
 
-Las aplicaciones disponibles son:
+The available applications are:
 
-| Nombre                       | Descripción                                                           | Categoría | Nivel      | Estrellas  | Demo                                     |
-| ---------------------------- | --------------------------------------------------------------------- | --------- | ---------- | ---------- | ---------------------------------------- |
-| Contador                     | Aplicación de lista de tareas simple.                                 | Texto     | Básico     | ⭐⭐       | [Ver demo](https://todolist-demo.com)    |
-| Calificación con emojis      | Aplicación que muestra la información climática actual de una ciudad. | API       | Intermedio | ⭐⭐⭐     | [Ver demo](https://weatherapp-demo.com)  |
+| Name                       | Description                                               | Category | Level     | Stars | Demo                                     |
+| ---------------------------- | --------------------------------------------------------- | --------- | ---------- | ---------- | ---------------------------------------- |
+| Todo List                     | A simple to-do list application.                                 | Text     | Basic     | ⭐⭐       | [View demo](https://todolist-demo.com)    |
+| Weather with Emojis      | Application that shows the current weather information of a city. | API       | Intermediate | ⭐⭐⭐     | [View demo](https://weatherapp-demo.com)  |
 
-## Capturas de pantalla 📷
+## Screenshots 📷
 
 ### TODO List
 
+## How to Contribute? ✨
 
-## ¿Cómo contribuir? ✨
+If you would like to contribute, please check our [contribution guide](./CONTRIBUTING.md) for more details.
 
-Si te gustaría contribuir, por favor, consulta nuestra guía de [contribución](./CONTRIBUTING.md) para más detalles.
+## License 📜
 
-## Licencia 📜
+This project is under the [MIT License](./LICENSE.md). Please read the license file for more information.
 
-Este proyecto está bajo la licencia [Licencia MIT](./LICENSE.md). Por favor, lee el archivo de licencia para más información.
-
-## Cómprame un café ☕
+## Buy Me a Coffee ☕
 
 <a href="https://www.buymeacoffee.com/hernandoabella" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-## Contacto 📩
+## Contact 📩
 
-Si tienes preguntas o comentarios sobre este proyecto, puedes contactarme en:
+If you have any questions or comments about this project, you can contact me at:
 
 - **Email:** hernandoabella@gmail.com
 - **Twitter:** [@hernandoabella](https://twitter.com/hernandoabella)
