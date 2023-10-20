@@ -137,8 +137,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <button
               className={`${
                 showCode
-                  ? "bg-red-600 hover:bg-red-700"
-                  : "bg-green-600 hover:bg-green-700"
+                  ? "bg-slate-600 hover:bg-slate-500"
+                  : "bg-slate-600 hover:bg-slate-500"
               } flex-1 text-white rounded-lg p-4 flex items-center justify-center transition duration-300`}
               onClick={toggleCode}
             >
@@ -151,15 +151,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       {showCode && (
         <div className="w-1/2 pl-4 bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
-          <h3 className="text-lg py-4 flex align-center items-center gap-1">
-            <i className="devicon-html5-plain"></i> HTML
+          <h3 className="text-lg py-4 flex items-center justify-between gap-1">
+            <div className="flex gap-2 items-center">
+              <i className="devicon-html5-plain"></i> HTML
+            </div>
             <CopyToClipboard text={htmlCode} onCopy={handleCopyHTML}>
-              <FaCopy className="ml-2 cursor-pointer" />
+              <div className="flex items-center">
+                {copiedHTML && (
+                  <span className="text-green-600 mr-2">Copied!</span>
+                )}
+                <FaCopy className="cursor-pointer" />
+              </div>
             </CopyToClipboard>
-            {copiedHTML && <span className="ml-2 text-green-600">Copied!</span>}
           </h3>
+
           <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
-            <pre>
+            <pre className="p-2">
               <code
                 className="html"
                 dangerouslySetInnerHTML={{
@@ -168,19 +175,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               />
             </pre>
           </div>
-          <h3 className="text-lg py-4 flex align-center items-center gap-1">
-            <div className="flex gap-4 items-center">
+          <h3 className="text-lg py-4 flex items-center justify-between gap-1">
+            <div className="flex gap-2 items-center">
               <i className="devicon-css3-plain"></i> CSS
-              <CopyToClipboard text={cssCode} onCopy={handleCopyCSS}>
-                <FaCopy className="ml-2 cursor-pointer" />
-              </CopyToClipboard>
-              {copiedCSS && (
-                <span className="ml-2 text-green-600">Copied!</span>
-              )}
             </div>
+            <CopyToClipboard text={cssCode} onCopy={handleCopyCSS}>
+              <div className="flex items-center">
+                {copiedCSS && (
+                  <span className="text-green-600 mr-2">Copied!</span>
+                )}
+                <FaCopy className="cursor-pointer" />
+              </div>
+            </CopyToClipboard>
           </h3>
+
           <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
-            <pre>
+            <pre className="p-2">
               <code
                 className="css"
                 dangerouslySetInnerHTML={{
@@ -189,20 +199,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               />
             </pre>
           </div>
-          <h3 className="text-lg py-4 flex align-center items-center gap-1">
-            <i className="devicon-javascript-plain"></i> JavaScript
+          <h3 className="text-lg py-4 flex items-center justify-between gap-1">
+            <div className="flex items-center gap-2">
+              <i className="devicon-javascript-plain"></i> JavaScript
+            </div>
             <CopyToClipboard
               text={javascriptCode}
               onCopy={handleCopyJavaScript}
             >
-              <FaCopy className="ml-2 cursor-pointer" />
+              <div className="flex items-center">
+                {copiedJavaScript && (
+                  <span className="text-green-600 mr-2">Copied!</span>
+                )}
+                <FaCopy className="cursor-pointer" />
+              </div>
             </CopyToClipboard>
-            {copiedJavaScript && (
-              <span className="ml-2 text-green-600">Copied!</span>
-            )}
           </h3>
+
           <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
-            <pre>
+            <pre className="p-2">
               <code
                 className="javascript"
                 dangerouslySetInnerHTML={{
