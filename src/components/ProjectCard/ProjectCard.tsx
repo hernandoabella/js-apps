@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDownload, FaPlayCircle } from "react-icons/fa";
+import { FaDownload, FaPlayCircle, FaStar } from "react-icons/fa";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
@@ -18,6 +18,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   description,
+  difficulty,
   downloadLink,
   demoLink,
   htmlCode,
@@ -29,6 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="md:flex">
         <div className="w-full md:w-1/2">
           <div className="w-full h-96 md:h-96 lg:h-96">
+          <div className="absolute bg-slate-900 w-3 text-center rounded-lg">{difficulty}</div>
             <iframe
               src={demoLink}
               className="w-full h-full"
@@ -63,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
         <div className="p-4 w-full md:w-1/2 bg-slate-300 dark:bg-slate-700">
-          <h3 className="text-xl mb-2">HTML</h3>
+          <h3 className="text-xl mb-2 flex align-center items-center gap-1"><i className="devicon-html5-plain"></i> HTML </h3>
           <SyntaxHighlighter language="html" style={dark}>
             {htmlCode}
           </SyntaxHighlighter>
