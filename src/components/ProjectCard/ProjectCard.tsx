@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   FaDownload,
-  FaPlayCircle,
   FaStar,
   FaExpand,
   FaCopy,
@@ -21,7 +20,6 @@ interface ProjectCardProps {
   cssCode: string;
   javascriptCode: string;
 }
-
 
 const generateStars = (difficulty: number) => {
   const stars = [];
@@ -61,7 +59,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   const openFullscreen = () => {
-    const iframe = document.getElementById(`${name}-iframe`) as HTMLIFrameElement;
+    const iframe = document.getElementById(
+      `${name}-iframe`
+    ) as HTMLIFrameElement;
     if (iframe) {
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
@@ -101,21 +101,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div className="shadow-lg flex">
-      {/* Lado Izquierdo (50%) */}
       <div className="w-1/2 pr-4">
         <div className="h-96">
           <div className="flex justify-between relative">
-            <div className="bg-slate-300 text-slate-500 dark:bg-slate-800 text-center p-2 dark:text-slate-50 flex absolute">
+            <div className="bg-slate-300 text-slate-500 dark:bg-slate-800 text-center p-2 dark:text-yellow-400 gap-2 flex absolute">
               {generateStars(difficulty)}
             </div>
-            <div className="expand-icon absolute right-2 top-2" onClick={toggleFullScreen}>
+            <div
+              className="expand-icon absolute right-2 top-2"
+              onClick={toggleFullScreen}
+            >
               <FaExpand className="cursor-pointer" />
             </div>
           </div>
           <iframe
             id={`${name}-iframe`}
             src={demoLink}
-            className={`w-full h-full select-none ${isFullScreen ? "fullscreen" : ""}`}
+            className={`w-full h-full select-none ${
+              isFullScreen ? "fullscreen" : ""
+            }`}
             title={name}
           ></iframe>
         </div>
@@ -133,19 +137,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               <FaDownload className="mr-2" /> Download
             </a>
-            <a
-              href={demoLink}
-              className="mt-5 md-mt-0 flex-1 bg-green-600 hover-bg-green-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaPlayCircle className="mr-2" /> Demo
-            </a>
           </div>
         </div>
       </div>
 
-      {/* Lado Derecho (50%) */}
       <div className="w-1/2 pl-4">
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-html5-plain"></i> HTML
@@ -156,21 +151,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </h3>
         <div className="h-36 overflow-y-auto">
           <pre>
-            <code className="html" dangerouslySetInnerHTML={{ __html: hljs.highlight("html", htmlCode).value }} />
+            <code
+              className="html"
+              dangerouslySetInnerHTML={{
+                __html: hljs.highlight("html", htmlCode).value,
+              }}
+            />
           </pre>
         </div>
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <div className="flex gap-4 items-center">
-          <i className="devicon-css3-plain"></i> CSS
-          <CopyToClipboard text={cssCode} onCopy={handleCopyCSS}>
-            <FaCopy className="ml-2 cursor-pointer" />
-          </CopyToClipboard>
-          {copiedCSS && <span className="ml-2 text-green-600">Copied!</span>}
+            <i className="devicon-css3-plain"></i> CSS
+            <CopyToClipboard text={cssCode} onCopy={handleCopyCSS}>
+              <FaCopy className="ml-2 cursor-pointer" />
+            </CopyToClipboard>
+            {copiedCSS && <span className="ml-2 text-green-600">Copied!</span>}
           </div>
         </h3>
         <div className="h-36 overflow-y-auto">
           <pre>
-            <code className="css" dangerouslySetInnerHTML={{ __html: hljs.highlight("css", cssCode).value }} />
+            <code
+              className="css"
+              dangerouslySetInnerHTML={{
+                __html: hljs.highlight("css", cssCode).value,
+              }}
+            />
           </pre>
         </div>
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
@@ -178,11 +183,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <CopyToClipboard text={javascriptCode} onCopy={handleCopyJavaScript}>
             <FaCopy className="ml-2 cursor-pointer" />
           </CopyToClipboard>
-          {copiedJavaScript && <span className="ml-2 text-green-600">Copied!</span>}
+          {copiedJavaScript && (
+            <span className="ml-2 text-green-600">Copied!</span>
+          )}
         </h3>
         <div className="h-36 overflow-y-auto">
           <pre>
-            <code className="javascript" dangerouslySetInnerHTML={{ __html: hljs.highlight("javascript", javascriptCode).value }} />
+            <code
+              className="javascript"
+              dangerouslySetInnerHTML={{
+                __html: hljs.highlight("javascript", javascriptCode).value,
+              }}
+            />
           </pre>
         </div>
       </div>
