@@ -36,9 +36,9 @@ const Projects = () => {
 
   return (
     <section className="dark:text-white dark:bg-slate-900">
-      <div>
+      <div className="">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="px-4">
+          <div key={index} className="md:px-20">
             <ProjectCard
               name={project.name || ""}
               description={project.description || ""}
