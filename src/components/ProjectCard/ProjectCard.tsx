@@ -120,7 +120,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             title={name}
           ></iframe>
         </div>
-        <div className="p-8 flex flex-col justify-between bg-slate-200 dark-bg-slate-800">
+        <div className="p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700">
           <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
@@ -150,7 +150,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {showCode && (
-        <div className="w-1/2 pl-4">
+        <div className="w-1/2 pl-4 bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
           <h3 className="text-lg py-4 flex align-center items-center gap-1">
             <i className="devicon-html5-plain"></i> HTML
             <CopyToClipboard text={htmlCode} onCopy={handleCopyHTML}>
@@ -158,7 +158,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
             {copiedHTML && <span className="ml-2 text-green-600">Copied!</span>}
           </h3>
-          <div className="h-36 overflow-y-auto">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
             <pre>
               <code
                 className="html"
@@ -179,7 +179,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               )}
             </div>
           </h3>
-          <div className="h-36 overflow-y-auto">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
             <pre>
               <code
                 className="css"
@@ -201,7 +201,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <span className="ml-2 text-green-600">Copied!</span>
             )}
           </h3>
-          <div className="h-36 overflow-y-auto bg-slate-800 text-slate-50">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
             <pre>
               <code
                 className="javascript"
