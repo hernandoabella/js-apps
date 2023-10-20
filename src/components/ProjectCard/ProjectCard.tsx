@@ -5,9 +5,11 @@ import {
   FaStar,
   FaExpand,
   FaCompress,
+  FaCopy,
 } from "react-icons/fa";
 import hljs from "highlight.js";
-import "highlight.js/styles/far.css";
+import "highlight.js/styles/atom-one-dark.css";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 interface ProjectCardProps {
   name: string;
@@ -40,6 +42,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   javascriptCode,
 }) => {
   const [isFullScreen, setFullScreen] = useState(false);
+  const [copiedHTML, setCopiedHTML] = useState(false);
+  const [copiedCSS, setCopiedCSS] = useState(false);
+  const [copiedJavaScript, setCopiedJavaScript] = useState(false);
 
   useEffect(() => {
     // Highlight.js initialization
@@ -76,6 +81,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     }
   };
 
+  // Function to handle copying HTML code
+  const handleCopyHTML = () => {
+    setCopiedHTML(true);
+    setTimeout(() => setCopiedHTML(false), 2000);
+  };
+
+  // Function to handle copying CSS code
+  const handleCopyCSS = () => {
+    setCopiedCSS(true);
+    setTimeout(() => setCopiedCSS(false), 2000);
+  };
+
+  // Function to handle copying JavaScript code
+  const handleCopyJavaScript = () => {
+    setCopiedJavaScript(true);
+    setTimeout(() => setCopiedJavaScript(false), 2000);
+  };
+
   return (
     <div className="border-solid border-2 border-slate-200 shadow-lg md:flex">
       <div className="w-full md:w-1/2">
@@ -95,13 +118,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             title={name}
           ></iframe>
         </div>
-
         <div className="p-8 flex flex-col justify-between flex-1 bg-slate-200 dark-bg-slate-800">
           <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
           </p>
-
           <div className="flex flex-col md:flex-row w-full text-center">
             <a
               href={downloadLink}
@@ -125,6 +146,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="p-2 w-full md-w-1/2 bg-slate-300 dark-bg-slate-700 h-fit">
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-html5-plain"></i> HTML
+          <CopyToClipboard text={htmlCode} onCopy={handleCopyHTML}>
+            <FaCopy className="ml-2 cursor-pointer" />
+          </CopyToClipboard>
+          {copiedHTML && <span className="ml-2 text-green-600">Copied!</span>}
         </h3>
         <div className="h-36 overflow-y-auto">
           <pre>
@@ -133,6 +158,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-css3-plain"></i> CSS
+          <CopyToClipboard text={cssCode} onCopy={handleCopyCSS}>
+            <FaCopy className="ml-2 cursor-pointer" />
+          </CopyToClipboard>
+          {copiedCSS && <span className="ml-2 text-green-600">Copied!</span>}
         </h3>
         <div className="h-36 overflow-y-auto">
           <pre>
@@ -141,6 +170,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-javascript-plain"></i> JavaScript
+          <CopyToClipboard text={javascriptCode} onCopy={handleCopyJavaScript}>
+            <FaCopy className="ml-2 cursor-pointer" />
+          </CopyToClipboard>
+          {copiedJavaScript && <span className="ml-2 text-green-600">Copied!</span>}
         </h3>
         <div className="h-36 overflow-y-auto">
           <pre>
