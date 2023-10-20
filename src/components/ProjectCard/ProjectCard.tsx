@@ -4,7 +4,6 @@ import {
   FaPlayCircle,
   FaStar,
   FaExpand,
-  FaCompress,
   FaCopy,
 } from "react-icons/fa";
 import hljs from "highlight.js";
@@ -16,12 +15,13 @@ interface ProjectCardProps {
   description: string;
   difficulty: number;
   downloadLink: string;
-  githubLink: string;
+  githubLink: string; // Agrega githubLink a la interfaz
   demoLink: string;
   htmlCode: string;
   cssCode: string;
   javascriptCode: string;
 }
+
 
 const generateStars = (difficulty: number) => {
   const stars = [];
@@ -100,25 +100,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="border-solid border-2 border-slate-200 shadow-lg md:flex">
-      <div className="w-full md:w-1/2">
-        <div className="w-full h-96 md:h-96 lg:h-96">
-          <div className="flex justify-between relative w-full">
-            <div className="bg-slate-300 text-slate-500 dark-bg-slate-700 text-center p-2 dark-text-slate-200 flex absolute">
+    <div className="shadow-lg flex">
+      {/* Lado Izquierdo (50%) */}
+      <div className="w-1/2 pr-4">
+        <div className="h-96">
+          <div className="flex justify-between relative">
+            <div className="bg-slate-300 text-slate-500 dark:bg-slate-800 text-center p-2 dark:text-slate-50 flex absolute">
               {generateStars(difficulty)}
             </div>
             <div className="expand-icon absolute right-2 top-2" onClick={toggleFullScreen}>
-              {isFullScreen ? <FaCompress /> : <FaExpand />}
+              <FaExpand className="cursor-pointer" />
             </div>
           </div>
           <iframe
-            id={`${name}-iframe`} // Unique ID based on the project name
+            id={`${name}-iframe`}
             src={demoLink}
             className={`w-full h-full select-none ${isFullScreen ? "fullscreen" : ""}`}
             title={name}
           ></iframe>
         </div>
-        <div className="p-8 flex flex-col justify-between flex-1 bg-slate-200 dark-bg-slate-800">
+        <div className="p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-800">
           <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
@@ -143,7 +144,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
       </div>
-      <div className="p-2 w-full md-w-1/2 bg-slate-300 dark-bg-slate-700 h-fit">
+
+      {/* Lado Derecho (50%) */}
+      <div className="w-1/2 pl-4">
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-html5-plain"></i> HTML
           <CopyToClipboard text={htmlCode} onCopy={handleCopyHTML}>
@@ -157,11 +160,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </pre>
         </div>
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
+          <div className="flex gap-4 items-center">
           <i className="devicon-css3-plain"></i> CSS
           <CopyToClipboard text={cssCode} onCopy={handleCopyCSS}>
             <FaCopy className="ml-2 cursor-pointer" />
           </CopyToClipboard>
           {copiedCSS && <span className="ml-2 text-green-600">Copied!</span>}
+          </div>
         </h3>
         <div className="h-36 overflow-y-auto">
           <pre>
