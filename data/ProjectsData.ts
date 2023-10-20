@@ -49,15 +49,145 @@ export const projectsData = [
     downloadLink: "#",
     githubLink: "#",
     demoLink: "https://phenomenal-florentine-e1bc03.netlify.app/",
-    htmlCode: `
-       html code
-  `,
-    cssCode: `
-      css code
-        `,
-    jsCode: `
-      js code
-        `,
+    htmlCode: `<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calificación con emojis 🙂</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link
+          rel="stylesheet"
+          href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+        />
+      </head>
+      <body>
+        <div class="container">
+          <div class="emoji-container">
+            <img class="emoji" src="images/enfadado.png" alt="Enfadado" />
+            <img class="emoji" src="images/triste.png" alt="Triste" />
+            <img class="emoji" src="images/neutral.png" alt="Neutral" />
+            <img class="emoji" src="images/feliz.png" alt="Feliz" />
+            <img class="emoji" src="images/risas.png" alt="Risas" />
+          </div>
+          <div class="rating-container">
+            <i class="fas fa-star fa-2x active"></i>
+            <i class="fas fa-star fa-2x"></i>
+            <i class="fas fa-star fa-2x"></i>
+            <i class="fas fa-star fa-2x"></i>
+            <i class="fas fa-star fa-2x"></i>
+          </div>
+        </div>
+        <script src="./script.js"></script>
+      </body>
+    </html>`,
+    cssCode: `body {
+      background-color: #A9C9FF;
+      background-image: linear-gradient(90deg, #A9C9FF 0%, #FFBBEC 100%);
+    
+    }
+    
+    .container {
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(209, 213, 219, 0.3);
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      padding: 20px;
+    }
+    
+    .emoji-container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .emoji {
+      width: 64px;
+      height: 64px;
+      user-select: none;
+    }
+    
+    .rating-container {
+      display: flex;
+      justify-content: space-around;
+      width: 220px;
+      margin-top: 30px;
+    }
+    
+    .fa-star {
+      color: #c3c3c3;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    
+    .fa-star.active {
+      color: #fbbf24;
+    }
+    
+    .fa-star:hover {
+      color: #fbbf24;
+    }`,
+    jsCode: `// Esperar a que el contenido HTML se haya cargado completamente
+    document.addEventListener("DOMContentLoaded", () => {
+      // Obtener elementos del DOM
+      const starsEl = document.querySelectorAll(".fa-star"); // Elementos de estrellas
+      const emojisEl = document.querySelectorAll(".emoji"); // Elementos de emojis
+    
+      // Obtener la puntuación guardada en el almacenamiento local o establecer 5 estrellas como valor predeterminado
+      let rating = localStorage.getItem("rating") || 5;
+    
+      // Actualizar la visualización inicial de la puntuación
+      updateRating(rating);
+    
+      // Asignar eventos de clic a las estrellas
+      starsEl.forEach((starEl, index) => {
+        starEl.addEventListener("click", () => {
+          updateRating(index + 1);
+        });
+      });
+    
+      // Función para actualizar la puntuación y los emojis
+      function updateRating(index) {
+        // Actualizar la visualización de las estrellas
+        starsEl.forEach((starEl, idx) => {
+          if (idx < index) {
+            starEl.classList.add("active");
+          } else {
+            starEl.classList.remove("active");
+          }
+        });
+    
+        // Ocultar todos los emojis
+        emojisEl.forEach((emojiEl) => {
+          emojiEl.style.display = "none";
+        });
+    
+        // Mostrar el emoji correspondiente a la puntuación seleccionada
+        emojisEl[index - 1].style.display = "block";
+    
+        // Guardar la puntuación en el almacenamiento local
+        localStorage.setItem("rating", index);
+      }
+    });`,
   },
   // {
   //   id: 4,
