@@ -33,7 +33,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link href="/">
             <div className="flex items-center justify-center select-none">
-              <Image src="/logo.png" width={100} height={150} alt="logo" />
+              <Image src="/logo.png" width={150} height={150} alt="logo" />
             </div>
           </Link>
         </div>
