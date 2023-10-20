@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="md:flex">
         <div className="w-full md:w-1/2">
           <div className="w-full h-96 md:h-96 lg:h-96">
-          <div className="absolute bg-slate-900 w-3 text-center rounded-lg">{difficulty}</div>
+          <div className="absolute bg-slate-300 text-slate-500 dark:bg-slate-900 text-center p-2 dark:text-white">{difficulty}<FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></div>
             <iframe
               src={demoLink}
               className="w-full h-full"
