@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaDownload,
   FaPlayCircle,
@@ -6,8 +6,8 @@ import {
   FaExpand,
   FaCompress,
 } from "react-icons/fa";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import hljs from "highlight.js";
+import "highlight.js/styles/far.css";
 
 interface ProjectCardProps {
   name: string;
@@ -21,7 +21,6 @@ interface ProjectCardProps {
   javascriptCode: string;
 }
 
-// Función para generar las estrellas dinámicamente
 const generateStars = (difficulty: number) => {
   const stars = [];
   for (let i = 0; i < difficulty; i++) {
@@ -42,6 +41,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const [isFullScreen, setFullScreen] = useState(false);
 
+  useEffect(() => {
+    // Highlight.js initialization
+    hljs.initHighlightingOnLoad();
+  }, []);
+
   const toggleFullScreen = () => {
     if (!isFullScreen) {
       openFullscreen();
@@ -52,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   const openFullscreen = () => {
-    const iframe = document.getElementById("demo-iframe") as HTMLIFrameElement;
+    const iframe = document.getElementById(`${name}-iframe`) as HTMLIFrameElement;
     if (iframe) {
       if (iframe.requestFullscreen) {
         iframe.requestFullscreen();
@@ -71,14 +75,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       }
     }
   };
-  
 
   return (
     <div className="border-solid border-2 border-slate-200 shadow-lg md:flex">
       <div className="w-full md:w-1/2">
         <div className="w-full h-96 md:h-96 lg:h-96">
           <div className="flex justify-between relative w-full">
-            <div className="bg-slate-300 text-slate-500 dark:bg-slate-700 text-center p-2 dark:text-slate-200 flex absolute">
+            <div className="bg-slate-300 text-slate-500 dark-bg-slate-700 text-center p-2 dark-text-slate-200 flex absolute">
               {generateStars(difficulty)}
             </div>
             <div className="expand-icon absolute right-2 top-2" onClick={toggleFullScreen}>
@@ -86,14 +89,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
           <iframe
-            id="demo-iframe"
+            id={`${name}-iframe`} // Unique ID based on the project name
             src={demoLink}
             className={`w-full h-full select-none ${isFullScreen ? "fullscreen" : ""}`}
             title={name}
           ></iframe>
         </div>
 
-        <div className="p-8 flex flex-col justify-between flex-1 bg-slate-200 dark:bg-slate-800">
+        <div className="p-8 flex flex-col justify-between flex-1 bg-slate-200 dark-bg-slate-800">
           <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
@@ -102,7 +105,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="flex flex-col md:flex-row w-full text-center">
             <a
               href={downloadLink}
-              className="md:mr-5 flex-1 bg-blue-600 hover-bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
+              className="md-mr-5 flex-1 bg-blue-600 hover-bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -110,7 +113,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </a>
             <a
               href={demoLink}
-              className="mt-5 md:mt-0 flex-1 bg-green-600 hover-bg-green-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
+              className="mt-5 md-mt-0 flex-1 bg-green-600 hover-bg-green-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -119,30 +122,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
         </div>
       </div>
-      <div className="p-2 w-full md:w-1/2 bg-slate-300 dark:bg-slate-700 h-fit">
+      <div className="p-2 w-full md-w-1/2 bg-slate-300 dark-bg-slate-700 h-fit">
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-html5-plain"></i> HTML
         </h3>
         <div className="h-36 overflow-y-auto">
-          <SyntaxHighlighter language="html" style={dark}>
-            {htmlCode}
-          </SyntaxHighlighter>
+          <pre>
+            <code className="html" dangerouslySetInnerHTML={{ __html: hljs.highlight("html", htmlCode).value }} />
+          </pre>
         </div>
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-css3-plain"></i> CSS
         </h3>
         <div className="h-36 overflow-y-auto">
-          <SyntaxHighlighter language="css" style={dark}>
-            {cssCode}
-          </SyntaxHighlighter>
+          <pre>
+            <code className="css" dangerouslySetInnerHTML={{ __html: hljs.highlight("css", cssCode).value }} />
+          </pre>
         </div>
         <h3 className="text-lg py-4 flex align-center items-center gap-1">
           <i className="devicon-javascript-plain"></i> JavaScript
         </h3>
         <div className="h-36 overflow-y-auto">
-          <SyntaxHighlighter language="javascript" style={dark}>
-            {javascriptCode}
-          </SyntaxHighlighter>
+          <pre>
+            <code className="javascript" dangerouslySetInnerHTML={{ __html: hljs.highlight("javascript", javascriptCode).value }} />
+          </pre>
         </div>
       </div>
     </div>
