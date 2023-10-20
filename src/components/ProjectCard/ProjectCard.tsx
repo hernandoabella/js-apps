@@ -51,12 +51,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="w-full md:w-1/2">
         <div className="w-full h-96 md:h-96 lg:h-96">
           <div className="flex justify-between relative w-full">
-          <div className=" bg-slate-300 text-slate-500 dark:bg-slate-700 text-center p-2 dark:text-slate-200 flex absolute">
-            {generateStars(difficulty)}
-          </div>
-          <div className="expand-icon absolute right-2 top-2" onClick={toggleFullScreen}>
-            {isFullScreen ? <FaCompress /> : <FaExpand />}
-          </div>
+            <div className=" bg-slate-300 text-slate-500 dark:bg-slate-700 text-center p-2 dark:text-slate-200 flex absolute">
+              {generateStars(difficulty)}
+            </div>
+            <div
+              className="expand-icon absolute right-2 top-2"
+              onClick={toggleFullScreen}
+            >
+              {isFullScreen ? <FaCompress /> : <FaExpand />}
+            </div>
           </div>
           <iframe
             src={demoLink}
@@ -92,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
       </div>
       <div className="p-4 w-full md:w-1/2 bg-slate-300 dark:bg-slate-700 h-auto">
-        <h3 className="text-xl mb-2 flex align-center items-center gap-1">
+        <h3 className="text-xl py-4 flex align-center items-center gap-1">
           <i className="devicon-html5-plain"></i> HTML
         </h3>
         <div className="h-72 overflow-y-auto">
@@ -100,13 +103,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {htmlCode}
           </SyntaxHighlighter>
         </div>
-        <h3 className="text-xl mb-2">CSS</h3>
+        <h3 className="text-xl py-4 flex align-center items-center gap-1">
+          <i className="devicon-css3-plain"></i> CSS
+        </h3>
         <div className="h-96 overflow-y-auto">
           <SyntaxHighlighter language="css" style={dark}>
             {cssCode}
           </SyntaxHighlighter>
         </div>
-        <h3 className="text-xl mb-2">JavaScript</h3>
+        <h3 className="text-xl py-4 flex align-center items-center gap-1">
+          <i className="devicon-javascript-plain"></i> JavaScript
+        </h3>
         <div className="h-96 overflow-y-auto">
           <SyntaxHighlighter language="javascript" style={dark}>
             {javascriptCode}
