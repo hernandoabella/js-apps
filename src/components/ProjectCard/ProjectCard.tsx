@@ -128,7 +128,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="flex flex-col md:flex-row w-full text-center gap-4">
             <a
               href={downloadLink}
-              className="md-mr-2 flex-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
+              className="md:mr-2 flex-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -150,11 +150,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {showCode && (
-        <div className="w-1/2 pl-4 bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
+        <div className="w-1/2 px-4 bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
           <h3 className="text-lg py-4 flex items-center justify-between gap-1">
             <div className="flex gap-2 items-center">
-              <i className="devicon-html5-plain"></i> HTML
+              <i
+                className="devicon-html5-plain"
+                style={{ color: "#e44d26" }}
+              ></i>{" "}
+              HTML
             </div>
+
             <CopyToClipboard text={htmlCode} onCopy={handleCopyHTML}>
               <div className="flex items-center">
                 {copiedHTML && (
@@ -177,8 +182,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
           <h3 className="text-lg py-4 flex items-center justify-between gap-1">
             <div className="flex gap-2 items-center">
-              <i className="devicon-css3-plain"></i> CSS
+              <i
+                className="devicon-css3-plain"
+                style={{ color: "#1572b6" }}
+              ></i>{" "}
+              CSS
             </div>
+
             <CopyToClipboard text={cssCode} onCopy={handleCopyCSS}>
               <div className="flex items-center">
                 {copiedCSS && (
@@ -201,8 +211,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
           <h3 className="text-lg py-4 flex items-center justify-between gap-1">
             <div className="flex items-center gap-2">
-              <i className="devicon-javascript-plain"></i> JavaScript
+              <i
+                className="devicon-javascript-plain"
+                style={{ color: "#f0db4f" }}
+              ></i>{" "}
+              JavaScript
             </div>
+
             <CopyToClipboard
               text={javascriptCode}
               onCopy={handleCopyJavaScript}
