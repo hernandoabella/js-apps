@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { FaGithub } from "react-icons/fa";
-import Image from 'next/image'
+import Image from "next/image";
 
 import dynamic from "next/dynamic";
 
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
       <div className="flex justify-between p-10 md:px-20 font-semibold">
         <div className="flex items-center">
           <Link href="/">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center select-none">
               <Image src="/logo.png" width={100} height={150} alt="logo" />
             </div>
           </Link>
