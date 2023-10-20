@@ -1,5 +1,11 @@
-import React from "react";
-import { FaDownload, FaPlayCircle, FaStar } from "react-icons/fa";
+import React, { useState } from "react";
+import {
+  FaDownload,
+  FaPlayCircle,
+  FaStar,
+  FaExpand,
+  FaCompress,
+} from "react-icons/fa";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
@@ -15,6 +21,15 @@ interface ProjectCardProps {
   javascriptCode: string;
 }
 
+// Función para generar las estrellas dinámicamente
+const generateStars = (difficulty: number) => {
+  const stars = [];
+  for (let i = 0; i < difficulty; i++) {
+    stars.push(<FaStar key={i} />);
+  }
+  return stars;
+};
+
 const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   description,
@@ -25,55 +40,74 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   cssCode,
   javascriptCode,
 }) => {
+  const [isFullScreen, setFullScreen] = useState(false);
+
+  const toggleFullScreen = () => {
+    setFullScreen(!isFullScreen);
+  };
+
   return (
-    <div className="border-solid border-2 border-slate-200 shadow-lg">
-      <div className="md:flex">
-        <div className="w-full md:w-1/2">
-          <div className="w-full h-96 md:h-96 lg:h-96">
-          <div className="absolute bg-slate-300 text-slate-500 dark:bg-slate-900 text-center p-2 dark:text-white">{difficulty}<FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></div>
-            <iframe
-              src={demoLink}
-              className="w-full h-full"
-              title={name}
-            ></iframe>
+    <div className="border-solid border-2 border-slate-200 shadow-lg md:flex">
+      <div className="w-full md:w-1/2">
+        <div className="w-full h-96 md:h-96 lg:h-96">
+          <div className="flex justify-between relative w-full">
+          <div className=" bg-slate-300 text-slate-500 dark:bg-slate-700 text-center p-2 dark:text-slate-200 flex absolute">
+            {generateStars(difficulty)}
           </div>
+          <div className="expand-icon absolute right-2 top-2" onClick={toggleFullScreen}>
+            {isFullScreen ? <FaCompress /> : <FaExpand />}
+          </div>
+          </div>
+          <iframe
+            src={demoLink}
+            className="w-full h-full select-none"
+            title={name}
+          ></iframe>
+        </div>
 
-          <div className="p-8 flex flex-col justify-between flex-1 bg-slate-200 dark:bg-slate-800">
-            <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
-            <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
-              {description}
-            </p>
+        <div className="p-8 flex flex-col justify-between flex-1 bg-slate-200 dark:bg-slate-800">
+          <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
+          <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
+            {description}
+          </p>
 
-            <div className="flex flex-col md:flex-row w-full text-center">
-              <a
-                href={downloadLink}
-                className="md:mr-5 flex-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaDownload className="mr-2" /> Download
-              </a>
-              <a
-                href={demoLink}
-                className="mt-5 md:mt-0 flex-1 bg-green-600 hover:bg-green-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaPlayCircle className="mr-2" /> Demo
-              </a>
-            </div>
+          <div className="flex flex-col md:flex-row w-full text-center">
+            <a
+              href={downloadLink}
+              className="md:mr-5 flex-1 bg-blue-600 hover-bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaDownload className="mr-2" /> Download
+            </a>
+            <a
+              href={demoLink}
+              className="mt-5 md:mt-0 flex-1 bg-green-600 hover-bg-green-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaPlayCircle className="mr-2" /> Demo
+            </a>
           </div>
         </div>
-        <div className="p-4 w-full md:w-1/2 bg-slate-300 dark:bg-slate-700">
-          <h3 className="text-xl mb-2 flex align-center items-center gap-1"><i className="devicon-html5-plain"></i> HTML </h3>
+      </div>
+      <div className="p-4 w-full md:w-1/2 bg-slate-300 dark:bg-slate-700 h-auto">
+        <h3 className="text-xl mb-2 flex align-center items-center gap-1">
+          <i className="devicon-html5-plain"></i> HTML
+        </h3>
+        <div className="h-72 overflow-y-auto">
           <SyntaxHighlighter language="html" style={dark}>
             {htmlCode}
           </SyntaxHighlighter>
-          <h3 className="text-xl mb-2">CSS</h3>
+        </div>
+        <h3 className="text-xl mb-2">CSS</h3>
+        <div className="h-96 overflow-y-auto">
           <SyntaxHighlighter language="css" style={dark}>
             {cssCode}
           </SyntaxHighlighter>
-          <h3 className="text-xl mb-2">JavaScript</h3>
+        </div>
+        <h3 className="text-xl mb-2">JavaScript</h3>
+        <div className="h-96 overflow-y-auto">
           <SyntaxHighlighter language="javascript" style={dark}>
             {javascriptCode}
           </SyntaxHighlighter>
