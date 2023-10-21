@@ -48,8 +48,8 @@ The available applications are:
 
 | Name                          | Description                                                       | Category  | Level        | Stars         | Demo                                     |
 | ----------------------------- | ----------------------------------------------------------------- | --------- | ------------ | ------------- | ---------------------------------------- |
-| Todo List                     | A simple to-do list application.                                  | Text      | Basic        | ⭐⭐         | [View live](https://todolist-demo.com)   |
-| Weather with Emojis           | Application that shows the current weather information of a city. | API       | Intermediate | ⭐⭐⭐      | [View live](https://weatherapp-demo.com)  |
+| Todo List                     | A simple to-do list application.                                  | Text      | Basic        | ⭐⭐         | [Live](https://todolist-demo.com)   |
+| Weather with Emojis           | Application that shows the current weather information of a city. | API       | Intermediate | ⭐⭐⭐      | [Live](https://weatherapp-demo.com)  |
 
 ## Screenshots 📷
 
