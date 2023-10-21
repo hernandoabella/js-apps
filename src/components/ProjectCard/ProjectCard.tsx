@@ -97,7 +97,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="shadow-lg flex">
+    <div className="shadow-lg flex md:flex-row flex-col">
       <div className={showCode ? "md:w-1/2" : "w-full"}>
         <div className="h-96">
           <div className="flex justify-between relative">
