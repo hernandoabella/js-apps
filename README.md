@@ -50,10 +50,12 @@ The available applications are:
 |------| ----------- | -------- | ----- | ----- | ---- |
 | Text Resizer | ...  | Text | Junior | ⭐⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/) |
 | Image Slider | ...  | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
+| Image Slider | ...  | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
+
 
 
 ## Screenshots 📷
-https://github.com/hernandoabella/redimensionador-de-texto
+
 
 ## How to Contribute? ✨
 
