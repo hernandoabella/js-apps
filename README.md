@@ -52,6 +52,8 @@ The available applications are:
 | Text Resizer            | ...         | ...      | Entry Level | ⭐    | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
 | Play Sound Onclick      | ...         | ...      | Entry Level | ⭐    | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
 | Change Background Color | ...         | ...      | Entry Level | ⭐    | [Live](https://prismatic-seahorse-3f7a5c.netlify.app) |
+| Modal Box | ...         | ...      | Entry Level | ⭐    | [Live](https://celebrated-beignet-0ab5af.netlify.app) |
+| Check Internet Connection | ...         | ...      | Entry Level | ⭐    | [Live](https://celebrated-beignet-0ab5af.netlify.app) |
 
 | Image Slider | ... | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
 | Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://roaring-speculoos-9b2532.netlify.app/) |
@@ -61,6 +63,7 @@ The available applications are:
 | Joke Generator | ... | ... | Junior | ⭐⭐ | [Live](https://chic-douhua-da8067.netlify.app) |
 | Fibonacci Generator | ... | ... | Junior | ⭐⭐ | [Live](https://frolicking-gingersnap-81eb24.netlify.app) |
 | IBM Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://frolicking-gingersnap-81eb24.netlify.app) |
+| Calendar| ... | ... | Junior | ⭐⭐ | [Live](https://remarkable-macaron-98cbe2.netlify.app) |
 
 | Emoji Rating | ... | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ... | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
@@ -73,6 +76,8 @@ The available applications are:
 | Password Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://verdant-fenglisu-a95152.netlify.app) |
 | Image Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://helpful-hummingbird-e58695.netlify.app) |
 | Food Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://helpful-hummingbird-e58695.netlify.app) |
+
+| Typing Speed | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dynamic-cajeta-8ab8c6.netlify.app) |
 
 ## Screenshots 📷
 
