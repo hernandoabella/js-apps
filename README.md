@@ -46,9 +46,9 @@ Each application in our collection is categorized based on the difficulty level 
 
 The available applications are:
 
-| Name                          | Description                                                       | Category  | Level        | Stars         | Demo                                     |
-| ----------------------------- | ----------------------------------------------------------------- | --------- | ------------ | ------------- | ---------------------------------------- |
-| Redimensionador de texto      |      | Text      | Junior        | ⭐⭐        | [Live](https://github.com/hernandoabella/redimensionador-de-texto)   |
+| Name | Description | Category | Level | Stars | Demo |
+|------| ----------- | -------- | ----- | ----- | ---- |
+| Redimensionador de texto | ...  | Text | Junior | ⭐⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/) |
 
 
 ## Screenshots 📷
