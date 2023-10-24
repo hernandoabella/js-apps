@@ -48,7 +48,8 @@ The available applications are:
 
 | Name | Description | Category | Level | Stars | Demo |
 |------| ----------- | -------- | ----- | ----- | ---- |
-| Redimensionador de texto | ...  | Text | Junior | ⭐⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/) |
+| Text Resizer | ...  | Text | Junior | ⭐⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/) |
+| Image Slider | ...  | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
 
 
 ## Screenshots 📷
