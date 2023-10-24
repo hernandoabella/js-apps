@@ -55,6 +55,7 @@ The available applications are:
 
 | Image Slider | ...  | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
 | Calculator | ...  | ... | Junior | ⭐⭐ | [Live](https://roaring-speculoos-9b2532.netlify.app/) |
+| Age Calculator | ...  | ... | Junior | ⭐⭐ | [Live](https://roaring-speculoos-9b2532.netlify.app/) |
 
 | Emoji Rating | ...  | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ...  | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
