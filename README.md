@@ -51,11 +51,16 @@ The available applications are:
 | Counter | ...  | ... | Entry Level | ⭐ | [Live](https://incredible-boba-57ba5d.netlify.app/) |
 | Text Resizer | ...  | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/) |
 | Play Sound Onclick | ...  | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/) |
+| Change Background Color | ...  | ... | Entry Level | ⭐ | [Live](https://prismatic-seahorse-3f7a5c.netlify.app) |
 
 | Image Slider | ...  | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
+| Calculator | ...  | ... | Junior | ⭐⭐ | [Live](https://roaring-speculoos-9b2532.netlify.app/) |
 
 | Emoji Rating | ...  | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ...  | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
+| Password Validation | ...  | ... | Mid | ⭐⭐⭐ | [Live](https://superlative-cupcake-2a9bd7.netlify.app/) |
+| Github Profile Generator | ...  | ... | Mid | ⭐⭐⭐ | [Live](https://adorable-custard-09481a.netlify.app/) |
+| Shopping Cart | ...  | ... | Mid | ⭐⭐⭐ | [Live](https://sensational-salamander-cf3425.netlify.app) |
 
 
 
