@@ -48,9 +48,12 @@ The available applications are:
 
 | Name | Description | Category | Level | Stars | Demo |
 |------| ----------- | -------- | ----- | ----- | ---- |
-| Text Resizer | ...  | Text | Junior | ⭐⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/) |
+| Counter | ...  | ... | Entry Level | ⭐ | [Live](https://incredible-boba-57ba5d.netlify.app/) |
+| Text Resizer | ...  | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/) |
+
 | Image Slider | ...  | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
-| Image Slider | ...  | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
+
+| Emoji Rating | ...  | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 
 
 
