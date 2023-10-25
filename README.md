@@ -76,7 +76,6 @@ The available applications are:
 | Image Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://helpful-hummingbird-e58695.netlify.app) |
 | Food Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://helpful-hummingbird-e58695.netlify.app) |
 | Check Password Strength| ... | ... | Junior | ⭐⭐ | [Live](https://merry-cajeta-6bc82d.netlify.app) |
-
 | Typing Speed | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dynamic-cajeta-8ab8c6.netlify.app) |
 
 ## Screenshots 📷
