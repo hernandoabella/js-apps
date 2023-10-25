@@ -84,7 +84,9 @@ The available applications are:
 | Check Password Strength | ... | ... | Mid | ⭐⭐⭐ | [Live](https://dancing-granita-c4c594.netlify.app) |
 | Piano | ... | ... | Mid | ⭐⭐⭐ | [Live](https://merry-cassata-7cae39.netlify.app) |
 | Audio Visualizer | ... | ... | Mid | ⭐⭐⭐ | [Live](https://starlit-rolypoly-6197fe.netlify.app) |
+| Color Contrast Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://endearing-selkie-58973a.netlify.app) |
 | Typing Speed | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dynamic-cajeta-8ab8c6.netlify.app) |
+| Treasure Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://polite-florentine-9fc12a.netlify.app) |
 
 ## Screenshots 📷
 
