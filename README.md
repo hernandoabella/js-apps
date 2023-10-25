@@ -54,7 +54,6 @@ The available applications are:
 | Change Background Color | ...         | ...      | Entry Level | ⭐ | [Live](https://prismatic-seahorse-3f7a5c.netlify.app) |
 | Modal Box | ...         | ...      | Entry Level | ⭐    | [Live](https://celebrated-beignet-0ab5af.netlify.app) |
 | Check Internet Connection | ...         | ...      | Entry Level | ⭐ | [Live](https://musical-lily-78ebf4.netlify.app) |
-
 | Image Slider | ... | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
 | Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://roaring-speculoos-9b2532.netlify.app/) |
 | Age Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://cool-dodol-d5b2cc.netlify.app) |
@@ -65,7 +64,6 @@ The available applications are:
 | IBM Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://frolicking-gingersnap-81eb24.netlify.app) |
 | Calendar| ... | ... | Junior | ⭐⭐ | [Live](https://remarkable-macaron-98cbe2.netlify.app) |
 | Email Validation | ... | ... | Junior | ⭐⭐ | [Live](https://merry-cajeta-6bc82d.netlify.app) |
-
 | Emoji Rating | ... | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ... | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
 | Password Validation | ... | ... | Mid | ⭐⭐⭐ | [Live](https://superlative-cupcake-2a9bd7.netlify.app/) |
