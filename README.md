@@ -48,13 +48,14 @@ The available applications are:
 
 | Name                    | Description | Category | Level       | Stars | Demo                                                  |
 | ----------------------- | ----------- | -------- | ----------- | ----- | ----------------------------------------------------- |
-| Counter                 | ...         | ...      | Entry Level | ⭐ | [Live](https://incredible-boba-57ba5d.netlify.app/)   |
-| Text Resizer            | ...         | ...      | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
-| Play Sound Onclick      | ...         | ...      | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
-| Change Background Color | ...         | ...      | Entry Level | ⭐ | [Live](https://prismatic-seahorse-3f7a5c.netlify.app) |
-| Modal Box | ...         | ...      | Entry Level | ⭐    | [Live](https://celebrated-beignet-0ab5af.netlify.app) |
-| Check Internet Connection | ...         | ...      | Entry Level | ⭐ | [Live](https://musical-lily-78ebf4.netlify.app) |
-| Traffic Light | ...         | ...      | Entry Level | ⭐ | [Live](https://inspiring-croissant-aaea4d.netlify.app) |
+| Counter                 | ... | ... | Entry Level | ⭐ | [Live](https://incredible-boba-57ba5d.netlify.app/)   |
+| Text Resizer            | ... | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
+| Play Sound Onclick      | ... | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
+| Change Background Color | ... | ... | Entry Level | ⭐ | [Live](https://prismatic-seahorse-3f7a5c.netlify.app) |
+| Modal Box | ...         | ... | Entry Level | ⭐ | [Live](https://celebrated-beignet-0ab5af.netlify.app) |
+| Check Internet Connection | ... | ... | Entry Level | ⭐ | [Live](https://musical-lily-78ebf4.netlify.app) |
+| Traffic Light | ...         | ... | Entry Level | ⭐ | [Live](https://inspiring-croissant-aaea4d.netlify.app) |
+| Gradient Generator | ...         | ...      | Entry Level | ⭐ | [Live](https://candid-torrone-b66209.netlify.app) |
 | Image Slider | ... | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
 | Detect Browser | ... | ... | Junior | ⭐⭐ | [Live](https://reliable-pithivier-640794.netlify.app) |
 | Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://roaring-speculoos-9b2532.netlify.app/) |
@@ -70,6 +71,13 @@ The available applications are:
 | Form Validation | ... | ... | Junior | ⭐⭐ | [Live](https://inquisitive-ganache-d85029.netlify.app) |
 | Percentage Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://delightful-salmiakki-6a9f1a.netlify.app) |
 | Love Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://resplendent-fenglisu-02a5f7.netlify.app) |
+| Tip Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://resplendent-fenglisu-02a5f7.netlify.app) |
+| Analog Clock | ... | ... | Junior | ⭐⭐ | [Live](https://resplendent-fenglisu-02a5f7.netlify.app) |
+| Customize The Parrot | ... | ... | Junior | ⭐⭐ | [Live](https://resplendent-fenglisu-02a5f7.netlify.app) |
+| Halloween Party | ... | ... | Junior | ⭐⭐ | [Live](https://keen-duckanoo-b9f982.netlify.app) |
+| Weather App | ... | ... | Junior | ⭐⭐ | [Live](https://heartfelt-caramel-695b45.netlify.app) |
+| New Year Counter | ... | ... | Junior | ⭐⭐ | [Live](https://sprightly-cactus-3fbf33.netlify.app) |
+| New Year Counter | ... | ... | Junior | ⭐⭐ | [Live](https://sprightly-cactus-3fbf33.netlify.app) |
 | Emoji Rating | ... | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ... | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
 | Password Validation | ... | ... | Mid | ⭐⭐⭐ | [Live](https://superlative-cupcake-2a9bd7.netlify.app/) |
@@ -85,8 +93,16 @@ The available applications are:
 | Piano | ... | ... | Mid | ⭐⭐⭐ | [Live](https://merry-cassata-7cae39.netlify.app) |
 | Audio Visualizer | ... | ... | Mid | ⭐⭐⭐ | [Live](https://starlit-rolypoly-6197fe.netlify.app) |
 | Color Contrast Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://endearing-selkie-58973a.netlify.app) |
+| Chatbot | ... | ... | Mid | ⭐⭐⭐ | [Live](https://stirring-sopapillas-c0c8a9.netlify.app) |
+| Guess The Number | ... | ... | Mid | ⭐⭐⭐ | [Live](https://dynamic-empanada-7e232f.netlify.app) |
+| Guess The Color | ... | ... | Mid | ⭐⭐⭐ | [Live](https://profound-valkyrie-179f94.netlify.app) |
+| Guess The Word | ... | ... | Mid | ⭐⭐⭐ | [Live](https://profound-valkyrie-179f94.netlify.app) |
+| Rock Paper Scissors | ... | ... | Mid | ⭐⭐⭐ | [Live](https://loquacious-paletas-2bfd28.netlify.app) |
 | Typing Speed | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dynamic-cajeta-8ab8c6.netlify.app) |
 | Treasure Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://polite-florentine-9fc12a.netlify.app) |
+| Hangman Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://willowy-semolina-6fa82a.netlify.app) |
+| Tic Tac Toe | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dreamy-treacle-14c1b6.netlify.app) |
+
 
 ## Screenshots 📷
 
