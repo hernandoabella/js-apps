@@ -77,7 +77,7 @@ The available applications are:
 | Halloween Party | ... | ... | Junior | ⭐⭐ | [Live](https://keen-duckanoo-b9f982.netlify.app) |
 | Weather App | ... | ... | Junior | ⭐⭐ | [Live](https://heartfelt-caramel-695b45.netlify.app) |
 | New Year Counter | ... | ... | Junior | ⭐⭐ | [Live](https://sprightly-cactus-3fbf33.netlify.app) |
-| New Year Counter | ... | ... | Junior | ⭐⭐ | [Live](https://sprightly-cactus-3fbf33.netlify.app) |
+| Meaningo Of Your Name | ... | ... | Junior | ⭐⭐ | [Live](https://silly-fox-ccdfe8.netlify.app) |
 | Emoji Rating | ... | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ... | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
 | Password Validation | ... | ... | Mid | ⭐⭐⭐ | [Live](https://superlative-cupcake-2a9bd7.netlify.app/) |
