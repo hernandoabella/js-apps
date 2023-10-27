@@ -108,6 +108,8 @@ The available applications are:
 | Hangman Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://willowy-semolina-6fa82a.netlify.app) |
 | Tic Tac Toe | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dreamy-treacle-14c1b6.netlify.app) |
 | Catch The Emoji | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://tangerine-starship-960b72.netlify.app) |
+| Cheess | ... | ... | Expert | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app) |
+
 
 
 ## Screenshots 📷
