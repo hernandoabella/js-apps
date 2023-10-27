@@ -79,8 +79,10 @@ The available applications are:
 | New Year Counter | ... | ... | Junior | ⭐⭐ | [Live](https://sprightly-cactus-3fbf33.netlify.app) |
 | Meaning Of Your Name | ... | ... | Junior | ⭐⭐ | [Live](https://silly-fox-ccdfe8.netlify.app) |
 | Drag And Drop | ... | ... | Junior | ⭐⭐ | [Live](https://heroic-swan-76e763.netlify.app) |
+| KeyCode Event | ... | ... | Junior | ⭐⭐ | [Live](https://elegant-starlight-518463.netlify.app) |
 | Emoji Rating | ... | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ... | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
+| Weekly Budget | ... | ... | Mid | ⭐⭐⭐ | [Live](https://glittery-cendol-b90697.netlify.app) |
 | Recipes App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://monumental-otter-7b41c9.netlify.app) |
 | Password Validation | ... | ... | Mid | ⭐⭐⭐ | [Live](https://superlative-cupcake-2a9bd7.netlify.app/) |
 | Github Profile Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://adorable-custard-09481a.netlify.app/) |
@@ -100,6 +102,7 @@ The available applications are:
 | Guess The Color | ... | ... | Mid | ⭐⭐⭐ | [Live](https://profound-valkyrie-179f94.netlify.app) |
 | Guess The Word | ... | ... | Mid | ⭐⭐⭐ | [Live](https://profound-valkyrie-179f94.netlify.app) |
 | Rock Paper Scissors | ... | ... | Mid | ⭐⭐⭐ | [Live](https://loquacious-paletas-2bfd28.netlify.app) |
+| Math Trainer | ... | ... | Mid | ⭐⭐⭐ | [Live](https://effulgent-bombolone-bde7e9.netlify.app) |
 | Typing Speed | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dynamic-cajeta-8ab8c6.netlify.app) |
 | Treasure Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://polite-florentine-9fc12a.netlify.app) |
 | Hangman Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://willowy-semolina-6fa82a.netlify.app) |
