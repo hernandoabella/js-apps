@@ -81,6 +81,7 @@ The available applications are:
 | Drag And Drop | ... | ... | Junior | ⭐⭐ | [Live](https://heroic-swan-76e763.netlify.app) |
 | Emoji Rating | ... | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ... | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
+| Recipes App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://monumental-otter-7b41c9.netlify.app) |
 | Password Validation | ... | ... | Mid | ⭐⭐⭐ | [Live](https://superlative-cupcake-2a9bd7.netlify.app/) |
 | Github Profile Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://adorable-custard-09481a.netlify.app/) |
 | Shopping Cart | ... | ... | Mid | ⭐⭐⭐ | [Live](https://sensational-salamander-cf3425.netlify.app) |
