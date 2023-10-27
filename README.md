@@ -78,8 +78,11 @@ The available applications are:
 | Weather App | ... | ... | Junior | ⭐⭐ | [Live](https://heartfelt-caramel-695b45.netlify.app) |
 | New Year Counter | ... | ... | Junior | ⭐⭐ | [Live](https://sprightly-cactus-3fbf33.netlify.app) |
 | Meaning Of Your Name | ... | ... | Junior | ⭐⭐ | [Live](https://silly-fox-ccdfe8.netlify.app) |
+| Coin Flip | ... | ... | Junior | ⭐⭐ | [Live](https://gilded-syrniki-b834d6.netlify.app) |
+| Height Converter | ... | ... | Junior | ⭐⭐ | [Live](https://gilded-syrniki-b834d6.netlify.app) |
 | Drag And Drop | ... | ... | Junior | ⭐⭐ | [Live](https://heroic-swan-76e763.netlify.app) |
 | KeyCode Event | ... | ... | Junior | ⭐⭐ | [Live](https://elegant-starlight-518463.netlify.app) |
+| Product Carousel | ... | ... | Mid | ⭐⭐⭐ | [Live](https://frolicking-churros-79d066.netlify.app) |
 | Emoji Rating | ... | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ... | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
 | Weekly Budget | ... | ... | Mid | ⭐⭐⭐ | [Live](https://glittery-cendol-b90697.netlify.app) |
