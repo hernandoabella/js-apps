@@ -59,6 +59,9 @@ The available applications are:
 | Good Cheap Fast | ...         | ...      | Entry Level | ⭐ | [Live](https://luminous-pasca-e1ac68.netlify.app) |
 | Expanding Search Bar | ...         | ...      | Entry Level | ⭐ | [Live](https://spiffy-brioche-4c4560.netlify.app) |
 | Image Slider | ... | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
+| Countdown Timer | ... | Image | Junior | ⭐⭐ | [Live](https://melodic-cendol-1ddcb3.netlify.app) |
+| Range Control | ... | Image | Junior | ⭐⭐ | [Live](https://lively-blancmange-a00ba0.netlify.app) |
+| Weight Converter | ... | Image | Junior | ⭐⭐ | [Live](https://chic-khapse-13d3fe.netlify.app) |
 | Detect Browser | ... | ... | Junior | ⭐⭐ | [Live](https://reliable-pithivier-640794.netlify.app) |
 | Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://roaring-speculoos-9b2532.netlify.app/) |
 | Age Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://cool-dodol-d5b2cc.netlify.app) |
@@ -89,11 +92,16 @@ The available applications are:
 | Pet Finder | ... | ... | Junior | ⭐⭐ | [Live](https://sparkly-gecko-315dcf.netlify.app) |
 | Image Finder | ... | ... | Junior | ⭐⭐ | [Live](https://luminous-sopapillas-eb83a2.netlify.app) |
 | Currency Converter | ... | ... | Junior | ⭐⭐ | [Live](https://exquisite-maamoul-2036ef.netlify.app) |
+| Loan Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://heroic-salamander-1c20f4.netlify.app) |
+| Draggable Contaienr | ... | ... | Junior | ⭐⭐ | [Live](https://lustrous-bubblegum-d531c4.netlify.app) |
 | BMI Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://celebrated-kashata-440d51.netlify.app) |
 | Movie Seat Booking | ... | ... | Mid | ⭐⭐⭐ | [Live](https://silver-jelly-e671f7.netlify.app) |
 | Book List App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://gilded-haupia-ce5dab.netlify.app) |
+| Notes App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://luminous-malabi-2e438f.netlify.app) |
 | Pizza Ordering System | ... | ... | Mid | ⭐⭐⭐ | [Live](https://sage-alpaca-2f462c.netlify.app) |
 | Meditation App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://roaring-klepon-843d7b.netlify.app) |
+| Toast Notification App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://classy-alfajores-46d91d.netlify.app) |
+| Movie App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://lucent-paletas-9bc58d.netlify.app) |
 | Quiz App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://lovely-melba-7ff746.netlify.app) |
 | Color Board | ... | ... | Mid | ⭐⭐⭐ | [Live](https://classy-gumption-7892ee.netlify.app) |
 | Music Player | ... | ... | Mid | ⭐⭐⭐ | [Live](https://cosmic-pothos-f4f82a.netlify.app) |
