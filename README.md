@@ -56,6 +56,7 @@ The available applications are:
 | Check Internet Connection | ... | ... | Entry Level | ⭐ | [Live](https://musical-lily-78ebf4.netlify.app) |
 | Traffic Light | ...         | ... | Entry Level | ⭐ | [Live](https://inspiring-croissant-aaea4d.netlify.app) |
 | Gradient Generator | ...         | ...      | Entry Level | ⭐ | [Live](https://candid-torrone-b66209.netlify.app) |
+| Good Cheap Fast | ...         | ...      | Entry Level | ⭐ | [Live](https://luminous-pasca-e1ac68.netlify.app) |
 | Image Slider | ... | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
 | Detect Browser | ... | ... | Junior | ⭐⭐ | [Live](https://reliable-pithivier-640794.netlify.app) |
 | Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://roaring-speculoos-9b2532.netlify.app/) |
@@ -82,7 +83,10 @@ The available applications are:
 | Height Converter | ... | ... | Junior | ⭐⭐ | [Live](https://gilded-syrniki-b834d6.netlify.app) |
 | Drag And Drop | ... | ... | Junior | ⭐⭐ | [Live](https://heroic-swan-76e763.netlify.app) |
 | KeyCode Event | ... | ... | Junior | ⭐⭐ | [Live](https://elegant-starlight-518463.netlify.app) |
-| billionaires table | ... | ... | Junior | ⭐⭐ | [Live](https://elegant-starlight-518463.netlify.app) |
+| Billionaires Table | ... | ... | Junior | ⭐⭐ | [Live](https://sunny-cajeta-5dd982.netlify.app) |
+| Color Board | ... | ... | Mid | ⭐⭐⭐ | [Live](https://classy-gumption-7892ee.netlify.app) |
+| Music Player | ... | ... | Mid | ⭐⭐⭐ | [Live](https://cosmic-pothos-f4f82a.netlify.app) |
+| Spinning Roulette | ... | ... | Mid | ⭐⭐⭐ | [Live](https://stirring-melomakarona-c1163c.netlify.app) |
 | Product Carousel | ... | ... | Mid | ⭐⭐⭐ | [Live](https://frolicking-churros-79d066.netlify.app) |
 | Emoji Rating | ... | ... | Mid | ⭐⭐⭐ | [Live](https://phenomenal-florentine-e1bc03.netlify.app/) |
 | Word Beater | ... | ... | Mid | ⭐⭐⭐ | [Live](https://iridescent-fox-bdb4e8.netlify.app/) |
