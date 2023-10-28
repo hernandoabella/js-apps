@@ -58,8 +58,14 @@ The available applications are:
 | Gradient Generator | ...         | ...      | Entry Level | ⭐ | [Live](https://candid-torrone-b66209.netlify.app) |
 | Good Cheap Fast | ...         | ...      | Entry Level | ⭐ | [Live](https://luminous-pasca-e1ac68.netlify.app) |
 | Expanding Search Bar | ...         | ...      | Entry Level | ⭐ | [Live](https://spiffy-brioche-4c4560.netlify.app) |
+| OTP Authentication | ...         | ...      | Entry Level | ⭐ | [Live](https://lustrous-beignet-a24a47.netlify.app) |
+| Detect Key | ...         | ...      | Entry Level | ⭐ | [Live](https://celebrated-taffy-b65b13.netlify.app) |
+| Date Calculator | ... | Image | Junior | ⭐⭐ | [Live](https://charming-rabanadas-51a703.netlify.app) |
+| Decimal-Binary Converter | ... | Image | Junior | ⭐⭐ | [Live](https://tubular-brioche-5a2bbf.netlify.app) |
+| Sortable List With Drag And Drop | ... | Image | Junior | ⭐⭐ | [Live](https://astounding-chimera-95f2bf.netlify.app) |
 | Image Slider | ... | Image | Junior | ⭐⭐ | [Live](https://superb-heliotrope-a182fc.netlify.app/) |
 | Countdown Timer | ... | Image | Junior | ⭐⭐ | [Live](https://melodic-cendol-1ddcb3.netlify.app) |
+| Todo List | ... | Image | Junior | ⭐⭐ | [Live](https://meek-souffle-785242.netlify.app) |
 | Range Control | ... | Image | Junior | ⭐⭐ | [Live](https://lively-blancmange-a00ba0.netlify.app) |
 | Weight Converter | ... | Image | Junior | ⭐⭐ | [Live](https://chic-khapse-13d3fe.netlify.app) |
 | Detect Browser | ... | ... | Junior | ⭐⭐ | [Live](https://reliable-pithivier-640794.netlify.app) |
@@ -87,6 +93,7 @@ The available applications are:
 | Height Converter | ... | ... | Junior | ⭐⭐ | [Live](https://gilded-syrniki-b834d6.netlify.app) |
 | Drag And Drop | ... | ... | Junior | ⭐⭐ | [Live](https://heroic-swan-76e763.netlify.app) |
 | Accordion Menu | ... | ... | Junior | ⭐⭐ | [Live](https://cheerful-muffin-886995.netlify.app) |
+| Up Counter | ... | ... | Junior | ⭐⭐ | [Live](https://lovely-pavlova-2ac548.netlify.app) |
 | KeyCode Event | ... | ... | Junior | ⭐⭐ | [Live](https://elegant-starlight-518463.netlify.app) |
 | Billionaires Table | ... | ... | Junior | ⭐⭐ | [Live](https://sunny-cajeta-5dd982.netlify.app) |
 | Pet Finder | ... | ... | Junior | ⭐⭐ | [Live](https://sparkly-gecko-315dcf.netlify.app) |
@@ -95,6 +102,12 @@ The available applications are:
 | Loan Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://heroic-salamander-1c20f4.netlify.app) |
 | Draggable Contaienr | ... | ... | Junior | ⭐⭐ | [Live](https://lustrous-bubblegum-d531c4.netlify.app) |
 | BMI Calculator | ... | ... | Junior | ⭐⭐ | [Live](https://celebrated-kashata-440d51.netlify.app) |
+| Lorem Ipsum Generator | ... | ... | Junior | ⭐⭐ | [Live](https://unique-scone-74ef39.netlify.app) |
+| Typing Effect | ... | ... | Junior | ⭐⭐ | [Live](https://luminous-maamoul-f1cc93.netlify.app) |
+| Live User Filter | ... | ... | Mid | ⭐⭐⭐ | [Live](https://gleeful-kangaroo-54fa72.netlify.app) |
+| Animal Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://monumental-crostata-6757f4.netlify.app) |
+| Password Strength With Image | ... | ... | Mid | ⭐⭐⭐ | [Live](https://effortless-sunflower-88f50b.netlify.app) |
+| Text / Speech Converter | ... | ... | Mid | ⭐⭐⭐ | [Live](https://visionary-kleicha-fb4329.netlify.app) |
 | Movie Seat Booking | ... | ... | Mid | ⭐⭐⭐ | [Live](https://silver-jelly-e671f7.netlify.app) |
 | Book List App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://gilded-haupia-ce5dab.netlify.app) |
 | Notes App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://luminous-malabi-2e438f.netlify.app) |
@@ -102,6 +115,8 @@ The available applications are:
 | Meditation App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://roaring-klepon-843d7b.netlify.app) |
 | Toast Notification App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://classy-alfajores-46d91d.netlify.app) |
 | Movie App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://lucent-paletas-9bc58d.netlify.app) |
+| Dictionary App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://taupe-granita-e7a249.netlify.app) |
+| QR Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://dancing-alfajores-da444c.netlify.app) |
 | Quiz App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://lovely-melba-7ff746.netlify.app) |
 | Color Board | ... | ... | Mid | ⭐⭐⭐ | [Live](https://classy-gumption-7892ee.netlify.app) |
 | Music Player | ... | ... | Mid | ⭐⭐⭐ | [Live](https://cosmic-pothos-f4f82a.netlify.app) |
@@ -130,11 +145,13 @@ The available applications are:
 | Guess The Word | ... | ... | Mid | ⭐⭐⭐ | [Live](https://profound-valkyrie-179f94.netlify.app) |
 | Rock Paper Scissors | ... | ... | Mid | ⭐⭐⭐ | [Live](https://loquacious-paletas-2bfd28.netlify.app) |
 | Math Trainer | ... | ... | Mid | ⭐⭐⭐ | [Live](https://effulgent-bombolone-bde7e9.netlify.app) |
+| Memory Cards | ... | ... | Mid | ⭐⭐⭐ | [Live](https://prismatic-sprite-847e80.netlify.app) |
 | Typing Speed | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dynamic-cajeta-8ab8c6.netlify.app) |
 | Treasure Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://polite-florentine-9fc12a.netlify.app) |
 | Hangman Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://willowy-semolina-6fa82a.netlify.app) |
 | Tic Tac Toe | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dreamy-treacle-14c1b6.netlify.app) |
 | Catch The Emoji | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://tangerine-starship-960b72.netlify.app) |
+| 2048 Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://storied-malabi-1ab6c4.netlify.app) |
 | Cheess | ... | ... | Expert | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app) |
 
 
