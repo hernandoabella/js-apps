@@ -61,7 +61,8 @@ The available applications are:
 | Expanding Search Bar | ... | ... | Entry Level | ⭐ | [Live](https://spiffy-brioche-4c4560.netlify.app) |
 | OTP Authentication | ... | ... | Entry Level | ⭐ | [Live](https://lustrous-beignet-a24a47.netlify.app) |
 | Detect Key | ... | ... | Entry Level | ⭐ | [Live](https://celebrated-taffy-b65b13.netlify.app) |
-| Date Calculator | ... | Image | Junior | ⭐⭐ | [Live](https://charming-rabanadas-51a703.netlify.app) |
+| Date Calculator | ... | | Junior | ⭐⭐ | [Live](https://charming-rabanadas-51a703.netlify.app) |
+| Dark / Light Mode | ... |  | Junior | ⭐⭐ | [Live](https://symphonious-piroshki-ca71c2.netlify.app) |
 | Key Counter | ... |  | Junior | ⭐⭐ | [Live](https://resplendent-elf-6a61c1.netlify.app) |
 | Step Indicator| ... |  | Junior | ⭐⭐ | [Live](https://benevolent-gnome-e33a30.netlify.app) |
 | Decimal-Binary Converter | ... | Image | Junior | ⭐⭐ | [Live](https://tubular-brioche-5a2bbf.netlify.app) |
@@ -161,6 +162,8 @@ The available applications are:
 | Space Invaders | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://gregarious-jalebi-369f4f.netlify.app) |
 | Whack The Mole | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dulcet-sawine-04216d.netlify.app) |
 | Snake Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://effervescent-souffle-601d53.netlify.app) |
+| Concentration Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://unrivaled-kleicha-1e2d10.netlify.app) |
+| Tenis Table | ... | ... | Expert | ⭐⭐⭐⭐⭐  | [Live](https://profound-liger-bf4a3e.netlify.app) |
 | Cheess | ... | ... | Expert | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app) |
 | Tetris | ... | ... | Expert | ⭐⭐⭐⭐⭐ | [Live](https://bespoke-dolphin-382735.netlify.app) |
 
