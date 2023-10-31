@@ -18,5 +18,20 @@ export const projectsData = [
   //   jsCode: `
   //     // Código JavaScript del proyecto Redimensionador de texto
   //   `,
-  // },
+  {
+    name: "app name",
+    description:
+      "text",
+    category: "Texto",
+    difficulty: 1,
+    downloadLink: "#",
+    githubLink: "https://github.com/hernandoabella/redimensionador-de-texto",
+    demoLink: "https://effulgent-pasca-40a1c9.netlify.app/",
+    htmlCode: `<!-- Código HTML del proyecto Redimensionador de texto -->
+    `,
+    cssCode: `/* Código CSS del proyecto Redimensionador de texto */
+    `,
+    jsCode: `// Código JavaScript del proyecto Redimensionador de texto
+    `,
+  },
 ];
