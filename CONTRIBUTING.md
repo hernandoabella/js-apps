@@ -1,37 +1,37 @@
 # Contributing
 
-👋 ¡Hola y gracias por considerar contribuir a `js-apps`! 👨‍💻👩‍💻
+👋 Hello and thank you for considering contributing to `js-apps`! 👨‍💻👩‍💻
 
-## Cómo contribuir
+## How to Contribute
 
-¡Hay muchas maneras en las que puedes contribuir a este proyecto! Algunas de ellas incluyen:
+There are many ways you can contribute to this project! Some of them include:
 
-🐞 Reportando errores: si encuentras algún error en el código, por favor abre un issue describiendo el problema y cómo podemos reproducirlo.
+🐞 Reporting bugs: If you find any bugs in the code, please open an issue describing the problem and how we can reproduce it.
 
-🎁 Mejorando la documentación: si crees que la documentación puede mejorarse o si encuentras algún error, por favor abre un issue o envía una solicitud de pull request.
+🎁 Improving documentation: If you believe the documentation can be enhanced or if you find any errors, please open an issue or submit a pull request.
 
-💻 Escribiendo código: si te gusta programar y quieres agregar una nueva característica, por favor crea un fork del repositorio y envía una solicitud de pull request.
+💻 Writing code: If you enjoy programming and want to add a new feature, please fork the repository and submit a pull request.
 
-🤔 Ofreciendo ideas y sugerencias: si tienes alguna idea o sugerencia para mejorar el proyecto, por favor crea un issue para discutirlo.
+🤔 Offering ideas and suggestions: If you have any ideas or suggestions to improve the project, please create an issue to discuss it.
 
-## Guía de contribución
+## Contribution Guide
 
-Antes de comenzar a contribuir, asegúrate de seguir estas pautas:
+Before you start contributing, make sure to follow these guidelines:
 
-👥 Asegúrate de que tu código sea legible y fácil de entender para otros contribuyentes.
+👥 Ensure your code is readable and easy to understand for other contributors.
 
-👨‍👩‍👧‍👦 Si vas a enviar una solicitud de pull request, asegúrate de que incluya una descripción detallada de los cambios que has realizado.
+👨‍👩‍👧‍👦 If you are going to submit a pull request, make sure it includes a detailed description of the changes you have made.
 
-👍 Sigue los estándares de codificación y convenciones del proyecto.
+👍 Follow the coding standards and project conventions.
 
-🚨 Asegúrate de que las pruebas de unidad pasen correctamente antes de enviar tu solicitud de pull request.
+🚨 Ensure that unit tests pass successfully before submitting your pull request.
 
-## Cómo hacer una solicitud de pull request
+## How to Submit a Pull Request
 
-1. Crea un fork del repositorio.
-2. Crea una nueva rama con un nombre descriptivo (por ejemplo, `mi-nueva-funcionalidad`).
-3. Realiza tus cambios en esta rama y asegúrate de seguir las pautas de contribución.
-4. Envía una solicitud de pull request a la rama principal del repositorio.
-5. Asegúrate de que tu solicitud de pull request incluya una descripción detallada de los cambios que has realizado.
+1.  Fork the repository.
+2.  Create a new branch with a descriptive name (e.g., `my-new-feature`).
+3.  Make your changes in this branch and ensure you follow the contribution guidelines.
+4.  Submit a pull request to the main branch of the repository.
+5.  Make sure your pull request includes a detailed description of the changes you have made.
 
-¡Gracias de nuevo por considerar contribuir a `js-apps`! 👏
+Thanks again for considering contributing to `js-apps`! 👏
