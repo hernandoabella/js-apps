@@ -62,6 +62,7 @@ The available applications are:
 | Expanding Search Bar             | ...         | ...      | Entry Level | ⭐         | [Live](https://spiffy-brioche-4c4560.netlify.app)         |
 | OTP Authentication               | ...         | ...      | Entry Level | ⭐         | [Live](https://lustrous-beignet-a24a47.netlify.app)       |
 | Detect Key                       | ...         | ...      | Entry Level | ⭐         | [Live](https://celebrated-taffy-b65b13.netlify.app)       |
+| Follower Counter                 | ...         | ...      | Entry Level | ⭐         | [Live](https://shiny-salamander-0dc42e.netlify.app)       |
 | Date Calculator                  | ...         |          | Junior      | ⭐⭐       | [Live](https://charming-rabanadas-51a703.netlify.app)     |
 | Dark / Light Mode                | ...         |          | Junior      | ⭐⭐       | [Live](https://symphonious-piroshki-ca71c2.netlify.app)   |
 | Key Counter                      | ...         |          | Junior      | ⭐⭐       | [Live](https://resplendent-elf-6a61c1.netlify.app)        |
@@ -112,7 +113,9 @@ The available applications are:
 | Typing Effect                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-maamoul-f1cc93.netlify.app)       |
 | Read More / Less Button          | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-maamoul-f1cc93.netlify.app)       |
 | Hexadecimal Clock                | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sweet-cuchufli-a3b3e9.netlify.app)         |
+| Palindrome Checker               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sweet-cuchufli-a3b3e9.netlify.app)         |
 | Live User Filter                 | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://gleeful-kangaroo-54fa72.netlify.app)       |
+| Expense Tracker                  | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://deluxe-biscotti-cf7d72.netlify.app)        |
 | Animal Generator                 | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://monumental-crostata-6757f4.netlify.app)    |
 | Mouse Position                   | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://vermillion-panda-1b032b.netlify.app)       |
 | Bookmarker App                   | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://sweet-croquembouche-9befda.netlify.app)    |
@@ -156,7 +159,11 @@ The available applications are:
 | Rock Paper Scissors              | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://loquacious-paletas-2bfd28.netlify.app)     |
 | Math Trainer                     | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://effulgent-bombolone-bde7e9.netlify.app)    |
 | Memory Cards                     | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://prismatic-sprite-847e80.netlify.app)       |
-| Typing Speed                     | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://dynamic-cajeta-8ab8c6.netlify.app)         |
+| Song Lyrics App                  | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://cool-empanada-7afccc.netlify.app)          |
+| Filter Menu                      | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://tangerine-treacle-f9559c.netlify.app)      |
+| Parking Lot App                  | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://stalwart-truffle-904655.netlify.app)       |
+| Treasure Game                    | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://enchanting-lebkuchen-f72ce9.netlify.app)   |
+| Typing Speed Test                | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://dynamic-cajeta-8ab8c6.netlify.app)         |
 | Memory Game                      | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://reliable-empanada-3a00e5.netlify.app)      |
 | Treasure Game                    | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://polite-florentine-9fc12a.netlify.app)      |
 | Hangman Game                     | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://willowy-semolina-6fa82a.netlify.app)       |
@@ -170,6 +177,7 @@ The available applications are:
 | Tenis Table                      | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://profound-liger-bf4a3e.netlify.app)         |
 | Cheess                           | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app)       |
 | Tetris                           | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://bespoke-dolphin-382735.netlify.app)        |
+| Brick Breaker Game               | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://steady-trifle-4dffeb.netlify.app)          |
 
 ## Screenshots 📷
 
