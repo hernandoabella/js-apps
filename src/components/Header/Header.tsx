@@ -7,7 +7,6 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 
 const Header: React.FC = () => {
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
 
   const handleThemeToggle = () => {
@@ -24,7 +23,7 @@ const Header: React.FC = () => {
   );
 
   useEffect(() => {
-    localStorage.setItem("theme", theme ?? "light"); // Valor predeterminado "light" si theme es undefined
+    localStorage.setItem("theme", theme ?? "light");
   }, [theme]);
 
   return (
@@ -33,7 +32,12 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link href="/">
             <div className="flex items-center justify-center select-none">
-              <Image src="/logo.png" width={150} height={150} alt="logo" />
+              <Image
+                src="/logo.png"
+                width={100}
+                height={100}
+                alt="Logo"
+              />
             </div>
           </Link>
         </div>
