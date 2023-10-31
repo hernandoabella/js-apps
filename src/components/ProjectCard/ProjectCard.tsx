@@ -119,12 +119,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             title={name}
           ></iframe>
         </div>
-        <div className="p-8 flex flex-col justify-between bg-slate-200 dark-bg-slate-700">
-          <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
+        <div className="p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700">
+          <h2 className="font-bold text-2xl mb-4">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
           </p>
-          <div className="flex flex-col md-flex-row w-full text-center gap-4">
+          <div className="flex flex-col md:flex-row w-full text-center gap-4">
             <a
               href={downloadLink}
               className="md:mr-2 flex-1 bg-blue-600 hover-bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
@@ -169,7 +169,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
           </h3>
 
-          <div className="h-36 overflow-y-auto bg-slate-200 dark-bg-slate-700 dark-text-slate-300">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
             <pre className="p-2">
               <code
                 className="html"
