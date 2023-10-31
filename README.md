@@ -46,20 +46,21 @@ Each application in our collection is categorized based on the difficulty level 
 
 The available applications are:
 
-| Name                    | Description | Category | Level       | Stars | Demo                                                  |
-| ----------------------- | ----------- | -------- | ----------- | ----- | ----------------------------------------------------- |
-| Counter                 | ... | ... | Entry Level | ⭐ | [Live](https://incredible-boba-57ba5d.netlify.app/)   |
-| Text Resizer            | ... | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
-| Play Sound Onclick      | ... | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
+| Name | Description | Category | Level | Stars | Demo |
+| -----| ----------- | -------- | ----- | ----- | -----|
+| Color Generator | ... | ... | Entry Level | ⭐ | [Live](https://incredible-boba-57ba5d.netlify.app/) |
+| Counter | ... | ... | Entry Level | ⭐ | [Live](https://incredible-boba-57ba5d.netlify.app/) |
+| Text Resizer | ... | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
+| Play Sound Onclick | ... | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
 | Change Background Color | ... | ... | Entry Level | ⭐ | [Live](https://prismatic-seahorse-3f7a5c.netlify.app) |
-| Modal Box | ...         | ... | Entry Level | ⭐ | [Live](https://celebrated-beignet-0ab5af.netlify.app) |
+| Modal Box | ... | ... | Entry Level | ⭐ | [Live](https://celebrated-beignet-0ab5af.netlify.app) |
 | Check Internet Connection | ... | ... | Entry Level | ⭐ | [Live](https://musical-lily-78ebf4.netlify.app) |
-| Traffic Light | ...         | ... | Entry Level | ⭐ | [Live](https://inspiring-croissant-aaea4d.netlify.app) |
-| Gradient Generator | ...         | ...      | Entry Level | ⭐ | [Live](https://candid-torrone-b66209.netlify.app) |
-| Good Cheap Fast | ...         | ...      | Entry Level | ⭐ | [Live](https://luminous-pasca-e1ac68.netlify.app) |
-| Expanding Search Bar | ...         | ...      | Entry Level | ⭐ | [Live](https://spiffy-brioche-4c4560.netlify.app) |
-| OTP Authentication | ...         | ...      | Entry Level | ⭐ | [Live](https://lustrous-beignet-a24a47.netlify.app) |
-| Detect Key | ...         | ...      | Entry Level | ⭐ | [Live](https://celebrated-taffy-b65b13.netlify.app) |
+| Traffic Light | ... | ... | Entry Level | ⭐ | [Live](https://inspiring-croissant-aaea4d.netlify.app) |
+| Gradient Generator | ... | ... | Entry Level | ⭐ | [Live](https://candid-torrone-b66209.netlify.app) |
+| Good Cheap Fast | ... | ... | Entry Level | ⭐ | [Live](https://luminous-pasca-e1ac68.netlify.app) |
+| Expanding Search Bar | ... | ... | Entry Level | ⭐ | [Live](https://spiffy-brioche-4c4560.netlify.app) |
+| OTP Authentication | ... | ... | Entry Level | ⭐ | [Live](https://lustrous-beignet-a24a47.netlify.app) |
+| Detect Key | ... | ... | Entry Level | ⭐ | [Live](https://celebrated-taffy-b65b13.netlify.app) |
 | Date Calculator | ... | Image | Junior | ⭐⭐ | [Live](https://charming-rabanadas-51a703.netlify.app) |
 | Decimal-Binary Converter | ... | Image | Junior | ⭐⭐ | [Live](https://tubular-brioche-5a2bbf.netlify.app) |
 | Sortable List With Drag And Drop | ... | Image | Junior | ⭐⭐ | [Live](https://astounding-chimera-95f2bf.netlify.app) |
