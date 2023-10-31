@@ -153,6 +153,7 @@ The available applications are:
 | Tic Tac Toe | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://dreamy-treacle-14c1b6.netlify.app) |
 | Catch The Emoji | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://tangerine-starship-960b72.netlify.app) |
 | 2048 Game | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://storied-malabi-1ab6c4.netlify.app) |
+| Space Invaders | ... | ... | Senior | ⭐⭐⭐⭐ | [Live](https://storied-malabi-1ab6c4.netlify.app) |
 | Cheess | ... | ... | Expert | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app) |
 
 
