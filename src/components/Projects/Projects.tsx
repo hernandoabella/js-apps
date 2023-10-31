@@ -16,7 +16,6 @@ const Projects = () => {
               difficulty={project.difficulty || 0}
               downloadLink={project.downloadLink || ""}
               demoLink={project.demoLink || ""}
-              githubLink={project.githubLink || ""}
               htmlCode={project.htmlCode || ""}
               cssCode={project.cssCode || ""}
               javascriptCode={project.jsCode || ""}
