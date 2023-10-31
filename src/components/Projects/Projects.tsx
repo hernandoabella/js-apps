@@ -1,38 +1,9 @@
-import { SetStateAction, useState } from "react";
+import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { projectsData } from "../../../data/ProjectsData";
 
 const Projects = () => {
-  const [filterText, setFilterText] = useState("");
-  const [filterDifficulty, setFilterDifficulty] = useState("");
-  const [filterCategory, setFilterCategory] = useState("");
-
-  const handleFilterChange = (e: {
-    target: { value: SetStateAction<string> };
-  }) => {
-    setFilterText(e.target.value);
-  };
-
-  const handleDifficultyFilterChange = (e: {
-    target: { value: SetStateAction<string> };
-  }) => {
-    setFilterDifficulty(e.target.value);
-  };
-
-  const handleCategoryFilterChange = (e: {
-    target: { value: SetStateAction<string> };
-  }) => {
-    setFilterCategory(e.target.value);
-  };
-
-  const filteredProjects = projectsData.filter(
-    (project) =>
-      project.name.toLowerCase().includes(filterText.toLowerCase()) &&
-      (filterDifficulty === "" ||
-        project.difficulty.toString() === filterDifficulty) &&
-      (filterCategory === "" ||
-        project.category.toLowerCase() === filterCategory.toLowerCase())
-  );
+  const filteredProjects = projectsData;
 
   return (
     <section className="dark:text-white dark:bg-slate-900">
