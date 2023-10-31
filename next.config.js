@@ -11,16 +11,7 @@ const nextConfig = {
             value: 'public, max-age=3600',
           },
         ],
-      },
-      {
-        source: '/aprende',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=3600',
-          },
-        ],
-      },
+      }
     ];
   },
 };
