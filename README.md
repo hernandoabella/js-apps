@@ -48,6 +48,7 @@ The available applications are:
 
 | Name | Description | Category | Level | Stars | Demo |
 | -----| ----------- | -------- | ----- | ----- | -----|
+| Random Number Generator | ... | ... | Entry Level | ⭐ | [Live](https://lucent-semifreddo-6bce96.netlify.app) |
 | Color Generator | ... | ... | Entry Level | ⭐ | [Live](https://timely-bienenstitch-7158d3.netlify.app) |
 | Counter | ... | ... | Entry Level | ⭐ | [Live](https://incredible-boba-57ba5d.netlify.app/) |
 | Text Resizer | ... | ... | Entry Level | ⭐ | [Live](https://effulgent-pasca-40a1c9.netlify.app/)   |
@@ -112,6 +113,8 @@ The available applications are:
 | Hexadecimal Clock | ... | ... | Junior | ⭐⭐ | [Live](https://sweet-cuchufli-a3b3e9.netlify.app) |
 | Live User Filter | ... | ... | Mid | ⭐⭐⭐ | [Live](https://gleeful-kangaroo-54fa72.netlify.app) |
 | Animal Generator | ... | ... | Mid | ⭐⭐⭐ | [Live](https://monumental-crostata-6757f4.netlify.app) |
+| Mouse Position | ... | ... | Mid | ⭐⭐⭐ | [Live](https://vermillion-panda-1b032b.netlify.app) |
+| Bookmarker App | ... | ... | Mid | ⭐⭐⭐ | [Live](https://sweet-croquembouche-9befda.netlify.app) |
 | Password Strength With Image | ... | ... | Mid | ⭐⭐⭐ | [Live](https://effortless-sunflower-88f50b.netlify.app) |
 | Text / Speech Converter | ... | ... | Mid | ⭐⭐⭐ | [Live](https://visionary-kleicha-fb4329.netlify.app) |
 | Movie Seat Booking | ... | ... | Mid | ⭐⭐⭐ | [Live](https://silver-jelly-e671f7.netlify.app) |
@@ -166,7 +169,6 @@ The available applications are:
 | Tenis Table | ... | ... | Expert | ⭐⭐⭐⭐⭐  | [Live](https://profound-liger-bf4a3e.netlify.app) |
 | Cheess | ... | ... | Expert | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app) |
 | Tetris | ... | ... | Expert | ⭐⭐⭐⭐⭐ | [Live](https://bespoke-dolphin-382735.netlify.app) |
-
 
 
 ## Screenshots 📷
