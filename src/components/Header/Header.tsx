@@ -36,7 +36,7 @@ const Header: React.FC = () => {
                 src="/logo.png"
                 width={100}
                 height={100}
-                alt="Logo"
+                alt={''}
               />
             </div>
           </Link>
