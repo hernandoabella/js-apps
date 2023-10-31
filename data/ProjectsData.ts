@@ -24,7 +24,7 @@ export const projectsData = [
       "text",
     category: "Texto",
     difficulty: 1,
-    downloadLink: "#",
+    downloadLink: "https://www.github.com/",
     githubLink: "https://github.com/hernandoabella/redimensionador-de-texto",
     demoLink: "https://effulgent-pasca-40a1c9.netlify.app/",
     htmlCode: `<!-- Código HTML del proyecto Redimensionador de texto -->
