@@ -9,7 +9,6 @@ interface ProjectCardProps {
   description: string;
   difficulty: number;
   downloadLink: string;
-  githubLink: string;
   demoLink: string;
   htmlCode: string;
   cssCode: string;
@@ -120,15 +119,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             title={name}
           ></iframe>
         </div>
-        <div className="p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700">
+        <div className="p-8 flex flex-col justify-between bg-slate-200 dark-bg-slate-700">
           <h2 className="font-bold text-2xl mb-4 text-center">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
           </p>
-          <div className="flex flex-col md:flex-row w-full text-center gap-4">
+          <div className="flex flex-col md-flex-row w-full text-center gap-4">
             <a
               href={downloadLink}
-              className="md:mr-2 flex-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
+              className="md:mr-2 flex-1 bg-blue-600 hover-bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -137,8 +136,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <button
               className={`${
                 showCode
-                  ? "bg-slate-600 hover:bg-slate-500"
-                  : "bg-slate-600 hover:bg-slate-500"
+                  ? "bg-slate-600 hover-bg-slate-500"
+                  : "bg-slate-600 hover-bg-slate-500"
               } flex-1 text-white rounded-lg p-4 flex items-center justify-center transition duration-300`}
               onClick={toggleCode}
             >
@@ -150,7 +149,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {showCode && (
-        <div className="md:w-1/2 px-4 bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
+        <div className="md:w-1/2 px-4 bg-slate-300 dark-bg-slate-800 dark-text-slate-50">
           <h3 className="text-lg py-4 flex items-center justify-between gap-1">
             <div className="flex gap-2 items-center">
               <i
@@ -170,7 +169,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
           </h3>
 
-          <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark-bg-slate-700 dark-text-slate-300">
             <pre className="p-2">
               <code
                 className="html"
@@ -199,7 +198,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
           </h3>
 
-          <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark-bg-slate-700 dark-text-slate-300">
             <pre className="p-2">
               <code
                 className="css"
@@ -231,7 +230,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
           </h3>
 
-          <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark-bg-slate-700 dark-text-slate-300">
             <pre className="p-2">
               <code
                 className="javascript"
