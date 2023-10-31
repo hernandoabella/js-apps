@@ -40,24 +40,6 @@ const Header: React.FC = () => {
 
         <nav>
           <ul className="md:flex flex justify-center items-center">
-            {/* <li className="mx-3">
-              <Link href="/">
-                <span className="hover:text-sky-400">Inicio</span>
-              </Link>
-            </li>
-            <li className="mx-3">
-              <Link href="/aplicaciones">
-                <span className="hover:text-sky-400">Aplicaciones</span>
-              </Link>
-            </li> */}
-            {/* <div className="flex items-center border-l border-slate-200 ml-3 dark:border-slate-800">
-              <svg
-                viewBox="0 0 16 16"
-                className="w-5 h-5"
-                fill="currentColor"
-                aria-hidden="true"
-              ></svg>
-            </div> */}
             <li className="mr-3" onClick={handleThemeToggle}>
               <span className="text-sky-500 dark:text-sky-400 cursor-pointer">
                 {theme === "light" ? (
@@ -76,39 +58,6 @@ const Header: React.FC = () => {
               </Link>
             </li>
           </ul>
-          {/* <div className="md:hidden flex items-center">
-            <button onClick={handleMenuClick}>
-              {isMenuOpen ? (
-                <AiOutlineClose className="h-5 w-5" />
-              ) : (
-                <AiOutlineMenu className="h-5 w-5" />
-              )}
-            </button>
-          </div> */}
-          {/* <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-            <ul className="bg-white text-black absolute rounded-lg shadow-md">
-              <li className="py-2 px-4">
-                <Link href="/">
-                  <span className="hover:text-blue-500">Inicio</span>
-                </Link>
-              </li>
-              <li className="py-2 px-4">
-                <Link href="/aplicaciones">
-                  <span className="hover:text-blue-500">Aplicaciones</span>
-                </Link>
-              </li>
-              <li className="py-2 px-4">
-                <Link href="/aprende">
-                  <span className="hover:text-blue-500">Aprende</span>
-                </Link>
-              </li>
-              <li className="mr-3" onClick={handleThemeToggle}>
-                <span className="flex py-1">
-                  {theme === "light" ? <FiMoon /> : <FiSun />}
-                </span>
-              </li>
-            </ul>
-          </div> */}
         </nav>
       </div>
     </header>
