@@ -41,8 +41,8 @@ The available applications are:
 | Dark / Light Mode                | ...         |          | Junior      | ⭐⭐       | [Live](https://symphonious-piroshki-ca71c2.netlify.app)   |
 | Key Counter                      | ...         |          | Junior      | ⭐⭐       | [Live](https://resplendent-elf-6a61c1.netlify.app)        |
 | Step Indicator                   | ...         |          | Junior      | ⭐⭐       | [Live](https://benevolent-gnome-e33a30.netlify.app)       |
-| Decimal-Binary Converter         | ...         | Image    | Junior      | ⭐⭐       | [Live](https://tubular-brioche-5a2bbf.netlify.app)        |
-| Sortable List With Drag And Drop | ...         | Image    | Junior      | ⭐⭐       | [Live](https://astounding-chimera-95f2bf.netlify.app)     |
+| Decimal-Binary Converter         | ...         | ...      | Junior      | ⭐⭐       | [Live](https://tubular-brioche-5a2bbf.netlify.app)        |
+| Sortable List With Drag And Drop | ...         | ...      | Junior      | ⭐⭐       | [Live](https://astounding-chimera-95f2bf.netlify.app)     |
 | Image Slider                     | ...         |          | Junior      | ⭐⭐       | [Live](https://superb-heliotrope-a182fc.netlify.app/)     |
 | Countdown Timer                  | ...         |          | Junior      | ⭐⭐       | [Live](https://melodic-cendol-1ddcb3.netlify.app)         |
 | Todo List                        | ...         |          | Junior      | ⭐⭐       | [Live](https://meek-souffle-785242.netlify.app)           |
