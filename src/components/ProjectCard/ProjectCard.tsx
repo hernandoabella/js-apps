@@ -149,7 +149,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {showCode && (
-        <div className="md:w-1/2 px-4 bg-slate-300 dark-bg-slate-800 dark-text-slate-50">
+        <div className="md:w-1/2 px-4 h-full bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
           <h3 className="text-lg py-4 flex items-center justify-between gap-1">
             <div className="flex gap-2 items-center">
               <i
@@ -169,7 +169,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
           </h3>
 
-          <div className="h-36 overflow-y-auto bg-slate-200 dark:bg-slate-700 dark:text-slate-300">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark:text-slate-300">
             <pre className="p-2">
               <code
                 className="html"
@@ -198,7 +198,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
           </h3>
 
-          <div className="h-36 overflow-y-auto bg-slate-200 dark-bg-slate-700 dark-text-slate-300">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark-text-slate-300">
             <pre className="p-2">
               <code
                 className="css"
@@ -230,7 +230,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
           </h3>
 
-          <div className="h-36 overflow-y-auto bg-slate-200 dark-bg-slate-700 dark-text-slate-300">
+          <div className="h-36 overflow-y-auto bg-slate-200 dark-text-slate-300">
             <pre className="p-2">
               <code
                 className="javascript"
