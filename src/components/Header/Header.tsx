@@ -44,6 +44,11 @@ const Header: React.FC = () => {
 
         <nav>
           <ul className="md:flex flex justify-center items-center">
+          <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+              <Link href="/apps">
+                Apps
+              </Link>
+            </li>
             <li className="mr-3" onClick={handleThemeToggle}>
               <span className="text-sky-500 dark:text-sky-400 cursor-pointer">
                 {theme === "light" ? (
