@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage1 from "../../../public/hero-image-1.jpg";
-import heroImage2 from "../../../public/hero-image-2.jpg";
-import heroImage3 from "../../../public/hero-image-3.jpg";
+
 
 const Hero: React.FC = () => {
   const [counter, setCounter] = useState(0);
   const [heroImages, setHeroImages] = useState([
-    heroImage1,
-    heroImage2,
-    heroImage3,
+    
   ]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
