@@ -19,10 +19,8 @@ export const projectsData = [
   //     // Código JavaScript del proyecto Redimensionador de texto
   //   `,
   {
-    name: "app name",
-    description:
-      "text",
-    category: "Texto",
+    name: "Text Resizer",
+    description: "text",
     difficulty: 1,
     downloadLink: "https://www.github.com/",
     githubLink: "https://github.com/hernandoabella/redimensionador-de-texto",
