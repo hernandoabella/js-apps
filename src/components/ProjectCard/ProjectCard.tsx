@@ -100,9 +100,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className={showCode ? "md:w-1/2" : "w-full"}>
         <div className="h-96">
           <div className="flex justify-between relative">
-            <div className="bg-slate-300 text-slate-500 dark:bg-slate-800 text-center p-2 dark:text-yellow-400 gap-2 flex absolute">
-              {generateStars(difficulty)}
-            </div>
             <div
               className="expand-icon absolute right-2 top-2"
               onClick={toggleFullScreen}
@@ -124,6 +121,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
           </p>
+          <div className="bg-slate-300 text-slate-500 dark:bg-slate-800 text-center p-2 dark:text-yellow-400 gap-2 flex">
+              {generateStars(difficulty)}
+            </div>
           <div className="flex flex-col md:flex-row w-full text-center gap-4">
             <a
               href={downloadLink}
