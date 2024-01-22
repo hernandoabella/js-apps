@@ -16,9 +16,9 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Featured />
-      <Testimonials />
-      <Faq />
+      {/* <Featured /> */}
+      {/* <Testimonials /> */}
+      {/* <Faq /> */}
       <Cta />
       <Footer />
     </div>
