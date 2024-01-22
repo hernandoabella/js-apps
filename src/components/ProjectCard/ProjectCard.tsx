@@ -116,7 +116,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             title={name}
           ></iframe>
         </div>
-        <div className="p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700">
+        <div className="p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700 bg0g">
           <h2 className="font-bold text-2xl mb-4">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
