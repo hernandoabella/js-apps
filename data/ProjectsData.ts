@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     name: "Text Resizer",
-    description: "text",
+    description: "...",
     difficulty: 1,
     downloadLink: "https://www.github.com/",
     githubLink: "https://github.com/hernandoabella/redimensionador-de-texto",
