@@ -149,7 +149,7 @@ The available applications are:
 | Snake Game                       | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://effervescent-souffle-601d53.netlify.app)   |
 | Concentration Game               | ...         | ...      | Senior      | ⭐⭐⭐⭐   | [Live](https://unrivaled-kleicha-1e2d10.netlify.app)      |
 | Tenis Table                      | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://profound-liger-bf4a3e.netlify.app)         |
-| Cheess                           | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app)       |
+| Chess                           | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app)       |
 | Tetris                           | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://bespoke-dolphin-382735.netlify.app)        |
 | Brick Breaker Game               | ...         | ...      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://steady-trifle-4dffeb.netlify.app)          |
 
