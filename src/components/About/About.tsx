@@ -6,14 +6,14 @@ const About = () => {
     <div className="p-8 md:p-20 dark:bg-slate-900 dark:text-white">
       <div className="text-center lg:text-left">
         <h2 className="text-base text-center text-sky-600 dark:text-sky-400 font-semibold tracking-wide uppercase mb-5">
-          Acerca de JS-APPS
+          About JS-APPS
         </h2>
         <h3 className="text-4xl font-bold mb-5 text-center text-slate-900 dark:text-white">
-          Desafía tu habilidad como desarrollador de JavaScript
+          Challenge your skills as a JavaScript developer
         </h3>
         <p className="mt-5 text-base text-slate-600 dark:text-slate-400 text-center">
-          JS-APPS proporciona proyectos de JavaScript para que puedas desafiarte
-          a ti mismo y convertirte en un mejor desarrollador.
+          We provide JavaScript projects so you can challenge yourself and
+          become a better developer.
         </p>
       </div>
       <div className="flex flex-col items-center justify-center mt-10 md:flex-row">
@@ -26,11 +26,10 @@ const About = () => {
             className="mb-5"
           />
           <h4 className="text-2xl font-bold m-3 text-center">
-            Aprende Haciendo
+          Learn by Doing
           </h4>
           <p className="text-slate-600 dark:text-slate-400 text-center">
-            Construye muchos proyectos pequeños y medianos para mejorar tus
-            habilidades.
+          Build many small and medium projects to level up.
           </p>
         </div>
         <div className="flex flex-col items-center w-full p-4">
