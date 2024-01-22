@@ -121,7 +121,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
           </p>
-          <div className="bg-slate-300 text-slate-500 dark:bg-slate-800 text-center p-2 dark:text-yellow-400 gap-2 flex">
+          <div className="mb-4  text-slate-500  text-center dark:text-yellow-400 gap-5 flex">
               {generateStars(difficulty)}
             </div>
           <div className="flex flex-col md:flex-row w-full text-center gap-4">
