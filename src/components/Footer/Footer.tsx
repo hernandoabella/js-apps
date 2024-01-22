@@ -7,7 +7,7 @@ function Footer() {
     <footer>
       <div className="flex justify-between items-center p-10 md:px-20 dark:text-white dark:bg-slate-900">
         <p className="text-sm">
-          &copy; 2023 JS-APPS by{" "}
+          &copy; 2024 JS-APPS by{" "}
           <Link href={"https://www.x.com/hernandoabella"} target="_blank">
             <b>Hernando Abella</b>
           </Link>
