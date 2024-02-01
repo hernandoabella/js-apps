@@ -5,7 +5,7 @@ import Projects from "../components/Projects/Projects";
 const AplicacionesPage = () => {
   return (
     <>
-      <div className="p-8 fixed w-full z-10 shadow-xl">
+      <div className="p-10 dark:bg-slate-900">
         <div className="flex justify-items-center items-center center place-content-center
 ">
           <a
