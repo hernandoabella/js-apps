@@ -36,7 +36,7 @@ The available applications are:
 | Expanding Search Bar             | ...         | ...      | Entry Level | ⭐         | [Live](https://spiffy-brioche-4c4560.netlify.app)         |
 | OTP Authentication               | ...         | ...      | Entry Level | ⭐         | [Live](https://lustrous-beignet-a24a47.netlify.app)       |
 | Detect Key                       | ...         | ...      | Entry Level | ⭐         | [Live](https://celebrated-taffy-b65b13.netlify.app)       |
-| Follower Counter                 | ...         | ...      | Entry Level | ⭐         | [Live](https://shiny-salamander-0dc42e.netlify.app)       |
+| Follower Counter                 | ...         | ...      | Entry Level | ⭐         | [Live](https://clever-snickerdoodle-b8c39d.netlify.app/)       |
 | Date Calculator                  | ...         |          | Junior      | ⭐⭐       | [Live](https://charming-rabanadas-51a703.netlify.app)     |
 | Dark / Light Mode                | ...         |          | Junior      | ⭐⭐       | [Live](https://symphonious-piroshki-ca71c2.netlify.app)   |
 | Key Counter                      | ...         |          | Junior      | ⭐⭐       | [Live](https://resplendent-elf-6a61c1.netlify.app)        |
