@@ -1,4 +1,4 @@
-# JS-APPS
+![logo](https://github.com/hernandoabella/js-apps/assets/24196857/d1397e9e-1074-48eb-9342-a917f8fbe352)
 
 **Enhance your JavaScript skills with our collection of apps!**
 
