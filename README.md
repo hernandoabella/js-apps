@@ -38,7 +38,7 @@ The available applications are:
 | Detect Key                       | ...         | ...      | Entry Level | ⭐         | [Live](https://celebrated-taffy-b65b13.netlify.app)       |
 | Follower Counter                 | ...         | ...      | Entry Level | ⭐         | [Live](https://clever-snickerdoodle-b8c39d.netlify.app/)       |
 | Date Calculator                  | ...         |          | Junior      | ⭐⭐       | [Live](https://charming-rabanadas-51a703.netlify.app)     |
-| Dark / Light Mode                | ...         |          | Junior      | ⭐⭐       | [Live](https://symphonious-piroshki-ca71c2.netlify.app)   |
+| Theme Switcher                   | ...         |          | Junior      | ⭐⭐       | [Live](https://symphonious-piroshki-ca71c2.netlify.app)   |
 | Key Counter                      | ...         |          | Junior      | ⭐⭐       | [Live](https://resplendent-elf-6a61c1.netlify.app)        |
 | Step Indicator                   | ...         |          | Junior      | ⭐⭐       | [Live](https://benevolent-gnome-e33a30.netlify.app)       |
 | Decimal-Binary Converter         | ...         | ...      | Junior      | ⭐⭐       | [Live](https://tubular-brioche-5a2bbf.netlify.app)        |
