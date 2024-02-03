@@ -133,7 +133,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               <FaDownload className="mr-2" /> Download
             </a>
-            <button
+            {/* <button
               className={`${
                 showCode
                   ? "bg-slate-600 hover-bg-slate-500"
@@ -143,7 +143,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               {showCode ? <FaCode className="mr-2" /> : null}
               {showCode ? "Hide Source Code" : "Show Source Code"}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
