@@ -122,8 +122,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {description}
           </p>
           <div className="mb-4  text-slate-500  text-center dark:text-yellow-400 gap-5 flex">
-              {generateStars(difficulty)}
-            </div>
+            {generateStars(difficulty)}
+          </div>
           <div className="flex flex-col md:flex-row w-full text-center gap-4">
             <a
               href={downloadLink}
@@ -133,7 +133,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               <FaDownload className="mr-2" /> Download
             </a>
-            {/* <button
+            <button
               className={`${
                 showCode
                   ? "bg-slate-600 hover-bg-slate-500"
@@ -143,13 +143,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               {showCode ? <FaCode className="mr-2" /> : null}
               {showCode ? "Hide Source Code" : "Show Source Code"}
-            </button> */}
+            </button>
           </div>
         </div>
       </div>
 
       {showCode && (
-        <div className="md:w-1/2 px-4 h-full bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
+        <div className="md:w-1/2 px-4 h-97 bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
           <h3 className="text-lg py-4 flex items-center justify-between gap-1">
             <div className="flex gap-2 items-center">
               <i
