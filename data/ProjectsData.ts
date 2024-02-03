@@ -306,4 +306,26 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Follower Counter",
+    description: "...",
+    difficulty: 1,
+    downloadLink:
+      "https://www.github.com/hernandoabella/follower-counter/archive/refs/heads/main.zip",
+    demoLink: "https://clever-snickerdoodle-b8c39d.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Follower Counter",
+    description: "...",
+    difficulty: 1,
+    downloadLink:
+      "https://www.github.com/hernandoabella/follower-counter/archive/refs/heads/main.zip",
+    demoLink: "https://clever-snickerdoodle-b8c39d.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
