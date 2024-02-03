@@ -142,7 +142,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               onClick={toggleCode}
             >
               {showCode ? <FaCode className="mr-2" /> : null}
-              {showCode ? "Hide Source Code" : "Show Source Code"}
+              {showCode ? "Hide Code" : "Show Code"}
             </button>
           </div>
         </div>
