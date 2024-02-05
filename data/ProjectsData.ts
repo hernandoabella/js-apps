@@ -603,4 +603,15 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Tip Calculator	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/tip-calculator/archive/refs/heads/main.zip",
+    demoLink: "https://super-clafoutis-e39fb3.netlify.app",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
