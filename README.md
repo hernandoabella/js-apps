@@ -62,7 +62,7 @@ The available applications are:
 | Form Validation                  | ...         | ...      | Junior      | ⭐⭐       | [Live](https://inquisitive-ganache-d85029.netlify.app)    |
 | Percentage Calculator            | ...         | ...      | Junior      | ⭐⭐       | [Live](https://delightful-salmiakki-6a9f1a.netlify.app)   |
 | Love Calculator                  | ...         | ...      | Junior      | ⭐⭐       | [Live](https://resplendent-fenglisu-02a5f7.netlify.app)   |
-| Tip Calculator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://resplendent-fenglisu-02a5f7.netlify.app)   |
+| Tip Calculator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://super-clafoutis-e39fb3.netlify.app/)   |
 | Analog Clock                     | ...         | ...      | Junior      | ⭐⭐       | [Live](https://resplendent-fenglisu-02a5f7.netlify.app)   |
 | Customize The Parrot             | ...         | ...      | Junior      | ⭐⭐       | [Live](https://resplendent-fenglisu-02a5f7.netlify.app)   |
 | Halloween Party                  | ...         | ...      | Junior      | ⭐⭐       | [Live](https://keen-duckanoo-b9f982.netlify.app)          |
