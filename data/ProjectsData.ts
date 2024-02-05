@@ -604,12 +604,23 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Tip Calculator	",
+    name: "Analog Clock	",
     description: "...",
     difficulty: 2,
     downloadLink:
-      "https://www.github.com/hernandoabella/tip-calculator/archive/refs/heads/main.zip",
-    demoLink: "https://super-clafoutis-e39fb3.netlify.app",
+      "https://www.github.com/hernandoabella/analog-clock/archive/refs/heads/main.zip",
+    demoLink: "https://mellow-frangipane-965914.netlify.app",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Analog Clock	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/analog-clock/archive/refs/heads/main.zip",
+    demoLink: "https://mellow-frangipane-965914.netlify.app",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
