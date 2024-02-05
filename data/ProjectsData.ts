@@ -526,4 +526,26 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Calendar	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/ibm-calculator/archive/refs/heads/main.zip",
+    demoLink: "https://remarkable-macaron-98cbe2.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Product Counter",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/product-counter/archive/refs/heads/main.zip",
+    demoLink: "https://dazzling-banoffee-acfe6e.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
