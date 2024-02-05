@@ -560,12 +560,45 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Email Validation	",
+    name: "Form Validation",
     description: "...",
     difficulty: 2,
     downloadLink:
-      "https://www.github.com/hernandoabella/email-validation/archive/refs/heads/main.zip",
-    demoLink: "https://merry-cajeta-6bc82d.netlify.app/",
+      "https://www.github.com/hernandoabella/form-validation/archive/refs/heads/main.zip",
+    demoLink: "https://inquisitive-ganache-d85029.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Percentage Calculator	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/percentage-calculator/archive/refs/heads/main.zip",
+    demoLink: "https://delightful-salmiakki-6a9f1a.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Love Calculator	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/love-calculator/archive/refs/heads/main.zip",
+    demoLink: "https://resplendent-fenglisu-02a5f7.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Tip Calculator	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/tip-calculator/archive/refs/heads/main.zip",
+    demoLink: "https://super-clafoutis-e39fb3.netlify.app",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
