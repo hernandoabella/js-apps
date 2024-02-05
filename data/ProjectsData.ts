@@ -439,12 +439,34 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Weight Converter",
+    name: "Browser Detector",
     description: "...",
     difficulty: 2,
     downloadLink:
-      "https://www.github.com/hernandoabella/weight-converter/archive/refs/heads/main.zip",
-    demoLink: "https://chic-khapse-13d3fe.netlify.app/",
+      "https://www.github.com/hernandoabella/browser-detector/archive/refs/heads/main.zip",
+    demoLink: "https://reliable-pithivier-640794.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Calculator",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/calculator/archive/refs/heads/main.zip",
+    demoLink: "https://roaring-speculoos-9b2532.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Age Calculator",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/age-calculator/archive/refs/heads/main.zip",
+    demoLink: "https://roaring-speculoos-9b2532.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
