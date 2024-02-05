@@ -466,7 +466,62 @@ export const projectsData = [
     difficulty: 2,
     downloadLink:
       "https://www.github.com/hernandoabella/age-calculator/archive/refs/heads/main.zip",
-    demoLink: "https://roaring-speculoos-9b2532.netlify.app/",
+    demoLink: "https://cool-dodol-d5b2cc.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Digital Clock	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/digital-clock/archive/refs/heads/main.zip",
+    demoLink: "https://ubiquitous-klepon-29f6bc.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Stop Watch",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/stop-watch/archive/refs/heads/main.zip",
+    demoLink: "https://venerable-halva-38027d.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Joke Generator",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/joke-generator/archive/refs/heads/main.zip",
+    demoLink: "https://chic-douhua-da8067.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Fibonacci Generator",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/fibonacci-generator/archive/refs/heads/main.zip",
+    demoLink: "https://frolicking-gingersnap-81eb24.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "IBM Calculator	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/ibm-calculator/archive/refs/heads/main.zip",
+    demoLink: "https://monumental-dodol-f022b2.netlify.app",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
