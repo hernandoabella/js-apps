@@ -427,4 +427,26 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Weight Converter",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/weight-converter/archive/refs/heads/main.zip",
+    demoLink: "https://chic-khapse-13d3fe.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Weight Converter",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/weight-converter/archive/refs/heads/main.zip",
+    demoLink: "https://chic-khapse-13d3fe.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
