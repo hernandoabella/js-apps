@@ -73,7 +73,7 @@ The available applications are:
 | Coin Flip                        | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gilded-syrniki-b834d6.netlify.app)         |
 | Height Converter                 | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gilded-syrniki-b834d6.netlify.app)         |
 | Drag And Drop                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://heroic-swan-76e763.netlify.app)            |
-| Accordion Menu                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://cheerful-muffin-886995.netlify.app)        |
+| Accordion                        | ...         | ...      | Junior      | ⭐⭐       | [Live](https://cheerful-muffin-886995.netlify.app)        |
 | Show / Hide Password             | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gorgeous-mandazi-c9fb8b.netlify.app)       |
 | KeyCode Event                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://elegant-starlight-518463.netlify.app)      |
 | Billionaires Table               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sunny-cajeta-5dd982.netlify.app)           |
