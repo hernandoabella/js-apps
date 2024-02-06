@@ -10,7 +10,7 @@ const Projects = () => {
     <section className="dark:text-white dark:bg-slate-900">
       <div className="">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="py-5 px-5 md:px-20 md:py-5">
+          <div key={index} className="py-5 px-5 md:px-20 md:py-40">
             <ProjectCard
               name={project.name || ""}
               description={project.description || ""}
