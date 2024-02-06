@@ -691,4 +691,26 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Drag And Drop",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/drag-and-drop/archive/refs/heads/main.zip",
+    demoLink: "https://heroic-swan-76e763.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Drag And Drop",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/drag-and-drop/archive/refs/heads/main.zip",
+    demoLink: "https://heroic-swan-76e763.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
