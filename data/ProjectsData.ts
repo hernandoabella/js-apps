@@ -615,12 +615,23 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Analog Clock	",
+    name: "Customize The Parrot",
     description: "...",
     difficulty: 2,
     downloadLink:
-      "https://www.github.com/hernandoabella/analog-clock/archive/refs/heads/main.zip",
-    demoLink: "https://mellow-frangipane-965914.netlify.app",
+      "https://www.github.com/hernandoabella/customize-the-parrot/archive/refs/heads/main.zip",
+    demoLink: "https://gleeful-khapse-2bd1d3.netlify.app",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Halloween Party	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/halloween-party/archive/refs/heads/main.zip",
+    demoLink: "https://keen-duckanoo-b9f982.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
