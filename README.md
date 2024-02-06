@@ -83,7 +83,7 @@ The available applications are:
 | BMI Calculator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://celebrated-kashata-440d51.netlify.app)     |
 | Lorem Ipsum Generator            | ...         | ...      | Junior      | ⭐⭐       | [Live](https://unique-scone-74ef39.netlify.app)           |
 | Typing Effect                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-maamoul-f1cc93.netlify.app)       |
-| Read More / Less Button          | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-maamoul-f1cc93.netlify.app)       |
+| Read More / Less Button          | ...         | ...      | Junior      | ⭐⭐       | [Live](https://leafy-cassata-bfdd45.netlify.app)          |
 | Hexadecimal Clock                | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sweet-cuchufli-a3b3e9.netlify.app)         |
 | Palindrome Checker               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sweet-cuchufli-a3b3e9.netlify.app)         |
 | Live User Filter                 | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://gleeful-kangaroo-54fa72.netlify.app)       |
