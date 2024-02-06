@@ -670,12 +670,23 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Meaning Of Your Name",
+    name: "Coin Flip",
     description: "...",
     difficulty: 2,
     downloadLink:
-      "https://www.github.com/hernandoabella/meaning-of-your-name/archive/refs/heads/main.zip",
-    demoLink: "https://silly-fox-ccdfe8.netlify.app/",
+      "https://www.github.com/hernandoabella/coin-flip/archive/refs/heads/main.zip",
+    demoLink: "https://gilded-syrniki-b834d6.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Height Converter",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/height-converter/archive/refs/heads/main.zip",
+    demoLink: "https://tangerine-palmier-3c8427.netlify.app",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
