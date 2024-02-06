@@ -98,7 +98,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="shadow-lg flex md:flex-row flex-col">
       <div className={showCode ? "md:w-1/2" : "w-full"}>
-        <div className="h-full">
+        <div className="h-97 md:h-full">
           <div className="flex justify-between relative">
             <div
               className="expand-icon absolute right-2 top-2"
@@ -230,7 +230,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </CopyToClipboard>
           </h3>
 
-          <div className="h-36 overflow-y-auto bg-slate-200 dark-text-slate-300">
+          <div className="h-36 mb-4 overflow-y-auto bg-slate-200 dark-text-slate-300">
             <pre className="p-2">
               <code
                 className="javascript"
