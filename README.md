@@ -25,6 +25,7 @@ The available applications are:
 | Random Number Generator          | ...         | ...      | Entry Level | ⭐         | [Live](https://lucent-semifreddo-6bce96.netlify.app)      |
 | Color Generator                  | ...         | ...      | Entry Level | ⭐         | [Live](https://timely-bienenstitch-7158d3.netlify.app)    |
 | Counter                          | ...         | ...      | Entry Level | ⭐         | [Live](https://incredible-boba-57ba5d.netlify.app/)       |
+| Up Counter                       | ...         | ...      | Junior      | ⭐         | [Live](https://lovely-pavlova-2ac548.netlify.app)         |
 | Text Resizer                     | ...         | ...      | Entry Level | ⭐         | [Live](https://effulgent-pasca-40a1c9.netlify.app/)       |
 | Play Sound Onclick               | ...         | ...      | Entry Level | ⭐         | [Live](https://ephemeral-cheesecake-015964.netlify.app/)       |
 | Change Background Color          | ...         | ...      | Entry Level | ⭐         | [Live](https://prismatic-seahorse-3f7a5c.netlify.app)     |
@@ -55,7 +56,6 @@ The available applications are:
 | Stop Watch                       | ...         | ...      | Junior      | ⭐⭐       | [Live](https://venerable-halva-38027d.netlify.app)        |
 | Joke Generator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://chic-douhua-da8067.netlify.app)            |
 | Fibonacci Generator              | ...         | ...      | Junior      | ⭐⭐       | [Live](https://frolicking-gingersnap-81eb24.netlify.app)  |
-| IBM Calculator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://frolicking-gingersnap-81eb24.netlify.app)  |
 | Calendar                         | ...         | ...      | Junior      | ⭐⭐       | [Live](https://remarkable-macaron-98cbe2.netlify.app)     |
 | Product Counter                  | ...         | ...      | Junior      | ⭐⭐       | [Live](https://dazzling-banoffee-acfe6e.netlify.app)      |
 | Email Validation                 | ...         | ...      | Junior      | ⭐⭐       | [Live](https://merry-cajeta-6bc82d.netlify.app)           |
@@ -72,20 +72,18 @@ The available applications are:
 | Coin Flip                        | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gilded-syrniki-b834d6.netlify.app)         |
 | Height Converter                 | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gilded-syrniki-b834d6.netlify.app)         |
 | Drag And Drop                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://heroic-swan-76e763.netlify.app)            |
-| Accordion Menu                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://cheerful-muffin-886995.netlify.app)        |
-| Up Counter                       | ...         | ...      | Junior      | ⭐⭐       | [Live](https://lovely-pavlova-2ac548.netlify.app)         |
+| Accordion                        | ...         | ...      | Junior      | ⭐⭐       | [Live](https://cheerful-muffin-886995.netlify.app)        |
 | Show / Hide Password             | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gorgeous-mandazi-c9fb8b.netlify.app)       |
-| KeyCode Event                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://elegant-starlight-518463.netlify.app)      |
 | Billionaires Table               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sunny-cajeta-5dd982.netlify.app)           |
 | Pet Finder                       | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sparkly-gecko-315dcf.netlify.app)          |
 | Image Finder                     | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-sopapillas-eb83a2.netlify.app)    |
-| Currency Converter               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://exquisite-maamoul-2036ef.netlify.app)      |
+| Exchange Rate Calculator         | ...         | ...      | Junior      | ⭐⭐       | [Live](https://exquisite-maamoul-2036ef.netlify.app)      |
 | Loan Calculator                  | ...         | ...      | Junior      | ⭐⭐       | [Live](https://heroic-salamander-1c20f4.netlify.app)      |
-| Draggable Contaienr              | ...         | ...      | Junior      | ⭐⭐       | [Live](https://lustrous-bubblegum-d531c4.netlify.app)     |
+| Draggable Container              | ...         | ...      | Junior      | ⭐⭐       | [Live](https://lustrous-bubblegum-d531c4.netlify.app)     |
 | BMI Calculator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://celebrated-kashata-440d51.netlify.app)     |
 | Lorem Ipsum Generator            | ...         | ...      | Junior      | ⭐⭐       | [Live](https://unique-scone-74ef39.netlify.app)           |
 | Typing Effect                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-maamoul-f1cc93.netlify.app)       |
-| Read More / Less Button          | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-maamoul-f1cc93.netlify.app)       |
+| Read More / Less Button          | ...         | ...      | Junior      | ⭐⭐       | [Live](https://leafy-cassata-bfdd45.netlify.app)          |
 | Hexadecimal Clock                | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sweet-cuchufli-a3b3e9.netlify.app)         |
 | Palindrome Checker               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sweet-cuchufli-a3b3e9.netlify.app)         |
 | Live User Filter                 | ...         | ...      | Mid         | ⭐⭐⭐     | [Live](https://gleeful-kangaroo-54fa72.netlify.app)       |
