@@ -25,6 +25,7 @@ The available applications are:
 | Random Number Generator          | ...         | ...      | Entry Level | ⭐         | [Live](https://lucent-semifreddo-6bce96.netlify.app)      |
 | Color Generator                  | ...         | ...      | Entry Level | ⭐         | [Live](https://timely-bienenstitch-7158d3.netlify.app)    |
 | Counter                          | ...         | ...      | Entry Level | ⭐         | [Live](https://incredible-boba-57ba5d.netlify.app/)       |
+| Up Counter                       | ...         | ...      | Junior      | ⭐⭐       | [Live](https://lovely-pavlova-2ac548.netlify.app)         |
 | Text Resizer                     | ...         | ...      | Entry Level | ⭐         | [Live](https://effulgent-pasca-40a1c9.netlify.app/)       |
 | Play Sound Onclick               | ...         | ...      | Entry Level | ⭐         | [Live](https://ephemeral-cheesecake-015964.netlify.app/)       |
 | Change Background Color          | ...         | ...      | Entry Level | ⭐         | [Live](https://prismatic-seahorse-3f7a5c.netlify.app)     |
@@ -73,7 +74,6 @@ The available applications are:
 | Height Converter                 | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gilded-syrniki-b834d6.netlify.app)         |
 | Drag And Drop                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://heroic-swan-76e763.netlify.app)            |
 | Accordion Menu                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://cheerful-muffin-886995.netlify.app)        |
-| Up Counter                       | ...         | ...      | Junior      | ⭐⭐       | [Live](https://lovely-pavlova-2ac548.netlify.app)         |
 | Show / Hide Password             | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gorgeous-mandazi-c9fb8b.netlify.app)       |
 | KeyCode Event                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://elegant-starlight-518463.netlify.app)      |
 | Billionaires Table               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sunny-cajeta-5dd982.netlify.app)           |
