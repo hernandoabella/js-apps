@@ -647,4 +647,37 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "New Year Counter",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/new-year-counter/archive/refs/heads/main.zip",
+    demoLink: "https://sprightly-cactus-3fbf33.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Meaning Of Your Name",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/meaning-of-your-name/archive/refs/heads/main.zip",
+    demoLink: "https://silly-fox-ccdfe8.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Meaning Of Your Name",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/meaning-of-your-name/archive/refs/heads/main.zip",
+    demoLink: "https://silly-fox-ccdfe8.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
