@@ -186,6 +186,17 @@ export const projectsData = [
     jsCode: ``,
   },
   {
+    name: "Up Counter",
+    description: "...",
+    difficulty: 1,
+    downloadLink:
+      "https://www.github.com/hernandoabella/up-counter/archive/refs/heads/main.zip",
+    demoLink: "https://lovely-pavlova-2ac548.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
     name: "Text Resizer",
     description: "...",
     difficulty: 1,
@@ -703,14 +714,15 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Drag And Drop",
+    name: "Accordion Menu",
     description: "...",
     difficulty: 2,
     downloadLink:
-      "https://www.github.com/hernandoabella/drag-and-drop/archive/refs/heads/main.zip",
-    demoLink: "https://heroic-swan-76e763.netlify.app/",
+      "https://www.github.com/hernandoabella/accordion-menu/archive/refs/heads/main.zip",
+    demoLink: "https://cheerful-muffin-886995.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
   },
+  
 ];
