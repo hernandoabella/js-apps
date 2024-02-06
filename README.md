@@ -75,7 +75,6 @@ The available applications are:
 | Drag And Drop                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://heroic-swan-76e763.netlify.app)            |
 | Accordion                        | ...         | ...      | Junior      | ⭐⭐       | [Live](https://cheerful-muffin-886995.netlify.app)        |
 | Show / Hide Password             | ...         | ...      | Junior      | ⭐⭐       | [Live](https://gorgeous-mandazi-c9fb8b.netlify.app)       |
-| KeyCode Event                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://elegant-starlight-518463.netlify.app)      |
 | Billionaires Table               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sunny-cajeta-5dd982.netlify.app)           |
 | Pet Finder                       | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sparkly-gecko-315dcf.netlify.app)          |
 | Image Finder                     | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-sopapillas-eb83a2.netlify.app)    |
