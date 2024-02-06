@@ -78,7 +78,7 @@ The available applications are:
 | Billionaires Table               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sunny-cajeta-5dd982.netlify.app)           |
 | Pet Finder                       | ...         | ...      | Junior      | ⭐⭐       | [Live](https://sparkly-gecko-315dcf.netlify.app)          |
 | Image Finder                     | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-sopapillas-eb83a2.netlify.app)    |
-| Currency Converter               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://exquisite-maamoul-2036ef.netlify.app)      |
+| Exchange Rate Calculator         | ...         | ...      | Junior      | ⭐⭐       | [Live](https://exquisite-maamoul-2036ef.netlify.app)      |
 | Loan Calculator                  | ...         | ...      | Junior      | ⭐⭐       | [Live](https://heroic-salamander-1c20f4.netlify.app)      |
 | Draggable Container              | ...         | ...      | Junior      | ⭐⭐       | [Live](https://lustrous-bubblegum-d531c4.netlify.app)     |
 | BMI Calculator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://celebrated-kashata-440d51.netlify.app)     |
