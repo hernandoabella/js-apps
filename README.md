@@ -56,7 +56,6 @@ The available applications are:
 | Stop Watch                       | ...         | ...      | Junior      | ⭐⭐       | [Live](https://venerable-halva-38027d.netlify.app)        |
 | Joke Generator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://chic-douhua-da8067.netlify.app)            |
 | Fibonacci Generator              | ...         | ...      | Junior      | ⭐⭐       | [Live](https://frolicking-gingersnap-81eb24.netlify.app)  |
-| IBM Calculator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://frolicking-gingersnap-81eb24.netlify.app)  |
 | Calendar                         | ...         | ...      | Junior      | ⭐⭐       | [Live](https://remarkable-macaron-98cbe2.netlify.app)     |
 | Product Counter                  | ...         | ...      | Junior      | ⭐⭐       | [Live](https://dazzling-banoffee-acfe6e.netlify.app)      |
 | Email Validation                 | ...         | ...      | Junior      | ⭐⭐       | [Live](https://merry-cajeta-6bc82d.netlify.app)           |
