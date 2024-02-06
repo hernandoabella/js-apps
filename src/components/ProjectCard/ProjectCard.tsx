@@ -98,7 +98,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="shadow-lg flex md:flex-row flex-col">
       <div className={showCode ? "md:w-1/2" : "w-full"}>
-        <div className="h-96">
+        <div className="h-full">
           <div className="flex justify-between relative">
             <div
               className="expand-icon absolute right-2 top-2"
@@ -149,7 +149,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {showCode && (
-        <div className="md:w-1/2 px-4 h-97 bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
+        <div className="md:w-1/2 px-4 h-full bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
           <h3 className="text-lg py-4 flex items-center justify-between gap-1">
             <div className="flex gap-2 items-center">
               <i
