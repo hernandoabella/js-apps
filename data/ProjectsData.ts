@@ -626,12 +626,23 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Halloween Party	",
+    name: "Halloween Party",
     description: "...",
     difficulty: 2,
     downloadLink:
       "https://www.github.com/hernandoabella/halloween-party/archive/refs/heads/main.zip",
     demoLink: "https://keen-duckanoo-b9f982.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Weather App",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/weather-app/archive/refs/heads/main.zip",
+    demoLink: "https://heartfelt-caramel-695b45.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
