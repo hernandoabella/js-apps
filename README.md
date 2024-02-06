@@ -80,7 +80,7 @@ The available applications are:
 | Image Finder                     | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-sopapillas-eb83a2.netlify.app)    |
 | Currency Converter               | ...         | ...      | Junior      | ⭐⭐       | [Live](https://exquisite-maamoul-2036ef.netlify.app)      |
 | Loan Calculator                  | ...         | ...      | Junior      | ⭐⭐       | [Live](https://heroic-salamander-1c20f4.netlify.app)      |
-| Draggable Contaienr              | ...         | ...      | Junior      | ⭐⭐       | [Live](https://lustrous-bubblegum-d531c4.netlify.app)     |
+| Draggable Container              | ...         | ...      | Junior      | ⭐⭐       | [Live](https://lustrous-bubblegum-d531c4.netlify.app)     |
 | BMI Calculator                   | ...         | ...      | Junior      | ⭐⭐       | [Live](https://celebrated-kashata-440d51.netlify.app)     |
 | Lorem Ipsum Generator            | ...         | ...      | Junior      | ⭐⭐       | [Live](https://unique-scone-74ef39.netlify.app)           |
 | Typing Effect                    | ...         | ...      | Junior      | ⭐⭐       | [Live](https://luminous-maamoul-f1cc93.netlify.app)       |
