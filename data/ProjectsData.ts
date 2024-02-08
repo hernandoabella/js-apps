@@ -1121,12 +1121,23 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Recipes App	",
+    name: "Password Validation	",
     description: "...",
     difficulty: 3,
     downloadLink:
-      "https://www.github.com/hernandoabella/recipes-app/archive/refs/heads/main.zip",
-    demoLink: "https://monumental-otter-7b41c9.netlify.app/",
+      "https://www.github.com/hernandoabella/password-validation/archive/refs/heads/main.zip",
+    demoLink: "https://superlative-cupcake-2a9bd7.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Github Profile Generator",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/github-profile-generator/archive/refs/heads/main.zip",
+    demoLink: "https://adorable-custard-09481a.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
