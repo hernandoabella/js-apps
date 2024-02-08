@@ -889,4 +889,26 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Mouse Position	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/mouse-position/archive/refs/heads/main.zip",
+    demoLink: "https://vermillion-panda-1b032b.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Mouse Position	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/mouse-position/archive/refs/heads/main.zip",
+    demoLink: "https://vermillion-panda-1b032b.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
