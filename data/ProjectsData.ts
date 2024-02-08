@@ -856,4 +856,15 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Palindrome Checker	",
+    description: "...",
+    difficulty: 2,
+    downloadLink:
+      "https://www.github.com/hernandoabella/palindrome-checker/archive/refs/heads/main.zip",
+    demoLink: "https://harmonious-profiterole-a02ea6.netlify.app",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
