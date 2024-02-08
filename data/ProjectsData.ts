@@ -857,12 +857,34 @@ export const projectsData = [
     jsCode: ``,
   },
   {
-    name: "Palindrome Checker	",
+    name: "Live User Filter",
     description: "...",
-    difficulty: 2,
+    difficulty: 3,
     downloadLink:
-      "https://www.github.com/hernandoabella/palindrome-checker/archive/refs/heads/main.zip",
-    demoLink: "https://harmonious-profiterole-a02ea6.netlify.app",
+      "https://www.github.com/hernandoabella/live-user-filter/archive/refs/heads/main.zip",
+    demoLink: "https://gleeful-kangaroo-54fa72.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Expense Tracker",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/expense-tracker/archive/refs/heads/main.zip",
+    demoLink: "https://deluxe-biscotti-cf7d72.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Animal Generator",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/animal-generator/archive/refs/heads/main.zip",
+    demoLink: "https://monumental-crostata-6757f4.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
