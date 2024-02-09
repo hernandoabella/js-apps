@@ -1247,7 +1247,18 @@ export const projectsData = [
     difficulty: 3,
     downloadLink:
       "https://www.github.com/hernandoabella/audio-visualizer/archive/refs/heads/main.zip",
-    demoLink: "https://merry-cassata-7cae39.netlify.app/",
+    demoLink: "https://starlit-rolypoly-6197fe.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Color Contrast Generator	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/color-contrast-generator/archive/refs/heads/main.zip",
+    demoLink: "https://endearing-selkie-58973a.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
     jsCode: ``,
