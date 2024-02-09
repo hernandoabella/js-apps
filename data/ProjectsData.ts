@@ -1142,4 +1142,37 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Shopping Cart",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/shopping-cart/archive/refs/heads/main.zip",
+    demoLink: "https://sensational-salamander-cf3425.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Drum Kit",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/drum-kit/archive/refs/heads/main.zip",
+    demoLink: "https://dashing-yeot-f69ea3.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "MP3 Player	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/mp3-player/archive/refs/heads/main.zip",
+    demoLink: "https://dashing-yeot-f69ea3.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
