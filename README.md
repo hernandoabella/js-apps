@@ -170,4 +170,4 @@ This project is under the [MIT License](./LICENSE.md). Please read the license f
 If you have any questions or comments about this project, you can contact me at:
 
 - **Email:** hernandoabella@gmail.com
-- **Twitter:** [@hernandoabella](https://twitter.com/hernandoabella)
+- **X:** [@hernandoabella](https://twitter.com/hernandoabella)
