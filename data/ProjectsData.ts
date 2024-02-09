@@ -1263,4 +1263,70 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
+  {
+    name: "Chatbot	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/chatbot/archive/refs/heads/main.zip",
+    demoLink: "https://stirring-sopapillas-c0c8a9.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Guess The Number	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/guess-the-number/archive/refs/heads/main.zip",
+    demoLink: "https://dynamic-empanada-7e232f.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Guess The Color	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/guess-the-color/archive/refs/heads/main.zip",
+    demoLink: "https://profound-valkyrie-179f94.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Guess The Word	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/guess-the-word/archive/refs/heads/main.zip",
+    demoLink: "https://keen-mousse-cca4ea.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Rock Paper Scissors",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/rock-paper-scissors/archive/refs/heads/main.zip",
+    demoLink: "https://loquacious-paletas-2bfd28.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
+  {
+    name: "Math Trainer	",
+    description: "...",
+    difficulty: 3,
+    downloadLink:
+      "https://www.github.com/hernandoabella/math-trainer/archive/refs/heads/main.zip",
+    demoLink: "https://effulgent-bombolone-bde7e9.netlify.app/",
+    htmlCode: ``,
+    cssCode: ``,
+    jsCode: ``,
+  },
 ];
