@@ -1,6 +1,6 @@
 ![logo](https://github.com/hernandoabella/js-apps/assets/24196857/d1397e9e-1074-48eb-9342-a917f8fbe352)
 
-**Enhance your JavaScript skills with our collection of apps!**
+**Top JavaScript Projects to enhance your skills with our collection of apps!**
 
 Explore a variety of JavaScript applications across five difficulty levels. Practice and progress from beginner to expert, refining your programming abilities. Enjoy structured practice, skill improvement, and problem-solving opportunities tailored to your skill level.
 
