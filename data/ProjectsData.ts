@@ -1389,7 +1389,7 @@ export const projectsData = [
     description: "...",
     difficulty: 4,
     downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+      "https://www.github.com/hernandoabella/hangman-game/archive/refs/heads/main.zip",
     demoLink: "https://willowy-semolina-6fa82a.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
@@ -1400,7 +1400,7 @@ export const projectsData = [
     description: "...",
     difficulty: 4,
     downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+      "https://www.github.com/hernandoabella/tic-tac-toe/archive/refs/heads/main.zip",
     demoLink: "https://dreamy-treacle-14c1b6.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
@@ -1411,7 +1411,7 @@ export const projectsData = [
     description: "...",
     difficulty: 4,
     downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+      "https://www.github.com/hernandoabella/catch-the-emoji/archive/refs/heads/main.zip",
     demoLink: "https://tangerine-starship-960b72.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
@@ -1422,7 +1422,7 @@ export const projectsData = [
     description: "...",
     difficulty: 4,
     downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+      "https://www.github.com/hernandoabella/2048-game/archive/refs/heads/main.zip",
     demoLink: "https://storied-malabi-1ab6c4.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
@@ -1433,7 +1433,7 @@ export const projectsData = [
     description: "...",
     difficulty: 4,
     downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+      "https://www.github.com/hernandoabella/space-invaders/archive/refs/heads/main.zip",
     demoLink: "https://gregarious-jalebi-369f4f.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
@@ -1444,7 +1444,7 @@ export const projectsData = [
     description: "...",
     difficulty: 4,
     downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+      "https://www.github.com/hernandoabella/whack-the-mole/archive/refs/heads/main.zip",
     demoLink: "https://dulcet-sawine-04216d.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
@@ -1455,7 +1455,7 @@ export const projectsData = [
     description: "...",
     difficulty: 4,
     downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+      "https://www.github.com/hernandoabella/snake-game/archive/refs/heads/main.zip",
     demoLink: "https://effervescent-souffle-601d53.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
@@ -1466,7 +1466,7 @@ export const projectsData = [
     description: "...",
     difficulty: 4,
     downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+      "https://www.github.com/hernandoabella/concentration-game/archive/refs/heads/main.zip",
     demoLink: "https://unrivaled-kleicha-1e2d10.netlify.app/",
     htmlCode: ``,
     cssCode: ``,
