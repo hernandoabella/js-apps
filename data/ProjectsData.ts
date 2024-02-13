@@ -6,9 +6,147 @@ export const projectsData = [
     downloadLink:
       "https://www.github.com/hernandoabella/random-number-generator/archive/refs/heads/main.zip",
     demoLink: "https://lucent-semifreddo-6bce96.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
+    htmlCode: `<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Random Number Generator</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+      <div class="container">
+        <div class="output" id="output"></div>
+        <div class="form-group-container">
+          <div class="form-group">
+            <label for="start">Start</label>
+            <input type="number" id="start" name="start" min="0" value="0">
+          </div>
+          <div class="form-group">
+            <label for="end">End</label>
+            <input type="number" id="end" name="end" min="0" value="100">
+          </div>
+        </div>
+    
+        <button class="generate-btn" id="generate-btn">Generate Random Number</button>
+      </div>
+    
+      <script src="script.js"></script>
+    </body>
+    
+    </html>`,
+    cssCode: `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    body {
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .container {
+      background-color: #fff;
+      border-radius: 25px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      width: 300px;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    
+    .form-group-container {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .form-group label {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .form-group input {
+      padding: 10px;
+      border-radius: 12px;
+      font-size: 1.3em;
+      width: 117px;
+    }
+    
+    .output {
+      margin-bottom: 30px;
+      font-size: 3em;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    .generate-btn {
+      padding: 10px;
+      font-size: 1.3em;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      transition: background-color 0.3s;
+      width: 100%;
+    }
+    
+    .generate-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    .animated {
+      animation: animation 1s;
+    }
+    
+    @keyframes animation {
+      0% {
+        color: #007bff;
+      }
+    }`,
+    jsCode: `document.addEventListener('DOMContentLoaded', function () {
+      const output = document.getElementById('output');
+      const generateBtn = document.getElementById('generate-btn');
+    
+      // Generate a default random number when the page loads
+      generateRandomNumber();
+    
+      generateBtn.addEventListener('click', generateRandomNumber);
+    
+      function generateRandomNumber() {
+        const startInput = document.getElementById('start');
+        const endInput = document.getElementById('end');
+    
+        const start = parseInt(startInput.value);
+        const end = parseInt(endInput.value);
+    
+        if (isNaN(start) || isNaN(end) || start >= end) {
+          output.textContent = "Please enter valid start and end values.";
+          return;
+        }
+    
+        const randomNumber = Math.floor(Math.random() * (end - start + 1)) + start;
+        output.textContent = randomNumber;
+    
+        // Apply animation effect on generating a new number
+        output.classList.add('animated');
+        setTimeout(() => {
+          output.classList.remove('animated');
+        }, 500);
+      }
+    });`,
   },
   {
     name: "Color Generator",
