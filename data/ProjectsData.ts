@@ -155,9 +155,146 @@ export const projectsData = [
     downloadLink:
       "https://www.github.com/hernandoabella/color-generator/archive/refs/heads/main.zip",
     demoLink: "https://timely-bienenstitch-7158d3.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
+    htmlCode: `<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Color Generator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div id="color-box" class="color-box"></div>
+            <div class="color-info">
+                <div id="color-code" class="color-code">#442A71</div>
+                <button id="copy-btn">Copy</button>
+            </div>
+            <button id="generate-btn">Generate Color</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    
+    </html>`,
+    cssCode: `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    .container {
+        background-color: #fff;
+        border-radius: 25px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        width: 300px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    
+    .color-box {
+        width: 100%;
+        height: 290px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 100%;
+        transition: .3s;
+        background: #442A71;
+    }
+    
+    .color-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .color-code {
+        margin-right: 10px;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    #copy-btn {
+        padding: 10px;
+        font-size: 1.3em;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    
+    #copy-btn:hover {
+        background-color: #0056b3;
+    }
+    
+    #generate-btn {
+        padding: 10px;
+        font-size: 1.3em;
+        cursor: pointer;
+        background-color: #6624D9;
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+    
+    #generate-btn:hover {
+        background-color: #d240f2;
+    }`,
+    jsCode: `document.addEventListener('DOMContentLoaded', function () {
+      const colorBox = document.getElementById('color-box');
+      const colorCode = document.getElementById('color-code');
+      const generateBtn = document.getElementById('generate-btn');
+      const copyBtn = document.getElementById('copy-btn');
+  
+      generateBtn.addEventListener('click', generateRandomColor);
+      copyBtn.addEventListener('click', copyColorCode);
+  
+      function generateRandomColor() {
+          const randomColor = getRandomColor();
+          updateColor(randomColor);
+      }
+  
+      function getRandomColor() {
+          const letters = '0123456789ABCDEF';
+          let color = '#';
+          for (let i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+      }
+  
+      function updateColor(color) {
+          colorBox.style.backgroundColor = color;
+          colorCode.textContent = color;
+      }
+  
+      function copyColorCode() {
+          const copyText = document.createElement('textarea');
+          copyText.value = colorCode.textContent;
+          document.body.appendChild(copyText);
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          document.execCommand('copy');
+          document.body.removeChild(copyText);
+          colorCode.textContent = "Copied!";
+          setTimeout(() => {
+              colorCode.textContent = copyText.value;
+          }, 2000);
+      }
+  });`,
   },
   {
     name: "Counter",
