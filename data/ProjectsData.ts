@@ -150,7 +150,7 @@ export const projectsData = [
   },
   {
     name: "Color Generator",
-    description: "...",
+    description: "Generate a random color with its hexadecimal code.",
     difficulty: 1,
     downloadLink:
       "https://www.github.com/hernandoabella/color-generator/archive/refs/heads/main.zip",
