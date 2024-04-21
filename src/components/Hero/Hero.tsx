@@ -9,10 +9,10 @@ const Hero: React.FC = () => {
         <div className="lg:w-1/2 lg:flex lg:items-center">
           <div>
             <div className="text-sm rounded text-gray-800 bg-gray-100 border border-gray-200 font-medium inline-flex px-2 py-1 leading-4 mb-2 dark:text-gray-200 dark:bg-gray-700/50 dark:border-gray-600/50">
-              v2.0 Latest Version
+              v1.1 Latest Version
             </div>
             <h1 className="text-4xl font-black text-black mb-4 dark:text-white">
-              Discover 200+
+              Discover 300+
               <span className="text-sky-400 dark:text-sky-400">
                 {" "}
                 JavaScript
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
               Apps for Coding Practice
             </h1>
             <h2 className="text-xl leading-relaxed font-medium text-gray-700 dark:text-gray-300">
-              Get inspired and create outstanding JavaScript applications!
+              Get inspired and create outstanding applications!
             </h2>
             <div className="flex flex-col sm:flex-row sm:items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-2 pt-10 pb-16">
               <Link
