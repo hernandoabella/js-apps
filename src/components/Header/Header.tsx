@@ -44,9 +44,31 @@ const Header: React.FC = () => {
 
         <nav>
           <ul className="md:flex flex justify-center items-center">
-          <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+              <Link href="/">
+
+                Princing
+              </Link>
+            </li>
+            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+              <Link href="/">
+
+                Success Stories
+              </Link>
+            </li>
+            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+              <Link href="/">
+                Contact
+              </Link>
+            </li>
+            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
               <Link href="/apps">
                 Apps
+              </Link>
+            </li>
+            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+              <Link href="/">
+                Sign in
               </Link>
             </li>
             <li className="mr-3" onClick={handleThemeToggle}>
@@ -66,6 +88,7 @@ const Header: React.FC = () => {
                 <FaGithub className="hover:text-gray-600 w-5 h-5" />
               </Link>
             </li>
+
           </ul>
         </nav>
       </div>
