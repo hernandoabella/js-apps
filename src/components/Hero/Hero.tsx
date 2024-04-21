@@ -36,16 +36,16 @@ const Hero: React.FC = () => {
         <div className="lg:w-1/2 lg:ml-16 lg:flex lg:justify-center lg:items-center">
           <div className="relative mx-5 lg:w-96">
             <div className="absolute top-0 left-0 w-40 h-40 lg:w-72 lg:h-72 bg-tranparent border border-blue-200 rounded-full -mt-16 -ml-20 dark:border-blue-900"></div>
-            <div className="absolute top-0 left-0 w-40 h-40 lg:w-72 lg:h-72 bg-tranparent border border-blue-100 rounded-full -mt-20 -ml-14 dark:border-blue-950"></div>
+            {/* <div className="absolute top-0 left-0 w-40 h-40 lg:w-72 lg:h-72 bg-tranparent border border-blue-100 rounded-full -mt-20 -ml-14 dark:border-blue-950"></div>
             <div className="absolute bottom-0 right-0 w-40 h-40 lg:w-72 lg:h-72 bg-tranparent border border-blue-200 rounded-full -mb-16 -mr-20 dark:border-blue-900"></div>
             <div className="absolute bottom-0 right-0 w-40 h-40 lg:w-72 lg:h-72 bg-tranparent border border-blue-100 rounded-full -mb-20 -mr-14 dark:border-blue-950"></div>
             <div className="absolute inset-0 rounded-xl -m-6 -rotate-2 bg-gray-200 dark:bg-gray-800"></div>
-            <div className="absolute inset-0 rounded-xl -m-6 rotate-1 bg-blue-800 bg-opacity-75 shadow-inner dark:bg-blue-900 dark:bg-opacity-75"></div>
+            <div className="absolute inset-0 rounded-xl -m-6 rotate-1 bg-gray-300 bg-opacity-75 shadow-inner dark:bg-blue-900 dark:bg-opacity-75"></div> */}
             <Image
               width={400}
               height={400}
               src="/apps.webp"
-              className="relative rounded-lg mx-auto shadow-lg"
+              className="relative rounded-lg mx-auto"
               alt="Hero Image"
             />
           </div>
