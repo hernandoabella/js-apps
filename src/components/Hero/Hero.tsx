@@ -13,11 +13,12 @@ const Hero: React.FC = () => {
             </div>
             <h1 className="text-4xl font-black text-black mb-4 dark:text-white">
               Discover 300+
+              <br />
               <span className="text-sky-400 dark:text-sky-400">
                 {" "}
                 JavaScript
               </span>{" "}
-              Apps for Coding Practice
+              Apps <br />for Coding Practice
             </h1>
             <h2 className="text-xl leading-relaxed font-medium text-gray-700 dark:text-gray-300">
               Get inspired and create outstanding applications!
