@@ -46,7 +46,11 @@ const Header: React.FC = () => {
           <ul className="md:flex flex justify-center items-center">
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
               <Link href="/">
-
+                Why JS-APPS?
+              </Link>
+            </li>
+            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
+              <Link href="/">
                 Princing
               </Link>
             </li>
@@ -56,11 +60,7 @@ const Header: React.FC = () => {
                 Success Stories
               </Link>
             </li>
-            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/">
-                Contact
-              </Link>
-            </li>
+
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
               <Link href="/apps">
                 Apps
@@ -69,6 +69,11 @@ const Header: React.FC = () => {
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
               <Link href="/">
                 Sign in
+              </Link>
+            </li>
+            <li className="bg-blue-500 text-white rounded-full p-2 mr-6 text-slate-400">
+              <Link href="/">
+                Contact
               </Link>
             </li>
             <li className="mr-3" onClick={handleThemeToggle}>
