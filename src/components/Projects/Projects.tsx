@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <section className="dark:text-white dark:bg-slate-900 w-full">
-      <div className="grid">
+      <div className="p-20 grid grid-cols-[repeat(auto-fill,minmax(294px,1fr))] gap-y-20 gap-x-14 content-stretch items-stretch w-full mb-200">
         {filteredProjects.map((project, index) => (
           <div key={index}>
             <ProjectCard
