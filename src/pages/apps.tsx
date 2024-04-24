@@ -6,7 +6,7 @@ const AplicacionesPage = () => {
   return (
     <>
       <div className="p-10 dark:bg-slate-900">
-        <div className="flex justify-items-center items-center center place-content-center
+        <div className="flex fixed right-5 top-5 justify-items-center items-center center place-content-center
 ">
           <a
             href="https://hernandoabella.gumroad.com/l/hoocc"
