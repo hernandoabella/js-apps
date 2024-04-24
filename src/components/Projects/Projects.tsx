@@ -8,9 +8,9 @@ const Projects = () => {
 
   return (
     <section className="dark:text-white dark:bg-slate-900">
-      <div className="">
+      <div className="flex mx-auto">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="py-5 px-5 md:px-20 md:py-40">
+          <div key={index} className="py-5 px-5">
             <ProjectCard
               name={project.name || ""}
               description={project.description || ""}
