@@ -97,15 +97,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div className="shadow-lg flex md:flex-row flex-col">
-      <div className={showCode ? "md:w-1/2" : "w-full"}>
+      <div className={"w-full"}>
         <div className="h-97 md:h-full">
           <div className="flex justify-between relative">
-            <div
+            {/* <div
               className="expand-icon absolute right-2 top-2"
               onClick={toggleFullScreen}
             >
               <FaExpand className="cursor-pointer" />
-            </div>
+            </div> */}
           </div>
           <iframe
             id={`${name}-iframe`}
@@ -148,7 +148,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
       </div>
 
-      {showCode && (
+      {/* {showCode && (
         <div className="md:w-1/2 px-4 h-full bg-slate-300 dark:bg-slate-800 dark:text-slate-50">
           <h3 className="text-lg py-4 flex items-center justify-between gap-1">
             <div className="flex gap-2 items-center">
@@ -241,7 +241,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </pre>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
