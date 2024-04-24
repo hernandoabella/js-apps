@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaDownload, FaStar, FaCode } from "react-icons/fa";
+import { FaDownload, FaStar, FaCode, FaExpand } from "react-icons/fa";
 import hljs from "highlight.js";
 import "highlight.js/styles/atom-one-dark.css";
 
@@ -77,42 +77,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="shadow-lg w-full">
+    <div className="200gap">
       <div>
-        <div className="h-97 md:h-full ">
+        <div className="rounded-lg">
           <div className="flex justify-between relative ">
-            {/* <div
+            <div
               className="expand-icon absolute right-2 top-2"
               onClick={toggleFullScreen}
             >
               <FaExpand className="cursor-pointer" />
-            </div> */}
+            </div>
           </div>
           <iframe
             id={`${name}-iframe`}
             src={demoLink}
-            className="w-full h-96"
+            className="w-full h-60 rounded-xl"
             title={name}
           ></iframe>
-          <div className="relative p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700 bg0g">
-            <h2 className="font-bold text-2xl mb-4">{name}</h2>
-            <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
-              {description}
-            </p>
-            <div className="mb-4  text-slate-500  dark:text-yellow-400 gap-2 flex">
-              {generateStars(difficulty)}
-            </div>
-            <div className="flex flex-col md:flex-row w-full text-center gap-4">
-              <button type="button"
-                // href={downloadLink}
-                className="md:mr-2 flex-1 bg-blue-600 hover-bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
-                // target="_blank"
-                // rel="noopener noreferrer"
-                disabled>
-                <FaDownload className="mr-2" />
-              </button>
-            </div>
-          </div>
+          {/*  */}
         </div>
       </div>
 
