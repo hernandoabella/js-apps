@@ -80,20 +80,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     setShowCode(!showCode);
   };
 
-  const handleCopyHTML = () => {
-    setCopiedHTML(true);
-    setTimeout(() => setCopiedHTML(false), 2000);
-  };
 
-  const handleCopyCSS = () => {
-    setCopiedCSS(true);
-    setTimeout(() => setCopiedCSS(false), 2000);
-  };
-
-  const handleCopyJavaScript = () => {
-    setCopiedJavaScript(true);
-    setTimeout(() => setCopiedJavaScript(false), 2000);
-  };
 
   return (
     <div className="shadow-lg flex md:flex-row flex-col">
