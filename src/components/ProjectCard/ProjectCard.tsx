@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { FaDownload, FaStar, FaExpand, FaCopy, FaCode } from "react-icons/fa";
+import { FaDownload, FaStar, FaCode } from "react-icons/fa";
 import hljs from "highlight.js";
 import "highlight.js/styles/atom-one-dark.css";
-import CopyToClipboard from "react-copy-to-clipboard";
 
 interface ProjectCardProps {
   name: string;
@@ -29,15 +28,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   difficulty,
   downloadLink,
   demoLink,
-  htmlCode,
-  cssCode,
-  javascriptCode,
 }) => {
   const [isFullScreen, setFullScreen] = useState(false);
   const [showCode, setShowCode] = useState(true);
-  const [copiedHTML, setCopiedHTML] = useState(false);
-  const [copiedCSS, setCopiedCSS] = useState(false);
-  const [copiedJavaScript, setCopiedJavaScript] = useState(false);
+  // const [copiedHTML, setCopiedHTML] = useState(false);
+  // const [copiedCSS, setCopiedCSS] = useState(false);
+  // const [copiedJavaScript, setCopiedJavaScript] = useState(false);
 
   useEffect(() => {
     // Highlight.js initialization
@@ -80,8 +76,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     setShowCode(!showCode);
   };
 
-
-
   return (
     <div className="shadow-lg flex md:flex-row flex-col">
       <div className={"w-full"}>
@@ -103,7 +97,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             title={name}
           ></iframe>
         </div>
-        <div className="p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700 bg0g">
+        <div className="relative p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700 bg0g">
           <h2 className="font-bold text-2xl mb-4">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
@@ -120,7 +114,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               <FaDownload className="mr-2" /> Download
             </a>
-            {/* <button
+            <button
               className={`${
                 showCode
                   ? "bg-slate-600 hover-bg-slate-500"
@@ -130,7 +124,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               {showCode ? <FaCode className="mr-2" /> : null}
               {showCode ? "Hide Code" : "Show Code"}
-            </button> */}
+            </button>
           </div>
         </div>
       </div>
