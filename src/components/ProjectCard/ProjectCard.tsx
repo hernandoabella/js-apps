@@ -91,13 +91,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <iframe
             id={`${name}-iframe`}
             src={demoLink}
-            className={`w-full h-full select-none ${
-              isFullScreen ? "fullscreen" : ""
-            }`}
+            className="w-full h-96"
             title={name}
           ></iframe>
-        </div>
-        <div className="relative p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700 bg0g">
+           <div className="relative p-8 flex flex-col justify-between bg-slate-200 dark:bg-slate-700 bg0g">
           <h2 className="font-bold text-2xl mb-4">{name}</h2>
           <p className="text-justify mb-6 text-slate-400 dark-text-slate-400">
             {description}
@@ -106,15 +103,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {generateStars(difficulty)}
           </div>
           <div className="flex flex-col md:flex-row w-full text-center gap-4">
-            <a
-              href={downloadLink}
+            <button type="button"
+              // href={downloadLink}
               className="md:mr-2 flex-1 bg-blue-600 hover-bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center transition duration-300"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              // target="_blank"
+              // rel="noopener noreferrer"
+            disabled>
               <FaDownload className="mr-2" /> Download
-            </a>
+            </button>
           </div>
+        </div>
         </div>
       </div>
 
