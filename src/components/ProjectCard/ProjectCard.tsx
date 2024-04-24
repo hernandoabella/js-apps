@@ -77,10 +77,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="shadow-lg flex md:flex-row flex-col">
-      <div className={"w-full"}>
-        <div className="h-97 md:h-full">
-          <div className="flex justify-between relative">
+    <div className="shadow-lg w-full">
+      <div>
+        <div className="h-97 md:h-full ">
+          <div className="flex justify-between relative ">
             {/* <div
               className="expand-icon absolute right-2 top-2"
               onClick={toggleFullScreen}
@@ -114,17 +114,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             >
               <FaDownload className="mr-2" /> Download
             </a>
-            <button
-              className={`${
-                showCode
-                  ? "bg-slate-600 hover-bg-slate-500"
-                  : "bg-slate-600 hover-bg-slate-500"
-              } flex-1 text-white rounded-lg p-4 flex items-center justify-center transition duration-300`}
-              onClick={toggleCode}
-            >
-              {showCode ? <FaCode className="mr-2" /> : null}
-              {showCode ? "Hide Code" : "Show Code"}
-            </button>
           </div>
         </div>
       </div>
