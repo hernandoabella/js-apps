@@ -7,10 +7,10 @@ const Projects = () => {
   const filteredProjects = projectsData;
 
   return (
-    <section className="dark:text-white dark:bg-slate-900">
-      <div className="flex mx-auto mx-20">
+    <section className="dark:text-white dark:bg-slate-900 w-full">
+      <div className="grid">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="py-5 px-5">
+          <div key={index}>
             <ProjectCard
               name={project.name || ""}
               description={project.description || ""}
