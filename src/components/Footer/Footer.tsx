@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { FaCoffee } from "react-icons/fa";
 
 function Footer() {
   return (
