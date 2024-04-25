@@ -50,22 +50,16 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/">
+              <Link href="/Plans">
                 Pricing
               </Link>
             </li>
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/">
-
+              <Link href="/Sucess-stories">
                 Success Stories
               </Link>
             </li>
 
-            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/apps">
-                Apps
-              </Link>
-            </li>
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
               <Link href="/">
                 Sign in
