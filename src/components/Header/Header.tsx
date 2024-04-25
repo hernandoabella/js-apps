@@ -45,28 +45,23 @@ const Header: React.FC = () => {
         <nav>
           <ul className="md:flex flex justify-center items-center">
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/">
+              <Link href="/why-us">
                 Why JS-APPS?
               </Link>
             </li>
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/Plans">
+              <Link href="/pricing">
                 Pricing
-              </Link>
-            </li>
-            <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/Sucess-stories">
-                Success Stories
               </Link>
             </li>
 
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/">
+              <Link href="/login">
                 Sign in
               </Link>
             </li>
             <li className="bg-blue-500 text-white rounded-full p-2 mr-6 text-slate-400">
-              <Link href="/">
+              <Link href="/contact">
                 Contact
               </Link>
             </li>
