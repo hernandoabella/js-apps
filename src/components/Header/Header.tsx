@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 
 import dynamic from "next/dynamic";
+import { useUser } from '@auth0/nextjs-auth0/client';
 
 const Header: React.FC = () => {
   const { theme, setTheme } = useTheme();
@@ -25,6 +26,20 @@ const Header: React.FC = () => {
   useEffect(() => {
     localStorage.setItem("theme", theme ?? "light");
   }, [theme]);
+
+  const {user, error, isLoading} = useUser();
+
+  if(isLoading) return <div>Loading...</div>;
+  if(error) return <div>{error.message}</div>;
+
+  if(user) {
+    console.log(user);
+    return (
+      <div>
+        Wellcome {user.name}! <a href="/api/auth/logout">Logout</a>
+      </div>
+    );
+  }
 
   return (
     <header className="dark:bg-slate-900 dark:text-white">
@@ -56,7 +71,7 @@ const Header: React.FC = () => {
             </li>
 
             <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-              <Link href="/login">
+              <Link href="/api/auth/login">
                 Sign in
               </Link>
             </li>
