@@ -472,17 +472,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Key Counter",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/key-counter/archive/refs/heads/main.zip",
-    demoLink: "https://resplendent-elf-6a61c1.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Key Counter",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/key-counter/archive/refs/heads/main.zip",
+  //   demoLink: "https://resplendent-elf-6a61c1.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Step Indicator",
     description: "...",
@@ -560,17 +560,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Weight Converter",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/weight-converter/archive/refs/heads/main.zip",
-    demoLink: "https://chic-khapse-13d3fe.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Weight Converter",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/weight-converter/archive/refs/heads/main.zip",
+  //   demoLink: "https://chic-khapse-13d3fe.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Browser Detector",
     description: "...",
@@ -703,28 +703,28 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Percentage Calculator	",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/percentage-calculator/archive/refs/heads/main.zip",
-    demoLink: "https://delightful-salmiakki-6a9f1a.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
-  {
-    name: "Love Calculator	",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/love-calculator/archive/refs/heads/main.zip",
-    demoLink: "https://resplendent-fenglisu-02a5f7.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Percentage Calculator	",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/percentage-calculator/archive/refs/heads/main.zip",
+  //   demoLink: "https://delightful-salmiakki-6a9f1a.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
+  // {
+  //   name: "Love Calculator	",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/love-calculator/archive/refs/heads/main.zip",
+  //   demoLink: "https://resplendent-fenglisu-02a5f7.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Tip Calculator	",
     description: "...",
@@ -857,17 +857,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Billionaires Table",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/billionaries-table/archive/refs/heads/main.zip",
-    demoLink: "https://sunny-cajeta-5dd982.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Billionaires Table",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/billionaries-table/archive/refs/heads/main.zip",
+  //   demoLink: "https://sunny-cajeta-5dd982.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Pet Finder",
     description: "...",
@@ -1022,17 +1022,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Bookmarker App",
-    description: "...",
-    difficulty: 3,
-    downloadLink:
-      "https://www.github.com/hernandoabella/bookmarker-app/archive/refs/heads/main.zip",
-    demoLink: "https://sweet-croquembouche-9befda.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Bookmarker App",
+  //   description: "...",
+  //   difficulty: 3,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/bookmarker-app/archive/refs/heads/main.zip",
+  //   demoLink: "https://sweet-croquembouche-9befda.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Password Strength With Image",
     description: "...",
@@ -1165,17 +1165,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Music Player	",
-    description: "...",
-    difficulty: 3,
-    downloadLink:
-      "https://www.github.com/hernandoabella/music-player/archive/refs/heads/main.zip",
-    demoLink: "https://cosmic-pothos-f4f82a.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Music Player	",
+  //   description: "...",
+  //   difficulty: 3,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/music-player/archive/refs/heads/main.zip",
+  //   demoLink: "https://cosmic-pothos-f4f82a.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Spinning Roulette",
     description: "...",
@@ -1231,17 +1231,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Recipes App	",
-    description: "...",
-    difficulty: 3,
-    downloadLink:
-      "https://www.github.com/hernandoabella/recipes-app/archive/refs/heads/main.zip",
-    demoLink: "https://monumental-otter-7b41c9.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Recipes App	",
+  //   description: "...",
+  //   difficulty: 3,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/recipes-app/archive/refs/heads/main.zip",
+  //   demoLink: "https://monumental-otter-7b41c9.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Password Validation	",
     description: "...",
@@ -1264,17 +1264,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Shopping Cart",
-    description: "...",
-    difficulty: 3,
-    downloadLink:
-      "https://www.github.com/hernandoabella/shopping-cart/archive/refs/heads/main.zip",
-    demoLink: "https://sensational-salamander-cf3425.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Shopping Cart",
+  //   description: "...",
+  //   difficulty: 3,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/shopping-cart/archive/refs/heads/main.zip",
+  //   demoLink: "https://sensational-salamander-cf3425.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Drum Kit",
     description: "...",
@@ -1484,28 +1484,28 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Parking Lot App	",
-    description: "...",
-    difficulty: 4,
-    downloadLink:
-      "https://www.github.com/hernandoabella/parking-lot-app/archive/refs/heads/main.zip",
-    demoLink: "https://stalwart-truffle-904655.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
-  {
-    name: "Treasure Game	",
-    description: "...",
-    difficulty: 4,
-    downloadLink:
-      "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
-    demoLink: "https://enchanting-lebkuchen-f72ce9.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Parking Lot App	",
+  //   description: "...",
+  //   difficulty: 4,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/parking-lot-app/archive/refs/heads/main.zip",
+  //   demoLink: "https://stalwart-truffle-904655.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
+  // {
+  //   name: "Treasure Game	",
+  //   description: "...",
+  //   difficulty: 4,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/treasure-game/archive/refs/heads/main.zip",
+  //   demoLink: "https://enchanting-lebkuchen-f72ce9.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Hangman Game	",
     description: "...",
@@ -1539,17 +1539,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "2048 Game	",
-    description: "...",
-    difficulty: 4,
-    downloadLink:
-      "https://www.github.com/hernandoabella/2048-game/archive/refs/heads/main.zip",
-    demoLink: "https://storied-malabi-1ab6c4.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "2048 Game	",
+  //   description: "...",
+  //   difficulty: 4,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/2048-game/archive/refs/heads/main.zip",
+  //   demoLink: "https://storied-malabi-1ab6c4.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Space Invaders	",
     description: "...",
@@ -1605,17 +1605,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Chess	",
-    description: "...",
-    difficulty: 4,
-    downloadLink:
-      "https://www.github.com/hernandoabella/chess/archive/refs/heads/main.zip",
-    demoLink: "https://earnest-beijinho-8a8f4a.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Chess	",
+  //   description: "...",
+  //   difficulty: 4,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/chess/archive/refs/heads/main.zip",
+  //   demoLink: "https://earnest-beijinho-8a8f4a.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Tetris	",
     description: "...",
