@@ -80,7 +80,7 @@ const Accordion = () => {
             onClick={() => handleAccordion(2)}
           >
             <h3 className="dark:text-white">
-              ¿Cómo puedo contribuir a un proyecto?
+              How to contribute?
             </h3>
             <span
               className={
