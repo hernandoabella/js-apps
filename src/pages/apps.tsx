@@ -5,7 +5,7 @@ import Projects from "../components/Projects/Projects";
 const appPage = () => {
   return (
     <>
-      <div className="p-10 dark:bg-slate-900">
+      {/* <div className="p-10 dark:bg-slate-900">
         <div
           className="flex fixed right-5 top-5 justify-items-center items-center center place-content-center
 "
@@ -23,7 +23,7 @@ const appPage = () => {
             </button>
           </a>
         </div>
-      </div>
+      </div> */}
       <Header />
       <Projects />
       <Footer />
