@@ -879,17 +879,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Image Finder",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/image-finder/archive/refs/heads/main.zip",
-    demoLink: "https://luminous-sopapillas-eb83a2.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Image Finder",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/image-finder/archive/refs/heads/main.zip",
+  //   demoLink: "https://luminous-sopapillas-eb83a2.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Currency Converter",
     description: "...",
@@ -1220,17 +1220,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Weekly Budget	",
-    description: "...",
-    difficulty: 3,
-    downloadLink:
-      "https://www.github.com/hernandoabella/weekly-budget/archive/refs/heads/main.zip",
-    demoLink: "https://glittery-cendol-b90697.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Weekly Budget	",
+  //   description: "...",
+  //   difficulty: 3,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/weekly-budget/archive/refs/heads/main.zip",
+  //   demoLink: "https://glittery-cendol-b90697.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   // {
   //   name: "Recipes App	",
   //   description: "...",
@@ -1319,17 +1319,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Image Generator",
-    description: "...",
-    difficulty: 3,
-    downloadLink:
-      "https://www.github.com/hernandoabella/image-generator/archive/refs/heads/main.zip",
-    demoLink: "https://helpful-hummingbird-e58695.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Image Generator",
+  //   description: "...",
+  //   difficulty: 3,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/image-generator/archive/refs/heads/main.zip",
+  //   demoLink: "https://helpful-hummingbird-e58695.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Food Generator",
     description: "...",
@@ -1363,17 +1363,17 @@ export const projectsData = [
   //   cssCode: ``,
   //   jsCode: ``,
   // },
-  {
-    name: "Audio Visualizer	",
-    description: "...",
-    difficulty: 3,
-    downloadLink:
-      "https://www.github.com/hernandoabella/audio-visualizer/archive/refs/heads/main.zip",
-    demoLink: "https://starlit-rolypoly-6197fe.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Audio Visualizer	",
+  //   description: "...",
+  //   difficulty: 3,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/audio-visualizer/archive/refs/heads/main.zip",
+  //   demoLink: "https://starlit-rolypoly-6197fe.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Color Contrast Generator	",
     description: "...",
@@ -1550,17 +1550,17 @@ export const projectsData = [
   //   cssCode: ``,
   //   jsCode: ``,
   // },
-  {
-    name: "Space Invaders	",
-    description: "...",
-    difficulty: 4,
-    downloadLink:
-      "https://www.github.com/hernandoabella/space-invaders/archive/refs/heads/main.zip",
-    demoLink: "https://gregarious-jalebi-369f4f.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Space Invaders	",
+  //   description: "...",
+  //   difficulty: 4,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/space-invaders/archive/refs/heads/main.zip",
+  //   demoLink: "https://gregarious-jalebi-369f4f.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Whack The Mole",
     description: "...",
