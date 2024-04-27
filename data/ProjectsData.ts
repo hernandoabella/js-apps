@@ -769,17 +769,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Weather App",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/weather-app/archive/refs/heads/main.zip",
-    demoLink: "https://heartfelt-caramel-695b45.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Weather App",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/weather-app/archive/refs/heads/main.zip",
+  //   demoLink: "https://heartfelt-caramel-695b45.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "New Year Counter",
     description: "...",
