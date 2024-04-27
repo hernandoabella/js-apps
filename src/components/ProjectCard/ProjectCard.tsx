@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaDownload, FaStar, FaCode, FaExpand } from "react-icons/fa";
-import hljs from "highlight.js";
-import "highlight.js/styles/atom-one-dark.css";
+// import hljs from "highlight.js";
+// import "highlight.js/styles/atom-one-dark.css";
 
 interface ProjectCardProps {
   name: string;
@@ -35,10 +35,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   // const [copiedCSS, setCopiedCSS] = useState(false);
   // const [copiedJavaScript, setCopiedJavaScript] = useState(false);
 
-  useEffect(() => {
-    // Highlight.js initialization
-    hljs.initHighlightingOnLoad();
-  }, []);
+  // useEffect(() => {
+  //   // Highlight.js initialization
+  //   hljs.initHighlightingOnLoad();
+  // }, []);
 
   const toggleFullScreen = () => {
     if (!isFullScreen) {
