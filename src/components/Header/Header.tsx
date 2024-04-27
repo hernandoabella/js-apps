@@ -3,10 +3,8 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
-
 import dynamic from "next/dynamic";
 import { useUser } from "@auth0/nextjs-auth0/client";
-
 const Header: React.FC = () => {
   const { theme, setTheme } = useTheme();
 
@@ -40,7 +38,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <Link href="/">
               <div className="flex items-center justify-center select-none">
-                <Image src="/logo.png" width={100} height={100} alt={""} />
+                <Image src="/logo.png" width={100} height={100} alt="logo" />
               </div>
             </Link>
           </div>
@@ -48,7 +46,10 @@ const Header: React.FC = () => {
           <nav>
             <ul className="md:flex flex justify-center items-center">
               <li className="mr-6 text-slate-400 hover:text-slate-500 dark:hover:text-slate-300">
-                <Link href="/pricing" className="bg-purple-500 p-5 text-white rounded-xl">
+                <Link
+                  href="/pricing"
+                  className="bg-purple-500 p-5 text-white rounded-xl"
+                >
                   PRO
                 </Link>
               </li>
@@ -58,7 +59,12 @@ const Header: React.FC = () => {
               </li>
 
               <li className="border rounded-xl">
-                <Image src="/test-avatar.png" alt="profilepic" width={60} height={60}/>
+                <Image
+                  src="/test-avatar.png"
+                  alt="profilepic"
+                  width={60}
+                  height={60}
+                />
               </li>
             </ul>
           </nav>
@@ -73,7 +79,12 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link href="/">
             <div className="flex items-center justify-center select-none">
-              <Image src="/logo.png" width={100} height={100} alt={""} />
+              <Image
+                src="/logo.png"
+                width={100}
+                height={100}
+                alt="logo"
+              />
             </div>
           </Link>
         </div>
