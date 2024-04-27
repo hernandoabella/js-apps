@@ -384,17 +384,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Gradient Generator",
-    description: "...",
-    difficulty: 1,
-    downloadLink:
-      "https://www.github.com/hernandoabella/gradient-generator/archive/refs/heads/main.zip",
-    demoLink: "https://candid-torrone-b66209.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Gradient Generator",
+  //   description: "...",
+  //   difficulty: 1,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/gradient-generator/archive/refs/heads/main.zip",
+  //   demoLink: "https://candid-torrone-b66209.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Good Cheap Fast",
     description: "...",
@@ -417,17 +417,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "OTP Authentication",
-    description: "...",
-    difficulty: 1,
-    downloadLink:
-      "https://www.github.com/hernandoabella/otp-authentication/archive/refs/heads/main.zip",
-    demoLink: "https://lustrous-beignet-a24a47.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "OTP Authentication",
+  //   description: "...",
+  //   difficulty: 1,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/otp-authentication/archive/refs/heads/main.zip",
+  //   demoLink: "https://lustrous-beignet-a24a47.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Detect Key",
     description: "...",
@@ -505,17 +505,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Sortable List With Drag And Drop",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/sortable-list-with-drag-and-drop/archive/refs/heads/main.zip",
-    demoLink: "https://astounding-chimera-95f2bf.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Sortable List With Drag And Drop",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/sortable-list-with-drag-and-drop/archive/refs/heads/main.zip",
+  //   demoLink: "https://astounding-chimera-95f2bf.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Image Slider",
     description: "...",
@@ -901,17 +901,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Loan Calculator",
-    description: "...",
-    difficulty: 2,
-    downloadLink:
-      "https://www.github.com/hernandoabella/loan-calculator/archive/refs/heads/main.zip",
-    demoLink: "https://heroic-salamander-1c20f4.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Loan Calculator",
+  //   description: "...",
+  //   difficulty: 2,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/loan-calculator/archive/refs/heads/main.zip",
+  //   demoLink: "https://heroic-salamander-1c20f4.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Draggable Container	",
     description: "...",
@@ -1352,17 +1352,17 @@ export const projectsData = [
     cssCode: ``,
     jsCode: ``,
   },
-  {
-    name: "Piano",
-    description: "...",
-    difficulty: 3,
-    downloadLink:
-      "https://www.github.com/hernandoabella/piano/archive/refs/heads/main.zip",
-    demoLink: "https://merry-cassata-7cae39.netlify.app/",
-    htmlCode: ``,
-    cssCode: ``,
-    jsCode: ``,
-  },
+  // {
+  //   name: "Piano",
+  //   description: "...",
+  //   difficulty: 3,
+  //   downloadLink:
+  //     "https://www.github.com/hernandoabella/piano/archive/refs/heads/main.zip",
+  //   demoLink: "https://merry-cassata-7cae39.netlify.app/",
+  //   htmlCode: ``,
+  //   cssCode: ``,
+  //   jsCode: ``,
+  // },
   {
     name: "Audio Visualizer	",
     description: "...",
