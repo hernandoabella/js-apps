@@ -80,14 +80,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="200gap">
       <div>
         <div className="rounded-lg">
-          <div className="flex justify-between relative ">
+          {/* <div className="flex justify-between relative ">
             <div
               className="expand-icon absolute right-2 top-2"
               onClick={toggleFullScreen}
             >
               <FaExpand className="cursor-pointer" />
             </div>
-          </div>
+          </div> */}
           <iframe
             id={`${name}-iframe`}
             src={demoLink}
