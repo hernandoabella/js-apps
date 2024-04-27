@@ -2,7 +2,6 @@ import React from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import { projectsData } from "../../../data/ProjectsData";
 
-
 const Projects = () => {
   const filteredProjects = projectsData;
 
