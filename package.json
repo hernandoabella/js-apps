@@ -16,6 +16,7 @@
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
     "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "autoprefixer": "10.4.14",
     "dotenv": "^16.4.5",
     "eslint": "8.38.0",
@@ -33,6 +34,5 @@
   },
   "devDependencies": {
     "@types/react-copy-to-clipboard": "^5.0.6"
-
   }
 }
