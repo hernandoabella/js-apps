@@ -1,6 +1,6 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Projects from "../components/Projects/Projects";
+// import Projects from "../components/Projects/Projects";
 
 const appPage = () => {
   return (
@@ -25,7 +25,7 @@ const appPage = () => {
         </div>
       </div> */}
       <Header />
-      <Projects />
+      {/* <Projects /> */}
       <Footer />
     </>
   );
