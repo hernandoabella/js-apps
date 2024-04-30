@@ -5,7 +5,6 @@ import Featured from "../components/Featured/Featured";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Faq from "../components/Faq/Faq";
 import Cta from "../components/Cta/Cta";
-// import Projects from "../components/Projects/Projects";
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
