@@ -3,13 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   async headers() {
     return [
-      // Cache-Control header configuration for different routes
       {
         source: '/apps',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=3600', // Cache content for 1 hour
+            value: 'public, max-age=3600',
           },
         ],
       },
@@ -18,7 +17,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=3600', // Cache content for 1 hour
+            value: 'public, max-age=3600',
           },
         ],
       },
@@ -27,7 +26,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=3600', // Cache content for 1 hour
+            value: 'public, max-age=3600',
           },
         ],
       },
@@ -36,7 +35,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=3600', // Cache content for 1 hour
+            value: 'public, max-age=3600',
           },
         ],
       },
@@ -45,7 +44,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=3600', // Cache content for 1 hour
+            value: 'public, max-age=3600',
           },
         ],
       },
