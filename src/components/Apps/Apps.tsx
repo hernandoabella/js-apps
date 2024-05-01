@@ -1,5 +1,5 @@
 function Apps() {
-  return <div></div>;
+  return <div>this is the app container</div>;
 }
 
 export default Apps;
