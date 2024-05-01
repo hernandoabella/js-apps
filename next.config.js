@@ -31,15 +31,6 @@ const nextConfig = {
         ],
       },
       {
-        source: '/why-us',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=3600',
-          },
-        ],
-      },
-      {
         source: '/pricing',
         headers: [
           {
