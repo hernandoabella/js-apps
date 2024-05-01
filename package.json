@@ -24,6 +24,7 @@
     "framer-motion": "^10.12.7",
     "next": "^14.0.1",
     "next-themes": "^0.2.1",
+    "node-fetch": "^3.3.2",
     "postcss": "^8.4.33",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
