@@ -1,8 +1,13 @@
+const fetch = require('node-fetch'); // Import node-fetch to polyfill the Headers object
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   async headers() {
-    return [
+    const headers = new fetch.Headers(); // Create a new Headers object
+
+    // Add headers for specific routes
+    const routeHeaders = [
       {
         source: '/apps',
         headers: [
@@ -40,6 +45,20 @@ const nextConfig = {
         ],
       },
       // Add more entries for other pages as needed
+    ];
+
+    // Add the routeHeaders to the headers object
+    routeHeaders.forEach(({ source, headers: routeHeaders }) => {
+      routeHeaders.forEach(({ key, value }) => {
+        headers.append(key, value);
+      });
+    });
+
+    return [
+      {
+        source: '/(.*)',
+        headers: [...headers], // Convert Headers object to array
+      },
     ];
   },
 };
