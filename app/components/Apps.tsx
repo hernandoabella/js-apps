@@ -1,5 +1,9 @@
-function Apps() {
-  return <div></div>;
+import React from 'react'
+
+const Apps = () => {
+  return (
+    <div>Apps</div>
+  )
 }
 
-export default Apps;
+export default Apps
