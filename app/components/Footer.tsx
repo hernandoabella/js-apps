@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div>&copy; 2024 JS-APPS by{" "}Hernando Abella</div>
-  )
-}
+    <div className="p-10">
+      <p className="text-center">Hernando Abella</p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
