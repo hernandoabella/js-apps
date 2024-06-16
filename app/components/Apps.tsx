@@ -1,70 +1,43 @@
 import React from "react";
 import Link from "next/link";
+import { FaStar } from "react-icons/fa";
+import { apps, App } from "@/app/appData";
 
-const apps = [
-  {
-    id: 1,
-    name: "App 1",
-    path: "/apps/key-counter",
-    iframeSrc: "https://lucent-semifreddo-6bce96.netlify.app/",
-    level: 1,
-  },
-  {
-    id: 2,
-    name: "App 2",
-    path: "/apps/app2",
-    iframeSrc: "https://lucent-semifreddo-6bce96.netlify.app/",
-    level: 2,
-  },
-  {
-    id: 3,
-    name: "App 3",
-    path: "/apps/app3",
-    iframeSrc: "https://lucent-semifreddo-6bce96.netlify.app/",
-    level: 3,
-  },
-  {
-    id: 4,
-    name: "App 4",
-    path: "/apps/app4",
-    iframeSrc: "https://lucent-semifreddo-6bce96.netlify.app/",
-    level: 4,
-  },
-  {
-    id: 5,
-    name: "App 5",
-    path: "/apps/app5",
-    iframeSrc: "https://lucent-semifreddo-6bce96.netlify.app/",
-    level: 5,
-  },
-];
-
-// Componente para mostrar estrellas según el nivel
-const Stars = ({ level }) => {
-  const stars = Array(level).fill("★");
-  return <span className="text-yellow-500">{stars.join(" ")}</span>;
+const Stars: React.FC<{ level: number }> = ({ level }) => {
+  const stars = Array.from({ length: level }, (_, i) => (
+    <FaStar key={i} className="text-yellow-500" />
+  ));
+  return <span className="flex space-x-1">{stars}</span>;
 };
 
-const Apps = () => {
-  // Agrupar aplicaciones por nivel
-  const appsByLevel = apps.reduce((acc, app) => {
+const levelDescriptions: { [key: number]: string } = {
+  1: "Entry Level: For beginners, covers JavaScript basics.",
+  2: "Junior: Enhance skills with some prior programming experience.",
+  3: "Mid: Intermediate stage, refining skills and learning new concepts.",
+  4: "Senior: Experienced developers seeking a challenge.",
+  5: "Expert: For advanced programmers looking for a greater challenge.",
+};
+
+const Apps: React.FC = () => {
+  const appsByLevel: { [key: number]: App[] } = apps.reduce((acc, app) => {
     if (!acc[app.level]) {
       acc[app.level] = [];
     }
     acc[app.level].push(app);
     return acc;
-  }, {});
+  }, {} as { [key: number]: App[] });
 
   return (
     <div className="p-10">
-      {/* Renderizar las aplicaciones por nivel */}
       {Object.keys(appsByLevel).map((level) => (
         <div key={level} className="mb-10">
-          <h2 className="text-2xl font-bold mb-4 flex items-center">
-            Nivel {level} <Stars level={parseInt(level, 10)} />
+          <h2 className="text-2xl font-bold mb-2 flex items-center">
+            {levelDescriptions[parseInt(level, 10)].split(":")[0]}:{" "}
+            <Stars level={parseInt(level, 10)} />
           </h2>
+          <p className="text-lg mb-4">{levelDescriptions[parseInt(level, 10)].split(":")[1]}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
-            {appsByLevel[level].map((app) => (
+            {appsByLevel[parseInt(level, 10)].map((app) => (
               <div key={app.id} className="relative">
                 <Link href={app.path}>
                   <div
