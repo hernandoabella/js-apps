@@ -17,14 +17,17 @@ const Header = () => {
               </span>
             </a>
             <div className="items-center gap-5 flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <button
-                type="button"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              <a
+                href="hernandoabella.gumroad.com/l/hoocc"
+                className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >
-                Get started
-              </button>
+                Download All Apps
+              </a>
 
-              <a href="https://www.github.com/hernandoabella/js-apps" className="text-3xl text-gray-500 hover:text-gray-400">
+              <a
+                href="https://www.github.com/hernandoabella/js-apps"
+                className="text-3xl text-gray-500 hover:text-gray-400"
+              >
                 <FaGithubAlt />
               </a>
 
