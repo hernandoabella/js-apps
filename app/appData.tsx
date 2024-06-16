@@ -112,4 +112,11 @@ export const apps: App[] = [
     iframeSrc: "https://clever-snickerdoodle-b8c39d.netlify.app/",
     level: 1,
   },
+  {
+    id: 6,
+    name: "App 6",
+    path: "/apps/app5",
+    iframeSrc: "https://lustrous-beignet-a24a47.netlify.app/",
+    level: 1,
+  },
 ];
