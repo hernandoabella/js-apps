@@ -2,7 +2,7 @@
 
 **Top JavaScript Projects to enhance your skills with our collection of apps!**
 
-Explore a variety of JavaScript applications across five difficulty levels. Practice and progress from beginner to expert, refining your programming abilities. Enjoy structured practice, skill improvement, and problem-solving opportunities tailored to your skill level.
+Practice and progress from beginner to expert, refining your programming abilities.
 
 Get started and prepare for your next JavaScript project! 💻🚀
 
