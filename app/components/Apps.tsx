@@ -32,17 +32,21 @@ const Apps: React.FC = () => {
       {Object.keys(appsByLevel).map((level) => (
         <div key={level} className="mb-10">
           <h2 className="text-2xl font-bold mb-2 flex items-center">
-            {levelDescriptions[parseInt(level, 10)].split(":")[0]}:{" "}
+            <span className="mr-2">
+              {levelDescriptions[parseInt(level, 10)].split(":")[0]}:
+            </span>
             <Stars level={parseInt(level, 10)} />
           </h2>
-          <p className="text-lg mb-4">{levelDescriptions[parseInt(level, 10)].split(":")[1]}</p>
+          <p className="text-lg mb-4">
+            {levelDescriptions[parseInt(level, 10)].split(":")[1]}
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
             {appsByLevel[parseInt(level, 10)].map((app) => (
               <div key={app.id} className="relative">
                 <Link href={app.path}>
                   <div
                     className="block w-full h-full absolute inset-0"
-                    style={{ zIndex: 10 }} // Asegura que el enlace ocupe todo el contenedor
+                    style={{ zIndex: 10 }}
                   />
                 </Link>
                 <div className="isolate rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 h-full hover:shadow-lg transition-transform transform hover:-translate-y-1 flex justify-center items-center">
