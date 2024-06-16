@@ -24,7 +24,7 @@ const Header = () => {
                 Get started
               </button>
 
-              <a href="https://www.github.com/hernandoabella/js-apps" className="text-3xl">
+              <a href="https://www.github.com/hernandoabella/js-apps" className="text-3xl text-gray-500 hover:text-gray-400">
                 <FaGithubAlt />
               </a>
 
@@ -61,7 +61,7 @@ const Header = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                    className="block py-2 px-3 text-white bg-sky-500 rounded md:bg-transparent md:text-sky-500 md:p-0 md:dark:text-sky-500"
                     aria-current="page"
                   >
                     Home
