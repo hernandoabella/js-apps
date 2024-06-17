@@ -4,8 +4,6 @@
 
 Practice and progress from beginner to expert, refining your programming abilities.
 
-Get started and prepare for your next JavaScript project! 💻🚀
-
 ## Difficulty Levels ⚔️
 
 1.  **Entry Level:** For beginners, covers JavaScript basics.
