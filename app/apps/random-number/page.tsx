@@ -1,27 +1,58 @@
 "use client"
+// pages/project-detail.tsx
 
-// Importa los estilos CSS de highlight.js (cambia 'default.css' al estilo que prefieras)
 import 'highlight.js/styles/github-dark.css';
-
-import { useState, useEffect } from 'react';
-import { FaHtml5, FaCss3, FaArrowCircleLeft, FaJs } from 'react-icons/fa';
+import { useState, useEffect, useRef } from 'react';
+import { FaHtml5, FaCss3, FaArrowCircleLeft, FaJs, FaCopy } from 'react-icons/fa';
 import Link from 'next/link';
-import hljs from 'highlight.js';
+import hljs from 'highlight.js/lib/core';
+import html from 'highlight.js/lib/languages/xml';
+import css from 'highlight.js/lib/languages/css';
 import javascript from 'highlight.js/lib/languages/javascript';
+
+hljs.registerLanguage('html', html);
+hljs.registerLanguage('css', css);
 hljs.registerLanguage('javascript', javascript);
 
 const ProjectDetail = () => {
   const [codeType, setCodeType] = useState<"html" | "css" | "js">("html");
-
   const codeSnippets = {
     html: "<div>Hello World</div>",
     css: "div { color: red; }",
     js: "console.log('Hello, World!');",
   };
 
+  const codeRef = useRef<HTMLElement | null>(null);
+
   useEffect(() => {
-    hljs.initHighlighting();
-}, []);
+    if (codeRef.current) {
+      hljs.highlightElement(codeRef.current);
+    }
+  }, [codeType, codeSnippets[codeType]]);
+
+  const handleCopyToClipboard = () => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(codeSnippets[codeType])
+        .then(() => {
+          alert("Code snippet copied to clipboard!");
+        })
+        .catch(err => {
+          console.error('Could not copy text: ', err);
+          alert("Failed to copy code snippet. Please copy it manually.");
+        });
+    } else {
+      const textarea = document.createElement('textarea');
+      textarea.value = codeSnippets[codeType];
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'absolute';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      alert("Code snippet copied to clipboard!");
+    }
+  };
 
   return (
     <div className="p-5">
@@ -68,12 +99,19 @@ const ProjectDetail = () => {
               <FaJs /> JS
             </button>
           </div>
-          <div className="">
+          <div className="relative">
             <pre>
-              <code className={`language-${codeType}`}>
+              <code ref={codeRef} className={`language-${codeType}`}>
                 {codeSnippets[codeType]}
               </code>
             </pre>
+            <button
+              onClick={handleCopyToClipboard}
+              className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
+              title="Copy to Clipboard"
+            >
+              <FaCopy />
+            </button>
           </div>
         </div>
       </div>
