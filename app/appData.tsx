@@ -9,8 +9,8 @@ export interface App {
 export const apps: App[] = [
   {
     id: 1,
-    name: "App 1",
-    path: "/apps/key-counter",
+    name: "Random Number Generator",
+    path: "/apps/random-number",
     iframeSrc: "https://lucent-semifreddo-6bce96.netlify.app/",
     level: 1,
   },
