@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import { FaHtml5, FaCss3, FaArrowCircleLeft, FaJs } from "react-icons/fa";
 import Link from "next/link";
 
@@ -12,17 +14,17 @@ const ProjectDetail = () => {
   };
 
   return (
-    <div className="p-5">
+    <div>
       <div className="bg-red-300 p-5 md:mx-60 rounded-t-xl">
-        <Link href="./">
-          <a className="inline-flex items-center bg-slate-900 text-white p-2 rounded-md hover:bg-slate-700">
+        <Link href="/">
+          <div className="inline-flex items-center bg-slate-900 text-white p-2 rounded-md hover:bg-slate-700">
             <FaArrowCircleLeft className="mr-2" /> Go back
-          </a>
+          </div>
         </Link>
       </div>
 
       <div className="flex flex-col md:flex-row md:mx-60">
-        <div className="md:w-1/2 bg-gray-800 p-2">
+        <div className="md:w-1/2 bg-gray-500 p-2">
           <iframe
             title="project-iframe"
             src="https://lucent-semifreddo-6bce96.netlify.app/"
@@ -62,16 +64,19 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-      <div className="bg-red-300 p-5 rounded-b-xl md:mx-60 mt-10">
-        <div className="mb-2">Description</div>
-        <div className="mb-2">
-          <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" className="text-blue-500">
-            Download this on GitHub
-          </a>
-        </div>
+      <div className="bg-red-300 p-5 rounded-b-xl md:mx-60 flex gap-5">
         <div>
-          <a href="https://github.com/your-repo/fork" target="_blank" rel="noopener noreferrer" className="text-blue-500">
-            Fork this and make it better
+          <div>Project Title</div>
+          <div className="mb-2">Description</div>
+        </div>
+        <div className="mb-2">
+          <a
+            href="https://github.com/your-repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500"
+          >
+            Download project
           </a>
         </div>
       </div>
