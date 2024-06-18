@@ -1,16 +1,13 @@
 "use client"
-// pages/project-detail.tsx
 
 // Importa los estilos CSS de highlight.js (cambia 'default.css' al estilo que prefieras)
-import 'highlight.js/styles/default.css';
+import 'highlight.js/styles/github-dark.css';
 
 import { useState, useEffect } from 'react';
 import { FaHtml5, FaCss3, FaArrowCircleLeft, FaJs } from 'react-icons/fa';
 import Link from 'next/link';
-import hljs from 'highlight.js/lib/core';
+import hljs from 'highlight.js';
 import javascript from 'highlight.js/lib/languages/javascript';
-
-// Registra el lenguaje JavaScript con highlight.js
 hljs.registerLanguage('javascript', javascript);
 
 const ProjectDetail = () => {
@@ -23,9 +20,8 @@ const ProjectDetail = () => {
   };
 
   useEffect(() => {
-    // Highlight.js debe ser llamado después de que el componente se monte
-    hljs.highlightAll();
-  }, []);
+    hljs.initHighlighting();
+}, []);
 
   return (
     <div className="p-5">
@@ -72,7 +68,7 @@ const ProjectDetail = () => {
               <FaJs /> JS
             </button>
           </div>
-          <div className="bg-gray-800 text-white p-4 rounded-md overflow-auto h-80">
+          <div className="">
             <pre>
               <code className={`language-${codeType}`}>
                 {codeSnippets[codeType]}
