@@ -1,54 +1,73 @@
-"use client"
+"use client";
 // pages/project-detail.tsx
 
-import 'highlight.js/styles/github-dark.css';
-import { useState, useEffect, useRef } from 'react';
-import { FaHtml5, FaCss3, FaArrowCircleLeft, FaJs, FaCopy } from 'react-icons/fa';
-import Link from 'next/link';
-import hljs from 'highlight.js/lib/core';
-import html from 'highlight.js/lib/languages/xml';
-import css from 'highlight.js/lib/languages/css';
-import javascript from 'highlight.js/lib/languages/javascript';
+// Importa los estilos CSS de highlight.js (cambia 'github-dark.css' al estilo que prefieras)
+import "highlight.js/styles/github-dark.css";
 
-hljs.registerLanguage('html', html);
-hljs.registerLanguage('css', css);
-hljs.registerLanguage('javascript', javascript);
+import { useState, useEffect, useRef } from "react";
+import {
+  FaHtml5,
+  FaCss3,
+  FaArrowCircleLeft,
+  FaJs,
+  FaCopy,
+} from "react-icons/fa";
+import Link from "next/link";
+import hljs from "highlight.js/lib/core";
+import html from "highlight.js/lib/languages/xml"; // Importa el lenguaje HTML/XML
+import css from "highlight.js/lib/languages/css"; // Importa el lenguaje CSS
+import javascript from "highlight.js/lib/languages/javascript"; // Importa el lenguaje JavaScript
+
+// Registra los lenguajes con highlight.js
+hljs.registerLanguage("html", html);
+hljs.registerLanguage("css", css);
+hljs.registerLanguage("javascript", javascript);
+
+const codeSnippets = {
+  html: `<pre><code class="language-html hljs">&lt;div&gt;Hello World&lt;/div&gt;</code></pre>
+  `,
+  css: `<pre><code class="language-css hljs">div {
+    color: red;
+}</code></pre>`,
+  js: `
+    <pre><code class="language-javascript hljs">console.log('Hello, World!');</code></pre>`,
+};
 
 const ProjectDetail = () => {
   const [codeType, setCodeType] = useState<"html" | "css" | "js">("html");
-  const codeSnippets = {
-    html: "<div>Hello World</div>",
-    css: "div { color: red; }",
-    js: "console.log('Hello, World!');",
-  };
-
-  const codeRef = useRef<HTMLElement | null>(null);
+  const codeRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (codeRef.current) {
-      hljs.highlightElement(codeRef.current);
+      codeRef.current.innerHTML = codeSnippets[codeType];
+      codeRef.current.querySelectorAll("pre code").forEach((block) => {
+        if (block instanceof HTMLElement) {
+          hljs.highlightElement(block);
+        }
+      });
     }
-  }, [codeType, codeSnippets[codeType]]);
+  }, [codeType]);
 
   const handleCopyToClipboard = () => {
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(codeSnippets[codeType])
+      navigator.clipboard
+        .writeText(codeRef.current?.innerText || "")
         .then(() => {
           alert("Code snippet copied to clipboard!");
         })
-        .catch(err => {
-          console.error('Could not copy text: ', err);
+        .catch((err) => {
+          console.error("Could not copy text: ", err);
           alert("Failed to copy code snippet. Please copy it manually.");
         });
     } else {
-      const textarea = document.createElement('textarea');
-      textarea.value = codeSnippets[codeType];
-      textarea.setAttribute('readonly', '');
-      textarea.style.position = 'absolute';
-      textarea.style.left = '-9999px';
+      const textarea = document.createElement("textarea");
+      textarea.value = codeRef.current?.innerText || "";
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "absolute";
+      textarea.style.left = "-9999px";
       document.body.appendChild(textarea);
       textarea.select();
-      document.execCommand('copy');
+      document.execCommand("copy");
       document.body.removeChild(textarea);
       alert("Code snippet copied to clipboard!");
     }
@@ -100,11 +119,7 @@ const ProjectDetail = () => {
             </button>
           </div>
           <div className="relative">
-            <pre>
-              <code ref={codeRef} className={`language-${codeType}`}>
-                {codeSnippets[codeType]}
-              </code>
-            </pre>
+            <div ref={codeRef} />
             <button
               onClick={handleCopyToClipboard}
               className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
