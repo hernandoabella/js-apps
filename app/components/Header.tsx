@@ -12,16 +12,18 @@ const Header = () => {
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
-              <span className="text-3xl dark:text-white">
-                JS-APPS V2
+              <span className="text-3xl dark:text-white font-bold">
+                JS-APPS <sup className="text-sm">V2</sup>
               </span>
             </a>
             <div className="items-center gap-5 flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <a
-                href="hernandoabella.gumroad.com/l/hoocc"
-                className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-              >
-                Download All Apps
+              <a href="hernandoabella.gumroad.com/l/hoocc">
+                <button className="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                    <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                  </svg>
+                  Download All Apps
+                </button>
               </a>
 
               <a
