@@ -42,7 +42,7 @@ const Apps: React.FC = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
             {appsByLevel[parseInt(level, 10)].map((app) => (
-              <div key={app.id} className="relative">
+              <div className="relative">
                 <Link href={app.path}>
                   <div
                     className="block w-full h-full absolute inset-0"
