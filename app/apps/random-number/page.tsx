@@ -74,8 +74,8 @@ const ProjectDetail = () => {
   };
 
   return (
-    <div className="p-5">
-      <div className="bg-sky-500 p-5 rounded-t-xl">
+    <div className="p-5 h-screen">
+      <div className="bg-sky-500 p-5 rounded-t-xl ">
         <Link href="/">
           <div className="inline-flex items-center bg-slate-900 text-white p-2 rounded-md hover:bg-slate-700">
             <FaArrowCircleLeft className="mr-2" /> Go back
@@ -84,14 +84,14 @@ const ProjectDetail = () => {
       </div>
 
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/2 bg-gray-500 p-2">
+        <div className="md:w-1/2 bg-white p-2">
           <iframe
             title="project-iframe"
             src="https://lucent-semifreddo-6bce96.netlify.app/"
             className="w-full h-96 border-none"
           ></iframe>
         </div>
-        <div className="md:w-1/2 bg-gray-200 p-2">
+        <div className="md:w-1/2 bg-slate-800 p-2">
           <div className="flex mb-4">
             <button
               onClick={() => setCodeType("html")}
