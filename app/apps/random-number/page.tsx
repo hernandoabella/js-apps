@@ -75,7 +75,7 @@ const ProjectDetail = () => {
 
   return (
     <div className="p-5">
-      <div className="bg-red-300 p-5 rounded-t-xl">
+      <div className="bg-sky-500 p-5 rounded-t-xl">
         <Link href="/">
           <div className="inline-flex items-center bg-slate-900 text-white p-2 rounded-md hover:bg-slate-700">
             <FaArrowCircleLeft className="mr-2" /> Go back
@@ -131,10 +131,12 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-      <div className="bg-red-300 p-5 rounded-b-xl flex gap-5">
+      <div className="bg-sky-500 p-5 rounded-b-xl flex gap-5">
         <div>
           <div>Project Title</div>
-          <div className="mb-2">Description</div>
+          <div className="mb-2">
+            <p>This App allows you to generate a random number.</p>
+          </div>
         </div>
         <div className="mb-2">
           <a
