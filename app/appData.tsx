@@ -3,6 +3,8 @@ export interface App {
   path: string;
   iframeSrc: string;
   level: number;
+  // githubLink: string;
+  // downloadLink: string;
 }
 
 export const apps: App[] = [
