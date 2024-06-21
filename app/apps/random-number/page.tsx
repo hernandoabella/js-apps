@@ -133,7 +133,9 @@ const ProjectDetail = () => {
 
       <div className="bg-sky-500 p-5 rounded-b-xl flex gap-5">
         <div>
-          <div>Project Title</div>
+          <div>
+            <h2 className="text-2xl font-bold mb-2">Random Number Generator</h2>
+          </div>
           <div className="mb-2">
             <p>This App allows you to generate a random number.</p>
           </div>
@@ -144,8 +146,9 @@ const ProjectDetail = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500"
+            download
           >
-            Download project
+            Download 
           </a>
         </div>
       </div>
