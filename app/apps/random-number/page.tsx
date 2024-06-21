@@ -12,6 +12,7 @@ import {
   FaJs,
   FaCopy,
   FaGithub,
+  FaDownload,
 } from "react-icons/fa";
 import Link from "next/link";
 import hljs from "highlight.js/lib/core";
@@ -151,10 +152,10 @@ const ProjectDetail = () => {
                 <p>This app allows you to generate a random number.</p>
               </div>
             </div>
-            <div className="flex items-center gap-5">
-              <div className="mb-2 sm:pt-5">
+            <div className="flex items-center justify-center gap-5">
+              <div className="pt-5 md:pt-0">
                 <a
-                  href="https://github.com/your-repo"
+                  href="https://github.com/hernandoabella/github-repo.zip"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500"
@@ -163,24 +164,25 @@ const ProjectDetail = () => {
                   <button type="button" className="button2">
                     <span className="button__text">Download</span>
                     <span className="button__icon">
-                      <svg
-                        className="svg"
-                        data-name="Layer 2"
-                        id="bdd05811-e15d-428c-bb53-8661459f9307"
-                        viewBox="0 0 35 35"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
-                        <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
-                        <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
-                      </svg>
+                      <FaDownload className="svg"/>
                     </span>
                   </button>
                 </a>
               </div>
-              <div className="flex items-center justify-center ">
-                <a href="https://github.com/hernandoabella/...repo" className="text-3x1">
-                  <FaGithub />
+              <div className="pt-5 md:pt-0">
+                <a
+                  href="https://github.com/hernandoabella/github-repo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500"
+                  download
+                >
+                  <button type="button" className="button2">
+                    <span className="button__text">Download</span>
+                    <span className="button__icon">
+                      <FaGithub className="svg"/> 
+                    </span>
+                  </button>
                 </a>
               </div>
             </div>
