@@ -17,7 +17,10 @@ const Header = () => {
               </span>
             </a>
             <div className="items-center gap-5 flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <a href="https://hernandoabella.gumroad.com/l/hoocc" target="_blank">
+              <a
+                href="https://hernandoabella.gumroad.com/l/hoocc"
+                target="_blank"
+              >
                 <button className="button flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
                     <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
@@ -33,7 +36,7 @@ const Header = () => {
                 <FaGithubAlt />
               </a>
 
-              <button
+              {/* <button
                 data-collapse-toggle="navbar-sticky"
                 type="button"
                 className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -56,9 +59,9 @@ const Header = () => {
                     d="M1 1h15M1 7h15M1 13h15"
                   />
                 </svg>
-              </button>
+              </button> */}
             </div>
-            <div
+            {/* <div
               className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
               id="navbar-sticky"
             >
@@ -97,7 +100,7 @@ const Header = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </nav>
       </div>
