@@ -81,7 +81,7 @@ const ProjectDetail = () => {
         <div className="lg:mx-20 lg:flex-col">
           <div className="bg-sky-500 p-5 rounded-t-xl">
             <Link href="/">
-              <div className="inline-flex items-center bg-slate-900 text-white p-2 rounded-md hover:bg-slate-700">
+              <div className="inline-flex items-center bg-sky-800 hover:bg-sky-700 text-white p-2 rounded-md">
                 <FaArrowCircleLeft className="mr-2" /> Go back
               </div>
             </Link>
@@ -164,7 +164,7 @@ const ProjectDetail = () => {
                   <button type="button" className="button2">
                     <span className="button__text">Download</span>
                     <span className="button__icon">
-                      <FaDownload className="svg"/>
+                      <FaDownload className="svg" />
                     </span>
                   </button>
                 </a>
@@ -180,7 +180,7 @@ const ProjectDetail = () => {
                   <button type="button" className="button2">
                     <span className="button__text">Download</span>
                     <span className="button__icon">
-                      <FaGithub className="svg"/> 
+                      <FaGithub className="svg" />
                     </span>
                   </button>
                 </a>
