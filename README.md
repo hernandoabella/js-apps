@@ -174,10 +174,6 @@ If you would like to contribute, please check our [contribution guide](./CONTRIB
 
 This project is under the [MIT License](./LICENSE.md). Please read the license file for more information.
 
-## Buy Me a Coffee ☕
-
-<a href="https://www.buymeacoffee.com/hernandoabella" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
 ## Contact 📩
 
 If you have any questions or comments about this project, you can contact me at:
