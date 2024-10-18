@@ -28,7 +28,7 @@ const Apps: React.FC = () => {
   }, {} as { [key: number]: App[] });
 
   return (
-    <div className="p-10">
+    <div className="p-10 mt-20">
       {Object.keys(appsByLevel).map((level) => (
         <div key={level} className="mb-10">
           <h2 className="text-2xl font-bold mb-2 flex items-center">
@@ -42,7 +42,7 @@ const Apps: React.FC = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
             {appsByLevel[parseInt(level, 10)].map((app) => (
-              <div className="relative">
+              <div key={app.name} className="relative"> {/* Add a key here */}
                 <Link href={app.path}>
                   <div
                     className="block w-full h-full absolute inset-0"
