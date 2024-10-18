@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { ModeToggle } from "./ModeToggle";
 
 const Header = () => {
   return (
@@ -25,6 +26,8 @@ const Header = () => {
                 <FaGithub />
               </a>
 
+              <ModeToggle />
+
               <a
                 rel="noopener"
                 href="https://hernandoabella.gumroad.com/l/hoocc"
@@ -34,10 +37,10 @@ const Header = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
                     <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
                   </svg>
-                  Get All Access
+                  Get All Apps
                 </button>
               </a>
-              
+
             </div>
           </div>
         </nav>
