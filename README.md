@@ -1,6 +1,5 @@
-![logo](https://github.com/hernandoabella/js-apps/assets/24196857/d1397e9e-1074-48eb-9342-a917f8fbe352)
+![JS-APPS  (2)](https://github.com/user-attachments/assets/b24c54c8-6fc1-4de2-969f-833e2c7e74f5)
 
-**Top JavaScript Projects to enhance your skills with our collection of apps!**
 
 ## Difficulty Levels ⚔️
 
