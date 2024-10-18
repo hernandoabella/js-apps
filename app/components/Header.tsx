@@ -4,8 +4,8 @@ import { FaGithub } from "react-icons/fa";
 const Header = () => {
   return (
     <div>
-      <div>
-        <nav className="bg-white dark:bg-black fixed w-full z-20 top-0 start-0">
+      <header>
+        <nav className="shadow-lg bg-white dark:bg-black fixed w-full z-20 top-0 start-0">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a
               href="/"
@@ -16,6 +16,15 @@ const Header = () => {
               </div>
             </a>
             <div className="items-center gap-5 flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+              
+
+              <a
+                href="https://www.github.com/hernandoabella/js-apps"
+                className="text-3xl text-gray-500 hover:text-gray-400"
+              >
+                <FaGithub />
+              </a>
+
               <a
                 rel="noopener"
                 href="https://hernandoabella.gumroad.com/l/hoocc"
@@ -28,17 +37,11 @@ const Header = () => {
                   Get All Access
                 </button>
               </a>
-
-              <a
-                href="https://www.github.com/hernandoabella/js-apps"
-                className="text-3xl text-gray-500 hover:text-gray-400"
-              >
-                <FaGithub />
-              </a>
+              
             </div>
           </div>
         </nav>
-      </div>
+      </header>
     </div>
   );
 };
