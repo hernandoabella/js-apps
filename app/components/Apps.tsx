@@ -40,25 +40,24 @@ const Apps: React.FC = () => {
           <p className="text-lg mb-4">
             {levelDescriptions[parseInt(level, 10)].split(":")[1]}
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
             {appsByLevel[parseInt(level, 10)].map((app) => (
               <div key={app.name} className="relative">
                 <Link href={app.path}>
                   <div
-                    className="block w-full h-full absolute inset-0"
+                    className="block  absolute inset-0"
                     style={{ zIndex: 10 }}
                   />
                 </Link>
                 <div className=" rounded-xl bg-white/20 shadow-lg ">
                   {app.ProjectComponent && (
-                    <div className="w-full  ">
+                    <div className="w-full h-72 flex justify-center items-center">
                       <app.ProjectComponent />
                     </div>
                     
                   )}
                   
                 </div>
-                
                 
               </div>
             ))}
