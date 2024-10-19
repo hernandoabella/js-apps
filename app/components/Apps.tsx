@@ -42,20 +42,24 @@ const Apps: React.FC = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
             {appsByLevel[parseInt(level, 10)].map((app) => (
-              <div key={app.name} className="relative"> {/* Add a key here */}
+              <div key={app.name} className="relative">
                 <Link href={app.path}>
                   <div
                     className="block w-full h-full absolute inset-0"
                     style={{ zIndex: 10 }}
                   />
                 </Link>
-                <div className="isolate rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 h-full hover:shadow-lg transition-transform transform hover:-translate-y-1 flex justify-center items-center">
-                  <iframe
-                    title={app.name}
-                    src={app.iframeSrc}
-                    className="w-full h-72 border-none"
-                  ></iframe>
+                <div className=" rounded-xl bg-white/20 shadow-lg ">
+                  {app.ProjectComponent && (
+                    <div className="w-full  ">
+                      <app.ProjectComponent />
+                    </div>
+                    
+                  )}
+                  
                 </div>
+                
+                
               </div>
             ))}
           </div>
