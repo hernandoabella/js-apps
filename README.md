@@ -3,11 +3,11 @@
 
 ## Difficulty Levels ⚔️
 
-1.  **Entry Level:** For beginners, covers JavaScript basics.
-2.  **Junior:** Enhance skills with some prior programming experience.
-3.  **Mid:** Intermediate stage, refining skills and learning new concepts.
-4.  **Senior:** Experienced developers seeking a challenge.
-5.  **Expert:** For advanced programmers looking for a greater challenge.
+1.  **Rookie:** Just starting out, learning the basics of coding and JavaScript.
+2.  **Novice:** Gaining confidence, enhancing skills, and tackling simple projects..
+3.  **Pro:** Solid understanding of coding concepts, building real-world applications..
+4.  **Master:** Skilled developers mastering complex challenges and leading projects.
+5.  **Ninja:**  Advanced programmers, innovating and pushing boundaries in tech.
 
 Choose your level and boost your JavaScript skills! 🚀
 
