@@ -18,7 +18,6 @@ const levelDescriptions: { [key: number]: string } = {
   5: "Ninja: Advanced programmers, innovating and pushing boundaries in tech.",
 };
 
-
 const Apps: React.FC = () => {
   const appsByLevel: { [key: number]: App[] } = apps.reduce((acc, app) => {
     if (!acc[app.level]) {
@@ -29,10 +28,16 @@ const Apps: React.FC = () => {
   }, {} as { [key: number]: App[] });
 
   return (
-    <div className="p-10 mt-20 flex flex-col items-center"> {/* Centrado del contenedor */}
+    <div className="p-10 mt-20 flex flex-col items-center">
+      {" "}
+      {/* Centrado del contenedor */}
       {Object.keys(appsByLevel).map((level) => (
-        <div key={level} className="mb-10 text-center"> {/* Centrado del texto */}
-          <h2 className="text-2xl font-bold mb-2 flex items-center justify-center"> {/* Centrado del encabezado */}
+        <div key={level} className="mb-10 text-center">
+          {" "}
+          {/* Centrado del texto */}
+          <h2 className="text-2xl font-bold mb-2 flex items-center justify-center">
+            {" "}
+            {/* Centrado del encabezado */}
             <span className="mr-2">
               {levelDescriptions[parseInt(level, 10)].split(":")[0]}:
             </span>
@@ -41,7 +46,9 @@ const Apps: React.FC = () => {
           <p className="text-lg mb-4">
             {levelDescriptions[parseInt(level, 10)].split(":")[1]}
           </p>
-          <div className="flex flex-col gap-4 justify-center items-center"> {/* Centrado de los círculos */}
+          <div className="flex flex-col gap-4 justify-center items-center">
+            {" "}
+            {/* Centrado de los círculos */}
             {appsByLevel[parseInt(level, 10)].map((app, index) => (
               <div key={app.name} className="relative">
                 <Link href={app.path}>
@@ -50,12 +57,18 @@ const Apps: React.FC = () => {
                     style={{ zIndex: 10 }}
                   />
                 </Link>
-                <div
-                  className={`flex font-semibold justify-center items-center w-24 h-24 rounded-full shadow-lg dark:bg-[#404040] duration-300 
-                  ${index % 2 === 0 ? 'transform translate-x-10' : 'transform -translate-x-10'}`} // Desplazamiento alternativo
-                >
-                  <div className="text-center h-10 flex justify-center items-center">
-                    {app.name}
+                <div>
+                  <div
+                    className={` flex font-semibold justify-center items-center w-24 h-24 rounded-full shadow-lg dark:bg-[#404040] duration-300 
+                  ${
+                    index % 2 === 0
+                      ? "transform translate-x-10"
+                      : "transform -translate-x-10"
+                  }`} 
+                  >
+                    <div className="text-center h-10 flex justify-center items-center">
+                      {app.name}
+                    </div>
                   </div>
                 </div>
               </div>
