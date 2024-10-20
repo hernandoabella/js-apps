@@ -7,8 +7,8 @@ import {
   FaArrowCircleLeft,
   FaJs,
   FaCopy,
-  FaGithub,
   FaDownload,
+  FaCheck,
 } from "react-icons/fa";
 import Link from "next/link";
 import hljs from "highlight.js/lib/core";
@@ -17,7 +17,6 @@ import css from "highlight.js/lib/languages/css"; // Import CSS language
 import javascript from "highlight.js/lib/languages/javascript"; // Import JavaScript language
 import { App } from "@/app/appData";
 import Header from "./Header";
-
 
 // Register languages with highlight.js
 hljs.registerLanguage("html", html);
@@ -31,6 +30,7 @@ interface ProjectDetailProps {
 const ProjectDetail = ({ app }: ProjectDetailProps) => {
   const [codeType, setCodeType] = useState<"html" | "css" | "js">("html");
   const codeRef = useRef<HTMLDivElement | null>(null);
+  const [copied, setCopied] = useState(false); // Estado para manejar el ícono de copia
 
   // Snippets for code highlighting
   const codeSnippets = {
@@ -61,11 +61,11 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
       navigator.clipboard
         .writeText(codeRef.current?.innerText || "")
         .then(() => {
-          alert("Code snippet copied to clipboard!");
+          setCopied(true); // Cambia el estado a true cuando se copia
+          setTimeout(() => setCopied(false), 2000); // Restablece el estado después de 2 segundos
         })
         .catch((err) => {
           console.error("Could not copy text: ", err);
-          alert("Failed to copy code snippet. Please copy it manually.");
         });
     } else {
       const textarea = document.createElement("textarea");
@@ -77,7 +77,8 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-      alert("Code snippet copied to clipboard!");
+      setCopied(true); // Cambia el estado a true cuando se copia
+      setTimeout(() => setCopied(false), 2000); // Restablece el estado después de 2 segundos
     }
   };
 
@@ -139,7 +140,8 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
                     className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
                     title="Copy to Clipboard"
                   >
-                    <FaCopy />
+                    {copied ? <FaCheck /> : <FaCopy />}{" "}
+                    {/* Cambia el ícono según el estado */}
                   </button>
                 </div>
               </div>
