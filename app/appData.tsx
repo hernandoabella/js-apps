@@ -1,15 +1,17 @@
 import RandomNumber from "@/app/components/projects/RandomNumber";
+import RandomString from "@/app/components/projects/RandomString";
+import RandomColor from "./components/projects/RandomColor";
+import RandomGradient from "./components/projects/RandomGradient";
 
 export interface App {
   name: string;
   path: string;
   ProjectComponent: React.FC | null;
-  iframeSrc: string;
   level: number;
-  title: string; 
+  title: string;
   description: string;
-  htmlSnippet?: string; 
-  cssSnippet?: string; 
+  htmlSnippet?: string;
+  cssSnippet?: string;
   jsSnippet?: string;
   githubLink: string;
   projectStars: number;
@@ -21,135 +23,59 @@ export const apps: App[] = [
     name: "Random Number ",
     path: "/apps/random-number",
     ProjectComponent: RandomNumber,
-    iframeSrc: "/projects/random-number/index.html",
     level: 1,
     title: "Random Number Generator",
-    description:
-      "This app generates a random number.", 
+    description: "This app generates a random number.",
     htmlSnippet: `<div>Hllo, Random Number!</div>`,
     cssSnippet: `div { color: red; }`,
     jsSnippet: `console.log('Hello, World!');`,
     githubLink: "https://github.com/hernandoabella/random-number-generator",
     projectStars: 0,
-    downloadLink: ""
+    downloadLink: "",
   },
   {
-    name: "Random Number ",
-    path: "/apps/random-number",
-    ProjectComponent: RandomNumber,
-    iframeSrc: "/projects/random-number/index.html",
+    name: "Random Color",
+    path: "/apps/random-color",
+    ProjectComponent: RandomColor,
     level: 1,
-    title: "Random Number Generator",
-    description:
-      "This app generates a random number.", 
+    title: "Random Color Generator",
+    description: "This app generates a random color.",
     htmlSnippet: `<div>Hllo, Random Number!</div>`,
     cssSnippet: `div { color: red; }`,
     jsSnippet: `console.log('Hello, World!');`,
     githubLink: "https://github.com/hernandoabella/random-number-generator",
     projectStars: 0,
-    downloadLink: ""
+    downloadLink: "",
   },
 
   {
-    name: "Random Number ",
-    path: "/apps/random-number",
-    ProjectComponent: RandomNumber,
-    iframeSrc: "/projects/random-number/index.html",
+    name: "Random String ",
+    path: "/apps/random-string",
+    ProjectComponent: RandomString,
     level: 1,
-    title: "Random Number Generator",
-    description:
-      "This app generates a random number.", 
+    title: "Random String Generator",
+    description: "This app generates a random string.",
     htmlSnippet: `<div>Hllo, Random Number!</div>`,
     cssSnippet: `div { color: red; }`,
     jsSnippet: `console.log('Hello, World!');`,
     githubLink: "https://github.com/hernandoabella/random-number-generator",
     projectStars: 0,
-    downloadLink: ""
+    downloadLink: "",
   },
 
   {
-    name: "Random Number ",
-    path: "/apps/random-number",
-    ProjectComponent: RandomNumber,
-    iframeSrc: "/projects/random-number/index.html",
+    name: "Background Gradient",
+    path: "/apps/random-gradient",
+    ProjectComponent: RandomGradient,
     level: 1,
-    title: "Random Number Generator",
-    description:
-      "This app generates a random number.", 
+    title: "Background Gradient Generator",
+    description: "This app generates a random number.",
     htmlSnippet: `<div>Hllo, Random Number!</div>`,
     cssSnippet: `div { color: red; }`,
     jsSnippet: `console.log('Hello, World!');`,
     githubLink: "https://github.com/hernandoabella/random-number-generator",
     projectStars: 0,
-    downloadLink: ""
-  },
-
-  {
-    name: "Random Number ",
-    path: "/apps/random-number",
-    ProjectComponent: RandomNumber,
-    iframeSrc: "/projects/random-number/index.html",
-    level: 2,
-    title: "Random Number Generator",
-    description:
-      "This app generates a random number.", 
-    htmlSnippet: `<div>Hllo, Random Number!</div>`,
-    cssSnippet: `div { color: red; }`,
-    jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
-    projectStars: 0,
-    downloadLink: ""
-  },
-
-  {
-    name: "Random Number ",
-    path: "/apps/random-number",
-    ProjectComponent: RandomNumber,
-    iframeSrc: "/projects/random-number/index.html",
-    level: 2,
-    title: "Random Number Generator",
-    description:
-      "This app generates a random number.", 
-    htmlSnippet: `<div>Hllo, Random Number!</div>`,
-    cssSnippet: `div { color: red; }`,
-    jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
-    projectStars: 0,
-    downloadLink: ""
-  },
-
-  {
-    name: "Random Number ",
-    path: "/apps/random-number",
-    ProjectComponent: RandomNumber,
-    iframeSrc: "/projects/random-number/index.html",
-    level: 2,
-    title: "Random Number Generator",
-    description:
-      "This app generates a random number.", 
-    htmlSnippet: `<div>Hllo, Random Number!</div>`,
-    cssSnippet: `div { color: red; }`,
-    jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
-    projectStars: 0,
-    downloadLink: ""
-  },
-
-  {
-    name: "Random Number ",
-    path: "/apps/random-number",
-    ProjectComponent: RandomNumber,
-    iframeSrc: "/projects/random-number/index.html",
-    level: 2,
-    title: "Random Number Generator",
-    description:
-      "This app generates a random number.", 
-    htmlSnippet: `<div>Hllo, Random Number!</div>`,
-    cssSnippet: `div { color: red; }`,
-    jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
-    projectStars: 0,
-    downloadLink: ""
+    downloadLink: "",
   },
   
 ];
