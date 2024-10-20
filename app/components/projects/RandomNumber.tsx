@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 
@@ -14,13 +14,13 @@ const RandomNumber = () => {
 
   return (
     <div className="flex items-center justify-center h-96">
-      <div className="dark:bg-[#303030] p-8 rounded-lg shadow-lg border">
+      <div className="dark:bg-[#303030] p-8 rounded-lg  border-2">
         <p className="text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-4">
           {randomNumber}
         </p>
         <button
           onClick={generateRandomNumber}
-          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition  dark:hover:bg-blue-500"
+          className="mt-4 px-4 py-2 bg-[#6B7280] hover:bg-[#4b515c] text-white rounded-md"
         >
           Random Number
         </button>
