@@ -62,7 +62,7 @@ const Apps: React.FC = () => {
                     style={{ zIndex: 10 }}
                   />
                 </Link>
-                <div className={`border-2 border-yellow-500 flex font-semibold justify-center items-center w-24 h-24 rounded-full shadow-lg dark:bg-[#404040] duration-300 
+                <div className={`border-2 border-[#f0db4f] flex font-semibold justify-center items-center w-24 h-24 rounded-full shadow-lg dark:bg-[#404040] duration-300 
                   ${index % 2 === 0 ? "transform translate-x-8" : "transform -translate-x-8"}`}
                 >
                   <div className="text-center h-10 flex justify-center items-center">
