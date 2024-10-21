@@ -39,9 +39,9 @@ const RandomColor = () => {
     <div className="flex items-center justify-center h-96">
       <div
         className="dark:bg-[#303030] p-8 rounded-lg border-2"
-        style={{ backgroundColor: randomColor }}
+        
       >
-        <p className={`text-3xl font-semibold text-center mb-4 ${textColor}`}>
+        <p className={`rounded p-5 text-xl font-semibold text-center mb-4 ${textColor}`} style={{ backgroundColor: randomColor }}>
           {randomColor}
         </p>
         <button
