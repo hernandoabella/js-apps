@@ -37,11 +37,11 @@ const RandomColor = () => {
 
   return (
     <div className="flex items-center justify-center h-96">
-      <div
-        className="dark:bg-[#303030] p-8 rounded-lg border-2"
-        
-      >
-        <p className={`rounded p-5 text-xl font-semibold text-center mb-4 ${textColor}`} style={{ backgroundColor: randomColor }}>
+      <div className="dark:bg-[#303030] p-8 rounded-lg border-2">
+        <p
+          className={`rounded p-5 font-semibold text-center mb-4 ${textColor}`}
+          style={{ backgroundColor: randomColor }}
+        >
           {randomColor}
         </p>
         <button
