@@ -4,7 +4,8 @@ import React, { useState } from "react";
 
 // Function to generate a random string
 const generateRandomString = (length: number) => {
-  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let result = "";
   for (let i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * characters.length));
@@ -25,7 +26,7 @@ const RandomString = () => {
   return (
     <div className="flex items-center justify-center h-96">
       <div className="dark:bg-[#303030] p-8 rounded-lg border-2">
-        <p className="text-3xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-4">
+        <p className="text-xl font-semibold text-center text-gray-800 dark:text-gray-200 mb-4">
           {randomString}
         </p>
         <button
