@@ -33,7 +33,7 @@ const RandomGradient = () => {
         </p>
         <button
           onClick={generateRandomGradient}
-          className="mt-4 px-4 py-2 bg-white text-gray-800 rounded-md hover:bg-gray-200 transition dark:text-gray-100 dark:bg-black dark:hover:bg-gray-800"
+          className="mt-4 px-4 py-2 bg-[#6B7280] hover:bg-[#4b515c] text-white rounded-md"
         >
           Generate Gradient
         </button>
