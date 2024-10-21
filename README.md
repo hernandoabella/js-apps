@@ -2,20 +2,17 @@
 
 
 ## Difficulty Levels ⚔️
-
-1.  **Entry Level:** For beginners, covers JavaScript basics.
-2.  **Junior:** Enhance skills with some prior programming experience.
-3.  **Mid:** Intermediate stage, refining skills and learning new concepts.
-4.  **Senior:** Experienced developers seeking a challenge.
-5.  **Expert:** For advanced programmers looking for a greater challenge.
-
-Choose your level and boost your JavaScript skills! 🚀
+1.  **Rookie:** Just starting out, learning the basics of coding and JavaScript.
+2.  **Novice:** Gaining confidence, enhancing skills, and tackling simple projects..
+3.  **Pro:** Solid understanding of coding concepts, building real-world applications..
+4.  **Master:** Skilled developers mastering complex challenges and leading projects.
+5.  **Ninja:**  Advanced programmers, innovating and pushing boundaries in tech.
 
 ## Applications 📱
 
-The available applications are:
+Available applications:
 
-### Entry Level
+### Rookie
 
 | Name                             | Level       | Stars      | Demo                                                      |
 | -------------------------------- | ----------- | ---------- | --------------------------------------------------------- |
@@ -36,7 +33,7 @@ The available applications are:
 | Detect Key                       | Entry Level | ⭐         | [Live](https://celebrated-taffy-b65b13.netlify.app)       |
 | Follower Counter                 | Entry Level | ⭐         | [Live](https://clever-snickerdoodle-b8c39d.netlify.app/)  |
 
-### Junior
+### Novice
 
 | Name                             | Level       | Stars      | Demo                                                      |
 | -------------------------------- | ----------- | ---------- | --------------------------------------------------------- |
@@ -89,7 +86,7 @@ The available applications are:
 | Hexadecimal Clock                | Junior      | ⭐⭐       | [Live](https://sweet-cuchufli-a3b3e9.netlify.app)         |
 | Palindrome Checker               | Junior      | ⭐⭐       | [Live](https://sweet-cuchufli-a3b3e9.netlify.app)         |
 
-### Mid
+### Pro
 | Name                             | Level       | Stars      | Demo                                                      |
 | -------------------------------- | ----------- | ---------- | --------------------------------------------------------- |
 | Live User Filter                 | Mid         | ⭐⭐⭐     | [Live](https://gleeful-kangaroo-54fa72.netlify.app)       |
@@ -140,7 +137,7 @@ The available applications are:
 | Song Lyrics App                  | Mid         | ⭐⭐⭐     | [Live](https://cool-empanada-7afccc.netlify.app)          |
 | Filter Menu                      | Mid         | ⭐⭐⭐     | [Live](https://tangerine-treacle-f9559c.netlify.app)      |
 
-### Senior
+### Master
 | Name                             | Level       | Stars      | Demo                                                      |
 | -------------------------------- | ----------- | ---------- | --------------------------------------------------------- |
 | Parking Lot App                  | Senior      | ⭐⭐⭐⭐   | [Live](https://stalwart-truffle-904655.netlify.app)       |
@@ -158,7 +155,7 @@ The available applications are:
 | Concentration Game               | Senior      | ⭐⭐⭐⭐   | [Live](https://unrivaled-kleicha-1e2d10.netlify.app)      |
 | Tenis Table                      | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://profound-liger-bf4a3e.netlify.app)         |
 
-### Expert
+### Ninja
 | Name                             | Level       | Stars      | Demo                                                      |
 | -------------------------------- | ----------- | ---------- | --------------------------------------------------------- |
 | Chess                            | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://earnest-beijinho-8a8f4a.netlify.app)       |
@@ -166,16 +163,12 @@ The available applications are:
 | Brick Breaker Game               | Expert      | ⭐⭐⭐⭐⭐ | [Live](https://steady-trifle-4dffeb.netlify.app)          |
 
 ## How to Contribute? ✨
-
 If you would like to contribute, please check our [contribution guide](./CONTRIBUTING.md) for more details.
 
 ## License 📜
-
 This project is under the [MIT License](./LICENSE.md). Please read the license file for more information.
 
 ## Contact 📩
-
 If you have any questions or comments about this project, you can contact me at:
 
-- **Email:** hernandoabella@gmail.com
 - **X:** [@hernandoabella](https://twitter.com/hernandoabella)
