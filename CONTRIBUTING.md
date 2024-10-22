@@ -6,13 +6,13 @@
 
 There are many ways you can contribute to this project! Some of them include:
 
-🐞 Reporting bugs: If you find any bugs in the code, please open an issue describing the problem and how we can reproduce it.
+🐞 **Reporting bugs:** If you find any bugs in the code, please open an issue describing the problem and how we can reproduce it.
 
-🎁 Improving documentation: If you believe the documentation can be enhanced or if you find any errors, please open an issue or submit a pull request.
+🎁 **Improving documentation:** If you believe the documentation can be enhanced or if you find any errors, please open an issue or submit a pull request.
 
-💻 Writing code: If you enjoy programming and want to add a new feature, please fork the repository and submit a pull request.
+💻 **Writing code:** If you enjoy programming and want to add a new feature, please fork the repository and submit a pull request.
 
-🤔 Offering ideas and suggestions: If you have any ideas or suggestions to improve the project, please create an issue to discuss it.
+🤔 **Offering ideas and suggestions:** If you have any ideas or suggestions to improve the project, please create an issue to discuss it.
 
 ## Contribution Guide
 
