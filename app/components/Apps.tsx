@@ -55,14 +55,14 @@ const Apps: React.FC = () => {
           </p>
           <div className="flex flex-col gap-4 justify-center items-center">
             {appsByLevel[parseInt(level, 10)].map((app, index) => (
-              <div key={app.name} className="relative">
+              <div key={app.name} className="relative hover:scale-110 transition-all">
                 <Link href={app.path}>
                   <div
                     className="block absolute inset-0"
                     style={{ zIndex: 10 }}
                   />
                 </Link>
-                <div className={`border-2 border-[#f0db4f] flex font-semibold justify-center items-center w-24 h-24 rounded-full shadow-lg dark:bg-[#404040] duration-300 
+                <div className={`border-2 border-[#f0db4f] flex font-semibold justify-center items-center w-24 h-24 rounded-full shadow-lg  dark:bg-gradient-to-b from-slate-500 to-yellow-500
                   ${index % 2 === 0 ? "transform translate-x-8" : "transform -translate-x-8"}`}
                 >
                   <div className="text-center h-10 flex justify-center items-center">
