@@ -314,7 +314,7 @@ document.getElementById('generateStringBtn').addEventListener('click', changeStr
   },
 
   {
-    name: "Background Gradient",
+    name: "Random Gradient",
     path: "/apps/random-gradient",
     ProjectComponent: RandomGradient,
     level: 1,
@@ -406,9 +406,9 @@ function generateRandomGradient() {
 
 // Event listener for the button click
 document.getElementById("generateButton").addEventListener("click", generateRandomGradient);`,
-    githubLink: "https://github.com/hernandoabella/background-gradient",
+    githubLink: "https://github.com/hernandoabella/random-gradient",
     projectStars: 0,
-    downloadLink: "https://github.com/hernandoabella/background-gradient/archive/refs/heads/main.zip",
+    downloadLink: "https://github.com/hernandoabella/random-gradient/archive/refs/heads/main.zip",
   },
 
   {
