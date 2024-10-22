@@ -314,18 +314,101 @@ document.getElementById('generateStringBtn').addEventListener('click', changeStr
   },
 
   {
-    name: "Background Gradient Generator",
+    name: "Background Gradient",
     path: "/apps/random-gradient",
     ProjectComponent: RandomGradient,
     level: 1,
-    title: "Background Gradient Generator",
-    description: "This app generates a random number.",
-    htmlSnippet: `<div>Hllo, Random Number!</div>`,
-    cssSnippet: `div { color: red; }`,
-    jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
+    title: "Random Gradient Generator",
+    description: "A simple web app that generates a Random Gradient at the click of a button, making it easy to visualize dynamic color schemes.",
+    htmlSnippet: `&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+
+&#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+    &#x3C;title&#x3E;Background Gradient Generator&#x3C;/title&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/styles.css&#x22;&#x3E;
+&#x3C;/head&#x3E;
+
+&#x3C;body&#x3E;
+    &#x3C;div class=&#x22;container&#x22;&#x3E;
+        &#x3C;div class=&#x22;card&#x22;&#x3E;
+            &#x3C;div class=&#x22;gradient-box&#x22; id=&#x22;gradientBox&#x22;&#x3E;&#x3C;/div&#x3E;
+            &#x3C;button id=&#x22;generateButton&#x22; class=&#x22;btn&#x22;&#x3E;Generate Gradient&#x3C;/button&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;script src=&#x22;/script.js&#x22;&#x3E;&#x3C;/script&#x3E;
+
+&#x3C;/html&#x3E;`,
+    cssSnippet: `@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #E4E4E7;
+    text-align: center;
+}
+
+.gradient-box {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, cyan, blue);
+}
+
+.btn {
+    background-color: #6b7280;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #4b515c;
+}`,
+    jsSnippet: `// Function to generate a random hex color
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+// Function to generate a random gradient
+function generateRandomGradient() {
+  const color1 = getRandomColor();
+  const color2 = getRandomColor();
+  const angle = Math.floor(Math.random() * 360); // Random angle between 0 and 360
+  const randomGradient = &#x60;linear-gradient(&#36;{angle}deg, &#36;{color1}, &#36;{color2})&#x60;;
+  document.getElementById("gradientBox").style.background = randomGradient;
+}
+
+// Event listener for the button click
+document.getElementById("generateButton").addEventListener("click", generateRandomGradient);`,
+    githubLink: "https://github.com/hernandoabella/background-gradient",
     projectStars: 0,
-    downloadLink: "",
+    downloadLink: "https://github.com/hernandoabella/background-gradient/archive/refs/heads/main.zip",
   },
 
   {
