@@ -101,7 +101,7 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
                 {app.ProjectComponent ? <app.ProjectComponent /> : null}
               </div>
               <div className="md:w-1/2 h-96 dark:bg-[#212121] p-2 border-r overflow-auto">
-                <div className="flex mb-4">
+                <div className="flex mb-4 ">
                   <button
                     onClick={() => setCodeType("html")}
                     className={`flex items-center gap-1 p-2 rounded-md ${
