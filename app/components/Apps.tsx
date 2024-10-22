@@ -58,7 +58,7 @@ const Apps: React.FC = () => {
               <div
                 key={app.name}
                 className={`relative hover:scale-110 transition-all bot border-4 border-[#f0db4f] shadow-xl } ${
-                  index % 2 === 0 ? "translate-x-4" : "-translate-x-4"
+                  index % 2 === 0 ? "translate-x-8" : "-translate-x-8"
                 }`}
               >
                 <Link href={app.path}>
