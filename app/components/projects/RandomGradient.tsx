@@ -4,7 +4,9 @@ import React, { useState } from "react";
 
 const RandomGradient = () => {
   // State to store the random gradient CSS value
-  const [gradient, setGradient] = useState<string>("linear-gradient(to right, cyan, blue)");
+  const [gradient, setGradient] = useState<string>(
+    "linear-gradient(to right, cyan, blue)"
+  );
 
   // Function to generate a random hex color
   const getRandomColor = () => {
@@ -26,17 +28,22 @@ const RandomGradient = () => {
   };
 
   return (
-    <div className="h-96 rounded-lg flex items-center justify-center transition-all duration-700 ease-in-out" style={{ background: gradient }}>
-      <div className="p-8 bg-white/30 dark:bg-black/30 rounded-lg backdrop-blur-md shadow-lg">
-        <p className="text-xl font-semibold text-center text-white mb-4">
-          {gradient}
-        </p>
-        <button
-          onClick={generateRandomGradient}
-          className="mt-4 px-4 py-2 bg-[#6B7280] hover:bg-[#4b515c] text-white rounded-md"
-        >
-          Generate Gradient
-        </button>
+    <div className="h-96 rounded-lg flex items-center justify-center transition-all duration-700 ease-in-out">
+      <div className="flex justify-center items-center">
+        <div className="dark:bg-[#303030] p-8 rounded-lg border-2">
+          <div
+            className="text-xl font-semibold text-center text-white mb-4 p-10 rounded"
+            style={{ background: gradient }}
+          >
+            
+          </div>
+          <button
+            onClick={generateRandomGradient}
+            className="mt-4 px-4 py-2 bg-[#6B7280] hover:bg-[#4b515c] text-white rounded-md"
+          >
+            Generate Gradient
+          </button>
+        </div>
       </div>
     </div>
   );
