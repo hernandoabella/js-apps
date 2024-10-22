@@ -54,13 +54,93 @@ export const apps: App[] = [
     ProjectComponent: RandomString,
     level: 1,
     title: "Random String Generator",
-    description: "This app generates a random string.",
-    htmlSnippet: `<div>Hllo, Random Number!</div>`,
-    cssSnippet: `div { color: red; }`,
-    jsSnippet: `console.log('Hello, World!');`,
+    description:
+      "A simple web app that generates a random alphanumeric string with each button click.",
+    htmlSnippet: `&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Random String Generator&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/styles.css&quot;&gt;
+&lt;/head&gt;
+    
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;string-box&quot;&gt;
+            &lt;p class=&quot;random-string&quot; id=&quot;randomString&quot;&gt;A1b2C3&lt;/p&gt;
+            &lt;button id=&quot;generateStringBtn&quot;&gt;Random String&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+    
+&lt;script src=&quot;/script.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;`,
+    cssSnippet: `@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+    
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+    
+.string-box {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #E4E4E7;
+}
+    
+.random-string {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+    
+button {
+  padding: 10px 20px;
+  background-color: #6B7280;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+    
+button:hover {
+  background-color: #4b515c;
+}`,
+    jsSnippet: `// Function to generate a random string of specified length
+function generateRandomString(length) {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
+      
+// Function to change the displayed random string
+function changeString() {
+  const randomStringElement = document.getElementById('randomString');
+  const newRandomString = generateRandomString(6); // Generates a string of length 6
+  randomStringElement.textContent = newRandomString;
+}
+      
+// Add event listener to button
+document.getElementById('generateStringBtn').addEventListener('click', changeString);`,
     githubLink: "https://github.com/hernandoabella/random-number-generator",
     projectStars: 0,
-    downloadLink: "",
+    downloadLink:
+      "https://github.com/hernandoabella/random-string/archive/refs/heads/main.zip",
   },
 
   {
@@ -137,5 +217,4 @@ export const apps: App[] = [
     projectStars: 0,
     downloadLink: "",
   },
-  
 ];
