@@ -46,7 +46,7 @@ const RandomColor = () => {
         </p>
         <button
           onClick={generateColor}
-          className="mt-4 px-4 py-2 bg-[#6B7280] text-white rounded-md"
+          className="mt-4 px-4 py-2 bg-[#6B7280] hover:bg-[#4b515c] text-white rounded-md"
         >
           Random Color
         </button>
