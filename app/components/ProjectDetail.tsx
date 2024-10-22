@@ -97,10 +97,10 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
             </div>
 
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 p-2 border-r border-l dark:bg-[#242424]">
+              <div className="md:w-1/2 h-96 p-2 border-r border-l dark:bg-[#242424] ">
                 {app.ProjectComponent ? <app.ProjectComponent /> : null}
               </div>
-              <div className="md:w-1/2 dark:bg-[#212121] p-2 border-r">
+              <div className="md:w-1/2 h-96 dark:bg-[#212121] p-2 border-r overflow-auto">
                 <div className="flex mb-4">
                   <button
                     onClick={() => setCodeType("html")}
