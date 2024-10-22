@@ -114,9 +114,9 @@ generateButton.addEventListener('click', () => {
     htmlSnippet: `<div>Hllo, Random Number!</div>`,
     cssSnippet: `div { color: red; }`,
     jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
+    githubLink: "https://github.com/hernandoabella/random-color",
     projectStars: 0,
-    downloadLink: "",
+    downloadLink: "https://github.com/hernandoabella/random-color/archive/refs/heads/main.zip",
   },
 
   {
