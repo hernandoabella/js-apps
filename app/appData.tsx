@@ -110,10 +110,109 @@ generateButton.addEventListener('click', () => {
     ProjectComponent: RandomColor,
     level: 1,
     title: "Random Color Generator",
-    description: "This app generates a random color.",
-    htmlSnippet: `<div>Hllo, Random Number!</div>`,
-    cssSnippet: `div { color: red; }`,
-    jsSnippet: `console.log('Hello, World!');`,
+    description: "A simple web app that generates a random hex color with each button click.",
+    htmlSnippet: `&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Random Color Generator&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/styles.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;color-box&quot;&gt;
+            &lt;p id=&quot;colorDisplay&quot; class=&quot;color-text&quot;&gt;#FF5733&lt;/p&gt;
+            &lt;button id=&quot;colorButton&quot; class=&quot;color-button&quot;&gt;Random Color&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src=&quot;/script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;`,
+    cssSnippet: `@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.color-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #E4E4E7;
+}
+
+.color-text {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6B7280;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4b515c;
+}`,
+    jsSnippet: `// Function to generate a random color in hex format
+const generateRandomColor = () => {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
+// Function to determine if a color is light or dark for contrast
+const isLightColor = (color) => {
+    const r = parseInt(color.slice(1, 3), 16);
+    const g = parseInt(color.slice(3, 5), 16);
+    const b = parseInt(color.slice(5, 7), 16);
+    // Use the luminance formula to determine brightness
+    const luminance = 0.299 * r + 0.587 * g + 0.114 * b;
+    return luminance > 186; // If luminance > 186, it's a light color
+};
+
+// Function to update the color display
+const updateColorDisplay = (color) => {
+    const colorDisplay = document.getElementById('colorDisplay');
+    colorDisplay.textContent = color;
+    colorDisplay.style.backgroundColor = color;
+    colorDisplay.style.color = isLightColor(color) ? 'black' : 'white';
+};
+
+// Function to generate a random color when the button is clicked
+document.getElementById('colorButton').addEventListener('click', () => {
+    const newRandomColor = generateRandomColor();
+    updateColorDisplay(newRandomColor);
+});
+
+// Initialize with a default color
+updateColorDisplay('#FF5733');
+`,
     githubLink: "https://github.com/hernandoabella/random-color",
     projectStars: 0,
     downloadLink: "https://github.com/hernandoabella/random-color/archive/refs/heads/main.zip",
@@ -215,7 +314,7 @@ document.getElementById('generateStringBtn').addEventListener('click', changeStr
   },
 
   {
-    name: "Background Gradient",
+    name: "Background Gradient Generator",
     path: "/apps/random-gradient",
     ProjectComponent: RandomGradient,
     level: 1,
