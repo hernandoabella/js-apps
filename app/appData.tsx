@@ -2,10 +2,12 @@ import RandomNumber from "@/app/components/projects/RandomNumber";
 import RandomString from "@/app/components/projects/RandomString";
 import RandomColor from "./components/projects/RandomColor";
 import RandomGradient from "./components/projects/RandomGradient";
+import ThemeSwitcher from "./components/projects/ThemeSwitcher";
 
 export interface App {
   name: string;
   path: string;
+  icon: string;
   ProjectComponent: React.FC | null;
   level: number;
   title: string;
@@ -22,10 +24,12 @@ export const apps: App[] = [
   {
     name: "Random Number",
     path: "/apps/random-number",
+    icon: "/icons/randomnumber.svg",
     ProjectComponent: RandomNumber,
     level: 1,
     title: "Random Number Generator",
-    description: "A simple web app that generates a random number between 1 and 100 with each button click.",
+    description:
+      "A simple web app that generates a random number between 1 and 100 with each button click.",
     htmlSnippet: `&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -102,15 +106,18 @@ generateButton.addEventListener('click', () => {
 });`,
     githubLink: "https://github.com/hernandoabella/random-number",
     projectStars: 0,
-    downloadLink: "https://github.com/hernandoabella/random-number/archive/refs/heads/main.zip",
+    downloadLink:
+      "https://github.com/hernandoabella/random-number/archive/refs/heads/main.zip",
   },
   {
     name: "Random Color",
     path: "/apps/random-color",
+    icon: "/icons/randomcolor.svg",
     ProjectComponent: RandomColor,
     level: 1,
     title: "Random Color Generator",
-    description: "A simple web app that generates a random hex color with each button click.",
+    description:
+      "A simple web app that generates a random hex color with each button click.",
     htmlSnippet: `&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 
@@ -215,12 +222,14 @@ updateColorDisplay('#FF5733');
 `,
     githubLink: "https://github.com/hernandoabella/random-color",
     projectStars: 0,
-    downloadLink: "https://github.com/hernandoabella/random-color/archive/refs/heads/main.zip",
+    downloadLink:
+      "https://github.com/hernandoabella/random-color/archive/refs/heads/main.zip",
   },
 
   {
-    name: "Random String ",
+    name: "Random String",
     path: "/apps/random-string",
+    icon: "/icons/randomstring.svg",
     ProjectComponent: RandomString,
     level: 1,
     title: "Random String Generator",
@@ -316,10 +325,12 @@ document.getElementById('generateStringBtn').addEventListener('click', changeStr
   {
     name: "Random Gradient",
     path: "/apps/random-gradient",
+    icon: "/icons/randomgradient.svg",
     ProjectComponent: RandomGradient,
     level: 1,
     title: "Random Gradient Generator",
-    description: "A simple web app that generates a Random Gradient at the click of a button, making it easy to visualize dynamic color schemes.",
+    description:
+      "A simple web app that generates a Random Gradient at the click of a button, making it easy to visualize dynamic color schemes.",
     htmlSnippet: `&#x3C;!DOCTYPE html&#x3E;
 &#x3C;html lang=&#x22;en&#x22;&#x3E;
 
@@ -408,27 +419,30 @@ function generateRandomGradient() {
 document.getElementById("generateButton").addEventListener("click", generateRandomGradient);`,
     githubLink: "https://github.com/hernandoabella/random-gradient",
     projectStars: 0,
-    downloadLink: "https://github.com/hernandoabella/random-gradient/archive/refs/heads/main.zip",
+    downloadLink:
+      "https://github.com/hernandoabella/random-gradient/archive/refs/heads/main.zip",
   },
 
   {
     name: "Theme Switcher",
     path: "/apps/theme-switcher",
-    ProjectComponent: RandomGradient,
+    icon: "/icons/themeswitcher.svg",
+    ProjectComponent: ThemeSwitcher,
     level: 2,
-    title: "Background Gradient Generator",
-    description: "This app generates a random number.",
-    htmlSnippet: `<div>Hllo, Random Number!</div>`,
-    cssSnippet: `div { color: red; }`,
-    jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
+    title: "Theme Switcher",
+    description: "This app allow users to toggle between light and dark themes.",
+    htmlSnippet: ``,
+    cssSnippet: ``,
+    jsSnippet: ``,
+    githubLink: "https://github.com/hernandoabella/theme-switcher",
     projectStars: 0,
-    downloadLink: "",
+    downloadLink: "https://github.com/hernandoabella/theme-switcher/archive/refs/heads/main.zip",
   },
 
   {
     name: "Music Player",
     path: "/apps/music-player",
+    icon: "icons/musicplayer.svg",
     ProjectComponent: RandomGradient,
     level: 3,
     title: "Background Gradient Generator",
@@ -444,6 +458,7 @@ document.getElementById("generateButton").addEventListener("click", generateRand
   {
     name: "Tic Tac Toe",
     path: "/apps/tic-tac-toe",
+    icon: "icons/tictactoe.svg",
     ProjectComponent: RandomGradient,
     level: 4,
     title: "Background Gradient Generator",
@@ -459,6 +474,7 @@ document.getElementById("generateButton").addEventListener("click", generateRand
   {
     name: "Tetris Game",
     path: "/apps/tetris-game",
+    icon: "icons/tetris.svg",
     ProjectComponent: RandomGradient,
     level: 5,
     title: "Background Gradient Generator",
