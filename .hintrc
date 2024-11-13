@@ -17,6 +17,13 @@
           "backdrop-filter"
         ]
       }
+    ],
+    "typescript-config/consistent-casing": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
     ]
   }
 }
