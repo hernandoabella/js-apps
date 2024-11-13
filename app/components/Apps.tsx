@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import { apps, App } from "@/app/appData";
+import Image from "next/image";
 
 const levelIcons: { [key: number]: string } = {
   1: "/icons/rookie.svg",
@@ -61,6 +62,8 @@ const Apps: React.FC = () => {
                   index % 2 === 0 ? "translate-x-8" : "-translate-x-8"
                 }`}
               >
+                
+
                 <Link href={app.path}>
                   <div
                     className="block absolute inset-0"
@@ -69,7 +72,12 @@ const Apps: React.FC = () => {
                 </Link>
                 <div>
                   <div className="text-center h-10 flex justify-center items-center">
-                    {app.name}
+                    <Image
+                      src={app.icon}
+                      alt={app.icon}
+                      width={30}
+                      height={30}
+                    />
                   </div>
                 </div>
               </div>
