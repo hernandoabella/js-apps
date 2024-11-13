@@ -1,18 +1,22 @@
 import React from "react";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
-import { ModeToggle } from "./ModeToggle"; // Assuming ModeToggle is a separate component for toggling modes
-import { IoSunny, IoMoon } from "react-icons/io5"; // Importing the sun and moon icons
+import { ModeToggle } from "./ModeToggle";
 
 const Header = () => {
   return (
     <header>
       <nav className="shadow-lg fixed w-full z-20 top-0 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border">
         <div className="mx-auto max-w-7xl flex flex-wrap items-center justify-between py-4 px-4 md:px-10">
-          <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <a
+            href="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <div className="text-3xl text-[#323330] dark:text-white font-bold btn-shine">
               <span className="text-[#f0db4f]">JS-</span>
               APPS
             </div>
+            <sup className="text-sm text-blue-500">Beta</sup>
           </a>
           <div className="flex items-center gap-5 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <a
@@ -22,10 +26,13 @@ const Header = () => {
               <FaGithub />
             </a>
 
-            {/* Toggle Button using React Icons */}
             <ModeToggle />
 
-            <a rel="noopener" href="https://hernandoabella.gumroad.com/l/hoocc" target="_blank">
+            <a
+              rel="noopener"
+              href="https://hernandoabella.gumroad.com/l/hoocc"
+              target="_blank"
+            >
               <button className="button flex items-center">
                 <svg
                   viewBox="0 0 16 16"
@@ -40,6 +47,16 @@ const Header = () => {
                 Get All Access
               </button>
             </a>
+
+            <div>
+              <Image
+                src="/avatar.png"
+                alt="avatar"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+            </div>
           </div>
         </div>
       </nav>
