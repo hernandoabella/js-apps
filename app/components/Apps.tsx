@@ -27,6 +27,20 @@ const levelDescriptions: { [key: number]: string } = {
   5: "Ninja: Innovating in tech.",
 };
 
+// Tooltip component positioned outside the button on hover
+const Tooltip: React.FC<{ text: string; index: number }> = ({
+  text,
+  index,
+}) => (
+  <span
+    className={`absolute w-20 opacity-0 hover:opacity-100 p-2 text-xs bg-[#323330] text-white rounded shadow-lg group-hover:opacity-100 transition-opacity duration-200 ${
+      index % 2 === 0 ? "left-full ml-4" : "right-full mr-4"
+    }`}
+  >
+    {text}
+  </span>
+);
+
 const Apps: React.FC = () => {
   const appsByLevel: { [key: number]: App[] } = apps.reduce((acc, app) => {
     if (!acc[app.level]) {
@@ -58,17 +72,13 @@ const Apps: React.FC = () => {
             {appsByLevel[parseInt(level, 10)].map((app, index) => (
               <div
                 key={app.name}
-                className={`relative hover:scale-110 transition-all bot border-4 border-[#f0db4f] shadow-xl } ${
+                className={`p-5 hover:rounded-full relative group hover:scale-110 transition-all border-4 bg-[#323330] border-[#f0db4f] shadow-xl ${
                   index % 2 === 0 ? "translate-x-8" : "-translate-x-8"
                 }`}
               >
-                
-
+                <Tooltip text={`${app.name}`} index={index} />
                 <Link href={app.path}>
-                  <div
-                    className="block absolute inset-0"
-                    style={{ zIndex: 10 }}
-                  />
+                  <div className="block absolute inset-0" />
                 </Link>
                 <div>
                   <div className="text-center h-10 flex justify-center items-center">
