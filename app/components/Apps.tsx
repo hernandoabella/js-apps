@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import { apps, App } from "@/app/appData";
-import Image from "next/image";
 
 const levelIcons: { [key: number]: string } = {
   1: "/icons/rookie.svg",
@@ -14,7 +13,7 @@ const levelIcons: { [key: number]: string } = {
 
 const Stars: React.FC<{ level: number }> = ({ level }) => {
   const stars = Array.from({ length: level }, (_, i) => (
-    <FaStar key={i} className="text-yellow-500" />
+    <FaStar key={i}  />
   ));
   return <span className="flex space-x-1">{stars}</span>;
 };
@@ -26,20 +25,6 @@ const levelDescriptions: { [key: number]: string } = {
   4: "Master: Leading complex projects.",
   5: "Ninja: Innovating in tech.",
 };
-
-// Tooltip component positioned outside the button on hover
-const Tooltip: React.FC<{ text: string; index: number }> = ({
-  text,
-  index,
-}) => (
-  <span
-    className={`absolute w-20 opacity-0 hover:opacity-100 p-2 text-xs bg-[#323330] text-white rounded shadow-lg group-hover:opacity-100 transition-opacity duration-200 ${
-      index % 2 === 0 ? "left-full ml-4" : "right-full mr-4"
-    }`}
-  >
-    {text}
-  </span>
-);
 
 const Apps: React.FC = () => {
   const appsByLevel: { [key: number]: App[] } = apps.reduce((acc, app) => {
@@ -72,22 +57,22 @@ const Apps: React.FC = () => {
             {appsByLevel[parseInt(level, 10)].map((app, index) => (
               <div
                 key={app.name}
-                className={`p-5 hover:rounded-full relative group hover:scale-110 transition-all border-4 bg-[#323330] border-[#f0db4f] shadow-xl ${
+                className={`p-2 rounded-xl relative group hover:scale-110 transition-all border-4  hover:border-[#f0db4f] shadow-xl ${
                   index % 2 === 0 ? "translate-x-8" : "-translate-x-8"
                 }`}
               >
-                <Tooltip text={`${app.name}`} index={index} />
                 <Link href={app.path}>
                   <div className="block absolute inset-0" />
                 </Link>
                 <div>
                   <div className="text-center h-10 flex justify-center items-center">
-                    <Image
+                    {app.name}
+                    {/* <Image
                       src={app.icon}
                       alt={app.icon}
                       width={30}
                       height={30}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
