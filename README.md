@@ -1,5 +1,5 @@
-![JS-APPS  (2)](https://github.com/user-attachments/assets/b24c54c8-6fc1-4de2-969f-833e2c7e74f5)
-
+![GitHub Banners (2)](https://github.com/user-attachments/assets/42346715-1c14-49d6-ae3e-413aece76dad)
+# <div align="center">Top Projects for Practicing JavaScript Code</div>
 
 ## Difficulty Levels ⚔️
 - **Rookie 👶:** Just starting.
