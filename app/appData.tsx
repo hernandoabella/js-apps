@@ -22,7 +22,7 @@ export interface App {
 
 export const apps: App[] = [
   {
-    name: "Random Number",
+    name: "Random Number Generator",
     path: "/apps/random-number",
     icon: "/icons/randomnumber.svg",
     ProjectComponent: RandomNumber,
@@ -97,7 +97,7 @@ generateButton.addEventListener('click', () => {
       "https://github.com/hernandoabella/random-number/archive/refs/heads/main.zip",
   },
   {
-    name: "Random Color",
+    name: "Random Color Generator",
     path: "/apps/random-color",
     icon: "/icons/randomcolor.svg",
     ProjectComponent: RandomColor,
@@ -214,7 +214,7 @@ updateColorDisplay('#FF5733');
   },
 
   {
-    name: "Random String",
+    name: "Random String Generator",
     path: "/apps/random-string",
     icon: "/icons/randomstring.svg",
     ProjectComponent: RandomString,
@@ -310,7 +310,7 @@ document.getElementById('generateStringBtn').addEventListener('click', changeStr
   },
 
   {
-    name: "Random Gradient",
+    name: "Random Gradient Generator",
     path: "/apps/random-gradient",
     icon: "/icons/randomgradient.svg",
     ProjectComponent: RandomGradient,
