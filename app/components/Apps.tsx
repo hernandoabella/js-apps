@@ -57,23 +57,14 @@ const Apps: React.FC = () => {
             {appsByLevel[parseInt(level, 10)].map((app, index) => (
               <div
                 key={app.name}
-                className={`p-2 rounded-xl relative group hover:scale-110 transition-all border-4  hover:border-[#f0db4f] shadow-xl ${
-                  index % 2 === 0 ? "translate-x-8" : "-translate-x-8"
+                className={`${index === 0 ? "translate-x-0" : index % 2 === 0 ? "translate-x-10" : "-translate-x-10"
                 }`}
               >
                 <Link href={app.path}>
                   <div className="block absolute inset-0" />
                 </Link>
                 <div>
-                  <div className="text-center h-10 flex justify-center items-center">
-                    {app.name}
-                    {/* <Image
-                      src={app.icon}
-                      alt={app.icon}
-                      width={30}
-                      height={30}
-                    /> */}
-                  </div>
+                <button className="group relative h-12 overflow-hidden overflow-x-hidden rounded-md bg-neutral-950 px-8 py-2 text-neutral-50"><span className="relative z-10">{app.name}</span><span class="absolute inset-0 overflow-hidden rounded-md"><span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
                 </div>
               </div>
             ))}
