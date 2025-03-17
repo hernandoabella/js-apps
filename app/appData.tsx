@@ -30,25 +30,12 @@ export const apps: App[] = [
     title: "Random Number Generator",
     description:
       "A simple web app that generates a random number between 1 and 100 with each button click.",
-    htmlSnippet: `&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot; /&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-  &lt;title&gt;Random Number Generator&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class=&quot;container&quot;&gt;
+    htmlSnippet: `&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;box&quot;&gt;
       &lt;p id=&quot;randomNumber&quot; class=&quot;number&quot;&gt;7&lt;/p&gt;
       &lt;button id=&quot;generateButton&quot; class=&quot;generate-btn&quot;&gt;Random Number&lt;/button&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;`,
+  &lt;/div&gt;`,
     cssSnippet: `@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
