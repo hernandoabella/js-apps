@@ -1,5 +1,4 @@
-![JS-APPS  (2)](https://github.com/user-attachments/assets/b24c54c8-6fc1-4de2-969f-833e2c7e74f5)
-
+![GitHub Banners (1)](https://github.com/user-attachments/assets/88522583-3ba5-4f6f-93b4-91cef0a52c86)
 
 ## Difficulty Levels ⚔️
 - **Rookie 👶:** Just starting.
