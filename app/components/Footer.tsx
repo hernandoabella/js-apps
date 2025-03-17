@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="p-10">
       <p className="text-center">
-        © {new Date().getFullYear()} Hernando Abella. All rights reserved.
+        Made with ❤️ by Hernando Abella
       </p>
     </div>
   );
