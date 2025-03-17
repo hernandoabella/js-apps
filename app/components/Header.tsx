@@ -12,11 +12,14 @@ const Header = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <div className="text-3xl text-[#323330] dark:text-white font-bold btn-shine">
-              <span className="text-[#f0db4f]">JS-</span>
-              APPS
+            <div className="logo">
+            <Image
+                src="/logo.png"
+                alt="logo"
+                width={180}
+                height={40}
+              />
             </div>
-            <sup className="text-sm text-blue-500">Beta</sup>
           </a>
           <div className="flex items-center gap-5 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <a
@@ -28,7 +31,7 @@ const Header = () => {
 
             <ModeToggle />
 
-            <a
+            {/* <a
               rel="noopener"
               href="https://hernandoabella.gumroad.com/l/hoocc"
               target="_blank"
@@ -46,9 +49,9 @@ const Header = () => {
                 </svg>
                 Get All Access
               </button>
-            </a>
+            </a> */}
 
-            <div>
+            {/* <div>
               <Image
                 src="/avatar.png"
                 alt="avatar"
@@ -56,7 +59,7 @@ const Header = () => {
                 height={40}
                 className="rounded-full"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
