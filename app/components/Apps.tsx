@@ -13,7 +13,7 @@ const levelIcons: { [key: number]: string } = {
 
 const Stars: React.FC<{ level: number }> = ({ level }) => {
   const stars = Array.from({ length: level }, (_, i) => (
-    <FaStar key={i}  />
+    <FaStar key={i} />
   ));
   return <span className="flex space-x-1">{stars}</span>;
 };
@@ -58,14 +58,13 @@ const Apps: React.FC = () => {
               <div
                 key={app.name}
                 className={`${index === 0 ? "translate-x-0" : index % 2 === 0 ? "translate-x-10" : "-translate-x-10"
-                }`}
+                  }`}
               >
                 <Link href={app.path}>
                   <div className="block absolute inset-0" />
+                  <button className="group relative overflow-hidden overflow-x-hidden rounded-full bg-neutral-950 p-2 text-neutral-50 hover:text-black"><span className="relative z-10">{app.name}</span><span className="absolute inset-0 overflow-hidden rounded-full"><span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-yellow-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
                 </Link>
-                <div>
-                <button className="group relative h-12 overflow-hidden overflow-x-hidden rounded-md bg-neutral-950 px-8 py-2 text-neutral-50"><span className="relative z-10">{app.name}</span><span class="absolute inset-0 overflow-hidden rounded-md"><span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-blue-500 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
-                </div>
+
               </div>
             ))}
           </div>
