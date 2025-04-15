@@ -11,42 +11,35 @@
 ## App List 📱
 
 ### 👶 Rookie
-| Name                             | Demo                                                      |
-| --------------------------------  | --------------------------------------------------------- |
-| Random Number Generator          | [Live](#)      |
-| Random Color Generator           | [Live](#)    |
-
+| Name | Demo | 
+| ---- | ---- |
+| Number Generator | [Live](#) |
+| Color Generator | [Live](#) |
 
 ### 🧒 Novice
-| Name                             | Demo                                                      |
-| -------------------------------- | --------------------------------------------------------- |
-| Theme Switcher                   | [Live](#)   |
-
+| Name | Demo |
+| ---- | ---- |
+| Theme Switcher | [Live](#) |
 
 ### 👨🏼‍🎓 Pro
-| Name                             | Demo                                                      |
-| --------------------------------  | --------------------------------------------------------- |
-| x              | [Live](...)       |
+| Name | Demo |
+| ---- | ---- |
+| x    | [Live](#) |
 
 ### 👩🏻‍💼 Master
-| Name                                 | Demo                                                      |
-| --------------------------------  | --------------------------------------------------------- |
-| x                  | [Live](...)       |
-
+| Name | Demo |
+| ---- | ---- |
+| x    | [Live](#) |
 
 ### 🥷 Ninja
-| Name                            | Demo                                                      |
-| ------------------------------------------ | --------------------------------------------------------- |
-| Tetris                           | [Live](...)        |
-
+| Name | Demo |
+| ---- | ---- |
+| Tetris | [Live](...) |
 
 ## How to Contribute? ✨
-If you want to contribute, please check our [contribution guide](./CONTRIBUTING.md) for more details.
-
-## License 📜
-This project is under the [MIT License](./LICENSE.md). Please read the license file for more information.
+Please check our [contribution guide](./CONTRIBUTING.md) for more details if you want to contribute.
 
 ## Contact 📩
 If you have any questions or comments about this project, you can contact me at: hernandoabella@gmail.com
 
-Made with ☕ & ❤️ by [@hernandoabella](https://github.com/hernandoabella)
+Made with ❤️ by [@hernandoabella](https://github.com/hernandoabella)
