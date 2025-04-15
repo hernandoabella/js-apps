@@ -15,7 +15,6 @@ export interface App {
   htmlSnippet?: string;
   cssSnippet?: string;
   jsSnippet?: string;
-  githubLink: string;
   projectStars: number;
   downloadLink: string;
 }
@@ -29,7 +28,7 @@ export const apps: App[] = [
     level: 1,
     title: "Number Generator",
     description:
-      "A simple web app that generates a random number between 1 and 100 with each button click.",
+      "Generate a random number between 1 and 100.",
     htmlSnippet: `&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;box&quot;&gt;
       &lt;p id=&quot;randomNumber&quot; class=&quot;number&quot;&gt;7&lt;/p&gt;
@@ -91,10 +90,10 @@ generateButton.addEventListener('click', () => {
     const newRandomNumber = generateRandomNumber();
     randomNumberDisplay.textContent = newRandomNumber;
 });`,
-    githubLink: "https://github.com/hernandoabella/random-number",
+    
     projectStars: 0,
     downloadLink:
-      "https://github.com/hernandoabella/random-number/archive/refs/heads/main.zip",
+      "/project.rar",
   },
   {
     name: "Color Generator",
@@ -207,7 +206,7 @@ document.getElementById('colorButton').addEventListener('click', () => {
 // Initialize with a default color
 updateColorDisplay('#FF5733');
 `,
-    githubLink: "https://github.com/hernandoabella/random-color",
+    
     projectStars: 0,
     downloadLink:
       "https://github.com/hernandoabella/random-color/archive/refs/heads/main.zip",
@@ -303,7 +302,7 @@ function changeString() {
       
 // Add event listener to button
 document.getElementById('generateStringBtn').addEventListener('click', changeString);`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
+    
     projectStars: 0,
     downloadLink:
       "https://github.com/hernandoabella/random-string/archive/refs/heads/main.zip",
@@ -404,7 +403,6 @@ function generateRandomGradient() {
 
 // Event listener for the button click
 document.getElementById("generateButton").addEventListener("click", generateRandomGradient);`,
-    githubLink: "https://github.com/hernandoabella/random-gradient",
     projectStars: 0,
     downloadLink:
       "https://github.com/hernandoabella/random-gradient/archive/refs/heads/main.zip",
@@ -421,7 +419,6 @@ document.getElementById("generateButton").addEventListener("click", generateRand
     htmlSnippet: ``,
     cssSnippet: ``,
     jsSnippet: ``,
-    githubLink: "https://github.com/hernandoabella/theme-switcher",
     projectStars: 0,
     downloadLink: "https://github.com/hernandoabella/theme-switcher/archive/refs/heads/main.zip",
   },
@@ -437,7 +434,6 @@ document.getElementById("generateButton").addEventListener("click", generateRand
     htmlSnippet: `<div>Hllo, Random Number!</div>`,
     cssSnippet: `div { color: red; }`,
     jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
     projectStars: 0,
     downloadLink: "",
   },
@@ -453,7 +449,6 @@ document.getElementById("generateButton").addEventListener("click", generateRand
     htmlSnippet: `<div>Hllo, Random Number!</div>`,
     cssSnippet: `div { color: red; }`,
     jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
     projectStars: 0,
     downloadLink: "",
   },
@@ -469,7 +464,6 @@ document.getElementById("generateButton").addEventListener("click", generateRand
     htmlSnippet: `<div>Hllo, Random Number!</div>`,
     cssSnippet: `div { color: red; }`,
     jsSnippet: `console.log('Hello, World!');`,
-    githubLink: "https://github.com/hernandoabella/random-number-generator",
     projectStars: 0,
     downloadLink: "",
   },
