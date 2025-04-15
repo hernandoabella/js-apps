@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "JS-APPS",
-  description: "Learn JavaScript by building projects!",
+  description: "Learn JavaScript by building real-life projects!",
 };
 
 export default function RootLayout({
