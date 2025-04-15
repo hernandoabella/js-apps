@@ -4,9 +4,9 @@
 ## Difficulty Levels ⚔️
 - **Rookie 👶:** Just starting.
 - **Novice 🧒:** Gaining confidence with simple projects.
-- **Pro 👨🏼‍🎓:** Solid understanding of coding concepts.
-- **Master 👩🏻‍💼:** Skilled developers mastering complex challenges.
-- **Ninja 🥷:** Innovating and pushing boundaries in tech.
+- **Pro 👨🏼‍🎓:** Building real-world apps.
+- **Master 👩🏻‍💼:** Leading projects.
+- **Ninja 🥷:** Tech innovator
 
 ## Applications 📱
 
