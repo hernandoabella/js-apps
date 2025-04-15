@@ -97,55 +97,60 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
             </div>
 
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 h-96 p-2 border-r border-l dark:bg-[#242424] ">
-                {app.ProjectComponent ? <app.ProjectComponent /> : null}
-              </div>
-              <div className="md:w-1/2 h-96 dark:bg-[#212121] p-2 border-r overflow-auto">
-                <div className="flex mb-4 ">
-                  <button
-                    onClick={() => setCodeType("html")}
-                    className={`flex items-center gap-1 p-2 rounded-md ${
-                      codeType === "html"
-                        ? "bg-[#161616] text-white"
-                        : "bg-gray-600"
-                    }`}
-                  >
-                    <FaHtml5 /> HTML
-                  </button>
-                  <button
-                    onClick={() => setCodeType("css")}
-                    className={`flex items-center gap-1 p-2 mx-2 rounded-md ${
-                      codeType === "css"
-                        ? "bg-[#161616] text-white"
-                        : "bg-gray-600"
-                    }`}
-                  >
-                    <FaCss3 /> CSS
-                  </button>
-                  <button
-                    onClick={() => setCodeType("js")}
-                    className={`flex items-center gap-1 p-2 rounded-md ${
-                      codeType === "js"
-                        ? "bg-[#161616] text-white"
-                        : "bg-gray-600"
-                    }`}
-                  >
-                    <FaJs /> JS
-                  </button>
-                </div>
-                <div className="relative">
-                  <div ref={codeRef} />
-                  <button
-                    onClick={handleCopyToClipboard}
-                    className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
-                    title="Copy to Clipboard"
-                  >
-                    {copied ? <FaCheck /> : <FaCopy />}{" "}
-                    {/* Cambia el ícono según el estado */}
-                  </button>
-                </div>
-              </div>
-            </div>
+  <div className="md:w-1/2 h-96 p-2 border-r border-l dark:bg-[#242424] ">
+    {app.ProjectComponent ? <app.ProjectComponent /> : null}
+  </div>
+  <div className="md:w-1/2 h-96 dark:bg-[#212121] p-2 border-r overflow-auto">
+    <div className="flex mb-4">
+      {/* HTML Button */}
+      <button
+        onClick={() => setCodeType("html")}
+        className={`flex items-center gap-1 p-2 rounded-md ${
+          codeType === "html"
+            ? "bg-[#e34f26] text-white" // HTML: #e34f26 (HTML5 color)
+            : "bg-gray-600"
+        }`}
+      >
+        <FaHtml5 /> HTML
+      </button>
+
+      {/* CSS Button */}
+      <button
+        onClick={() => setCodeType("css")}
+        className={`flex items-center gap-1 p-2 mx-2 rounded-md ${
+          codeType === "css"
+            ? "bg-[#2965f1] text-white" // CSS: #2965f1 (CSS3 color)
+            : "bg-gray-600"
+        }`}
+      >
+        <FaCss3 /> CSS
+      </button>
+
+      {/* JS Button */}
+      <button
+        onClick={() => setCodeType("js")}
+        className={`flex items-center gap-1 p-2 rounded-md ${
+          codeType === "js"
+            ? "bg-[#f7df1e] text-black" // JS: #f7df1e (JavaScript color)
+            : "bg-gray-600"
+        }`}
+      >
+        <FaJs /> JS
+      </button>
+    </div>
+    <div className="relative">
+      <div ref={codeRef} />
+      <button
+        onClick={handleCopyToClipboard}
+        className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
+        title="Copy to Clipboard"
+      >
+        {copied ? <FaCheck /> : <FaCopy />} {/* Icon changes based on state */}
+      </button>
+    </div>
+  </div>
+</div>
+
 
             <div className=" dark:bg-[#141414] p-5 rounded-b-xl md:flex justify-between gap-5 border">
               <div>
