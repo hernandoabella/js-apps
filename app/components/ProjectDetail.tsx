@@ -88,95 +88,90 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
       <div className="md:flex md:items-center md:justify-center md:h-screen">
         <div className="lg:w-9/12">
           <div className="lg:mx-20 lg:flex-col">
-            <div className="dark:bg-[#141414] p-5 rounded-t-xl border">
-              <Link href="/">
-                <div className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group bg-gray-900 hover:bg-gray-950 transition-all duration-200 ease-in-out hover:ring-2 hover:ring-offset-2 hover:ring-gray-900 text-white">
-                  <FaArrowCircleLeft className="mr-2" /> Go back
+
+          <div className="inline-block m-5">
+                  <a
+                    href="/"
+                    className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
+                  >
+                    <FaArrowCircleLeft  />
+                    
+                  </a>
                 </div>
-              </Link>
-            </div>
+            
+            
 
             <div className="flex flex-col md:flex-row">
-  <div className="md:w-1/2 h-96 p-2 border-r border-l dark:bg-[#242424] ">
-    {app.ProjectComponent ? <app.ProjectComponent /> : null}
-  </div>
-  <div className="md:w-1/2 h-96 dark:bg-[#212121] p-2 border-r overflow-auto">
-    <div className="flex mb-4">
-      {/* HTML Button */}
-      <button
-        onClick={() => setCodeType("html")}
-        className={`flex items-center gap-1 p-2 rounded-md ${
-          codeType === "html"
-            ? "bg-[#e34f26] text-white" // HTML: #e34f26 (HTML5 color)
-            : "bg-gray-600"
-        }`}
-      >
-        <FaHtml5 /> HTML
-      </button>
+              <div className="md:w-1/2 h-96 p-2 border-r dark:bg-[#242424] ">
+                {app.ProjectComponent ? <app.ProjectComponent /> : null}
+              </div>
+              <div className="md:w-1/2 h-96 dark:bg-[#212121] p-2 overflow-auto">
+                <div className="flex mb-4">
+                  {/* HTML Button */}
+                  <button
+                    onClick={() => setCodeType("html")}
+                    className={`flex items-center gap-1 p-2 rounded-md ${codeType === "html"
+                      ? "bg-[#e34f26] text-white" // HTML: #e34f26 (HTML5 color)
+                      : "bg-gray-600"
+                      }`}
+                  >
+                    <FaHtml5 /> HTML
+                  </button>
 
-      {/* CSS Button */}
-      <button
-        onClick={() => setCodeType("css")}
-        className={`flex items-center gap-1 p-2 mx-2 rounded-md ${
-          codeType === "css"
-            ? "bg-[#2965f1] text-white" // CSS: #2965f1 (CSS3 color)
-            : "bg-gray-600"
-        }`}
-      >
-        <FaCss3 /> CSS
-      </button>
+                  {/* CSS Button */}
+                  <button
+                    onClick={() => setCodeType("css")}
+                    className={`flex items-center gap-1 p-2 mx-2 rounded-md ${codeType === "css"
+                      ? "bg-[#2965f1] text-white" // CSS: #2965f1 (CSS3 color)
+                      : "bg-gray-600"
+                      }`}
+                  >
+                    <FaCss3 /> CSS
+                  </button>
 
-      {/* JS Button */}
-      <button
-        onClick={() => setCodeType("js")}
-        className={`flex items-center gap-1 p-2 rounded-md ${
-          codeType === "js"
-            ? "bg-[#f7df1e] text-black" // JS: #f7df1e (JavaScript color)
-            : "bg-gray-600"
-        }`}
-      >
-        <FaJs /> JS
-      </button>
-    </div>
-    <div className="relative">
-      <div ref={codeRef} />
-      <button
-        onClick={handleCopyToClipboard}
-        className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
-        title="Copy to Clipboard"
-      >
-        {copied ? <FaCheck /> : <FaCopy />} {/* Icon changes based on state */}
-      </button>
-    </div>
-  </div>
-</div>
+                  {/* JS Button */}
+                  <button
+                    onClick={() => setCodeType("js")}
+                    className={`flex items-center gap-1 p-2 rounded-md ${codeType === "js"
+                      ? "bg-[#f7df1e] text-black" // JS: #f7df1e (JavaScript color)
+                      : "bg-gray-600"
+                      }`}
+                  >
+                    <FaJs /> JS
+                  </button>
+                </div>
+                <div className="relative">
+                  <div ref={codeRef} />
+                  <button
+                    onClick={handleCopyToClipboard}
+                    className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
+                    title="Copy to Clipboard"
+                  >
+                    {copied ? <FaCheck /> : <FaCopy />} {/* Icon changes based on state */}
+                  </button>
+                </div>
+              </div>
+            </div>
 
 
-            <div className=" dark:bg-[#141414] p-5 rounded-b-xl md:flex justify-between gap-5 border">
+            <div className="dark:bg-[#141414] p-5 rounded-b-xl justify-between gap-5">
               <div>
                 <h2 className="text-2xl font-bold mb-2">{app.title}</h2>
                 <p className="mb-2">{app.description}</p>{" "}
               </div>
-              <div className="flex items-center justify-center gap-5">
-                <div className="pt-5 md:pt-0">
-                  <a
-                    href={app.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500"
-                  >
-                    
-                  </a>
-                </div>
-                <div className="pt-5 md:pt-0">
-                  <a
+              <div>
+
+                <div className="inline-block mt-2">
+                  <a download={true}
                     href={app.downloadLink}
-                    className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group bg-gray-900 hover:bg-gray-950 transition-all duration-200 ease-in-out hover:ring-2 hover:ring-offset-2 hover:ring-gray-900"
+                    className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
                   >
-                    <FaDownload className="mr-2 text-white" />
-                    <span className="text-slate-50">Download Project</span>
+                    <FaDownload className="mr-2" />
+                    <span>Download Project</span>
                   </a>
                 </div>
+
+
               </div>{" "}
             </div>
           </div>
