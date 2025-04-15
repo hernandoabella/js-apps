@@ -93,7 +93,7 @@ generateButton.addEventListener('click', () => {
     
     projectStars: 0,
     downloadLink:
-      "/project.rar",
+      "/",
   },
   {
     name: "Color Generator",
