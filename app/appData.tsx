@@ -22,12 +22,12 @@ export interface App {
 
 export const apps: App[] = [
   {
-    name: "Random Number Generator",
-    path: "/apps/random-number",
+    name: "Number Generator",
+    path: "/apps/number-generator",
     icon: "/icons/randomnumber.svg",
     ProjectComponent: RandomNumber,
     level: 1,
-    title: "Random Number Generator",
+    title: "Number Generator",
     description:
       "A simple web app that generates a random number between 1 and 100 with each button click.",
     htmlSnippet: `&lt;div class=&quot;container&quot;&gt;
@@ -97,8 +97,8 @@ generateButton.addEventListener('click', () => {
       "https://github.com/hernandoabella/random-number/archive/refs/heads/main.zip",
   },
   {
-    name: "Random Color Generator",
-    path: "/apps/random-color",
+    name: "Color Generator",
+    path: "/apps/color-generator",
     icon: "/icons/randomcolor.svg",
     ProjectComponent: RandomColor,
     level: 1,
@@ -214,8 +214,8 @@ updateColorDisplay('#FF5733');
   },
 
   {
-    name: "Random String Generator",
-    path: "/apps/random-string",
+    name: "String Generator",
+    path: "/apps/string-generator",
     icon: "/icons/randomstring.svg",
     ProjectComponent: RandomString,
     level: 1,
@@ -310,12 +310,12 @@ document.getElementById('generateStringBtn').addEventListener('click', changeStr
   },
 
   {
-    name: "Random Gradient Generator",
-    path: "/apps/random-gradient",
+    name: "Gradient Generator",
+    path: "/apps/gradient-generator",
     icon: "/icons/randomgradient.svg",
     ProjectComponent: RandomGradient,
     level: 1,
-    title: "Random Gradient Generator",
+    title: "Gradient Generator",
     description:
       "A simple web app that generates a Random Gradient at the click of a button, making it easy to visualize dynamic color schemes.",
     htmlSnippet: `&#x3C;!DOCTYPE html&#x3E;
@@ -411,8 +411,8 @@ document.getElementById("generateButton").addEventListener("click", generateRand
   },
 
   {
-    name: "Theme Switcher",
-    path: "/apps/theme-switcher",
+    name: "Toggle Dark Mode",
+    path: "/apps/toggle-dark-mode",
     icon: "/icons/themeswitcher.svg",
     ProjectComponent: ThemeSwitcher,
     level: 2,
