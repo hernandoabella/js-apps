@@ -29,7 +29,7 @@ const Header = () => {
               <FaGithub />
             </a>
 
-            {/* <ModeToggle /> */}
+            <ModeToggle />
 
             {/* <a
               rel="noopener"
