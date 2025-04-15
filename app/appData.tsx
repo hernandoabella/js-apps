@@ -1,7 +1,7 @@
-import RandomNumber from "@/app/components/projects/RandomNumber";
-import RandomString from "@/app/components/projects/RandomString";
-import RandomColor from "./components/projects/RandomColor";
-import RandomGradient from "./components/projects/RandomGradient";
+import RandomNumber from "@/app/components/projects/NumberGenerator";
+import RandomString from "@/app/components/projects/StringGenerator";
+import RandomColor from "./components/projects/ColorGenerator";
+import RandomGradient from "./components/projects/GradientGenerator";
 import ThemeSwitcher from "./components/projects/ThemeSwitcher";
 
 export interface App {
