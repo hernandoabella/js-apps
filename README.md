@@ -16,6 +16,7 @@
 | Number Generator | [Live](#) |
 | Color Generator | [Live](#) |
 
+
 ### 🧒 Novice
 | Name | Demo |
 | ---- | ---- |
@@ -35,6 +36,14 @@
 | Name | Demo |
 | ---- | ---- |
 | Tetris | [Live](...) |
+
+## Useful resources used in this project 👑:
+
+### Deployed on:
+- <a href="https://vercel.com/"><span><img src="https://github.com/user-attachments/assets/faf8d498-2416-4ef5-b830-ee3ca86f8d1a" width="80px"></span></a>
+
+### Icons by:
+- <a href="https://www.svgrepo.com/"><span><img src="https://github.com/user-attachments/assets/98e57cb7-7d6b-40bf-a777-42e4f443816b" width="80px"></span></a>
 
 ## How to Contribute? ✨
 Please check our [contribution guide](./CONTRIBUTING.md) for more details if you want to contribute.
