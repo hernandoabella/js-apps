@@ -11,31 +11,31 @@
 ## App List 📱
 
 ### 👶 Rookie
-| Name | Demo | 
-| ---- | ---- |
-| Number Generator | [Live](#) |
-| Color Generator | [Live](#) |
+| Name | Description | Demo | 
+| ---- | ---- | ---- |
+| Number Generator | ... | [Live](#) |
+| Color Generator | ... | [Live](#) |
 
 
 ### 🧒 Novice
-| Name | Demo |
-| ---- | ---- |
-| Theme Switcher | [Live](#) |
+| Name | Description | Demo |
+| ---- | ---- | ---- |
+| Theme Switcher | ... | [Live](#) |
 
 ### 👨🏼‍🎓 Pro
-| Name | Demo |
-| ---- | ---- |
+| Name | Description | Demo |
+| ---- | ---- | ---- |
 | x    | [Live](#) |
 
 ### 👩🏻‍💼 Master
-| Name | Demo |
-| ---- | ---- |
-| x    | [Live](#) |
+| Name | Description | Demo |
+| ---- | ---- | ---- |
+| x    | ... | [Live](#) |
 
 ### 🥷 Ninja
-| Name | Demo |
-| ---- | ---- |
-| Tetris | [Live](...) |
+| Name | Description | Demo |
+| ---- | ---- | ---- |
+| Tetris | ... | [Live](...) |
 
 ## Useful resources used in this project 👑:
 
