@@ -25,7 +25,7 @@
 ### 👨🏼‍🎓 Pro
 | Name | Description | Demo |
 | ---- | ---- | ---- |
-| x    | [Live](#) |
+| x    | ... | [Live](#) |
 
 ### 👩🏻‍💼 Master
 | Name | Description | Demo |
