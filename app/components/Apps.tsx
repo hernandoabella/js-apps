@@ -13,7 +13,7 @@ const levelIcons: { [key: number]: string } = {
 
 const Stars: React.FC<{ level: number }> = ({ level }) => {
   const stars = Array.from({ length: level }, (_, i) => (
-    <FaStar  className="text-yellow-500" key={i} />
+    <FaStar className="text-yellow-500" key={i} />
   ));
   return <span className="flex space-x-1">{stars}</span>;
 };
@@ -38,17 +38,19 @@ const Apps: React.FC = () => {
   return (
     <div className="p-10 mt-20 flex flex-col items-center">
       {Object.keys(appsByLevel).map((level) => (
-        <div key={level} className="mb-10 text-center bg-purple-500 text-white p-20 rounded-xl shadow-xl">
+        <div key={level} className="mb-10 text-center bg-blue-500 text-white p-20 rounded-xl shadow-xl">
           <h2 className="text-2xl font-bold mb-2 flex items-center justify-center">
             <img
               src={levelIcons[parseInt(level, 10)]}
               alt={levelDescriptions[parseInt(level, 10)].split(":")[0]}
-              className="w-8 h-8 mr-2"
+              className="w-20 h-20 m-5"
             />
-            <span className="mr-2">
-              {levelDescriptions[parseInt(level, 10)].split(":")[0]}:
-            </span>
-            <Stars level={parseInt(level, 10)} />
+            <div>
+              <span className="mr-2">
+                {levelDescriptions[parseInt(level, 10)].split(":")[0]}:
+              </span>
+              <Stars level={parseInt(level, 10)} />
+            </div>
           </h2>
           <p className="text-lg mb-4 text-gray-300">
             {levelDescriptions[parseInt(level, 10)].split(":")[1]}
@@ -66,18 +68,18 @@ const Apps: React.FC = () => {
 border-yellow-600
 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
 active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">{/* Project button with the icon */}
-<span className="text-center">
-  {/* Add the SVG icon here */}
-  <img
-    src={app.icon}
-    alt={app.name}
-    className="w-10 h-10 mx-auto my-2"
-  />
-  
-</span>
-<span className="absolute inset-0 overflow-hidden rounded-lg">
-  <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-yellow-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
-</span><span className="relative z-10">{app.name}</span><span className="absolute inset-0 overflow-hidden rounded-lg"><span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-yellow-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
+                    <span className="text-center">
+                      {/* Add the SVG icon here */}
+                      <img
+                        src={app.icon}
+                        alt={app.name}
+                        className="w-10 h-10 mx-auto my-2"
+                      />
+
+                    </span>
+                    <span className="absolute inset-0 overflow-hidden rounded-lg">
+                      <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-yellow-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+                    </span><span className="relative z-10">{app.name}</span><span className="absolute inset-0 overflow-hidden rounded-lg"><span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-yellow-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
                 </Link>
 
               </div>
