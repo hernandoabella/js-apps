@@ -1,21 +1,22 @@
 ![GitHub Banners (2)](https://github.com/user-attachments/assets/42346715-1c14-49d6-ae3e-413aece76dad)
-# <div align="center">Real-life projects for practicing JavaScript code.</div>
 
-## Difficulty Levels ⚔️
+<details>
+<summary>Difficulty Levels ⚔️</summary>
 - **Rookie 👶:** Just starting.
 - **Novice 🧒:** Gaining confidence with simple projects.
 - **Pro 👨🏼‍🎓:** Building real-world apps.
 - **Master 👩🏻‍💼:** Leading projects.
 - **Ninja 🥷:** Tech innovator
+</details>
 
-## App List 📱
+<details>
+<summary>App List 📱</summary>
 
 ### 👶 Rookie
 | Name | Description | Demo | 
 | ---- | ---- | ---- |
 | Number Generator | ... | [Live](#) |
 | Color Generator | ... | [Live](#) |
-
 
 ### 🧒 Novice
 | Name | Description | Demo |
@@ -36,6 +37,7 @@
 | Name | Description | Demo |
 | ---- | ---- | ---- |
 | Tetris | ... | [Live](...) |
+</details>
 
 ## Useful resources used in this project 👑:
 
