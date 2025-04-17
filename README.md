@@ -1,5 +1,4 @@
-
-![GitHub Banners (3)](https://github.com/user-attachments/assets/d66d84b3-a669-4a47-8041-949073c9212f)
+![GitHub Banners (5)](https://github.com/user-attachments/assets/46f5c450-43ef-4cd7-94b7-58275922050f)
 
 <details>
 <summary>Difficulty Levels ⚔️</summary>
