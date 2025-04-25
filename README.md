@@ -1,6 +1,6 @@
 ![GitHub Banners (5)](https://github.com/user-attachments/assets/46f5c450-43ef-4cd7-94b7-58275922050f)
 
-+300 Mini-Projects for Beginners
+# +300 Mini-Projects for Beginners
 
 <details>
 <summary>Difficulty Levels ⚔️</summary>
