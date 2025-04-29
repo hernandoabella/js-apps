@@ -93,7 +93,7 @@ generateButton.addEventListener('click', () => {
     
     projectStars: 0,
     downloadLink:
-      "/",
+      "#",
   },
   {
     name: "Color Generator",
@@ -209,7 +209,7 @@ updateColorDisplay('#FF5733');
     
     projectStars: 0,
     downloadLink:
-      "https://github.com/hernandoabella/random-color/archive/refs/heads/main.zip",
+      "#",
   },
 
   {
@@ -305,7 +305,7 @@ document.getElementById('generateStringBtn').addEventListener('click', changeStr
     
     projectStars: 0,
     downloadLink:
-      "https://github.com/hernandoabella/random-string/archive/refs/heads/main.zip",
+      "#",
   },
 
   {
