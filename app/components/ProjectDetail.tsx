@@ -10,13 +10,14 @@ import {
   FaDownload,
   FaCheck,
 } from "react-icons/fa";
-import Link from "next/link";
+
 import hljs from "highlight.js/lib/core";
 import html from "highlight.js/lib/languages/xml"; // Import HTML language
 import css from "highlight.js/lib/languages/css"; // Import CSS language
 import javascript from "highlight.js/lib/languages/javascript"; // Import JavaScript language
 import { App } from "@/app/appData";
 import Header from "./Header";
+import Footer from "./Footer";
 
 // Register languages with highlight.js
 hljs.registerLanguage("html", html);
@@ -85,27 +86,26 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
   return (
     <div>
       <Header />
-      <div className="md:flex md:items-center md:justify-center md:h-screen">
+      <div className="md:flex md:items-center md:justify-center md:h-screen ">
         <div className="lg:w-9/12">
           <div className="lg:mx-20 lg:flex-col">
 
-          <div className="inline-block m-5">
-                  <a
-                    href="/"
-                    className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
-                  >
-                    <FaArrowCircleLeft  />
-                    
-                  </a>
-                </div>
-            
-            
+            <div className="border rounded-t-xl ">
+            <div className="inline-block m-5">
+              <a
+                href="/"
+                className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
+              >
+                <FaArrowCircleLeft />
+              </a>
+            </div>
+            </div>
 
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 h-96 p-2 border-r dark:bg-[#242424] ">
+              <div className="md:w-1/2 h-96 p-2 border-r ">
                 {app.ProjectComponent ? <app.ProjectComponent /> : null}
               </div>
-              <div className="md:w-1/2 h-96 dark:bg-[#212121] p-2 overflow-auto">
+              <div className="md:w-1/2 h-96 p-2 overflow-auto">
                 <div className="flex mb-4">
                   {/* HTML Button */}
                   <button
@@ -154,14 +154,14 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
             </div>
 
 
-            <div className="dark:bg-[#141414] p-5 rounded-b-xl justify-between gap-5">
+            <div className="border p-5 rounded-b-xl justify-between gap-5">
               <div>
                 <h2 className="text-2xl font-bold mb-2">{app.title}</h2>
                 <p className="mb-2">{app.description}</p>{" "}
               </div>
               <div>
 
-                <div className="inline-block mt-2">
+                {/* <div className="inline-block mt-2 ">
                   <a download={true}
                     href={app.downloadLink}
                     className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
@@ -169,14 +169,13 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
                     <FaDownload className="mr-2" />
                     <span>Download Project</span>
                   </a>
-                </div>
-
-
+                </div> */}
               </div>{" "}
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
