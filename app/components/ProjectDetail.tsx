@@ -86,7 +86,7 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
   return (
     <div>
       <Header />
-      <div className="md:flex md:items-center md:justify-center md:h-screen ">
+      <div className="md:flex md:items-center md:justify-center md:h-screen pt-32 md:pt-0">
         <div className="lg:w-9/12">
           <div className="lg:mx-20 lg:flex-col">
 
