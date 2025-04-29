@@ -42,20 +42,16 @@ const Apps: React.FC = () => {
 
           <div className="relative inline-flex items-center justify-center gap-4 group">
             <div
-              className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
+              className="absolute inset-0 duration-1000 opacity-60 bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter"
             ></div>
-            <a
-              role="button"
-              className="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
-              title="payment"
-              href=""
-            >
-            <div key={level} className="text-center rounded-xl">
+            <div
+              className="group relative inline-flex items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white">
+            <div key={level} className="text-center rounded-xl p-10">
             <h2 className="text-2xl font-bold mb-2 flex items-center justify-center">
               <img
                 src={levelIcons[parseInt(level, 10)]}
                 alt={levelDescriptions[parseInt(level, 10)].split(":")[0]}
-                className="w-20 h-20 m-auto"
+                className="w-20 h-20 m-5"
               />
               <div>
                 <span className="mr-2">
@@ -89,16 +85,16 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">{/* Project
                         />
 
                       </span>
-                      <span className="absolute inset-0 overflow-hidden rounded-lg">
+                      <span className="absolute  overflow-hidden rounded-lg">
                         <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-yellow-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
-                      </span><span className="relative z-10">{app.name}</span><span className="absolute inset-0 overflow-hidden rounded-lg"><span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-yellow-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
+                      </span><span className="relative z-10">{app.name}</span><span className="absolute  overflow-hidden rounded-lg"><span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-yellow-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
                   </Link>
 
                 </div>
               ))}
             </div>
           </div>
-            </a>
+            </div>
           </div>
 
           
