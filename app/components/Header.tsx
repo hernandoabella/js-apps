@@ -13,18 +13,18 @@ const Header = () => {
             className="flex items-center space-x-3"
           >
             <div className="text-3xl font-bold font-[var(--font-squada-one)] tracking-widest hover:text-yellow-300 transition duration-300">
-              <span className="text-yellow-500">&lt;/</span>JSAPPS
+              <span className="text-yellow-400">&lt;/</span>JSAPPS
             </div>
           </a>
           <div className="flex items-center gap-5 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <a
               href="https://www.github.com/hernandoabella/js-apps"
-              className="text-3xl text-gray-500 hover:text-gray-400"
+              className="text-3xl"
             >
               <FaGithub />
             </a>
 
-            <ModeToggle />
+            {/* <ModeToggle /> */}
 
             <div className="relative inline-flex items-center justify-center gap-4 group">
               <div
