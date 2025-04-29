@@ -38,12 +38,14 @@ const Apps: React.FC = () => {
   return (
     <div className="p-10 mt-20 flex flex-col items-center">
       {Object.keys(appsByLevel).map((level) => (
-        <div key={level} className="mb-10 text-center bg-blue-500 text-white p-20 rounded-xl shadow-xl">
+        <div className="my-10">
+          
+          <div key={level} className="text-center rounded-xl">
           <h2 className="text-2xl font-bold mb-2 flex items-center justify-center">
             <img
               src={levelIcons[parseInt(level, 10)]}
               alt={levelDescriptions[parseInt(level, 10)].split(":")[0]}
-              className="w-20 h-20 m-5"
+              className="w-20 h-20 m-auto"
             />
             <div>
               <span className="mr-2">
@@ -52,7 +54,7 @@ const Apps: React.FC = () => {
               <Stars level={parseInt(level, 10)} />
             </div>
           </h2>
-          <p className="text-lg mb-4 text-gray-300">
+          <p className="text-lg mb-4 text-gray-500">
             {levelDescriptions[parseInt(level, 10)].split(":")[1]}
           </p>
           <div className="flex flex-col gap-4 justify-center items-center">
@@ -85,6 +87,7 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">{/* Project
               </div>
             ))}
           </div>
+        </div>
         </div>
       ))}
     </div>
