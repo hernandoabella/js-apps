@@ -113,7 +113,7 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
             </div>
 
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 h-96 p-2 ">
+              <div className="md:w-1/2 h-96 p-2 my-10">
                 {app.ProjectComponent ? <app.ProjectComponent /> : null}
               </div>
               <div className="md:w-1/2 h-96 p-2 overflow-auto my-10">
@@ -187,7 +187,7 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
                   <div
                     className="w-full group relative items-center justify-center text-base rounded-xl bg-gray-900 p-5 font-semibold text-white transition-all duration-200 hover:bg-gray-800"
                   >
-                  <h2 className="text-2xl font-bold mb-2 text-sky-300">{app.title}</h2>
+                  <h2 className="text-2xl font-bold mb-2 text-yellow-400">{app.title}</h2>
                   <p className="mb-2">{app.description}</p>
                   </div>
                 </div>
