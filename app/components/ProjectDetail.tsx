@@ -85,13 +85,19 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
 
   return (
     <div>
-      <Header />
-      <div className="md:flex md:items-center md:justify-center md:h-screen pt-32 md:pt-0">
-        <div className="lg:w-9/12">
-          <div className="lg:mx-20 lg:flex-col">
+      
+      <div className="md:flex md:items-center md:justify-center md:h-screen md:pt-0">
+        <div className="lg:container">
+          <div className="lg:flex-col">
 
-            <div className="border rounded-t-xl ">
-              <div className="inline-block m-5">
+          <div className="w-full relative inline-flex items-center justify-center gap-4 group">
+              <div
+                className=" absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter"
+              ></div>
+              <div
+                className="w-full group relative inline-flex items-center justify-start text-base rounded-xl bg-gray-900 p-5 font-semibold text-white transition-all duration-200"
+              >
+                <div>
                 <a
                   href="/"
                   className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
@@ -99,13 +105,26 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
                   <FaArrowCircleLeft />
                 </a>
               </div>
+              </div>
+            </div>
+
+            <div className="border rounded-t-xl">
+              
             </div>
 
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 h-96 p-2 border-r ">
+              <div className="md:w-1/2 h-96 p-2 ">
                 {app.ProjectComponent ? <app.ProjectComponent /> : null}
               </div>
-              <div className="md:w-1/2 h-96 p-2 overflow-auto">
+              <div className="md:w-1/2 h-96 p-2 overflow-auto my-10">
+
+              <div className="relative inline-flex items-center justify-center gap-4 group">
+              <div
+                className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
+              ></div>
+              <div
+                className="p-10 group relative items-center justify-center text-base rounded-xl bg-gray-900 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+              >
                 <div className="flex mb-4">
                   {/* HTML Button */}
                   <button
@@ -153,6 +172,10 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
               </div>
             </div>
 
+                
+              </div>
+            </div>
+
 
             <div className="">
               <div>
@@ -162,9 +185,9 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
                     className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
                   ></div>
                   <div
-                    className="w-full group relative items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+                    className="w-full group relative items-center justify-center text-base rounded-xl bg-gray-900 p-5 font-semibold text-white transition-all duration-200 hover:bg-gray-800"
                   >
-                  <h2 className="text-2xl font-bold mb-2">{app.title}</h2>
+                  <h2 className="text-2xl font-bold mb-2 text-sky-300">{app.title}</h2>
                   <p className="mb-2">{app.description}</p>
                   </div>
                 </div>
