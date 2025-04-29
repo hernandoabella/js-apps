@@ -91,14 +91,14 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
           <div className="lg:mx-20 lg:flex-col">
 
             <div className="border rounded-t-xl ">
-            <div className="inline-block m-5">
-              <a
-                href="/"
-                className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
-              >
-                <FaArrowCircleLeft />
-              </a>
-            </div>
+              <div className="inline-block m-5">
+                <a
+                  href="/"
+                  className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
+                >
+                  <FaArrowCircleLeft />
+                </a>
+              </div>
             </div>
 
             <div className="flex flex-col md:flex-row">
@@ -154,10 +154,21 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
             </div>
 
 
-            <div className="border p-5 rounded-b-xl justify-between gap-5">
+            <div className="">
               <div>
-                <h2 className="text-2xl font-bold mb-2">{app.title}</h2>
-                <p className="mb-2">{app.description}</p>{" "}
+                
+                <div className="w-full relative inline-flex items-center justify-center gap-4 group">
+                  <div
+                    className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
+                  ></div>
+                  <div
+                    className="w-full group relative items-center justify-center text-base rounded-xl bg-gray-900 px-8 py-3 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
+                  >
+                  <h2 className="text-2xl font-bold mb-2">{app.title}</h2>
+                  <p className="mb-2">{app.description}</p>
+                  </div>
+                </div>
+                
               </div>
               <div>
 
@@ -175,7 +186,7 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
           </div>
         </div>
       </div>
-      
+
     </div>
   );
 };
