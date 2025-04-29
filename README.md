@@ -4,6 +4,7 @@
 
 <details>
 <summary>Difficulty Levels ⚔️</summary>
+
 - **Rookie 👶:** Just starting.
 - **Novice 🧒:** Gaining confidence with simple projects.
 - **Pro 👨🏼‍🎓:** Building real-world apps.
