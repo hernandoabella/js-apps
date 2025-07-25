@@ -16,7 +16,7 @@ import html from "highlight.js/lib/languages/xml"; // Import HTML language
 import css from "highlight.js/lib/languages/css"; // Import CSS language
 import javascript from "highlight.js/lib/languages/javascript"; // Import JavaScript language
 import { App } from "@/app/appData";
-import Header from "./Header";
+import Header from "./LeftSideBar";
 import Footer from "./Footer";
 
 // Register languages with highlight.js
