@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${squada.variable}`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
