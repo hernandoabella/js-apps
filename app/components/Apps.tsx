@@ -36,7 +36,7 @@ const Apps: React.FC = () => {
   }, {} as { [key: number]: App[] });
 
   return (
-    <div className="p-10 mt-20 flex flex-col items-center">
+    <div className="flex flex-col items-center">
       {Object.keys(appsByLevel).map((level) => (
         <div className="my-10">
 
