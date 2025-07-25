@@ -1,4 +1,4 @@
-import Header from "@/app/components/Header";
+import LeftSideBar from "@/app/components/LeftSideBar";
 import Apps from "@/app/components/Apps";
 import Footer from "@/app/components/Footer";
 
@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Header />
+        <LeftSideBar />
         <Apps />
         <Footer />
       </div>
