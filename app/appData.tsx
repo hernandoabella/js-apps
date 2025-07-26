@@ -5,6 +5,8 @@ import RandomGradient from "./components/projects/GradientGenerator";
 import ThemeSwitcher from "./components/projects/ThemeSwitcher";
 
 export interface App {
+  additionalInfo: ReactNode;
+  liveDemo: any;
   name: string;
   path: string;
   icon: string;
