@@ -18,6 +18,7 @@ import javascript from "highlight.js/lib/languages/javascript"; // Import JavaSc
 import { App } from "@/app/appData";
 import Header from "./LeftSideBar";
 import Footer from "./Footer";
+import LeftSideBar from "./LeftSideBar";
 
 // Register languages with highlight.js
 hljs.registerLanguage("html", html);
@@ -85,125 +86,88 @@ const ProjectDetail = ({ app }: ProjectDetailProps) => {
 
   return (
     <div>
-      
-      <div className="md:flex md:items-center md:justify-center md:h-screen md:pt-0">
-        <div className="lg:container">
-          <div className="lg:flex-col">
-
-          <div className="w-full relative inline-flex items-center justify-center gap-4 group">
-              <div
-                className=" absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter"
-              ></div>
-              <div
-                className="w-full group relative inline-flex items-center justify-start text-base rounded-xl bg-gray-900 p-5 font-semibold text-white transition-all duration-200"
-              >
-                <div>
-                <a
-                  href="/"
-                  className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
-                >
-                  <FaArrowCircleLeft />
-                </a>
-              </div>
-              </div>
-            </div>
-
-            <div className="border rounded-t-xl">
-              
-            </div>
-
-            <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 h-96 p-2 my-10">
+      <LeftSideBar />
+      <div className="md:flex md:items-center md:justify-center ">
+        <div>
+          <div>
+            <div>
+              <div className="md:w-1/2 p-2 my-10">
                 {app.ProjectComponent ? <app.ProjectComponent /> : null}
               </div>
-              <div className="md:w-1/2 h-96 p-2 overflow-auto my-10">
+              <div className="p-2 overflow-auto my-10">
 
-              <div className="relative inline-flex items-center justify-center gap-4 group">
-              <div
-                className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
-              ></div>
-              <div
-                className="p-10 group relative items-center justify-center text-base rounded-xl bg-gray-900 font-semibold text-white transition-all duration-200 hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 hover:shadow-gray-600/30"
-              >
-                <div className="flex mb-4">
-                  {/* HTML Button */}
-                  <button
-                    onClick={() => setCodeType("html")}
-                    className={`flex items-center gap-1 p-2 rounded-md ${codeType === "html"
-                      ? "bg-[#e34f26] text-white" // HTML: #e34f26 (HTML5 color)
-                      : "bg-gray-600"
-                      }`}
-                  >
-                    <FaHtml5 /> HTML
-                  </button>
+                <div className="relative inline-flex items-center justify-center gap-4 group">
 
-                  {/* CSS Button */}
-                  <button
-                    onClick={() => setCodeType("css")}
-                    className={`flex items-center gap-1 p-2 mx-2 rounded-md ${codeType === "css"
-                      ? "bg-[#2965f1] text-white" // CSS: #2965f1 (CSS3 color)
-                      : "bg-gray-600"
-                      }`}
-                  >
-                    <FaCss3 /> CSS
-                  </button>
+                  <div>
+                    <div className="flex mb-4">
+                      {/* HTML Button */}
+                      <button
+                        onClick={() => setCodeType("html")}
+                        className={`flex items-center gap-1 p-2 rounded-md ${codeType === "html"
+                          ? "bg-[#e34f26] text-white" // HTML: #e34f26 (HTML5 color)
+                          : "bg-gray-300"
+                          }`}
+                      >
+                        <FaHtml5 /> HTML
+                      </button>
 
-                  {/* JS Button */}
-                  <button
-                    onClick={() => setCodeType("js")}
-                    className={`flex items-center gap-1 p-2 rounded-md ${codeType === "js"
-                      ? "bg-[#f7df1e] text-black" // JS: #f7df1e (JavaScript color)
-                      : "bg-gray-600"
-                      }`}
-                  >
-                    <FaJs /> JS
-                  </button>
+                      {/* CSS Button */}
+                      <button
+                        onClick={() => setCodeType("css")}
+                        className={`flex items-center gap-1 p-2 mx-2 rounded-md ${codeType === "css"
+                          ? "bg-[#2965f1] text-white" // CSS: #2965f1 (CSS3 color)
+                          : "bg-gray-300"
+                          }`}
+                      >
+                        <FaCss3 /> CSS
+                      </button>
+
+                      {/* JS Button */}
+                      <button
+                        onClick={() => setCodeType("js")}
+                        className={`flex items-center gap-1 p-2 rounded-md ${codeType === "js"
+                          ? "bg-[#f7df1e] text-black" // JS: #f7df1e (JavaScript color)
+                          : "bg-gray-300"
+                          }`}
+                      >
+                        <FaJs /> JS
+                      </button>
+                    </div>
+                    <div className="relative">
+                      <div ref={codeRef} />
+                      <button
+                        onClick={handleCopyToClipboard}
+                        className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
+                        title="Copy to Clipboard"
+                      >
+                        {copied ? <FaCheck /> : <FaCopy />} {/* Icon changes based on state */}
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <div className="relative">
-                  <div ref={codeRef} />
-                  <button
-                    onClick={handleCopyToClipboard}
-                    className="absolute top-2 right-2 p-2 rounded-md bg-gray-600 text-white hover:bg-gray-700"
-                    title="Copy to Clipboard"
-                  >
-                    {copied ? <FaCheck /> : <FaCopy />} {/* Icon changes based on state */}
-                  </button>
-                </div>
-              </div>
-            </div>
 
-                
+
               </div>
             </div>
 
 
             <div className="">
               <div>
-                
+
                 <div className="w-full relative inline-flex items-center justify-center gap-4 group">
+
                   <div
-                    className="absolute inset-0 duration-1000 opacity-60 transitiona-all bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"
-                  ></div>
-                  <div
-                    className="w-full group relative items-center justify-center text-base rounded-xl bg-gray-900 p-5 font-semibold text-white transition-all duration-200 hover:bg-gray-800"
+                    className="w-full group relative items-center justify-center border rounded-lg p-5"
                   >
-                  <h2 className="text-2xl font-bold mb-2 text-yellow-400">{app.title}</h2>
-                  <p className="mb-2">{app.description}</p>
+                    <h2 className="text-2xl font-bold mb-2">{app.title}</h2>
+                    <p className="mb-2">{app.description}</p>
                   </div>
                 </div>
-                
+
               </div>
               <div>
 
-                {/* <div className="inline-block mt-2 ">
-                  <a download={true}
-                    href={app.downloadLink}
-                    className="flex items-center bg-[#FDD130] p-2 rounded-lg text-black hover:bg-[#fbbf24] transition-colors"
-                  >
-                    <FaDownload className="mr-2" />
-                    <span>Download Project</span>
-                  </a>
-                </div> */}
+
               </div>{" "}
             </div>
           </div>
