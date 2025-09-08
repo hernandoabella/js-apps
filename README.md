@@ -1,5 +1,3 @@
-![JS-APPS-06-02-2025_08_19_PM](https://github.com/user-attachments/assets/d49c57bf-3c58-4af3-b261-f914e86bc17d)
-
 ## How to Contribute? ✨
 Please check our [contribution guide](./CONTRIBUTING.md) for more details if you want to contribute.
 
