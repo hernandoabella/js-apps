@@ -31,7 +31,7 @@ const Apps: React.FC = () => {
     <div className="flex flex-col items-center px-4 md:px-12">
       <h1 className="text-4xl font-bold text-center my-8">JS-APPS</h1>
       <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl">
-        Explore our collection of JavaScript applications.
+        Learn JavaScript by building real-life projects!
       </p>
 
       {Object.entries(appsByLevel).map(([levelStr, levelApps]) => {
@@ -81,7 +81,7 @@ const Apps: React.FC = () => {
                     <div className="p-4 border-t border-gray-200 dark:border-gray-700">
                       <p className="text-sm text-gray-600 dark:text-gray-300 mb-2 line-clamp-2">{app.description}</p>
                       <div className="flex justify-between items-center">
-                        <span className="text-xs text-gray-500 dark:text-gray-400">Level {app.level}</span>
+
                         <div className="flex items-center space-x-1">
                           <FaStar className="text-yellow-400" />
                           <span className="text-sm">{app.projectStars}</span>
