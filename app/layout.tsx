@@ -14,7 +14,7 @@ const squada = Squada_One({
 
 
 export const metadata: Metadata = {
-  title: "</JS-APPS",
+  title: "JS-APPS",
   description: "Learn JavaScript by building real-life projects!",
 };
 
