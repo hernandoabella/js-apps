@@ -7,7 +7,12 @@ import RandomGradient from "@/app/components/projects/GradientGenerator";
 import ThemeSwitcher from "@/app/components/projects/ThemeSwitcher";
 
 export interface App {
-  projectStars: ReactNode;
+  [x: string]: any;
+  html: string;
+  css: string;
+  js: string;
+  category: string[];        // FIXED
+  projectStars: string;
   name: string;
   path: string;
   icon: string;
@@ -24,7 +29,11 @@ export const apps: App[] = [
     description: "Generate a random number between 1 and 100.",
     level: 1,
     ProjectComponent: RandomNumber,
-    projectStars: undefined
+    projectStars: "5",
+    html: "",
+    css: "",
+    js: "",
+    category: []
   },
   {
     name: "Color Generator",
@@ -33,7 +42,11 @@ export const apps: App[] = [
     description: "Generate random colors with automatic contrast detection.",
     level: 1,
     ProjectComponent: RandomColor,
-    projectStars: undefined
+    projectStars: "5",
+    html: "",
+    css: "",
+    js: "",
+    category: []
   },
   {
     name: "String Generator",
@@ -42,7 +55,11 @@ export const apps: App[] = [
     description: "Generate a random alphanumeric string.",
     level: 1,
     ProjectComponent: RandomString,
-    projectStars: undefined
+    projectStars: "5",
+    html: "",
+    css: "",
+    js: "",
+    category: []
   },
   {
     name: "Gradient Generator",
@@ -51,7 +68,11 @@ export const apps: App[] = [
     description: "Generate a random gradient to visualize color schemes.",
     level: 1,
     ProjectComponent: RandomGradient,
-    projectStars: undefined
+    projectStars: "5",
+    html: "",
+    css: "",
+    js: "",
+    category: []
   },
   {
     name: "Theme Switcher",
@@ -60,6 +81,10 @@ export const apps: App[] = [
     description: "Toggle between light and dark themes.",
     level: 2,
     ProjectComponent: ThemeSwitcher,
-    projectStars: undefined
+    projectStars: "5",
+    html: "",
+    css: "",
+    js: "",
+    category: []
   },
 ];
