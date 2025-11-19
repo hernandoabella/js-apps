@@ -172,9 +172,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                           <div className="text-sm font-medium text-gray-900 dark:text-white truncate">
                             {app.name}
                           </div>
-                          <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
-                            {app.description.substring(0, 40)}...
-                          </div>
+                          
                         </div>
                         <FaStar className="w-3 h-3 text-yellow-500 flex-shrink-0" />
                         <span className="text-xs text-gray-500 dark:text-gray-400">
@@ -238,7 +236,7 @@ const CodeViewerOverlay: React.FC<CodeViewerOverlayProps> = ({ app, onClose }) =
                 {app.name}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Explore the code behind this project
+                {app.description}
               </p>
             </div>
           </div>
@@ -359,9 +357,7 @@ const AppCard: React.FC<{ app: App; onViewCode: (app: App) => void }> = ({ app, 
 
       {/* Footer */}
       <div className="p-6 bg-white dark:bg-gray-800">
-        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 line-clamp-3 leading-relaxed min-h-[4rem]">
-          {app.description}
-        </p>
+        
 
         <div className="flex justify-between items-center">
           <button
