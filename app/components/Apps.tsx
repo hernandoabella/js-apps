@@ -142,11 +142,11 @@ const Sidebar: React.FC<SidebarProps> = ({
                     }`}
                 >
                   <div className="flex items-center space-x-3">
-                    <Stars level={level} size="sm" />
                     <span className={`font-semibold text-left ${isSelected ? 'text-blue-600 dark:text-blue-400' : 'text-gray-700 dark:text-gray-300'
                       }`}>
                       Level {level}
                     </span>
+                    <Stars level={level} size="sm" />
                   </div>
                   <div className="flex items-center space-x-2">
                     <span className={`text-sm ${isSelected ? 'text-blue-600 dark:text-blue-400' : 'text-gray-500 dark:text-gray-500'
