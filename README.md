@@ -1,3 +1,5 @@
+# JS-APPS
+
 ## How to Contribute? ✨
 Please check our [contribution guide](./CONTRIBUTING.md) for more details if you want to contribute.
 
