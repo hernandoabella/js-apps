@@ -1,24 +1,35 @@
 import Link from "next/link";
+import { FaArrowRight, FaRocket } from "react-icons/fa";
 
 const Cta = () => {
   return (
-    <div className="p-8 md:p-20 bg-white dark:bg-slate-900 dark:text-white">
-      <h2 className="text-4xl font-bold mb-8 text-center">
-        Ready to improve your programming skills?
-      </h2>
-      <p className="mt-4 text-base text-slate-600 dark:text-slate-400 text-center">
-        Discover our apps to take your skills to the next level.
-      </p>
-      <div className="flex justify-center">
-        <Link href="/apps">
-          <button className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-8">
-            Explore apps
-            <span className="sr-only">, reusing styles</span>
-           
-          </button>
-        </Link>
+    <section className="py-20 md:py-28 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 dark:from-blue-900 dark:via-purple-900 dark:to-pink-900">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <FaRocket className="w-12 h-12 text-white/80 mx-auto mb-6" />
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          Ready to level up?
+        </h2>
+        <p className="text-lg text-white/80 max-w-2xl mx-auto mb-10">
+          Start building real JavaScript projects today. No sign-up required — just pick a project and start coding.
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link
+            href="/projects"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-purple-700 font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-200"
+          >
+            Start Now <FaArrowRight className="w-4 h-4" />
+          </Link>
+          <a
+            href="https://github.com/hernandoabella/js-apps"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-white/30 text-white font-semibold text-lg hover:bg-white/10 transition-all duration-200"
+          >
+            Star on GitHub
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

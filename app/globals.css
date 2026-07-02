@@ -22,60 +22,6 @@
   }
 }
 
-/* From Uiverse.io by milegelu */
-.button {
-  --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
-  --edge-light: hsla(0, 0%, 50%, 0.8);
-  --text-light: rgba(255, 255, 255, 0.4);
-  --back-color: 240, 40%;
-
-  cursor: pointer;
-  padding: 0.7em 1em;
-  border-radius: 0.5em;
-  min-height: 2.4em;
-  min-width: 3em;
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  line-height: 1;
-  font-weight: bold;
-
-  background: linear-gradient(140deg,
-      hsla(var(--back-color), 50%, 1) min(2em, 20%),
-      hsla(var(--back-color), 50%, 0.6) min(8em, 100%));
-  color: hsla(0, 0%, 90%);
-  border: 0;
-  box-shadow: inset 0.4px 1px 4px var(--edge-light);
-
-  transition: all 0.1s var(--bezier);
-}
-
-.button:hover {
-  --edge-light: hsla(0, 0%, 50%, 1);
-  text-shadow: 0px 0px 10px var(--text-light);
-  box-shadow: inset 0.4px 1px 4px var(--edge-light),
-    2px 4px 8px hsla(0, 0%, 0%, 0.295);
-  transform: scale(1.1);
-}
-
-.button:active {
-  --text-light: rgba(255, 255, 255, 1);
-
-  background: linear-gradient(140deg,
-      hsla(var(--back-color), 50%, 1) min(2em, 20%),
-      hsla(var(--back-color), 50%, 0.6) min(8em, 100%));
-  box-shadow: inset 0.4px 1px 8px var(--edge-light),
-    0px 0px 8px hsla(var(--back-color), 50%, 0.6);
-  text-shadow: 0px 0px 20px var(--text-light);
-  color: hsla(0, 0%, 100%, 1);
-  letter-spacing: 0.1em;
-  transform: scale(1);
-}
-
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -106,7 +52,7 @@
   }
 
   .dark {
-    --background: 145%, 120%, 20%;
+    --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -141,4 +87,117 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    border-color: rgb(52 211 153);
+  }
+  50% {
+    border-color: rgb(5 150 105);
+  }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fade-in-left 0.6s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fade-in-right 0.6s ease-out forwards;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
 }

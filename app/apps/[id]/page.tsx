@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { apps, App } from "@/app/appData";
 
@@ -12,7 +13,7 @@ const Stars: React.FC<{ level: number }> = ({ level }) => (
   </div>
 );
 
-const Apps: React.FC = () => {
+const AllApps: React.FC = () => {
   return (
     <div className="flex flex-col items-center px-4 md:px-12">
       <h1 className="text-4xl font-bold mb-12">All Apps (Full Content)</h1>
@@ -23,9 +24,8 @@ const Apps: React.FC = () => {
             key={app.name}
             className="bg-yellow-100 border rounded-2xl shadow p-6 flex flex-col gap-4"
           >
-            {/* Header */}
             <div className="flex items-center gap-4">
-              <img src={app.icon} alt={app.name} className="w-12 h-12" />
+              <Image src={app.icon} alt={app.name} width={48} height={48} />
               <div>
                 <h2 className="text-2xl font-bold text-[#8f6712] flex items-center gap-2">
                   {app.name} <Stars level={app.level} />
@@ -34,9 +34,8 @@ const Apps: React.FC = () => {
               </div>
             </div>
 
-            {/* The actual app component 👇 */}
             <div className="border-t pt-4">
-              <app.Component />
+              {app.ProjectComponent ? <app.ProjectComponent /> : null}
             </div>
           </div>
         ))}
@@ -45,4 +44,4 @@ const Apps: React.FC = () => {
   );
 };
 
-export default Apps;
+export default AllApps;
