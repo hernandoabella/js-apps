@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect x="8" y="12" width="48" height="40" rx="4" stroke="#DE9804" stroke-width="2" fill="none"/>
+  <line x1="8" y1="26" x2="56" y2="26" stroke="#DE9804" stroke-width="1.5" opacity="0.5"/>
+  <line x1="8" y1="40" x2="56" y2="40" stroke="#DE9804" stroke-width="1.5" opacity="0.5"/>
+  <text x="32" y="34" text-anchor="middle" font-size="8" fill="#DE9804" font-weight="bold">Hello</text>
+  <text x="32" y="48" text-anchor="middle" font-size="6" fill="#DE9804">Chars: 5  Words: 1</text>
+  <circle cx="14" cy="19" r="3" fill="#DE9804" opacity="0.6"/>
+  <circle cx="26" cy="19" r="3" fill="#DE9804" opacity="0.6"/>
+  <circle cx="38" cy="19" r="3" fill="#DE9804" opacity="0.6"/>
+  <circle cx="50" cy="19" r="3" fill="#DE9804" opacity="0.6"/>
+</svg>

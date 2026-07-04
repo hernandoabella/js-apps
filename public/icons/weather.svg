@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="26" cy="24" r="10" stroke="#DE9804" stroke-width="2" fill="none"/>
+  <circle cx="26" cy="24" r="4" fill="#DE9804"/>
+  <line x1="26" y1="8" x2="26" y2="12" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="26" y1="36" x2="26" y2="40" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="10" y1="24" x2="14" y2="24" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="38" y1="24" x2="42" y2="24" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="14.6" y1="12.6" x2="17.3" y2="15.3" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="34.7" y1="32.7" x2="37.4" y2="35.4" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="37.4" y1="12.6" x2="34.7" y2="15.3" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="17.3" y1="32.7" x2="14.6" y2="35.4" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 44h28c5 0 8 3 8 7s-3 7-8 7H18c-5 0-8-3-8-7s3-7 8-7z" fill="#DE9804" opacity="0.3"/>
+  <path d="M22 44c0-3 2-6 6-6h12c4 0 6 3 6 6" stroke="#DE9804" stroke-width="2" fill="none"/>
+</svg>

@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-indigo-900/40 dark:to-purple-900/40 text-indigo-700 dark:text-indigo-300 text-sm font-medium border border-indigo-200 dark:border-indigo-800">
             <FaRocket className="w-3.5 h-3.5" />
-            20 projects &bull; 5 levels &bull; 10 achievements
+            40 projects &bull; 5 levels &bull; 10 achievements
           </div>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 text-sm font-medium border border-emerald-200 dark:border-emerald-800">
             <FaGithub className="w-3.5 h-3.5" />

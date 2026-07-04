@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <line x1="12" y1="56" x2="52" y2="56" stroke="#DE9804" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="56" x2="32" y2="8" stroke="#DE9804" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="8" x2="48" y2="8" stroke="#DE9804" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="48" y1="8" x2="48" y2="20" stroke="#DE9804" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="48" cy="26" r="6" stroke="#DE9804" stroke-width="2" fill="none"/>
+  <line x1="48" y1="32" x2="48" y2="44" stroke="#DE9804" stroke-width="2.5"/>
+  <line x1="48" y1="36" x2="40" y2="42" stroke="#DE9804" stroke-width="2"/>
+  <line x1="48" y1="36" x2="56" y2="42" stroke="#DE9804" stroke-width="2"/>
+  <line x1="48" y1="44" x2="42" y2="52" stroke="#DE9804" stroke-width="2"/>
+  <line x1="48" y1="44" x2="54" y2="52" stroke="#DE9804" stroke-width="2"/>
+  <rect x="18" y="46" width="28" height="14" rx="2" fill="#DE9804" opacity="0.15"/>
+  <line x1="22" y1="52" x2="26" y2="52" stroke="#DE9804" stroke-width="1.5"/>
+  <line x1="22" y1="56" x2="28" y2="56" stroke="#DE9804" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="20" r="8" stroke="#DE9804" stroke-width="2" fill="none"/>
+  <path d="M20 50c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="#DE9804" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <line x1="10" y1="14" x2="16" y2="14" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="14" x2="54" y2="14" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="32" y1="8" x2="32" y2="10" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <line x1="32" y1="30" x2="32" y2="32" stroke="#DE9804" stroke-width="2" stroke-linecap="round"/>
+  <text x="32" y="60" text-anchor="middle" font-size="6" fill="#DE9804">BMI</text>
+</svg>
