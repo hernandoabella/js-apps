@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect x="6" y="10" width="52" height="14" rx="6" stroke="#DE9804" stroke-width="2" fill="none"/>
+  <text x="32" y="20" text-anchor="middle" font-size="8" fill="#DE9804" font-weight="bold" letter-spacing="3">R T A C E</text>
+  <rect x="14" y="30" width="36" height="10" rx="5" fill="#DE9804" opacity="0.2"/>
+  <text x="32" y="37" text-anchor="middle" font-size="6" fill="#DE9804" font-weight="bold">Pista: UI lib</text>
+  <rect x="18" y="46" width="28" height="10" rx="5" fill="#DE9804"/>
+  <text x="32" y="53" text-anchor="middle" font-size="6" fill="white" font-weight="bold">REACT</text>
+  <line x1="18" y1="8" x2="30" y2="8" stroke="#DE9804" stroke-width="1.5" opacity="0.3"/>
+  <line x1="34" y1="8" x2="46" y2="8" stroke="#DE9804" stroke-width="1.5" opacity="0.3"/>
+</svg>
